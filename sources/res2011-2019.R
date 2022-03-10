@@ -2,17 +2,18 @@
 library(tidyverse)
 
 # 0.2 - Data ####
-Data <- readRDS("_SharedFolder_catalogue-donnees/Data/datagotchi/CleanData-Lifestyle.rds")
-
+Data2011 <- readRDS("_SharedFolder_catalogue-donnees/Data/resultats_electoraux/ResultatsParBureau2011.rds")
+Data2015 <- readRDS("_SharedFolder_catalogue-donnees/Data/resultats_electoraux/ResultatsParBureau2015.rds")
+Data2019 <- readRDS("_SharedFolder_catalogue-donnees/Data/resultats_electoraux/ResultatsParBureau2019.rds")
+Data <- rbind(Data2011, Data2015, Data2019)
 # 0.3 - Cleaning ####
 
   # Mettre 'ses' comme préfixe aux variables ses
 
 # 1 - Manipulations ####
 vars <- names(Data)
-bd <- "pilot1-datagotchi"
-projets <- "datagotchi"
-
+bd <- "res2011-2019"
+projets <- "aucun"
 Export <- data.frame(nom = vars,
                      bd = rep(bd, length(vars)),
                      projets = rep(projets, length(vars)),
@@ -41,4 +42,4 @@ for (i in 1:length(vars)){
 }
 
 # Associer le export au nom de la bd pour quand on va les bind ensemble
-Export_pilot1_datagotchi <- Export
+Export_res2011_2019 <- Export

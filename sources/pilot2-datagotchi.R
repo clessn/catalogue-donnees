@@ -2,7 +2,7 @@
 library(tidyverse)
 
 # 0.2 - Data ####
-Data <- readRDS("_SharedFolder_catalogue-donnees/Data/datagotchi/CleanData-Lifestyle.rds")
+Data <- read.csv("_SharedFolder_catalogue-donnees/Data/datagotchi/CleanData-Lifestyle2.csv")
 
 # 0.3 - Cleaning ####
 
@@ -10,7 +10,7 @@ Data <- readRDS("_SharedFolder_catalogue-donnees/Data/datagotchi/CleanData-Lifes
 
 # 1 - Manipulations ####
 vars <- names(Data)
-bd <- "pilot1-datagotchi"
+bd <- "pilot2-datagotchi"
 projets <- "datagotchi"
 
 Export <- data.frame(nom = vars,
@@ -41,4 +41,4 @@ for (i in 1:length(vars)){
 }
 
 # Associer le export au nom de la bd pour quand on va les bind ensemble
-Export_pilot1_datagotchi <- Export
+Export_pilot2_datagotchi <- Export
