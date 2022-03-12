@@ -2,15 +2,15 @@
 library(tidyverse)
 
 # 0.2 - Data ####
-Data <- read.csv("_SharedFolder_catalogue-donnees/Data/LUCID/LUCID_ligneBleue_December+31,+2021_14.47.csv")
+Data <- read.csv("_SharedFolder_catalogue-donnees/Data/LUCID/LUCID_ligneBleue_01-11-21.csv")
 
 # 0.3 - Cleaning ####
 
   # Mettre 'ses' comme préfixe aux variables ses
-names(Data)[c(17:27, 89:97)] <- paste0("ses_", names(Data)[c(17:27, 89:97)])
+names(Data)[c(17:26, 42:50)] <- paste0("ses_", names(Data)[c(17:26, 42:50)])
 # 1 - Manipulations ####
 vars <- names(Data)
-bd <- "LUCID2"
+bd <- "LUCID1"
 projets <- toString(c("LUCID", "quorum"))
 
 Export <- data.frame(nom = vars,
@@ -41,4 +41,4 @@ for (i in 1:length(vars)){
 }
 
 # Associer le export au nom de la bd pour quand on va les bind ensemble
-Export_LUCID2 <- Export
+Export_LUCID1 <- Export
