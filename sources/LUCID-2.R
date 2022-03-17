@@ -36,7 +36,7 @@ Export$nVals <- NA
 for (i in 1:length(vars)){
   var <- vars[i]
   unique <- sort(unique(Data[[var]]))
-  Export$unique[i] <- toString(unique)
+  Export$unique[i] <- toString(unique[1:5])
   Export$nVals[i] <- length(unique)
 }
 
