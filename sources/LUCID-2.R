@@ -2,7 +2,7 @@
 library(tidyverse)
 
 # 0.2 - Data ####
-Data <- read.csv("_SharedFolder_catalogue-donnees/Data/these_camille/LUCID_ligneBleue_December+31,+2021_14.47.csv")
+Data <- read.csv("_SharedFolder_catalogue-donnees/Data/LUCID/LUCID_ligneBleue_December-31-2021_14.csv")
 
 # 0.3 - Cleaning ####
 

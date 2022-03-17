@@ -2,16 +2,18 @@
 library(tidyverse)
 
 # 0.2 - Data ####
-Data <- readRDS("_SharedFolder_catalogue-donnees/Data/resultats_electoraux/ResultatsParCirc2021.rds")
+Data <- read.csv("_SharedFolder_catalogue-donnees/Data/GlobalEs/Canada/CES_MERGED_1968-2019_2021-11-16.csv")
 
 # 0.3 - Cleaning ####
 
   # Mettre 'ses' comme préfixe aux variables ses
+names(Data)[c(4:43, 45, 66:73, 94:100, 782:790, 1104)] <- paste0("ses_", names(Data)[c(4:43, 45, 66:73, 94:100, 782:790, 1104)])
+
 
 # 1 - Manipulations ####
 vars <- names(Data)
-bd <- "res2021"
-projets <- "aucun"
+bd <- "CES"
+projets <- "GlobalES"
 
 Export <- data.frame(nom = vars,
                      bd = rep(bd, length(vars)),
@@ -41,4 +43,4 @@ for (i in 1:length(vars)){
 }
 
 # Associer le export au nom de la bd pour quand on va les bind ensemble
-Export_res2021 <- Export
+Export_CES <- Export
