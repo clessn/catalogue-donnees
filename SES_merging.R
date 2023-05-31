@@ -10,8 +10,6 @@ INSPQ <- read.csv("_SharedFolder_catalogue-donnees/Data/sondage_INSPQ/MainlineDa
 
 #### Data Wrangling ####
 
-main <- data.frame(mainID = 1:nrows, sourceID = vec) 
-
 ## rows
 Nrows_df <- data.frame(do.call("rbind", lapply(ls(), function(x) { # Créer un data frame qui indique le nombre d'observations pour chaque jeu de données
   obj = get(x)
@@ -31,16 +29,27 @@ for (i in 1:nrow(Nrows_df)) {
   }
 }
 
-#
-sourceID <- "GlobalES"
-varNameSource <- "female"
-varNameMain <- "ses_female"
+main <- data.frame(mainID = 1:nrows, sourceID = vec) 
 
-sourceID_index <- main[main$sourceID == sourceID, ]$mainID # Fonction pour prendre la variable source et l'ajouter avec le bon nom dans main.
 
-if (varNameMain %in% names(main)) {
+imput_from_source <- function(sourceID, varNameSource, varNameMain) {
+  sourceID_index <-
+    main[main$sourceID == sourceID,]$mainID # Fonction pour prendre la variable source et l'ajouter avec le bon nom dans main.
+  
+  if (varNameMain %in% names(main)) {
+    main[[varNameMain]][sourceID_index] <<-
+      eval(parse(text = sourceID))[[varNameSource]]
+  }
+  else {
+    main[[varNameMain]] <<- NA
+    main[[varNameMain]][sourceID_index] <<-
+      eval(parse(text = sourceID))[[varNameSource]]
+  }
   
 }
+
+imput_from_source("Omnibus", "ses_langFr", "ses_langFr")
+
 
 
 
