@@ -1,0 +1,54 @@
+---
+title: "README merging-souverainete"
+author: "Hubert Cadieux"
+format: html
+editor: visual
+---
+
+## Introduction
+
+Ce document sert de guide technique aux étudiants qui participeront à la fusion de nos différents sondages comportant des questions sur l'indépendance du Québec.
+
+Chaque jeu de données aura son propre **source_id** qui permettra d'identifier le sondage auquel un répondant a participé. Dans chacun de ces sondages, les répondants auront aussi leur propre **resp_id** (respondent id) afin de pouvoir éventuellement accéder à des variables qui n'auront pas été intégrées dans le jeu de données fusionné initial.
+
+
+## Description des sondages
+
+### CES (1965-2021)
+**source_id**: ces1965, ces1968, etc. 
+
+### Pilote 1 de Datagotchi (2021)
+**source_id**: datagotchi_pilot1_2021
+
+### Omnibus (2022)
+**source_id**: omnibus, omnibus_1january, omnibus_2february, etc.
+
+### Pilote 2 de Datagotchi, (2022)
+**source_id**: datagotchi_pilot2_2022
+
+### Sondage sur le nationalisme avec Evelyne Brie (2022)
+**source_id**: sondage_nationalisme_2022
+
+### PES Élections 2022 (2023)
+**source_id**: ?
+
+### Pilote Projet Quorum-MCQ (2023)
+**source_id**: ?
+
+## Variables à fusionner
+
+La liste suivante contient les variables qui seront intégrées dans le jeu de données final lorsque présentes dans les différents sondages. Lorsqu'un jeu de données ne contient pas une variable dans cette liste, la colonne sera remplie de `NA` pour ce jeu de données. Il est important d'uniformiser le nom des variables dans les différents fichiers de nettoyage afin d'assurer la cohérence du jeu de données fusionné.
+
+
+- Pays d'origine
+
+Il est important de parcourir le codebook du jeu de données brut afin d'être sûr de ne pas oublier de variables.
+
+## Écrire le codebook
+
+### Comment coder les variables?
+La section suivante contient la marche à suivre pour nettoyer les différentes variables. Il est préférable de perdre un peu d'information dans une variable (par exemple en groupant certaines catégories ensemble) afin qu'elle puisse fusionner avec les variables d'autres jeux de données.
+
+Si une variable ne peut pas être nettoyée de la même façon que présentée dans cette section, une option peut être de créer une variable alternative qui contient le nom uniformisé de la variable ainsi que le **source_id** du jeu de données. N'hésitez pas à poser des questions au reste de l'équipe pour que le jeu de données soit cohérent.
+
+
