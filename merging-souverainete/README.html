@@ -71,6 +71,7 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
 <p>Ce document sert de guide technique aux étudiants qui participeront à la fusion de nos différents sondages comportant des questions sur l’indépendance du Québec.</p>
 <p>Chaque jeu de données aura son propre <strong>source_id</strong> qui permettra d’identifier le sondage auquel un répondant a participé. Dans chacun de ces sondages, les répondants auront aussi leur propre <strong>resp_id</strong> (respondent id) afin de pouvoir éventuellement accéder à des variables qui n’auront pas été intégrées dans le jeu de données fusionné initial.</p>
+<p>Le lien suivant mène au Google Sheets qui servira à suivre le progrès du projet: <a href="https://docs.google.com/spreadsheets/d/1ZE6u7hilcsm_sRMNnTeZ6LSx83gqP4I4LiGKsscnsqk/edit#gid=1898178739" class="uri">https://docs.google.com/spreadsheets/d/1ZE6u7hilcsm_sRMNnTeZ6LSx83gqP4I4LiGKsscnsqk/edit#gid=1898178739</a></p>
 </section>
 <section id="description-des-sondages" class="level2">
 <h2 class="anchored" data-anchor-id="description-des-sondages">Description des sondages</h2>
@@ -102,9 +103,31 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="pilote-projet-quorum-mcq-2023">Pilote Projet Quorum-MCQ (2023)</h3>
 <p><strong>source_id</strong>: ?</p>
 </section>
+<section id="sondage-conseil-privé-yannick-2014" class="level3">
+<h3 class="anchored" data-anchor-id="sondage-conseil-privé-yannick-2014">Sondage conseil privé Yannick (2014?)</h3>
+<p><strong>source_id</strong>: ?</p>
+</section>
 </section>
 <section id="variables-à-fusionner" class="level2">
 <h2 class="anchored" data-anchor-id="variables-à-fusionner">Variables à fusionner</h2>
+<p>La liste suivante contient les variables “meta” qui permettent d’obtenir des informations par rapport au sondage auquel le répondant a participé.</p>
+<ul>
+<li><strong>source_id</strong> (id du sondage)</li>
+<li><strong>source_resp_id</strong> (id du répondant à l’intérieur du sondage)
+<ul>
+<li>probablement simplement un chiffre de 1 à <code>nrow(data)</code></li>
+</ul></li>
+<li><strong>respondent_id</strong> (id unique du répondant à travers notre jeu de données fusionné)
+<ul>
+<li>concaténation de <strong>source_id</strong> et <strong>source_resp_id</strong>. Cet id permet d’identifier le répondant de façon unique quand on va tout fusionner.</li>
+</ul></li>
+<li><strong>year</strong> (année du sondage)</li>
+<li><strong>month</strong> (mois du sondage)</li>
+<li><strong>country</strong> (pays du sondage)
+<ul>
+<li>un peu inutile puisque ce sera simplement <code>qc</code></li>
+</ul></li>
+</ul>
 <p>La liste suivante contient les variables qui seront intégrées dans le jeu de données final lorsque présentes dans les différents sondages. Lorsqu’un jeu de données ne contient pas une variable dans cette liste, la colonne sera remplie de <code>NA</code> pour ce jeu de données. Il est important d’uniformiser le nom des variables dans les différents fichiers de nettoyage afin d’assurer la cohérence du jeu de données fusionné.</p>
 <ul>
 <li>Pays d’origine</li>
@@ -113,11 +136,26 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="écrire-le-codebook" class="level2">
 <h2 class="anchored" data-anchor-id="écrire-le-codebook">Écrire le codebook</h2>
+<p>Dans le Google Sheets à la feuille <code>recherche-souverainete_codebook</code>,</p>
 <section id="comment-coder-les-variables" class="level3">
 <h3 class="anchored" data-anchor-id="comment-coder-les-variables">Comment coder les variables?</h3>
 <p>La section suivante contient la marche à suivre pour nettoyer les différentes variables. Il est préférable de perdre un peu d’information dans une variable (par exemple en groupant certaines catégories ensemble) afin qu’elle puisse fusionner avec les variables d’autres jeux de données.</p>
 <p>Si une variable ne peut pas être nettoyée de la même façon que présentée dans cette section, une option peut être de créer une variable alternative qui contient le nom uniformisé de la variable ainsi que le <strong>source_id</strong> du jeu de données. N’hésitez pas à poser des questions au reste de l’équipe pour que le jeu de données soit cohérent.</p>
 </section>
+</section>
+<section id="procédure-de-base" class="level2">
+<h2 class="anchored" data-anchor-id="procédure-de-base">PROCÉDURE DE BASE</h2>
+<ol type="1">
+<li>Fouiller dans le codebook du sondage.</li>
+</ol>
+<ul>
+<li>La première étape sera de fouiller attentivement le codebook du sondage qui vous est assigné pour être surs de trouver toutes les variables qui nous intéressent.</li>
+</ul>
+<ol start="2" type="1">
+<li>Créer le fichier de cleaning <em>des variables qui nous intéressent</em> de votre sondage au bon endroit.</li>
+<li><strong><em>SI VOUS NETTOYEZ UNE VARIABLE QUI A DÉJÀ ÉTÉ NETTOYÉE</em></strong>:</li>
+<li><strong><em>SI VOUS NETTOYEZ UNE VARIABLE QUI N’A PAS ENCORE ÉTÉ NETTOYÉE</em></strong>: allez voir dans <strong>les autres codebooks</strong> comment la nettoyer de façon à être bien fusionnée avec les autres. S’il est impossible de nettoyer</li>
+</ol>
 </section>
 
 </main>
