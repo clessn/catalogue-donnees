@@ -17,14 +17,37 @@ Mis à jour le `r format(Sys.Date(), '%d %B %Y')`
 
 ## Médias
 
-## Citoyens
-
 ## Décideurs
 
-### Jeux de données 1
+## Citoyens
 
--   Question 1
-    -   Choix de réponse 1
+### Datagotchi 2021 Fédérales
+
+-   **À quel genre vous identifiez-vous ?**
+
+    -   Femme
+    - Homme
+    - Autre
+
+        	
+        		
+        		
+        	
+        	
+        		
+
+        			
+        				
+        					
+
+        Femme\
+
+        				
+        			
+        		
+
+        	
+
     -   Choix de réponse 2
 
 # Méthodes
