@@ -1,17 +1,5 @@
 library(rvest)
 options(HTTPUserAgent = "Mozilla/5.0")
-# Naviguer vers la page et lire son contenu
-page_content <- read_html("https://www.poltext.org/fr/plateformes-aux-elections-canadiennes")
-
-# Extraire les liens des documents (ajustez le selecteur CSS si nécessaire)
-doc_links <- page_content %>% html_nodes("div.view-grouping > div > div > div > span > a") %>% html_attr("href")
-
-for (link in doc_links) {
-  # Créer un nom de fichier basé sur l'URL ou une autre logique
-  file_name <- basename(link)
-  download.file(link, file_name, mode = "wb")
-}
-
 
 ####tentative de tout scraper####
 
@@ -104,9 +92,9 @@ scrape_and_download("https://www.poltext.org/fr/rapports-dintervention-du-protec
 scrape_and_download("https://www.poltext.org/fr/rapports-dintervention-du-protecteur-du-citoyen", ".node-6403 > div > div > div > p > a", paste0(base_folder, "/rapports_protecteur_citoyen/intervention"))
 scrape_and_download("https://www.poltext.org/fr/rapports-dintervention-du-protecteur-du-citoyen", ".node-6404 > div > div > div > p > a", paste0(base_folder, "/rapports_protecteur_citoyen/intervention"))
 scrape_and_download_nodes("https://www.poltext.org/fr/rapports-speciaux-du-protecteur-du-citoyen", paste0(base_folder, "/rapports_protecteur_citoyen/speciaux"))
-### Les trois ici sont problématiques ### scrape_and_download("https://www.poltext.org/fr/textes/lettres-de-mandat", ".node-6449 > div > div > div > ul > li > a", paste0(base_folder, "/lettres_mandat"))
-### Les trois ici sont problématiques ### scrape_and_download("https://www.poltext.org/fr/textes/lettres-de-mandat", ".node-6450 > div > div > div > ul > li > a", paste0(base_folder, "/lettres_mandat"))
-### Les trois ici sont problématiques ### scrape_and_download("https://www.poltext.org/fr/textes/lettres-de-mandat", ".node-6451 > div > div > div > ul > li > a", paste0(base_folder, "/lettres_mandat"))
+scrape_and_download("https://www.poltext.org/fr/textes/lettres-de-mandat", ".node-6449 > ul > li > a", paste0(base_folder, "/lettres_mandat"))
+scrape_and_download("https://www.poltext.org/fr/textes/lettres-de-mandat", ".node-6450 > div > div > div > ul > li > a", paste0(base_folder, "/lettres_mandat"))
+scrape_and_download("https://www.poltext.org/fr/textes/lettres-de-mandat", ".node-6451 > div > div > div > ul > li > a", paste0(base_folder, "/lettres_mandat"))
 scrape_and_download("https://www.poltext.org/fr/textes/sondages-et-opinion-publique/rapports-annuels-sur-la-recherche-sur-lopinion-publique", ".field-item > ul > li > a", paste0(base_folder, "/sondages/rapports_annuels"))
 
 

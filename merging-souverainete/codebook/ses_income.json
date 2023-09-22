@@ -1,0 +1,40 @@
+{
+    "description": "Revenu du répondant",
+    "source_id": {
+      "ces65": {
+        "class": "factor",
+        "question_label": "R'S FAMILY INCOME",
+        "raw_variable": "V336",
+        "choices": [
+          {
+            "value": "1",
+            "label": "under $1,000"
+          },
+          {
+            "value": "2",
+            "label": "$1,000-$1,999"
+          },
+          {
+            "value": "3",
+            "label": "$2,000-$2,999"
+          },
+          
+        ]
+      },
+      "CES68": {
+        "class": "factor",
+        "question_label": "Un tite madame ou un ti monsieur?",
+        "choices": [
+          {
+            "value": "Homme"
+          },
+          {
+            "value": "Femme"
+          },
+          {
+            "value": "Autre"
+          }
+        ]
+      }
+    }
+  }
