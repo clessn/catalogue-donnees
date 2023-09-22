@@ -1,10 +1,25 @@
 {
-  "description": "Variables SES",
+  "description": "Variables SES Gender",
   "source_id": {
     "ces65": {
       "class": "factor",
       "question_label": "R'S SEX",
       "raw_variable": "V337",
+      "choices": [
+        {
+          "value": 1,
+          "label": "male"
+        },
+        {
+          "value": 2,
+          "label": "female"
+        }
+      ]
+    },
+    "ces68": {
+      "class": "factor",
+      "question_label": "Fill in remainder without asking: Sex of respondent",
+      "raw_variable": "var401",
       "choices": [
         {
           "value": 1,
@@ -236,6 +251,196 @@
         {
           "value": 3,
           "label": "Other (e.g. Trans, non-binary, two-spirit, gender-queer)"
+        }
+      ]
+    },
+    "ces2021": {
+      "class": "factor",
+      "question_label": "Are you...?",
+      "raw_variable": "cps21_genderid",
+      "choices": [
+        {
+          "value": 1,
+          "label": "A man"
+        },
+        {
+          "value": 2,
+          "label": "A woman"
+        },
+        {
+          "value": 3,
+          "label": "Non-binary"
+        },
+        {
+          "value": 4,
+          "label": "Another gender, please specify"
+        }
+      ]
+    },
+    "datagotchi_pilot1_2021": {
+      "class": "factor",
+      "question_label": "Quel est votre genre?",
+      "raw_variable": "SEXE",
+      "choices": [
+        {
+          "value": 1,
+          "label": "Un homme"
+        },
+        {
+          "value": 2,
+          "label": "Une femme"
+        },
+        {
+          "value": 3,
+          "label": "Je m'identifie autrement"
+        }
+      ]
+    },
+    "datagotchi_pilot2_2022": {
+      "class": "factor",
+      "question_label": "Quel est votre genre?",
+      "raw_variable": "gender",
+      "choices": [
+        {
+          "value": 1,
+          "label": "Homme"
+        },
+        {
+          "value": 2,
+          "label": "Femme"
+        },
+        {
+          "value": 3,
+          "label": "Homme trans"
+        },
+        {
+          "value": 4,
+          "label": "Femme trans"
+        },
+        {
+          "value": 5,
+          "label": "Non-binaire"
+        },
+        {
+          "value": 6,
+          "label": "Queer"
+        },
+        {
+          "value": 7,
+          "label": "Agenre"
+        },
+        {
+          "value": 8,
+          "label": "Préfère ne pas répondre"
+        }
+      ]
+    },
+    "omnibus_1january": {
+      "class": "factor",
+      "question_label": "SEXE)  Vous êtes...",
+      "raw_variable": "SEXE",
+      "choices": [
+        {
+          "value": 1,
+          "label": "Un homme"
+        },
+        {
+          "value": 2,
+          "label": "Une femme"
+        }
+      ]
+    },
+    "omnibus_2february": {
+      "class": "factor",
+      "question_label": "SEXE)  Vous êtes...",
+      "raw_variable": "SEXE",
+      "choices": [
+        {
+          "value": 1,
+          "label": "Un homme"
+        },
+        {
+          "value": 2,
+          "label": "Une femme"
+        }
+      ]
+    },
+    "omnibus_3march": {
+      "class": "factor",
+      "question_label": "SEXE)  Vous êtes...",
+      "raw_variable": "SEXE",
+      "choices": [
+        {
+          "value": 1,
+          "label": "Un homme"
+        },
+        {
+          "value": 2,
+          "label": "Une femme"
+        }
+      ]
+    },
+    "omnibus_4april": {
+      "class": "factor",
+      "question_label": "SEXE)  Vous êtes...",
+      "raw_variable": "SEXE",
+      "choices": [
+        {
+          "value": 1,
+          "label": "Un homme"
+        },
+        {
+          "value": 2,
+          "label": "Une femme"
+        }
+      ]
+    },
+    "omnibus_5may": {
+      "class": "factor",
+      "question_label": "SEXE)  Vous êtes...",
+      "raw_variable": "SEXE",
+      "choices": [
+        {
+          "value": 1,
+          "label": "Un homme"
+        },
+        {
+          "value": 2,
+          "label": "Une femme"
+        }
+      ]
+    },
+    "omnibus_6june": {
+      "class": "factor",
+      "question_label": "SEXE)  Vous êtes...",
+      "raw_variable": "SEXE",
+      "choices": [
+        {
+          "value": 1,
+          "label": "Un homme"
+        },
+        {
+          "value": 2,
+          "label": "Une femme"
+        }
+      ]
+    },
+    "sondage_nationalisme_2022": {
+      "class": "factor",
+      "question_label": "What is your gender?",
+      "raw_variable": "SEXE",
+      "choices": [
+        {
+          "value": 1,
+          "label": "Man"
+        },
+        {
+          "value": 2,
+          "label": "Woman"
+        },
+        {
+          "value": 3,
+          "label": "I identify in a different way"
         }
       ]
     }
