@@ -88,6 +88,28 @@
           "label": "Fortement en faveur que le Québec devienne un pays"
         }
       ]
+    },
+    "omnibus_january": {
+      "class": "numeric",
+      "question_label": "Quelle est votre position sur le statut politique du Québec?",
+      "choices": [
+        {
+          "value": 0,
+          "label": "Fortement en faveur que le Québec reste à l'intérieur du Canada"
+        },
+        {
+          "value": 0.33,
+          "label": "Modérément en faveur que le Québec reste à l'intérieur du Canada"
+        },
+        {
+          "value": 0.67,
+          "label": "Modérément en faveur que le Québec devienne un pays"
+        },
+        {
+          "value": 1,
+          "label": "Fortement en faveur que le Québec devienne un pays"
+        }
+      ]
     }
   }
 }

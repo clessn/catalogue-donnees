@@ -1,0 +1,95 @@
+{
+  "description": "Variables SES",
+  "source_id": {
+    "ces65": {
+      "class": "factor",
+      "question_label": "R'S SEX",
+      "raw_variable": "V337",
+      "choices": [
+        {
+          "value": 1,
+          "label": "male"
+        },
+        {
+          "value": 2,
+          "label": "female"
+        }
+      ]
+    },
+    "ces74": {
+      "class": "factor",
+      "question_label": "RESPONDENT SEX",
+      "raw_variable": "V480",
+      "choices": [
+        {
+          "value": 1,
+          "label": "male"
+        },
+        {
+          "value": 2,
+          "label": "female"
+        }
+      ]
+    },
+    "ces79": {
+      "class": "factor",
+      "question_label": "RESPONDENT SEX",
+      "raw_variable": "V479",
+      "choices": [
+        {
+          "value": 1,
+          "label": "male"
+        },
+        {
+          "value": 2,
+          "label": "female"
+        }
+      ]
+    },
+    "ces84": {
+      "class": "factor",
+      "question_label": "R'S SEX",
+      "raw_variable": "V456",
+      "choices": [
+        {
+          "value": 1,
+          "label": "male"
+        },
+        {
+          "value": 2,
+          "label": "female"
+        }
+      ]
+    },
+    "ces88": {
+      "class": "factor",
+      "question_label": "What is your sex?",
+      "raw_variable": "rsex",
+      "choices": [
+        {
+          "value": 1,
+          "label": "male"
+        },
+        {
+          "value": 2,
+          "label": "female"
+        }
+      ]
+    },
+    "ces93": {
+      "class": "factor",
+      "question_label": "What is your sex?",
+      "raw_variable": "rsex",
+      "choices": [
+        {
+          "value": 1,
+          "label": "male"
+        },
+        {
+          "value": 2,
+          "label": "female"
+        }
+      ]
+    }
+  }
+}
