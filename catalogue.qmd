@@ -1,0 +1,55 @@
+---
+title: "Catalogue de données"
+format: pdf
+editor: visual
+toc: true
+toc-depth: 3
+toc-title: "Table des matières"
+---
+
+```{r setup, include=FALSE}
+Sys.setlocale("LC_TIME", "fr_FR.UTF-8")
+```
+
+Mis à jour le `r format(Sys.Date(), '%d %B %Y')`
+
+# Jeux de données
+
+## Médias
+
+## Décideurs
+
+## Citoyens
+
+### Datagotchi 2021 Fédérales
+
+-   **À quel genre vous identifiez-vous ?**
+
+    -   Femme
+    - Homme
+    - Autre
+
+        	
+        		
+        		
+        	
+        	
+        		
+
+        			
+        				
+        					
+
+        Femme\
+
+        				
+        			
+        		
+
+        	
+
+    -   Choix de réponse 2
+
+# Méthodes
+
+# Analyses
