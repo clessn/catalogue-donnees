@@ -1,0 +1,35 @@
+{
+    "description": "",
+    "source_id": {
+        "ces65": {
+            "class": "",
+            "question_label": "",
+            "raw_variable": "",
+            "choices": [
+              {
+                "value": "",
+                "label": ""
+              },
+              {
+                "value": "",
+                "label": ""
+              }
+            ]
+          },
+          "ces68": {
+            "class": "",
+            "question_label": "",
+            "raw_variable": "",
+            "choices": [
+              {
+                "value": "",
+                "label": ""
+              },
+              {
+                "value": "",
+                "label": ""
+              }
+            ]
+          }
+    }
+}
