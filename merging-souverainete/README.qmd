@@ -49,6 +49,8 @@ Le lien suivant mène au Google Sheets qui servira à suivre le progrès du proj
 
 ## Variables à fusionner
 
+*Toujours mettre la catégorie de la variable comme préfixe avec un `.` entre les deux: `meta.source_id`, `ses.riding`, `ses.qc_region`, `vote.rci_QS`, etc.
+
 La liste suivante contient les variables "meta" qui permettent d'obtenir des informations par rapport au sondage auquel le répondant a participé.
 
 -   **source_id** (id du sondage)
@@ -69,7 +71,32 @@ Il est important de parcourir le codebook du jeu de données brut afin d'être s
 
 ## Écrire le codebook
 
-Dans le Google Sheets à la feuille `recherche-souverainete_codebook`,
+Dans le Google Sheets à la feuille `recherche-souverainete_codebook`, vous pouvez noter comment vous codez la variable. Vous pouvez la noter dans un format liste comme suit:
+
+```
+{
+"class": "numeric",
+"question_label": "Quelle est votre position sur le statut politique du Québec?",
+"choices": [
+        {
+        "value": 0,
+        "label": "Fortement en faveur que le Québec reste à l'intérieur du Canada"
+      },
+        {
+        "value": 0.33,
+        "label": "Modérément en faveur que le Québec reste à l'intérieur du Canada"
+      },
+      {
+        "value": 0.67,
+        "label": "Modérément en faveur que le Québec devienne un pays"
+      },
+      {
+        "value": 1,
+        "label": "Fortement en faveur que le Québec devienne un pays"
+      }
+]
+}
+```
 
 ### Comment coder les variables?
 
@@ -84,5 +111,5 @@ Si une variable ne peut pas être nettoyée de la même façon que présentée d
 -   La première étape sera de fouiller attentivement le codebook du sondage qui vous est assigné pour être surs de trouver toutes les variables qui nous intéressent.
 
 2.  Créer le fichier de cleaning *des variables qui nous intéressent* de votre sondage au bon endroit.
-3.  ***SI VOUS NETTOYEZ UNE VARIABLE QUI A DÉJÀ ÉTÉ NETTOYÉE***:
-4.  ***SI VOUS NETTOYEZ UNE VARIABLE QUI N'A PAS ENCORE ÉTÉ NETTOYÉE***: allez voir dans **les autres codebooks** comment la nettoyer de façon à être bien fusionnée avec les autres. S'il est impossible de nettoyer
+3.  ***SI VOUS NETTOYEZ UNE VARIABLE QUI A DÉJÀ ÉTÉ NETTOYÉE***: fiez-vous le plus possible à ce qui a déjà été fait pour reproduire les bonnes catégories
+4.  ***SI VOUS NETTOYEZ UNE VARIABLE QUI N'A PAS ENCORE ÉTÉ NETTOYÉE***: allez voir dans **les autres codebooks** comment la nettoyer de façon à être bien fusionnée avec les autres (plus petit dénominateur commun). S'il est impossible de nettoyer
