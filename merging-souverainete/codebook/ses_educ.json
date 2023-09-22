@@ -1,0 +1,219 @@
+{
+    "description": "Niveau d'éducation des répondants",
+    "source_id": {
+      "ces65": {
+        "class": "numeric",
+        "raw_variable" : NA
+        "question_label": NA,
+        "choices": NA
+      },
+
+
+      "ces68": {
+        "class": "numeric",
+        "raw_variable" : "var334"
+        "question_label": "What is the highest grade of school you reached?",
+        "choices": [
+          {
+            "value": 1,
+            "label": "Grade 1"
+          },
+          {
+            "value": 2,
+            "label": "Grade 2"
+          },
+          {
+            "value": 3,
+            "label": "Grade 3"
+          },
+          {
+            "value": 4,
+            "label": "Grade 4"
+          }, 
+          {
+            "value": 5,
+            "label": "Grade 5"
+          }, 
+          {
+            "value": 6,
+            "label": "Grade 6"
+          }, 
+          {
+            "value": 7,
+            "label": "Grade 7"
+          }, 
+          {
+            "value": 8,
+            "label": "Grade 8"
+          }, 
+          {
+            "value": 9,
+            "label": "Grade 9"
+          }, 
+          {
+            "value": 10,
+            "label": "Grade 10"
+          }, 
+          {
+            "value": 11,
+            "label": "Grade 11"
+          }, 
+          {
+            "value": 12,
+            "label": "Grade 12"
+          },
+          {
+            "value": 13,
+            "label": "Grade 13"
+          }, 
+          {
+            "value": 14,
+            "label": "First year university"
+          }, 
+          {
+            "value": 15,
+            "label": "Second year university"
+          }, 
+          {
+            "value": 16,
+            "label": "Third year university"
+          }, 
+          {
+            "value": 17,
+            "label": "Fourth year university"
+          },
+          {
+            "value": 18,
+            "label": "Five or more years University"
+          }, 
+          {
+            "value": 19,
+            "label": "ma"
+          }, 
+          {
+            "value": 20,
+            "label": "PHD"
+          }, 
+          {
+            "value": 21,
+            "label": "Highschool variation"
+          }, 
+          {
+            "value": 22,
+            "label": "Highschool variation"
+          }, 
+          {
+            "value": 23,
+            "label": "Highschool variation"
+          }, 
+          {
+            "value": 24,
+            "label": "Highschool variation"
+          }, 
+          {
+            "value": 25,
+            "label": "University variation"
+          }, 
+          {
+            "value": 26,
+            "label": "University variation"
+          }, {
+            "value": 27,
+            "label": "College"
+          }, 
+          
+        ]
+      },
+      "ces74": {
+        "class": "numeric",
+        "raw_variable": "v414"
+        "question_label": "WHAT IS THE HIGHEST GRADE OR LEVEL OF SCHOOL YOU
+        REACHED?",
+        "choices": [
+          {
+            "value": "1 to 13",
+            "label": "Actual grade"
+          },
+          {
+            "value": 25,
+            "label": "All post secondary"
+          }
+        ]
+      },
+      "ces79": {
+        "class": "numeric",
+        "raw_variable" : "var334"
+        "question_label": "WHAT WAS THE HIGHEST GRADE OR LEVEL OF SCHOOL YOU
+        REACHED?",
+        "choices": [
+          {
+            "value": 1,
+            "label": "Grade 1"
+          },
+          {
+            "value": 2,
+            "label": "Grade 2"
+          },
+          {
+            "value": 3,
+            "label": "Grade 3"
+          },
+          {
+            "value": 4,
+            "label": "Grade 4"
+          }, 
+          {
+            "value": 5,
+            "label": "Grade 5"
+          }, 
+          {
+            "value": 6,
+            "label": "Grade 6"
+          }, 
+          {
+            "value": 7,
+            "label": "Grade 7"
+          }, 
+          {
+            "value": 8,
+            "label": "Grade 8"
+          }, 
+          {
+            "value": 9,
+            "label": "Grade 9"
+          }, 
+          {
+            "value": 10,
+            "label": "Grade 10"
+          }, 
+          {
+            "value": 11,
+            "label": "Grade 11"
+          }, 
+          {
+            "value": 12,
+            "label": "Grade 12"
+          },
+          {
+            "value": 13,
+            "label": "Grade 13"
+          }, 
+          {
+            "value": 21,
+            "label": "COMMUNITY COLLEGE OR SIMILAR POST SECONDARY"
+          }, 
+          {
+            "value": 22,
+            "label": "UNIVERSITY (ALL LEVELS)"
+          }, 
+          {
+            "value": 23,
+            "label": "ALL OTHER POST SECONDARY"
+          }, 
+          {
+            "value": 24,
+            "label": "POST GRADUATE, PROFESSIONAL SCHOOLS, ETC."
+          },
+        ]
+      },
+  
