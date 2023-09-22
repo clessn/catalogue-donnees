@@ -1,0 +1,35 @@
+{
+  "description": "Variables SES",
+  "source_id": {
+    "CES65": {
+      "class": "factor",
+      "question_label": "Un ti-gars ou une tite-fille?",
+      "choices": [
+        {
+          "value": "Homme"
+        },
+        {
+          "value": "Femme"
+        },
+        {
+          "value": "Autre"
+        }
+      ]
+    },
+    "CES68": {
+      "class": "factor",
+      "question_label": "Un tite madame ou un ti monsieur?",
+      "choices": [
+        {
+          "value": "Homme"
+        },
+        {
+          "value": "Femme"
+        },
+        {
+          "value": "Autre"
+        }
+      ]
+    }
+  }
+}

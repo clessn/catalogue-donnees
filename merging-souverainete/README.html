@@ -110,6 +110,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="variables-à-fusionner" class="level2">
 <h2 class="anchored" data-anchor-id="variables-à-fusionner">Variables à fusionner</h2>
+<p>*Toujours mettre la catégorie de la variable comme préfixe avec un <code>.</code> entre les deux: <code>meta.source_id</code>, <code>ses.riding</code>, <code>ses.qc_region</code>, <code>vote.rci_QS</code>, etc.</p>
 <p>La liste suivante contient les variables “meta” qui permettent d’obtenir des informations par rapport au sondage auquel le répondant a participé.</p>
 <ul>
 <li><strong>source_id</strong> (id du sondage)</li>
@@ -136,7 +137,29 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="écrire-le-codebook" class="level2">
 <h2 class="anchored" data-anchor-id="écrire-le-codebook">Écrire le codebook</h2>
-<p>Dans le Google Sheets à la feuille <code>recherche-souverainete_codebook</code>,</p>
+<p>Dans le Google Sheets à la feuille <code>recherche-souverainete_codebook</code>, vous pouvez noter comment vous codez la variable. Vous pouvez la noter dans un format liste comme suit:</p>
+<pre><code>{
+"class": "numeric",
+"question_label": "Quelle est votre position sur le statut politique du Québec?",
+"choices": [
+        {
+        "value": 0,
+        "label": "Fortement en faveur que le Québec reste à l'intérieur du Canada"
+      },
+        {
+        "value": 0.33,
+        "label": "Modérément en faveur que le Québec reste à l'intérieur du Canada"
+      },
+      {
+        "value": 0.67,
+        "label": "Modérément en faveur que le Québec devienne un pays"
+      },
+      {
+        "value": 1,
+        "label": "Fortement en faveur que le Québec devienne un pays"
+      }
+]
+}</code></pre>
 <section id="comment-coder-les-variables" class="level3">
 <h3 class="anchored" data-anchor-id="comment-coder-les-variables">Comment coder les variables?</h3>
 <p>La section suivante contient la marche à suivre pour nettoyer les différentes variables. Il est préférable de perdre un peu d’information dans une variable (par exemple en groupant certaines catégories ensemble) afin qu’elle puisse fusionner avec les variables d’autres jeux de données.</p>
