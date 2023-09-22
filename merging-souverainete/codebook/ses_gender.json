@@ -1,0 +1,243 @@
+{
+  "description": "Variables SES",
+  "source_id": {
+    "ces65": {
+      "class": "factor",
+      "question_label": "R'S SEX",
+      "raw_variable": "V337",
+      "choices": [
+        {
+          "value": 1,
+          "label": "male"
+        },
+        {
+          "value": 2,
+          "label": "female"
+        }
+      ]
+    },
+    "ces74": {
+      "class": "factor",
+      "question_label": "RESPONDENT SEX",
+      "raw_variable": "V480",
+      "choices": [
+        {
+          "value": 1,
+          "label": "male"
+        },
+        {
+          "value": 2,
+          "label": "female"
+        }
+      ]
+    },
+    "ces79": {
+      "class": "factor",
+      "question_label": "RESPONDENT SEX",
+      "raw_variable": "V479",
+      "choices": [
+        {
+          "value": 1,
+          "label": "male"
+        },
+        {
+          "value": 2,
+          "label": "female"
+        }
+      ]
+    },
+    "ces84": {
+      "class": "factor",
+      "question_label": "R'S SEX",
+      "raw_variable": "V456",
+      "choices": [
+        {
+          "value": 1,
+          "label": "male"
+        },
+        {
+          "value": 2,
+          "label": "female"
+        }
+      ]
+    },
+    "ces88": {
+      "class": "factor",
+      "question_label": "What is your sex?",
+      "raw_variable": "rsex",
+      "choices": [
+        {
+          "value": 1,
+          "label": "male"
+        },
+        {
+          "value": 2,
+          "label": "female"
+        }
+      ]
+    },
+    "ces93": {
+      "class": "factor",
+      "question_label": "Enter respondent's gender please",
+      "raw_variable": "pesigen",
+      "choices": [
+        {
+          "value": 1,
+          "label": "male"
+        },
+        {
+          "value": 5,
+          "label": "female"
+        },
+        {
+          "value": 8,
+          "label": "Don't know"
+        }
+      ]
+    },
+    "ces97": {
+      "class": "factor",
+      "question_label": "Enter respondent's gender please",
+      "raw_variable": "cpsigen",
+      "choices": [
+        {
+          "value": 1,
+          "label": "male"
+        },
+        {
+          "value": 5,
+          "label": "female"
+        }
+      ]
+    },
+    "ces2000": {
+      "class": "factor",
+      "question_label": "Respondent's gender.",
+      "raw_variable": "cpsigen",
+      "choices": [
+        {
+          "value": 1,
+          "label": "male"
+        },
+        {
+          "value": 5,
+          "label": "female"
+        }
+      ]
+    },
+    "ces2004": {
+      "class": "factor",
+      "question_label": "Enter respondent's gender please",
+      "raw_variable": "gender",
+      "choices": [
+        {
+          "value": 1,
+          "label": "male"
+        },
+        {
+          "value": 5,
+          "label": "female"
+        },
+        {
+          "value": "d",
+          "label": "don't know"
+        }
+      ]
+    },
+    "ces2006": {
+      "class": "factor",
+      "question_label": "Enter respondent's gender please",
+      "raw_variable": "cps_rgen",
+      "choices": [
+        {
+          "value": 1,
+          "label": "male"
+        },
+        {
+          "value": 5,
+          "label": "female"
+        },
+        {
+          "value": "d",
+          "label": "don't know"
+        }
+      ]
+    },
+    "ces2008": {
+      "class": "factor",
+      "question_label": "Enter respondent's gender please",
+      "raw_variable": "RGENDER",
+      "choices": [
+        {
+          "value": 1,
+          "label": "male"
+        },
+        {
+          "value": 5,
+          "label": "female"
+        },
+        {
+          "value": "d",
+          "label": "don't know"
+        }
+      ]
+    },
+    "ces2011": {
+      "class": "factor",
+      "question_label": "Enter respondent's gender please",
+      "raw_variable": "RGENDER",
+      "choices": [
+        {
+          "value": 1,
+          "label": "male"
+        },
+        {
+          "value": 5,
+          "label": "female"
+        },
+        {
+          "value": "d",
+          "label": "don't know"
+        }
+      ]
+    },
+    "ces2015": {
+      "class": "factor",
+      "question_label": "Are you?",
+      "raw_variable": "sex_r",
+      "choices": [
+        {
+          "value": 1,
+          "label": "male"
+        },
+        {
+          "value": 2,
+          "label": "female"
+        },
+        {
+          "value": 3,
+          "label": "Refuse to Answer"
+        }
+      ]
+    },
+    "ces2019": {
+      "class": "factor",
+      "question_label": "Are you?",
+      "raw_variable": "cps19_gender",
+      "choices": [
+        {
+          "value": 1,
+          "label": "A man"
+        },
+        {
+          "value": 2,
+          "label": "A woman"
+        },
+        {
+          "value": 3,
+          "label": "Other (e.g. Trans, non-binary, two-spirit, gender-queer)"
+        }
+      ]
+    }
+  }
+}
