@@ -259,7 +259,7 @@
             }
           ]
         },
-        "ces84": {
+        "ces88": {
           "class": "ordered factor",
           "question_label": "What is the highest level of education that you have completed?",
           "raw_variable": "n3",
@@ -307,60 +307,9 @@
             {
               "value": 11,
               "label": "Professional degree or doctorate"
-            },
+            }
           ] 
       },
-      "ces93": {
-        "class": "ordered factor",
-        "question_label": "What is the highest level of education that you have completed?",
-        "raw_variable": "n3",
-        "choices": [
-          {
-            "value": 1,
-            "label": "No Schooling"
-          },
-          {
-            "value": 2,
-            "label": "Some elementary school"
-          }, 
-          {
-            "value": 3,
-            "label": "Completed elementary school"
-          },
-          {
-            "value": 4,
-            "label": "Some secondary / high school"
-          },
-          {
-            "value": 5,
-            "label": "Completed secondary / high school"
-          },
-          {
-            "value": 6,
-            "label": "Some technical, community college, CEGEP, College Classique"
-          },
-          {
-            "value": 7,
-            "label": "Completed technical, community college, CEGEP,College Classique"
-          },
-          {
-            "value": 8,
-            "label": "Some university"
-          },
-          {
-            "value": 9,
-            "label": "Bachelor's Degree"
-          },
-          {
-            "value": 10,
-            "label": "Master's degree"
-          },
-          {
-            "value": 11,
-            "label": "Professional degree or doctorate"
-          },
-        ] 
-  },
   "ces93": {
     "class": "ordered factor",
     "question_label": "What is the highest level of education that you have completed?",
@@ -409,7 +358,7 @@
       {
         "value": 11,
         "label": "Professional degree or doctorate"
-      },
+      }
     ] 
 },
 "ces97": {
@@ -460,7 +409,7 @@
     {
       "value": 11,
       "label": "Professional degree or doctorate"
-    },
+    }
     ] 
   },
   "ces00": {
@@ -511,7 +460,7 @@
       {
         "value": 11,
         "label": "Professional degree or doctorate"
-      },
+      }
     ] 
 },
 "ces04": {
@@ -562,7 +511,7 @@
     {
       "value": 11,
       "label": "Professional degree or doctorate"
-    },
+    }
   ] 
 },
 "ces06": {
@@ -613,7 +562,7 @@
     {
       "value": 11,
       "label": "Professional degree or doctorate"
-    },
+    }
   ] 
 },
 "ces08": {
@@ -664,7 +613,7 @@
     {
       "value": 11,
       "label": "Professional degree or doctorate"
-    },
+    }
   ] 
 },
 "ces11": {
@@ -715,7 +664,7 @@
     {
       "value": 11,
       "label": "Professional degree or doctorate"
-    },
+    }
   ] 
 }, 
 "ces15": {
@@ -766,7 +715,7 @@
     {
       "value": 11,
       "label": "Professional degree or doctorate"
-    },
+    }
   ] 
 }, 
 "ces19": {
@@ -817,7 +766,7 @@
     {
       "value": 11,
       "label": "Professional degree or doctorate"
-    },
+    }
   ] 
 }, 
 "ces21": {
@@ -868,7 +817,7 @@
     {
       "value": 11,
       "label": "Professional degree or doctorate"
-    },
+    }
   ] 
 }, 
 
