@@ -1,0 +1,31 @@
+{
+    "description": "Âge du répondant",
+    "source_id": {
+        "ces65": {
+            "class": "numeric",
+            "question_label": "R'S AGE",
+            "raw_variable": "v335",
+            "choices": [
+              {
+                "value": "1-99",
+                "label": "age of the respondent"
+              }
+            ]
+          },
+          "ces68": {
+            "class": "",
+            "question_label": "",
+            "raw_variable": "",
+            "choices": [
+              {
+                "value": "",
+                "label": ""
+              },
+              {
+                "value": "",
+                "label": ""
+              }
+            ]
+          }
+    }
+}
