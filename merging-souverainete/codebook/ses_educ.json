@@ -1104,7 +1104,58 @@
           "label": "Doctorate"
         }
       ]
-    }
+    },
+    "pco" : {
+      "class": "ordered factor",
+      "question_label": "What is the highest level of education that you have completed?",
+      "raw_variable": "Q9.1",
+      "choices": [
+        {
+         "value": 1,
+          "label": "No schooling" 
+        }, 
+        {
+         "value": 2,
+          "label": "Some elementary school" 
+        },
+        {
+         "value": 3,
+          "label": "Completed elementary school" 
+        },
+        {
+         "value": 4,
+          "label": "Some secondary / high school" 
+        },
+        {
+         "value": 5,
+          "label": "Completed secondary / high school" 
+        },
+        {
+         "value": 6,
+          "label": "Some technical, community college, CEGEP, College classique" 
+        },
+        {
+         "value": 7,
+          "label": "Completed technical, community college, CEGEP, college classique" 
+        },
+        {
+         "value": 8,
+          "label": "Some university" 
+        },
+        {
+         "value": 9,
+          "label": "Bachelor's degree" 
+        },
+        {
+         "value": 10,
+          "label": "Master's degree" 
+        },
+        {
+         "value": 11,
+          "label": "Professional degree or doctorate" 
+        }
+      ]
+    }  
   }
 }  
 
