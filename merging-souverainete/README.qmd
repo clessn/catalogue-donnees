@@ -37,11 +37,11 @@ Le lien suivant mène au Google Sheets qui servira à suivre le progrès du proj
 
 ### PES Élections 2022 (2023)
 
-**source_id**: ?
+**source_id**: pes_elxn_2022
 
 ### Pilote Projet Quorum-MCQ (2023)
 
-**source_id**: ?
+**source_id**: quorum_mcq_pilote
 
 ### Sondage conseil privé Yannick (2014?)
 
