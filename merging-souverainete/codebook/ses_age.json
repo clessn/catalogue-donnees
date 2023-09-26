@@ -67,5 +67,116 @@
               }     
             ]
           },
+          "ces93": {
+            "class": "numeric",
+            "question_label": "Year of birth",
+            "raw_variable": "cpsage",
+            "choices": [
+              {
+                "value": "1897-1975",
+                "label": "year of birth"
+              }     
+            ]
+          },
+          "ces97": {
+            "class": "numeric",
+            "question_label": "Year of birth",
+            "raw_variable": "cpsage",
+            "choices": [
+              {
+                "value": "1896-1979",
+                "label": "year of birth"
+              }     
+            ]
+          },
+          "ces2000": {
+            "class": "numeric",
+            "question_label": "Year of birth",
+            "raw_variable": "cpsage",
+            "choices": [
+              {
+                "value": "1902-1982",
+                "label": "year of birth"
+              }     
+            ]
+          },
+          "ces2004": {
+            "class": "numeric",
+            "question_label": "Year of birth",
+            "raw_variable": "cps_s1",
+            "choices": [
+              {
+                "value": "1900-1986",
+                "label": "year of birth"
+              }     
+            ]
+          },
+          "ces2006": {
+            "class": "numeric",
+            "question_label": "Year of birth",
+            "raw_variable": "cps_s1",
+            "choices": [
+              {
+                "value": "1900-1986",
+                "label": "year of birth"
+              }     
+            ]
+          },
+          "ces2008": {
+            "class": "numeric",
+            "question_label": "Year of birth",
+            "raw_variable": "cps_s1",
+            "choices": [
+              {
+                "value": "1900-1990",
+                "label": "year of birth"
+              }     
+            ]
+          },
+          "ces2011": {
+            "class": "numeric",
+            "question_label": "Year of birth",
+            "raw_variable": "CPS11_78",
+            "choices": [
+              {
+                "value": "1900-1993",
+                "label": "year of birth"
+              }     
+            ]
+          },
+          "ces2015": {
+            "class": "numeric",
+            "question_label": "Year of birth",
+            "raw_variable": "age",
+            "choices": [
+              {
+                "value": "1900-1997",
+                "label": "year of birth"
+              }     
+            ]
+          },
+          "ces2019": {
+            "class": "numeric",
+            "question_label": "Year of birth",
+            "raw_variable": "cps19_yob",
+            "choices": [
+              {
+                "value": "1920-2001",
+                "label": "year of birth"
+              }     
+            ]
+          },
+          "ces2021": {
+            "class": "numeric",
+            "question_label": "Year of birth",
+            "raw_variable": "cps21_yob_2",
+            "choices": [
+              {
+                "value": "1924-2003",
+                "label": "year of birth"
+              }     
+            ]
+          }
+
     }
 }
