@@ -13,19 +13,59 @@
             ]
           },
           "ces68": {
-            "class": "",
-            "question_label": "",
-            "raw_variable": "",
+            "class": "numeric",
+            "question_label": "R'S AGE",
+            "raw_variable": "age",
             "choices": [
               {
-                "value": "",
-                "label": ""
-              },
-              {
-                "value": "",
-                "label": ""
-              }
+                "value": "1-99",
+                "label": "age of the respondent"
+              }     
             ]
-          }
+          },
+          "ces74": {
+            "class": "numeric",
+            "question_label": "R'S AGE",
+            "raw_variable": "v478",
+            "choices": [
+              {
+                "value": "1-99",
+                "label": "age of the respondent"
+              }     
+            ]
+          },
+          "ces79": {
+            "class": "numeric",
+            "question_label": "R'S AGE",
+            "raw_variable": "v1535",
+            "choices": [
+              {
+                "value": "1-99",
+                "label": "age of the respondent"
+              }     
+            ]
+          },
+          "ces84": {
+            "class": "numeric",
+            "question_label": "R'S AGE",
+            "raw_variable": "var437",
+            "choices": [
+              {
+                "value": "1-99",
+                "label": "age of the respondent"
+              }     
+            ]
+          },
+          "ces88": {
+            "class": "numeric",
+            "question_label": "Year of birth",
+            "raw_variable": "n1",
+            "choices": [
+              {
+                "value": "1889-1988",
+                "label": "year of birth"
+              }     
+            ]
+          },
     }
 }
