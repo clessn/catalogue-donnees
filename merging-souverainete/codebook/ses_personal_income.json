@@ -87,6 +87,42 @@
             "raw_variable" : "NA",
             "question_label": "NA",
             "choices": "NA"
+          },
+          "ces97": {
+            "class": "numeric",
+            "raw_variable" : "NA",
+            "question_label": "NA",
+            "choices": "NA"
+          },
+          "ces00": {
+            "class": "numeric",
+            "raw_variable" : "NA",
+            "question_label": "NA",
+            "choices": "NA"
+          },
+          "ces04": {
+            "class": "numeric",
+            "raw_variable" : "NA",
+            "question_label": "NA",
+            "choices": "NA"
+          },
+          "ces06": {
+            "class": "numeric",
+            "raw_variable" : "NA",
+            "question_label": "NA",
+            "choices": "NA"
+          },
+          "ces08": {
+            "class": "numeric",
+            "raw_variable" : "NA",
+            "question_label": "NA",
+            "choices": "NA"
+          },
+          "ces11": {
+            "class": "numeric",
+            "raw_variable" : "NA",
+            "question_label": "NA",
+            "choices": "NA"
           }
     }
 }

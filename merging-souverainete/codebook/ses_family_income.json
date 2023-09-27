@@ -55,7 +55,7 @@
       "ces68": {
         "class": "factor ordered",
         "question_label": "Into which of the followinq groups did the total income for your family fall 125% year (before taxes)?",
-        "raw_name": "incom2",
+        "raw_variable": "incom2",
         "choices": [
           {
             "value": "1",
@@ -106,7 +106,7 @@
       "ces74": {
         "class": "factor ordered",
         "question_label": "IN WHICH OF THESE GROUPS DOES THE APPROXIMATE INCOME OF THE FAMILY FALL--THAT IS, THE INCOME OR EARNINGS OF ALL THE FAMILY MEMBERS LIVING HERE ADDED TOGETHER?",
-        "raw_name": "v479",
+        "raw_variable": "v479",
         "choices": [
           {
             "value": "1",
@@ -145,7 +145,7 @@
       "ces79": {
         "class": "factor ordered",
         "question_label": "IN WHICH OF THESE GROUPS DOES THE APPROXIMATE INCOME OF THE FAMILY FALL--THAT IS, THE INCOME OR EARNINGS OF ALL THE FAMILY MEMBERS LIVING HERE ADDED TOGETHER?",
-        "raw_name": "v1516",
+        "raw_variable": "v1516",
         "choices": [
           {
             "value": "1",
@@ -184,7 +184,7 @@
       "ces84": {
         "class": "factor ordered",
         "question_label": "In which of these letter groups did the total income of the family in 1983 fall--that is, the income of all the family members living here, added together, from all sources and before taxes?",
-        "raw_name": "var442 et var443 (à merger)",
+        "raw_variable": "var442 et var443 (à merger)",
         "choices": [
           {
             "value": "nothing",
@@ -235,7 +235,7 @@
       "ces88": {
         "class": "factor ordered",
         "question_label": "How much income did you and other members of your family living with you receive IN TOTAL, before deductions, in the last 12 months, not just from wages but from all sources, including pensions, unemployment insurance, interest from savings, and rental income. We don't need the exact figure, just a broad category. Was it",
-        "raw_name": "n19",
+        "raw_variable": "n19",
         "choices": [
           {
             "value": "<$10,000",
@@ -278,7 +278,7 @@
       "ces93": {
         "class": "factor ordered",
         "question_label": "Could you please tell me your total household income, be sure to include income FROM ALL SOURCES such as savings, pensions, rent, as well as wages, TO THE NEAREST THOUSAND DOLLARS, what was your TOTAL HOUSEHOLD INCOME before taxes and other deductions for 1992?",
-        "raw_name": "cpso18 et cpso18a. cpso18 est une variable numérique qui présente l'income en milliers de $. Si le répondant ne savait pas, il répond à cpso18a.",
+        "raw_variable": "cpso18 et cpso18a. cpso18 est une variable numérique qui présente l'income en milliers de $. Si le répondant ne savait pas, il répond à cpso18a qui est codée comme ça:",
         "choices": [
           {
             "value": "<$20,000",
@@ -321,6 +321,276 @@
             "label": "more than $100,000"
           }
         ]        
+      },
+      "ces97": {
+        "class": "factor ordered",
+        "question_label": "Could you please tell me your total household income, be sure to include income FROM ALL SOURCES such as savings, pensions, rent, as well as wages, TO THE NEAREST THOUSAND DOLLARS, what was your TOTAL HOUSEHOLD INCOME before taxes and other deductions for 1996?",
+        "raw_variable": "cpsm16 et cpsm16a. cpsm16 est une variable numérique qui présente l'income en milliers de $. Si le répondant ne savait pas, il répond à cpsm16a qui est codée comme ça:",
+        "choices": [
+          {
+            "value": "<$20,000",
+            "label": "less than $20,000"
+          },
+          {
+            "value": "$20,000-$29,999.99",
+            "label": "between $20,000 and $30,000 ($29,999.99)"
+          },
+          {
+            "value": "$30,000-$40,000",
+            "label": "between $30,000 and $40,000"
+          },
+          {
+            "value": "$40,000-$50,000",
+            "label": "between $40,000 and $50,000"
+          },
+          {
+            "value": "$50,000-$60,000",
+            "label": "between $50,000 and $60,000"
+          },
+          {
+            "value": "$60,000-$70,000",
+            "label": "between $60,000 and $70,000"
+          },
+          {
+            "value": "$70,000-$80,000",
+            "label": "between $70,000 and $80,000"
+          },
+          {
+            "value": "$80,000-$90,000",
+            "label": "between $80,000 and $90,000"
+          },
+          {
+            "value": "$90,000-$100,000",
+            "label": "between $90,000 and $100,000"
+          },
+          {
+            "value": ">$100,000",
+            "label": "more than $100,000"
+          }
+        ]        
+      },
+      "ces00": {
+        "class": "factor ordered",
+        "question_label": "Could you please tell me your total household income, be sure to include income FROM ALL SOURCES such as savings, pensions, rent, as well as wages, TO THE NEAREST THOUSAND DOLLARS, what was your TOTAL HOUSEHOLD INCOME before taxes and other deductions for 1999?",
+        "raw_variable": "cpsm16 et cpsm16a. cpsm16 est une variable numérique qui présente l'income en milliers de $. Si le répondant ne savait pas, il répond à cpsm16a qui est codée comme ça:",
+        "choices": [
+          {
+            "value": "<$20,000",
+            "label": "less than $20,000"
+          },
+          {
+            "value": "$20,000-$29,999.99",
+            "label": "between $20,000 and $30,000 ($29,999.99)"
+          },
+          {
+            "value": "$30,000-$40,000",
+            "label": "between $30,000 and $40,000"
+          },
+          {
+            "value": "$40,000-$50,000",
+            "label": "between $40,000 and $50,000"
+          },
+          {
+            "value": "$50,000-$60,000",
+            "label": "between $50,000 and $60,000"
+          },
+          {
+            "value": "$60,000-$70,000",
+            "label": "between $60,000 and $70,000"
+          },
+          {
+            "value": "$70,000-$80,000",
+            "label": "between $70,000 and $80,000"
+          },
+          {
+            "value": "$80,000-$90,000",
+            "label": "between $80,000 and $90,000"
+          },
+          {
+            "value": "$90,000-$100,000",
+            "label": "between $90,000 and $100,000"
+          },
+          {
+            "value": ">$100,000",
+            "label": "more than $100,000"
+          }
+        ]        
+      },
+      "ces04": {
+        "class": "factor ordered",
+        "question_label": "And now your last year's total household income before taxes. That includes income FROM ALL SOURCES such as savings, pensions,rent, as well as wages. Was it",
+        "raw_variable": "ces04_cps_s18",
+        "choices": [
+          {
+            "value": "less than $20,000",
+            "label": "less than $20,000"
+          },
+          {
+            "value": "$20,000-$29,999.99",
+            "label": "between $20,000 and $30,000 ($29,999.99)"
+          },
+          {
+            "value": "$30,000-$40,000",
+            "label": "between $30,000 and $40,000"
+          },
+          {
+            "value": "$40,000-$50,000",
+            "label": "between $40,000 and $50,000"
+          },
+          {
+            "value": "$50,000-$60,000",
+            "label": "between $50,000 and $60,000"
+          },
+          {
+            "value": "$60,000-$70,000",
+            "label": "between $60,000 and $70,000"
+          },
+          {
+            "value": "$70,000-$80,000",
+            "label": "between $70,000 and $80,000"
+          },
+          {
+            "value": "$80,000-$90,000",
+            "label": "between $80,000 and $90,000"
+          },
+          {
+            "value": "$90,000-$100,000",
+            "label": "between $90,000 and $100,000"
+          },
+          {
+            "value": "more than $100,000",
+            "label": "more than $100,000"
+          }
+        ]        
+      },
+      "ces06": {
+        "class": "factor ordered",
+        "question_label": "And now your total household income before taxes for 2005. That includes income FROM ALL SOURCES such as savings, pensions,rent, as well as wages. Was it",
+        "raw_variable": "cps_s18",
+        "choices": [
+          {
+            "value": "1",
+            "label": "less than $20,000"
+          },
+          {
+            "value": "2",
+            "label": "between $20,000 and $30,000 ($29,999.99)"
+          },
+          {
+            "value": "3",
+            "label": "between $30,000 and $40,000"
+          },
+          {
+            "value": "4",
+            "label": "between $40,000 and $50,000"
+          },
+          {
+            "value": "5",
+            "label": "between $50,000 and $60,000"
+          },
+          {
+            "value": "6",
+            "label": "between $60,000 and $70,000"
+          },
+          {
+            "value": "7",
+            "label": "between $70,000 and $80,000"
+          },
+          {
+            "value": "8",
+            "label": "between $80,000 and $90,000"
+          },
+          {
+            "value": "9",
+            "label": "between $90,000 and $100,000"
+          },
+          {
+            "value": "10",
+            "label": "more than $100,000"
+          }
+        ]          
+      },
+      "ces08": {
+        "class": "factor ordered",
+        "question_label": "Could you please tell me your total household income before taxes for the year ending December 31, 2007? Be sure to include income FROM ALL SOURCES such as savings, pensions, rent, as well as wages, TO THE NEAREST THOUSAND DOLLARS, what was your TOTAL HOUSEHOLD INCOME?",
+        "raw_variable": "cps_s18a et cps_s18b. cps_s18a est une variable numérique qui présente l'income en milliers de $ (Les 998 et 999 sont des NA). Si le répondant ne savait pas, il répond à cps_s18b qui est codée comme ça:",
+        "choices": [
+          {
+            "value": 1,
+            "label": "less than $20,000"
+          },
+          {
+            "value": 2,
+            "label": "between $20,000 and $30,000 ($29,999.99)"
+          },
+          {
+            "value": 3,
+            "label": "between $30,000 and $40,000"
+          },
+          {
+            "value": 4,
+            "label": "between $40,000 and $50,000"
+          },
+          {
+            "value": 5,
+            "label": "between $50,000 and $60,000"
+          },
+          {
+            "value": 6,
+            "label": "between $60,000 and $70,000"
+          },
+          {
+            "value": 7,
+            "label": "between $70,000 and $80,000"
+          },
+          {
+            "value": 8,
+            "label": "between $80,000 and $90,000"
+          },
+          {
+            "value": 9,
+            "label": "between $90,000 and $100,000"
+          },
+          {
+            "value": 10,
+            "label": "between $100,000 and $110,000"
+          },
+          {
+            "value": 11,
+            "label": "between $110,000 and $120,000"
+          },
+          {
+            "value": 12,
+            "label": "more than $120,000"
+          }
+        ]                  
+      },
+      "ces11": {
+        "class": "factor ordered",
+        "question_label": "Could you please tell me your total household income before taxes for the year 2010? Be sure to include income FROM ALL SOURCES TO THE NEAREST THOUSAND DOLLARS. What was your TOTAL HOUSEHOLD INCOME?",
+        "raw_variable": "CPS11_92 et CPS11_93. CPS11_92 est une variable numérique qui présente l'income en milliers de $ (Les 998 et 999 sont des NA). Si le répondant ne savait pas, il répond à CPS11_93 qui est codée comme ça:",
+        "choices": [
+          {
+            "value": "less than $29,999",
+            "label": "less than $30,000"
+          },
+          {
+            "value": "between $30,000 and $60,000",
+            "label": "between $30,000 and $60,000"
+          },
+          {
+            "value": "between $60,000 and $90,000",
+            "label": "between $60,000 and $90,000"
+          },
+          {
+            "value": "between $90,000 and $110,000",
+            "label": "between $90,000 and $110,000"
+          },
+          {
+            "value": "more than $110,000",
+            "label": "more than $110,000"
+          }
+        ]                 
       }
 
     }

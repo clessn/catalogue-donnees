@@ -100,7 +100,7 @@ server <- function(input, output, session) {
         ui_elements[[length(ui_elements) + 1]] <- HTML(paste("<h3>", id,
                                                              "</h3><h4>", source_data$question_label,
                                                              "</h4><h5>Class: ", source_data$class,
-                                                             "</h5><h5>Raw variable name: ", source_data$raw_name, "</h5>"))
+                                                             "</h5><h5>Raw variable name: ", source_data$raw_variable, "</h5>"))
         
         # Create a table for choices
         choices_df <- as.data.frame(source_data$choices)
