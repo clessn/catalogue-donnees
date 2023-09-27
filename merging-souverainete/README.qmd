@@ -25,7 +25,7 @@ Le lien suivant mène au Google Sheets qui servira à suivre le progrès du proj
 
 ### Omnibus (2022)
 
-**source_id**: omnibus, omnibus_1january, omnibus_2february, etc.
+**source_id**: omnibus, omnibus_january, omnibus_february, etc.
 
 ### Pilote 2 de Datagotchi, (2022)
 
@@ -45,11 +45,11 @@ Le lien suivant mène au Google Sheets qui servira à suivre le progrès du proj
 
 ### Sondage conseil privé Yannick (2014?)
 
-**source_id**: ?
+**source_id**: pco
 
 ## Variables à fusionner
 
-*Toujours mettre la catégorie de la variable comme préfixe avec un `.` entre les deux: `meta.source_id`, `ses.riding`, `ses.qc_region`, `vote.rci_QS`, etc.
+\*Toujours mettre la catégorie de la variable comme préfixe avec un `.` entre les deux: `meta.source_id`, `ses.riding`, `ses.qc_region`, `vote.rci_QS`, etc.
 
 La liste suivante contient les variables "meta" qui permettent d'obtenir des informations par rapport au sondage auquel le répondant a participé.
 
@@ -73,7 +73,7 @@ Il est important de parcourir le codebook du jeu de données brut afin d'être s
 
 Dans le Google Sheets à la feuille `recherche-souverainete_codebook`, vous pouvez noter comment vous codez la variable. Vous pouvez la noter dans un format liste comme suit:
 
-```
+```         
 {
 "class": "numeric",
 "question_label": "Quelle est votre position sur le statut politique du Québec?",

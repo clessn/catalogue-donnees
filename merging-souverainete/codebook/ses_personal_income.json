@@ -123,6 +123,30 @@
             "raw_variable" : "NA",
             "question_label": "NA",
             "choices": "NA"
+          },
+          "ces15": {
+            "class": "numeric",
+            "raw_variable" : "NA",
+            "question_label": "NA",
+            "choices": "NA"
+          },
+          "ces19": {
+            "class": "numeric",
+            "raw_variable" : "NA",
+            "question_label": "NA",
+            "choices": "NA"
+          },
+          "ces21": {
+            "class": "numeric",
+            "raw_variable" : "NA",
+            "question_label": "NA",
+            "choices": "NA"
+          },
+          "datagotchi_pilo1_2021": {
+            "class": "numeric",
+            "raw_variable" : "NA",
+            "question_label": "NA",
+            "choices": "NA"
           }
     }
 }
