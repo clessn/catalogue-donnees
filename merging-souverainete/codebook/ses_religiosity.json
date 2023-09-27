@@ -1,0 +1,101 @@
+{
+    "description": "Niveau de religiosité",
+    "source_id": {
+        "ces65": {
+            "class": "Ordered factor",
+            "question_label": "R'S CHURCH ATTENDANCE",
+            "raw_variable": "V310",
+            "choices": [
+              {
+                "value": 0,
+                "label": "Inapplicable"
+              },
+              {
+                "value": 1,
+                "label": "at least weekly"
+              },
+              {
+                "value": 2,
+                "label": "2-3 times weekly"
+              }, 
+              {
+                "value": 3,
+                "label": "once a month"
+              }, 
+              {
+                "value": 4,
+                "label": "a few times a year"
+              }, 
+              {
+                "value": 5,
+                "label": "never"
+              }
+            ]
+          },
+          "ces68": {
+            "class": "Ordered factor",
+            "question_label": "About how often do you go to church .(synagogue)?",
+            "raw_variable": "var341",
+            "choices": [
+                {
+                "value": 1,
+                "label": "at least weekly"
+                },
+                {
+                "value": 2,
+                "label": "2-3 times monthly"
+                },
+                {
+                "value": 3,
+                "label": "once a month"
+                },
+                {
+                "value": 4,
+                "label": "a few times a year or less"
+                },
+                {
+                "value": 3,
+                "label": "Never"
+                },
+            ]
+          },
+        "ces74": {
+            "class": "Ordered factor",
+            "question_label": "DO YOU CONSIDER YOURSELF A VERY RELIGIOUS PERSON, A FAIRLY RELIGIOUS PERSON, OR A NOT VERY RELIGIOUS PERSON?",
+            "raw_variable": "VAR 1508",
+            "choices": [  
+                {
+                "value": 1,
+                "label": "Very religious"
+                },
+                {
+                "value": 2,
+                "label": "Fairly religious"
+                },
+                {
+                "value": 3,
+                "label": "Not very religious"
+                }
+            ]
+        },
+        "ces79": {
+            "class": "Ordered factor",
+            "question_label": "DO YOU CONSIDER YOURSELF A VERY RELIGIOUS PERSON, A FAIRLY RELIGIOUS PERSON, OR A NOT VERY RELIGIOUS PERSON?",
+            "raw_variable": "VAR 1508",
+            "choices": [  
+                {
+                "value": 1,
+                "label": "Very religious"
+                },
+                {
+                "value": 2,
+                "label": "Fairly religious"
+                },
+                {
+                "value": 3,
+                "label": "Not very religious"
+                }
+            ]
+        }
+    }
+}
