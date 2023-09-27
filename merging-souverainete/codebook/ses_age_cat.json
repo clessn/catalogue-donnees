@@ -1,33 +1,279 @@
 {
-    "description": "",
+    "description": "Âge du répondant en catégories",
     "source_id": {
-        "ces65": {
-            "class": "",
-            "question_label": "",
-            "raw_variable": "",
+        "datagotchi_pilot1_2021": {
+            "class": "numeric",
+            "question_label": "R'S AGE GROUP",
+            "raw_variable": "AGE",
             "choices": [
               {
-                "value": "",
-                "label": ""
+                "value": "1",
+                "label": "18-24"
               },
               {
-                "value": "",
-                "label": ""
+                "value": "2",
+                "label": "25-34"
+              },
+              {
+                "value": "3",
+                "label": "35-44"
+              },
+              {
+                "value": "4",
+                "label": "45-54"
+              },
+              {
+                "value": "5",
+                "label": "55-64"
+              },
+              {
+                "value": "6",
+                "label": "65+"
               }
             ]
           },
-          "ces68": {
-            "class": "",
-            "question_label": "",
-            "raw_variable": "",
+          "datagotchi_pilot2_2022": {
+            "class": "numeric",
+            "question_label": "Quel est votre groupe d'âge ?",
+            "raw_variable": "QuotasAge",
             "choices": [
               {
-                "value": "",
-                "label": ""
+                "value": "1",
+                "label": "Moins de 18 ans"
               },
               {
-                "value": "",
-                "label": ""
+                "value": "2",
+                "label": "18-24"
+              },
+              {
+                "value": "3",
+                "label": "25-34"
+              },
+              {
+                "value": "4",
+                "label": "35-44"
+              },
+              {
+                "value": "5",
+                "label": "45-54"
+              },
+              {
+                "value": "6",
+                "label": "55-64"
+              },
+              {
+                "value": "7",
+                "label": "65+"
+              }
+            ]
+          },
+          "omnibus_janvier": {
+            "class": "numeric",
+            "question_label": "À quel groupe d'âge appartenez-vous?",
+            "raw_variable": "AGE",
+            "choices": [
+              {
+                "value": "2",
+                "label": "18-24"
+              },
+              {
+                "value": "3",
+                "label": "25-34"
+              },
+              {
+                "value": "4",
+                "label": "35-44"
+              },
+              {
+                "value": "5",
+                "label": "45-54"
+              },
+              {
+                "value": "6",
+                "label": "55-64"
+              },
+              {
+                "value": "7",
+                "label": "65-74"
+              },
+              {
+                "value": "8",
+                "label": "75+"
+              }
+            ]
+          },
+          "omnibus_fevrier": {
+            "class": "numeric",
+            "question_label": "À quel groupe d'âge appartenez-vous?",
+            "raw_variable": "AGE",
+            "choices": [
+              {
+                "value": "2",
+                "label": "18-24"
+              },
+              {
+                "value": "3",
+                "label": "25-34"
+              },
+              {
+                "value": "4",
+                "label": "35-44"
+              },
+              {
+                "value": "5",
+                "label": "45-54"
+              },
+              {
+                "value": "6",
+                "label": "55-64"
+              },
+              {
+                "value": "7",
+                "label": "65-74"
+              },
+              {
+                "value": "8",
+                "label": "75+"
+              }
+            ]
+          },
+          "omnibus_mars": {
+            "class": "numeric",
+            "question_label": "À quel groupe d'âge appartenez-vous?",
+            "raw_variable": "AGE",
+            "choices": [
+              {
+                "value": "2",
+                "label": "18-24"
+              },
+              {
+                "value": "3",
+                "label": "25-34"
+              },
+              {
+                "value": "4",
+                "label": "35-44"
+              },
+              {
+                "value": "5",
+                "label": "45-54"
+              },
+              {
+                "value": "6",
+                "label": "55-64"
+              },
+              {
+                "value": "7",
+                "label": "65-74"
+              },
+              {
+                "value": "8",
+                "label": "75+"
+              }
+            ]
+          },
+          "omnibus_avril": {
+            "class": "numeric",
+            "question_label": "À quel groupe d'âge appartenez-vous?",
+            "raw_variable": "AGE",
+            "choices": [
+              {
+                "value": "2",
+                "label": "18-24"
+              },
+              {
+                "value": "3",
+                "label": "25-34"
+              },
+              {
+                "value": "4",
+                "label": "35-44"
+              },
+              {
+                "value": "5",
+                "label": "45-54"
+              },
+              {
+                "value": "6",
+                "label": "55-64"
+              },
+              {
+                "value": "7",
+                "label": "65-74"
+              },
+              {
+                "value": "8",
+                "label": "75+"
+              }
+            ]
+          },
+          "omnibus_mai": {
+            "class": "numeric",
+            "question_label": "À quel groupe d'âge appartenez-vous?",
+            "raw_variable": "AGE",
+            "choices": [
+              {
+                "value": "2",
+                "label": "18-24"
+              },
+              {
+                "value": "3",
+                "label": "25-34"
+              },
+              {
+                "value": "4",
+                "label": "35-44"
+              },
+              {
+                "value": "5",
+                "label": "45-54"
+              },
+              {
+                "value": "6",
+                "label": "55-64"
+              },
+              {
+                "value": "7",
+                "label": "65-74"
+              },
+              {
+                "value": "8",
+                "label": "75+"
+              }
+            ]
+          },
+          "omnibus_juin": {
+            "class": "numeric",
+            "question_label": "À quel groupe d'âge appartenez-vous?",
+            "raw_variable": "AGE",
+            "choices": [
+              {
+                "value": "2",
+                "label": "18-24"
+              },
+              {
+                "value": "3",
+                "label": "25-34"
+              },
+              {
+                "value": "4",
+                "label": "35-44"
+              },
+              {
+                "value": "5",
+                "label": "45-54"
+              },
+              {
+                "value": "6",
+                "label": "55-64"
+              },
+              {
+                "value": "7",
+                "label": "65-74"
+              },
+              {
+                "value": "8",
+                "label": "75+"
               }
             ]
           }
