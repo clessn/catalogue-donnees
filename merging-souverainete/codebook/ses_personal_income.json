@@ -1,35 +1,128 @@
 {
     "description": "",
     "source_id": {
-        "ces65": {
+      "ces65": {
+        "class": "numeric",
+        "raw_variable" : "NA",
+        "question_label": "NA",
+        "choices": "NA"
+      },
+      "ces68": {
+        "class": "numeric",
+        "raw_variable" : "NA",
+        "question_label": "NA",
+        "choices": "NA"
+      },
+      "ces74": {
+        "class": "numeric",
+        "raw_variable" : "NA",
+        "question_label": "NA",
+        "choices": "NA"
+      },
+      "ces79": {
+        "class": "numeric",
+        "raw_variable" : "NA",
+        "question_label": "NA",
+        "choices": "NA"
+      },    
+        "ces84": {
             "class": "",
-            "question_label": "",
-            "raw_variable": "",
+            "question_label": " In which of these letter groups did YOUR total PERSONAL income in 1983 fall, before taxes?",
+            "raw_variable": "var439",
             "choices": [
               {
-                "value": "",
-                "label": ""
+                "value": "nothing",
+                "label": "Nothing"
               },
               {
-                "value": "",
-                "label": ""
+                "value": "Under $5000",
+                "label": "Under $5000"
+              },
+              {
+                "value": "$5000 - $9999",
+                "label": "$5000 - $9999"
+              },
+              {
+                "value": "$10000 - $14999",
+                "label": "$10000 - $14999"
+              },
+              {
+                "value": "$15000 - $19000",
+                "label": "$15000 - $19000"
+              },
+              {
+                "value": "$20000 - $24999",
+                "label": "$20000 - $24999"
+              },
+              {
+                "value": "$25000 - $29999",
+                "label": "$25000 - $29999"
+              },
+              {
+                "value": "$30000 - $39999",
+                "label": "$30000 - $39999"
+              },
+              {
+                "value": "$40000 - $49999",
+                "label": "$40000 - $49999"
+              },
+              {
+                "value": "$50000 - $99999",
+                "label": "$50000 - $99999"
+              },
+              {
+                "value": "$100000 and Over",
+                "label": "$100000 and Over"
               }
             ]
           },
-          "ces68": {
-            "class": "",
-            "question_label": "",
-            "raw_variable": "",
-            "choices": [
-              {
-                "value": "",
-                "label": ""
-              },
-              {
-                "value": "",
-                "label": ""
-              }
-            ]
+          "ces88": {
+            "class": "numeric",
+            "raw_variable" : "NA",
+            "question_label": "NA",
+            "choices": "NA"
+          },
+          "ces93": {
+            "class": "numeric",
+            "raw_variable" : "NA",
+            "question_label": "NA",
+            "choices": "NA"
+          },
+          "ces97": {
+            "class": "numeric",
+            "raw_variable" : "NA",
+            "question_label": "NA",
+            "choices": "NA"
+          },
+          "ces00": {
+            "class": "numeric",
+            "raw_variable" : "NA",
+            "question_label": "NA",
+            "choices": "NA"
+          },
+          "ces04": {
+            "class": "numeric",
+            "raw_variable" : "NA",
+            "question_label": "NA",
+            "choices": "NA"
+          },
+          "ces06": {
+            "class": "numeric",
+            "raw_variable" : "NA",
+            "question_label": "NA",
+            "choices": "NA"
+          },
+          "ces08": {
+            "class": "numeric",
+            "raw_variable" : "NA",
+            "question_label": "NA",
+            "choices": "NA"
+          },
+          "ces11": {
+            "class": "numeric",
+            "raw_variable" : "NA",
+            "question_label": "NA",
+            "choices": "NA"
           }
     }
 }
