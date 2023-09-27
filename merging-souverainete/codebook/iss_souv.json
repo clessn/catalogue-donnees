@@ -218,9 +218,9 @@
           },
           "pco": {
             "class": "numeric",
-            "question_label": NA,
+            "question_label": "NA",
             "raw_variable" : "Conjoint",
-            "choices": NA
+            "choices": "NA"
           }
     }
 }
