@@ -2,7 +2,7 @@
     "description": "Âge du répondant en catégories",
     "source_id": {
         "datagotchi_pilot1_2021": {
-            "class": "numeric",
+            "class": "factor ordered",
             "question_label": "R'S AGE GROUP",
             "raw_variable": "AGE",
             "choices": [
@@ -33,7 +33,7 @@
             ]
           },
           "datagotchi_pilot2_2022": {
-            "class": "numeric",
+            "class": "factor ordered",
             "question_label": "Quel est votre groupe d'âge ?",
             "raw_variable": "QuotasAge",
             "choices": [
@@ -68,7 +68,7 @@
             ]
           },
           "omnibus_janvier": {
-            "class": "numeric",
+            "class": "factor ordered",
             "question_label": "À quel groupe d'âge appartenez-vous?",
             "raw_variable": "AGE",
             "choices": [
@@ -103,7 +103,7 @@
             ]
           },
           "omnibus_fevrier": {
-            "class": "numeric",
+            "class": "factor ordered",
             "question_label": "À quel groupe d'âge appartenez-vous?",
             "raw_variable": "AGE",
             "choices": [
@@ -138,7 +138,7 @@
             ]
           },
           "omnibus_mars": {
-            "class": "numeric",
+            "class": "factor ordered",
             "question_label": "À quel groupe d'âge appartenez-vous?",
             "raw_variable": "AGE",
             "choices": [
@@ -173,7 +173,7 @@
             ]
           },
           "omnibus_avril": {
-            "class": "numeric",
+            "class": "factor ordered",
             "question_label": "À quel groupe d'âge appartenez-vous?",
             "raw_variable": "AGE",
             "choices": [
@@ -208,7 +208,7 @@
             ]
           },
           "omnibus_mai": {
-            "class": "numeric",
+            "class": "factor ordered",
             "question_label": "À quel groupe d'âge appartenez-vous?",
             "raw_variable": "AGE",
             "choices": [
@@ -243,7 +243,7 @@
             ]
           },
           "omnibus_juin": {
-            "class": "numeric",
+            "class": "factor ordered",
             "question_label": "À quel groupe d'âge appartenez-vous?",
             "raw_variable": "AGE",
             "choices": [
