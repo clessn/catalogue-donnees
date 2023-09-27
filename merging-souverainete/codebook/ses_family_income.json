@@ -184,41 +184,143 @@
       "ces84": {
         "class": "factor ordered",
         "question_label": "In which of these letter groups did the total income of the family in 1983 fall--that is, the income of all the family members living here, added together, from all sources and before taxes?",
-        "raw_name": "VAR442 et VAR443 (à merger)",
+        "raw_name": "var442 et var443 (à merger)",
         "choices": [
           {
             "value": "nothing",
             "label": "Nothing"
           },
           {
-            "value": "2",
-            "label": "$3000 - $4999 PER YEAR"
+            "value": "under $5,000",
+            "label": "Under $5000"
           },
           {
-            "value": "3",
-            "label": "$5000 - $7499 PER YEAR"
+            "value": "$5,000 - $9,999",
+            "label": "$5000 - $9999"
           },
           {
-            "value": "4",
-            "label": "$7500 - $9999 PER YEAR"
+            "value": "$10,000 - $14,999",
+            "label": "$10000 - $14999"
           },
           {
-            "value": "5",
-            "label": "$10000 - $14999 PER YEAR"
+            "value": "$15,000 - $19,999",
+            "label": "$15000 - $19999"
           },
           {
-            "value": "6",
-            "label": "$15000 - $16999 PER YEAR"
+            "value": "$20,000 - $24,999",
+            "label": "$20000 - $24999"
           },
           {
-            "value": "7",
-            "label": "$17000 - $19999 PER YEAR"
+            "value": "$25,000 - $29,999",
+            "label": "$25000 - $29999"
           },
           {
-            "value": "8",
-            "label": "$20000 OR MORE PER YEAR"
+            "value": "$30,000 - $39,999",
+            "label": "$30000 - $39999"
+          },
+          {
+            "value": "$40,000 - $49,999",
+            "label": "$40000 - $49999"
+          },
+          {
+            "value": "$50,000 - $99,999",
+            "label": "$50000 - $99999"
+          },
+          {
+            "value": "$100,000 and Over",
+            "label": "$100000 and Over"
           }
         ]
+      },
+      "ces88": {
+        "class": "factor ordered",
+        "question_label": "How much income did you and other members of your family living with you receive IN TOTAL, before deductions, in the last 12 months, not just from wages but from all sources, including pensions, unemployment insurance, interest from savings, and rental income. We don't need the exact figure, just a broad category. Was it",
+        "raw_name": "n19",
+        "choices": [
+          {
+            "value": "<$10,000",
+            "label": "less than $ 10,000"
+          },
+          {
+            "value": "$10,000-$19,000",
+            "label": "between $ 10,000 and $ 19,000"
+          },
+          {
+            "value": "$20,000-$29,000",
+            "label": "between $ 20,000 and $ 29,000"
+          },
+          {
+            "value": "$30,000-$39,000",
+            "label": "between $ 30,000 and $ 39,000"
+          },
+          {
+            "value": "$40,000-$49,000",
+            "label": "between $ 40,000 and $ 49,000"
+          },
+          {
+            "value": "$50,000-$59,000",
+            "label": "between $ 50,000 and $ 59,000"
+          },
+          {
+            "value": "$60,000-$69,000",
+            "label": "between $ 60,000 and $ 69,000"
+          },
+          {
+            "value": "$70,000-$79,000",
+            "label": "between $ 70,000 and $ 79,000"
+          },
+          {
+            "value": "$80,000 or more",
+            "label": "$ 80,000 or more"
+          }
+        ]
+      },
+      "ces93": {
+        "class": "factor ordered",
+        "question_label": "Could you please tell me your total household income, be sure to include income FROM ALL SOURCES such as savings, pensions, rent, as well as wages, TO THE NEAREST THOUSAND DOLLARS, what was your TOTAL HOUSEHOLD INCOME before taxes and other deductions for 1992?",
+        "raw_name": "cpso18 et cpso18a. cpso18 est une variable numérique qui présente l'income en milliers de $. Si le répondant ne savait pas, il répond à cpso18a.",
+        "choices": [
+          {
+            "value": "<$20,000",
+            "label": "less than $20,000"
+          },
+          {
+            "value": "$20,000-$29,999.99",
+            "label": "between $20,000 and $30,000 ($29,999.99)"
+          },
+          {
+            "value": "$30,000-$40,000",
+            "label": "between $30,000 and $40,000"
+          },
+          {
+            "value": "$40,000-$50,000",
+            "label": "between $40,000 and $50,000"
+          },
+          {
+            "value": "$50,000-$60,000",
+            "label": "between $50,000 and $60,000"
+          },
+          {
+            "value": "$60,000-$70,000",
+            "label": "between $60,000 and $70,000"
+          },
+          {
+            "value": "$70,000-$80,000",
+            "label": "between $70,000 and $80,000"
+          },
+          {
+            "value": "$80,000-$90,000",
+            "label": "between $80,000 and $90,000"
+          },
+          {
+            "value": "$90,000-$100,000",
+            "label": "between $90,000 and $100,000"
+          },
+          {
+            "value": ">$100,000",
+            "label": "more than $100,000"
+          }
+        ]        
       }
 
     }
