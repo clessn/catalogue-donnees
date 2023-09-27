@@ -221,6 +221,68 @@
             "question_label": "NA",
             "raw_variable" : "Conjoint",
             "choices": "NA"
+          },
+          "pes_elxn_2022": {
+            "class": "factor ordered",
+            "question_label": "Le Québec devrait devenir un État indépendant.",
+            "raw_variable": "iss_independence",
+            "choices": [
+              {
+                "value": "1",
+                "label": "Fortement en désaccord"
+              },
+              {
+                "value": "2",
+                "label": "Modérément en désaccord"
+              },
+              {
+                "value": "3",
+                "label": "Un peu en désaccord"
+              },
+              {
+                "value": "4",
+                "label": "Ni en accord ni en désaccord"
+              },
+              {
+                "value": "5",
+                "label": "Un peu en accord"
+              },
+              {
+                "value": "6",
+                "label": "Modérément en accord"
+              },
+              {
+                "value": "7",
+                "label": "Fortement en accord"
+              }
+            ]
+          },
+          "quorum_mcq_pilote": {
+            "class": "factor ordered",
+            "question_label": "Le Québec devrait devenir un État indépendant.",
+            "raw_variable": "iss_independence",
+            "choices": [
+              {
+                "value": "1",
+                "label": "Fortement en désaccord"
+              },
+              {
+                "value": "2",
+                "label": "Plutôt en désaccord"
+              },
+              {
+                "value": "3",
+                "label": "Neutre"
+              },
+              {
+                "value": "4",
+                "label": "Plutôt d'accord"
+              },
+              {
+                "value": "5",
+                "label": "Fortement d'accord"
+              }
+            ]
           }
     }
 }
