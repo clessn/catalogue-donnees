@@ -1,0 +1,266 @@
+{
+    "description": "Âge du répondant",
+    "source_id": {
+        "ces65": {
+            "class": "numeric",
+            "question_label": "R'S AGE",
+            "raw_variable": "v335",
+            "choices": [
+              {
+                "value": "1-99",
+                "label": "age of the respondent"
+              }
+            ]
+          },
+          "ces68": {
+            "class": "numeric",
+            "question_label": "R'S AGE",
+            "raw_variable": "age",
+            "choices": [
+              {
+                "value": "1-99",
+                "label": "age of the respondent"
+              }     
+            ]
+          },
+          "ces74": {
+            "class": "numeric",
+            "question_label": "R'S AGE",
+            "raw_variable": "v478",
+            "choices": [
+              {
+                "value": "1-99",
+                "label": "age of the respondent"
+              }     
+            ]
+          },
+          "ces79": {
+            "class": "numeric",
+            "question_label": "R'S AGE",
+            "raw_variable": "v1535",
+            "choices": [
+              {
+                "value": "1-99",
+                "label": "age of the respondent"
+              }     
+            ]
+          },
+          "ces84": {
+            "class": "numeric",
+            "question_label": "R'S AGE",
+            "raw_variable": "var437",
+            "choices": [
+              {
+                "value": "1-99",
+                "label": "age of the respondent"
+              }     
+            ]
+          },
+          "ces88": {
+            "class": "numeric",
+            "question_label": "Year of birth",
+            "raw_variable": "n1",
+            "choices": [
+              {
+                "value": "1889-1988",
+                "label": "year of birth"
+              }     
+            ]
+          },
+          "ces93": {
+            "class": "numeric",
+            "question_label": "Year of birth",
+            "raw_variable": "cpsage",
+            "choices": [
+              {
+                "value": "1897-1975",
+                "label": "year of birth"
+              }     
+            ]
+          },
+          "ces97": {
+            "class": "numeric",
+            "question_label": "Year of birth",
+            "raw_variable": "cpsage",
+            "choices": [
+              {
+                "value": "1896-1979",
+                "label": "year of birth"
+              }     
+            ]
+          },
+          "ces2000": {
+            "class": "numeric",
+            "question_label": "Year of birth",
+            "raw_variable": "cpsage",
+            "choices": [
+              {
+                "value": "1902-1982",
+                "label": "year of birth"
+              }     
+            ]
+          },
+          "ces2004": {
+            "class": "numeric",
+            "question_label": "Year of birth",
+            "raw_variable": "cps_s1",
+            "choices": [
+              {
+                "value": "1900-1986",
+                "label": "year of birth"
+              }     
+            ]
+          },
+          "ces2006": {
+            "class": "numeric",
+            "question_label": "Year of birth",
+            "raw_variable": "cps_s1",
+            "choices": [
+              {
+                "value": "1900-1986",
+                "label": "year of birth"
+              }     
+            ]
+          },
+          "ces2008": {
+            "class": "numeric",
+            "question_label": "Year of birth",
+            "raw_variable": "cps_s1",
+            "choices": [
+              {
+                "value": "1900-1990",
+                "label": "year of birth"
+              }     
+            ]
+          },
+          "ces2011": {
+            "class": "numeric",
+            "question_label": "Year of birth",
+            "raw_variable": "CPS11_78",
+            "choices": [
+              {
+                "value": "1900-1993",
+                "label": "year of birth"
+              }     
+            ]
+          },
+          "ces2015": {
+            "class": "numeric",
+            "question_label": "Year of birth",
+            "raw_variable": "age",
+            "choices": [
+              {
+                "value": "1900-1997",
+                "label": "year of birth"
+              }     
+            ]
+          },
+          "ces2019": {
+            "class": "numeric",
+            "question_label": "Year of birth",
+            "raw_variable": "cps19_yob",
+            "choices": [
+              {
+                "value": "1920-2001",
+                "label": "year of birth"
+              }     
+            ]
+          },
+          "ces2021": {
+            "class": "numeric",
+            "question_label": "Year of birth",
+            "raw_variable": "cps21_yob_2",
+            "choices": [
+              {
+                "value": "1924-2003",
+                "label": "year of birth"
+              }     
+            ]
+          },
+          "datagotchi_pilot1_2021": {
+            "class": "numeric",
+            "question_label": "R'S AGE",
+            "raw_variable": "QAGE",
+            "choices": [
+              {
+                "value": "1-99",
+                "label": "Quel âge avez-vous?"
+              }     
+            ]
+          },
+          "datagotchi_pilot2_2022": {
+            "class": "numeric",
+            "question_label": "Year of birth",
+            "raw_variable": "age",
+            "choices": [
+              {
+                "value": "1900-2005",
+                "label": "Quelle est votre année de naissance?"
+              }     
+            ]
+          },
+          "omnibus_janvier": {
+            "question_label": "NA"
+          },
+          "omnibus_fevrier": {
+            "question_label": "NA"
+          },
+          "omnibus_mars": {
+            "question_label": "NA"
+          },
+          "omnibus_avril": {
+            "question_label": "NA"
+          },
+          "omnibus_mai": {
+            "question_label": "NA"
+          },
+          "omnibus_juin": {
+            "question_label": "NA"
+          },
+          "pes_elxn_2022": {
+            "class": "numeric",
+            "question_label": "R'S AGE",
+            "raw_variable": "ses_age",
+            "choices": [
+              {
+                "value": "1-99",
+                "label": "Quel âge avez-vous?"
+              }     
+            ]
+          },
+          "quorum_mcq_pilote": {
+            "class": "numeric",
+            "question_label": "R'S AGE in french",
+            "raw_variable": "ses_age",
+            "choices": [
+              {
+                "value": "1-99",
+                "label": "Quel âge avez-vous?"
+              }     
+            ]
+          },
+          "quorum_mcq_pilote_EN": {
+            "class": "numeric",
+            "question_label": "R'S AGE in english",
+            "raw_variable": "EN_ses_age",
+            "choices": [
+              {
+                "value": "1-99",
+                "label": "age of the respondent"
+              }     
+            ]
+          },
+          "sondage_nationalisme_2022": {
+            "class": "numeric",
+            "question_label": "R'S AGE",
+            "raw_variable": "age",
+            "choices": [
+              {
+                "value": "1-99",
+                "label": "How old are you in years?"
+              }     
+            ]
+          }
+
+    }
+}

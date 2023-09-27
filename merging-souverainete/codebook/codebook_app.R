@@ -15,7 +15,7 @@ ui <- fluidPage(
         bottom: 0;
         left: 0;
         z-index: -1;
-        background-image: url('https://scontent-cdg4-2.xx.fbcdn.net/v/t39.30808-6/383012596_272442245615644_8584141306423411014_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5614bc&_nc_ohc=4Oi2Ic8W4jgAX89Q0SG&_nc_ht=scontent-cdg4-2.xx&oh=00_AfBkgflD0DXSh1jHTOyS13qSa0xJywGqHf60me9YxIXC1w&oe=651813F0');
+        background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/74/Drapeau_des_Patriotes_%28avec_Patriote%29.jpg');
         background-size: cover;
         opacity: 1;
       }
@@ -24,7 +24,7 @@ ui <- fluidPage(
       }
     "))
   ),
-  titlePanel("Codebook souveraineté - ON VA L'AVOIR NOTRE PAYS!"),
+  titlePanel("Codebook souveraineté, ON VA L'AVOIR NOTRE PAYS!"),
   sidebarLayout(
     sidebarPanel(
       selectInput("fileSelect", "Sélectionnez votre variable", "")
@@ -97,10 +97,7 @@ server <- function(input, output, session) {
         source_data <- json_data$source_id[[id]]
         
         # Add source_id as title, question_label as subtitle, and class as subsubtitle
-        ui_elements[[length(ui_elements) + 1]] <- HTML(paste("<h3>", id,
-                                                             "</h3><h4>", source_data$question_label,
-                                                             "</h4><h5>Class: ", source_data$class,
-                                                             "</h5><h5>Raw variable name: ", source_data$raw_variable, "</h5>"))
+        ui_elements[[length(ui_elements) + 1]] <- HTML(paste("<h3>", id, "</h3><h4>", source_data$question_label, "</h4><h5>Class: ", source_data$class, "</h5>"))
         
         # Create a table for choices
         choices_df <- as.data.frame(source_data$choices)

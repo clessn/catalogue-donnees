@@ -1,219 +1,1162 @@
 {
-    "description": "Niveau d'éducation des répondants",
-    "source_id": {
-      "ces65": {
-        "class": "numeric",
-        "raw_variable" : NA
-        "question_label": NA,
-        "choices": NA
-      },
+  "description": "Niveau d'éducation des répondants",
+  "source_id": {
+    "ces65": {
+      "class": "numeric",
+      "raw_variable": "NA",
+      "question_label": "NA",
+      "choices": "NA"
+    },
+    "ces68": {
+      "class": "ordered factor",
+      "raw_variable": "var334",
+      "question_label": "What is the highest grade of school you reached?",
+      "choices": [
+        {
+          "value": 1, 
+          "label": "Grade 1"
+        },
+        {
+          "value": 2, 
+          "label": "Grade 2"
+        },
+        {
+          "value": 3, 
+          "label": "Grade 3"
+        },
+        {
+          "value": 4, 
+          "label": "Grade 4"
+        },
+        {
+          "value": 5, 
+          "label": "Grade 5"
+        },
+        {
+          "value": 6, 
+          "label": "Grade 6"
+        },
+        {
+          "value": 7, 
+          "label": "Grade 7"
+        },
+        {
+          "value": 8, 
+          "label": "Grade 8"
+        },
+        {
+          "value": 9, 
+          "label": "Grade 9"
+        },
+        {
+          "value": 10, 
+          "label": "Grade 10"
+        },
+        {
+          "value": 11, 
+          "label": "Grade 11"
+        },
+        {
+          "value": 12, 
+          "label": "Grade 12"
+        },
+        {
+          "value": 13, 
+          "label": "Grade 13"
+        },
+        {
+          "value": 14, 
+          "label": "First year university"
+        },
+        {
+          "value": 15, 
+          "label": "Second year university"
+        },
+        {
+          "value": 16, 
+          "label": "Third year university"
+        },
+        {
+          "value": 17, 
+          "label": "Fourth year university"
+        },
+        {
+          "value": 18, 
+          "label": "Five or more years University"
+        },
+        {
+          "value": 19, 
+          "label": "ma"
+        },
+        {
+          "value": 20, 
+          "label": "PHD"
+        },
+        {
+          "value": 21, 
+          "label": "Highschool variation"
+        },
+        {
+          "value": 22, 
+          "label": "Highschool variation"
+        },
+        {
+          "value": 23, 
+          "label": "Highschool variation"
+        },
+        {
+          "value": 24, 
+          "label": "Highschool variation"
+        },
+        {
+          "value": 25, 
+          "label": "University variation"
+        },
+        {
+          "value": 26, 
+          "label": "University variation"
+        },
+        {
+          "value": 27, 
+          "label": "College"
+        }
+      ]
+    },
+    "ces74": {
+      "class": "ordered factor",
+      "raw_variable": "v414",
+      "question_label": "WHAT IS THE HIGHEST GRADE OR LEVEL OF SCHOOL YOU REACHED?",
+      "choices": [
+        {
+          "value": "1 to 13", 
+          "label": "Actual grade"
+        },
+        {
+          "value": 25, 
+          "label": "All post secondary"
+        }
+      ]
+    },
+    "ces79": {
+      "class": "ordered factor",
+      "raw_variable": "var334",
+      "question_label": "WHAT WAS THE HIGHEST GRADE OR LEVEL OF SCHOOL YOU REACHED?",
+      "choices": [
+        {
+          "value": 1, 
+          "label": "Grade 1"
+        },
+        {
+          "value": 2, 
+          "label": "Grade 2"
+        },
+        {
+          "value": 3, 
+          "label": "Grade 3"
+        },
+        {
+          "value": 4, 
+          "label": "Grade 4"
+        },
+        {
+          "value": 5, 
+          "label": "Grade 5"
+        },
+        {
+          "value": 6, 
+          "label": "Grade 6"
+        },
+        {
+          "value": 7, 
+          "label": "Grade 7"
+        },
+        {
+          "value": 8, 
+          "label": "Grade 8"
+        },
+        {
+          "value": 9, 
+          "label": "Grade 9"
+        },
+        {
+          "value": 10, 
+          "label": "Grade 10"
+        },
+        {
+          "value": 11, 
+          "label": "Grade 11"
+        },
+        {
+          "value": 12, 
+          "label": "Grade 12"
+        },
+        {
+          "value": 13, 
+          "label": "Grade 13"
+        },
+        {
+          "value": 21, 
+          "label": "COMMUNITY COLLEGE OR SIMILAR POST SECONDARY"
+        },
+        {
+          "value": 22, 
+          "label": "UNIVERSITY (ALL LEVELS)"
+        },
+        {
+          "value": 23, 
+          "label": "ALL OTHER POST SECONDARY"
+        },
+        {
+          "value": 24, 
+          "label": "POST GRADUATE, PROFESSIONAL SCHOOLS, ETC."
+        }
+      ]
+    },
+    "ces84": {
+      "class": "ordered factor",
+      "question_label": "What is the highest grade or level of school you reached?",
+      "raw_variable": "VAR362",
+      "choices": [
+        {
+          "value": 1,
+          "label": "Some Elementary"
+        },
+        {
+          "value": 2,
+          "label": "Graduated Elementary"
+        },
+        {
+          "value": 3,
+          "label": "Some High School"
+        },
+        {
+          "value": 4,
+          "label": "High School Graduate"
+        }, 
+        {
+          "value": 5,
+          "label": "Some Technical"
+        }, 
+        {
+          "value": 6,
+          "label": "Graduated Technical"
+        }, 
+        {
+          "value": 7,
+          "label": "Some University"
+        }, 
+        {
+          "value": 8,
+          "label": "Graduated University"
+        }, 
+        {
+          "value": 9,
+          "label": "No Formal School"
+        }, 
+        {
+          "value": 0,
+          "label": "Refused/Don't Know"
+        }
+      ]  
+    },
+    "ces88": {
+      "class": "ordered factor",
+      "question_label": "What is the highest level of education that you have completed?",
+      "raw_variable": "n3",
+      "choices": [
+        {
+          "value": 1,
+          "label": "No Schooling"
+        },
+        {
+          "value": 2,
+          "label": "Some elementary school"
+        }, 
+        {
+          "value": 3,
+          "label": "Completed elementary school"
+        },
+        {
+          "value": 4,
+          "label": "Some secondary / high school"
+        },
+        {
+          "value": 5,
+          "label": "Completed secondary / high school"
+        },
+        {
+          "value": 6,
+          "label": "Some technical, community college, CEGEP, College Classique"
+        },
+        {
+          "value": 7,
+          "label": "Completed technical, community college, CEGEP,College Classique"
+        },
+        {
+          "value": 8,
+          "label": "Some university"
+        },
+        {
+          "value": 9,
+          "label": "Bachelor's Degree"
+        },
+        {
+          "value": 10,
+          "label": "Master's degree"
+        },
+        {
+          "value": 11,
+          "label": "Professional degree or doctorate"
+        }
+      ] 
+    },
+    "ces93": {
+      "class": "ordered factor",
+      "question_label": "What is the highest level of education that you have completed?",
+      "raw_variable": "n3",
+      "choices": [
+        {
+          "value": 1,
+          "label": "No Schooling"
+        },
+        {
+          "value": 2,
+          "label": "Some elementary school"
+        }, 
+        {
+          "value": 3,
+          "label": "Completed elementary school"
+        },
+        {
+          "value": 4,
+          "label": "Some secondary / high school"
+        },
+        {
+          "value": 5,
+          "label": "Completed secondary / high school"
+        },
+        {
+          "value": 6,
+          "label": "Some technical, community college, CEGEP, College Classique"
+        },
+        {
+          "value": 7,
+          "label": "Completed technical, community college, CEGEP,College Classique"
+        },
+        {
+          "value": 8,
+          "label": "Some university"
+        },
+        {
+          "value": 9,
+          "label": "Bachelor's Degree"
+        },
+        {
+          "value": 10,
+          "label": "Master's degree"
+        },
+        {
+          "value": 11,
+          "label": "Professional degree or doctorate"
+        }
+      ] 
+    },
+    "ces97": {
+      "class": "ordered factor",
+      "question_label": "What is the highest level of education that you have completed?",
+      "raw_variable": "n3",
+      "choices": [
+        {
+          "value": 1,
+          "label": "No Schooling"
+        },
+        {
+          "value": 2,
+          "label": "Some elementary school"
+        }, 
+        {
+          "value": 3,
+          "label": "Completed elementary school"
+        },
+        {
+          "value": 4,
+          "label": "Some secondary / high school"
+        },
+        {
+          "value": 5,
+          "label": "Completed secondary / high school"
+        },
+        {
+          "value": 6,
+          "label": "Some technical, community college, CEGEP, College Classique"
+        },
+        {
+          "value": 7,
+          "label": "Completed technical, community college, CEGEP,College Classique"
+        },
+        {
+          "value": 8,
+          "label": "Some university"
+        },
+        {
+          "value": 9,
+          "label": "Bachelor's Degree"
+        },
+        {
+          "value": 10,
+          "label": "Master's degree"
+        },
+        {
+          "value": 11,
+          "label": "Professional degree or doctorate"
+        }
+      ] 
+    },
+    "ces00": {
+      "class": "ordered factor",
+      "question_label": "What is the highest level of education that you have completed?",
+      "raw_variable": "n3",
+      "choices": [
+        {
+          "value": 1,
+          "label": "No Schooling"
+        },
+        {
+          "value": 2,
+          "label": "Some elementary school"
+        }, 
+        {
+          "value": 3,
+          "label": "Completed elementary school"
+        },
+        {
+          "value": 4,
+          "label": "Some secondary / high school"
+        },
+        {
+          "value": 5,
+          "label": "Completed secondary / high school"
+        },
+        {
+          "value": 6,
+          "label": "Some technical, community college, CEGEP, College Classique"
+        },
+        {
+          "value": 7,
+          "label": "Completed technical, community college, CEGEP,College Classique"
+        },
+        {
+          "value": 8,
+          "label": "Some university"
+        },
+        {
+          "value": 9,
+          "label": "Bachelor's Degree"
+        },
+        {
+          "value": 10,
+          "label": "Master's degree"
+        },
+        {
+          "value": 11,
+          "label": "Professional degree or doctorate"
+        }
+      ] 
+    },
+    "ces04": {
+      "class": "ordered factor",
+      "question_label": "What is the highest level of education that you have completed?",
+      "raw_variable": "n3",
+      "choices": [
+        {
+          "value": 1,
+          "label": "No Schooling"
+        },
+        {
+          "value": 2,
+          "label": "Some elementary school"
+        }, 
+        {
+          "value": 3,
+          "label": "Completed elementary school"
+        },
+        {
+          "value": 4,
+          "label": "Some secondary / high school"
+        },
+        {
+          "value": 5,
+          "label": "Completed secondary / high school"
+        },
+        {
+          "value": 6,
+          "label": "Some technical, community college, CEGEP, College Classique"
+        },
+        {
+          "value": 7,
+          "label": "Completed technical, community college, CEGEP,College Classique"
+        },
+        {
+          "value": 8,
+          "label": "Some university"
+        },
+        {
+          "value": 9,
+          "label": "Bachelor's Degree"
+        },
+        {
+          "value": 10,
+          "label": "Master's degree"
+        },
+        {
+          "value": 11,
+          "label": "Professional degree or doctorate"
+        }
+      ] 
+    },
+    "ces06": {
+      "class": "ordered factor",
+      "question_label": "What is the highest level of education that you have completed?",
+      "raw_variable": "n3",
+      "choices": [
+        {
+          "value": 1,
+          "label": "No Schooling"
+        },
+        {
+          "value": 2,
+          "label": "Some elementary school"
+        }, 
+        {
+          "value": 3,
+          "label": "Completed elementary school"
+        },
+        {
+          "value": 4,
+          "label": "Some secondary / high school"
+        },
+        {
+          "value": 5,
+          "label": "Completed secondary / high school"
+        },
+        {
+          "value": 6,
+          "label": "Some technical, community college, CEGEP, College Classique"
+        },
+        {
+          "value": 7,
+          "label": "Completed technical, community college, CEGEP,College Classique"
+        },
+        {
+          "value": 8,
+          "label": "Some university"
+        },
+        {
+          "value": 9,
+          "label": "Bachelor's Degree"
+        },
+        {
+          "value": 10,
+          "label": "Master's degree"
+        },
+        {
+          "value": 11,
+          "label": "Professional degree or doctorate"
+        }
+      ] 
+    },
+    "ces08": {
+      "class": "ordered factor",
+      "question_label": "What is the highest level of education that you have completed?",
+      "raw_variable": "n3",
+      "choices": [
+        {
+          "value": 1,
+          "label": "No Schooling"
+        },
+        {
+          "value": 2,
+          "label": "Some elementary school"
+        }, 
+        {
+          "value": 3,
+          "label": "Completed elementary school"
+        },
+        {
+          "value": 4,
+          "label": "Some secondary / high school"
+        },
+        {
+          "value": 5,
+          "label": "Completed secondary / high school"
+        },
+        {
+          "value": 6,
+          "label": "Some technical, community college, CEGEP, College Classique"
+        },
+        {
+          "value": 7,
+          "label": "Completed technical, community college, CEGEP,College Classique"
+        },
+        {
+          "value": 8,
+          "label": "Some university"
+        },
+        {
+          "value": 9,
+          "label": "Bachelor's Degree"
+        },
+        {
+          "value": 10,
+          "label": "Master's degree"
+        },
+        {
+          "value": 11,
+          "label": "Professional degree or doctorate"
+        }
+      ] 
+    },
+    "ces11": {
+      "class": "ordered factor",
+      "question_label": "What is the highest level of education that you have completed?",
+      "raw_variable": "n3",
+      "choices": [
+        {
+          "value": 1,
+          "label": "No Schooling"
+        },
+        {
+          "value": 2,
+          "label": "Some elementary school"
+        }, 
+        {
+          "value": 3,
+          "label": "Completed elementary school"
+        },
+        {
+          "value": 4,
+          "label": "Some secondary / high school"
+        },
+        {
+          "value": 5,
+          "label": "Completed secondary / high school"
+        },
+        {
+          "value": 6,
+          "label": "Some technical, community college, CEGEP, College Classique"
+        },
+        {
+          "value": 7,
+          "label": "Completed technical, community college, CEGEP,College Classique"
+        },
+        {
+          "value": 8,
+          "label": "Some university"
+        },
+        {
+          "value": 9,
+          "label": "Bachelor's Degree"
+        },
+        {
+          "value": 10,
+          "label": "Master's degree"
+        },
+        {
+          "value": 11,
+          "label": "Professional degree or doctorate"
+        }
+      ] 
+    }, 
+    "ces15": {
+      "class": "ordered factor",
+      "question_label": "What is the highest level of education that you have completed?",
+      "raw_variable": "n3",
+      "choices": [
+        {
+          "value": 1,
+          "label": "No Schooling"
+        },
+        {
+          "value": 2,
+          "label": "Some elementary school"
+        }, 
+        {
+          "value": 3,
+          "label": "Completed elementary school"
+        },
+        {
+          "value": 4,
+          "label": "Some secondary / high school"
+        },
+        {
+          "value": 5,
+          "label": "Completed secondary / high school"
+        },
+        {
+          "value": 6,
+          "label": "Some technical, community college, CEGEP, College Classique"
+        },
+        {
+          "value": 7,
+          "label": "Completed technical, community college, CEGEP,College Classique"
+        },
+        {
+          "value": 8,
+          "label": "Some university"
+        },
+        {
+          "value": 9,
+          "label": "Bachelor's Degree"
+        },
+        {
+          "value": 10,
+          "label": "Master's degree"
+        },
+        {
+          "value": 11,
+          "label": "Professional degree or doctorate"
+        }
+      ] 
+    }, 
+    "ces19": {
+      "class": "ordered factor",
+      "question_label": "What is the highest level of education that you have completed?",
+      "raw_variable": "n3",
+      "choices": [
+        {
+          "value": 1,
+          "label": "No Schooling"
+        },
+        {
+          "value": 2,
+          "label": "Some elementary school"
+        }, 
+        {
+          "value": 3,
+          "label": "Completed elementary school"
+        },
+        {
+          "value": 4,
+          "label": "Some secondary / high school"
+        },
+        {
+          "value": 5,
+          "label": "Completed secondary / high school"
+        },
+        {
+          "value": 6,
+          "label": "Some technical, community college, CEGEP, College Classique"
+        },
+        {
+          "value": 7,
+          "label": "Completed technical, community college, CEGEP,College Classique"
+        },
+        {
+          "value": 8,
+          "label": "Some university"
+        },
+        {
+          "value": 9,
+          "label": "Bachelor's Degree"
+        },
+        {
+          "value": 10,
+          "label": "Master's degree"
+        },
+        {
+          "value": 11,
+          "label": "Professional degree or doctorate"
+        }
+      ] 
+    }, 
+    "ces21": {
+      "class": "ordered factor",
+      "question_label": "What is the highest level of education that you have completed?",
+      "raw_variable": "n3",
+      "choices": [
+        {
+          "value": 1,
+          "label": "No Schooling"
+        },
+        {
+          "value": 2,
+          "label": "Some elementary school"
+        }, 
+        {
+          "value": 3,
+          "label": "Completed elementary school"
+        },
+        {
+          "value": 4,
+          "label": "Some secondary / high school"
+        },
+        {
+          "value": 5,
+          "label": "Completed secondary / high school"
+        },
+        {
+          "value": 6,
+          "label": "Some technical, community college, CEGEP, College Classique"
+        },
+        {
+          "value": 7,
+          "label": "Completed technical, community college, CEGEP,College Classique"
+        },
+        {
+          "value": 8,
+          "label": "Some university"
+        },
+        {
+          "value": 9,
+          "label": "Bachelor's Degree"
+        },
+        {
+          "value": 10,
+          "label": "Master's degree"
+        },
+        {
+          "value": 11,
+          "label": "Professional degree or doctorate"
+        }
+      ] 
+    }, 
+    "datagotchi_pilot1_2021" : {
+      "class": "ordered factor",
+      "question_label": "Quel est votre plus haut niveau de scolarité complété?",
+      "raw_variable": "SES1",
+      "choices": [
+        {
+          "value": 1,
+          "label": "Elementary school"
+        },
+        {
+          "value": 3,
+          "label": "High school"
+        },
+        {
+          "value": 4,
+          "label": "Technical, community college, CEGEP or College classique"
+        },
+        {
+          "value": 5,
+          "label": "Bachelor's Degree"
+        },
+        {
+          "value": 6,
+          "label": "Master's degree"
+        },
+        {
+          "value": 7,
+          "label": "Doctorate"
+        }
+      ]
+    },
+    "datagotchi_pilot2_2021" : {
+      "class": "ordered factor",
+      "question_label": "Quel est votre plus haut niveau de scolarité complété?",
+      "raw_variable": "educ",
+      "choices": [
+        {
+          "value": 1,
+          "label": "Aucune scolarité"
+        },
+        {
+          "value": 2,
+          "label": "École primaire"
+        },
+        {
+          "value": 3,
+          "label": "École secondaire"
+        },
+        {
+          "value": 4,
+          "label": "Collège, CÉGEP ou Collège classique"
+        },
+        {
+          "value": 5,
+          "label": "Baccalauréat"
+        },
+        {
+          "value": 6,
+          "label": "Maîtrise"
+        },
+        {
+          "value": 7,
+          "label": "Doctorat"
+        }
+      ]
+    }, 
+    "omnibus_janvier" : {
+      "class": "ordered factor",
+      "question_label": "Quel niveau de scolarité avez-vous complété?",
+      "raw_variable": "S2",
+      "choices": [
+        {
+          "value": 1,
+          "label": "École primaire ou secondaire"
+        },
+        {
+          "value": 2,
+          "label": "Formation technique/collégiale/CÉGEP"
+        },
+        {
+          "value": 3,
+          "label": "Diplôme universitaire"
+        }
+      ]
+    }, 
+    "omnibus_fevrier" : {
+      "class": "ordered factor",
+      "question_label": "Quel niveau de scolarité avez-vous complété?",
+      "raw_variable": "S2",
+      "choices": [
+        {
+          "value": 1,
+          "label": "École primaire ou secondaire"
+        },
+        {
+          "value": 2,
+          "label": "Formation technique/collégiale/CÉGEP"
+        },
+        {
+          "value": 3,
+          "label": "Diplôme universitaire"
+        }
+      ]
+    }, 
+    "omnibus_mars" : {
+      "class": "ordered factor",
+      "question_label": "Quel niveau de scolarité avez-vous complété?",
+      "raw_variable": "S2",
+      "choices": [
+        {
+          "value": 1,
+          "label": "École primaire ou secondaire"
+        },
+        {
+          "value": 2,
+          "label": "Formation technique/collégiale/CÉGEP"
+        },
+        {
+          "value": 3,
+          "label": "Diplôme universitaire"
+        }
+      ]
+    },
+    "omnibus_avril" : {
+      "class": "ordered factor",
+      "question_label": "Quel niveau de scolarité avez-vous complété?",
+      "raw_variable": "S2",
+      "choices": [
+        {
+          "value": 1,
+          "label": "École primaire ou secondaire"
+        },
+        {
+          "value": 2,
+          "label": "Formation technique/collégiale/CÉGEP"
+        },
+        {
+          "value": 3,
+          "label": "Diplôme universitaire"
+        }
+      ]
+    }, 
+    "omnibus_mai" : {
+      "class": "ordered factor",
+      "question_label": "Quel niveau de scolarité avez-vous complété?",
+      "raw_variable": "S2",
+      "choices": [
+        {
+          "value": 1,
+          "label": "École primaire ou secondaire"
+        },
+        {
+          "value": 2,
+          "label": "Formation technique/collégiale/CÉGEP"
+        },
+        {
+          "value": 3,
+          "label": "Diplôme universitaire"
+        }
+      ]
+    },
+    "omnibus_juin" : {
+      "class": "ordered factor",
+      "question_label": "Quel niveau de scolarité avez-vous complété?",
+      "raw_variable": "S2",
+      "choices": [
+        {
+          "value": 1,
+          "label": "École primaire ou secondaire"
+        },
+        {
+          "value": 2,
+          "label": "Formation technique/collégiale/CÉGEP"
+        },
+        {
+          "value": 3,
+          "label": "Diplôme universitaire"
+        }
+      ]
+    }, 
+    "pes_elxn_2022" : {
+      "class": "ordered factor",
+      "question_label": "Quel est votre plus haut niveau de scolarité complété?",
+      "raw_variable": "educ",
+      "choices": [
+        {
+          "value": 1,
+          "label": "Aucune scolarité"
+        },
+        {
+          "value": 2,
+          "label": "École primaire"
+        },
+        {
+          "value": 3,
+          "label": "École secondaire"
+        },
+        {
+          "value": 4,
+          "label": "Collège, CÉGEP ou Collège classique"
+        },
+        {
+          "value": 5,
+          "label": "Baccalauréat"
+        },
+        {
+          "value": 6,
+          "label": "Maîtrise"
+        },
+        {
+          "value": 7,
+          "label": "Doctorat"
+        }
+      ]
+    }, 
+    "quorum_mcq_pilote" : {
+      "class": "ordered factor",
+      "question_label": "Quel est votre plus haut niveau de scolarité complété?",
+      "raw_variable": "educ",
+      "choices": [
+        {
+          "value": 1,
+          "label": "Aucune scolarité"
+        },
+        {
+          "value": 2,
+          "label": "École primaire"
+        },
+        {
+          "value": 3,
+          "label": "École secondaire"
+        },
+        {
+          "value": 4,
+          "label": "Collège, CÉGEP ou Collège classique"
+        },
+        {
+          "value": 5,
+          "label": "Baccalauréat"
+        },
+        {
+          "value": 6,
+          "label": "Maîtrise"
+        },
+        {
+          "value": 7,
+          "label": "Doctorat"
+        }
+      ]
+    }, 
+    "sondage_nationalisme_2022" : {
+      "class": "ordered factor",
+      "question_label": "What is the highest level of education that you have completed?",
+      "raw_variable": "educ",
+      "choices": [
+        {
+          "value": 1,
+          "label": "No schooling"
+        },
+        {
+          "value": 2,
+          "label": "Elementary school"
+        },
+        {
+          "value": 3,
+          "label": "High school"
+        },
+        {
+          "value": 4,
+          "label": "Technical, community college, CEGEP or College classique"
+        },
+        {
+          "value": 5,
+          "label": "Bachelor's Degree"
+        },
+        {
+          "value": 6,
+          "label": "Master's degree"
+        },
+        {
+          "value": 7,
+          "label": "Doctorate"
+        }
+      ]
+    },
+    "pco" : {
+      "class": "ordered factor",
+      "question_label": "What is the highest level of education that you have completed?",
+      "raw_variable": "Q9.1",
+      "choices": [
+        {
+         "value": 1,
+          "label": "No schooling" 
+        }, 
+        {
+         "value": 2,
+          "label": "Some elementary school" 
+        },
+        {
+         "value": 3,
+          "label": "Completed elementary school" 
+        },
+        {
+         "value": 4,
+          "label": "Some secondary / high school" 
+        },
+        {
+         "value": 5,
+          "label": "Completed secondary / high school" 
+        },
+        {
+         "value": 6,
+          "label": "Some technical, community college, CEGEP, College classique" 
+        },
+        {
+         "value": 7,
+          "label": "Completed technical, community college, CEGEP, college classique" 
+        },
+        {
+         "value": 8,
+          "label": "Some university" 
+        },
+        {
+         "value": 9,
+          "label": "Bachelor's degree" 
+        },
+        {
+         "value": 10,
+          "label": "Master's degree" 
+        },
+        {
+         "value": 11,
+          "label": "Professional degree or doctorate" 
+        }
+      ]
+    }  
+  }
+}  
 
 
-      "ces68": {
-        "class": "numeric",
-        "raw_variable" : "var334"
-        "question_label": "What is the highest grade of school you reached?",
-        "choices": [
-          {
-            "value": 1,
-            "label": "Grade 1"
-          },
-          {
-            "value": 2,
-            "label": "Grade 2"
-          },
-          {
-            "value": 3,
-            "label": "Grade 3"
-          },
-          {
-            "value": 4,
-            "label": "Grade 4"
-          }, 
-          {
-            "value": 5,
-            "label": "Grade 5"
-          }, 
-          {
-            "value": 6,
-            "label": "Grade 6"
-          }, 
-          {
-            "value": 7,
-            "label": "Grade 7"
-          }, 
-          {
-            "value": 8,
-            "label": "Grade 8"
-          }, 
-          {
-            "value": 9,
-            "label": "Grade 9"
-          }, 
-          {
-            "value": 10,
-            "label": "Grade 10"
-          }, 
-          {
-            "value": 11,
-            "label": "Grade 11"
-          }, 
-          {
-            "value": 12,
-            "label": "Grade 12"
-          },
-          {
-            "value": 13,
-            "label": "Grade 13"
-          }, 
-          {
-            "value": 14,
-            "label": "First year university"
-          }, 
-          {
-            "value": 15,
-            "label": "Second year university"
-          }, 
-          {
-            "value": 16,
-            "label": "Third year university"
-          }, 
-          {
-            "value": 17,
-            "label": "Fourth year university"
-          },
-          {
-            "value": 18,
-            "label": "Five or more years University"
-          }, 
-          {
-            "value": 19,
-            "label": "ma"
-          }, 
-          {
-            "value": 20,
-            "label": "PHD"
-          }, 
-          {
-            "value": 21,
-            "label": "Highschool variation"
-          }, 
-          {
-            "value": 22,
-            "label": "Highschool variation"
-          }, 
-          {
-            "value": 23,
-            "label": "Highschool variation"
-          }, 
-          {
-            "value": 24,
-            "label": "Highschool variation"
-          }, 
-          {
-            "value": 25,
-            "label": "University variation"
-          }, 
-          {
-            "value": 26,
-            "label": "University variation"
-          }, {
-            "value": 27,
-            "label": "College"
-          }, 
-          
-        ]
-      },
-      "ces74": {
-        "class": "numeric",
-        "raw_variable": "v414"
-        "question_label": "WHAT IS THE HIGHEST GRADE OR LEVEL OF SCHOOL YOU
-        REACHED?",
-        "choices": [
-          {
-            "value": "1 to 13",
-            "label": "Actual grade"
-          },
-          {
-            "value": 25,
-            "label": "All post secondary"
-          }
-        ]
-      },
-      "ces79": {
-        "class": "numeric",
-        "raw_variable" : "var334"
-        "question_label": "WHAT WAS THE HIGHEST GRADE OR LEVEL OF SCHOOL YOU
-        REACHED?",
-        "choices": [
-          {
-            "value": 1,
-            "label": "Grade 1"
-          },
-          {
-            "value": 2,
-            "label": "Grade 2"
-          },
-          {
-            "value": 3,
-            "label": "Grade 3"
-          },
-          {
-            "value": 4,
-            "label": "Grade 4"
-          }, 
-          {
-            "value": 5,
-            "label": "Grade 5"
-          }, 
-          {
-            "value": 6,
-            "label": "Grade 6"
-          }, 
-          {
-            "value": 7,
-            "label": "Grade 7"
-          }, 
-          {
-            "value": 8,
-            "label": "Grade 8"
-          }, 
-          {
-            "value": 9,
-            "label": "Grade 9"
-          }, 
-          {
-            "value": 10,
-            "label": "Grade 10"
-          }, 
-          {
-            "value": 11,
-            "label": "Grade 11"
-          }, 
-          {
-            "value": 12,
-            "label": "Grade 12"
-          },
-          {
-            "value": 13,
-            "label": "Grade 13"
-          }, 
-          {
-            "value": 21,
-            "label": "COMMUNITY COLLEGE OR SIMILAR POST SECONDARY"
-          }, 
-          {
-            "value": 22,
-            "label": "UNIVERSITY (ALL LEVELS)"
-          }, 
-          {
-            "value": 23,
-            "label": "ALL OTHER POST SECONDARY"
-          }, 
-          {
-            "value": 24,
-            "label": "POST GRADUATE, PROFESSIONAL SCHOOLS, ETC."
-          },
-        ]
-      },
-  
