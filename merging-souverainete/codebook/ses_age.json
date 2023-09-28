@@ -217,6 +217,17 @@
           "omnibus_juin": {
             "question_label": "NA"
           },
+          "pco2014": {
+            "class": "numeric",
+            "question_label": "Year of birth",
+            "raw_variable": "20.2.Pco2014",
+            "choices": [
+              {
+                "value": "1933-1982",
+                "label": "In what year were you born?"
+              }     
+            ]
+          },
           "pes_elxn_2022": {
             "class": "numeric",
             "question_label": "R'S AGE",
@@ -231,22 +242,11 @@
           "quorum_mcq_pilote": {
             "class": "numeric",
             "question_label": "R'S AGE in french",
-            "raw_variable": "ses_age",
+            "raw_variable": "ses_age & EN_ses_age",
             "choices": [
               {
                 "value": "1-99",
                 "label": "Quel âge avez-vous?"
-              }     
-            ]
-          },
-          "quorum_mcq_pilote_EN": {
-            "class": "numeric",
-            "question_label": "R'S AGE in english",
-            "raw_variable": "EN_ses_age",
-            "choices": [
-              {
-                "value": "1-99",
-                "label": "age of the respondent"
               }     
             ]
           },

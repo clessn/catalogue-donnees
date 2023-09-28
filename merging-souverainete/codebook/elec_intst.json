@@ -1,0 +1,330 @@
+{
+    "description": "",
+    "source_id": {
+        "ces68": {
+            "class": "Ordinal",
+            "question_label": "DEGREE INTST IN LAST ELECTION",
+            "raw_variable": "À valider",
+            "choices": [
+              {
+                "value": "very much interested",
+                "label": "very much interested"
+              },
+              {
+                "value": "somewhat interested",
+                "label": "somewhat interested"
+              },
+              {
+                "value": "not much interested",
+                "label": "not much interested"
+              }
+            ]
+          },
+          "ces74": {
+            "class": "Ordinal",
+            "question_label": "DEGREE INTST IN LAST ELECTION",
+            "raw_variable": "v11",
+            "choices": [
+              {
+                "value": "very interested",
+                "label": "very interested"
+              },
+              {
+                "value": "fairly interested",
+                "label": "fairly interested"
+              },
+              {
+                "value": "slightly interested",
+                "label": "slightly interested"
+              },
+              {
+                "value": "not at all intersted",
+                "label": "not at all intersted"
+              },
+              {
+                "value": "dk",
+                "label": "Don't know"
+              }
+            ]
+          },
+          "ces79": {
+            "class": "Ordinal",
+            "question_label": "DEGREE INTST IN LAST ELECTION",
+            "raw_variable": "v1021",
+            "choices": [
+              {
+                "value": "1",
+                "label": "very interested"
+              },
+              {
+                "value": "2",
+                "label": "fairly interested"
+              },
+              {
+                "value": "3",
+                "label": "slightly interested"
+              },
+              {
+                "value": "4",
+                "label": "not at all interested"
+              },
+              {
+                "value": "8",
+                "label": "Don't know"
+              }
+            ]
+          },
+          "ces84": {
+            "class": "Ordinal",
+            "question_label": "DEGREE INTST IN LAST ELECTION",
+            "raw_variable": "var016",
+            "choices": [
+              {
+                "value": "very interested",
+                "label": "very interested"
+              },
+              {
+                "value": "fairly interested",
+                "label": "fairly interested"
+              },
+              {
+                "value": "slightly interested",
+                "label": "slightly interested"
+              },
+              {
+                "value": "not at all interested",
+                "label": "not at all interested"
+              },
+              {
+                "value": "Don't know",
+                "label": "Don't know"
+              }
+            ]
+          },
+          "ces88": {
+            "class": "Ordinal",
+            "question_label": "DEGREE INTST IN LAST ELECTION",
+            "raw_variable": "a1",
+            "choices": [
+              {
+                "value": "very interested",
+                "label": "very interested"
+              },
+              {
+                "value": "fairly",
+                "label": "fairly interested"
+              },
+              {
+                "value": "not very",
+                "label": "not very interested"
+              },
+              {
+                "value": "not at all",
+                "label": "not at all interested"
+              },
+              {
+                "value": "d.k.",
+                "label": "Don't know"
+              }
+            ]
+          },
+          "ces93": {
+            "class": "Ordinal",
+            "question_label": "DEGREE INTST IN THIS ELECTION",
+            "raw_variable": "cpsb1",
+            "choices": [
+              {
+                "value": "very interested",
+                "label": "very interested"
+              },
+              {
+                "value": "fairly",
+                "label": "fairly interested"
+              },
+              {
+                "value": "not very",
+                "label": "not very interested"
+              },
+              {
+                "value": "not at all",
+                "label": "not at all interested"
+              },
+              {
+                "value": "d.k.",
+                "label": "Don't know"
+              }
+            ]
+          },
+          "ces97": {
+            "class": "Ordinal",
+            "question_label": "DEGREE INTST IN THIS ELECTION",
+            "raw_variable": "cpsb4",
+            "choices": [
+              {
+                "value": "0-10",
+                "label": "0 means no interest at all and 10 means a great deal of interest"
+              }
+            ]
+          },
+          "ces2000": {
+            "class": "Ordinal",
+            "question_label": "DEGREE INTST IN THIS ELECTION",
+            "raw_variable": "cpsb4",
+            "choices": [
+              {
+                "value": "0-10",
+                "label": "0 means no interest at all and 10 means a great deal of interest"
+              }
+            ]
+          },
+          "ces2004": {
+            "class": "Ordinal",
+            "question_label": "DEGREE INTST IN THIS ELECTION",
+            "raw_variable": "ces04_cps_a5",
+            "choices": [
+              {
+                "value": "0-10",
+                "label": "Zero means no interest at all and ten means extremely interested"
+              }
+            ]
+          },
+          "ces2006": {
+            "class": "Ordinal",
+            "question_label": "DEGREE INTST IN THIS ELECTION",
+            "raw_variable": "cps_a706",
+            "choices": [
+              {
+                "value": "0-10",
+                "label": "Zero means no interest at all and ten means a great deal of interest"
+              }
+            ]
+          },
+          "ces2008": {
+            "class": "Ordinal",
+            "question_label": "DEGREE INTST IN THIS ELECTION",
+            "raw_variable": "cps_a3",
+            "choices": [
+              {
+                "value": "0-10",
+                "label": "Zero means no interest at all and ten means a great deal of interest"
+              }
+            ]
+          },
+          "ces2011": {
+            "class": "Ordinal",
+            "question_label": "DEGREE INTST IN THIS ELECTION",
+            "raw_variable": "CPS11_9",
+            "choices": [
+              {
+                "value": "0-10",
+                "label": "Zero means no interest at all and ten means a great deal of interest"
+              }
+            ]
+          },
+          "ces2015": {
+            "class": "Ordinal",
+            "question_label": "DEGREE INTST IN THIS ELECTION",
+            "raw_variable": "p_intpol",
+            "choices": [
+              {
+                "value": "0-10",
+                "label": "Zero means no interest at all and ten means a great deal of interest"
+              }
+            ]
+          },
+          "ces2019": {
+            "class": "Ordinal",
+            "question_label": "DEGREE INTST IN THIS ELECTION",
+            "raw_variable": "cps19_interest_elxn_1",
+            "choices": [
+              {
+                "value": "0-10",
+                "label": "Zero means no interest at all and ten means a great deal of interest"
+              }
+            ]
+          },
+          "ces2021": {
+            "class": "Ordinal",
+            "question_label": "DEGREE INTST IN THIS ELECTION",
+            "raw_variable": "cps21_interest_elxn_1",
+            "choices": [
+              {
+                "value": "0-10",
+                "label": "Zero means no interest at all and ten means a great deal of interest"
+              }
+            ]
+          },
+          "datagotchi_pilot1_2021": {
+            "class": "Ordinal",
+            "question_label": "NA",
+            "raw_variable": "NA",
+            "choices": "NA"
+          },
+          "datagotchi_pilot2_2022": {
+            "class": "Ordinal",
+            "question_label": "NA",
+            "raw_variable": "NA",
+            "choices": "NA"
+          },
+          "omnibus_janvier": {
+            "class": "Ordinal",
+            "question_label": "NA",
+            "raw_variable": "NA",
+            "choices": "NA"
+          },
+          "omnibus_fevrier": {
+            "class": "Ordinal",
+            "question_label": "NA",
+            "raw_variable": "NA",
+            "choices": "NA"
+          },
+          "omnibus_mars": {
+            "class": "Ordinal",
+            "question_label": "NA",
+            "raw_variable": "NA",
+            "choices": "NA"
+          },
+          "omnibus_april": {
+            "class": "Ordinal",
+            "question_label": "NA",
+            "raw_variable": "NA",
+            "choices": "NA"
+          },
+          "omnibus_mai": {
+            "class": "Ordinal",
+            "question_label": "NA",
+            "raw_variable": "NA",
+            "choices": "NA"
+          },
+          "omnibus_juin": {
+            "class": "Ordinal",
+            "question_label": "NA",
+            "raw_variable": "NA",
+            "choices": "NA"
+          },
+          "pco2014": {
+            "class": "Ordinal",
+            "question_label": "NA",
+            "raw_variable": "NA",
+            "choices": "NA"
+          },
+          "pes_elxn_2022": {
+            "class": "Ordinal",
+            "question_label": "NA",
+            "raw_variable": "NA",
+            "choices": "NA"
+          },
+          "quorum_mcq_pilote": {
+            "class": "Ordinal",
+            "question_label": "NA",
+            "raw_variable": "NA",
+            "choices": "NA"
+          },
+          "sondage_nationalisme_2022": {
+            "class": "Ordinal",
+            "question_label": "NA",
+            "raw_variable": "NA",
+            "choices": "NA"
+          }
+    }
+}

@@ -1,0 +1,403 @@
+{
+    "description": "Political interest",
+    "source_id": {
+        "ces65": {
+            "class": "Ordinal",
+            "question_label": "DEGREE INTST IN POLITICS",
+            "raw_variable": "v36",
+            "choices": [
+              {
+                "value": "a good deal",
+                "label": "a good deal"
+              },
+              {
+                "value": "some",
+                "label": "some"
+              },
+              {
+                "value": "not much",
+                "label": "not much"
+              }
+            ]
+          },
+          "ces68": {
+            "class": "Ordinal",
+            "question_label": "NA",
+            "raw_variable": "NA",
+            "choices": "NA"
+          },
+          "ces74": {
+            "class": "Ordinal",
+            "question_label": "DEGREE ATTENTION IN POLITICS",
+            "raw_variable": "v12",
+            "choices": [
+              {
+                "value": "very closely",
+                "label": "very closely"
+              },
+              {
+                "value": "fairly closely",
+                "label": "fairly closely"
+              },
+              {
+                "value": "not much at all",
+                "label": "not much at all"
+              },
+              {
+                "value": "dk",
+                "label": "don't know"
+              }
+            ]
+          },
+          "ces79": {
+            "class": "Ordinal",
+            "question_label": "DEGREE ATTENTION IN POLITICS",
+            "raw_variable": "v1022",
+            "choices": [
+              {
+                "value": "1",
+                "label": "very closely"
+              },
+              {
+                "value": "2",
+                "label": "fairly closely"
+              },
+              {
+                "value": "3",
+                "label": "not much at all"
+              },
+              {
+                "value": "8",
+                "label": "don't know"
+              }
+            ]
+          },
+          "ces84": {
+            "class": "Ordinal",
+            "question_label": "DEGREE ATTENTION IN POLITICS",
+            "raw_variable": "var017",
+            "choices": [
+              {
+                "value": "very closely",
+                "label": "very closely"
+              },
+              {
+                "value": "fairly closely",
+                "label": "fairly closely"
+              },
+              {
+                "value": "not much at all",
+                "label": "not much at all"
+              },
+              {
+                "value": "don't know",
+                "label": "don't know"
+              }
+            ]
+          },
+          "ces88": {
+            "class": "Ordinal",
+            "question_label": "DEGREE ATTENTION IN POLITICS",
+            "raw_variable": "a7",
+            "choices": [
+              {
+                "value": "very closely",
+                "label": "very closely"
+              },
+              {
+                "value": "fairly closely",
+                "label": "fairly closely"
+              },
+              {
+                "value": "not very closely",
+                "label": "not very closely"
+              },
+              {
+                "value": "not at all",
+                "label": "not at all"
+              },
+              {
+                "value": "d.k.",
+                "label": "don't know"
+              }
+            ]
+          },
+          "ces93": {
+            "class": "Ordinal",
+            "question_label": "NA",
+            "raw_variable": "NA",
+            "choices": "NA"
+          },
+          "ces97": {
+            "class": "Ordinal",
+            "question_label": "DEGREE INTST IN POLITICS",
+            "raw_variable": "cpsb5",
+            "choices": [
+              {
+                "value": "0-10",
+                "label": "0 means no interest at all and 10 means extremely interested"
+              }
+            ]
+          },
+          "ces2000": {
+            "class": "Ordinal",
+            "question_label": "DEGREE INTST IN POLITICS",
+            "raw_variable": "cpsb5",
+            "choices": [
+              {
+                "value": "0-10",
+                "label": "0 means no interest at all and 10 means extremely interested"
+              }
+            ]
+          },
+          "ces2004": {
+            "class": "Ordinal",
+            "question_label": "DEGREE INTST IN POLITICS",
+            "raw_variable": "ces04_cps_a6",
+            "choices": [
+              {
+                "value": "0-10",
+                "label": "0 means no interest at all and 10 means extremely interested"
+              }
+            ]
+          },
+          "ces2006": {
+            "class": "Ordinal",
+            "question_label": "DEGREE INTST IN POLITICS",
+            "raw_variable": "cps_a806",
+            "choices": [
+              {
+                "value": "0-10",
+                "label": "0 means no interest at all and 10 means extremely interested"
+              }
+            ]
+          },
+          "ces2008": {
+            "class": "Ordinal",
+            "question_label": "DEGREE INTST IN POLITICS",
+            "raw_variable": "cps_a4",
+            "choices": [
+              {
+                "value": "0-10",
+                "label": "0 means no interest at all and 10 means a great deal of interest"
+              }
+            ]
+          },
+          "ces2011": {
+            "class": "Ordinal",
+            "question_label": "DEGREE INTST IN POLITICS",
+            "raw_variable": "PES11_60",
+            "choices": [
+              {
+                "value": "0-10",
+                "label": "0 means no interest at all and 10 means a great deal of interest"
+              }
+            ]
+          },
+          "ces2015": {
+            "class": "Ordinal",
+            "question_label": "DEGREE INTST IN POLITICS",
+            "raw_variable": "p_intpol",
+            "choices": [
+              {
+                "value": "0-10",
+                "label": "0 means no interest at all and 10 means a great deal of interest"
+              }
+            ]
+          },
+          "ces2019": {
+            "class": "Ordinal",
+            "question_label": "DEGREE INTST IN POLITICS",
+            "raw_variable": "cps19_interest_gen_1",
+            "choices": [
+              {
+                "value": "0-10",
+                "label": "0 means no interest at all and 10 means a great deal of interest"
+              }
+            ]
+          },
+          "ces2021": {
+            "class": "Ordinal",
+            "question_label": "DEGREE INTST IN POLITICS",
+            "raw_variable": "cps21_interest_gen_1",
+            "choices": [
+              {
+                "value": "0-10",
+                "label": "0 means no interest at all and 10 means a great deal of interest"
+              }
+            ]
+          },
+          "datagotchi_pilot1_2021": {
+            "class": "Ordinal",
+            "question_label": "NA",
+            "raw_variable": "NA",
+            "choices": "NA"
+          },
+          "datagotchi_pilot2_2022": {
+            "class": "Ordinal",
+            "question_label": "DEGREE KNOWLEDGE IN POLITICS",
+            "raw_variable": "FR_scalePol",
+            "choices": [
+              {
+                "value": "1",
+                "label": "très élevé"
+              },
+              {
+                "value": "4",
+                "label": "élevé"
+              },
+              {
+                "value": "5",
+                "label": "ni élevé, ni faible"
+              },
+              {
+                "value": "6",
+                "label": "faible"
+              },
+              {
+                "value": "7",
+                "label": "très faible"
+              }
+            ]
+          },
+          "omnibus_janvier": {
+            "class": "Ordinal",
+            "question_label": "NA",
+            "raw_variable": "NA",
+            "choices": "NA"
+          },
+          "omnibus_fevrier": {
+            "class": "Ordinal",
+            "question_label": "NA",
+            "raw_variable": "NA",
+            "choices": "NA"
+          },
+          "omnibus_mars": {
+            "class": "Ordinal",
+            "question_label": "NA",
+            "raw_variable": "NA",
+            "choices": "NA"
+          },
+          "omnibus_mai": {
+            "class": "Ordinal",
+            "question_label": "DEGREE KNOWLEDGE IN POLITICS",
+            "raw_variable": "C25",
+            "choices": [
+              {
+                "value": "1",
+                "label": "très élevé"
+              },
+              {
+                "value": "2",
+                "label": "élevé"
+              },
+              {
+                "value": "3",
+                "label": "ni élevé, ni faible"
+              },
+              {
+                "value": "4",
+                "label": "faible"
+              },
+              {
+                "value": "5",
+                "label": "très faible"
+              }
+            ]
+          },
+          "omnibus_juin": {
+            "class": "Ordinal",
+            "question_label": "DEGREE KNOWLEDGE IN POLITICS",
+            "raw_variable": "C25",
+            "choices": [
+              {
+                "value": "1",
+                "label": "très élevé"
+              },
+              {
+                "value": "2",
+                "label": "élevé"
+              },
+              {
+                "value": "3",
+                "label": "ni élevé, ni faible"
+              },
+              {
+                "value": "4",
+                "label": "faible"
+              },
+              {
+                "value": "5",
+                "label": "très faible"
+              }
+            ]
+          },
+          "pco2014": {
+            "class": "Ordinal",
+            "question_label": "DEGREE INTST IN POLITICS",
+            "raw_variable": "Q6.1.Pco2014",
+            "choices": [
+              {
+                "value": "Not interested at all",
+                "label": "Not interested at all"
+              },
+              {
+                "value": "Not very interested",
+                "label": "Not very interested"
+              },
+              {
+                "value": "Somewhat interested",
+                "label": "Somewhat interested"
+              },
+              {
+                "value": "Very interested",
+                "label": "Very interested"
+              }
+            ]
+          },
+          "pes_elxn_2022": {
+            "class": "Ordinal",
+            "question_label": "DEGREE KNOWLEDGE IN POLITICS",
+            "raw_variable": "pol_knowledge...44",
+            "choices": [
+              {
+                "value": "Très élevé",
+                "label": "Très élevé"
+              },
+              {
+                "value": "Élevé",
+                "label": "Élevé"
+              },
+              {
+                "value": "Ni élevé, ni faible",
+                "label": "Ni élevé, ni faible"
+              },
+              {
+                "value": "Faible",
+                "label": "Faible"
+              },
+              {
+                "value": "Très faible",
+                "label": "Très faible"
+              }
+            ]
+          },
+          "quorum_mcq_pilote": {
+            "class": "Ordinal",
+            "question_label": "NA",
+            "raw_variable": "NA",
+            "choices": "NA"
+          },
+          "sondage_nationalisme_2022": {
+            "class": "Ordinal",
+            "question_label": "DEGREE INTST IN POLITICS",
+            "raw_variable": "interest_politics_1",
+            "choices": [
+              {
+                "value": "0-10",
+                "label": "0 means no interest at all and 10 means a great deal of interest"
+              }
+            ]
+          }
+    }
+}
