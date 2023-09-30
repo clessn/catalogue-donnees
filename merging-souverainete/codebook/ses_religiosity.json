@@ -96,6 +96,346 @@
                 "label": "Not very religious"
                 }
             ]
-        }
-    }
+        },
+        "ces84": {
+          "class": "Ordered factor",
+          "question_label": "DO YOU CONSIDER YOURSELF A VERY RELIGIOUS PERSON, A FAIRLY RELIGIOUS PERSON, OR A NOT VERY RELIGIOUS PERSON?",
+          "raw_variable": "VAR373",
+          "choices": [
+            {
+              "value": 1,
+              "label": "Very religious"
+              },
+              {
+              "value": 2,
+              "label": "Fairly religious"
+              },
+              {
+              "value": 3,
+              "label": "Not very religious"
+              },
+              {
+                "value": 8,
+                "label": "Don't know/Refused"
+              }
+          ]
+      },
+      "ces84": {
+        "class": "Ordered factor",
+        "question_label": "How often do you attend your place of worship?",
+        "raw_variable": "VAR373",
+        "choices": [
+          {
+            "value": 0,
+            "label": "never"
+          },
+          {
+            "value": 1,
+            "label": "less than once a year"
+          },
+          {
+            "value": 2,
+            "label": "once or twice a year"
+          },
+          {
+            "value": 3,
+            "label": "several times a year"
+          },
+          {
+            "value": 4,
+            "label": "once a month"
+          },
+          {
+            "value": 5,
+            "label": "couple of times a month"
+          },
+          {
+            "value": 6,
+            "label": "nearly every week"
+          },
+          {
+            "value": 7,
+            "label": "every week"
+          },
+          {
+            "value": 8,
+            "label": "more than once a week"
+          },
+          {
+            "value": 9,
+            "label": "Don't Know, No Answer"
+          }
+        ]
+    },
+    "ces93": {
+      "class": "Ordered factor",
+      "question_label": "In your life, would you say God is VERY important, SOMEWHAT important, NOT VERY important, or NOT IMPORTANT at all?",
+      "raw_variable": "cpso10",
+      "choices": [
+          {
+            "value": 1,
+            "label": "Very important"
+          },
+          {
+            "value": 3,
+            "label": "Somewhat important"
+          },
+          {
+            "value": 5,
+            "label": "Not very important"
+          },
+          {
+            "value": 7,
+            "label": "Not important at all"
+          },
+          {
+            "value": 8,
+            "label": "Don't know"
+          },
+          {
+            "value": 9,
+            "label": "Refused"
+          }
+      ]
+    },
+    "ces97": {
+      "class": "Ordered factor",
+      "question_label": "In your life, would you say God is VERY important, SOMEWHAT important, NOT VERY important, or NOT IMPORTANT at all?",
+      "raw_variable": "m10b",
+      "choices": [
+          {
+            "value": 1,
+            "label": "Very important"
+          },
+          {
+            "value": 3,
+            "label": "Somewhat important"
+          },
+          {
+            "value": 5,
+            "label": "Not very important"
+          },
+          {
+            "value": 7,
+            "label": "Not important at all"
+          },
+          {
+            "value": 8,
+            "label": "Don't know"
+          },
+          {
+            "value": 9,
+            "label": "Refused"
+          }
+      ]
+    },
+    "ces00": {
+      "class": "Ordered factor",
+      "question_label": "In your life, would you say God is VERY important, SOMEWHAT important, NOT VERY important, or NOT IMPORTANT at all?",
+      "raw_variable": "m10b",
+      "choices": [
+          {
+            "value": 1,
+            "label": "Very important"
+          },
+          {
+            "value": 3,
+            "label": "Somewhat important"
+          },
+          {
+            "value": 5,
+            "label": "Not very important"
+          },
+          {
+            "value": 7,
+            "label": "Not important at all"
+          },
+          {
+            "value": 8,
+            "label": "Don't know"
+          },
+          {
+            "value": 9,
+            "label": "Refused"
+          }
+      ]
+    },
+    "ces04": {
+      "class": "Ordered factor",
+      "question_label": "In your life, would you say religion is VERY important, SOMEWHAT important, NOT VERY important, or NOT IMPORTANT at all?",
+      "raw_variable": "s11",
+      "choices": [
+          {
+            "value": 1,
+            "label": "Very important"
+          },
+          {
+            "value": 3,
+            "label": "Somewhat important"
+          },
+          {
+            "value": 5,
+            "label": "Not very important"
+          },
+          {
+            "value": 7,
+            "label": "Not important at all"
+          }
+      ]
+    },
+    "ces06": {
+      "class": "Ordered factor",
+      "question_label": "In your life, would you say religion is VERY important, SOMEWHAT important, NOT VERY important, or NOT IMPORTANT at all?",
+      "raw_variable": "s11",
+      "choices": [
+          {
+            "value": 1,
+            "label": "Very important"
+          },
+          {
+            "value": 3,
+            "label": "Somewhat important"
+          },
+          {
+            "value": 5,
+            "label": "Not very important"
+          },
+          {
+            "value": 7,
+            "label": "Not important at all"
+          }
+        ]
+    },
+    "ces08": {
+      "class": "Ordered factor",
+      "question_label": "In your life, would you say religion is VERY important, SOMEWHAT important, NOT VERY important, or NOT IMPORTANT at all?",
+      "raw_variable": "s11",
+      "choices": [
+          {
+            "value": 1,
+            "label": "Very important"
+          },
+          {
+            "value": 3,
+            "label": "Somewhat important"
+          },
+          {
+            "value": 5,
+            "label": "Not very important"
+          },
+          {
+            "value": 7,
+            "label": "Not important at all"
+          }
+        ]
+    },
+    "ces11": {
+      "class": "Ordered factor",
+      "question_label": "In your life, would you say religion is VERY important, SOMEWHAT important, NOT VERY important, or NOT IMPORTANT at all?",
+      "raw_variable": "ces_82",
+      "choices": [
+          {
+            "value": 1,
+            "label": "Very important"
+          },
+          {
+            "value": 3,
+            "label": "Somewhat important"
+          },
+          {
+            "value": 5,
+            "label": "Not very important"
+          },
+          {
+            "value": 7,
+            "label": "Not important at all"
+          }
+        ]
+    },
+    "ces15": {
+      "class": "Ordered factor",
+      "question_label": "In your life, you would say religion is:",
+      "raw_variable": "relig_imp",
+      "choices": [
+          {
+            "value": 1,
+            "label": "Very important"
+          },
+          {
+            "value": 2,
+            "label": "Somewhat important"
+          },
+          {
+            "value": 3,
+            "label": "Not very important"
+          },
+          {
+            "value": 4,
+            "label": "Not important at all"
+          },
+          {
+            "value": 5,
+            "label": "Don't know"
+          },
+          {
+            "value": 6,
+            "label": "Refuse to answer"
+          }
+        ]
+    },
+    "ces19": {
+      "class": "Ordered factor",
+      "question_label": "In your life, you would say religion is:",
+      "raw_variable": "cps19_relig_imp",
+      "choices": [
+          {
+            "value": 1,
+            "label": "Very important"
+          },
+          {
+            "value": 2,
+            "label": "Somewhat important"
+          },
+          {
+            "value": 3,
+            "label": "Not very important"
+          },
+          {
+            "value": 4,
+            "label": "Not important at all"
+          },
+          {
+            "value": 5,
+            "label": "Don't know/Prefer not to aswer"
+          }
+        ]
+    },
+    "ces21": {
+      "class": "Ordered factor",
+      "question_label": "In your life, you would say religion is:",
+      "raw_variable": "cps21_relig_imp",
+      "choices": [
+          {
+            "value": 1,
+            "label": "Very important"
+          },
+          {
+            "value": 2,
+            "label": "Somewhat important"
+          },
+          {
+            "value": 3,
+            "label": "Not very important"
+          },
+          {
+            "value": 4,
+            "label": "Not important at all"
+          },
+          {
+            "value": 5,
+            "label": "Don't know/Prefer not to aswer"
+          }
+        ]
+    },
+  }  
 }
