@@ -1,0 +1,1293 @@
+{
+    "description": "Religion des répondants",
+    "source_id": {
+        "ces65": {
+            "class": "factor",
+            "question_label": "R'S CHURCH PREFERENCE",
+            "raw_variable": "V309",
+            "choices": [
+              {
+                "value": 0,
+                "label": "None"
+              },
+              {
+                "value": 10,
+                "label": "Presbyterian"
+              },
+              {
+                "value": 11,
+                "label": "Lutheran"
+              },
+              {
+                "value": 12,
+                "label": "Baptist"
+              },
+              {
+                "value": 15,
+                "label": "United Church"
+              }, 
+              {
+                "value": 16,
+                "label": "Anglican"
+              }, 
+              {
+                "value": 19,
+                "label": "Other protestant"
+              }, 
+              {
+                "value": 20,
+                "label": "Roman Catholic"
+              }, 
+              {
+                "value": 30,
+                "label": "Jewish"
+              }, 
+              {
+                "value": 70,
+                "label": "Ukrainian Catholic"
+              }, 
+              {
+                "value": 71,
+                "label": "Greek Orthodox"
+              }, 
+              {
+                "value": 79,
+                "label": "All Other"
+              }
+            ]
+          },
+          "ces68": {
+            "class": "factor",
+            "question_label": "What is your religion?",
+            "raw_variable": "var340",
+            "choices": [
+              {
+                "value": 1,
+                "label": "Roman Catholic"
+              },
+              {
+                "value": 2,
+                "label": "United Church"
+              },
+              {
+                "value": 3,
+                "label": "Anglican"
+              }, 
+              {
+                "value": 4,
+                "label": "Presbyterian"
+              }, 
+              {
+                "value": 5,
+                "label": "Baptist"
+              }, 
+              {
+                "value": 6,
+                "label": "Lutheran"
+              }, 
+              {
+                "value": 7,
+                "label": "Ukrainian (Greek) Catholic"
+              },
+              {
+                "value": 8,
+                "label": "Greek-Orthodox"
+              },
+              {
+                "value": 9,
+                "label": "Jewish"
+              }, 
+              {
+                "value": "10-41",
+                "label": "Other Protestant"
+              }
+            ]
+          },
+          "ces74": {
+            "class": "factor",
+            "question_label": "What is your religion?",
+            "raw_variable": "VAR 1506",
+            "choices": [
+              {
+                "value": 0,
+                "label": "None"
+               },
+               {
+                "value": 1,
+                "label": "Roman Catholic"
+               },
+               {
+                "value": 2,
+                "label": "United Church"
+               },
+               {
+                "value": 3,
+                "label": "Anglican"
+               },
+               {
+                "value": 4,
+                "label": "Presbyterian"
+               },
+               {
+                "value": 5,
+                "label": "Baptist"
+               },
+               {
+                "value": 6,
+                "label": "Lutheran"
+               },
+               {
+                "value": 7,
+                "label": "Ukrainian (Greek) Catholic"
+               },
+               {
+                "value": 8,
+                "label": "Greek Orthodox"
+               },
+               {
+                "value": 9,
+                "label": "Jewish"
+               },
+               {
+                "value": 10,
+                "label": "Pentecostal"
+               },   
+               {
+                "value": 11,
+                "label": "Salvation army"
+               },
+               {
+                "value": 12,
+                "label": "Jehovah witness"
+               },
+               {
+                "value": 13,
+                "label": "Mennonite"
+               },
+               {
+                "value": 14,
+                "label": "Brethren"
+               },
+               {
+                "value": 15,
+                "label": "No Regular Church"
+               },
+               {
+                "value": 16,
+                "label": "Evangelical"
+               },
+               {
+                "value": 17,
+                "label": "Christian Reformed"
+               },
+               {
+                "value": 18,
+                "label": "Christian"
+               },
+               {
+                "value": 19,
+                "label": "latter day saints"
+               },
+               {
+                "value": 20,
+                "label": "Church of Christ, chruch of God"
+               },
+               {
+                "value": 21,
+                "label": "Protestant (Unspecified)"
+               },
+               {
+                "value": 22,
+                "label": "Christian science"
+               },
+               {
+                "value": 23,
+                "label": "Seventh day adventist"
+               },
+               {
+                "value": 24,
+                "label": "Christian alliance"
+               },
+               {
+                "value": 25,
+                "label": "Other specific protestant"
+               },
+               {
+                "value": 26,
+                "label": "Buddhist"
+               },
+               {
+                "value": 27,
+                "label": "Sikh"
+               },
+               {
+                "value": 28,
+                "label": "Moslem"
+               },
+               {
+                "value": 29,
+                "label": "Other vague answers"
+               }
+            ]
+        },
+          "ces79": {
+            "class": "factor",
+            "question_label": "What is your religion?",
+            "raw_variable": "VAR 0452",
+            "choices": [
+                {
+                 "value": 0,
+                 "label": "None"
+                },
+                {
+                 "value": 1,
+                 "label": "Roman Catholic"
+                },
+                {
+                 "value": 2,
+                 "label": "United Church"
+                },
+                {
+                 "value": 3,
+                 "label": "Anglican"
+                },
+                {
+                 "value": 4,
+                 "label": "Presbyterian"
+                },
+                {
+                 "value": 5,
+                 "label": "Baptist"
+                },
+                {
+                 "value": 6,
+                 "label": "Lutheran"
+                },
+                {
+                 "value": 7,
+                 "label": "Ukrainian (Greek) Catholic"
+                },
+                {
+                 "value": 8,
+                 "label": "Greek Orthodox"
+                },
+                {
+                 "value": 9,
+                 "label": "Jewish"
+                },
+                {
+                 "value": 10,
+                 "label": "Pentecostal"
+                },   
+                {
+                 "value": 11,
+                 "label": "Salvation army"
+                },
+                {
+                 "value": 12,
+                 "label": "Jehovah witness"
+                },
+                {
+                 "value": 13,
+                 "label": "Mennonite"
+                },
+                {
+                 "value": 14,
+                 "label": "Brethren"
+                },
+                {
+                 "value": 15,
+                 "label": "No Regular Church"
+                },
+                {
+                 "value": 16,
+                 "label": "Evangelical"
+                },
+                {
+                 "value": 17,
+                 "label": "Christian Reformed"
+                },
+                {
+                 "value": 18,
+                 "label": "Christian"
+                },
+                {
+                 "value": 19,
+                 "label": "latter day saints"
+                },
+                {
+                 "value": 20,
+                 "label": "Church of Christ, chruch of God"
+                },
+                {
+                 "value": 21,
+                 "label": "Protestant (Unspecified)"
+                },
+                {
+                 "value": 22,
+                 "label": "Christian science"
+                },
+                {
+                 "value": 23,
+                 "label": "Seventh day adventist"
+                },
+                {
+                 "value": 24,
+                 "label": "Christian alliance"
+                },
+                {
+                 "value": 25,
+                 "label": "Other specific protestant"
+                },
+                {
+                 "value": 26,
+                 "label": "Buddhist, sikh, moslem"
+                },
+                {
+                 "value": 27,
+                 "label": "Other vague answers"
+                }
+            ]
+        },
+          "ces84": {
+            "class": "factor",
+            "question_label": "What is your religious affiliation?",
+            "raw_variable": "VAR371",
+              "choices": [
+                {
+                "value": 1,
+                "label": "Roman Catholic"
+                },
+                {
+                "value": 2,
+                "label": "United Church"
+                },
+                {
+                "value": 3,
+                "label": "Anglican"
+                },
+                {
+                "value": 4,
+                "label": "Presbyterian"
+                },
+                {
+                "value": 5,
+                "label": "Baptist"
+                },
+                {
+                "value": 6,
+                "label": "Lutheran"
+                },
+                {
+                "value": 7,
+                "label": "Ukrainian (Greek) Catholic"
+                },
+                {
+                "value": 8,
+                "label": "Greek Orthodox"
+                },
+                {
+                "value": 9,
+                "label": "Jewish"
+                },
+                {
+                "value": 10,
+                "label": "Pentecostal"
+                },
+                {
+                "value": 11,
+                "label": "Salvation army"
+                },
+                {
+                "value": 12,
+                "label": "Jehovah witness"
+                },
+                {
+                "value": 13,
+                "label": "Mennonite"
+                },
+                {
+                "value": 14,
+                "label": "Evangelical"
+                },
+                {
+                "value": 15,
+                "label": "Christian Reformed"
+                },
+                {
+                "value": 16,
+                "label": "Christian"
+                },
+                {
+                "value": 17,
+                "label": "Mormon/L.D.S."
+                },
+                {
+                "value": 18,
+                "label": "Church of Christ"
+                },
+                {
+                "value": 19,
+                "label": "7th Day Adventist"
+                },
+                {
+                "value": 20,
+                "label": "Christian alliance"
+                },
+                {
+                "value": 22,
+                "label": "Christian science"
+                },
+                {
+                "value": 28,
+                "label": "Protestant (Unspecified)"
+                },
+                {
+                "value": 29,
+                "label": "Other Protestant"
+                },
+                {
+                "value": 30,
+                "label": "Muslim"
+                },
+                {
+                "value": 31,
+                "label": "Hindu"
+                },
+                {
+                "value": 32,
+                "label": "Sikh"
+                },
+                {
+                "value": 33,
+                "label": "Buddhist"
+                },
+                {
+                "value": 34,
+                "label": "No Regular Church"
+                },
+                {
+                "value": 35,
+                "label": "Misc. vague answer"
+                }
+            ]
+      },
+      "ces88": {
+        "class": "factor",
+        "question_label": "What is your religious affiliation? Is it Protestant, Catholic, Jewish, something else or no religion?",
+        "raw_variable": "n11",
+          "choices": [
+            {
+              "value": 1,
+              "label": "Protestant"
+            },
+            {
+              "value": 2,
+              "label": "Catholic"
+            },
+            {
+              "value": 3,
+              "label": "Jewish"
+            },
+            {
+              "value": 5,
+              "label": "Other religion"
+            },
+            {
+              "value": 7,
+              "label": "No religion"
+            },
+            {
+              "value": 8,
+              "label": "Don't Know"
+            },
+            {
+              "value": 9,
+              "label": "Refused"
+            }
+          ]
+      },
+      "ces93": {
+        "class": "factor",
+        "question_label": "What is your religious affiliation? Is it Protestant, Catholic, Jewish, another religion, or none?",
+        "raw_variable": "cpso9",
+          "choices": [
+            {
+              "value": 1,
+              "label": "Protestant"
+            },
+            {
+              "value": 2,
+              "label": "Catholic"
+            },
+            {
+              "value": 3,
+              "label": "Jewish"
+            },
+            {
+              "value": 5,
+              "label": "Other religion"
+            },
+            {
+              "value": 97,
+              "label": "None"
+            },
+            {
+              "value": 98,
+              "label": "Don't Know"
+            },
+            {
+              "value": 99,
+              "label": "Refused"
+            }
+          ]
+      },  
+      "ces97": {
+        "class": "factor",
+        "question_label": "What is your religious affiliation? Is it Protestant, Catholic, Jewish, Islam, another religion, or none?",
+        "raw_variable": "m10",
+          "choices": [
+            {
+              "value": 1,
+              "label": "Protestant"
+            },
+            {
+              "value": 2,
+              "label": "Catholic"
+            },
+            {
+              "value": 3,
+              "label": "Jewish"
+            },
+            {
+              "value": 4,
+              "label": "Islam"
+            },
+            {
+              "value": 5,
+              "label": "Other religion"
+            },
+            {
+              "value": 0,
+              "label": "None"
+            },
+            {
+              "value": 98,
+              "label": "Don't Know"
+            },
+            {
+              "value": 99,
+              "label": "Refused"
+            }
+          ]
+      },
+      "ces00": {
+        "class": "factor",
+        "question_label": "What is your religious affiliation? Is it Protestant, Catholic, Jewish, Islam, another religion, or none?",
+        "raw_variable": "m10",
+          "choices": [
+            {
+              "value": 1,
+              "label": "Protestant"
+            },
+            {
+              "value": 2,
+              "label": "Catholic"
+            },
+            {
+              "value": 3,
+              "label": "Jewish"
+            },
+            {
+              "value": 4,
+              "label": "Islam"
+            },
+            {
+              "value": 5,
+              "label": "Christian other Christian religion"
+            },
+            {
+              "value": 6,
+              "label": "other religion (Non-Judeo Christian)"
+            },
+            {
+              "value": 0,
+              "label": "None"
+            },
+            {
+              "value": 98,
+              "label": "Don't Know"
+            },
+            {
+              "value": 99,
+              "label": "Refused"
+            }
+          ]
+      },
+      "ces04": {
+        "class": "factor",
+        "question_label": "Please tell me what is your religion, if you have one?",
+        "raw_variable": "s9",
+          "choices": [
+            {
+              "value": 1,
+              "label": "Anglican/Church of England"
+            },
+            {
+              "value": 2,
+              "label": "Baptist"
+            },
+            {
+              "value": 3,
+              "label": "Buddhist/Buddhism"
+            },
+            {
+              "value": 4,
+              "label": "Catholic/Roman catholic/RC"
+            },
+            {
+              "value": 5,
+              "label": "Greek Orthodox/Ukrainian Orthodox/Russian Orthodox/Eastern Orthodox"
+            },
+            {
+              "value": 6,
+              "label": "Hindu"
+            },
+            {
+              "value": 7,
+              "label": "Jehovah's Witness"
+            },
+            {
+              "value": 8,
+              "label": "Jewish/Judaism/Jewish Orthodox"
+            },
+            {
+              "value": 9,
+              "label": "Lutheran"
+            },
+            {
+              "value": 10,
+              "label": "Mormon/ Church of Jesus/Christ of the Latter Day Saints"
+            },
+            {
+              "value": 11,
+              "label": "Muslim/Islam"
+            },
+            {
+              "value": 12,
+              "label": "Pentecostal/Fundamentalist/Born Again/Charismatic"
+            },
+            {
+              "value": 13,
+              "label": "Presbyterian"
+            },
+            {
+              "value": 14,
+              "label": "Protestant (Only after probe)"
+            },
+            {
+              "value": 15,
+              "label": "Sikh/Sikhism"
+            },
+            {
+              "value": 16,
+              "label": "United Church of Canada"
+            },
+            {
+              "value": 17,
+              "label": "Christian (Only after probe)"
+            },
+            {
+              "value": 18,
+              "label": "Christian reform"
+            },
+            {
+              "value": 19,
+              "label": "Salvation army"
+            },
+            {
+              "value": 20,
+              "label": "Mennonite"
+            },
+            {
+              "value": 0,
+              "label": "None, don't have one / Atheist"
+            }
+          ]
+    },
+    "ces06": {
+      "class": "factor",
+      "question_label": "Please tell me what is your religion, if you have one?",
+      "raw_variable": "s9",
+        "choices": [
+          {
+            "value": 1,
+            "label": "Anglican/Church of England"
+          },
+          {
+            "value": 2,
+            "label": "Baptist"
+          },
+          {
+            "value": 3,
+            "label": "Buddhist/Buddhism"
+          },
+          {
+            "value": 4,
+            "label": "Catholic/Roman catholic/RC"
+          },
+          {
+            "value": 5,
+            "label": "Greek Orthodox/Ukrainian Orthodox/Russian Orthodox/Eastern Orthodox"
+          },
+          {
+            "value": 6,
+            "label": "Hindu"
+          },
+          {
+            "value": 7,
+            "label": "Jehovah's Witness"
+          },
+          {
+            "value": 8,
+            "label": "Jewish/Judaism/Jewish Orthodox"
+          },
+          {
+            "value": 9,
+            "label": "Lutheran"
+          },
+          {
+            "value": 10,
+            "label": "Mormon/ Church of Jesus/Christ of the Latter Day Saints"
+          },
+          {
+            "value": 11,
+            "label": "Muslim/Islam"
+          },
+          {
+            "value": 12,
+            "label": "Pentecostal/Fundamentalist/Born Again/Charismatic"
+          },
+          {
+            "value": 13,
+            "label": "Presbyterian"
+          },
+          {
+            "value": 14,
+            "label": "Protestant (Only after probe)"
+          },
+          {
+            "value": 15,
+            "label": "Sikh/Sikhism"
+          },
+          {
+            "value": 16,
+            "label": "United Church of Canada"
+          },
+          {
+            "value": 17,
+            "label": "Christian (Only after probe)"
+          },
+          {
+            "value": 18,
+            "label": "Christian reform"
+          },
+          {
+            "value": 19,
+            "label": "Salvation army"
+          },
+          {
+            "value": 20,
+            "label": "Mennonite"
+          },
+          {
+            "value": 0,
+            "label": "None, don't have one / Atheist"
+          }
+        ]
+    },
+    "ces08": {
+      "class": "factor",
+      "question_label": "Please tell me what is your religion, if you have one?",
+      "raw_variable": "s9",
+        "choices": [
+          {
+            "value": 1,
+            "label": "Anglican/Church of England"
+          },
+          {
+            "value": 2,
+            "label": "Baptist"
+          },
+          {
+            "value": 3,
+            "label": "Buddhist/Buddhism"
+          },
+          {
+            "value": 4,
+            "label": "Catholic/Roman catholic/RC"
+          },
+          {
+            "value": 5,
+            "label": "Greek Orthodox/Ukrainian Orthodox/Russian Orthodox/Eastern Orthodox"
+          },
+          {
+            "value": 6,
+            "label": "Hindu"
+          },
+          {
+            "value": 7,
+            "label": "Jehovah's Witness"
+          },
+          {
+            "value": 8,
+            "label": "Jewish/Judaism/Jewish Orthodox"
+          },
+          {
+            "value": 9,
+            "label": "Lutheran"
+          },
+          {
+            "value": 10,
+            "label": "Mormon/ Church of Jesus/Christ of the Latter Day Saints"
+          },
+          {
+            "value": 11,
+            "label": "Muslim/Islam"
+          },
+          {
+            "value": 12,
+            "label": "Pentecostal/Fundamentalist/Born Again/Charismatic"
+          },
+          {
+            "value": 13,
+            "label": "Presbyterian"
+          },
+          {
+            "value": 14,
+            "label": "Protestant (Only after probe)"
+          },
+          {
+            "value": 15,
+            "label": "Sikh/Sikhism"
+          },
+          {
+            "value": 16,
+            "label": "United Church of Canada"
+          },
+          {
+            "value": 17,
+            "label": "Christian (Only after probe)"
+          },
+          {
+            "value": 18,
+            "label": "Christian reform"
+          },
+          {
+            "value": 19,
+            "label": "Salvation army"
+          },
+          {
+            "value": 20,
+            "label": "Mennonite"
+          },
+          {
+            "value": 0,
+            "label": "None, don't have one / Atheist"
+          }
+        ]
+    },
+    "ces11": {
+      "class": "factor",
+      "question_label": "Please tell me what is your religion, if you have one?",
+      "raw_variable": "ces_80.2",
+        "choices": [
+          {
+            "value": 1,
+            "label": "Anglican/Church of England"
+          },
+          {
+            "value": 2,
+            "label": "Baptist"
+          },
+          {
+            "value": 3,
+            "label": "Buddhist/Buddhism"
+          },
+          {
+            "value": 4,
+            "label": "Catholic/Roman catholic/RC"
+          },
+          {
+            "value": 5,
+            "label": "Greek Orthodox/Ukrainian Orthodox/Russian Orthodox/Eastern Orthodox"
+          },
+          {
+            "value": 6,
+            "label": "Hindu"
+          },
+          {
+            "value": 7,
+            "label": "Jehovah's Witness"
+          },
+          {
+            "value": 8,
+            "label": "Jewish/Judaism/Jewish Orthodox"
+          },
+          {
+            "value": 9,
+            "label": "Lutheran"
+          },
+          {
+            "value": 10,
+            "label": "Mormon/ Church of Jesus/Christ of the Latter Day Saints"
+          },
+          {
+            "value": 11,
+            "label": "Muslim/Islam"
+          },
+          {
+            "value": 12,
+            "label": "Pentecostal/Fundamentalist/Born Again/Charismatic"
+          },
+          {
+            "value": 13,
+            "label": "Presbyterian"
+          },
+          {
+            "value": 14,
+            "label": "Protestant (Only after probe)"
+          },
+          {
+            "value": 15,
+            "label": "Sikh/Sikhism"
+          },
+          {
+            "value": 16,
+            "label": "United Church of Canada"
+          },
+          {
+            "value": 17,
+            "label": "Christian (Only after probe)"
+          },
+          {
+            "value": 18,
+            "label": "Christian reform"
+          },
+          {
+            "value": 19,
+            "label": "Salvation army"
+          },
+          {
+            "value": 20,
+            "label": "Mennonite"
+          },
+          {
+            "value": 0,
+            "label": "None, don't have one / Atheist"
+          }
+        ]
+      },
+      "ces15": {
+        "class": "factor",
+        "question_label": "What is your religion, if you have one?",
+        "raw_variable": "religion",
+          "choices": [
+            {
+              "value": 20,
+              "label": "None / Don’t Have One / Atheist"
+            },
+            {
+              "value": 24,
+              "label": "Agnostic"
+            },
+            {
+              "value": 3,
+              "label": "Buddhist/Buddhism"
+            },
+            {
+              "value": 6,
+              "label": "Hindu"
+            },
+            {
+              "value": 8,
+              "label": "Jewish/Judaism/Jewish Orthodox"
+            },
+            {
+              "value": 11,
+              "label": "Muslim/Islam"
+            },
+            {
+              "value": 15,
+              "label": "Sikh/Sikhism"
+            },
+            {
+              "value": 1,
+              "label": "Anglican/Church of England"
+            },
+            {
+              "value": 2,
+              "label": "Baptist"
+            },
+            {
+              "value": 4,
+              "label": "Catholic/Roman Catholic/RC"
+            },
+            {
+              "value": 5,
+              "label": "Greek Orthodox/Ukrainian Orthodox/Russian Orthodox/Eastern Orthodox"
+            },
+            {
+              "value": 7,
+              "label": "Jehovah’s Witness"
+            },
+            {
+              "value": 9,
+              "label": "Lutheran"
+            },
+            {
+              "value": 10,
+              "label": "Mormon/Church of Jesus Christ of the Latter Day Saints"
+            },
+            {
+              "value": 12,
+              "label": "Pentecostal/Fundamentalist/Born Again/Evangelical"
+            },
+            {
+              "value": 13,
+              "label": "Presbyterian"
+            },
+            {
+              "value": 14,
+              "label": "Protestant"
+            },
+            {
+              "value": 16,
+              "label": "United Church of Canada"
+            },
+            {
+              "value": 17,
+              "label": "Christian Reform"
+            },
+            {
+              "value": 18,
+              "label": "Salvation Army"
+            },
+            {
+              "value": 19,
+              "label": "Mennonite"
+            },
+            {
+              "value": 21,
+              "label": "Other"
+            },
+            {
+              "value": 22,
+              "label": "Don’t Know"
+            },
+            {
+              "value": 23,
+              "label": "Refuse to answer"
+            }
+          ]
+      },
+      "ces19": {
+        "class": "factor",
+        "question_label": "What is your religion, if you have one?",
+        "raw_variable": "cps19_religion",
+          "choices": [
+            {
+              "value": 1,
+              "label": "None / Don’t Have One / Atheist"
+            },
+            {
+              "value": 2,
+              "label": "Agnostic"
+            },
+            {
+              "value": 3,
+              "label": "Buddhist/Buddhism"
+            },
+            {
+              "value": 4,
+              "label": "Hindu"
+            },
+            {
+              "value": 5,
+              "label": "Jewish/Judaism/Jewish Orthodox"
+            },
+            {
+              "value": 6,
+              "label": "Muslim/Islam"
+            },
+            {
+              "value": 7,
+              "label": "Sikh/Sikhism"
+            },
+            {
+              "value": 8,
+              "label": "Anglican/Church of England"
+            },
+            {
+              "value": 9,
+              "label": "Baptist"
+            },
+            {
+              "value": 10,
+              "label": "Catholic/Roman Catholic/RC"
+            },
+            {
+              "value": 11,
+              "label": "Greek Orthodox/Ukrainian Orthodox/Russian Orthodox/Eastern Orthodox"
+            },
+            {
+              "value": 12,
+              "label": "Jehovah’s Witness"
+            },
+            {
+              "value": 13,
+              "label": "Lutheran"
+            },
+            {
+              "value": 14,
+              "label": "Mormon/Church of Jesus Christ of the Latter Day Saints"
+            },
+            {
+              "value": 15,
+              "label": "Pentecostal/Fundamentalist/Born Again/Evangelical"
+            },
+            {
+              "value": 16,
+              "label": "Presbyterian"
+            },
+            {
+              "value": 17,
+              "label": "Protestant"
+            },
+            {
+              "value": 18,
+              "label": "United Church of Canada"
+            },
+            {
+              "value": 19,
+              "label": "Christian Reform"
+            },
+            {
+              "value": 20,
+              "label": "Salvation Army"
+            },
+            {
+              "value": 21,
+              "label": "Mennonite"
+            },
+            {
+              "value": 22,
+              "label": "Other"
+            },
+            {
+              "value": 23,
+              "label": "Don’t Know/Prefer not to answer"
+            },
+          ]
+      },
+      "ces21": {
+        "class": "factor",
+        "question_label": "Please indicate your religion, if you have one?",
+        "raw_variable": "cps21_religion",
+          "choices": [
+            {
+              "value": 1,
+              "label": "None / Don’t Have One / Atheist"
+            },
+            {
+              "value": 2,
+              "label": "Agnostic"
+            },
+            {
+              "value": 3,
+              "label": "Buddhist/Buddhism"
+            },
+            {
+              "value": 4,
+              "label": "Hindu"
+            },
+            {
+              "value": 5,
+              "label": "Jewish/Judaism/Jewish Orthodox"
+            },
+            {
+              "value": 6,
+              "label": "Muslim/Islam"
+            },
+            {
+              "value": 7,
+              "label": "Sikh/Sikhism"
+            },
+            {
+              "value": 8,
+              "label": "Anglican/Church of England"
+            },
+            {
+              "value": 9,
+              "label": "Baptist"
+            },
+            {
+              "value": 10,
+              "label": "Catholic/Roman Catholic/RC"
+            },
+            {
+              "value": 11,
+              "label": "Greek Orthodox/Ukrainian Orthodox/Russian Orthodox/Eastern Orthodox"
+            },
+            {
+              "value": 12,
+              "label": "Jehovah’s Witness"
+            },
+            {
+              "value": 13,
+              "label": "Lutheran"
+            },
+            {
+              "value": 14,
+              "label": "Mormon/Church of Jesus Christ of the Latter Day Saints"
+            },
+            {
+              "value": 15,
+              "label": "Pentecostal/Fundamentalist/Born Again/Evangelical"
+            },
+            {
+              "value": 16,
+              "label": "Presbyterian"
+            },
+            {
+              "value": 17,
+              "label": "Protestant"
+            },
+            {
+              "value": 18,
+              "label": "United Church of Canada"
+            },
+            {
+              "value": 19,
+              "label": "Christian Reform"
+            },
+            {
+              "value": 20,
+              "label": "Salvation Army"
+            },
+            {
+              "value": 21,
+              "label": "Mennonite"
+            },
+            {
+              "value": 22,
+              "label": "Other"
+            },
+            {
+              "value": 23,
+              "label": "Don’t Know/Prefer not to answer"
+            },
+          ]
+      },
+  }
+}

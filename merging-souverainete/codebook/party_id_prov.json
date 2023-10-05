@@ -1,0 +1,337 @@
+{
+    "description": "Force de l'identification partisane aux élections provinciales",
+    "source_id": {
+        "ces65": {
+            "class": "categoric",
+            "question_label": "R'S PARTY IDENTIFICATION",
+            "raw_variable": "v221",
+            "choices": [
+              {
+                "value": "conservative",
+                "label": "conservative"
+              },
+              {
+                "value": "creditiste",
+                "label": "creditiste"
+              },
+              {
+                "value": "liberal",
+                "label": "liberal"
+              },
+              {
+                "value": "ndp",
+                "label": "ndp"
+              },
+              {
+                "value": "social credit",
+                "label": "social credit"
+              },
+              {
+                "value": "no party",
+                "label": "no party"
+              },
+              {
+                "value": "other party",
+                "label": "other party"
+              }
+            ]
+          },
+          "ces68": {
+            "class": "categoric",
+            "question_label": "R'S PARTY IDENTIFICATION",
+            "raw_variable": "var122",
+            "choices": [
+              {
+                "value": "creditiste",
+                "label": "creditiste"
+              },
+              {
+                "value": "liberal",
+                "label": "liberal"
+              },
+              {
+                "value": "ndp",
+                "label": "ndp"
+              },
+              {
+                "value": "pc",
+                "label": "pc"
+              },
+              {
+                "value": "soc credit",
+                "label": "soc credit"
+              },
+              {
+                "value": "msa",
+                "label": "msa"
+              },
+              {
+                "value": "rin",
+                "label": "rin"
+              },
+              {
+                "value": "union nationale",
+                "label": "union nationale"
+              },
+              {
+                "value": "indep vote",
+                "label": "indep vote"
+              }
+            ]
+          },
+          "ces74": {
+            "class": "categoric",
+            "question_label": "THINKING OF PROVINCIAL POLITICS HERE IN (NAME PROVINCE) GENERALLY SPEAKING, DO YOU USUALLY THINK OF YOURSELF AS A LIBERAL, CONSERVATIVE, N.D.P., SOCIAL CREDIT, OR WHAT? (IN QUEBEC,SAY) LIBERAL, PARTI QUEBECOIS, SOCIAL CREDIT UNION NATIONALE, OR WHAT?",
+            "raw_variable": "v274",
+            "choices": [
+              {
+                "value": "liberal",
+                "label": "liberal"
+              },
+              {
+                "value": "parti quebecois",
+                "label": "parti quebecois"
+              },
+              {
+                "value": "progressive conservative",
+                "label": "progressive conservative"
+              },
+              {
+                "value": "social credit",
+                "label": "social credit"
+              },
+              {
+                "value": "n",
+                "label": "ndp"
+              },
+              {
+                "value": "union nationale",
+                "label": "union nationale"
+              },
+              {
+                "value": "none, independent",
+                "label": "none, independent"
+              }
+            ]
+          },
+          "ces79": {
+            "class": "categoric",
+            "question_label": "THINKING OF PROVINCIAL POLITICS HERE IN (NAME PROVINCE) GENERALLY SPEAKING, DO YOU USUALLY THINK OF YOURSELF AS A LIBERAL, CONSERVATIVE, N.D.P., SOCIAL CREDIT, OR WHAT? (IN QUEBEC,SAY) LIBERAL, PARTI QUEBECOIS, SOCIAL CREDIT UNION NATIONALE, OR WHAT?",
+            "raw_variable": "v274",
+            "choices": [
+              {
+                "value": "0",
+                "label": "none, independent"
+              },
+              {
+                "value": "1",
+                "label": "liberal"
+              },
+              {
+                "value": "2",
+                "label": "progressive conservative"
+              },
+              {
+                "value": "3",
+                "label": "ndp"
+              },
+              {
+                "value": "4",
+                "label": "social credit"
+              },
+              {
+                "value": "6",
+                "label": "union nationale"
+              },
+              {
+                "value": "7",
+                "label": "parti quebecois"
+              }
+            ]
+          },
+          "ces84": {
+            "class": "categoric",
+            "question_label": "R'S PROV. PARTY ID. - PREFERENCE",
+            "raw_variable": "v274",
+            "choices": [
+              {
+                "value": "independent/none",
+                "label": "independent/none"
+              },
+              {
+                "value": "liberal",
+                "label": "liberal"
+              },
+              {
+                "value": "n.d.p",
+                "label": "n.d.p"
+              },
+              {
+                "value": "p.c.",
+                "label": "p.c."
+              },
+              {
+                "value": "parti quebecois",
+                "label": "parti quebecois"
+              },
+              {
+                "value": "social credit",
+                "label": "social credit"
+              },
+              {
+                "value": "union nationale",
+                "label": "union nationale"
+              },
+              {
+                "value": "lib.+union nat'l",
+                "label": "lib.+union nat'l"
+              },
+              {
+                "value": "ndp & social cr.",
+                "label": "ndp & social cr."
+              },
+              {
+                "value": "pc. & ndp",
+                "label": "pc. & ndp"
+              },
+              {
+                "value": "soci. cr.+parti que",
+                "label": "soci. cr.+parti que"
+              }
+            ]
+          },
+          "ces88": {
+            "class": "categoric",
+            "question_label": "NA",
+            "raw_variable": "NA",
+            "choices": ["NA"
+            ]
+          },
+          "ces93": {
+            "class": "categoric",
+            "question_label": "R'S PROV. PARTY ID. - PREFERENCE",
+            "raw_variable": "cpsm7",
+            "choices": [
+              {
+                "value": "none of these",
+                "label": " none of these"
+              },
+              {
+                "value": "liberal",
+                "label": "liberal"
+              },
+              {
+                "value": "ndp",
+                "label": "n.d.p"
+              },
+              {
+                "value": "conservative",
+                "label": "conservative"
+              },
+              {
+                "value": "parti quebecois",
+                "label": "parti quebecois"
+              },
+              {
+                "value": "social credit",
+                "label": "social credit"
+              }
+            ]
+          },
+          "ces97": {
+            "class": "categoric",
+            "question_label": "NA",
+            "raw_variable": "NA",
+            "choices": ["NA"
+            ]
+          },
+          "ces2000": {
+            "class": "categoric",
+            "question_label": "NA",
+            "raw_variable": "NA",
+            "choices": ["NA"
+            ]
+          },
+          "ces2004": {
+            "class": "categoric",
+            "question_label": "NA",
+            "raw_variable": "NA",
+            "choices": ["NA"
+            ]
+          },
+          "ces2006": {
+            "class": "categoric",
+            "question_label": "NA",
+            "raw_variable": "NA",
+            "choices": ["NA"
+            ]
+          },
+          "ces2008": {
+            "class": "categoric",
+            "question_label": "NA",
+            "raw_variable": "NA",
+            "choices": ["NA"
+            ]
+          },
+          "ces2011": {
+            "class": "categoric",
+            "question_label": "NA",
+            "raw_variable": "NA",
+            "choices": ["NA"
+            ]
+          },
+          "ces2015": {
+            "class": "categoric",
+            "question_label": "NA",
+            "raw_variable": "NA",
+            "choices": ["NA"
+            ]
+          },
+          "ces2019": {
+            "class": "categoric",
+            "question_label": "R'S PROV. PARTY ID. - PREFERENCE",
+            "raw_variable": "cps19_prov_id",
+            "choices": [
+                {
+                    "value": "Coalition Avenir Qu<e9>bec",
+                    "label": " Coalition Avenir Québec"
+                  },
+                  {
+                    "value": "Liberal",
+                    "label": "Liberal"
+                  },
+                  {
+                    "value": "Qu<e9>bec Solidaire",
+                    "label": "Québec Solidaire "
+                  },
+                  {
+                    "value": "Parti Qu<e9>b<e9>cois",
+                    "label": "parti quebecois"
+                  }
+            ]
+          },
+          "ces2021": {
+            "class": "categoric",
+            "question_label": "R'S PROV. PARTY ID. - PREFERENCE",
+            "raw_variable": "cps21_prov_id",
+            "choices": [
+                {
+                    "value": "Coalition Avenir Qu<e9>bec",
+                    "label": " Coalition Avenir Québec"
+                  },
+                  {
+                    "value": "Liberal",
+                    "label": "Liberal"
+                  },
+                  {
+                    "value": "Qu<e9>bec Solidaire",
+                    "label": "Québec Solidaire "
+                  },
+                  {
+                    "value": "Parti Qu<e9>b<e9>cois",
+                    "label": "parti quebecois"
+                  }
+            ]
+          }
+    }
+}

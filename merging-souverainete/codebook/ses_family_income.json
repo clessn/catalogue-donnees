@@ -591,7 +591,620 @@
             "label": "more than $110,000"
           }
         ]                 
+      },
+      "ces15": {
+        "class": "factor ordered",
+        "question_label": "What is your total household income before taxes for the year 2014? Be sure to include income FROM ALL SOURCES.",
+        "raw_variable": "income_full",
+        "choices": [
+          {
+            "value": "1",
+            "label": "Less than $30,000"
+          },
+          {
+            "value": "2",
+            "label": "$30,000 to $60,000"
+          },
+          {
+            "value": "3",
+            "label": "$60,000 to $90,000"
+          },
+          {
+            "value": "4",
+            "label": "$90,000 to $110,000"
+          },
+          {
+            "value": "5",
+            "label": "More than $110,000"
+          }
+        ]                                 
+      },
+      "ces19": {
+        "class": "factor ordered",
+        "question_label": "What was your total household income, before taxes, for the year 2018? Be sure to include income from all sources, to the nearest thousand dollars.",
+        "raw_variable": "cps19_income_number et cps19_income_cat. cps19_income_number est une variable numérique qui présente l'income en $. Si le répondant est NA, il répond à cps19_income_cat qui est codée comme ça:",
+        "choices": [
+          {
+            "value": "No income",
+            "label": "No income"
+          },
+          {
+            "value": "$1 to $30,000",
+            "label": "$1 to $30,000"
+          },
+          {
+            "value": "$30,001 to $60,000",
+            "label": "$30,001 to $60,000"
+          },
+          {
+            "value": "$60,001 to $90,000",
+            "label": "$60,001 to $90,000"
+          },
+          {
+            "value": "$90,001 to $110,000",
+            "label": "$90,001 to $110,000"
+          },
+          {
+            "value": "$110,001 to $150,000",
+            "label": "$110,001 to $150,000"
+          },
+          {
+            "value": "$150,001 to $200,000",
+            "label": "$150,001 to $200,000"
+          },
+          {
+            "value": "More than $200,000",
+            "label": "More than $200,000"
+          }
+        ]
+      },
+      "ces21": {
+        "class": "factor ordered",
+        "question_label": "What was your total household income, before taxes, for the year 2020? Be sure to include income from all sources, to the nearest thousand dollars.",
+        "raw_variable": "cps21_income_number et cps21_income_cat. cps21_income_number est une variable numérique qui présente l'income en $. Si le répondant est NA, il répond à cps121_income_cat qui est codée comme ça:",
+        "choices": [
+          {
+            "value": "No income",
+            "label": "No income"
+          },
+          {
+            "value": "$1 to $30,000",
+            "label": "$1 to $30,000"
+          },
+          {
+            "value": "$30,001 to $60,000",
+            "label": "$30,001 to $60,000"
+          },
+          {
+            "value": "$60,001 to $90,000",
+            "label": "$60,001 to $90,000"
+          },
+          {
+            "value": "$90,001 to $110,000",
+            "label": "$90,001 to $110,000"
+          },
+          {
+            "value": "$110,001 to $150,000",
+            "label": "$110,001 to $150,000"
+          },
+          {
+            "value": "$150,001 to $200,000",
+            "label": "$150,001 to $200,000"
+          },
+          {
+            "value": "More than $200,000",
+            "label": "More than $200,000"
+          }
+        ]
+      },
+      "datagotchi_pilo1_2021": {
+        "class": "factor ordered",
+        "question_label": "Approximativement, dans laquel des catégories suivants le revenu  de votre ménage se situe-t-il?",
+        "raw_variable": "SES2",
+        "choices": [
+          {
+            "value": "1",
+            "label": "Aucun revenu"
+          },
+          {
+            "value": "2",
+            "label": "1$ . 30 000$"
+          },
+          {
+            "value": "3",
+            "label": "30 001$ . 60 000$"
+          },
+          {
+            "value": "4",
+            "label": "60 001$ . 90 000$"
+          },
+          {
+            "value": "5",
+            "label": "90 001$ . 110 000$"
+          },
+          {
+            "value": "6",
+            "label": "110 001$ . 150 000$"
+          },
+          {
+            "value": "7",
+            "label": "150 001$ . 200 000$"
+          },
+          {
+            "value": "8",
+            "label": "Plus de 200 000$"
+          }
+        ]                
+      },
+      "datagotchi_pilot2_2022": {
+        "class": "factor ordered",
+        "question_label": "Approximativement, dans laquelle des catégories suivantes le revenu total de votre ménage, avant impôts, se situe-t-il?",
+        "raw_variable": "income",
+        "choices": [
+          {
+            "value": "1",
+            "label": "Aucun revenu"
+          },
+          {
+            "value": "2",
+            "label": "1$ à 30 000$"
+          },
+          {
+            "value": "3",
+            "label": "30 001$ à 60 000$"
+          },
+          {
+            "value": "4",
+            "label": "60 001$ à 90 000$"
+          },
+          {
+            "value": "5",
+            "label": "90 001 à 110 000$"
+          },
+          {
+            "value": "6",
+            "label": "110 001$ à 150 000$"
+          },
+          {
+            "value": "7",
+            "label": "150 001$ à 200 000$"
+          },
+          {
+            "value": "8",
+            "label": "Plus de 200 000$"
+          }
+        ]        
+    },
+    "omnibus_january": {
+      "class": "factor ordered",
+      "question_label": "Quel était le revenu annuel total de tous les membres de votre foyer avant impôts en 2021?",
+      "raw_variable": "S7",
+      "choices": [
+        {
+          "value": "1",
+          "label": "Moins de 20 000 $"
+        },
+        {
+          "value": "2",
+          "label": "20 000 $ . 39 999 $"
+        },
+        {
+          "value": "3",
+          "label": "40 000 $ . 59 999 $"
+        },
+        {
+          "value": "4",
+          "label": "60 000 $ . 79 999 $"
+        },
+        {
+          "value": "5",
+          "label": "80 000 $ . 99 999 $"
+        },
+        {
+          "value": "6",
+          "label": "100 000 $ . 119 999 $"
+        },
+        {
+          "value": "7",
+          "label": "120 000 $ . 139 999 $"
+        },
+        {
+          "value": "8",
+          "label": "140 000 $ et plus"
+        }
+      ]              
+  },
+  "omnibus_february": {
+    "class": "factor ordered",
+    "question_label": "Quel était le revenu annuel total de tous les membres de votre foyer avant impôts en 2021?",
+    "raw_variable": "S7",
+    "choices": [
+      {
+        "value": "1",
+        "label": "Moins de 20 000 $"
+      },
+      {
+        "value": "2",
+        "label": "20 000 $ . 39 999 $"
+      },
+      {
+        "value": "3",
+        "label": "40 000 $ . 59 999 $"
+      },
+      {
+        "value": "4",
+        "label": "60 000 $ . 79 999 $"
+      },
+      {
+        "value": "5",
+        "label": "80 000 $ . 99 999 $"
+      },
+      {
+        "value": "6",
+        "label": "100 000 $ . 119 999 $"
+      },
+      {
+        "value": "7",
+        "label": "120 000 $ . 139 999 $"
+      },
+      {
+        "value": "8",
+        "label": "140 000 $ et plus"
       }
-
-    }
+    ]              
+  },
+  "omnibus_march": {
+    "class": "factor ordered",
+    "question_label": "Quel était le revenu annuel total de tous les membres de votre foyer avant impôts en 2021?",
+    "raw_variable": "S7",
+    "choices": [
+      {
+       "value": "1",
+        "label": "Moins de 20 000 $"
+      },
+      {
+       "value": "2",
+        "label": "20 000 $ . 39 999 $"
+     },
+     {
+       "value": "3",
+       "label": "40 000 $ . 59 999 $"
+     },
+     {
+       "value": "4",
+       "label": "60 000 $ . 79 999 $"
+     },
+     {
+       "value": "5",
+       "label": "80 000 $ . 99 999 $"
+     },
+     {
+       "value": "6",
+       "label": "100 000 $ . 119 999 $"
+     },
+     {
+       "value": "7",
+       "label": "120 000 $ . 139 999 $"
+      },
+      {
+        "value": "8",
+       "label": "140 000 $ et plus"
+     }
+    ]              
+  },
+  "omnibus_april": {
+    "class": "factor ordered",
+    "question_label": "Quel était le revenu annuel total de tous les membres de votre foyer avant impôts en 2021?",
+    "raw_variable": "S7",
+    "choices": [
+      {
+       "value": "1",
+        "label": "Moins de 20 000 $"
+      },
+      {
+       "value": "2",
+        "label": "20 000 $ . 39 999 $"
+     },
+     {
+       "value": "3",
+       "label": "40 000 $ . 59 999 $"
+     },
+     {
+       "value": "4",
+       "label": "60 000 $ . 79 999 $"
+     },
+     {
+       "value": "5",
+       "label": "80 000 $ . 99 999 $"
+     },
+     {
+       "value": "6",
+       "label": "100 000 $ . 119 999 $"
+     },
+     {
+       "value": "7",
+       "label": "120 000 $ . 139 999 $"
+      },
+      {
+        "value": "8",
+       "label": "140 000 $ et plus"
+     }
+    ]              
+  },
+  "omnibus_may": {
+    "class": "factor ordered",
+    "question_label": "Quel était le revenu annuel total de tous les membres de votre foyer avant impôts en 2021?",
+    "raw_variable": "S7",
+    "choices": [
+      {
+       "value": "1",
+        "label": "Moins de 20 000 $"
+      },
+      {
+       "value": "2",
+        "label": "20 000 $ . 39 999 $"
+     },
+     {
+       "value": "3",
+       "label": "40 000 $ . 59 999 $"
+     },
+     {
+       "value": "4",
+       "label": "60 000 $ . 79 999 $"
+     },
+     {
+       "value": "5",
+       "label": "80 000 $ . 99 999 $"
+     },
+     {
+       "value": "6",
+       "label": "100 000 $ . 119 999 $"
+     },
+     {
+       "value": "7",
+       "label": "120 000 $ . 139 999 $"
+      },
+      {
+        "value": "8",
+       "label": "140 000 $ et plus"
+     }
+    ]              
+  },
+  "omnibus_june": {
+    "class": "factor ordered",
+    "question_label": "Quel était le revenu annuel total de tous les membres de votre foyer avant impôts en 2021?",
+    "raw_variable": "S7",
+    "choices": [
+      {
+       "value": "1",
+        "label": "Moins de 20 000 $"
+      },
+      {
+       "value": "2",
+        "label": "20 000 $ . 39 999 $"
+     },
+     {
+       "value": "3",
+       "label": "40 000 $ . 59 999 $"
+     },
+     {
+       "value": "4",
+       "label": "60 000 $ . 79 999 $"
+     },
+     {
+       "value": "5",
+       "label": "80 000 $ . 99 999 $"
+     },
+     {
+       "value": "6",
+       "label": "100 000 $ . 119 999 $"
+     },
+     {
+       "value": "7",
+       "label": "120 000 $ . 139 999 $"
+      },
+      {
+        "value": "8",
+       "label": "140 000 $ et plus"
+     }
+    ]              
+  },
+  "pco": {
+    "class": "factor ordered",
+    "question_label": "Which of the following describes your combined family income before taxes?",
+    "raw_variable": "Q16.5",
+    "choices": [
+      {
+        "value": "ess than $20,000",
+        "label": "ess than $20,000"
+      },
+      {
+        "value": "between $20,000 - $29,999",
+        "label": "between $20,000 - $29,999"
+      },
+      {
+        "value": "between $30,000 - $39,999",
+        "label": "between $30,000 - $39,999"
+      },
+      {
+        "value": "between $40,000 - $49,999",
+        "label": "between $40,000 - $49,999"
+      },
+      {
+        "value": "between $50,000 - $59,999",
+        "label": "between $50,000 - $59,999"
+      },
+      {
+        "value": "between $60,000 - $69,999",
+        "label": "between $60,000 - $69,999"
+      },
+      {
+        "value": "between $70,000 - $79,999",
+        "label": "between $70,000 - $79,999"
+      },
+      {
+        "value": "between $80,000 - $89,999",
+        "label": "between $80,000 - $89,999"
+      },
+      {
+        "value": "between $90,000 - $99,999",
+        "label": "between $90,000 - $99,999"
+      },
+      {
+        "value": "between $100,000 - $109,999",
+        "label": "between $100,000 - $109,999"
+      },
+      {
+        "value": "between $110,000 - $119,999",
+        "label": "between $110,000 - $119,999"
+      },
+      {
+        "value": "between $120,000 - $129,000",
+        "label": "between $120,000 - $129,000"
+      },
+      {
+        "value": "between $130,000 - $139,000",
+        "label": "between $130,000 - $139,000"
+      },
+      {
+        "value": "between $140,000 - $149,999",
+        "label": "between $140,000 - $149,999"
+      },
+      {
+        "value": "between $150,000 - $199,999",
+        "label": "between $150,000 - $199,999"
+      },
+      {
+        "value": "between $200,000 - $500,000",
+        "label": "between $200,000 - $500,000"
+      },
+      {
+        "value": "between $500,000 - $999,999",
+        "label": "between $500,000 - $999,999"
+      },
+      {
+        "value": "$1 million or more",
+        "label": "$1 million or more"
+      }
+    ]        
+  },
+  "pes_elxn_2022": {
+    "class": "factor ordered",
+    "question_label": "Approximativement, dans laquelle des catégories suivantes le revenu total de votre ménage, avant impôts, se situe-t-il?",
+    "raw_variable": "ses_income",
+    "choices": [
+      {
+        "value": "Aucun revenu",
+        "label": "Aucun revenu"
+      },
+      {
+        "value": "1$ à 30 000$",
+        "label": "1$ à 30 000$"
+      },
+      {
+        "value": "30 001$ à 60 000$",
+        "label": "30 001$ à 60 000$"
+      },
+      {
+        "value": "60 001$ à 90 000$",
+        "label": "60 001$ à 90 000$"
+      },
+      {
+        "value": "90 001 à 110 000$",
+        "label": "90 001 à 110 000$"
+      },
+      {
+        "value": "110 001$ à 150 000$",
+        "label": "110 001$ à 150 000$"
+      },
+      {
+        "value": "150 001$ à 200 000$",
+        "label": "150 001$ à 200 000$"
+      },
+      {
+        "value": "Plus de 200 000$",
+        "label": "Plus de 200 000$"
+      }
+    ]                  
+  },
+  "quorum_mcq_pilote": {
+    "class": "factor ordered",
+    "question_label": "Approximativement, dans laquelle des catégories suivantes le revenu total de votre ménage, avant impôts, se situe-t-il?",
+    "raw_variable": "ses_income et EN_ses_income",
+    "choices": [
+      {
+        "value": "Aucun revenu",
+        "label": "Aucun revenu"
+      },
+      {
+        "value": "1$ à 30 000$",
+        "label": "1$ à 30 000$"
+      },
+      {
+        "value": "30 001$ à 60 000$",
+        "label": "30 001$ à 60 000$"
+      },
+      {
+        "value": "60 001$ à 90 000$",
+        "label": "60 001$ à 90 000$"
+      },
+      {
+        "value": "90 001 à 110 000$",
+        "label": "90 001 à 110 000$"
+      },
+      {
+        "value": "110 001$ à 150 000$",
+        "label": "110 001$ à 150 000$"
+      },
+      {
+        "value": "150 001$ à 200 000$",
+        "label": "150 001$ à 200 000$"
+      },
+      {
+        "value": "Plus de 200 000$",
+        "label": "Plus de 200 000$"
+      }
+    ]                  
+  },
+  "sondage_nationalisme_2022": {
+    "class": "factor ordered",
+    "question_label": "Approximativement, dans laquelle des catégories suivantes le revenu total de votre ménage, avant impôts, se situe-t-il?",
+    "raw_variable": "income",
+    "choices": [
+      {
+        "value": "Aucun revenu",
+        "label": "Aucun revenu"
+      },
+      {
+        "value": "1$ à 30 000$",
+        "label": "1$ à 30 000$"
+      },
+      {
+        "value": "30 001$ à 60 000$",
+        "label": "30 001$ à 60 000$"
+      },
+      {
+        "value": "60 001$ à 90 000$",
+        "label": "60 001$ à 90 000$"
+      },
+      {
+        "value": "90 001 à 110 000$",
+        "label": "90 001 à 110 000$"
+      },
+      {
+        "value": "110 001$ à 150 000$",
+        "label": "110 001$ à 150 000$"
+      },
+      {
+        "value": "150 001$ à 200 000$",
+        "label": "150 001$ à 200 000$"
+      },
+      {
+        "value": "Plus de 200 000$",
+        "label": "Plus de 200 000$"
+      }
+    ]                  
   }
+
+  }
+}

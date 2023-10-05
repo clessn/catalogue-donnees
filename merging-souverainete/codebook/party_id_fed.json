@@ -1,0 +1,541 @@
+{
+    "description": "Identification partisane aux élections fédérales",
+    "source_id": {
+        "ces65": {
+            "class": "categoric",
+            "question_label": "R'S PARTY IDENTIFICATION",
+            "raw_variable": "v221",
+            "choices": [
+              {
+                "value": "conservative",
+                "label": "conservative"
+              },
+              {
+                "value": "creditiste",
+                "label": "creditiste"
+              },
+              {
+                "value": "liberal",
+                "label": "liberal"
+              },
+              {
+                "value": "ndp",
+                "label": "ndp"
+              },
+              {
+                "value": "social credit",
+                "label": "social credit"
+              },
+              {
+                "value": "no party",
+                "label": "no party"
+              },
+              {
+                "value": "other party",
+                "label": "other party"
+              }
+            ]
+          },
+          "ces68": {
+            "class": "categoric",
+            "question_label": "R'S PARTY IDENTIFICATION",
+            "raw_variable": "var122",
+            "choices": [
+              {
+                "value": "creditiste",
+                "label": "creditiste"
+              },
+              {
+                "value": "liberal",
+                "label": "liberal"
+              },
+              {
+                "value": "ndp",
+                "label": "ndp"
+              },
+              {
+                "value": "pc",
+                "label": "pc"
+              },
+              {
+                "value": "soc credit",
+                "label": "soc credit"
+              },
+              {
+                "value": "msa",
+                "label": "msa"
+              },
+              {
+                "value": "rin",
+                "label": "rin"
+              },
+              {
+                "value": "union nationale",
+                "label": "union nationale"
+              },
+              {
+                "value": "indep vote",
+                "label": "indep vote"
+              }
+            ]
+          },
+          "ces74": {
+            "class": "categoric",
+            "question_label": "THINKING OF FEDERAL POLITICS, DO YOU USUALLY THINK OF YOURSELF AS A LIBERAL,CONSERTIVE,N.D.P.,SOCIAL CREDIT, OR WHAT?",
+            "raw_variable": "v131",
+            "choices": [
+              {
+                "value": "liberal",
+                "label": "liberal"
+              },
+              {
+                "value": "n",
+                "label": "ndp"
+              },
+              {
+                "value": "progressive conservative ",
+                "label": "progressive conservative "
+              },
+              {
+                "value": "social credit",
+                "label": "social credit"
+              },
+              {
+                "value": "independent or none",
+                "label": "independent or none"
+              }
+            ]
+          },
+          "ces79": {
+            "class": "categoric",
+            "question_label": "THINKING OF FEDERAL POLITICS, DO YOU USUALLY THINK OF YOURSELF AS A LIBERAL,CONSERTIVE,N.D.P.,SOCIAL CREDIT, OR WHAT?",
+            "raw_variable": "v1192",
+            "choices": [
+              {
+                "value": "0",
+                "label": "independent or none"
+              },
+              {
+                "value": "1",
+                "label": "liberal"
+              },
+              {
+                "value": "2",
+                "label": "progressive conservative"
+              },
+              {
+                "value": "3",
+                "label": "ndp"
+              },
+              {
+                "value": "4",
+                "label": "social credit"
+              },
+              {
+                "value": "5",
+                "label": "PC AND LIB"
+              },
+              {
+                "value": "6",
+                "label": "LIB AND N.D.P."
+              }
+            ]
+          },
+          "ces84": {
+            "class": "categoric",
+            "question_label": "R'S FED PARTY ID",
+            "raw_variable": "var081",
+            "choices": [
+              {
+                "value": "independent/none",
+                "label": "independent/none"
+              },
+              {
+                "value": "liberal",
+                "label": "liberal"
+              },
+              {
+                "value": "ndp",
+                "label": "ndp"
+              },
+              {
+                "value": "p.c.",
+                "label": "p.c."
+              },
+              {
+                "value": "parti nationaliste",
+                "label": "parti nationaliste"
+              },
+              {
+                "value": "social credit",
+                "label": "social credit"
+              },
+              {
+                "value": "lib. & ndp.",
+                "label": "lib. & ndp."
+              },
+              {
+                "value": "lib. & pc.",
+                "label": "lib. & pc."
+              },
+              {
+                "value": "pc. & ndp.",
+                "label": "pc. & ndp."
+              },
+              {
+                "value": "pc. & social credit",
+                "label": "pc. & social credit"
+              }
+            ]
+          },
+          "ces88": {
+            "class": "categoric",
+            "question_label": "R'S FED PARTY ID",
+            "raw_variable": "i1",
+            "choices": [
+              {
+                "value": "none",
+                "label": "none"
+              },
+              {
+                "value": "liberal",
+                "label": "liberal"
+              },
+              {
+                "value": "ndp",
+                "label": "ndp"
+              },
+              {
+                "value": "pc",
+                "label": "p.c."
+              }
+            ]
+          },
+          "ces93": {
+            "class": "categoric",
+            "question_label": "R'S FED PARTY ID",
+            "raw_variable": "cpsm1",
+            "choices": [
+              {
+                "value": "none of these",
+                "label": "none of these"
+              },
+              {
+                "value": "liberal",
+                "label": "liberal"
+              },
+              {
+                "value": "ndp",
+                "label": "ndp"
+              },
+              {
+                "value": "conservative",
+                "label": "conservative"
+              },
+              {
+                "value": "bloc quebecois",
+                "label": "bloc quebecois"
+              },
+              {
+                "value": "reform",
+                "label": "reform"
+              }
+            ]
+          },
+          "ces97": {
+            "class": "categoric",
+            "question_label": "R'S FED PARTY ID",
+            "raw_variable": "cpsk1",
+            "choices": [
+              {
+                "value": "none",
+                "label": "none"
+              },
+              {
+                "value": "liberal",
+                "label": "liberal"
+              },
+              {
+                "value": "ndp",
+                "label": "ndp"
+              },
+              {
+                "value": "pc",
+                "label": "pc"
+              },
+              {
+                "value": "bloc",
+                "label": "bloc quebecois"
+              },
+              {
+                "value": "reform",
+                "label": "reform"
+              }
+            ]
+          },
+          "ces2000": {
+            "class": "categoric",
+            "question_label": "R'S FED PARTY ID",
+            "raw_variable": "cpsk1a",
+            "choices": [
+              {
+                "value": "none of these",
+                "label": "none of these"
+              },
+              {
+                "value": "liberal",
+                "label": "liberal"
+              },
+              {
+                "value": "ndp",
+                "label": "ndp"
+              },
+              {
+                "value": "conservative",
+                "label": "conservative"
+              },
+              {
+                "value": "bloc quebecois",
+                "label": "bloc quebecois"
+              },
+              {
+                "value": "alliance",
+                "label": "alliance"
+              }
+            ]
+          },
+          "ces2004": {
+            "class": "categoric",
+            "question_label": "R'S FED PARTY ID",
+            "raw_variable": "ces04_pes_k1a_3",
+            "choices": [
+              {
+                "value": "none of these",
+                "label": "none of these"
+              },
+              {
+                "value": "liberal (grits)",
+                "label": "liberal (grits)"
+              },
+              {
+                "value": "bloc quebecois",
+                "label": "bloc quebecois"
+              },
+              {
+                "value": "conservative (new conservative party)",
+                "label": "conservative (new conservative party)"
+              },
+              {
+                "value": "pc/progressive conservative/old conservative",
+                "label": "pc/progressive conservative/old conservative"
+              },
+              {
+                "value": "green party",
+                "label": "green party"
+              },
+              {
+                "value": "ndp",
+                "label": "ndp"
+              }
+            ]
+          },
+          "ces2006": {
+            "class": "categoric",
+            "question_label": "R'S FED PARTY ID",
+            "raw_variable": "ces04_pes_k1a_3",
+            "choices": [
+              {
+                "value": "none of these",
+                "label": "none of these"
+              },
+              {
+                "value": "liberal (grits)",
+                "label": "liberal (grits)"
+              },
+              {
+                "value": "bloc quebecois",
+                "label": "bloc quebecois"
+              },
+              {
+                "value": "conservative (new conservative party)",
+                "label": "conservative (new conservative party)"
+              },
+              {
+                "value": "pc/progressive conservative/old conservative",
+                "label": "pc/progressive conservative/old conservative"
+              },
+              {
+                "value": "green party",
+                "label": "green party"
+              },
+              {
+                "value": "ndp",
+                "label": "ndp"
+              },
+              {
+                "value": "alliance",
+                "label": "alliance"
+              }
+            ]
+          },
+          "ces2008": {
+            "class": "categoric",
+            "question_label": "R'S FED PARTY ID",
+            "raw_variable": "cps_q1a",
+            "choices": [
+              {
+                "value": "none of these",
+                "label": "none of these"
+              },
+              {
+                "value": "liberal (grits)",
+                "label": "liberal (grits)"
+              },
+              {
+                "value": "bloc quebecois (bq, pq, bloc)",
+                "label": "bloc quebecois"
+              },
+              {
+                "value": "conservative (tory, pcs)",
+                "label": "conservative"
+              },
+              {
+                "value": "green party",
+                "label": "green party"
+              },
+              {
+                "value": "ndp (new democrats)",
+                "label": "ndp"
+              }
+            ]
+          },
+          "ces2011": {
+            "class": "categoric",
+            "question_label": "R'S FED PARTY ID",
+            "raw_variable": "CPS11_71",
+            "choices": [
+              {
+                "value": "none of these",
+                "label": "none of these"
+              },
+              {
+                "value": "Liberal",
+                "label": "Liberal"
+              },
+              {
+                "value": "Bloc Quebecois",
+                "label": "Bloc Quebecois"
+              },
+              {
+                "value": "Conservative",
+                "label": "Conservative"
+              },
+              {
+                "value": "Green Party",
+                "label": "Green Party"
+              },
+              {
+                "value": "NDP",
+                "label": "NDP"
+              }
+            ]
+          },
+          "ces2015": {
+            "class": "categoric",
+            "question_label": "R'S FED PARTY ID",
+            "raw_variable": "partyid",
+            "choices": [
+              {
+                "value": "1",
+                "label": "Liberal"
+              },
+              {
+                "value": "2",
+                "label": "Conservative"
+              },
+              {
+                "value": "3",
+                "label": "NDP"
+              },
+              {
+                "value": "4",
+                "label": "Bloc Quebecois"
+              },
+              {
+                "value": "5",
+                "label": "Green Party"
+              },
+              {
+                "value": "6",
+                "label": "none of these"
+              }
+            ]
+          },
+          "ces2019": {
+            "class": "categoric",
+            "question_label": "R'S FED PARTY ID",
+            "raw_variable": "cps19_fed_id",
+            "choices": [
+              {
+                "value": "Liberal",
+                "label": "Liberal"
+              },
+              {
+                "value": "Conservative",
+                "label": "Conservative"
+              },
+              {
+                "value": "ndp",
+                "label": "NDP"
+              },
+              {
+                "value": "Bloc Qu<e9>b<e9>cois",
+                "label": "Bloc Quebecois"
+              },
+              {
+                "value": "Green",
+                "label": "Green Party"
+              },
+              {
+                "value": "People's Party",
+                "label": "People's Party"
+              },
+              {
+                "value": "None of these",
+                "label": "none of these"
+              }
+            ]
+          },
+          "ces2021": {
+            "class": "categoric",
+            "question_label": "R'S FED PARTY ID",
+            "raw_variable": "cps21_fed_id",
+            "choices": [
+              {
+                "value": "Liberal",
+                "label": "Liberal"
+              },
+              {
+                "value": "Conservative",
+                "label": "Conservative"
+              },
+              {
+                "value": "ndp",
+                "label": "NDP"
+              },
+              {
+                "value": "Bloc Que9be9cois (Note au codeur: le nom n'est pas exactement le même dans le csv)",
+                "label": "Bloc Quebecois"
+              },
+              {
+                "value": "Green",
+                "label": "Green Party"
+              },
+              {
+                "value": "None of these",
+                "label": "none of these"
+              }
+            ]
+          }
+    }
+}
