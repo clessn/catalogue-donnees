@@ -1187,7 +1187,7 @@
             {
               "value": 23,
               "label": "Don’t Know/Prefer not to answer"
-            },
+            }
           ]
       },
       "ces21": {
@@ -1286,8 +1286,507 @@
             {
               "value": 23,
               "label": "Don’t Know/Prefer not to answer"
-            },
+            }
           ]
       },
+      "Datagotchi_pilot1_2021": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA"
+    },
+    "Datagotchi_pilot2_2022": {
+      "class": "factor",
+      "question_label": "Quelle est votre religion, si vous en avez une?",
+      "raw_variable": "religion",
+      "choices": [
+          {
+            "value": 1,
+            "label": "Aucune/Athée"
+          },
+          {
+            "value": 2,
+            "label": "Agnostique"
+          },
+          {
+            "value": 3,
+            "label": "Bouddhisme"
+          },
+          {
+            "value": 4,
+            "label": "Hindou"
+          },
+          {
+            "value": 5,
+            "label": "Judaïsme"
+          },
+          {
+            "value": 6,
+            "label": "Musulman"
+          },
+          {
+            "value": 7,
+            "label": "Sikhisme"
+          },
+          {
+            "value": 8,
+            "label": "Catholique"
+          },
+          {
+            "value": 9,
+            "label": "Protestant"
+          },
+          {
+            "value": 10,
+            "label": "Orthodoxe"
+          },
+          {
+            "value": 11,
+            "label": "Autre"
+          }
+      ]
+    },
+    "Omnibus_janvier": {
+      "class": "factor",
+      "question_label": "Quelle est votre religion, si vous en avez une?",
+      "raw_variable": "religion",
+      "choices": [
+          {
+            "value": 1,
+            "label": "Aucune/Athée"
+          },
+          {
+            "value": 2,
+            "label": "Agnostique"
+          },
+          {
+            "value": 3,
+            "label": "Bouddhisme"
+          },
+          {
+            "value": 4,
+            "label": "Hindou"
+          },
+          {
+            "value": 5,
+            "label": "Judaïsme"
+          },
+          {
+            "value": 6,
+            "label": "Musulman"
+          },
+          {
+            "value": 7,
+            "label": "Sikhisme"
+          },
+          {
+            "value": 8,
+            "label": "Catholique"
+          },
+          {
+            "value": 9,
+            "label": "Protestant"
+          },
+          {
+            "value": 10,
+            "label": "Orthodoxe"
+          },
+          {
+            "value": 11,
+            "label": "Autre"
+          }
+      ]
+    },
+    "Omnibus_fevrier": {
+      "class": "factor",
+      "question_label": "Quelle est votre religion, si vous en avez une?",
+      "raw_variable": "religion",
+      "choices": [
+          {
+            "value": 1,
+            "label": "Aucune/Athée"
+          },
+          {
+            "value": 2,
+            "label": "Agnostique"
+          },
+          {
+            "value": 3,
+            "label": "Bouddhisme"
+          },
+          {
+            "value": 4,
+            "label": "Hindou"
+          },
+          {
+            "value": 5,
+            "label": "Judaïsme"
+          },
+          {
+            "value": 6,
+            "label": "Musulman"
+          },
+          {
+            "value": 7,
+            "label": "Sikhisme"
+          },
+          {
+            "value": 8,
+            "label": "Catholique"
+          },
+          {
+            "value": 9,
+            "label": "Protestant"
+          },
+          {
+            "value": 10,
+            "label": "Orthodoxe"
+          },
+          {
+            "value": 11,
+            "label": "Autre"
+          }
+      ]
+    },
+    "Omnibus_mars": {
+      "class": "factor",
+      "question_label": "Quelle est votre religion, si vous en avez une?",
+      "raw_variable": "religion",
+      "choices": [
+          {
+            "value": 1,
+            "label": "Aucune/Athée"
+          },
+          {
+            "value": 2,
+            "label": "Agnostique"
+          },
+          {
+            "value": 3,
+            "label": "Bouddhisme"
+          },
+          {
+            "value": 4,
+            "label": "Hindou"
+          },
+          {
+            "value": 5,
+            "label": "Judaïsme"
+          },
+          {
+            "value": 6,
+            "label": "Musulman"
+          },
+          {
+            "value": 7,
+            "label": "Sikhisme"
+          },
+          {
+            "value": 8,
+            "label": "Catholique"
+          },
+          {
+            "value": 9,
+            "label": "Protestant"
+          },
+          {
+            "value": 10,
+            "label": "Orthodoxe"
+          },
+          {
+            "value": 11,
+            "label": "Autre"
+          }
+      ]
+    },
+    "Omnibus_avril": {
+      "class": "factor",
+      "question_label": "Quelle est votre religion, si vous en avez une?",
+      "raw_variable": "religion",
+      "choices": [
+          {
+            "value": 1,
+            "label": "Aucune/Athée"
+          },
+          {
+            "value": 2,
+            "label": "Agnostique"
+          },
+          {
+            "value": 3,
+            "label": "Bouddhisme"
+          },
+          {
+            "value": 4,
+            "label": "Hindou"
+          },
+          {
+            "value": 5,
+            "label": "Judaïsme"
+          },
+          {
+            "value": 6,
+            "label": "Musulman"
+          },
+          {
+            "value": 7,
+            "label": "Sikhisme"
+          },
+          {
+            "value": 8,
+            "label": "Catholique"
+          },
+          {
+            "value": 9,
+            "label": "Protestant"
+          },
+          {
+            "value": 10,
+            "label": "Orthodoxe"
+          },
+          {
+            "value": 11,
+            "label": "Autre"
+          }
+      ]
+    },
+    "Omnibus_mai": {
+      "class": "factor",
+      "question_label": "Quelle est votre religion, si vous en avez une?",
+      "raw_variable": "religion",
+      "choices": [
+          {
+            "value": 1,
+            "label": "Aucune/Athée"
+          },
+          {
+            "value": 2,
+            "label": "Agnostique"
+          },
+          {
+            "value": 3,
+            "label": "Bouddhisme"
+          },
+          {
+            "value": 4,
+            "label": "Hindou"
+          },
+          {
+            "value": 5,
+            "label": "Judaïsme"
+          },
+          {
+            "value": 6,
+            "label": "Musulman"
+          },
+          {
+            "value": 7,
+            "label": "Sikhisme"
+          },
+          {
+            "value": 8,
+            "label": "Catholique"
+          },
+          {
+            "value": 9,
+            "label": "Protestant"
+          },
+          {
+            "value": 10,
+            "label": "Orthodoxe"
+          },
+          {
+            "value": 11,
+            "label": "Autre"
+          }
+      ]
+    },
+    "Omnibus_juin": {
+      "class": "factor",
+      "question_label": "Quelle est votre religion, si vous en avez une?",
+      "raw_variable": "religion",
+      "choices": [
+          {
+            "value": 1,
+            "label": "Aucune/Athée"
+          },
+          {
+            "value": 2,
+            "label": "Agnostique"
+          },
+          {
+            "value": 3,
+            "label": "Bouddhisme"
+          },
+          {
+            "value": 4,
+            "label": "Hindou"
+          },
+          {
+            "value": 5,
+            "label": "Judaïsme"
+          },
+          {
+            "value": 6,
+            "label": "Musulman"
+          },
+          {
+            "value": 7,
+            "label": "Sikhisme"
+          },
+          {
+            "value": 8,
+            "label": "Catholique"
+          },
+          {
+            "value": 9,
+            "label": "Protestant"
+          },
+          {
+            "value": 10,
+            "label": "Orthodoxe"
+          },
+          {
+            "value": 11,
+            "label": "Autre"
+          }
+      ]
+    },
+    "Omnibus_aout": {
+      "class": "factor",
+      "question_label": "Quelle est votre religion, si vous en avez une?",
+      "raw_variable": "religion",
+      "choices": [
+          {
+            "value": 1,
+            "label": "Aucune/Athée"
+          },
+          {
+            "value": 2,
+            "label": "Agnostique"
+          },
+          {
+            "value": 3,
+            "label": "Bouddhisme"
+          },
+          {
+            "value": 4,
+            "label": "Hindou"
+          },
+          {
+            "value": 5,
+            "label": "Judaïsme"
+          },
+          {
+            "value": 6,
+            "label": "Musulman"
+          },
+          {
+            "value": 7,
+            "label": "Sikhisme"
+          },
+          {
+            "value": 8,
+            "label": "Catholique"
+          },
+          {
+            "value": 9,
+            "label": "Protestant"
+          },
+          {
+            "value": 10,
+            "label": "Orthodoxe"
+          },
+          {
+            "value": 11,
+            "label": "Autre"
+          }
+      ]
+    },
+    "pco": {
+        "class": "factor",
+        "question_label": "What is your religion, if you have one?",
+        "raw_variable": "Q18.1",
+        "choices": [
+          {"value": "1", "label": "Don't have one"},
+          {"value": "2", "label": "Agnostic"},
+          {"value": "3", "label": "Atheist"},
+          {"value": "4", "label": "Anglican/Church of England"},
+          {"value": "5", "label": "Baptist"},
+          {"value": "6", "label": "Buddhist/Buddhism"},
+          {"value": "7", "label": "Catholic/Roman Catholic"},
+          {"value": "8", "label": "Christian"},
+          {"value": "9", "label": "Christian Reform"},
+          {"value": "10", "label": "Greek/Ukrainian/Russion/Eastern Orthodox"},
+          {"value": "11", "label": "Hinduism"},
+          {"value": "12", "label": "Islam"},
+          {"value": "13", "label": "Jehovah's Witness"},
+          {"value": "14", "label": "Jewish/Judaism/Jewish Orthodox"},
+          {"value": "15", "label": "Lutheran"},
+          {"value": "16", "label": "Mennonite"},
+          {"value": "17", "label": "Mormon/Church of Jesus Christ of Latter Day Saints"},
+          {"value": "18", "label": "Pentacostal/Fundamentalist/Born Again/Charismatic"},
+          {"value": "19", "label": "Presbyterian"},
+          {"value": "20", "label": "Protestant"},
+          {"value": "21", "label": "Salvation Army"},
+          {"value": "22", "label": "Sikhism"},
+          {"value": "23", "label": "United Church of Canada"},
+          {"value": "24", "label": "Traditional (Aboriginal) Spirituality"},
+          {"value": "25", "label": "Other (Please specify):"}
+        ]
+      },
+      "pes_elxn_2022": {
+        "class": "factor",
+        "question_label": "Quelle est votre religion, si vous en avez une?",
+        "raw_variable": "ses_religion",
+        "choices": [
+          {"value": "1", "label": "Aucune/Athée"},
+          {"value": "2", "label": "Agnostique"},
+          {"value": "3", "label": "Bouddhisme"},
+          {"value": "4", "label": "Hindou"},
+          {"value": "5", "label": "Judaïsme"},
+          {"value": "6", "label": "Musulman"},
+          {"value": "7", "label": "Sikhisme"},
+          {"value": "8", "label": "Catholique"},
+          {"value": "9", "label": "Protestantisme"},
+          {"value": "10", "label": "Orthodoxe"},
+          {"value": "11", "label": "Autre (veuillez préciser)"},
+          {"value": "12", "label": "Préfère ne pas répondre"}
+        ]
+      },
+      "quorum_mcq_pilote": {
+        "class": "factor",
+        "question_label": "Quelle est votre religion?",
+        "raw_variable": "ses_religion",
+        "choices": [
+          {"value": "1", "label": "Catholique"},
+          {"value": "2", "label": "Protestant"},
+          {"value": "3", "label": "Juif"},
+          {"value": "4", "label": "Musulman"},
+          {"value": "5", "label": "Athée"},
+          {"value": "6", "label": "Agnostique"},
+          {"value": "7", "label": "Autre"},
+          {"value": "8", "label": "Préfère ne pas répondre"}
+        ]
+      },
+      "sondage_nationalisme_2022": {
+        "class": "factor",
+        "question_label": "Please tell me what is your religion, if you have one.",
+        "raw_variable": "religion",
+        "choices": [
+          {"value": "1", "label": "Atheism/None"},
+          {"value": "2", "label": "Agnosticism"},
+          {"value": "3", "label": "Buddhism"},
+          {"value": "4", "label": "Hinduism"},
+          {"value": "5", "label": "Judaism"},
+          {"value": "6", "label": "Islam"},
+          {"value": "7", "label": "Sikhism"},
+          {"value": "8", "label": "Catholicism"},
+          {"value": "9", "label": "Protestantism"},
+          {"value": "10", "label": "Orthodoxy"},
+          {"value": "11", "label": "Other (please specify)"},
+          {"value": "12", "label": "Don't know/Prefer not to say"}
+        ]
+      }
   }
+    
 }
