@@ -1,0 +1,213 @@
+{
+    "description": "Force de l'identification partisane aux élections provinciales",
+    "source_id": {
+        "ces65": {
+            "class": "ordered factor",
+            "question_label": " XSTRENGTH-R'S PARTY ID ",
+            "raw_variable": "v222",
+            "choices": [
+              {
+                "value": "very strongly",
+                "label": "very strongly"
+              },
+              {
+                "value": "fairly strongly",
+                "label": "fairly strongly"
+              },
+              {
+                "value": "not very strongly",
+                "label": "not very strongly"
+              }
+            ]
+          },
+          "ces68": {
+            "class": "ordered factor",
+            "question_label": "XSTRENGTH-R'S PARTY ID",
+            "raw_variable": "var123",
+            "choices": [
+              {
+                "value": "1",
+                "label": "very strongly"
+              },
+              {
+                "value": "2",
+                "label": "fairly strongly"
+              },
+              {
+                "value": "3",
+                "label": "not very strongly"
+              }
+            ]
+          },
+          "ces74": {
+            "class": "ordered factor",
+            "question_label": "HOW STRONGLY (PARTY MENTIONED IN Q30A) DO YOU FEEL, VERY STRONGLY,FAIRLY STRONGLY, OR NOT VERY STRONGLY?",
+            "raw_variable": "var275",
+            "choices": [
+              {
+                "value": "very strongly",
+                "label": "very strongly"
+              },
+              {
+                "value": "fairly strongly",
+                "label": "fairly strongly"
+              },
+              {
+                "value": "not very strongly",
+                "label": "not very strongly"
+              }
+            ]
+          },
+          "ces79": {
+            "class": "ordered factor",
+            "question_label": "HOW STRONGLY DO YOU FEEL, VERY STRONGLY,FAIRLY STRONGLY, OR NOT VERY STRONGLY?",
+            "raw_variable": "v1314",
+            "choices": [
+              {
+                "value": "1",
+                "label": "very strongly"
+              },
+              {
+                "value": "2",
+                "label": "fairly strongly"
+              },
+              {
+                "value": "3",
+                "label": "not very strongly"
+              }
+            ]
+          },
+          "ces84": {
+            "class": "ordered factor",
+            "question_label": "R'S PROV. PARTY ID. - INTENSITY",
+            "raw_variable": "var254",
+            "choices": [
+              {
+                "value": "very strongly",
+                "label": "very strongly"
+              },
+              {
+                "value": "fairly strongly",
+                "label": "fairly strongly"
+              },
+              {
+                "value": "not very strongly",
+                "label": "not very strongly"
+              }
+            ]
+          },
+          "ces88": {
+            "class": "ordered factor",
+            "question_label": "NA",
+            "raw_variable": "NA",
+            "choices": ["NA"
+            ]
+          },
+          "ces93": {
+            "class": "ordered factor",
+            "question_label": "R'S PROV. PARTY ID. - INTENSITY",
+            "raw_variable": "cpsm8",
+            "choices": [
+              {
+                "value": "very strongly",
+                "label": "very strongly"
+              },
+              {
+                "value": "fairly strongly",
+                "label": "fairly strongly"
+              },
+              {
+                "value": "not very strongly",
+                "label": "not very strongly"
+              }
+            ]
+          },
+          "ces97": {
+            "class": "ordered factor",
+            "question_label": "NA",
+            "raw_variable": "NA",
+            "choices": ["NA"
+            ]
+          },
+          "ces2000": {
+            "class": "ordered factor",
+            "question_label": "NA",
+            "raw_variable": "NA",
+            "choices": ["NA"
+            ]
+          },
+          "ces2004": {
+            "class": "ordered factor",
+            "question_label": "NA",
+            "raw_variable": "NA",
+            "choices": ["NA"
+            ]
+          },
+          "ces2006": {
+            "class": "ordered factor",
+            "question_label": "NA",
+            "raw_variable": "NA",
+            "choices": ["NA"
+            ]
+          },
+          "ces2008": {
+            "class": "ordered factor",
+            "question_label": "NA",
+            "raw_variable": "NA",
+            "choices": ["NA"
+            ]
+          },
+          "ces2011": {
+            "class": "ordered factor",
+            "question_label": "NA",
+            "raw_variable": "NA",
+            "choices": ["NA"
+            ]
+          },
+          "ces2015": {
+            "class": "ordered factor",
+            "question_label": "NA",
+            "raw_variable": "NA",
+            "choices": ["NA"
+            ]
+          },
+          "ces2019": {
+            "class": "ordered factor",
+            "question_label": "R'S PROV. PARTY ID. - INTENSITY",
+            "raw_variable": "cps19_prov_id_str",
+            "choices": [
+              {
+                "value": "Very strongly",
+                "label": "very strongly"
+              },
+              {
+                "value": "Fairly strongly",
+                "label": "fairly strongly"
+              },
+              {
+                "value": "Not very strongly",
+                "label": "not very strongly"
+              }
+            ]
+          },
+          "ces2021": {
+            "class": "ordered factor",
+            "question_label": "R'S PROV. PARTY ID. - INTENSITY",
+            "raw_variable": "cps21_prov_id_str",
+            "choices": [
+              {
+                "value": "Very strongly",
+                "label": "very strongly"
+              },
+              {
+                "value": "Fairly strongly",
+                "label": "fairly strongly"
+              },
+              {
+                "value": "Not very strongly",
+                "label": "not very strongly"
+              }
+            ]
+          }
+    }
+}
