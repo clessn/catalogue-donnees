@@ -443,6 +443,79 @@
           "label": "I identify in a different way"
         }
       ]
+    },
+    "pco": {
+      "class": "factor",
+      "question_label": "Are you a man or a woman?",
+      "raw_variable": "Q20.3_8.Pco2014",
+      "choices": [
+        {
+          "value": 1,
+          "label": "Man"
+        },
+        {
+          "value": 2,
+          "label": "Woman"
+        }
+      ]
+    },
+    "pes_elxn_2022": {
+      "class": "factor",
+      "question_label": "Quel est votre genre",
+      "raw_variable": "ses_gender",
+      "choices": [
+        {
+          "value": "Masculin",
+          "label": "Masculin"
+        },
+        {
+          "value": "Féminin",
+          "label": "Féminin"
+        },
+        {
+          "value": "Masculin (homme trans)",
+          "label": "Masculin (homme trans)"
+        },
+        {
+          "value": "Féminin (femme trans)",
+          "label": "Féminin (femme trans)"
+        },
+        {
+          "value": "Non-binaire",
+          "label": "Non-binaire"
+        },
+        {
+          "value": "Queer",
+          "label": "Queer"
+        },
+        {
+          "value": "Agenre",
+          "label": "Agenre"
+        },
+        {
+          "value": "Préfère ne pas répondre",
+          "label": "Préfère ne pas répondre"
+        }
+      ]
+    },
+    "quorum_mcq_pilote": {
+      "class": "factor",
+      "question_label": "What is your gender?",
+      "raw_variable": "EN_ses_gender",
+      "choices": [
+        {
+          "value": 1,
+          "label": "Man"
+        },
+        {
+          "value": 2,
+          "label": "Woman"
+        },
+        {
+          "value": 3,
+          "label": "Other"
+        }
+      ]
     }
   }
 }

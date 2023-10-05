@@ -1,35 +1,433 @@
 {
-    "description": "",
+    "description": "À faire",
     "source_id": {
-        "ces65": {
-            "class": "",
-            "question_label": "",
-            "raw_variable": "",
-            "choices": [
-              {
-                "value": "",
-                "label": ""
-              },
-              {
-                "value": "",
-                "label": ""
-              }
-            ]
+      "ces65": {
+        "class": "À faire",
+        "question_label": "À faire",
+        "raw_variable": "À faire",
+        "choices": [
+          {
+            "value": "À faire",
+            "label": "À faire"
           },
-          "ces68": {
-            "class": "",
-            "question_label": "",
-            "raw_variable": "",
-            "choices": [
-              {
-                "value": "",
-                "label": ""
-              },
-              {
-                "value": "",
-                "label": ""
-              }
-            ]
+          {
+            "value": "À faire",
+            "label": "À faire"
           }
+        ]
+      },
+      "ces68": {
+        "class": "À faire",
+        "question_label": "À faire",
+        "raw_variable": "À faire",
+        "choices": [
+          {
+            "value": "À faire",
+            "label": "À faire"
+          },
+          {
+            "value": "À faire",
+            "label": "À faire"
+          }
+        ]
+      },
+      "ces74": {
+        "class": "À faire",
+        "question_label": "À faire",
+        "raw_variable": "À faire",
+        "choices": [
+          {
+            "value": "À faire",
+            "label": "À faire"
+          },
+          {
+            "value": "À faire",
+            "label": "À faire"
+          }
+        ]
+      },
+      "ces79": {
+        "class": "À faire",
+        "question_label": "À faire",
+        "raw_variable": "À faire",
+        "choices": [
+          {
+            "value": "À faire",
+            "label": "À faire"
+          },
+          {
+            "value": "À faire",
+            "label": "À faire"
+          }
+        ]
+      },
+      "ces84": {
+        "class": "À faire",
+        "question_label": "À faire",
+        "raw_variable": "À faire",
+        "choices": [
+          {
+            "value": "À faire",
+            "label": "À faire"
+          },
+          {
+            "value": "À faire",
+            "label": "À faire"
+          }
+        ]
+      },
+      "ces88": {
+        "class": "À faire",
+        "question_label": "À faire",
+        "raw_variable": "À faire",
+        "choices": [
+          {
+            "value": "À faire",
+            "label": "À faire"
+          },
+          {
+            "value": "À faire",
+            "label": "À faire"
+          }
+        ]
+      },
+      "ces93": {
+        "class": "À faire",
+        "question_label": "À faire",
+        "raw_variable": "À faire",
+        "choices": [
+          {
+            "value": "À faire",
+            "label": "À faire"
+          },
+          {
+            "value": "À faire",
+            "label": "À faire"
+          },
+          {
+            "value": "À faire",
+            "label": "À faire"
+          }
+        ]
+      },
+      "ces97": {
+        "class": "À faire",
+        "question_label": "À faire",
+        "raw_variable": "À faire",
+        "choices": [
+          {
+            "value": "À faire",
+            "label": "À faire"
+          },
+          {
+            "value": "À faire",
+            "label": "À faire"
+          }
+        ]
+      },
+      "ces2000": {
+        "class": "À faire",
+        "question_label": "À faire",
+        "raw_variable": "À faire",
+        "choices": [
+          {
+            "value": "À faire",
+            "label": "À faire"
+          },
+          {
+            "value": "À faire",
+            "label": "À faire"
+          }
+        ]
+      },
+      "ces2004": {
+        "class": "À faire",
+        "question_label": "À faire",
+        "raw_variable": "À faire",
+        "choices": [
+          {
+            "value": "À faire",
+            "label": "À faire"
+          },
+          {
+            "value": "À faire",
+            "label": "À faire"
+          }
+        ]
+      },
+      "ces2006": {
+        "class": "À faire",
+        "question_label": "À faire",
+        "raw_variable": "À faire",
+        "choices": [
+          {
+            "value": "À faire",
+            "label": "À faire"
+          },
+          {
+            "value": "À faire",
+            "label": "À faire"
+          },
+          {
+            "value": "À faire",
+            "label": "À faire"
+          }
+        ]
+      },
+      "ces2008": {
+        "class": "À faire",
+        "question_label": "À faire",
+        "raw_variable": "À faire",
+        "choices": [
+          {
+            "value": "À faire",
+            "label": "À faire"
+          },
+          {
+            "value": "À faire",
+            "label": "À faire"
+          }
+        ]
+      },
+      "ces2011": {
+        "class": "À faire",
+        "question_label": "À faire",
+        "raw_variable": "À faire",
+        "choices": [
+          {
+            "value": "À faire",
+            "label": "À faire"
+          },
+          {
+            "value": "À faire",
+            "label": "À faire"
+          }
+        ]
+      },
+      "ces2015": {
+        "class": "À faire",
+        "question_label": "À faire",
+        "raw_variable": "À faire",
+        "choices": [
+          {
+            "value": "À faire",
+            "label": "À faire"
+          },
+          {
+            "value": "À faire",
+            "label": "À faire"
+          }
+        ]
+      },
+      "ces2019": {
+        "class": "À faire",
+        "question_label": "À faire",
+        "raw_variable": "À faire",
+        "choices": [
+          {
+            "value": "À faire",
+            "label": "À faire"
+          },
+          {
+            "value": "À faire",
+            "label": "À faire"
+          }
+        ]
+      },
+      "ces2021": {
+        "class": "À faire",
+        "question_label": "À faire",
+        "raw_variable": "À faire",
+        "choices": [
+          {
+            "value": "À faire",
+            "label": "À faire"
+          },
+          {
+            "value": "À faire",
+            "label": "À faire"
+          }
+        ]
+      },
+      "datagotchi_pilot1_2021": {
+        "class": "À faire",
+        "question_label": "À faire",
+        "raw_variable": "À faire",
+        "choices": [
+          {
+            "value": "À faire",
+            "label": "À faire"
+          },
+          {
+            "value": "À faire",
+            "label": "À faire"
+          }
+        ]
+      },
+      "datagotchi_pilot2_2022": {
+        "class": "À faire",
+        "question_label": "À faire",
+        "raw_variable": "À faire",
+        "choices": [
+          {
+            "value": "À faire",
+            "label": "À faire"
+          },
+          {
+            "value": "À faire",
+            "label": "À faire"
+          }
+        ]
+      },
+      "omnibus_1january": {
+        "class": "À faire",
+        "question_label": "À faire",
+        "raw_variable": "À faire",
+        "choices": [
+          {
+            "value": "À faire",
+            "label": "À faire"
+          },
+          {
+            "value": "À faire",
+            "label": "À faire"
+          }
+        ]
+      },
+      "omnibus_2february": {
+        "class": "À faire",
+        "question_label": "À faire",
+        "raw_variable": "À faire",
+        "choices": [
+          {
+            "value": "À faire",
+            "label": "À faire"
+          },
+          {
+            "value": "À faire",
+            "label": "À faire"
+          }
+        ]
+      },
+      "omnibus_3march": {
+        "class": "À faire",
+        "question_label": "À faire",
+        "raw_variable": "À faire",
+        "choices": [
+          {
+            "value": "À faire",
+            "label": "À faire"
+          },
+          {
+            "value": "À faire",
+            "label": "À faire"
+          }
+        ]
+      },
+      "omnibus_4april": {
+        "class": "À faire",
+        "question_label": "À faire",
+        "raw_variable": "À faire",
+        "choices": [
+          {
+            "value": "À faire",
+            "label": "À faire"
+          },
+          {
+            "value": "À faire",
+            "label": "À faire"
+          }
+        ]
+      },
+      "omnibus_5may": {
+        "class": "À faire",
+        "question_label": "À faire",
+        "raw_variable": "À faire",
+        "choices": [
+          {
+            "value": "À faire",
+            "label": "À faire"
+          },
+          {
+            "value": "À faire",
+            "label": "À faire"
+          }
+        ]
+      },
+      "omnibus_6june": {
+        "class": "À faire",
+        "question_label": "À faire",
+        "raw_variable": "À faire",
+        "choices": [
+          {
+            "value": "À faire",
+            "label": "À faire"
+          },
+          {
+            "value": "À faire",
+            "label": "À faire"
+          }
+        ]
+      },
+      "sondage_nationalisme_2022": {
+        "class": "À faire",
+        "question_label": "À faire",
+        "raw_variable": "À faire",
+        "choices": [
+          {
+            "value": "À faire",
+            "label": "À faire"
+          },
+          {
+            "value": "À faire",
+            "label": "À faire"
+          }
+        ]
+      },
+      "pco": {
+        "class": "À faire",
+        "question_label": "À faire",
+        "raw_variable": "À faire",
+        "choices": [
+          {
+            "value": "À faire",
+            "label": "À faire"
+          },
+          {
+            "value": "À faire",
+            "label": "À faire"
+          }
+        ]
+      },
+      "pes_elxn_2022": {
+        "class": "À faire",
+        "question_label": "À faire",
+        "raw_variable": "À faire",
+        "choices": [
+          {
+            "value": "À faire",
+            "label": "À faire"
+          },
+          {
+            "value": "À faire",
+            "label": "À faire"
+          }
+        ]
+      },
+      "quorum_mcq_pilote": {
+        "class": "À faire",
+        "question_label": "À faire",
+        "raw_variable": "À faire",
+        "choices": [
+          {
+            "value": "À faire",
+            "label": "À faire"
+          },
+          {
+            "value": "À faire",
+            "label": "À faire"
+          }
+        ]
+      }
     }
-}
+  }
