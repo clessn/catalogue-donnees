@@ -15,7 +15,7 @@ ui <- fluidPage(
         bottom: 0;
         left: 0;
         z-index: -1;
-        background-image: url('https://scontent-cdg4-2.xx.fbcdn.net/v/t39.30808-6/383012596_272442245615644_8584141306423411014_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5614bc&_nc_ohc=4Oi2Ic8W4jgAX89Q0SG&_nc_ht=scontent-cdg4-2.xx&oh=00_AfBkgflD0DXSh1jHTOyS13qSa0xJywGqHf60me9YxIXC1w&oe=651813F0');
+        background-image: url('https://upload.wikimedia.org/wikipedia/commons/b/b4/Logo_du_comit%C3%A9_du_OUI_du_r%C3%A9f%C3%A9rendum_souverainet%C3%A9_association.svg');
         background-size: cover;
         opacity: 1;
       }
