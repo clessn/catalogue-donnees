@@ -181,197 +181,132 @@
         ]
       },
       "ces2021": {
-        "class": "todo",
-        "question_label": "todo",
-        "raw_variable": "todo",
+        "class": "string",
+        "question_label": "Veuillez inscrire votre code postal à six chiffres dans la case ci-dessous. (Par exemple, A1A 1A1, avec des lettres majuscules)",
+        "raw_variable": "cps21_postalcode",
         "choices": [
           {
-            "value": "todo",
-            "label": "todo"
-          },
-          {
-            "value": "todo",
-            "label": "todo"
+            "value": "postal_code"
           }
         ]
       },
       "datagotchi_pilot1_2021": {
-        "class": "todo",
-        "question_label": "todo",
-        "raw_variable": "todo",
+        "class": "string",
+        "question_label": "Quels sont les trois premiers caractères de votre code postal?",
+        "raw_variable": "CP",
         "choices": [
           {
-            "value": "todo",
-            "label": "todo"
-          },
-          {
-            "value": "todo",
-            "label": "todo"
+            "value": "postal_code"
           }
         ]
       },
       "datagotchi_pilot2_2022": {
-        "class": "todo",
-        "question_label": "todo",
-        "raw_variable": "todo",
+        "class": "string",
+        "question_label": "Quels sont les trois premiers caractères de votre code postal?",
+        "raw_variable": "postal_code",
         "choices": [
           {
-            "value": "todo",
-            "label": "todo"
-          },
-          {
-            "value": "todo",
-            "label": "todo"
+            "value": "postal_code"
           }
         ]
       },
       "omnibus_1january": {
-        "class": "todo",
-        "question_label": "todo",
-        "raw_variable": "todo",
+        "class": "string",
+        "question_label": "NA",
+        "raw_variable": "A5",
         "choices": [
           {
-            "value": "todo",
-            "label": "todo"
-          },
-          {
-            "value": "todo",
-            "label": "todo"
+            "value": "postal_code"
           }
         ]
       },
       "omnibus_2february": {
-        "class": "todo",
-        "question_label": "todo",
-        "raw_variable": "todo",
+        "class": "string",
+        "question_label": "NA",
+        "raw_variable": "A5",
         "choices": [
           {
-            "value": "todo",
-            "label": "todo"
-          },
-          {
-            "value": "todo",
-            "label": "todo"
+            "value": "postal_code"
           }
         ]
       },
       "omnibus_3march": {
-        "class": "todo",
-        "question_label": "todo",
-        "raw_variable": "todo",
+        "class": "string",
+        "question_label": "NA",
+        "raw_variable": "A5",
         "choices": [
           {
-            "value": "todo",
-            "label": "todo"
-          },
-          {
-            "value": "todo",
-            "label": "todo"
+            "value": "postal_code"
           }
         ]
       },
       "omnibus_4april": {
-        "class": "todo",
-        "question_label": "todo",
-        "raw_variable": "todo",
+        "class": "string",
+        "question_label": "NA",
+        "raw_variable": "A5",
         "choices": [
           {
-            "value": "todo",
-            "label": "todo"
-          },
-          {
-            "value": "todo",
-            "label": "todo"
+            "value": "postal_code"
           }
         ]
       },
       "omnibus_5may": {
-        "class": "todo",
-        "question_label": "todo",
-        "raw_variable": "todo",
+        "class": "string",
+        "question_label": "NA",
+        "raw_variable": "A5",
         "choices": [
           {
-            "value": "todo",
-            "label": "todo"
-          },
-          {
-            "value": "todo",
-            "label": "todo"
+            "value": "postal_code"
           }
         ]
       },
       "omnibus_6june": {
-        "class": "todo",
-        "question_label": "todo",
-        "raw_variable": "todo",
+        "class": "string",
+        "question_label": "NA",
+        "raw_variable": "A5",
         "choices": [
           {
-            "value": "todo",
-            "label": "todo"
-          },
-          {
-            "value": "todo",
-            "label": "todo"
+            "value": "postal_code"
           }
         ]
       },
       "sondage_nationalisme_2022": {
-        "class": "todo",
-        "question_label": "todo",
-        "raw_variable": "todo",
+        "class": "string",
+        "question_label": "What are the first three characters of your postal code?",
+        "raw_variable": "postal_code",
         "choices": [
           {
-            "value": "todo",
-            "label": "todo"
-          },
-          {
-            "value": "todo",
-            "label": "todo"
+            "value": "postal_code"
           }
         ]
       },
       "pco": {
-        "class": "todo",
-        "question_label": "todo",
-        "raw_variable": "todo",
+        "class": "string",
+        "question_label": "Would you mind providing us with your postal code so that we can determine your riding?",
+        "raw_variable": "Q20.7.Pco2014",
         "choices": [
           {
-            "value": "todo",
-            "label": "todo"
-          },
-          {
-            "value": "todo",
-            "label": "todo"
+            "value": "postal_code"
           }
         ]
       },
       "pes_elxn_2022": {
-        "class": "todo",
-        "question_label": "todo",
-        "raw_variable": "todo",
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
         "choices": [
           {
-            "value": "todo",
-            "label": "todo"
-          },
-          {
-            "value": "todo",
-            "label": "todo"
+            "value": "NA"
           }
         ]
       },
       "quorum_mcq_pilote": {
-        "class": "todo",
-        "question_label": "todo",
-        "raw_variable": "todo",
+        "class": "string",
+        "question_label": "What are the first three characters of your postal code",
+        "raw_variable": "EN_ses_postal_code_&&_ses_postal_code",
         "choices": [
           {
-            "value": "todo",
-            "label": "todo"
-          },
-          {
-            "value": "todo",
-            "label": "todo"
+            "value": "postal_code"
           }
         ]
       }
