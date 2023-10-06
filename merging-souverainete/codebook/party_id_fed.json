@@ -536,6 +536,192 @@
                 "label": "none of these"
               }
             ]
-          }
+          },
+            "datagotchi_pilot1_2021": {
+              "class": "categoric",
+              "question_label": "Pour quel parti voteriez-vous s'il y avait une élection fédérale canadienne aujourd'hui?",
+              "raw_variable": "I1",
+              "choices": [
+                {
+                  "value": "1",
+                  "label": "Le Parti libéral du Canada"
+                },
+                {
+                  "value": "2",
+                  "label": "Le Parti conservateur du Canada"
+                },
+                {
+                  "value": "3",
+                  "label": "Le Nouveau parti démocratique"
+                },
+                {
+                  "value": "4",
+                  "label": "Le Bloc québécois"
+                },
+                {
+                  "value": "5",
+                  "label": "Le Parti vert"
+                },
+                {
+                  "value": "6",
+                  "label": "Le Parti populaire du Canada"
+                },
+                {
+                  "value": "7",
+                  "label": "Autre parti"
+                },
+                {
+                  "value": "8",
+                  "label": "Je ne voterais pas"
+                },
+                {
+                  "value": "9",
+                  "label": "J'annulerais mon vote"
+                },
+                {
+                  "value": "10",
+                  "label": "Ne sais pas/Indécis"
+                }
+              ]
+            },
+            "datagotchi_pilot2_2022": {
+              "class": "categoric",
+              "question_label": "NA",
+              "raw_variable": "NA",
+              "choices": [
+                "NA"
+              ]
+            },
+            "omnibus_janvier": {
+              "class": "categoric",
+              "question_label": "NA",
+              "raw_variable": "NA",
+              "choices": [
+                "NA"
+              ]
+            },
+            "omnibus_fevrier": {
+              "class": "categoric",
+              "question_label": "NA",
+              "raw_variable": "NA",
+              "choices": [
+                "NA"
+              ]
+            },
+            "omnibus_mars": {
+              "class": "categoric",
+              "question_label": "NA",
+              "raw_variable": "NA",
+              "choices": [
+                "NA"
+              ]
+            },
+            "omnibus_avril": {
+              "class": "categoric",
+              "question_label": "NA",
+              "raw_variable": "NA",
+              "choices": [
+                "NA"
+              ]
+            },
+            "omnibus_mai": {
+              "class": "categoric",
+              "question_label": "NA",
+              "raw_variable": "NA",
+              "choices": [
+                "NA"
+              ]
+            },
+            "omnibus_juin": {
+              "class": "categoric",
+              "question_label": "NA",
+              "raw_variable": "NA",
+              "choices": [
+                "NA"
+              ]
+            },
+            "pes_elxn_2022": {
+              "class": "categoric",
+              "question_label": "NA",
+              "raw_variable": "NA",
+              "choices": [
+                "NA"
+              ]
+            },
+            "quorum_mcq_pilote": {
+              "class": "categoric",
+              "question_label": "NA",
+              "raw_variable": "NA",
+              "choices": [
+                "NA"
+              ]
+            },
+            "sondage_nationalisme_2022": {
+              "class": "categoric",
+              "question_label": "In federal politics, do you usually think of yourself as a...",
+              "raw_variable": "party_IDC if in what province do you currently live? != Quebec ET party_IDQ if in what province do you currently live? = Quebec",
+              "choices": [
+                {
+                  "value": "Liberal (LPC)",
+                  "label": "Liberal (LPC)"
+                },
+                {
+                  "value": "Conservative (CPC)",
+                  "label": "Conservative (CPC)"
+                },
+                {
+                  "value": "New Democrat (NDP)",
+                  "label": "New Democrat (NDP)"
+                },
+                {
+                  "value": "Green (GP)",
+                  "label": "Green (GP)"
+                },
+                {
+                  "value": "People's Party (PPC)",
+                  "label": "People's Party (PPC)"
+                },
+                {
+                  "value": "None of these",
+                  "label": "None of these"
+                },
+                {
+                  "value": "Don't know/Prefer not to answer",
+                  "label": "Don't know/Prefer not to answer"
+                },
+                {
+                  "value": "Aucun de ces partis",
+                  "label": "Aucun de ces partis"
+                },
+                {
+                  "value": "Bloc Québécois",
+                  "label": "Bloc Québécois"
+                },
+                {
+                  "value": "Bloquiste (Bloc Québécois)",
+                  "label": "Bloquiste (Bloc Québécois)"
+                },
+                {
+                  "value": "Conservateur (PCC)",
+                  "label": "Conservateur (PCC)"
+                },
+                {
+                  "value": "Libéral (PLC)",
+                  "label": "Libéral (PLC)"
+                },
+                {
+                  "value": "Néo-démocratique (NPD)",
+                  "label": "Néo-démocratique (NPD)"
+                },
+                {
+                  "value": "Un autre parti (veuillez spécifier)",
+                  "label": "Un autre parti (veuillez spécifier)"
+                },
+                {
+                  "value": "Vert (PV)",
+                  "label": "Vert (PV)"
+                }
+              ]
+            }
     }
 }
