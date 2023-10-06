@@ -1,0 +1,404 @@
+{
+    "description": "Indicatif regional",
+    "source_id": {
+      "ces65": {
+        "class": "todo",
+        "question_label": "todo",
+        "raw_variable": "todo",
+        "choices": [
+          {
+            "value": "todo",
+            "label": "todo"
+          },
+          {
+            "value": "todo",
+            "label": "todo"
+          }
+        ]
+      },
+      "ces68": {
+        "class": "todo",
+        "question_label": "todo",
+        "raw_variable": "todo",
+        "choices": [
+          {
+            "value": "todo",
+            "label": "todo"
+          },
+          {
+            "value": "todo",
+            "label": "todo"
+          }
+        ]
+      },
+      "ces74": {
+        "class": "todo",
+        "question_label": "todo",
+        "raw_variable": "todo",
+        "choices": [
+          {
+            "value": "todo",
+            "label": "todo"
+          },
+          {
+            "value": "todo",
+            "label": "todo"
+          }
+        ]
+      },
+      "ces79": {
+        "class": "todo",
+        "question_label": "todo",
+        "raw_variable": "todo",
+        "choices": [
+          {
+            "value": "todo",
+            "label": "todo"
+          },
+          {
+            "value": "todo",
+            "label": "todo"
+          }
+        ]
+      },
+      "ces84": {
+        "class": "todo",
+        "question_label": "todo",
+        "raw_variable": "todo",
+        "choices": [
+          {
+            "value": "todo",
+            "label": "todo"
+          },
+          {
+            "value": "todo",
+            "label": "todo"
+          }
+        ]
+      },
+      "ces88": {
+        "class": "num",
+        "question_label": "NA",
+        "raw_variable": "areacode",
+        "choices": [
+          {
+            "value": "area_code"
+          }
+        ]
+      },
+      "ces93": {
+        "class": "todo",
+        "question_label": "todo",
+        "raw_variable": "todo",
+        "choices": [
+          {
+            "value": "todo",
+            "label": "todo"
+          },
+          {
+            "value": "todo",
+            "label": "todo"
+          },
+          {
+            "value": "todo",
+            "label": "todo"
+          }
+        ]
+      },
+      "ces97": {
+        "class": "num",
+        "question_label": "NA",
+        "raw_variable": "areacode",
+        "choices": [
+          {
+            "value": "area_code",
+            "label": "area_code"
+          }
+        ]
+      },
+      "ces2000": {
+        "class": "num",
+        "question_label": "NA",
+        "raw_variable": "areacode",
+        "choices": [
+          {
+            "value": "area_code",
+            "label": "area_code"
+          }
+        ]
+      },
+      "ces2004": {
+        "class": "num",
+        "question_label": "NA",
+        "raw_variable": "ces04_areacode",
+        "choices": [
+          {
+            "value": "area_code",
+            "label": "area_code"
+          }
+        ]
+      },
+      "ces2006": {
+        "class": "num",
+        "question_label": "NA",
+        "raw_variable": "areacode",
+        "choices": [
+          {
+            "value": "area_code",
+            "label": "area_code"
+          }
+        ]
+      },
+      "ces2008": {
+        "class": "num",
+        "question_label": "NA",
+        "raw_variable": "cps_areacode",
+        "choices": [
+          {
+            "value": "area_code",
+            "label": "area_code"
+          },
+          {
+            "value": 9999,
+            "label": "NA"
+          }
+        ]
+      },
+      "ces2011": {
+        "class": "num",
+        "question_label": "NA",
+        "raw_variable": "AREACODE",
+        "choices": [
+          {
+            "value": "area_code",
+            "label": "area_code"
+          }
+        ]
+      },
+      "ces2015": {
+        "class": "todo",
+        "question_label": "todo",
+        "raw_variable": "todo",
+        "choices": [
+          {
+            "value": "todo",
+            "label": "todo"
+          },
+          {
+            "value": "todo",
+            "label": "todo"
+          }
+        ]
+      },
+      "ces2019": {
+        "class": "todo",
+        "question_label": "todo",
+        "raw_variable": "todo",
+        "choices": [
+          {
+            "value": "todo",
+            "label": "todo"
+          },
+          {
+            "value": "todo",
+            "label": "todo"
+          }
+        ]
+      },
+      "ces2021": {
+        "class": "todo",
+        "question_label": "todo",
+        "raw_variable": "todo",
+        "choices": [
+          {
+            "value": "todo",
+            "label": "todo"
+          },
+          {
+            "value": "todo",
+            "label": "todo"
+          }
+        ]
+      },
+      "datagotchi_pilot1_2021": {
+        "class": "todo",
+        "question_label": "todo",
+        "raw_variable": "todo",
+        "choices": [
+          {
+            "value": "todo",
+            "label": "todo"
+          },
+          {
+            "value": "todo",
+            "label": "todo"
+          }
+        ]
+      },
+      "datagotchi_pilot2_2022": {
+        "class": "todo",
+        "question_label": "todo",
+        "raw_variable": "todo",
+        "choices": [
+          {
+            "value": "todo",
+            "label": "todo"
+          },
+          {
+            "value": "todo",
+            "label": "todo"
+          }
+        ]
+      },
+      "omnibus_1january": {
+        "class": "todo",
+        "question_label": "todo",
+        "raw_variable": "todo",
+        "choices": [
+          {
+            "value": "todo",
+            "label": "todo"
+          },
+          {
+            "value": "todo",
+            "label": "todo"
+          }
+        ]
+      },
+      "omnibus_2february": {
+        "class": "todo",
+        "question_label": "todo",
+        "raw_variable": "todo",
+        "choices": [
+          {
+            "value": "todo",
+            "label": "todo"
+          },
+          {
+            "value": "todo",
+            "label": "todo"
+          }
+        ]
+      },
+      "omnibus_3march": {
+        "class": "todo",
+        "question_label": "todo",
+        "raw_variable": "todo",
+        "choices": [
+          {
+            "value": "todo",
+            "label": "todo"
+          },
+          {
+            "value": "todo",
+            "label": "todo"
+          }
+        ]
+      },
+      "omnibus_4april": {
+        "class": "todo",
+        "question_label": "todo",
+        "raw_variable": "todo",
+        "choices": [
+          {
+            "value": "todo",
+            "label": "todo"
+          },
+          {
+            "value": "todo",
+            "label": "todo"
+          }
+        ]
+      },
+      "omnibus_5may": {
+        "class": "todo",
+        "question_label": "todo",
+        "raw_variable": "todo",
+        "choices": [
+          {
+            "value": "todo",
+            "label": "todo"
+          },
+          {
+            "value": "todo",
+            "label": "todo"
+          }
+        ]
+      },
+      "omnibus_6june": {
+        "class": "todo",
+        "question_label": "todo",
+        "raw_variable": "todo",
+        "choices": [
+          {
+            "value": "todo",
+            "label": "todo"
+          },
+          {
+            "value": "todo",
+            "label": "todo"
+          }
+        ]
+      },
+      "sondage_nationalisme_2022": {
+        "class": "todo",
+        "question_label": "todo",
+        "raw_variable": "todo",
+        "choices": [
+          {
+            "value": "todo",
+            "label": "todo"
+          },
+          {
+            "value": "todo",
+            "label": "todo"
+          }
+        ]
+      },
+      "pco": {
+        "class": "todo",
+        "question_label": "todo",
+        "raw_variable": "todo",
+        "choices": [
+          {
+            "value": "todo",
+            "label": "todo"
+          },
+          {
+            "value": "todo",
+            "label": "todo"
+          }
+        ]
+      },
+      "pes_elxn_2022": {
+        "class": "todo",
+        "question_label": "todo",
+        "raw_variable": "todo",
+        "choices": [
+          {
+            "value": "todo",
+            "label": "todo"
+          },
+          {
+            "value": "todo",
+            "label": "todo"
+          }
+        ]
+      },
+      "quorum_mcq_pilote": {
+        "class": "todo",
+        "question_label": "todo",
+        "raw_variable": "todo",
+        "choices": [
+          {
+            "value": "todo",
+            "label": "todo"
+          },
+          {
+            "value": "todo",
+            "label": "todo"
+          }
+        ]
+      }
+    }
+  }
