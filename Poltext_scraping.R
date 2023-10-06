@@ -1,4 +1,5 @@
 library(rvest)
+library(curl)
 options(HTTPUserAgent = "Mozilla/5.0")
 
 ####tentative de tout scraper####
@@ -70,6 +71,39 @@ scrape_and_download_nodes <- function(url, folder_path) {
   }
 }
 
+scrape_and_download2 <- function(url, folder_path) {
+  # Récupérer le contenu de la page web
+  web_content <- read_html(url)
+  
+  # Extraction des liens
+  links <- web_content %>%
+    html_nodes("ul li a") %>%
+    html_attr("href")
+  
+  base_url <- "https://poltext.org" # Assurez-vous que c'est l'URL de base correcte
+  full_links <- paste0(base_url, links)
+  
+  # Assurez-vous que le dossier spécifié existe
+  dir.create(folder_path, recursive = TRUE, showWarnings = FALSE)
+  
+  for(i in seq_along(full_links)) {
+    # Obtenez le nom du fichier à partir de l'URL
+    file_name <- basename(full_links[i])
+    
+    # Chemin complet où le fichier sera enregistré
+    full_path <- file.path(folder_path, file_name)
+    
+    # Téléchargez le fichier
+    tryCatch({
+      curl_download(url = full_links[i], destfile = full_path)
+      message(paste("Fichier téléchargé :", full_path))
+    }, error = function(e) {
+      message(paste("Erreur lors du téléchargement du lien :", full_links[i]))
+      message("Erreur :", e$message)
+    })
+  }
+}
+
 # Utilisation de la fonction
 base_folder <- "_SharedFolder_catalogue-donnees/poltext"
 scrape_and_download("https://www.poltext.org/fr/plateformes-aux-elections-canadiennes", "div.view-grouping > div > div > div > span > a", paste0(base_folder, "/plateformes/federales"))
@@ -92,10 +126,9 @@ scrape_and_download("https://www.poltext.org/fr/rapports-dintervention-du-protec
 scrape_and_download("https://www.poltext.org/fr/rapports-dintervention-du-protecteur-du-citoyen", ".node-6403 > div > div > div > p > a", paste0(base_folder, "/rapports_protecteur_citoyen/intervention"))
 scrape_and_download("https://www.poltext.org/fr/rapports-dintervention-du-protecteur-du-citoyen", ".node-6404 > div > div > div > p > a", paste0(base_folder, "/rapports_protecteur_citoyen/intervention"))
 scrape_and_download_nodes("https://www.poltext.org/fr/rapports-speciaux-du-protecteur-du-citoyen", paste0(base_folder, "/rapports_protecteur_citoyen/speciaux"))
-scrape_and_download("https://www.poltext.org/fr/textes/lettres-de-mandat", ".node-6449 > ul > li > a", paste0(base_folder, "/lettres_mandat"))
-scrape_and_download("https://www.poltext.org/fr/textes/lettres-de-mandat", ".node-6450 > div > div > div > ul > li > a", paste0(base_folder, "/lettres_mandat"))
-scrape_and_download("https://www.poltext.org/fr/textes/lettres-de-mandat", ".node-6451 > div > div > div > ul > li > a", paste0(base_folder, "/lettres_mandat"))
 scrape_and_download("https://www.poltext.org/fr/textes/sondages-et-opinion-publique/rapports-annuels-sur-la-recherche-sur-lopinion-publique", ".field-item > ul > li > a", paste0(base_folder, "/sondages/rapports_annuels"))
+scrape_and_download2("https://www.poltext.org/fr/textes/lettres-de-mandat", paste0(base_folder, "/lettres_mandat"))
+scrape_and_download2("https://www.poltext.org/fr/textes/sondages-et-opinion-publique/rapports-annuels-sur-la-recherche-sur-lopinion-publique", paste0(base_folder, "/sondages/rapports_annuels"))
 
 
 

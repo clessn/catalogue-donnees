@@ -437,5 +437,109 @@
           }
         ]
     },
-  }  
+    "Datagotchi_pilot1_2021": {
+      "class": "NA",
+      "question_label": "NA",
+      "raw_variable": "NA"
+    },
+    "Datagotchi_pilot2_2022": {
+      "class": "numeric",
+      "question_label": "Sur une échelle de 1 à 100, quelle est l'importance de la religion dans votre vie? (100 signifie très important et 1 signifie pas du tout important).",
+      "raw_variable": "FR_importantOfRelig ",
+      "choices": [
+          {
+            "value": 1,
+            "label": "Pas du tout important"
+          },
+          {
+            "value": 100,
+            "label": "Très important"
+          }
+        ]
+      },
+      "Omnibus_janvier": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA"
+      },
+      "Omnibus_fevrier": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA"
+      },
+      "Omnibus_mars": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA"
+      },
+      "Omnibus_avril": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA"
+      },
+      "Omnibus_mai": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA"
+      },
+      "Omnibus_juin": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA"
+      },
+      "Omnibus_aout": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA"
+      },
+      "pco": {
+        "class": "Ordered factor",
+        "question_label": "How important are your religious or spiritual beliefs to the way you live your life?",
+        "raw_variable": "Q18.2",
+        "choices": [
+          {"value": "1", "label": "Very important"},
+          {"value": "2", "label": "Somewhat important"},
+          {"value": "3", "label": "Not very important"},
+          {"value": "4", "label": "Not important at all"},
+          {"value": "5", "label": "Don’t know"}
+        ]
+      },
+      "pes_elxn_2022": {
+        "class": "Ordered factor",
+        "question_label": "Quel est votre degré d'attachement à cette église, dénomination religieuse ou communauté religieuse ?",
+        "raw_variable": "ses_religiosity",
+        "choices": [
+          {"value": "1", "label": "Très faible"},
+          {"value": "2", "label": "Plutôt faible"},
+          {"value": "3", "label": "Modéré"},
+          {"value": "4", "label": "Plutôt fort"},
+          {"value": "5", "label": "Très fort"}
+        ]
+      },
+      "quorum_mcq_pilote": {
+        "class": "Ordered factor",
+        "question_label": "La religion est importante dans ma vie",
+        "raw_variable": "iss_religiosity",
+        "choices": [
+          {"value": "1", "label": "Fortement en désaccord"},
+          {"value": "2", "label": "Plutôt en désaccord"},
+          {"value": "3", "label": "Neutre"},
+          {"value": "4", "label": "Plutôt d'accord"},
+          {"value": "5", "label": "Fortement d'accord"}
+        ]
+      },
+      "sondage_nationalisme_2022": {
+        "class": "Ordered factor",
+        "question_label": "Apart from religious activities at the occasion of social events as weddings, funerals, christenings, and circumcisions, about how often do you attend religious services these days?",
+        "raw_variable": "religious_service",
+        "choices": [
+          {"value": "1", "label": "More than once a week"},
+          {"value": "2", "label": "Once a week"},
+          {"value": "3", "label": "Once a month"},
+          {"value": "4", "label": "Only at specific holy days"},
+          {"value": "5", "label": "Never or practically never"},
+          {"value": "6", "label": "Prefer not to answer"}
+        ]
+      }
+    }  
 }
