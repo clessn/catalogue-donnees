@@ -73,7 +73,7 @@
         ]
       },
       "ces88": {
-        "class": "À faire",
+        "class": "numeric",
         "question_label": "In what year did you come to live in Canada?",
         "raw_variable": "n14",
         "choices": [
@@ -84,21 +84,13 @@
         ]
       },
       "ces93": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "numeric, year",
+        "question_label": "In what year did you come to live in Canada?",
+        "raw_variable": "cpso12",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
-          },
-          {
-            "value": "À faire",
-            "label": "À faire"
-          },
-          {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "année entre 1900 et 1988. 9998 et 9999 = NA",
+            "label": "année que le répondant est venu au Canada"
           }
         ]
       },

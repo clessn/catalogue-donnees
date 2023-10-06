@@ -588,23 +588,123 @@
       ]      
       },
       "ces93": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "factor",
+        "question_label": "To what ethnic or cultural group do you belong?",
+        "raw_variable": "cpso13",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
+              "value": "english",
+              "label": "English"
           },
           {
-            "value": "À faire",
-            "label": "À faire"
+              "value": "irish",
+              "label": "Irish"
           },
           {
-            "value": "À faire",
-            "label": "À faire"
+              "value": "scottish",
+              "label": "Scottish"
+          },
+          {
+              "value": "welsh",
+              "label": "Welsh"
+          },
+          {
+              "value": "italian",
+              "label": "Italian"
+          },
+          {
+              "value": "japanese",
+              "label": "Japanese"
+          },
+          {
+              "value": "jewish",
+              "label": "Jewish"
+          },
+          {
+              "value": "nativeindianinuit",
+              "label": "Native Indian/Inuit"
+          },
+          {
+              "value": "chinese",
+              "label": "Chinese"
+          },
+          {
+              "value": "black",
+              "label": "Black"
+          },
+          {
+              "value": "czechslovak",
+              "label": "Czech/Slovak"
+          },
+          {
+              "value": "netherlandsdutch",
+              "label": "Netherlands (Dutch)"
+          },
+          {
+              "value": "finnishbaltic",
+              "label": "Finnish/Baltic"
+          },
+          {
+              "value": "polish",
+              "label": "Polish"
+          },
+          {
+              "value": "frenchquebecois",
+              "label": "French/Québécois"
+          },
+          {
+              "value": "portuguese",
+              "label": "Portuguese"
+          },
+          {
+              "value": "germanaustrian",
+              "label": "German/Austrian"
+          },
+          {
+              "value": "russian",
+              "label": "Russian"
+          },
+          {
+              "value": "greekmacedonian",
+              "label": "Greek/Macedonian"
+          },
+          {
+              "value": "scandinavian",
+              "label": "Scandinavian"
+          },
+          {
+              "value": "hungarian",
+              "label": "Hungarian"
+          },
+          {
+              "value": "ukrainian",
+              "label": "Ukrainian"
+          },
+          {
+              "value": "indianpakistansikh",
+              "label": "Indian/Pakistani/Sikh Bengali/Sri Lankan Tamil/Bangladesh"
+          },
+          {
+              "value": "westindian",
+              "label": "West Indian"
+          },
+          {
+              "value": "oceanic",
+              "label": "Oceanic (Australian, New Zealander)"
+          },
+          {
+              "value": "other",
+              "label": "Other [specify]"
+          },
+          {
+              "value": "98",
+              "label": "Don't Know"
+          },
+          {
+              "value": "99",
+              "label": "Refused"
           }
-        ]
+      ]      
       },
       "ces97": {
         "class": "À faire",
