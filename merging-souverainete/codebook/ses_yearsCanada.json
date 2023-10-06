@@ -95,32 +95,24 @@
         ]
       },
       "ces97": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "numeric",
+        "question_label": "In what year did you come to live in Canada?",
+        "raw_variable": "cpsm12",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
-          },
-          {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "année entre 1900 et 1991. 9998 et 9999 = NA",
+            "label": "année que le répondant est venu au Canada"
           }
         ]
       },
       "ces2000": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "numeric",
+        "question_label": "In what year did you come to live in Canada?",
+        "raw_variable": "cpsm12",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
-          },
-          {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "année entre 1906 et 1998. 9998 et 9999 = NA",
+            "label": "année que le répondant est venu au Canada"
           }
         ]
       },
