@@ -617,27 +617,81 @@
           "ces2015": {
             "class": "character",
             "question_label": "Are you very favourable, somewhat favourable, somewhat opposed, or very opposed to Quebec sovereignty, that is Quebec is NO LONGER A PART OF CANADA",
-            "raw_variable": "CPS11_75",
+            "raw_variable": "sov",
             "choices": [
               {
-                "value": "very favourable    ",
+                "value": "1",
+                "label": "Very Favourable to Quebec Sovereignty"
+              },
+              {
+                "value": "3",
+                "label": "Somewhat Favourable to Quebec Sovereignty"
+              },
+              {
+                "value": "4",
+                "label": "Somewhat Opposed to Quebec Sovereignty"
+              },
+              {
+                "value": "7",
+                "label": "Very Opposed to Quebec Sovereignty"
+              },
+              {
+                "value": "8",
+                "label": "Don't Know"
+              }
+            ]
+          },
+          "ces2019": {
+            "class": "factor ordered",
+            "question_label": "Are you very favourable, somewhat favourable, somewhat opposed, or very opposed to Quebec sovereignty, that is Quebec is no longer a part of Canada",
+            "raw_variable": "cps19_quebec_sov",
+            "choices": [
+              {
+                "value": "1",
                 "label": "very favourable"
               },
               {
-                "value": "somewhat favourable",
+                "value": "2",
                 "label": "somewhat favourable"
               },
               {
-                "value": "somewhat opposed   ",
+                "value": "3",
                 "label": "somewhat opposed"
               },
               {
-                "value": "very opposed       ",
+                "value": "4",
                 "label": "very opposed"
               },
               {
-                "value": "don't know         ",
+                "value": "5",
                 "label": "don't know"
+              }
+            ]
+          },
+          "ces2021": {
+            "class": "factor ordered",
+            "question_label": "Are you very favourable, somewhat favourable, somewhat opposed, or very opposed to Quebec sovereignty, that is Quebec is no longer a part of Canada",
+            "raw_variable": "cps21_quebec_sov",
+            "choices": [
+              {
+                "value": "1",
+                "label": "Very favourable"
+              },
+              {
+                "value": "2",
+                "label": "Somewhat favourable"
+              },
+              {
+                "value": "3",
+                "label": "Somewhat opposed"
+              },
+              {
+                "value": "4",
+                "label": "Very opposed"
+              },
+              {
+                "value": "5",
+                "label": "Don't know/ Prefer not to answer"
               }
             ]
           }
