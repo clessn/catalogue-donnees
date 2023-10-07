@@ -1,0 +1,314 @@
+{
+    "description": "Code postale du repondant",
+    "source_id": {
+      "ces65": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA",
+            "label": "NA"
+          }
+        ]
+      },
+      "ces68": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA",
+            "label": "NA"
+          }
+        ]
+      },
+      "ces74": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA",
+            "label": "NA"
+          }
+        ]
+      },
+      "ces79": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA",
+            "label": "NA"
+          }
+        ]
+      },
+      "ces84": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA",
+            "label": "NA"
+          }
+        ]
+      },
+      "ces88": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA",
+            "label": "NA"
+          }
+        ]
+      },
+      "ces93": {
+        "class": "string",
+        "question_label": "Can you please tell me the first three digits of your postal code?",
+        "raw_variable": "cpspost",
+        "choices": [
+          {
+            "value": "postal_code"
+          },
+          {
+            "value": "ref",
+            "label": "refusal"
+          }
+        ]
+      },
+      "ces97": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA",
+            "label": "NA"
+          },
+          {
+            "value": "NA",
+            "label": "NA"
+          }
+        ]
+      },
+      "ces2000": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA",
+            "label": "NA"
+          }
+        ]
+      },
+      "ces2004": {
+        "class": "string",
+        "question_label": "Postal Codes MUST be: LETTER, NUMBER, LETTER, NUMBER, LETTER, NUMBER. for example: M4P 1Z3 Enter to continue @",
+        "raw_variable": "ces08_cps_fsa",
+        "choices": [
+          {
+            "value": "postal_code"
+          },
+          {
+            "value": "999",
+            "label": "nodata"
+          }
+        ]
+      },
+      "ces2006": {
+        "class": "string",
+        "question_label": "begin POSTAL code routine",
+        "raw_variable": "cps_fsa",
+        "choices": [
+          {
+            "value": "postal_code"
+          },
+          {
+            "value": "r",
+            "label": "refused"
+          }
+        ]
+      },
+      "ces2008": {
+        "class": "string",
+        "question_label": "begin POSTAL code routine",
+        "raw_variable": "cps_fsa",
+        "choices": [
+          {
+            "value": "postal_code"
+          },
+          {
+            "value": "d",
+            "label": "refused"
+          }
+        ]
+      },
+      "ces2011": {
+        "class": "todo",
+        "question_label": "begin POSTAL code routine",
+        "raw_variable": "a_clean",
+        "choices": [
+          {
+            "value": "a_clean",
+            "label": "a_clean"
+          }
+        ]
+      },
+      "ces2015": {
+        "class": "string",
+        "question_label": " If you prefer not to give us your full postal code, would you provide just the first three digits of the code, which you share with around 10,000 other households?",
+        "raw_variable": "post3",
+        "choices": [
+          {
+            "value": "postal_code"
+          }
+        ]
+      },
+      "ces2019": {
+        "class": "string",
+        "question_label": "todo",
+        "raw_variable": "cps19_fsa",
+        "choices": [
+          {
+            "value": "postal_code"
+          }
+        ]
+      },
+      "ces2021": {
+        "class": "string",
+        "question_label": "Veuillez inscrire votre code postal à six chiffres dans la case ci-dessous. (Par exemple, A1A 1A1, avec des lettres majuscules)",
+        "raw_variable": "cps21_postalcode",
+        "choices": [
+          {
+            "value": "postal_code"
+          }
+        ]
+      },
+      "datagotchi_pilot1_2021": {
+        "class": "string",
+        "question_label": "Quels sont les trois premiers caractères de votre code postal?",
+        "raw_variable": "CP",
+        "choices": [
+          {
+            "value": "postal_code"
+          }
+        ]
+      },
+      "datagotchi_pilot2_2022": {
+        "class": "string",
+        "question_label": "Quels sont les trois premiers caractères de votre code postal?",
+        "raw_variable": "postal_code",
+        "choices": [
+          {
+            "value": "postal_code"
+          }
+        ]
+      },
+      "omnibus_1january": {
+        "class": "string",
+        "question_label": "NA",
+        "raw_variable": "A5",
+        "choices": [
+          {
+            "value": "postal_code"
+          }
+        ]
+      },
+      "omnibus_2february": {
+        "class": "string",
+        "question_label": "NA",
+        "raw_variable": "A5",
+        "choices": [
+          {
+            "value": "postal_code"
+          }
+        ]
+      },
+      "omnibus_3march": {
+        "class": "string",
+        "question_label": "NA",
+        "raw_variable": "A5",
+        "choices": [
+          {
+            "value": "postal_code"
+          }
+        ]
+      },
+      "omnibus_4april": {
+        "class": "string",
+        "question_label": "NA",
+        "raw_variable": "A5",
+        "choices": [
+          {
+            "value": "postal_code"
+          }
+        ]
+      },
+      "omnibus_5may": {
+        "class": "string",
+        "question_label": "NA",
+        "raw_variable": "A5",
+        "choices": [
+          {
+            "value": "postal_code"
+          }
+        ]
+      },
+      "omnibus_6june": {
+        "class": "string",
+        "question_label": "NA",
+        "raw_variable": "A5",
+        "choices": [
+          {
+            "value": "postal_code"
+          }
+        ]
+      },
+      "sondage_nationalisme_2022": {
+        "class": "string",
+        "question_label": "What are the first three characters of your postal code?",
+        "raw_variable": "postal_code",
+        "choices": [
+          {
+            "value": "postal_code"
+          }
+        ]
+      },
+      "pco": {
+        "class": "string",
+        "question_label": "Would you mind providing us with your postal code so that we can determine your riding?",
+        "raw_variable": "Q20.7.Pco2014",
+        "choices": [
+          {
+            "value": "postal_code"
+          }
+        ]
+      },
+      "pes_elxn_2022": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA"
+          }
+        ]
+      },
+      "quorum_mcq_pilote": {
+        "class": "string",
+        "question_label": "What are the first three characters of your postal code",
+        "raw_variable": "EN_ses_postal_code_&&_ses_postal_code",
+        "choices": [
+          {
+            "value": "postal_code"
+          }
+        ]
+      }
+    }
+  }

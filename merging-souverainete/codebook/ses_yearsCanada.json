@@ -1,0 +1,409 @@
+{
+    "description": "Depuis combien de temps au Canada",
+    "source_id": {
+      "ces65": {
+        "class": "factor ordered",
+        "question_label": "XYR IMMIGRATED TO CANADA",
+        "raw_variable": "v313",
+        "choices": [
+          {
+              "value": "after 1960",
+              "label": "after 1960"
+          },
+          {
+              "value": "before 1939",
+              "label": "before 1939"
+          },
+          {
+              "value": "between 1939 and 1945",
+              "label": "1939-1945"
+          },
+          {
+              "value": "between 1946 and 1960",
+              "label": "1946-1960"
+          },
+          {
+              "value": "<NA>",
+              "label": "NA, not applicable"
+          }
+      ]      
+      },
+      "ces68": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA",
+            "label": "NA"
+          }
+        ]
+      },
+      "ces74": {
+        "class": "numeric",
+        "question_label": "IN WHAT YEAR DID YOU COME TO LIVE IN CANADA?",
+        "raw_variable": "v457",
+        "choices": [
+          {
+            "value": "chiffre entre 0 et 73",
+            "label": "1900 + chiffre nous donne l'année que le répondant est arrivé. exemple: 11 => 1911"
+          }
+        ]
+      },
+      "ces79": {
+        "class": "numeric",
+        "question_label": "IN WHAT YEAR DID YOU COME TO LIVE IN CANADA?",
+        "raw_variable": "v1518",
+        "choices": [
+          {
+            "value": "chiffre entre 0 et 78",
+            "label": "1900 + chiffre nous donne l'année que le répondant est arrivé. exemple: 11 => 1911"
+          }
+        ]
+      },
+      "ces84": {
+        "class": "numeric",
+        "question_label": "In what year did you come to live in Canada? (WRITE IN PRECISE YEAR)",
+        "raw_variable": "var402",
+        "choices": [
+          {
+            "value": "chiffre entre 0 et 81",
+            "label": "1900 + chiffre nous donne l'année que le répondant est arrivé. exemple: 11 => 1911"
+          }
+        ]
+      },
+      "ces88": {
+        "class": "numeric",
+        "question_label": "In what year did you come to live in Canada?",
+        "raw_variable": "n14",
+        "choices": [
+          {
+            "value": "année entre 1900 et 1988. 9998 et 9999 = NA",
+            "label": "année que le répondant est venu au Canada"
+          }
+        ]
+      },
+      "ces93": {
+        "class": "numeric, year",
+        "question_label": "In what year did you come to live in Canada?",
+        "raw_variable": "cpso12",
+        "choices": [
+          {
+            "value": "année entre 1900 et 1988. 9998 et 9999 = NA",
+            "label": "année que le répondant est venu au Canada"
+          }
+        ]
+      },
+      "ces97": {
+        "class": "numeric",
+        "question_label": "In what year did you come to live in Canada?",
+        "raw_variable": "cpsm12",
+        "choices": [
+          {
+            "value": "année entre 1900 et 1991. 9998 et 9999 = NA",
+            "label": "année que le répondant est venu au Canada"
+          }
+        ]
+      },
+      "ces2000": {
+        "class": "numeric",
+        "question_label": "In what year did you come to live in Canada?",
+        "raw_variable": "cpsm12",
+        "choices": [
+          {
+            "value": "année entre 1906 et 1998. 9998 et 9999 = NA",
+            "label": "année que le répondant est venu au Canada"
+          }
+        ]
+      },
+      "ces2004": {
+        "class": "À faire",
+        "question_label": "À faire",
+        "raw_variable": "À faire",
+        "choices": [
+          {
+            "value": "À faire",
+            "label": "À faire"
+          },
+          {
+            "value": "À faire",
+            "label": "À faire"
+          }
+        ]
+      },
+      "ces2006": {
+        "class": "À faire",
+        "question_label": "À faire",
+        "raw_variable": "À faire",
+        "choices": [
+          {
+            "value": "À faire",
+            "label": "À faire"
+          },
+          {
+            "value": "À faire",
+            "label": "À faire"
+          },
+          {
+            "value": "À faire",
+            "label": "À faire"
+          }
+        ]
+      },
+      "ces2008": {
+        "class": "À faire",
+        "question_label": "À faire",
+        "raw_variable": "À faire",
+        "choices": [
+          {
+            "value": "À faire",
+            "label": "À faire"
+          },
+          {
+            "value": "À faire",
+            "label": "À faire"
+          }
+        ]
+      },
+      "ces2011": {
+        "class": "À faire",
+        "question_label": "À faire",
+        "raw_variable": "À faire",
+        "choices": [
+          {
+            "value": "À faire",
+            "label": "À faire"
+          },
+          {
+            "value": "À faire",
+            "label": "À faire"
+          }
+        ]
+      },
+      "ces2015": {
+        "class": "À faire",
+        "question_label": "À faire",
+        "raw_variable": "À faire",
+        "choices": [
+          {
+            "value": "À faire",
+            "label": "À faire"
+          },
+          {
+            "value": "À faire",
+            "label": "À faire"
+          }
+        ]
+      },
+      "ces2019": {
+        "class": "À faire",
+        "question_label": "À faire",
+        "raw_variable": "À faire",
+        "choices": [
+          {
+            "value": "À faire",
+            "label": "À faire"
+          },
+          {
+            "value": "À faire",
+            "label": "À faire"
+          }
+        ]
+      },
+      "ces2021": {
+        "class": "À faire",
+        "question_label": "À faire",
+        "raw_variable": "À faire",
+        "choices": [
+          {
+            "value": "À faire",
+            "label": "À faire"
+          },
+          {
+            "value": "À faire",
+            "label": "À faire"
+          }
+        ]
+      },
+      "datagotchi_pilot1_2021": {
+        "class": "À faire",
+        "question_label": "À faire",
+        "raw_variable": "À faire",
+        "choices": [
+          {
+            "value": "À faire",
+            "label": "À faire"
+          },
+          {
+            "value": "À faire",
+            "label": "À faire"
+          }
+        ]
+      },
+      "datagotchi_pilot2_2022": {
+        "class": "À faire",
+        "question_label": "À faire",
+        "raw_variable": "À faire",
+        "choices": [
+          {
+            "value": "À faire",
+            "label": "À faire"
+          },
+          {
+            "value": "À faire",
+            "label": "À faire"
+          }
+        ]
+      },
+      "omnibus_1january": {
+        "class": "À faire",
+        "question_label": "À faire",
+        "raw_variable": "À faire",
+        "choices": [
+          {
+            "value": "À faire",
+            "label": "À faire"
+          },
+          {
+            "value": "À faire",
+            "label": "À faire"
+          }
+        ]
+      },
+      "omnibus_2february": {
+        "class": "À faire",
+        "question_label": "À faire",
+        "raw_variable": "À faire",
+        "choices": [
+          {
+            "value": "À faire",
+            "label": "À faire"
+          },
+          {
+            "value": "À faire",
+            "label": "À faire"
+          }
+        ]
+      },
+      "omnibus_3march": {
+        "class": "À faire",
+        "question_label": "À faire",
+        "raw_variable": "À faire",
+        "choices": [
+          {
+            "value": "À faire",
+            "label": "À faire"
+          },
+          {
+            "value": "À faire",
+            "label": "À faire"
+          }
+        ]
+      },
+      "omnibus_4april": {
+        "class": "À faire",
+        "question_label": "À faire",
+        "raw_variable": "À faire",
+        "choices": [
+          {
+            "value": "À faire",
+            "label": "À faire"
+          },
+          {
+            "value": "À faire",
+            "label": "À faire"
+          }
+        ]
+      },
+      "omnibus_5may": {
+        "class": "À faire",
+        "question_label": "À faire",
+        "raw_variable": "À faire",
+        "choices": [
+          {
+            "value": "À faire",
+            "label": "À faire"
+          },
+          {
+            "value": "À faire",
+            "label": "À faire"
+          }
+        ]
+      },
+      "omnibus_6june": {
+        "class": "À faire",
+        "question_label": "À faire",
+        "raw_variable": "À faire",
+        "choices": [
+          {
+            "value": "À faire",
+            "label": "À faire"
+          },
+          {
+            "value": "À faire",
+            "label": "À faire"
+          }
+        ]
+      },
+      "sondage_nationalisme_2022": {
+        "class": "À faire",
+        "question_label": "À faire",
+        "raw_variable": "À faire",
+        "choices": [
+          {
+            "value": "À faire",
+            "label": "À faire"
+          },
+          {
+            "value": "À faire",
+            "label": "À faire"
+          }
+        ]
+      },
+      "pco": {
+        "class": "À faire",
+        "question_label": "À faire",
+        "raw_variable": "À faire",
+        "choices": [
+          {
+            "value": "À faire",
+            "label": "À faire"
+          },
+          {
+            "value": "À faire",
+            "label": "À faire"
+          }
+        ]
+      },
+      "pes_elxn_2022": {
+        "class": "À faire",
+        "question_label": "À faire",
+        "raw_variable": "À faire",
+        "choices": [
+          {
+            "value": "À faire",
+            "label": "À faire"
+          },
+          {
+            "value": "À faire",
+            "label": "À faire"
+          }
+        ]
+      },
+      "quorum_mcq_pilote": {
+        "class": "À faire",
+        "question_label": "À faire",
+        "raw_variable": "À faire",
+        "choices": [
+          {
+            "value": "À faire",
+            "label": "À faire"
+          },
+          {
+            "value": "À faire",
+            "label": "À faire"
+          }
+        ]
+      }
+    }
+  }

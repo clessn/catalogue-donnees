@@ -1,0 +1,319 @@
+{
+    "description": "Circonscription du repondant",
+    "source_id": {
+      "ces65": {
+        "class": "string",
+        "question_label": "R'S CONSTITUENCY",
+        "raw_variable": "V6",
+        "choices": [
+          {
+            "value": "1:118",
+            "label": "constituency_name"
+          }
+        ]
+      },
+      "ces68": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA",
+            "label": "NA"
+          }
+        ]
+      },
+      "ces74": {
+        "class": "string",
+        "question_label": "1974 constituency_number",
+        "raw_variable": "v7",
+        "choices": [
+          {
+            "value": "constituency_number",
+            "label": "constituency_name"
+          },
+          {
+            "value": 999,
+            "label": "MD"
+          }
+
+        ]
+      },
+      "ces79": {
+        "class": "string",
+        "question_label": "1974 constituency_number",
+        "raw_variable": "v5",
+        "choices": [
+          {
+            "value": "constituency_number",
+            "label": "constituency_name"
+          },
+          {
+            "value": 999,
+            "label": "MD"
+          }
+        ]
+      },
+      "ces84": {
+        "class": "string",
+        "question_label": "SCREENER: CONSTITUENCY OF INTERVIEW",
+        "raw_variable": "var006",
+        "choices": [
+          {
+            "value": "constituency_number",
+            "label": "constituency_name"
+          }
+        ]
+      },
+      "ces88": {
+        "class": "string",
+        "question_label": "Could you tell us the name of the riding you live in?",
+        "raw_variable": "intnum",
+        "choices": [
+          {
+            "value": "constituency_number",
+            "label": "constituency_name"
+          },
+          {
+            "value": 998,
+            "label": "Don't know"
+          },
+          {
+            "value": 999,
+            "label": "Refused"
+          }
+        ]
+      },
+      "ces93": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA",
+            "label": "NA"
+          }
+        ]
+      },
+      "ces97": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA",
+            "label": "NA"
+          }
+        ]
+      },
+      "ces2000": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA",
+            "label": "NA"
+          }
+        ]
+      },
+      "ces2004": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA",
+            "label": "NA"
+          }
+        ]
+      },
+      "ces2006": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA",
+            "label": "NA"
+          }
+        ]
+      },
+      "ces2008": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA",
+            "label": "NA"
+          }
+        ]
+      },
+      "ces2011": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA",
+            "label": "NA"
+          }
+        ]
+      },
+      "ces2015": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA",
+            "label": "NA"
+          }
+        ]
+      },
+      "ces2019": {
+        "class": "string",
+        "question_label": "Name of the federal electoral district (constituency) the respondent resides in, determined usingtheir postal code and the Postal Code Conversion File Plus (PCCF+) available through Statistics Canada. The constituencies of 1.5% of respondents could not be determined from the postal code that they entered.",
+        "raw_variable": "constituencyname",
+        "choices": [
+          {
+            "value": "constituency_name"
+          }
+        ]
+      },
+      "ces2021": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA",
+            "label": "NA"
+          }
+        ]
+      },
+      "datagotchi_pilot1_2021": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA",
+            "label": "NA"
+          }
+        ]
+      },
+      "datagotchi_pilot2_2022": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA",
+            "label": "NA"
+          }
+        ]
+      },
+      "omnibus_1january": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA"
+          }
+        ]
+      },
+      "omnibus_2february": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA"
+          }
+        ]
+      },
+      "omnibus_3march": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA"
+          }
+        ]
+      },
+      "omnibus_4april": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA"
+          }
+        ]
+      },
+      "omnibus_5may": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA"
+          }
+        ]
+      },
+      "omnibus_6june": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA"
+          }
+        ]
+      },
+      "sondage_nationalisme_2022": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA"
+          }
+        ]
+      },
+      "pco": {
+        "class": "string",
+        "question_label": "Alternatively, if you would prefer to directly specify your riding, we invite you to do so using the drop-down menu below.",
+        "raw_variable": "Q20.16.Pco2014",
+        "choices": [
+          {
+            "value": "constituency_name"
+          }
+        ]
+      },
+      "pes_elxn_2022": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA"
+          }
+        ]
+      },
+      "quorum_mcq_pilote": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA"
+          }
+        ]
+      }
+    }
+  }

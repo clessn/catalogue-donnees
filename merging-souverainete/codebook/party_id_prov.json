@@ -332,6 +332,350 @@
                     "label": "parti quebecois"
                   }
             ]
+          },
+          "datagotchi_pilot1_2021": {
+            "class": "ordered factor",
+            "question_label": "NA",
+            "raw_variable": "NA",
+            "choices": [
+              "NA"
+            ]
+          },
+          "datagotchi_pilot2_2022": {
+            "class": "categoric",
+            "question_label": "Pour quel parti voteriez-vous s'il y avait une élection provinciale québécoise aujourd'hui?",
+            "raw_variable": "Vote choice",
+            "choices": [
+              {
+                "value": "1",
+                "label": "La Coalition Avenir Québec (CAQ)"
+              },
+              {
+                "value": "2",
+                "label": "Le Parti libéral du Québec (PLQ)"
+              },
+              {
+                "value": "3",
+                "label": "Le Parti québécois (PQ)"
+              },
+              {
+                "value": "4",
+                "label": "Québec solidaire (QS)"
+              },
+              {
+                "value": "5",
+                "label": "Le Parti conservateur du Québec (PCQ)"
+              },
+              {
+                "value": "6",
+                "label": "Le Parti Vert du Québec"
+              },
+              {
+                "value": "7",
+                "label": "Autre parti"
+              },
+              {
+                "value": "8",
+                "label": "Je ne voterais pas"
+              },
+              {
+                "value": "9",
+                "label": "J'annulerais mon vote"
+              },
+              {
+                "value": "10",
+                "label": "Ne sais pas/Indécis"
+              }
+            ]
+          },
+          "omnibus_janvier": {
+            "class": "categoric",
+            "question_label": "S'il y avait une élection générale provinciale au Québec aujourd'hui, pour quel parti voteriez-vous ou seriez-vous tenté(e) de voter pour vous représenter à l'Assemblée nationale du Québec?",
+            "raw_variable": "Q2",
+            "choices": [
+              {
+                "value": "1",
+                "label": "La CAQ, la Coalition pour l'avenir du Québec de François Legault"
+              },
+              {
+                "value": "2",
+                "label": "Le PQ, le Parti québécois de Paul St-Pierre Plamondon"
+              },
+              {
+                "value": "3",
+                "label": "Le PLQ, le Parti libéral du Québec de Dominique Anglade"
+              },
+              {
+                "value": "4",
+                "label": "QS, Québec solidaire de Gabriel Nadeau-Dubois"
+              },
+              {
+                "value": "5",
+                "label": "Un autre parti"
+              },
+              {
+                "value": "6",
+                "label": "Je ne sais pas"
+              },
+              {
+                "value": "7",
+                "label": "Je n'irais pas voter"
+              },
+              {
+                "value": "8",
+                "label": "Le PCQ, le Parti Conservateur du Québec d'Éric Duhaime"
+              }
+            ]
+          },
+          "omnibus_fevrier": {
+            "class": "categoric",
+            "question_label": "S'il y avait une élection générale provinciale au Québec aujourd'hui, pour quel parti voteriez-vous ou seriez-vous tenté(e) de voter pour vous représenter à l'Assemblée nationale du Québec?",
+            "raw_variable": "Q2",
+            "choices": [
+              {
+                "value": "1",
+                "label": "La CAQ, la Coalition pour l'avenir du Québec de François Legault"
+              },
+              {
+                "value": "2",
+                "label": "Le PQ, le Parti québécois de Paul St-Pierre Plamondon"
+              },
+              {
+                "value": "3",
+                "label": "Le PLQ, le Parti libéral du Québec de Dominique Anglade"
+              },
+              {
+                "value": "4",
+                "label": "QS, Québec solidaire de Gabriel Nadeau-Dubois"
+              },
+              {
+                "value": "5",
+                "label": "Un autre parti"
+              },
+              {
+                "value": "6",
+                "label": "Je ne sais pas"
+              },
+              {
+                "value": "7",
+                "label": "Je n'irais pas voter"
+              },
+              {
+                "value": "8",
+                "label": "Le PCQ, le Parti Conservateur du Québec d'Éric Duhaime"
+              }
+            ]
+          },
+          "omnibus_mars": {
+            "class": "categoric",
+            "question_label": "S'il y avait une élection générale provinciale au Québec aujourd'hui, pour quel parti voteriez-vous ou seriez-vous tenté(e) de voter pour vous représenter à l'Assemblée nationale du Québec?",
+            "raw_variable": "Q2",
+            "choices": [
+              {
+                "value": "1",
+                "label": "La CAQ, la Coalition pour l'avenir du Québec de François Legault"
+              },
+              {
+                "value": "2",
+                "label": "Le PQ, le Parti québécois de Paul St-Pierre Plamondon"
+              },
+              {
+                "value": "3",
+                "label": "Le PLQ, le Parti libéral du Québec de Dominique Anglade"
+              },
+              {
+                "value": "4",
+                "label": "QS, Québec solidaire de Gabriel Nadeau-Dubois"
+              },
+              {
+                "value": "5",
+                "label": "Un autre parti"
+              },
+              {
+                "value": "6",
+                "label": "Je ne sais pas"
+              },
+              {
+                "value": "7",
+                "label": "Je n'irais pas voter"
+              },
+              {
+                "value": "8",
+                "label": "Le PCQ, le Parti Conservateur du Québec d'Éric Duhaime"
+              }
+            ]
+          },
+          "omnibus_avril": {
+            "class": "categoric",
+            "question_label": "S'il y avait une élection générale provinciale au Québec aujourd'hui, pour quel parti voteriez-vous ou seriez-vous tenté(e) de voter pour vous représenter à l'Assemblée nationale du Québec?",
+            "raw_variable": "Q2",
+            "choices": [
+              {
+                "value": "1",
+                "label": "La CAQ, la Coalition pour l'avenir du Québec de François Legault"
+              },
+              {
+                "value": "2",
+                "label": "Le PQ, le Parti québécois de Paul St-Pierre Plamondon"
+              },
+              {
+                "value": "3",
+                "label": "Le PLQ, le Parti libéral du Québec de Dominique Anglade"
+              },
+              {
+                "value": "4",
+                "label": "QS, Québec solidaire de Gabriel Nadeau-Dubois"
+              },
+              {
+                "value": "5",
+                "label": "Un autre parti"
+              },
+              {
+                "value": "6",
+                "label": "Je ne sais pas"
+              },
+              {
+                "value": "7",
+                "label": "Je n'irais pas voter"
+              },
+              {
+                "value": "8",
+                "label": "Le PCQ, le Parti Conservateur du Québec d'Éric Duhaime"
+              }
+            ]
+          },
+          "omnibus_mai": {
+            "class": "categoric",
+            "question_label": "S'il y avait une élection générale provinciale au Québec aujourd'hui, pour quel parti voteriez-vous ou seriez-vous tenté(e) de voter pour vous représenter à l'Assemblée nationale du Québec?",
+            "raw_variable": "Q2",
+            "choices": [
+              {
+                "value": "1",
+                "label": "La CAQ, la Coalition pour l'avenir du Québec de François Legault"
+              },
+              {
+                "value": "2",
+                "label": "Le PQ, le Parti québécois de Paul St-Pierre Plamondon"
+              },
+              {
+                "value": "3",
+                "label": "Le PLQ, le Parti libéral du Québec de Dominique Anglade"
+              },
+              {
+                "value": "4",
+                "label": "QS, Québec solidaire de Gabriel Nadeau-Dubois"
+              },
+              {
+                "value": "5",
+                "label": "Un autre parti"
+              },
+              {
+                "value": "6",
+                "label": "Je ne sais pas"
+              },
+              {
+                "value": "7",
+                "label": "Je n'irais pas voter"
+              },
+              {
+                "value": "8",
+                "label": "Le PCQ, le Parti Conservateur du Québec d'Éric Duhaime"
+              }
+            ]
+          },
+          "omnibus_juin": {
+            "class": "categoric",
+            "question_label": "S'il y avait une élection générale provinciale au Québec aujourd'hui, pour quel parti voteriez-vous ou seriez-vous tenté(e) de voter pour vous représenter à l'Assemblée nationale du Québec?",
+            "raw_variable": "Q2",
+            "choices": [
+              {
+                "value": "1",
+                "label": "La CAQ, la Coalition pour l'avenir du Québec de François Legault"
+              },
+              {
+                "value": "2",
+                "label": "Le PQ, le Parti québécois de Paul St-Pierre Plamondon"
+              },
+              {
+                "value": "3",
+                "label": "Le PLQ, le Parti libéral du Québec de Dominique Anglade"
+              },
+              {
+                "value": "4",
+                "label": "QS, Québec solidaire de Gabriel Nadeau-Dubois"
+              },
+              {
+                "value": "5",
+                "label": "Un autre parti"
+              },
+              {
+                "value": "6",
+                "label": "Je ne sais pas"
+              },
+              {
+                "value": "7",
+                "label": "Je n'irais pas voter"
+              },
+              {
+                "value": "8",
+                "label": "Le PCQ, le Parti Conservateur du Québec d'Éric Duhaime"
+              }
+            ]
+          },
+          "pes_elxn_2022": {
+            "class": "categoric",
+            "question_label": "En politique provinciale québécoise, vous considérez-vous habituellement comme étant...",
+            "raw_variable": "Political Affiliation",
+            "choices": [
+              {
+                "value": "Caquiste (CAQ)",
+                "label": "Caquiste (CAQ)"
+              },
+              {
+                "value": "Libéral (PLQ)",
+                "label": "Libéral (PLQ)"
+              },
+              {
+                "value": "Péquiste (PQ)",
+                "label": "Péquiste (PQ)"
+              },
+              {
+                "value": "Solidaire (QS)",
+                "label": "Solidaire (QS)"
+              },
+              {
+                "value": "Conservateur (PCQ)",
+                "label": "Conservateur (PCQ)"
+              },
+              {
+                "value": "Vert (PVQ)",
+                "label": "Vert (PVQ)"
+              },
+              {
+                "value": "Un autre parti",
+                "label": "Un autre parti"
+              },
+              {
+                "value": "Aucun de ces partis",
+                "label": "Aucun de ces partis"
+              }
+            ]
+          },
+          "quorum_mcq_pilote": {
+            "class": "categoric",
+            "question_label": "NA",
+            "raw_variable": "NA",
+            "choices": [
+              "NA"
+            ]
+          },
+          "sondage_nationalisme_2022": {
+            "class": "categoric",
+            "question_label": "NA",
+            "raw_variable": "NA",
+            "choices": [
+              "NA"
+            ]
           }
     }
 }

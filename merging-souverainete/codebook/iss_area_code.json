@@ -1,0 +1,295 @@
+{
+    "description": "Indicatif regional",
+    "source_id": {
+      "ces65": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA"
+          }
+        ]
+      },
+      "ces68": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA"
+          }
+        ]
+      },
+      "ces74": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA"
+          }
+        ]
+      },
+      "ces79": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA"
+          }
+        ]
+      },
+      "ces84": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA"
+          }
+        ]
+      },
+      "ces88": {
+        "class": "num",
+        "question_label": "NA",
+        "raw_variable": "areacode",
+        "choices": [
+          {
+            "value": "area_code"
+          }
+        ]
+      },
+      "ces93": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA"
+          }
+        ]
+      },
+      "ces97": {
+        "class": "num",
+        "question_label": "NA",
+        "raw_variable": "areacode",
+        "choices": [
+          {
+            "value": "area_code",
+            "label": "area_code"
+          }
+        ]
+      },
+      "ces2000": {
+        "class": "num",
+        "question_label": "NA",
+        "raw_variable": "areacode",
+        "choices": [
+          {
+            "value": "area_code",
+            "label": "area_code"
+          }
+        ]
+      },
+      "ces2004": {
+        "class": "num",
+        "question_label": "NA",
+        "raw_variable": "ces04_areacode",
+        "choices": [
+          {
+            "value": "area_code",
+            "label": "area_code"
+          }
+        ]
+      },
+      "ces2006": {
+        "class": "num",
+        "question_label": "NA",
+        "raw_variable": "areacode",
+        "choices": [
+          {
+            "value": "area_code",
+            "label": "area_code"
+          }
+        ]
+      },
+      "ces2008": {
+        "class": "num",
+        "question_label": "NA",
+        "raw_variable": "cps_areacode",
+        "choices": [
+          {
+            "value": "area_code",
+            "label": "area_code"
+          },
+          {
+            "value": 9999,
+            "label": "NA"
+          }
+        ]
+      },
+      "ces2011": {
+        "class": "num",
+        "question_label": "NA",
+        "raw_variable": "AREACODE",
+        "choices": [
+          {
+            "value": "area_code",
+            "label": "area_code"
+          }
+        ]
+      },
+      "ces2015": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA"
+          }
+        ]
+      },
+      "ces2019": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA"
+          }
+        ]
+      },
+      "ces2021": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA"
+          }
+        ]
+      },
+      "datagotchi_pilot1_2021": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA"
+          }
+        ]
+      },
+      "datagotchi_pilot2_2022": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA"
+          }
+        ]
+      },
+      "omnibus_1january": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA"
+          }
+        ]
+      },
+      "omnibus_2february": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA"
+          }
+        ]
+      },
+      "omnibus_3march": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA"
+          }
+        ]
+      },
+      "omnibus_4april": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA"
+          }
+        ]
+      },
+      "omnibus_5may": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA"
+          }
+        ]
+      },
+      "omnibus_6june": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA"
+          }
+        ]
+      },
+      "sondage_nationalisme_2022": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA"
+          }
+        ]
+      },
+      "pco": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA"
+          }
+        ]
+      },
+      "pes_elxn_2022": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA"
+          }
+        ]
+      },
+      "quorum_mcq_pilote": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA"
+          }
+        ]
+      }
+    }
+  }

@@ -304,6 +304,109 @@
                 "label": "not very strongly"
               }
             ]
+          },
+          "datagotchi_pilot1_2021": {
+            "class": "ordered factor",
+            "question_label": "Dans quelle mesure en êtes-vous certain?",
+            "raw_variable": "I2",
+            "choices": [
+              {
+                "value": "1",
+                "label": "Très certain"
+              },
+              {
+                "value": "2",
+                "label": "Plutôt certain"
+              },
+              {
+                "value": "3",
+                "label": "Peu certain"
+              },
+              {
+                "value": "4",
+                "label": "Pas du tout certain"
+              }
+            ]
+          },
+          "datagotchi_pilot2_2022": {
+            "class": "ordered factor",
+            "question_label": "NA",
+            "raw_variable": "NA",
+            "choices": [
+              "NA"
+            ]
+          },
+          "omnibus_janvier": {
+            "class": "ordered factor",
+            "question_label": "NA",
+            "raw_variable": "NA",
+            "choices": [
+              "NA"
+            ]
+          },
+          "omnibus_fevrier": {
+            "class": "ordered factor",
+            "question_label": "NA",
+            "raw_variable": "NA",
+            "choices": [
+              "NA"
+            ]
+          },
+          "omnibus_mars": {
+            "class": "ordered factor",
+            "question_label": "NA",
+            "raw_variable": "NA",
+            "choices": [
+              "NA"
+            ]
+          },
+          "omnibus_avril": {
+            "class": "ordered factor",
+            "question_label": "NA",
+            "raw_variable": "NA",
+            "choices": [
+              "NA"
+            ]
+          },
+          "omnibus_mai": {
+            "class": "ordered factor",
+            "question_label": "NA",
+            "raw_variable": "NA",
+            "choices": [
+              "NA"
+            ]
+          },
+          "omnibus_juin": {
+            "class": "ordered factor",
+            "question_label": "NA",
+            "raw_variable": "NA",
+            "choices": [
+              "NA"
+            ]
+          },
+          "pes_elxn_2022": {
+            "class": "ordered factor",
+            "question_label": "NA",
+            "raw_variable": "NA",
+            "choices": [
+              "NA"
+            ]
+          },
+          "quorum_mcq_pilote": {
+            "class": "ordered factor",
+            "question_label": "NA",
+            "raw_variable": "NA",
+            "choices": [
+              "NA"
+            ]
+          },
+          "sondage_nationalisme_2022": {
+            "class": "ordered factor",
+            "question_label": "NA",
+            "raw_variable": "NA",
+            "choices": [
+              "NA"
+            ]
           }
     }
 }
