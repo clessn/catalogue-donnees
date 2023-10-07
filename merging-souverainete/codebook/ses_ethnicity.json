@@ -1122,65 +1122,1045 @@
       },
       "ces2004": {
         "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "question_label": "To what ethnic or cultural group do you belong? / In addition to being Canadian to what ethnic or cultural group did you, or your ancestors belong on first coming to this continent?",
+        "raw_variable": "ces04_cps14 et ces04_cps15",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "acadian",
+            "label": "Canadian"
           },
           {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "american",
+            "label": "American"
+          },
+          {
+            "value": "anglo saxon / wasp / caucasian / white, etc.",
+            "label": "No other mentions, just Canadian, etc."
+          },
+          {
+            "value": "arabic/middle eastern ethnicity",
+            "label": "No other mentions, just Canadian, etc."
+          },
+          {
+            "value": "australian",
+            "label": "Australian"
+          },
+          {
+            "value": "austrian",
+            "label": "Austrian"
+          },
+          {
+            "value": "bahamian",
+            "label": "Bahamian"
+          },
+          {
+            "value": "bangladeshi",
+            "label": "Bangladeshi"
+          },
+          {
+            "value": "black/african",
+            "label": "BLACK/African"
+          },
+          {
+            "value": "british",
+            "label": "British"
+          },
+          {
+            "value": "canadian",
+            "label": "Canadian"
+          },
+          {
+            "value": "chinese, et. al.",
+            "label": "Chinese"
+          },
+          {
+            "value": "croatian",
+            "label": "Croatian"
+          },
+          {
+            "value": "czech",
+            "label": "Czech"
+          },
+          {
+            "value": "danish",
+            "label": "Danish"
+          },
+          {
+            "value": "don't know, not codeable",
+            "label": "Don't Know"
+          },
+          {
+            "value": "dutch",
+            "label": "Dutch"
+          },
+          {
+            "value": "english",
+            "label": "ENGLISH"
+          },
+          {
+            "value": "ethiopian",
+            "label": "Ethiopian"
+          },
+          {
+            "value": "filipino",
+            "label": "Philipino"
+          },
+          {
+            "value": "finnish",
+            "label": "Finnish"
+          },
+          {
+            "value": "french",
+            "label": "French"
+          },
+          {
+            "value": "german",
+            "label": "German"
+          },
+          {
+            "value": "greek",
+            "label": "Greek"
+          },
+          {
+            "value": "guyanese",
+            "label": "Guyanese"
+          },
+          {
+            "value": "haitian",
+            "label": "Haitian"
+          },
+          {
+            "value": "holland",
+            "label": "Holland"
+          },
+          {
+            "value": "hungarian",
+            "label": "Hungarian"
+          },
+          {
+            "value": "indian",
+            "label": "Indian"
+          },
+          {
+            "value": "inuit, metis, aboriginal, native",
+            "label": "Inuit, Metis, Aboriginal, Native"
+          },
+          {
+            "value": "irish",
+            "label": "Irish"
+          },
+          {
+            "value": "israeli",
+            "label": "Israeli"
+          },
+          {
+            "value": "italian",
+            "label": "Italian"
+          },
+          {
+            "value": "jamaican",
+            "label": "Jamaican"
+          },
+          {
+            "value": "jewish/hebrew",
+            "label": "Jewish"
+          },
+          {
+            "value": "korean",
+            "label": "Korean"
+          },
+          {
+            "value": "lebanese",
+            "label": "Lebanese"
+          },
+          {
+            "value": "new zealander",
+            "label": "New Zealand"
+          },
+          {
+            "value": "norwegian",
+            "label": "Norwegian"
+          },
+          {
+            "value": "other african ethnicity",
+            "label": "Other African Ethnicity"
+          },
+          {
+            "value": "other asian ethnicity",
+            "label": "Other Asian Ethnicity"
+          },
+          {
+            "value": "other caribbean ethnicity",
+            "label": "Other Caribbean Ethnicity"
+          },
+          {
+            "value": "other central american ethnicity",
+            "label": "Other Central American Ethnicity"
+          },
+          {
+            "value": "other european ethnicity",
+            "label": "Other European Ethnicity"
+          },
+          {
+            "value": "other south american ethnicity",
+            "label": "Other South American Ethnicity"
+          },
+          {
+            "value": "pakistani",
+            "label": "Pakistani"
+          },
+          {
+            "value": "polish",
+            "label": "Polish"
+          },
+          {
+            "value": "portuguese",
+            "label": "Portuguese"
+          },
+          {
+            "value": "quebecois, fr. cdn, francophone",
+            "label": "Québécois, Fr. Cdn, Francophone"
+          },
+          {
+            "value": "refused",
+            "label": "Refused"
+          },
+          {
+            "value": "russian",
+            "label": "Russian"
+          },
+          {
+            "value": "salvadoran",
+            "label": "El Salvadoran"
+          },
+          {
+            "value": "scottish",
+            "label": "Scottish"
+          },
+          {
+            "value": "serbian",
+            "label": "Serbia"
+          },
+          {
+            "value": "sikh",
+            "label": "Sikh"
+          },
+          {
+            "value": "slovakian",
+            "label": "Slovakian"
+          },
+          {
+            "value": "somalian",
+            "label": "Somalian"
+          },
+          {
+            "value": "spanish",
+            "label": "Spanish"
+          },
+          {
+            "value": "sri lankan",
+            "label": "Sri Lankan"
+          },
+          {
+            "value": "swedish",
+            "label": "Swedish"
+          },
+          {
+            "value": "tamil",
+            "label": "Tamil"
+          },
+          {
+            "value": "trinidadian",
+            "label": "Trinidadian"
+          },
+          {
+            "value": "ukrainian",
+            "label": "Ukrainian"
+          },
+          {
+            "value": "vietnamese",
+            "label": "Vietnamese"
+          },
+          {
+            "value": "welsh",
+            "label": "Welsh"
+          },
+          {
+            "value": "yugoslavian",
+            "label": "Yugoslavian"
           }
         ]
       },
       "ces2006": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "factor",
+        "question_label": "To what ethnic or cultural group do you belong? / In addition to being Canadian to what ethnic or cultural group did you, or your ancestors belong on first coming to this continent?",
+        "raw_variable": "cps_s14 et cps_s15",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "1",
+            "label": "Canadian"
           },
           {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "7",
+            "label": "British"
           },
           {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "8",
+            "label": "Chinese"
+          },
+          {
+            "value": "12",
+            "label": "Dutch"
+          },
+          {
+            "value": "13",
+            "label": "ENGLISH"
+          },
+          {
+            "value": "16",
+            "label": "French"
+          },
+          {
+            "value": "24",
+            "label": "Irish"
+          },
+          {
+            "value": "25",
+            "label": "Italian"
+          },
+          {
+            "value": "43",
+            "label": "SCOTTISH"
+          },
+          {
+            "value": "53",
+            "label": "Ukrainian"
+          },
+          {
+            "value": "94",
+            "label": "French Canadian"
+          },
+          {
+            "value": "95",
+            "label": "Inuit,Metis, Aboriginal"
+          },
+          {
+            "value": "96",
+            "label": "Quebecois"
           }
         ]
       },
       "ces2008": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "factor",
+        "question_label": "To what ethnic or cultural group do you belong? / In addition to being Canadian to what ethnic or cultural group did you, or your ancestors belong on first coming to this continent?",
+        "raw_variable": "cps_s14 et cps_s15",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "acadian",
+            "label": "Acadian"
           },
           {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "american",
+            "label": "American"
+          },
+          {
+            "value": "anglo saxon / wasp / caucasian / white, etc",
+            "label": "Anglo Saxon / Wasp / Caucasian / White, etc."
+          },
+          {
+            "value": "arabic/middle eastern ethnicty",
+            "label": "Arabic/Middle Eastern Ethnicity"
+          },
+          {
+            "value": "austrian",
+            "label": "Austrian"
+          },
+          {
+            "value": "bahamian",
+            "label": "Bahamian"
+          },
+          {
+            "value": "bangladeshi",
+            "label": "Bangladeshi"
+          },
+          {
+            "value": "black/african",
+            "label": "Black/African"
+          },
+          {
+            "value": "british",
+            "label": "British"
+          },
+          {
+            "value": "canadian",
+            "label": "Canadian"
+          },
+          {
+            "value": "chinese",
+            "label": "Chinese"
+          },
+          {
+            "value": "croatian",
+            "label": "Croatian"
+          },
+          {
+            "value": "czech",
+            "label": "Czech"
+          },
+          {
+            "value": "danish",
+            "label": "Danish"
+          },
+          {
+            "value": "don't know",
+            "label": "Don't Know"
+          },
+          {
+            "value": "dutch",
+            "label": "Dutch"
+          },
+          {
+            "value": "english",
+            "label": "English"
+          },
+          {
+            "value": "filipino",
+            "label": "Filipino"
+          },
+          {
+            "value": "finnish",
+            "label": "Finnish"
+          },
+          {
+            "value": "french",
+            "label": "French"
+          },
+          {
+            "value": "german",
+            "label": "German"
+          },
+          {
+            "value": "greek",
+            "label": "Greek"
+          },
+          {
+            "value": "guyanese",
+            "label": "Guyanese"
+          },
+          {
+            "value": "haitian",
+            "label": "Haitian"
+          },
+          {
+            "value": "hungarian",
+            "label": "Hungarian"
+          },
+          {
+            "value": "indian",
+            "label": "Indian"
+          },
+          {
+            "value": "inuit, metis, aboriginal, native",
+            "label": "Inuit, Metis, Aboriginal, Native"
+          },
+          {
+            "value": "irish",
+            "label": "Irish"
+          },
+          {
+            "value": "israeli",
+            "label": "Israeli"
+          },
+          {
+            "value": "italian",
+            "label": "Italian"
+          },
+          {
+            "value": "jamaican",
+            "label": "Jamaican"
+          },
+          {
+            "value": "japanese",
+            "label": "Japanese"
+          },
+          {
+            "value": "jewish",
+            "label": "Jewish"
+          },
+          {
+            "value": "korean",
+            "label": "Korean"
+          },
+          {
+            "value": "lebanese",
+            "label": "Lebanese"
+          },
+          {
+            "value": "mennonite",
+            "label": "Mennonite"
+          },
+          {
+            "value": "norwegian",
+            "label": "Norwegian"
+          },
+          {
+            "value": "other [specify]",
+            "label": "Other [Specify]"
+          },
+          {
+            "value": "other african ethnicity",
+            "label": "Other African Ethnicity"
+          },
+          {
+            "value": "other asian ethnicity",
+            "label": "Other Asian Ethnicity"
+          },
+          {
+            "value": "other caribbean ethnicity",
+            "label": "Other Caribbean Ethnicity"
+          },
+          {
+            "value": "other central american ethnicity",
+            "label": "Other Central American Ethnicity"
+          },
+          {
+            "value": "other european ethnicity",
+            "label": "Other European Ethnicity"
+          },
+          {
+            "value": "other south american ethnicity",
+            "label": "Other South American Ethnicity"
+          },
+          {
+            "value": "pakistani",
+            "label": "Pakistani"
+          },
+          {
+            "value": "polish",
+            "label": "Polish"
+          },
+          {
+            "value": "portuguese",
+            "label": "Portuguese"
+          },
+          {
+            "value": "quebecois",
+            "label": "Quebecois"
+          },
+          {
+            "value": "refused",
+            "label": "Refused"
+          },
+          {
+            "value": "russian",
+            "label": "Russian"
+          },
+          {
+            "value": "scottish",
+            "label": "Scottish"
+          },
+          {
+            "value": "serbian",
+            "label": "Serbian"
+          },
+          {
+            "value": "sikh",
+            "label": "Sikh"
+          },
+          {
+            "value": "slovakian",
+            "label": "Slovakian"
+          },
+          {
+            "value": "spanish",
+            "label": "Spanish"
+          },
+          {
+            "value": "sri lankan",
+            "label": "Sri Lankan"
+          },
+          {
+            "value": "swedish",
+            "label": "Swedish"
+          },
+          {
+            "value": "tamil",
+            "label": "Tamil"
+          },
+          {
+            "value": "trinidadian",
+            "label": "Trinidadian"
+          },
+          {
+            "value": "ukrainian",
+            "label": "Ukrainian"
+          },
+          {
+            "value": "vietnamese",
+            "label": "Vietnamese"
+          },
+          {
+            "value": "welsh",
+            "label": "Welsh"
+          },
+          {
+            "value": "quebec",
+            "label": "Quebec"
+          },
+          {
+            "value": "s",
+            "label": "Other"
+          },
+          {
+            "value": "d",
+            "label": "Don't Know"
+          },
+          {
+            "value": "r",
+            "label": "Refused"
           }
-        ]
+        ]        
       },
       "ces2011": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "factor",
+        "question_label": " To what ethnic or cultural group do you belong? / In addition to being Canadian, to what ethnic or cultural group did you, or your ancestors belong on first coming to this country?",
+        "raw_variable": "CPS11_85 et CPS11_86",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "acadian",
+            "label": "Acadian"
           },
           {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "american",
+            "label": "American"
+          },
+          {
+            "value": "anglo saxon / wasp / caucasian / white, etc",
+            "label": "Anglo Saxon / WASP / Caucasian / White, etc."
+          },
+          {
+            "value": "arabic/middle eastern ethnicity",
+            "label": "Arabic/Middle Eastern Ethnicity"
+          },
+          {
+            "value": "australian",
+            "label": "Australian"
+          },
+          {
+            "value": "austrian",
+            "label": "Austrian"
+          },
+          {
+            "value": "bangladeshi",
+            "label": "Bangladeshi"
+          },
+          {
+            "value": "black/african",
+            "label": "Black/African"
+          },
+          {
+            "value": "british",
+            "label": "British"
+          },
+          {
+            "value": "canadian",
+            "label": "Canadian"
+          },
+          {
+            "value": "chinese, et. al.",
+            "label": "Chinese, et. al."
+          },
+          {
+            "value": "croatian",
+            "label": "Croatian"
+          },
+          {
+            "value": "czech",
+            "label": "Czech"
+          },
+          {
+            "value": "danish",
+            "label": "Danish"
+          },
+          {
+            "value": "don't know, not codeable",
+            "label": "Don't Know, Not Codeable"
+          },
+          {
+            "value": "dutch",
+            "label": "Dutch"
+          },
+          {
+            "value": "english",
+            "label": "English"
+          },
+          {
+            "value": "filipino",
+            "label": "Filipino"
+          },
+          {
+            "value": "finnish",
+            "label": "Finnish"
+          },
+          {
+            "value": "french",
+            "label": "French"
+          },
+          {
+            "value": "german",
+            "label": "German"
+          },
+          {
+            "value": "greek",
+            "label": "Greek"
+          },
+          {
+            "value": "guyanese",
+            "label": "Guyanese"
+          },
+          {
+            "value": "haitian",
+            "label": "Haitian"
+          },
+          {
+            "value": "holland",
+            "label": "Holland"
+          },
+          {
+            "value": "hungarian",
+            "label": "Hungarian"
+          },
+          {
+            "value": "indian",
+            "label": "Indian"
+          },
+          {
+            "value": "inuit, metis, aboriginal, native",
+            "label": "Inuit, Metis, Aboriginal, Native"
+          },
+          {
+            "value": "irish",
+            "label": "Irish"
+          },
+          {
+            "value": "israeli",
+            "label": "Israeli"
+          },
+          {
+            "value": "italian",
+            "label": "Italian"
+          },
+          {
+            "value": "jamaican",
+            "label": "Jamaican"
+          },
+          {
+            "value": "japanese",
+            "label": "Japanese"
+          },
+          {
+            "value": "jewish/hebrew",
+            "label": "Jewish/Hebrew"
+          },
+          {
+            "value": "korean",
+            "label": "Korean"
+          },
+          {
+            "value": "lebanese",
+            "label": "Lebanese"
+          },
+          {
+            "value": "mennonite",
+            "label": "Mennonite"
+          },
+          {
+            "value": "norwegian",
+            "label": "Norwegian"
+          },
+          {
+            "value": "other [specify]",
+            "label": "Other (Specify)"
+          },
+          {
+            "value": "other african ethnicity",
+            "label": "Other African Ethnicity"
+          },
+          {
+            "value": "other asian ethnicity",
+            "label": "Other Asian Ethnicity"
+          },
+          {
+            "value": "other caribbean ethnicity",
+            "label": "Other Caribbean Ethnicity"
+          },
+          {
+            "value": "other central american ethnicity",
+            "label": "Other Central American Ethnicity"
+          },
+          {
+            "value": "other european ethnicity",
+            "label": "Other European Ethnicity"
+          },
+          {
+            "value": "other south american ethnicity",
+            "label": "Other South American Ethnicity"
+          },
+          {
+            "value": "pakistani",
+            "label": "Pakistani"
+          },
+          {
+            "value": "polish",
+            "label": "Polish"
+          },
+          {
+            "value": "portuguese",
+            "label": "Portuguese"
+          },
+          {
+            "value": "quebecois",
+            "label": "Quebecois"
+          },
+          {
+            "value": "refused",
+            "label": "Refused"
+          },
+          {
+            "value": "russian",
+            "label": "Russian"
+          },
+          {
+            "value": "scottish",
+            "label": "Scottish"
+          },
+          {
+            "value": "serbian",
+            "label": "Serbian"
+          },
+          {
+            "value": "sikh",
+            "label": "Sikh"
+          },
+          {
+            "value": "slovakian",
+            "label": "Slovakian"
+          },
+          {
+            "value": "spanish",
+            "label": "Spanish"
+          },
+          {
+            "value": "sri lankan",
+            "label": "Sri Lankan"
+          },
+          {
+            "value": "swedish",
+            "label": "Swedish"
+          },
+          {
+            "value": "tamil",
+            "label": "Tamil"
+          },
+          {
+            "value": "trinidadian",
+            "label": "Trinidadian"
+          },
+          {
+            "value": "ukrainian",
+            "label": "Ukrainian"
+          },
+          {
+            "value": "vietnamese",
+            "label": "Vietnamese"
+          },
+          {
+            "value": "welsh",
+            "label": "Welsh"
+          },
+          {
+            "value": "acadian",
+            "label": "Acadian"
+          },
+          {
+            "value": "american",
+            "label": "American"
+          },
+          {
+            "value": "anglo saxon / wasp / caucasian / white, etc",
+            "label": "Anglo Saxon / WASP / Caucasian / White, etc."
+          },
+          {
+            "value": "austrian",
+            "label": "Austrian"
+          },
+          {
+            "value": "british",
+            "label": "British"
+          },
+          {
+            "value": "canadian",
+            "label": "Canadian"
+          },
+          {
+            "value": "chinese, et. al.",
+            "label": "Chinese, et. al."
+          },
+          {
+            "value": "danish",
+            "label": "Danish"
+          },
+          {
+            "value": "don't know, not codeable",
+            "label": "Don't Know, Not Codeable"
+          },
+          {
+            "value": "dutch",
+            "label": "Dutch"
+          },
+          {
+            "value": "english",
+            "label": "English"
+          },
+          {
+            "value": "french",
+            "label": "French"
+          },
+          {
+            "value": "german",
+            "label": "German"
+          },
+          {
+            "value": "greek",
+            "label": "Greek"
+          },
+          {
+            "value": "hungarian",
+            "label": "Hungarian"
+          },
+          {
+            "value": "indian",
+            "label": "Indian"
+          },
+          {
+            "value": "inuit, metis, aboriginal, native",
+            "label": "Inuit, Metis, Aboriginal, Native"
+          },
+          {
+            "value": "irish",
+            "label": "Irish"
+          },
+          {
+            "value": "italian",
+            "label": "Italian"
+          },
+          {
+            "value": "jamaican",
+            "label": "Jamaican"
+          },
+          {
+            "value": "japanese",
+            "label": "Japanese"
+          },
+          {
+            "value": "jewish/hebrew",
+            "label": "Jewish/Hebrew"
+          },
+          {
+            "value": "korean",
+            "label": "Korean"
+          },
+          {
+            "value": "lebanese",
+            "label": "Lebanese"
+          },
+          {
+            "value": "mennonite",
+            "label": "Mennonite"
+          },
+          {
+            "value": "norwegian",
+            "label": "Norwegian"
+          },
+          {
+            "value": "other asian ethnicity",
+            "label": "Other Asian Ethnicity"
+          },
+          {
+            "value": "other european ethnicity",
+            "label": "Other European Ethnicity"
+          },
+          {
+            "value": "other south american ethnicity",
+            "label": "Other South American Ethnicity"
+          },
+          {
+            "value": "pakistani",
+            "label": "Pakistani"
+          },
+          {
+            "value": "polish",
+            "label": "Polish"
+          },
+          {
+            "value": "portuguese",
+            "label": "Portuguese"
+          },
+          {
+            "value": "quebecois, fr. cdn, francophone",
+            "label": "Quebecois, Fr. Cdn, Francophone"
+          },
+          {
+            "value": "refused",
+            "label": "Refused"
+          },
+          {
+            "value": "russian",
+            "label": "Russian"
+          },
+          {
+            "value": "scottish",
+            "label": "Scottish"
+          },
+          {
+            "value": "serbian",
+            "label": "Serbian"
+          },
+          {
+            "value": "sikh",
+            "label": "Sikh"
+          },
+          {
+            "value": "spanish",
+            "label": "Spanish"
+          },
+          {
+            "value": "sri lankan",
+            "label": "Sri Lankan"
+          },
+          {
+            "value": "swedish",
+            "label": "Swedish"
+          },
+          {
+            "value": "tamil",
+            "label": "Tamil"
+          },
+          {
+            "value": "trinidadian",
+            "label": "Trinidadian"
+          },
+          {
+            "value": "ukrainian",
+            "label": "Ukrainian"
+          },
+          {
+            "value": "vietnamese",
+            "label": "Vietnamese"
+          },
+          {
+            "value": "welsh",
+            "label": "Welsh"
           }
         ]
       },
