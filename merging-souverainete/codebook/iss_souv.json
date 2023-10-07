@@ -283,6 +283,363 @@
                 "label": "Fortement d'accord"
               }
             ]
+          },
+          "ces1965": {
+            "class": "NA",
+            "question_label": "NA",
+            "raw_variable": "NA",
+            "choices": "NA"
+          },
+          "ces1968": {
+            "class": "character",
+            "question_label": "There has been quite a bit of talk recently about the possibility of Quebec separating from the rest of Canada and becoming an independant country. Are you in favour of separation or opposed to it? Please tell me whether you are strongly in favour or separation, slightly in favour, undecided, slightly opposed or strongly opposed to separation.",
+            "raw_variable": "var306",
+            "choices": [
+              {
+                "value": "strongly  in favour",
+                "label": "Strongly  in favour"
+              },
+              {
+                "value": "slightly  in favour",
+                "label": "Slightly  in favour"
+              },
+              {
+                "value": "1ndecided",
+                "label": "Undecided"
+              },
+              {
+                "value": "slightly  opposed",
+                "label": "Slightly  opposed"
+              },
+              {
+                "value": "strongly opposed",
+                "label": "Strongly opposed"
+              }
+            ]
+          },
+          "ces1974": {
+            "class": "character",
+            "question_label": "There has been quite a bit of talk in recent years about the possibility of Quebec separating from the rest of Canada and becoming an independant country. Are you in favour of separatism on opposed to it?",
+            "raw_variable": "v125 + 126 pour how strongly do you feel about that",
+            "choices": [
+              {
+                "value": "no opinion",
+                "label": "No opinion"
+              },
+              {
+                "value": "in favour",
+                "label": "In favour"
+              },
+              {
+                "value": "opposed",
+                "label": "Opposed"
+              },
+              {
+                "value": "dk",
+                "label": "Don't know"
+              }
+            ]
+          },
+          "ces1979": {
+            "class": "factor ordered",
+            "question_label": "I am going to mention several constitutional options for Quebec. As I read each oever, please tell me whether you are very favourable towars it, somewhat favourable, somewhat unfavourable, or very unfavourable toward it.",
+            "raw_variable": "v1188",
+            "choices": [
+              {
+                "value": "1",
+                "label": "Very favourable"
+              },
+              {
+                "value": "2",
+                "label": "Somewhat favourable"
+              },
+              {
+                "value": "3",
+                "label": "Somewhat unfavourable"
+              },
+              {
+                "value": "4",
+                "label": "Very unfavourable"
+              },
+              {
+                "value": "8",
+                "label": "No opinion"
+              }
+            ]
+          },
+          "ces1984": {
+            "class": "character",
+            "question_label": "Did you vote yes to negotiate sovereignty association or did you vote no against negotiating sovereignty association?",
+            "raw_variable": "var500",
+            "choices": [
+              {
+                "value": "voted yes",
+                "label": "Voted yes"
+              },
+              {
+                "value": "voted no",
+                "label": "Voted no"
+              },
+              {
+                "value": "spoiled ballot",
+                "label": "Spoiled ballot"
+              }
+            ]
+          },
+          "ces1988": {
+            "class": "character",
+            "question_label": "What is your opinion on Quebec independence? Do you support it completely, support it somewhat, oppose it somewhat, oppose it completely or don't you really have an opinion on it?",
+            "raw_variable": "b10",
+            "choices": [
+              {
+                "value": "support completely",
+                "label": "Support it completely"
+              },
+              {
+                "value": "support somewhat",
+                "label": "Support it somewhat"
+              },
+              {
+                "value": "oppose  somewhat",
+                "label": "Oppose it somewhat"
+              },
+              {
+                "value": "oppose  completely",
+                "label": "Oppose it completely"
+              },
+              {
+                "value": "no opinion",
+                "label": "No opinion"
+              },
+              {
+                "value": "refused",
+                "label": "Refused"
+              }
+            ]
+          },
+          "ces1993": {
+            "class": "character",
+            "question_label": "What is your opinion on Quebec sovereignty, that is, Quebec is no longer a part of Canada? Are you very favourable, somewhat favourable, somewhat opposed, or very opposed.",
+            "raw_variable": "cpsg11",
+            "choices": [
+              {
+                "value": "very favourable",
+                "label": "Very favourable"
+              },
+              {
+                "value": "somewhat favour",
+                "label": "Somewhat favourable"
+              },
+              {
+                "value": "somewhat opposed",
+                "label": "Somewhat opposed"
+              },
+              {
+                "value": "very opposed",
+                "label": "Very opposed"
+              },
+              {
+                "value": "d.k.",
+                "label": "Don't know"
+              },
+              {
+                "value": "neither",
+                "label": "Neither favourable or opposed"
+              }
+            ]
+          },
+          "ces1997": {
+            "class": "character",
+            "question_label": "Are you very favourable, somewhat favourable, somewhat opposed or very opposed to Québec sovereignty.",
+            "raw_variable": "cpsg11",
+            "choices": [
+              {
+                "value": "very favourable",
+                "label": "very favourable"
+              },
+              {
+                "value": "somewhat favour",
+                "label": "somewhat favourable"
+              },
+              {
+                "value": "somewhat opposed",
+                "label": "somewhat opposed"
+              },
+              {
+                "value": "very opposed",
+                "label": "very opposed"
+              },
+              {
+                "value": "d.k.",
+                "label": "don't know"
+              },
+              {
+                "value": "neither",
+                "label": "neither favourable or opposed"
+              }
+            ]
+          },
+          "ces2000": {
+            "class": "character",
+            "question_label": "Are you very favourable, somewhat favourable, somewhat opposed or very opposed to Quebec sovereignty, that is Quebec is NO LONGER A PART OF CANADA",
+            "raw_variable": "pesc6",
+            "choices": [
+              {
+                "value": "very favourable",
+                "label": "very favourable"
+              },
+              {
+                "value": "somewhat favourable",
+                "label": "somewhat favourable"
+              },
+              {
+                "value": "somewhat opposed",
+                "label": "somewhat opposed"
+              },
+              {
+                "value": "very opposed",
+                "label": "very opposed"
+              },
+              {
+                "value": "don't know",
+                "label": "don't know"
+              }
+            ]
+          },
+          "ces2004": {
+            "class": "character",
+            "question_label": "Are you very favourable, somewhat favourable, somewhat opposed, or very opposed to Quebec sovereignty, that is Quebec is NO LONGER A PART OF CANADA",
+            "raw_variable": "pes_c10",
+            "choices": [
+              {
+                "value": "very favourable",
+                "label": "very favourable"
+              },
+              {
+                "value": "somewhat favourable",
+                "label": "somewhat favourable"
+              },
+              {
+                "value": "somewhat opposed",
+                "label": "somewhat opposed"
+              },
+              {
+                "value": "very opposed",
+                "label": "very opposed"
+              },
+              {
+                "value": "don't know",
+                "label": "don't know"
+              }
+            ]
+          },
+          "ces2006": {
+            "class": "character",
+            "question_label": "Are you very favourable, somewhat favourable, somewhat opposed, or very opposed to Quebec sovereignty, that is Quebec is NO LONGER A PART OF CANADA",
+            "raw_variable": "cps_i806",
+            "choices": [
+              {
+                "value": "very favourable",
+                "label": "very favourable"
+              },
+              {
+                "value": "somewhat favourable",
+                "label": "somewhat favourable"
+              },
+              {
+                "value": "somewhat opposed",
+                "label": "somewhat opposed"
+              },
+              {
+                "value": "very opposed",
+                "label": "very opposed"
+              },
+              {
+                "value": "don't know",
+                "label": "don't know"
+              }
+            ]
+          },
+          "ces2008": {
+            "class": "character",
+            "question_label": "Are you very favourable, somewhat favourable, somewhat opposed, or very opposed to Quebec sovereignty, that is Quebec is NO LONGER A PART OF CANADA",
+            "raw_variable": "cps_q9",
+            "choices": [
+              {
+                "value": "very favourable",
+                "label": "very favourable"
+              },
+              {
+                "value": "somewhat favourable",
+                "label": "somewhat favourable"
+              },
+              {
+                "value": "somewhat opposed",
+                "label": "somewhat opposed"
+              },
+              {
+                "value": "very opposed",
+                "label": "very opposed"
+              },
+              {
+                "value": "don't know",
+                "label": "don't know"
+              }
+            ]
+          },
+          "ces2011": {
+            "class": "character",
+            "question_label": "Are you very favourable, somewhat favourable, somewhat opposed, or very opposed to Quebec sovereignty, that is Quebec is NO LONGER A PART OF CANADA",
+            "raw_variable": "CPS11_75",
+            "choices": [
+              {
+                "value": "very favourable    ",
+                "label": "very favourable"
+              },
+              {
+                "value": "somewhat favourable",
+                "label": "somewhat favourable"
+              },
+              {
+                "value": "somewhat opposed   ",
+                "label": "somewhat opposed"
+              },
+              {
+                "value": "very opposed       ",
+                "label": "very opposed"
+              },
+              {
+                "value": "don't know         ",
+                "label": "don't know"
+              }
+            ]
+          },
+          "ces2015": {
+            "class": "character",
+            "question_label": "Are you very favourable, somewhat favourable, somewhat opposed, or very opposed to Quebec sovereignty, that is Quebec is NO LONGER A PART OF CANADA",
+            "raw_variable": "CPS11_75",
+            "choices": [
+              {
+                "value": "very favourable    ",
+                "label": "very favourable"
+              },
+              {
+                "value": "somewhat favourable",
+                "label": "somewhat favourable"
+              },
+              {
+                "value": "somewhat opposed   ",
+                "label": "somewhat opposed"
+              },
+              {
+                "value": "very opposed       ",
+                "label": "very opposed"
+              },
+              {
+                "value": "don't know         ",
+                "label": "don't know"
+              }
+            ]
           }
     }
 }
