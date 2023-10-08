@@ -451,7 +451,7 @@
           "ces1997": {
             "class": "character",
             "question_label": "Are you very favourable, somewhat favourable, somewhat opposed or very opposed to Québec sovereignty.",
-            "raw_variable": "cpsg11",
+            "raw_variable": "cpsj3a",
             "choices": [
               {
                 "value": "very favourable",
@@ -647,24 +647,24 @@
             "raw_variable": "cps19_quebec_sov",
             "choices": [
               {
-                "value": "1",
-                "label": "very favourable"
+                "value": "Very favourable",
+                "label": "Very favourable"
               },
               {
-                "value": "2",
-                "label": "somewhat favourable"
+                "value": "Somewhat favourable",
+                "label": "Somewhat favourable"
               },
               {
-                "value": "3",
-                "label": "somewhat opposed"
+                "value": "Somewhat opposed",
+                "label": "Somewhat opposed"
               },
               {
-                "value": "4",
-                "label": "very opposed"
+                "value": "Very opposed",
+                "label": "Very opposed"
               },
               {
-                "value": "5",
-                "label": "don't know"
+                "value": "Don't know/ Prefer not to answer",
+                "label": "Don't know/ Prefer not to answer"
               }
             ]
           },
@@ -674,23 +674,23 @@
             "raw_variable": "cps21_quebec_sov",
             "choices": [
               {
-                "value": "1",
+                "value": "Very favourable",
                 "label": "Very favourable"
               },
               {
-                "value": "2",
+                "value": "Somewhat favourable",
                 "label": "Somewhat favourable"
               },
               {
-                "value": "3",
+                "value": "Somewhat opposed",
                 "label": "Somewhat opposed"
               },
               {
-                "value": "4",
+                "value": "Very opposed",
                 "label": "Very opposed"
               },
               {
-                "value": "5",
+                "value": "5Don't know/ Prefer not to answer",
                 "label": "Don't know/ Prefer not to answer"
               }
             ]
