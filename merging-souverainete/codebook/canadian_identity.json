@@ -261,47 +261,87 @@
         ]
       },
       "pco": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "Ordered factor",
+        "question_label": "How would you describe your sense of belonging to each of the following? - Canada",
+        "raw_variable": "Q14.2",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
+            "value": 1,
+            "label": "Very weak"
           },
           {
-            "value": "À faire",
-            "label": "À faire"
+            "value": 2,
+            "label": "Somewhat weak"
+          },
+          {
+            "value": 3,
+            "label": "Somewhat strong"
+          },
+          {
+            "value": 4,
+            "label": "Very strong"
+          },
+          {
+            "value": 5,
+            "label": "No opinion"
+          },
+          {
+            "value": 6,
+            "label": "Don't know"
           }
         ]
       },
       "pes_elxn_2022": {
-        "class": "À faire",
-        "question_label": "À faire",
+        "class": "Factor",
+        "question_label": "Les gens ont différentes façons de se définir. Comment diriez-vous que vous vous considérez?",
         "raw_variable": "À faire",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
+            "value": 1,
+            "label": "Uniquement comme Canadien(ne)"
           },
           {
-            "value": "À faire",
-            "label": "À faire"
+            "value": 2,
+            "label": "D’abord comme Canadien(ne), puis comme Québécois(e)"
+          },
+          {
+            "value": 3,
+            "label": "Également comme Canadien(ne) puis comme Québécois(e)"
+          },
+          {
+            "value": 4,
+            "label": "D'abord comme Québécois(e)"
+          },
+          {
+            "value": 5,
+            "label": "Uniquement comme québécois(e)"
           }
         ]
       },
       "quorum_mcq_pilote": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "Ordered factor",
+        "question_label": "Je m'identifie canadien",
+        "raw_variable": "iss_can",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
+            "value": 1,
+            "label": "Fortement en désaccord"
           },
           {
-            "value": "À faire",
-            "label": "À faire"
+            "value": 2,
+            "label": "Plutôt en désaccord"
+          },
+          {
+            "value": 3,
+            "label": "Neutre"
+          },
+          {
+            "value": 4,
+            "label": "Plutôt d'accord"
+          },
+          {
+            "value": 5,
+            "label": "Fortement d'accord"
           }
         ]
       }

@@ -299,33 +299,17 @@
         ]
       },
       "pco": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
         "choices": [
-          {
-            "value": "À faire",
-            "label": "À faire"
-          },
-          {
-            "value": "À faire",
-            "label": "À faire"
-          }
         ]
       },
       "pes_elxn_2022": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
         "choices": [
-          {
-            "value": "À faire",
-            "label": "À faire"
-          },
-          {
-            "value": "À faire",
-            "label": "À faire"
-          }
         ]
       },
       "quorum_mcq_pilote": {
