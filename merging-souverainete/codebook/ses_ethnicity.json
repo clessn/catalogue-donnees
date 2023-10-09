@@ -2278,183 +2278,688 @@
         ]
       },
       "datagotchi_pilot1_2021": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "factor",
+        "question_label": "En plus d'être Canadien, à quel(s) groupe(s) ethnique ou culturel appartenez-vous?",
+        "raw_variable": "SES6Mi ou i va de 1 à 19",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "1",
+            "label": "Autochtones/Premières nations"
           },
           {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "2",
+            "label": "Britannique"
+          },
+          {
+            "value": "3",
+            "label": "Chinois"
+          },
+          {
+            "value": "4",
+            "label": "Néerlandais"
+          },
+          {
+            "value": "5",
+            "label": "Anglais"
+          },
+          {
+            "value": "6",
+            "label": "Français"
+          },
+          {
+            "value": "7",
+            "label": "Canadien français"
+          },
+          {
+            "value": "8",
+            "label": "Allemand"
+          },
+          {
+            "value": "9",
+            "label": "Hispanique"
+          },
+          {
+            "value": "10",
+            "label": "Indien"
+          },
+          {
+            "value": "12",
+            "label": "Irlandais"
+          },
+          {
+            "value": "13",
+            "label": "Italien"
+          },
+          {
+            "value": "14",
+            "label": "Métis"
+          },
+          {
+            "value": "15",
+            "label": "Polonais"
+          },
+          {
+            "value": "16",
+            "label": "Québécois"
+          },
+          {
+            "value": "17",
+            "label": "Écossais"
+          },
+          {
+            "value": "18",
+            "label": "Ukrainien"
+          },
+          {
+            "value": "19",
+            "label": "Je n'appartiens à aucun autre groupe ethnique ou culturel"
+          },
+          {
+            "value": "20",
+            "label": "Autre (veuillez préciser)"
           }
         ]
       },
       "datagotchi_pilot2_2022": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "factor",
+        "question_label": "Laquelle des catégories suivantes vous décrit le mieux ?",
+        "raw_variable": "ethnie (fr) et ethnie.1 (en)",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
+           "value": "1",
+           "label": "Blanc"
           },
           {
-            "value": "À faire",
-            "label": "À faire"
+           "value": "2",
+           "label": "Noir"
+          },
+          {
+           "value": "3",
+           "label": "Autochtone"
+          },
+          {
+           "value": "4",
+           "label": "Asiatique"
+          },
+          {
+           "value": "5",
+           "label": "Hispanique"
+          },
+          {
+           "value": "6",
+           "label": "Arabe"
+          },
+          {
+           "value": "7",
+           "label": "Autre"
           }
-        ]
+         ]         
       },
       "omnibus_1january": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
-          },
-          {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "NA",
+            "label": "NA"
           }
         ]
       },
       "omnibus_2february": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
-          },
-          {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "NA",
+            "label": "NA"
           }
         ]
       },
       "omnibus_3march": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
-          },
-          {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "NA",
+            "label": "NA"
           }
         ]
       },
       "omnibus_4april": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
-          },
-          {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "NA",
+            "label": "NA"
           }
         ]
       },
       "omnibus_5may": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
-          },
-          {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "NA",
+            "label": "NA"
           }
         ]
       },
       "omnibus_6june": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
-          },
-          {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "NA",
+            "label": "NA"
           }
         ]
       },
       "sondage_nationalisme_2022": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
+              "value": "Africain/Afro-américain",
+              "label": "Africain/Afro-américain"
           },
           {
-            "value": "À faire",
-            "label": "À faire"
+              "value": "Arab/Arabe",
+              "label": "Arab/Arabe"
+          },
+          {
+              "value": "Asian/Asiatique",
+              "label": "Asian/Asiatique"
+          },
+          {
+              "value": "Autochtone",
+              "label": "Autochtone"
+          },
+          {
+              "value": "Autre",
+              "label": "Autre"
+          },
+          {
+              "value": "Caucasian/Caucasien",
+              "label": "Caucasian/Caucasien"
+          },
+          {
+              "value": "Don't know/Prefer not to say",
+              "label": "Don't know/Prefer not to say"
+          },
+          {
+              "value": "Hispanic/Hispanique",
+              "label": "Hispanic/Hispanique"
+          },
+          {
+              "value": "Indigenous",
+              "label": "Indigenous"
+          },
+          {
+              "value": "Other",
+              "label": "Other"
           }
-        ]
+      ]
       },
       "pco": {
         "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "question_label": "What are the ethnic or cultural origins of your ancestors? Please select all that apply.",
+        "raw_variable": "Q20.3_value.Pco2014 où value prend un chiffre entre 1 et 256. Il y a 256 colonnes binaires.",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "1",
+            "label": "Canadian"
           },
           {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "2",
+            "label": "Quebecer"
+          },
+          {
+            "value": "3",
+            "label": "French-Canadian"
+          },
+          {
+            "value": "4",
+            "label": "First Nation, Métis, Inuit"
+          },
+          {
+            "value": "6",
+            "label": "Åland Islander"
+          },
+          {
+            "value": "7",
+            "label": "Albanian"
+          },
+          {
+            "value": "8",
+            "label": "Algerian"
+          },
+          {
+            "value": "9",
+            "label": "American"
+          },
+          {
+            "value": "11",
+            "label": "Angolan"
+          },
+          {
+            "value": "13",
+            "label": "Antarctican"
+          },
+          {
+            "value": "15",
+            "label": "Argentinan"
+          },
+          {
+            "value": "16",
+            "label": "Armenian"
+          },
+          {
+            "value": "18",
+            "label": "Australian"
+          },
+          {
+            "value": "19",
+            "label": "Austrian"
+          },
+          {
+            "value": "20",
+            "label": "Azerbaijani"
+          },
+          {
+            "value": "21",
+            "label": "Bahamian"
+          },
+          {
+            "value": "24",
+            "label": "Barbadian"
+          },
+          {
+            "value": "26",
+            "label": "Belarusian"
+          },
+          {
+            "value": "27",
+            "label": "Belgian"
+          },
+          {
+            "value": "32",
+            "label": "Bolivian"
+          },
+          {
+            "value": "36",
+            "label": "Brazilian"
+          },
+          {
+            "value": "37",
+            "label": "British"
+          },
+          {
+            "value": "39",
+            "label": "Bulgarian"
+          },
+          {
+            "value": "43",
+            "label": "Cambodian"
+          },
+          {
+            "value": "46",
+            "label": "Central African"
+          },
+          {
+            "value": "49",
+            "label": "Channel Islander"
+          },
+          {
+            "value": "50",
+            "label": "Chilean"
+          },
+          {
+            "value": "51",
+            "label": "Chinese"
+          },
+          {
+            "value": "54",
+            "label": "Colombian"
+          },
+          {
+            "value": "56",
+            "label": "Congolese"
+          },
+          {
+            "value": "57",
+            "label": "Congolese (Democratic Republic)"
+          },
+          {
+            "value": "60",
+            "label": "Croatian"
+          },
+          {
+            "value": "63",
+            "label": "Czech"
+          },
+          {
+            "value": "64",
+            "label": "Danish"
+          },
+          {
+            "value": "68",
+            "label": "Dutch"
+          },
+          {
+            "value": "73",
+            "label": "Egyptian"
+          },
+          {
+            "value": "76",
+            "label": "English"
+          },
+          {
+            "value": "81",
+            "label": "Faroe Islander"
+          },
+          {
+            "value": "82",
+            "label": "Fijian"
+          },
+          {
+            "value": "83",
+            "label": "Finnish"
+          },
+          {
+            "value": "84",
+            "label": "French"
+          },
+          {
+            "value": "91",
+            "label": "German"
+          },
+          {
+            "value": "94",
+            "label": "Greek"
+          },
+          {
+            "value": "98",
+            "label": "Guatemalan"
+          },
+          {
+            "value": "99",
+            "label": "Guernsey"
+          },
+          {
+            "value": "101",
+            "label": "Guinean"
+          },
+          {
+            "value": "102",
+            "label": "Guyanese"
+          },
+          {
+            "value": "103",
+            "label": "Haitian"
+          },
+          {
+            "value": "106",
+            "label": "Hong Kong Chinese"
+          },
+          {
+            "value": "107",
+            "label": "Hungarian"
+          },
+          {
+            "value": "108",
+            "label": "Icelandic"
+          },
+          {
+            "value": "110",
+            "label": "Indian"
+          },
+          {
+            "value": "111",
+            "label": "Indonesian"
+          },
+          {
+            "value": "112",
+            "label": "Iranian"
+          },
+          {
+            "value": "113",
+            "label": "Iraqi"
+          },
+          {
+            "value": "114",
+            "label": "Irish"
+          },
+          {
+            "value": "115",
+            "label": "Irish, Northern"
+          },
+          {
+            "value": "116",
+            "label": "Israeli"
+          },
+          {
+            "value": "117",
+            "label": "Italian"
+          },
+          {
+            "value": "119",
+            "label": "Jamaican"
+          },
+          {
+            "value": "120",
+            "label": "Japanese"
+          },
+          {
+            "value": "121",
+            "label": "Jewish"
+          },
+          {
+            "value": "126",
+            "label": "Kiwi"
+          },
+          {
+            "value": "131",
+            "label": "Latvian"
+          },
+          {
+            "value": "132",
+            "label": "Lesotho"
+          },
+          {
+            "value": "133",
+            "label": "Lebanonese"
+          },
+          {
+            "value": "137",
+            "label": "Lithuanian"
+          },
+          {
+            "value": "138",
+            "label": "Luxembourger"
+          },
+          {
+            "value": "140",
+            "label": "Macedonian"
+          },
+          {
+            "value": "144",
+            "label": "Malaysian"
+          },
+          {
+            "value": "151",
+            "label": "Martiniquais"
+          },
+          {
+            "value": "152",
+            "label": "Mauritanian"
+          },
+          {
+            "value": "153",
+            "label": "Mauritian"
+          },
+          {
+            "value": "154",
+            "label": "Mexican"
+          },
+          {
+            "value": "158",
+            "label": "Mongolian"
+          },
+          {
+            "value": "161",
+            "label": "Moroccan"
+          },
+          {
+            "value": "168",
+            "label": "Nigerian"
+          },
+          {
+            "value": "175",
+            "label": "Norwegian"
+          },
+          {
+            "value": "179",
+            "label": "Palestinian"
+          },
+          {
+            "value": "180",
+            "label": "Panamanian"
+          },
+          {
+            "value": "183",
+            "label": "Peruvian"
+          },
+          {
+            "value": "184",
+            "label": "Philippino"
+          },
+          {
+            "value": "186",
+            "label": "Polish"
+          },
+          {
+            "value": "187",
+            "label": "Polynesian"
+          },
+          {
+            "value": "188",
+            "label": "Portugese"
+          },
+          {
+            "value": "191",
+            "label": "Reunionese"
+          },
+          {
+            "value": "192",
+            "label": "Romanian"
+          },
+          {
+            "value": "193",
+            "label": "Russian"
+          },
+          {
+            "value": "206",
+            "label": "Scottish"
+          },
+          {
+            "value": "208",
+            "label": "Serbian"
+          },
+          {
+            "value": "212",
+            "label": "Slovakian"
+          },
+          {
+            "value": "213",
+            "label": "Slovenian"
+          },
+          {
+            "value": "216",
+            "label": "South African"
+          },
+          {
+            "value": "219",
+            "label": "Spanish"
+          },
+          {
+            "value": "225",
+            "label": "Swedish"
+          },
+          {
+            "value": "226",
+            "label": "Swiss"
+          },
+          {
+            "value": "228",
+            "label": "Syrian"
+          },
+          {
+            "value": "237",
+            "label": "Trinidadian"
+          },
+          {
+            "value": "238",
+            "label": "Tunisian"
+          },
+          {
+            "value": "239",
+            "label": "Turkish"
+          },
+          {
+            "value": "244",
+            "label": "Ukrainian"
+          },
+          {
+            "value": "245",
+            "label": "Uruguayan"
+          },
+          {
+            "value": "247",
+            "label": "Venezuelan"
+          },
+          {
+            "value": "248",
+            "label": "Vietnamese"
+          },
+          {
+            "value": "252",
+            "label": "Welsh"
+          },
+          {
+            "value": "253",
+            "label": "West Indian"
           }
         ]
       },
       "pes_elxn_2022": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
-          },
-          {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "NA",
+            "label": "NA"
           }
         ]
       },
       "quorum_mcq_pilote": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "factor",
+        "question_label": "Laquelle des catégories suivantes vous décrit le mieux?",
+        "raw_variable": "ses_ethnicity et EN_ses_ethnicity",
         "choices": [
-          {
-            "value": "À faire",
-            "label": "À faire"
-          },
-          {
-            "value": "À faire",
-            "label": "À faire"
-          }
+          {"value": "Arabe", "label": "Arabe"},
+          {"value": "Asiatique", "label": "Asiatique"},
+          {"value": "Autochtone", "label": "Autochtone"},
+          {"value": "Autre", "label": "Autre"},
+          {"value": "Blanc", "label": "Blanc"},
+          {"value": "Hispanique", "label": "Hispanique"},
+          {"value": "Noir", "label": "Noir"},
+          {"value": "Préfère ne pas répondre", "label": "Préfère ne pas répondre"}
         ]
       }
     }

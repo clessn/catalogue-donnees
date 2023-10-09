@@ -3149,183 +3149,624 @@
         ]
       },
       "datagotchi_pilot1_2021": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "dummy",
+        "question_label": "Êtes-vous né(e) au Canada?",
+        "raw_variable": "SES9",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "1",
+            "label": "Oui"
           },
           {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "0",
+            "label": "Non"
           }
         ]
       },
       "datagotchi_pilot2_2022": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "factor",
+        "question_label": "Dans quel pays êtes-vous né(e)?",
+        "raw_variable": "born (fr) et born.1 (en)",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "44",
+            "label": "Canada"
           },
           {
-            "value": "À faire",
-            "label": "À faire"
-          }
+            "value": "75",
+            "label": "France"
+          },
+          {
+            "value": "155",
+            "label": "Mexique"
+          },
+          {
+            "value": "27",
+            "label": "Belgique"
+          },
+          {
+            "value": "92",
+            "label": "Haïti"
+          },
+          {
+            "value": "137",
+            "label": "Liban"
+          },
+          {
+            "value": "5",
+            "label": "Algérie"
+          },
+          {
+            "value": "71",
+            "label": "États-Unis"
+          },
+          {
+            "value": "4",
+            "label": "Albanie"
+          },
+          {
+            "value": "47",
+            "label": "Chine"
+          },
+          {
+            "value": "152",
+            "label": "Maroc"
+          },
+          {
+            "value": "158",
+            "label": "Monaco"
+          },
+          {
+            "value": "253",
+            "label": "Viêt Nam"
+          },
+          {
+            "value": "196",
+            "label": "Royaume-Uni"
+          },
+          {
+            "value": "195",
+            "label": "Roumanie"
+          },
+          {
+            "value": "95",
+            "label": "Hongrie"
+          },
+          {
+            "value": "119",
+            "label": "Irlande"
+          },
+          {
+            "value": "248",
+            "label": "Ukraine"
+          },
+          {
+            "value": "244",
+            "label": "Tunisie"
+          },
+          {
+            "value": "197",
+            "label": "Russie"
+          },
+          {
+            "value": "88",
+            "label": "Guinée"
+          },
+          {
+            "value": "228",
+            "label": "Suisse"
+          },
+          {
+            "value": "50",
+            "label": "Colombie"
+          },
+          {
+            "value": "",
+            "label": "Unknown"
+           },
+           {
+            "value": "52",
+            "label": "Congo"
+           },
+           {
+            "value": "33",
+            "label": "Birmanie"
+           },
+           {
+            "value": "144",
+            "label": "Madagascar"
+           },
+           {
+            "value": "111",
+            "label": "Iles Turks-et-Caicos"
+           },
+           {
+            "value": "78",
+            "label": "Gaza Strip"
+           },
+           {
+            "value": "37",
+            "label": "Brésil"
+           },
+           {
+            "value": "187",
+            "label": "Pologne"
+           },
+           {
+            "value": "143",
+            "label": "Macao"
+           },
+           {
+            "value": "95",
+            "label": "Hongrie"
+           },
+           {
+            "value": "84",
+            "label": "Groenland"
+           },
+           {
+            "value": "26",
+            "label": "Belau"
+           },
+           {
+            "value": "191",
+            "label": "Qatar"
+           },
+           {
+            "value": "186",
+            "label": "Pologne"
+           },
+           {
+            "value": "80",
+            "label": "Ghana"
+           },
+           {
+            "value": "24",
+            "label": "Bangladesh"
+           },
+           {
+            "value": "67",
+            "label": "Équateur"
+           },
+           {
+            "value": "61",
+            "label": "Danemark"
+           },
+           {
+            "value": "123",
+            "label": "Jamaïque"
+           },
+           {
+            "value": "86",
+            "label": "Guatemala"
+           }
         ]
       },
       "omnibus_1january": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
-          },
-          {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "NA",
+            "label": "NA"
           }
         ]
       },
       "omnibus_2february": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
-          },
-          {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "NA",
+            "label": "NA"
           }
         ]
       },
       "omnibus_3march": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "dummy",
+        "question_label": "Êtes-vous né(e) au Canada?",
+        "raw_variable": "C2",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "1",
+            "label": "Oui"
           },
           {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "2",
+            "label": "Non"
           }
         ]
       },
       "omnibus_4april": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "dummy",
+        "question_label": "Êtes-vous né(e) au Canada?",
+        "raw_variable": "C2",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "1",
+            "label": "Oui"
           },
           {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "2",
+            "label": "Non"
           }
         ]
       },
       "omnibus_5may": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "dummy",
+        "question_label": "Êtes-vous né(e) au Canada?",
+        "raw_variable": "C2",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "1",
+            "label": "Oui"
           },
           {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "2",
+            "label": "Non"
           }
         ]
       },
       "omnibus_6june": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "dummy",
+        "question_label": "Êtes-vous né(e) au Canada?",
+        "raw_variable": "C2",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "1",
+            "label": "Oui"
           },
           {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "2",
+            "label": "Non"
           }
         ]
       },
       "sondage_nationalisme_2022": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "dummy",
+        "question_label": "Êtes-vous né(e) au Canada?",
+        "raw_variable": "C2",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "1",
+            "label": "Oui"
           },
           {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "2",
+            "label": "Non"
           }
         ]
       },
       "pco": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "factor",
+        "question_label": "What country were you born in?",
+        "raw_variable": "Q13.4.Pco2014",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
+              "value": "Algeria",
+              "label": "Algeria"
           },
           {
-            "value": "À faire",
-            "label": "À faire"
+              "value": "Angola",
+              "label": "Angola"
+          },
+          {
+              "value": "Argentina",
+              "label": "Argentina"
+          },
+          {
+              "value": "Australia",
+              "label": "Australia"
+          },
+          {
+              "value": "Austria",
+              "label": "Austria"
+          },
+          {
+              "value": "Barbados",
+              "label": "Barbados"
+          },
+          {
+              "value": "Belgium",
+              "label": "Belgium"
+          },
+          {
+              "value": "Brazil",
+              "label": "Brazil"
+          },
+          {
+              "value": "Chile",
+              "label": "Chile"
+          },
+          {
+              "value": "China",
+              "label": "China"
+          },
+          {
+              "value": "Colombia",
+              "label": "Colombia"
+          },
+          {
+              "value": "Congo, Republic of the",
+              "label": "Congo, Republic of the"
+          },
+          {
+              "value": "Croatia",
+              "label": "Croatia"
+          },
+          {
+              "value": "Denmark",
+              "label": "Denmark"
+          },
+          {
+              "value": "Egypt",
+              "label": "Egypt"
+          },
+          {
+              "value": "England",
+              "label": "England"
+          },
+          {
+              "value": "France",
+              "label": "France"
+          },
+          {
+              "value": "Germany",
+              "label": "Germany"
+          },
+          {
+              "value": "Guatemala",
+              "label": "Guatemala"
+          },
+          {
+              "value": "Guinea",
+              "label": "Guinea"
+          },
+          {
+              "value": "Haiti",
+              "label": "Haiti"
+          },
+          {
+              "value": "Hong Kong Special Administrative Region",
+              "label": "Hong Kong Special Administrative Region"
+          },
+          {
+              "value": "India",
+              "label": "India"
+          },
+          {
+              "value": "Indonesia",
+              "label": "Indonesia"
+          },
+          {
+              "value": "Iraq",
+              "label": "Iraq"
+          },
+          {
+              "value": "Ireland, Republic of",
+              "label": "Ireland, Republic of"
+          },
+          {
+              "value": "Italy",
+              "label": "Italy"
+          },
+          {
+              "value": "Jamaica",
+              "label": "Jamaica"
+          },
+          {
+              "value": "Lebanon",
+              "label": "Lebanon"
+          },
+          {
+              "value": "Malta",
+              "label": "Malta"
+          },
+          {
+              "value": "Mauritius",
+              "label": "Mauritius"
+          },
+          {
+              "value": "Mexico",
+              "label": "Mexico"
+          },
+          {
+              "value": "Morocco",
+              "label": "Morocco"
+          },
+          {
+              "value": "Mozambique",
+              "label": "Mozambique"
+          },
+          {
+              "value": "Netherlands",
+              "label": "Netherlands"
+          },
+          {
+              "value": "New Zealand",
+              "label": "New Zealand"
+          },
+          {
+              "value": "Northern Ireland",
+              "label": "Northern Ireland"
+          },
+          {
+              "value": "Norway",
+              "label": "Norway"
+          },
+          {
+              "value": "Pakistan",
+              "label": "Pakistan"
+          },
+          {
+              "value": "Peru",
+              "label": "Peru"
+          },
+          {
+              "value": "Poland",
+              "label": "Poland"
+          },
+          {
+              "value": "Portugal",
+              "label": "Portugal"
+          },
+          {
+              "value": "Puerto Rico",
+              "label": "Puerto Rico"
+          },
+          {
+              "value": "Romania",
+              "label": "Romania"
+          },
+          {
+              "value": "Russian Federation",
+              "label": "Russian Federation"
+          },
+          {
+              "value": "Scotland",
+              "label": "Scotland"
+          },
+          {
+              "value": "Serbia",
+              "label": "Serbia"
+          },
+          {
+              "value": "Slovakia",
+              "label": "Slovakia"
+          },
+          {
+              "value": "South Africa, Republic of",
+              "label": "South Africa, Republic of"
+          },
+          {
+              "value": "Switzerland",
+              "label": "Switzerland"
+          },
+          {
+              "value": "Trinidad and Tobago",
+              "label": "Trinidad and Tobago"
+          },
+          {
+              "value": "Tunisia",
+              "label": "Tunisia"
+          },
+          {
+              "value": "Turkey",
+              "label": "Turkey"
+          },
+          {
+              "value": "Ukraine",
+              "label": "Ukraine"
+          },
+          {
+              "value": "United Kingdom",
+              "label": "United Kingdom"
+          },
+          {
+              "value": "United States",
+              "label": "United States"
+          },
+          {
+              "value": "Uruguay",
+              "label": "Uruguay"
+          },
+          {
+              "value": "Uzbekistan",
+              "label": "Uzbekistan"
+          },
+          {
+              "value": "Viet Nam",
+              "label": "Viet Nam"
+          },
+          {
+              "value": "Wales",
+              "label": "Wales"
           }
-        ]
+      ]
       },
       "pes_elxn_2022": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "factor",
+        "question_label": "Dans quel pays êtes-vous né(e)?",
+        "raw_variable": "ses_birth_country",
         "choices": [
-          {
-            "value": "À faire",
-            "label": "À faire"
-          },
-          {
-            "value": "À faire",
-            "label": "À faire"
-          }
+          {"value": "Chine", "label": "Chine"},
+          {"value": "Haïti", "label": "Haïti"},
+          {"value": "Pérou", "label": "Pérou"},
+          {"value": "Brésil", "label": "Brésil"},
+          {"value": "France", "label": "France"},
+          {"value": "Russie", "label": "Russie"},
+          {"value": "Suisse", "label": "Suisse"},
+          {"value": "Algérie", "label": "Algérie"},
+          {"value": "Maurice", "label": "Maurice"},
+          {"value": "Mexique", "label": "Mexique"},
+          {"value": "Sénégal", "label": "Sénégal"},
+          {"value": "Belgique", "label": "Belgique"},
+          {"value": "Bulgarie", "label": "Bulgarie"},
+          {"value": "Cameroun", "label": "Cameroun"},
+          {"value": "Colombie", "label": "Colombie"},
+          {"value": "Moldavie", "label": "Moldavie"},
+          {"value": "Pays-Bas", "label": "Pays-Bas"},
+          {"value": "Roumanie", "label": "Roumanie"},
+          {"value": "Viêt Nam", "label": "Viêt Nam"},
+          {"value": "Allemagne", "label": "Allemagne"},
+          {"value": "Afghanistan", "label": "Afghanistan"},
+          {"value": "Arabie", "label": "Arabie"},
+          {"value": "États-Unis", "label": "États-Unis"},
+          {"value": "Canada", "label": "Canada"}
         ]
       },
       "quorum_mcq_pilote": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "factor",
+        "question_label": "Dans quel pays êtes-vous né(e)?",
+        "raw_variable": "ses_birth_country",
         "choices": [
-          {
-            "value": "À faire",
-            "label": "À faire"
-          },
-          {
-            "value": "À faire",
-            "label": "À faire"
-          }
+          {"value": "Algérie", "label": "Algérie"},
+          {"value": "Allemagne", "label": "Allemagne"},
+          {"value": "Arménie", "label": "Arménie"},
+          {"value": "Bangladesh", "label": "Bangladesh"},
+          {"value": "Belgique", "label": "Belgique"},
+          {"value": "Bénin", "label": "Bénin"},
+          {"value": "Brésil", "label": "Brésil"},
+          {"value": "Cameroun", "label": "Cameroun"},
+          {"value": "Chine", "label": "Chine"},
+          {"value": "Colombie", "label": "Colombie"},
+          {"value": "Corée du Sud", "label": "Corée du Sud"},
+          {"value": "Côte d'Ivoire", "label": "Côte d'Ivoire"},
+          {"value": "Cuba", "label": "Cuba"},
+          {"value": "Danemark", "label": "Danemark"},
+          {"value": "Égypte", "label": "Égypte"},
+          {"value": "États-Unis", "label": "États-Unis"},
+          {"value": "ex-République yougoslave de Macédoine", "label": "ex-République yougoslave de Macédoine"},
+          {"value": "France", "label": "France"},
+          {"value": "Guyana", "label": "Guyana"},
+          {"value": "Haïti", "label": "Haïti"},
+          {"value": "Hong Kong", "label": "Hong Kong"},
+          {"value": "Inde", "label": "Inde"},
+          {"value": "Iran", "label": "Iran"},
+          {"value": "Italie", "label": "Italie"},
+          {"value": "Liban", "label": "Liban"},
+          {"value": "Maroc", "label": "Maroc"},
+          {"value": "Maurice", "label": "Maurice"},
+          {"value": "Mexique", "label": "Mexique"},
+          {"value": "Pérou", "label": "Pérou"},
+          {"value": "Philippines", "label": "Philippines"},
+          {"value": "Portugal", "label": "Portugal"},
+          {"value": "Qatar", "label": "Qatar"},
+          {"value": "Roumanie", "label": "Roumanie"},
+          {"value": "Salvador", "label": "Salvador"},
+          {"value": "Serbie", "label": "Serbie"},
+          {"value": "Swaziland", "label": "Swaziland"},
+          {"value": "Syrie", "label": "Syrie"},
+          {"value": "Tanzanie", "label": "Tanzanie"},
+          {"value": "Tchad", "label": "Tchad"},
+          {"value": "Togo", "label": "Togo"},
+          {"value": "Tunisie", "label": "Tunisie"},
+          {"value": "Venezuela", "label": "Venezuela"},
+          {"value": "Viêt Nam", "label": "Viêt Nam"},
+          {"value": "Afghanistan", "label": "Afghanistan"},
+          {"value": "Canada", "label": "Canada"}
         ]
       }
     }
