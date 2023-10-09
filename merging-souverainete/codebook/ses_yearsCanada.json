@@ -161,47 +161,35 @@
         ]
       },
       "ces2015": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "numeric",
+        "question_label": "In what year did you come to live in Canada?",
+        "raw_variable": "year_come",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
-          },
-          {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "année entre 1930 et 2013. 9998 et 9999 = NA",
+            "label": "année que le répondant est venu au Canada"
           }
         ]
       },
       "ces2019": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "numeric",
+        "question_label": " In what year did you come to live in Canada?",
+        "raw_variable": "cps19_imm_year",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
-          },
-          {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "année entre 1920 et 2019.",
+            "label": "année que le répondant est venu au Canada"
           }
         ]
       },
       "ces2021": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "numeric",
+        "question_label": "In what year did you come to live in Canada?",
+        "raw_variable": "cps21_imm_year",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
-          },
-          {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "année entre 1920 et 2021.",
+            "label": "année que le répondant est venu au Canada"
           }
         ]
       },

@@ -2165,9 +2165,9 @@
         ]
       },
       "ces2015": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "À valider",
+        "question_label": "À valider",
+        "raw_variable": "À valider",
         "choices": [
           {
             "value": "À faire",
@@ -2180,32 +2180,100 @@
         ]
       },
       "ces2019": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "factor",
+        "question_label": "In addition to being Canadian, to what ethnic or cultural group(s) do you belong?",
+        "raw_variable": "cps19_ethnicity_value, où value représente une ethnie. Chaque ethnie a sa propre variable binaire.",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "cps19_ethnicity_23",
+            "label": "Aboriginal/ First Nations"
           },
           {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "cps19_ethnicity_24",
+            "label": "British"
+          },
+          {
+            "value": "cps19_ethnicity_25",
+            "label": "Chinese"
+          },
+          {
+            "value": "cps19_ethnicity_26",
+            "label": "Dutch"
+          },
+          {
+            "value": "cps19_ethnicity_27",
+            "label": "English"
+          },
+          {
+            "value": "cps19_ethnicity_28",
+            "label": "French"
+          },
+          {
+            "value": "cps19_ethnicity_29",
+            "label": "French Canadian"
+          },
+          {
+            "value": "cps19_ethnicity_30",
+            "label": "German"
+          },
+          {
+            "value": "cps19_ethnicity_31",
+            "label": "Hispanic"
+          },
+          {
+            "value": "cps19_ethnicity_32",
+            "label": "Indian"
+          },
+          {
+            "value": "cps19_ethnicity_33",
+            "label": "Inuk/ Inuit"
+          },
+          {
+            "value": "cps19_ethnicity_34",
+            "label": "Irish"
+          },
+          {
+            "value": "cps19_ethnicity_35",
+            "label": "Italian"
+          },
+          {
+            "value": "cps19_ethnicity_36",
+            "label": "Métis"
+          },
+          {
+            "value": "cps19_ethnicity_37",
+            "label": "Polish"
+          },
+          {
+            "value": "cps19_ethnicity_38",
+            "label": "Québécois"
+          },
+          {
+            "value": "cps19_ethnicity_39",
+            "label": "Scottish"
+          },
+          {
+            "value": "cps19_ethnicity_40",
+            "label": "Ukrainian"
+          },
+          {
+            "value": "cps19_ethnicity_41_TEXT",
+            "label": "Other 1 (please specify) (ouverte)"
+          },
+          {
+            "value": "cps19_ethnicity_42_TEXT",
+            "label": "Other 2 (please specify) (ouverte)"
           }
         ]
       },
       "ces2021": {
         "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "question_label": "What are the ethnic or cultural origins of your ancestors? Please indicate up to 5.",
+        "raw_variable": "cps21_origin_X (X va jusqu'à 5)",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
-          },
-          {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "réponse ouverte",
+            "label": "réponse ouverte"
           }
         ]
       },
