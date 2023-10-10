@@ -1,0 +1,616 @@
+{
+    "description": "Source principale d'information",
+    "source_id": {
+        "omnibus_1january": {
+          "class": "NA",
+          "question_label": "NA",
+          "raw_variable": "NA",
+          "choices": "NA"
+        },
+          "omnibus_2february": {
+            "class": "Open question",
+            "question_label": "De quels médias (journal, chaîne de télévision ou site de nouvelles) tirez-vous généralement vos informations politiques?",
+            "raw_variable": "C14",
+            "choices": [
+              {
+                "value": "96",
+                "label": "Code de réponse pour réponses ouvertes"
+              },
+              {
+                "value": "0",
+                "label": "Ne sais pas"
+              }
+            ]
+          },
+          "omnibus_3march": {
+            "class": "Open question",
+            "question_label": "De quel médias (journal, chaîne de télévision ou site de nouvelles) tirez-vous généralement vos informations politiques?",
+            "raw_variable": "C11",
+            "choices": [
+              {
+                "value": "96",
+                "label": "Code de réponse pour réponses ouvertes"
+              }
+            ]
+          },
+          "omnibus_4april": {
+            "class": "Open question",
+            "question_label": "De quel médias (journal, chaîne de télévision ou site de nouvelles) tirez-vous généralement vos informations politiques?",
+            "raw_variable": "C11",
+            "choices": [
+              {
+                "value": "96 ou 1300",
+                "label": "Code de réponse pour réponses ouvertes"
+              },
+              {
+                "value": "0",
+                "label": "Ne sais pas"
+              }
+            ]
+          },
+          "omnibus_5may": {
+            "class": "Open question",
+            "question_label": "De quel médias (journal, chaîne de télévision ou site de nouvelles) tirez-vous généralement vos informations politiques?",
+            "raw_variable": "C11",
+            "choices": [
+              {
+                "value": "96",
+                "label": "Code de réponse pour réponses ouvertes"
+              }
+            ]
+          },
+          "omnibus_6june": {
+            "class": "Open question",
+            "question_label": "De quel médias (journal, chaîne de télévision ou site de nouvelles) tirez-vous généralement vos informations politiques?",
+            "raw_variable": "C11",
+            "choices": [
+              {
+                "value": "96",
+                "label": "Code de réponse pour réponses ouvertes"
+              }
+            ]
+          },
+          "sondage_nationalisme_2022": {
+            "class": "NA",
+            "question_label": "NA",
+            "raw_variable": "NA",
+            "choices": "NA"
+          },
+          "datagotchi_pilot1_2021": {
+            "class": "NA",
+            "question_label": "NA",
+            "raw_variable": "NA",
+            "choices": "NA"
+          },
+          "datagotchi_pilot2_2022": {
+            "class": "NA",
+            "question_label": "NA",
+            "raw_variable": "NA",
+            "choices": "NA"
+          },
+          "pco": {
+            "class": "Character + open question",
+            "question_label": "Which media do you use to keep informed on news and current /  affairs",
+            "raw_variable" : "Q6.3_1.Pco2014 à Q6.3_7_TEXT.Pco2014",
+            "choices": [
+            {
+              "value": "Newspapers (print copy)",
+              "label": "Newspapers (print copy)"
+            },
+            {
+              "value": "Magazines (print copy)",
+              "label": "Magazines (print copy)"
+            },
+            {
+              "value": "Television",
+              "label": "Television"
+            },
+            {
+              "value": "Radio",
+              "label": "Radio"
+            },
+            {
+              "value": "Internet (news websites)",
+              "label": "Internet (news websites)"
+            },
+            {
+              "value": "Internet (social media, blogs, etc.)",
+              "label": "Internet (social media, blogs, etc.)"
+            },
+            {
+              "value": "Open question",
+              "label": "Other (please specify)"
+            }
+          ]
+          },
+          "pes_elxn_2022": {
+            "class": "NA",
+            "question_label": "NA",
+            "raw_variable": "NA",
+            "choices": "NA"
+          },
+          "quorum_mcq_pilote": {
+            "class": "NA",
+            "question_label": "NA",
+            "raw_variable": "NA",
+            "choices": "NA"
+          }
+    },
+    "ces1965": {
+      "class": "NA",
+      "question_label": "NA",
+      "raw_variable": "NA",
+      "choices": "NA"
+    },
+    "ces1968": {
+      "class": "NA",
+      "question_label": "NA",
+      "raw_variable": "NA",
+      "choices": "NA"
+    },
+    "ces1974": {
+      "class": "NA",
+      "question_label": "NA",
+      "raw_variable": "NA",
+      "choices": "NA"
+    },
+    "ces1979": {
+      "class": "NA",
+      "question_label": "NA",
+      "raw_variable": "NA",
+      "choices": "NA"
+    },
+    "ces1984": {
+      "class": "NA",
+      "question_label": "NA",
+      "raw_variable": "NA",
+      "choices": "NA"
+    },
+    "ces1988": {
+      "class": "NA",
+      "question_label": "NA",
+      "raw_variable": "NA",
+      "choices": "NA"
+    },
+    "ces1993": {
+      "class": "character",
+      "question_label": "What is your MAIN source of information about the election: TV, radio, newspapers, family, or friends?",
+      "raw_variable": "cpsn7",
+      "choices": [
+        {
+          "value": "tv",
+          "label": "Television"
+        },
+        {
+          "value": "radio",
+          "label": "Radio"
+        },
+        {
+          "value": "newspapers",
+          "label": "Newspapers"
+        },
+        {
+          "value": "family",
+          "label": "Family"
+        },
+        {
+          "value": "friends",
+          "label": "Friends"
+        },
+                {
+          "value": "d.k.",
+          "label": "Don't know"
+        },
+        {
+          "value": "refused",
+          "label": "Refused"
+        }
+      ]
+    },
+    "ces1997": {
+      "class": "character",
+      "question_label": "Where do you get MOST of your information about the election: TV, radio, newspapers, family, or friends?",
+      "raw_variable": "cpsl4",
+      "choices": [
+        {
+          "value": "tv",
+          "label": "Television"
+        },
+        {
+          "value": "radio",
+          "label": "Radio"
+        },
+        {
+          "value": "newspapers",
+          "label": "Newspapers"
+        },
+        {
+          "value": "family",
+          "label": "Family"
+        },
+        {
+          "value": "friends",
+          "label": "Friends"
+        },
+                {
+          "value": "d.k.",
+          "label": "Don't know"
+        },
+        {
+          "value": "refused",
+          "label": "Refused"
+        }
+      ]
+    },
+    "ces2000": {
+      "class": "character",
+      "question_label": "Where do you get MOST of your information about the Federal election: TV, radio, newspapers, the internet, family, or friends?",
+      "raw_variable": "cpsl4",
+      "choices": [
+        {
+          "value": "tv",
+          "label": "Television"
+        },
+        {
+          "value": "radio",
+          "label": "Radio"
+        },
+        {
+          "value": "newspapers",
+          "label": "Newspapers"
+        },
+        {
+          "value": "family",
+          "label": "Family"
+        },
+        {
+          "value": "friends",
+          "label": "Friends"
+        },
+                {
+          "value": "internet",
+          "label": "Internet"
+        },
+        {
+          "value": "don't get information",
+          "label": "don't get information"
+        },
+        {
+          "value": "other",
+          "label": "other"
+        },
+                {
+          "value": "d.k.",
+          "label": "don't know"
+        },
+        {
+          "value": "refused",
+          "label": "refused"
+        }
+      ]
+    },
+    "ces2004": {
+      "class": "character",
+      "question_label": "Where do you get MOST of your information about the Federal election: TV, radio, newspapers, the internet, family, or friends?",
+      "raw_variable": "ces04_cps_a8",
+      "choices": [
+        {
+          "value": "television",
+          "label": "Television"
+        },
+        {
+          "value": "radio",
+          "label": "Radio"
+        },
+        {
+          "value": "newspapers",
+          "label": "Newspapers"
+        },
+        {
+          "value": "family",
+          "label": "Family"
+        },
+        {
+          "value": "friends",
+          "label": "Friends"
+        },
+                {
+          "value": "internet",
+          "label": "Internet"
+        },
+        {
+          "value": "don't get information",
+          "label": "don't get information"
+        },
+        {
+          "value": "other",
+          "label": "other"
+        },
+                {
+          "value": "d.k.",
+          "label": "don't know"
+        },
+        {
+          "value": "refused",
+          "label": "refused"
+        }
+      ]
+    },
+    "ces2006": {
+      "class": "character",
+      "question_label": "Where did you get MOST of your information about the Federal election: TV, radio, newspapers, the internet, family, or friends?",
+      "raw_variable": "pes_a306",
+      "choices": [
+        {
+          "value": "television",
+          "label": "Television"
+        },
+        {
+          "value": "radio",
+          "label": "Radio"
+        },
+        {
+          "value": "newspapers",
+          "label": "Newspapers"
+        },
+        {
+          "value": "family",
+          "label": "Family"
+        },
+        {
+          "value": "friends",
+          "label": "Friends"
+        },
+                {
+          "value": "internet",
+          "label": "Internet"
+        },
+        {
+          "value": "don't get information",
+          "label": "don't get information"
+        },
+        {
+          "value": "other and multiple sources",
+          "label": "other, specify"
+        },
+                {
+          "value": "d.k.",
+          "label": "don't know"
+        },
+        {
+          "value": "refused",
+          "label": "refused"
+        }
+      ]
+    },
+    "ces2008": {
+      "class": "character",
+      "question_label": "Where did you get MOST of your information about the Federal election: TV, radio, newspapers, the internet, family, or friends?",
+      "raw_variable": "pes_a306",
+      "choices": [
+        {
+          "value": "television",
+          "label": "television"
+        },
+        {
+          "value": "radio",
+          "label": "radio"
+        },
+        {
+          "value": "newspapers",
+          "label": "newspapers"
+        },
+        {
+          "value": "family",
+          "label": "family"
+        },
+        {
+          "value": "friends",
+          "label": "friends"
+        },
+                {
+          "value": "internet",
+          "label": "Internet"
+        },
+        {
+          "value": "don't get information",
+          "label": "don't get information"
+        },
+        {
+          "value": "other",
+          "label": "other, specify"
+        },
+                {
+          "value": "d.k.",
+          "label": "don't know"
+        },
+        {
+          "value": "refused",
+          "label": "refused"
+        }
+      ]
+    },
+    "ces2011": {
+      "class": "character",
+      "question_label": "Where did you get MOST of your information about the May 2 federal election",
+      "raw_variable": "MBS11_B1",
+      "choices": [
+        {
+          "value": "1",
+          "label": "Television"
+        },
+        {
+          "value": "2",
+          "label": "Radio"
+        },
+        {
+          "value": "3",
+          "label": "Newspapers and online newspapers"
+        },
+        {
+          "value": "4",
+          "label": "Other internet sources like blogs and facebook"
+        },
+        {
+          "value": "5",
+          "label": "Family"
+        },
+        {
+          "value": "6",
+          "label": "Friends"
+        },
+        {
+          "value": "7",
+          "label": "Did not get information"
+        }
+      ]
+    },
+    "ces2015": {
+      "class": "NA",
+      "question_label": "NA",
+      "raw_variable": "NA",
+      "choices": "NA"
+    },
+    "ces2019": {
+      "class": "character + open question",
+      "question_label": "From which of the following sources did you get information about voting in the federal election",
+      "raw_variable": "pes19-emb4-1 à pes19-emb4-14",
+      "choices": [
+        {
+          "value": "Elections Canada flyer",
+          "label": "Elections Canada flyer"
+        },
+        {
+          "value": "Voter Information Card",
+          "label": "Voter Information Card"
+        },
+        {
+          "value": "Advertisements from Elections Canada",
+          "label": "Advertisements from Elections Canada"
+        },
+        {
+          "value": "Radio or Television",
+          "label": "Radio or Television"
+        },
+        {
+          "value": "Newspaper",
+          "label": "Newspaper"
+        },
+        {
+          "value": "Elections Canada website",
+          "label": "Elections Canada website"
+        },
+        {
+          "value": "Word of mouth",
+          "label": "Word of mouth"
+        },
+        {
+          "value": "Facebook",
+          "label": "Facebook"
+        },
+        {
+          "value": "Twitter",
+          "label": "Twitter"
+        },
+        {
+          "value": "YouTube",
+          "label": "YouTube"
+        },
+        {
+          "value": "Other social media + open question",
+          "label": "Other social media"
+        }
+        {
+          "value": "From internet website other than Elections Canada",
+          "label": "From internet website other than Elections Canada"
+        },
+        {
+          "value": "From candidates or political parties",
+          "label": "From candidates or political parties"
+        },
+        {
+          "value": "None of these",
+          "label": "None of these"
+        },
+        {
+          "value": "Don't know/ Prefer not to answer",
+          "label": "Don't know/ Prefer not to answer"
+        },
+        {
+          "value": "open question",
+          "label": "Other source"
+        }
+      ]
+    },
+    "ces2021": {
+      "class": "character + open question",
+      "question_label": "From which of the following sources did you get information about voting in the federal election",
+      "raw_variable": "pes21-emb4_1 à pes19-emb4-16",
+      "choices": [
+        {
+          "value": "1 ou -99",
+          "label": "Elections Canada flyer"
+        },
+        {
+          "value": "1 ou -99",
+          "label": "Voter Information Card"
+        },
+        {
+          "value": "1 ou -99",
+          "label": "Advertisements from Elections Canada"
+        },
+        {
+          "value": "1 ou -99",
+          "label": "Radio or Television"
+        },
+        {
+          "value": "1 ou -99",
+          "label": "Newspaper"
+        },
+        {
+          "value": "1 ou -99",
+          "label": "Elections Canada website"
+        },
+        {
+          "value": "1 ou -99",
+          "label": "Word of mouth"
+        },
+        {
+          "value": "1 ou -99",
+          "label": "Facebook"
+        },
+        {
+          "value": "1 ou -99",
+          "label": "Twitter"
+        },
+        {
+          "value": "1 ou -99",
+          "label": "YouTube"
+        },
+        {
+          "value": "1 ou -99 + open question",
+          "label": "Other social media"
+        }
+        {
+          "value": "1 ou -99",
+          "label": "From internet website other than Elections Canada"
+        },
+        {
+          "value": "1 ou -99",
+          "label": "From candidates or political parties"
+        },
+        {
+          "value": "None of these",
+          "label": "None of these"
+        },
+        {
+          "value": "Don't know/ Prefer not to answer",
+          "label": "Don't know/ Prefer not to answer"
+        },
+        {
+          "value": "open question",
+          "label": "Other source"
+        }
+      ]
+    }
+}
