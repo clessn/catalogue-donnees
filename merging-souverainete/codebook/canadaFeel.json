@@ -1,0 +1,331 @@
+{
+    "description": "Opinion sur le Canada",
+    "source_id": {
+      "ces65": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+        ]
+      },
+      "ces68": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+        ]
+      },
+      "ces74": {
+        "class": "Numeric",
+        "question_label": "HOW DO YOU FEEL, IN GENERAL, ABOUT CANADA?",
+        "raw_variable": "VAR 0066",
+        "choices": [
+          {
+            "value": 0,
+            "label": "No opinion"
+          },
+          {
+            "value": "1-100",
+            "label": ""
+          }
+        ]
+      },
+      "ces79": {
+        "class": "Numeric",
+        "question_label": "HOW DO YOU FEEL, IN GENERAL, ABOUT CANADA?",
+        "raw_variable": "VAR 0066",
+        "choices": [
+          {
+            "value": 0,
+            "label": "No opinion"
+          },
+          {
+            "value": "1-100",
+            "label": ""
+          }
+        ]
+      },
+      "ces84": {
+        "class": "À faire",
+        "question_label": "À faire",
+        "raw_variable": "À faire",
+        "choices": [
+          {
+            "value": "À faire",
+            "label": "À faire"
+          },
+          {
+            "value": "À faire",
+            "label": "À faire"
+          }
+        ]
+      },
+      "ces88": {
+        "class": "À faire",
+        "question_label": "À faire",
+        "raw_variable": "À faire",
+        "choices": [
+          {
+            "value": "À faire",
+            "label": "À faire"
+          },
+          {
+            "value": "À faire",
+            "label": "À faire"
+          }
+        ]
+      },
+      "ces93": {
+        "class": "À faire",
+        "question_label": "À faire",
+        "raw_variable": "À faire",
+        "choices": [
+          {
+            "value": "À faire",
+            "label": "À faire"
+          },
+          {
+            "value": "À faire",
+            "label": "À faire"
+          },
+          {
+            "value": "À faire",
+            "label": "À faire"
+          }
+        ]
+      },
+      "ces97": {
+        "class": "Numeric",
+        "question_label": "How do you feel about CANADA? On a scale from 0 to 100, where 0 means you really DISLIKE Canada and 100 means you really LIKE Canada.",
+        "raw_variable": "f11a",
+        "choices": [
+          {
+            "value": "0-100",
+            "label": "Enter rating"
+          },
+          {
+            "value": 998,
+            "label": "Don't know"
+          },
+          {
+            "value": 999,
+            "label": "Refused"
+          }
+        ]
+      },
+      "ces2000": {
+        "class": "Numeric",
+        "question_label": "How do you feel about CANADA? On a scale from 0 to 100, where 0 means you really DISLIKE Canada and 100 means you really LIKE Canada.",
+        "raw_variable": "c3",
+        "choices": [
+            {
+                "value": "0-100",
+                "label": "Enter rating"
+              },
+              {
+                "value": 998,
+                "label": "Don't know"
+              },
+              {
+                "value": 999,
+                "label": "Refused"
+              }
+        ]
+      },
+      "ces2004": {
+        "class": "Numeric",
+        "question_label": "Using the same scale, how do you feel about CANADA?",
+        "raw_variable": "c3a",
+        "choices": [
+          {
+            "value": "0-100",
+            "label": "Enter rating"
+          },
+          {
+            "value": "d",
+            "label": "Don't know"
+          },
+          {
+            "value": "r",
+            "label": "Refused"
+          }
+        ]
+      },
+      "ces2006": {
+        "class": "Numeric",
+        "question_label": "Using the same scale, how do you feel about CANADA?",
+        "raw_variable": "c7",
+        "choices": [
+          {
+            "value": "0-100",
+            "label": "Enter rating"
+          },
+          {
+            "value": "d",
+            "label": "Don't know"
+          },
+          {
+            "value": "r",
+            "label": "Refused"
+          }
+        ]
+      },
+      "ces2008": {
+        "class": "Numeric",
+        "question_label": "And now some questions about countries and groups. Using the same scale, how do you feel about CANADA?",
+        "raw_variable": "c7",
+        "choices": [
+            {
+                "value": "0-100",
+                "label": "Enter rating"
+              },
+              {
+                "value": "d",
+                "label": "Don't know"
+              },
+              {
+                "value": "r",
+                "label": "Refused"
+              }
+        ]
+      },
+      "ces2011": {
+        "class": "Numeric",
+        "question_label": "And now some questions about countries and groups. How do you feel about CANADA?",
+        "raw_variable": "pes_11",
+        "choices": [
+            {
+                "value": "0-100",
+                "label": "Enter rating"
+              },
+              {
+                "value": "d",
+                "label": "Don't know"
+              },
+              {
+                "value": "r",
+                "label": "Refused"
+              }
+        ]
+      },
+      "ces2015": {
+        "class": "À faire",
+        "question_label": "How do you feel about the following countries and groups? Slide the slider to any number from 0 to 100. Zero means a very NEGATIVE score, and 100 means a very POSITIVE score.",
+        "raw_variable": "p_pos_can",
+        "choices": [
+          {
+            "value": "0-100",
+            "label": ""
+          }
+        ]
+      },
+      "ces2019": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          
+        ]
+      },
+      "ces2021": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          
+        ]
+      },
+      "datagotchi_pilot1_2021": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+        ]
+      },
+      "datagotchi_pilot2_2022": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+        ]
+      },
+      "omnibus_1january": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+        ]
+      },
+      "omnibus_2february": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+        ]
+      },
+      "omnibus_3march": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+        ]
+      },
+      "omnibus_4april": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+        ]
+      },
+      "omnibus_5may": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+        ]
+      },
+      "omnibus_6june": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+        ]
+      },
+      "sondage_nationalisme_2022": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+        ]
+      },
+      "pco": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+        ]
+      },
+      "pes_elxn_2022": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+        ]
+      },
+      "quorum_mcq_pilote": {
+        "class": "À faire",
+        "question_label": "À faire",
+        "raw_variable": "À faire",
+        "choices": [
+          {
+            "value": "À faire",
+            "label": "À faire"
+          },
+          {
+            "value": "À faire",
+            "label": "À faire"
+          }
+        ]
+      }
+    }
+  }

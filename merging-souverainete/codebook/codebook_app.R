@@ -97,7 +97,10 @@ server <- function(input, output, session) {
         source_data <- json_data$source_id[[id]]
         
         # Add source_id as title, question_label as subtitle, and class as subsubtitle
-        ui_elements[[length(ui_elements) + 1]] <- HTML(paste("<h3>", id, "</h3><h4>", source_data$question_label, "</h4><h5>Class: ", source_data$class, "</h5>"))
+        ui_elements[[length(ui_elements) + 1]] <- HTML(paste("<h3>", id,
+                                                             "</h3><h4>", source_data$question_label,
+                                                             "</h4><h4>", source_data$raw_variable,
+                                                             "</h4><h5>Class: ", source_data$class, "</h5>"))
         
         # Create a table for choices
         choices_df <- as.data.frame(source_data$choices)

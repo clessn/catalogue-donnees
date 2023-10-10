@@ -1,0 +1,349 @@
+{
+    "description": "Importance du Canada dans son identité",
+    "source_id": {
+      "ces65": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+        ]
+      },
+      "ces68": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+        ]
+      },
+      "ces74": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+        ]
+      },
+      "ces79": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+        ]
+      },
+      "ces84": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+        ]
+      },
+      "ces88": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+        ]
+      },
+      "ces93": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+        ]
+      },
+      "ces97": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+        ]
+      },
+      "ces2000": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+        ]
+      },
+      "ces2004": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+        ]
+      },
+      "ces2006": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+        ]
+      },
+      "ces2008": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+        ]
+      },
+      "ces2011": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+        ]
+      },
+      "ces2015": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+        ]
+      },
+      "ces2019": {
+        "class": "Ordered factor",
+        "question_label": "En général, je suis heureux d'être Canadien(ne)",
+        "raw_variable": "pes19_canid3",
+        "choices": [
+          {
+            "value": 1,
+            "label": "Fortement en désaccord"
+          },
+          {
+            "value": 2,
+            "label": "Plutôt en désaccord"
+          },
+          {
+            "value": 3,
+            "label": "Ni en accord, ni en désaccord" 
+          },
+          {
+            "value": 4,
+            "label": "Plutôt en accord"  
+          },
+          {
+            "value": 5,
+            "label": "Fortement en accord"
+          },
+          {
+            "value": 6,
+            "label": "Je ne sais pas/Préfère ne pas répondre"
+          }
+        ]
+      },
+      "ces2021": {
+        "class": "Ordered factor",
+        "question_label": "How important are the following things to your identity? Being Canadian",
+        "raw_variable": "pes21_ethid",
+        "choices": [
+          {
+            "value": 1,
+            "label": "Not important at all"
+          },
+          {
+            "value": 2,
+            "label": "Not very important"
+          },
+          {
+            "value": 3,
+            "label": "Fairly important"
+          },
+          {
+            "value": 4,
+            "label": "Very important"
+          },
+          {
+            "value": 5,
+            "label": "Don't Know/Prefer not to answer"
+          }
+        ]
+      },
+      "datagotchi_pilot1_2021": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+        ]
+      },
+      "datagotchi_pilot2_2022": {
+        "class": "Ordered factor",
+        "question_label": "Je me sens davantage Canadien(ne) que Québécois(e).",
+        "raw_variable": "FR_canBeforeQc",
+        "choices": [
+          {
+              "value": 1,
+              "label": "Fortement d'accord"
+            },
+            {
+              "value": 4,
+              "label": "Plutôt d'accord"
+            },
+            {
+              "value": 5,
+              "label": "Neutre" 
+            },
+            {
+              "value": 6,
+              "label": "Plutôt en désaccord"  
+            },
+            {
+              "value": 7,
+              "label": "Fortement en désaccord"
+            }
+        ]
+      },
+      "omnibus_1january": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+        ]
+      },
+      "omnibus_2february": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+        ]
+      },
+      "omnibus_3march": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+        ]
+      },
+      "omnibus_4april": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+        ]
+      },
+      "omnibus_5may": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+        ]
+      },
+      "omnibus_6june": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+        ]
+      },
+      "sondage_nationalisme_2022": {
+        "class": "Ordered factor",
+        "question_label": "Which of the following statements best describes your identity?",
+        "raw_variable": "moreno",
+        "choices": [
+          {
+            "value": 1,
+            "label": "I feel only canadian"
+          },
+          {
+            "value": 2,
+            "label": "I feel more Canadian than like a native from X"
+          },
+          {
+            "value": 3,
+            "label": "I feel equally like a Canadian and like a native from X"
+          },
+          {
+            "Value": 4,
+            "label": "I feel more like a native from X than Canadian"
+          },
+          {
+            "Value": 5,
+            "label": "I feel only like a native from X"
+          }
+        ]
+      },
+      "pco": {
+        "class": "Ordered factor",
+        "question_label": "How would you describe your sense of belonging to each of the following? - Canada",
+        "raw_variable": "Q14.2",
+        "choices": [
+          {
+            "value": 1,
+            "label": "Very weak"
+          },
+          {
+            "value": 2,
+            "label": "Somewhat weak"
+          },
+          {
+            "value": 3,
+            "label": "Somewhat strong"
+          },
+          {
+            "value": 4,
+            "label": "Very strong"
+          },
+          {
+            "value": 5,
+            "label": "No opinion"
+          },
+          {
+            "value": 6,
+            "label": "Don't know"
+          }
+        ]
+      },
+      "pes_elxn_2022": {
+        "class": "Factor",
+        "question_label": "Les gens ont différentes façons de se définir. Comment diriez-vous que vous vous considérez?",
+        "raw_variable": "À faire",
+        "choices": [
+          {
+            "value": 1,
+            "label": "Uniquement comme Canadien(ne)"
+          },
+          {
+            "value": 2,
+            "label": "D’abord comme Canadien(ne), puis comme Québécois(e)"
+          },
+          {
+            "value": 3,
+            "label": "Également comme Canadien(ne) puis comme Québécois(e)"
+          },
+          {
+            "value": 4,
+            "label": "D'abord comme Québécois(e)"
+          },
+          {
+            "value": 5,
+            "label": "Uniquement comme québécois(e)"
+          }
+        ]
+      },
+      "quorum_mcq_pilote": {
+        "class": "Ordered factor",
+        "question_label": "Je m'identifie canadien",
+        "raw_variable": "iss_can",
+        "choices": [
+          {
+            "value": 1,
+            "label": "Fortement en désaccord"
+          },
+          {
+            "value": 2,
+            "label": "Plutôt en désaccord"
+          },
+          {
+            "value": 3,
+            "label": "Neutre"
+          },
+          {
+            "value": 4,
+            "label": "Plutôt d'accord"
+          },
+          {
+            "value": 5,
+            "label": "Fortement d'accord"
+          }
+        ]
+      }
+    }
+  }

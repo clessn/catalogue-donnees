@@ -1,0 +1,313 @@
+{
+    "description": "Probabilité de voter pour les partis provinciaux. Note: pour les CES, il y a toujours la même batterie de questions pour aller chercher la nuance dans les intentions de vote (juste pour les partis fed je crois).",
+    "source_id": {
+      "ces65": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA",
+            "label": "NA"
+          }
+        ]
+      },
+      "ces68": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA",
+            "label": "NA"
+          }
+        ]
+      },
+      "ces74": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA",
+            "label": "NA"
+          }
+        ]
+      },
+      "ces79": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA",
+            "label": "NA"
+          }
+        ]
+      },
+      "ces84": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA",
+            "label": "NA"
+          }
+        ]
+      },
+      "ces88": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA",
+            "label": "NA"
+          }
+        ]
+      },
+      "ces93": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA",
+            "label": "NA"
+          }
+        ]
+      },
+      "ces97": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA",
+            "label": "NA"
+          }
+        ]
+      },
+      "ces2000": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA",
+            "label": "NA"
+          }
+        ]
+      },
+      "ces2004": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA",
+            "label": "NA"
+          }
+        ]
+      },
+      "ces2006": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA",
+            "label": "NA"
+          }
+        ]
+      },
+      "ces2008": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA",
+            "label": "NA"
+          }
+        ]
+      },
+      "ces2011": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA",
+            "label": "NA"
+          }
+        ]
+      },
+      "ces2015": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA",
+            "label": "NA"
+          }
+        ]
+      },
+      "ces2019": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA",
+            "label": "NA"
+          }
+        ]
+      },
+      "ces2021": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA",
+            "label": "NA"
+          }
+        ]
+      },
+      "datagotchi_pilot1_2021": {
+        "class": "numeric",
+        "question_label": "Quel que soit le parti pour lequel vous avez l'intention de voter à l'occasion de la prochaine élection provinciale québécoise, en général, quelle est la probabilité que vous appuyiez [parti]",
+        "raw_variable": "I3Q_A6 (CAQ), I3Q_A7 (PLQ), I3Q_A8 (PQ), I3Q_A9 (QS)",
+        "choices": [
+          {
+            "value": "de 0 à 10",
+            "label": "de Très peu probable à Très probable. Aucun label au milieu."
+          }
+        ]
+      },
+      "datagotchi_pilot2_2022": {
+        "class": "numeric",
+        "question_label": "Quel que soit le parti pour lequel vous avez l'intention de voter à l'occasion de la prochaine élection provinciale québécoise, en général, quelle est la probabilité que vous appuyiez [parti]?",
+        "raw_variable": "Q43_x, où x va de 1 à 5. 1 = CAQ, 2 = PLQ, 3 = PQ, 4 = QS, 5 = PCQ",
+        "choices": [
+          {
+            "value": "de 0 à 10",
+            "label": "de Très peu probable à Très probable. Aucun label au milieu."
+          }
+        ]
+      },
+      "omnibus_1january": {
+        "class": "numeric",
+        "question_label": "Quel que soit le parti pour lequel vous avez l'intention de voter à l'occasion de la prochaine élection provinciale québécoise, en général, quelle est la probabilité que vous appuyiez [parti]",
+        "raw_variable": "C3_Ax, où x va de 1 à 5. 1 = CAQ, 2 = PLQ, 3 = PQ, 4 = QS, 5 = PCQ",
+        "choices": [
+          {
+            "value": "de 0 à 10",
+            "label": "de Très peu probable à Très probable. Aucun label au milieu."
+          }
+        ]
+      },
+      "omnibus_2february": {
+        "class": "numeric",
+        "question_label": "Quel que soit le parti pour lequel vous avez l'intention de voter à l'occasion de la prochaine élection provinciale québécoise, en général, quelle est la probabilité que vous appuyiez [parti]",
+        "raw_variable": "C3_Ax, où x va de 1 à 5. 1 = CAQ, 2 = PLQ, 3 = PQ, 4 = QS, 5 = PCQ",
+        "choices": [
+          {
+            "value": "de 0 à 10",
+            "label": "de Très peu probable à Très probable. Aucun label au milieu."
+          }
+        ]
+      },
+      "omnibus_3march": {
+        "class": "numeric",
+        "question_label": "Quel que soit le parti pour lequel vous avez l'intention de voter à l'occasion de la prochaine élection provinciale québécoise, en général, quelle est la probabilité que vous appuyiez [parti]",
+        "raw_variable": "C4_Ax, où x va de 1 à 5. 1 = CAQ, 2 = PLQ, 3 = PQ, 4 = QS, 5 = PCQ",
+        "choices": [
+          {
+            "value": "de 0 à 10",
+            "label": "de Très peu probable à Très probable. Aucun label au milieu."
+          }
+        ]
+      },
+      "omnibus_4april": {
+        "class": "numeric",
+        "question_label": "Quel que soit le parti pour lequel vous avez l'intention de voter à l'occasion de la prochaine élection provinciale québécoise, en général, quelle est la probabilité que vous appuyiez [parti]",
+        "raw_variable": "C4_Ax, où x va de 1 à 5. 1 = CAQ, 2 = PLQ, 3 = PQ, 4 = QS, 5 = PCQ",
+        "choices": [
+          {
+            "value": "de 0 à 10",
+            "label": "de Très peu probable à Très probable. Aucun label au milieu."
+          }
+        ]
+      },
+      "omnibus_5may": {
+        "class": "numeric",
+        "question_label": "Quel que soit le parti pour lequel vous avez l'intention de voter à l'occasion de la prochaine élection provinciale québécoise, en général, quelle est la probabilité que vous appuyiez [parti]",
+        "raw_variable": "C4_Ax, où x va de 1 à 5. 1 = CAQ, 2 = PLQ, 3 = PQ, 4 = QS, 5 = PCQ",
+        "choices": [
+          {
+            "value": "de 0 à 10",
+            "label": "de Très peu probable à Très probable. Aucun label au milieu."
+          }
+        ]
+      },
+      "omnibus_6june": {
+        "class": "numeric",
+        "question_label": "Quel que soit le parti pour lequel vous avez l'intention de voter à l'occasion de la prochaine élection provinciale québécoise, en général, quelle est la probabilité que vous appuyiez [parti]",
+        "raw_variable": "C4_Ax, où x va de 1 à 5. 1 = CAQ, 2 = PLQ, 3 = PQ, 4 = QS, 5 = PCQ",
+        "choices": [
+          {
+            "value": "de 0 à 10",
+            "label": "de Très peu probable à Très probable. Aucun label au milieu."
+          }
+        ]
+      },
+      "sondage_nationalisme_2022": {
+        "class": "numeric",
+        "question_label": "Quel que soit le parti pour lequel vous avez l'intention de voter à l'occasion de la prochaine élection provinciale québécoise, en général, quelle est la probabilité que vous appuyiez les partis suivants?",
+        "raw_variable": "vote_intention_x où x va de 1 à 5. 1 = CAQ, 2 = PLQ, 3 = PQ, 4 = QS, 5 = PCQ",
+        "choices": [
+          {
+            "value": "de 0 à 10",
+            "label": "de Très peu probable à Très probable. Aucun label au milieu."
+          }
+        ]
+      },
+      "pco": {
+        "class": "numeric",
+        "question_label": "How likely is it that you would ever vote for the following parties in a provincial election in Quebec?",
+        "raw_variable": "Q8.25_x.Pco2014 où x prend 1 (PQ), 3 (PLQ), 4 (CAQ), 10 (QS), 13 (ON)",
+        "choices": [
+          {
+            "value": "de 0 à 10",
+            "label": "de Très peu probable à Très probable. Aucun label au milieu."
+          }
+        ]
+      },
+      "pes_elxn_2022": {
+        "class": "numeric",
+        "question_label": "Quel que soit le parti pour lequel vous avez l'intention de voter à l'occasion de la prochaine élection provinciale québécoise, en général, quelle est la probabilité que vous appuyiez [Sur une échelle de 0 à 10, où 0 signifie très peu probable, et 10 très probable]",
+        "raw_variable": "pot_growth_prov_x où x va de 1 à 5 : 1 = CAQ, 2 = PLQ, 3 = PQ, 4 = QS, 5 = PCQ",
+        "choices": [
+          {
+            "value": "de 0 à 10",
+            "label": "de Très peu probable à Très probable. Aucun label au milieu."
+          }
+        ]
+      },
+      "quorum_mcq_pilote": {
+        "class": "numeric",
+        "question_label": "Quel que soit le parti pour lequel vous avez l'intention de voter à l'occasion de la prochaine élection provinciale québécoise, en général, quelle est la probabilité que vous appuyiez [Sur une échelle de 0 à 10, où 0 signifie très peu probable, et 10 très probable]",
+        "raw_variable": "pot_growth_prov_x où x va de 1 à 5 : 1 = CAQ, 2 = PLQ, 3 = QS, 4 = PQ, 5 = PCQ",
+        "choices": [
+          {
+            "value": "de 0 à 10",
+            "label": "de Très peu probable à Très probable. Aucun label au milieu."
+          }
+        ]
+      }
+    }
+  }

@@ -73,7 +73,7 @@
         ]
       },
       "ces88": {
-        "class": "À faire",
+        "class": "numeric",
         "question_label": "In what year did you come to live in Canada?",
         "raw_variable": "n14",
         "choices": [
@@ -84,340 +84,244 @@
         ]
       },
       "ces93": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "numeric, year",
+        "question_label": "In what year did you come to live in Canada?",
+        "raw_variable": "cpso12",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
-          },
-          {
-            "value": "À faire",
-            "label": "À faire"
-          },
-          {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "année entre 1900 et 1988. 9998 et 9999 = NA",
+            "label": "année que le répondant est venu au Canada"
           }
         ]
       },
       "ces97": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "numeric",
+        "question_label": "In what year did you come to live in Canada?",
+        "raw_variable": "cpsm12",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
-          },
-          {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "année entre 1900 et 1991. 9998 et 9999 = NA",
+            "label": "année que le répondant est venu au Canada"
           }
         ]
       },
       "ces2000": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "numeric",
+        "question_label": "In what year did you come to live in Canada?",
+        "raw_variable": "cpsm12",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
-          },
-          {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "année entre 1906 et 1998. 9998 et 9999 = NA",
+            "label": "année que le répondant est venu au Canada"
           }
         ]
       },
       "ces2004": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "numeric",
+        "question_label": "In what year did you come to live in Canada?",
+        "raw_variable": "ces04_cps_s13",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
-          },
-          {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "année entre 1923 et 2003. 9998 et 9999 = NA",
+            "label": "année que le répondant est venu au Canada"
           }
         ]
       },
       "ces2006": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "numeric",
+        "question_label": "In what year did you come to live in Canada?",
+        "raw_variable": "cps_s13",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
-          },
-          {
-            "value": "À faire",
-            "label": "À faire"
-          },
-          {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "année entre 1923 et 2003. 9998 et 9999 = NA",
+            "label": "année que le répondant est venu au Canada"
           }
         ]
       },
       "ces2008": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "numeric",
+        "question_label": "In what year did you come to live in Canada?",
+        "raw_variable": "cps_s13",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
-          },
-          {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "année entre 1924 et 2007. 9998 et 9999 = NA",
+            "label": "année que le répondant est venu au Canada"
           }
         ]
       },
       "ces2011": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "numeric",
+        "question_label": "In what year did you come to live in Canada?",
+        "raw_variable": "CPS11_84",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
-          },
-          {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "année entre 1920 et 2009. 9998 et 9999 = NA",
+            "label": "année que le répondant est venu au Canada"
           }
         ]
       },
       "ces2015": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "numeric",
+        "question_label": "In what year did you come to live in Canada?",
+        "raw_variable": "year_come",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
-          },
-          {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "année entre 1930 et 2013. 9998 et 9999 = NA",
+            "label": "année que le répondant est venu au Canada"
           }
         ]
       },
       "ces2019": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "numeric",
+        "question_label": " In what year did you come to live in Canada?",
+        "raw_variable": "cps19_imm_year",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
-          },
-          {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "année entre 1920 et 2019.",
+            "label": "année que le répondant est venu au Canada"
           }
         ]
       },
       "ces2021": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "numeric",
+        "question_label": "In what year did you come to live in Canada?",
+        "raw_variable": "cps21_imm_year",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
-          },
-          {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "année entre 1920 et 2021.",
+            "label": "année que le répondant est venu au Canada"
           }
         ]
       },
       "datagotchi_pilot1_2021": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
-          },
-          {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "NA",
+            "label": "NA"
           }
         ]
       },
       "datagotchi_pilot2_2022": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
-          },
-          {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "NA",
+            "label": "NA"
           }
         ]
       },
       "omnibus_1january": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
-          },
-          {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "NA",
+            "label": "NA"
           }
         ]
       },
       "omnibus_2february": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
-          },
-          {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "NA",
+            "label": "NA"
           }
         ]
       },
       "omnibus_3march": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
-          },
-          {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "NA",
+            "label": "NA"
           }
         ]
       },
       "omnibus_4april": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
-          },
-          {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "NA",
+            "label": "NA"
           }
         ]
       },
       "omnibus_5may": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
-          },
-          {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "NA",
+            "label": "NA"
           }
         ]
       },
       "omnibus_6june": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
-          },
-          {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "NA",
+            "label": "NA"
           }
         ]
       },
       "sondage_nationalisme_2022": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
-          },
-          {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "NA",
+            "label": "NA"
           }
         ]
       },
       "pco": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "numeric",
+        "question_label": "n what year did you first come to Canada to live?",
+        "raw_variable": "Q13.5.Pco2014",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
-          },
-          {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "année entre 1935 et 2011.",
+            "label": "année que le répondant est venu au Canada"
           }
         ]
       },
       "pes_elxn_2022": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
-          },
-          {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "NA",
+            "label": "NA"
           }
         ]
       },
       "quorum_mcq_pilote": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
-          },
-          {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "NA",
+            "label": "NA"
           }
         ]
       }

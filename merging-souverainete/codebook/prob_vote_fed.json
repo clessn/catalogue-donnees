@@ -1,0 +1,313 @@
+{
+  "description": "Probabilité de voter pour les partis fédéraux. Note: pour les CES, il y a toujours la même batterie de questions pour aller chercher la nuance dans les intentions de vote (juste pour les partis fed je crois).",
+  "source_id": {
+    "ces65": {
+      "class": "NA",
+      "question_label": "NA",
+      "raw_variable": "NA",
+      "choices": [
+        {
+          "value": "NA",
+          "label": "NA"
+        }
+      ]
+    },
+    "ces68": {
+      "class": "NA",
+      "question_label": "NA",
+      "raw_variable": "NA",
+      "choices": [
+        {
+          "value": "NA",
+          "label": "NA"
+        }
+      ]
+    },
+    "ces74": {
+      "class": "NA",
+      "question_label": "NA",
+      "raw_variable": "NA",
+      "choices": [
+        {
+          "value": "NA",
+          "label": "NA"
+        }
+      ]
+    },
+    "ces79": {
+      "class": "NA",
+      "question_label": "NA",
+      "raw_variable": "NA",
+      "choices": [
+        {
+          "value": "NA",
+          "label": "NA"
+        }
+      ]
+    },
+    "ces84": {
+      "class": "NA",
+      "question_label": "NA",
+      "raw_variable": "NA",
+      "choices": [
+        {
+          "value": "NA",
+          "label": "NA"
+        }
+      ]
+    },
+    "ces88": {
+      "class": "NA",
+      "question_label": "NA",
+      "raw_variable": "NA",
+      "choices": [
+        {
+          "value": "NA",
+          "label": "NA"
+        }
+      ]
+    },
+    "ces93": {
+      "class": "NA",
+      "question_label": "NA",
+      "raw_variable": "NA",
+      "choices": [
+        {
+          "value": "NA",
+          "label": "NA"
+        }
+      ]
+    },
+    "ces97": {
+      "class": "NA",
+      "question_label": "NA",
+      "raw_variable": "NA",
+      "choices": [
+        {
+          "value": "NA",
+          "label": "NA"
+        }
+      ]
+    },
+    "ces2000": {
+      "class": "NA",
+      "question_label": "NA",
+      "raw_variable": "NA",
+      "choices": [
+        {
+          "value": "NA",
+          "label": "NA"
+        }
+      ]
+    },
+    "ces2004": {
+      "class": "NA",
+      "question_label": "NA",
+      "raw_variable": "NA",
+      "choices": [
+        {
+          "value": "NA",
+          "label": "NA"
+        }
+      ]
+    },
+    "ces2006": {
+      "class": "NA",
+      "question_label": "NA",
+      "raw_variable": "NA",
+      "choices": [
+        {
+          "value": "NA",
+          "label": "NA"
+        }
+      ]
+    },
+    "ces2008": {
+      "class": "NA",
+      "question_label": "NA",
+      "raw_variable": "NA",
+      "choices": [
+        {
+          "value": "NA",
+          "label": "NA"
+        }
+      ]
+    },
+    "ces2011": {
+      "class": "NA",
+      "question_label": "NA",
+      "raw_variable": "NA",
+      "choices": [
+        {
+          "value": "NA",
+          "label": "NA"
+        }
+      ]
+    },
+    "ces2015": {
+      "class": "NA",
+      "question_label": "NA",
+      "raw_variable": "NA",
+      "choices": [
+        {
+          "value": "NA",
+          "label": "NA"
+        }
+      ]
+    },
+    "ces2019": {
+      "class": "NA",
+      "question_label": "NA",
+      "raw_variable": "NA",
+      "choices": [
+        {
+          "value": "NA",
+          "label": "NA"
+        }
+      ]
+    },
+    "ces2021": {
+      "class": "NA",
+      "question_label": "NA",
+      "raw_variable": "NA",
+      "choices": [
+        {
+          "value": "NA",
+          "label": "NA"
+        }
+      ]
+    },
+      "datagotchi_pilot1_2021": {
+        "class": "numeric",
+        "question_label": "Quel que soit le parti pour lequel vous avez l'intention de voter à l'occasion de la prochaine élection fédérale canadienne, en général, quelle est la probabilité que vous appuyiez [parti]",
+        "raw_variable": "I3_A1 (PLC), I3_A2 (PCC), I3_A3 (NPD), I3_A4 (BQ), I3_A5 (PVC)",
+        "choices": [
+          {
+            "value": "de 0 à 10",
+            "label": "de Très peu probable à Très probable. Aucun label au milieu."
+          }
+        ]
+      },
+      "datagotchi_pilot2_2022": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA",
+            "label": "NA"
+          }
+      ]
+      },
+      "omnibus_1january": {
+        "class": "numeric",
+        "question_label": "Quel que soit le parti pour lequel vous avez l'intention de voter à l'occasion de la prochaine élection fédérale canadienne, en général, quelle est la probabilité que vous appuyiez [parti]",
+        "raw_variable": "C2_Ax, où x va de 1 à 6. 1 = PLC, 2 = PCC, 3 = NPD, 4 = BQ, 5 = PPC, 6 = PVC",
+        "choices": [
+          {
+            "value": "de 0 à 10",
+            "label": "de Très peu probable à Très probable. Aucun label au milieu."
+          }
+        ]
+      },
+      "omnibus_2february": {
+        "class": "numeric",
+        "question_label": "Quel que soit le parti pour lequel vous avez l'intention de voter à l'occasion de la prochaine élection fédérale canadienne, en général, quelle est la probabilité que vous appuyiez [parti]",
+        "raw_variable": "C2_Ax, où x va de 1 à 6. 1 = PLC, 2 = PCC, 3 = NPD, 4 = BQ, 5 = PPC, 6 = PVC",
+        "choices": [
+          {
+            "value": "de 0 à 10",
+            "label": "de Très peu probable à Très probable. Aucun label au milieu."
+          }
+        ]
+      },
+      "omnibus_3march": {
+        "class": "numeric",
+        "question_label": "Quel que soit le parti pour lequel vous avez l'intention de voter à l'occasion de la prochaine élection fédérale canadienne, en général, quelle est la probabilité que vous appuyiez [parti]",
+        "raw_variable": "C3_Ax, où x va de 1 à 6. 1 = PLC, 2 = PCC, 3 = NPD, 4 = BQ, 5 = PPC, 6 = PVC",
+        "choices": [
+          {
+            "value": "de 0 à 10",
+            "label": "de Très peu probable à Très probable. Aucun label au milieu."
+          }
+        ]
+      },
+      "omnibus_4april": {
+        "class": "numeric",
+        "question_label": "Quel que soit le parti pour lequel vous avez l'intention de voter à l'occasion de la prochaine élection fédérale canadienne, en général, quelle est la probabilité que vous appuyiez [parti]",
+        "raw_variable": "C3_Ax, où x va de 1 à 6. 1 = PLC, 2 = PCC, 3 = NPD, 4 = BQ, 5 = PPC, 6 = PVC",
+        "choices": [
+          {
+            "value": "de 0 à 10",
+            "label": "de Très peu probable à Très probable. Aucun label au milieu."
+          }
+        ]
+      },
+      "omnibus_5may": {
+        "class": "numeric",
+        "question_label": "Quel que soit le parti pour lequel vous avez l'intention de voter à l'occasion de la prochaine élection fédérale canadienne, en général, quelle est la probabilité que vous appuyiez [parti]",
+        "raw_variable": "C3_Ax, où x va de 1 à 6. 1 = PLC, 2 = PCC, 3 = NPD, 4 = BQ, 5 = PPC, 6 = PVC",
+        "choices": [
+          {
+            "value": "de 0 à 10",
+            "label": "de Très peu probable à Très probable. Aucun label au milieu."
+          }
+        ]
+      },
+      "omnibus_6june": {
+        "class": "numeric",
+        "question_label": "Quel que soit le parti pour lequel vous avez l'intention de voter à l'occasion de la prochaine élection fédérale canadienne, en général, quelle est la probabilité que vous appuyiez [parti]",
+        "raw_variable": "C3_Ax, où x va de 1 à 6. 1 = PLC, 2 = PCC, 3 = NPD, 4 = BQ, 5 = PPC, 6 = PVC",
+        "choices": [
+          {
+            "value": "de 0 à 10",
+            "label": "de Très peu probable à Très probable. Aucun label au milieu."
+          }
+        ]
+      },
+      "sondage_nationalisme_2022": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA",
+            "label": "NA"
+          }
+        ]
+      },
+      "pco": {
+        "class": "numeric",
+        "question_label": "How likely is it that you would ever vote for the following parties in a federal election?",
+        "raw_variable": "Q8.5_x.Pco2014 (pour le ROC) et Q8.6_x.Pco2014 (pour le Québec). x va de 1 à 6: 1 = PCC, 2 = PLC, 3 = NPD, 4 = PVC, 6 = BQ",
+        "choices": [
+          {
+            "value": "de 0 à 10",
+            "label": "de Très peu probable à Très probable. Aucun label au milieu."
+          }
+        ]
+      },
+      "pes_elxn_2022": {
+        "class": "numeric",
+        "question_label": "Quel que soit le parti pour lequel vous avez l'intention de voter à l'occasion de la prochaine élection fédérale canadienne, en général, quelle est la probabilité que vous appuyiez [Sur une échelle de 0 à 10, où 0 signifie très peu probable, et 10 très probable]",
+        "raw_variable": "pot_growth_fed_x où x va de 1 à 5 : 1 = PLC, 2 = PCC, 3 = NPD, 4 = BQ, 5 = PVC",
+        "choices": [
+          {
+            "value": "de 0 à 10",
+            "label": "de Très peu probable à Très probable. Aucun label au milieu."
+          }
+        ]
+      },
+      "quorum_mcq_pilote": {
+        "class": "numeric",
+        "question_label": "Quel que soit le parti pour lequel vous avez l'intention de voter à l'occasion de la prochaine élection fédérale canadienne, en général, quelle est la probabilité que vous appuyiez [Sur une échelle de 0 à 10, où 0 signifie très peu probable, et 10 très probable]",
+        "raw_variable": "pot_growth_fed_x où x va de 1 à 6 : 1 = PLC, 2 = PCC, 3 = NPD, 4 = BQ, 5 = PVC, 6 = PPC",
+        "choices": [
+          {
+            "value": "de 0 à 10",
+            "label": "de Très peu probable à Très probable. Aucun label au milieu."
+          }
+        ]
+      }
+    }
+  }
