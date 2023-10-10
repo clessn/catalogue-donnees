@@ -539,49 +539,10 @@
           },
             "datagotchi_pilot1_2021": {
               "class": "categoric",
-              "question_label": "Pour quel parti voteriez-vous s'il y avait une élection fédérale canadienne aujourd'hui?",
-              "raw_variable": "I1",
+              "question_label": "NA",
+              "raw_variable": "NA",
               "choices": [
-                {
-                  "value": "1",
-                  "label": "Le Parti libéral du Canada"
-                },
-                {
-                  "value": "2",
-                  "label": "Le Parti conservateur du Canada"
-                },
-                {
-                  "value": "3",
-                  "label": "Le Nouveau parti démocratique"
-                },
-                {
-                  "value": "4",
-                  "label": "Le Bloc québécois"
-                },
-                {
-                  "value": "5",
-                  "label": "Le Parti vert"
-                },
-                {
-                  "value": "6",
-                  "label": "Le Parti populaire du Canada"
-                },
-                {
-                  "value": "7",
-                  "label": "Autre parti"
-                },
-                {
-                  "value": "8",
-                  "label": "Je ne voterais pas"
-                },
-                {
-                  "value": "9",
-                  "label": "J'annulerais mon vote"
-                },
-                {
-                  "value": "10",
-                  "label": "Ne sais pas/Indécis"
-                }
+                "NA"
               ]
             },
             "datagotchi_pilot2_2022": {
