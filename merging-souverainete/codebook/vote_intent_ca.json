@@ -1,0 +1,1074 @@
+{
+    "description": "Vote intent at the canadian level",
+    "source_id": {
+      "ces65": {
+        "class": "string",
+        "question_label": "VOTE IN 1965 FDRL ELCTN",
+        "raw_variable": "v262",
+        "choices": [
+          {
+            "value": 0,
+            "label": "did not vote"
+          },
+          {
+            "value": 11,
+            "label": "voted,Conservative"
+          },
+          {
+            "value": 12,
+            "label": "voted,Liberal"
+          },
+          {
+            "value": 13,
+            "label": "voted,NDP"
+          },
+          {
+            "value": 14,
+            "label": "voted,Social Credit"
+          },
+          {
+            "value": 16,
+            "label": "voted,other party"
+          },
+          {
+            "value": 17,
+            "label": "voted,refused name party"
+          },
+          {
+            "value": 18,
+            "label": "voted,DK which party"
+          },
+          {
+            "value": 19,
+            "label": "voted,NA which party"
+          },
+          {
+            "value": 91,
+            "label": "inapplicable"
+          },
+          {
+            "value": 96,
+            "label": "ineligible to vote"
+          },
+          {
+            "value": 97,
+            "label": "refused"
+          },
+          {
+            "value": 98,
+            "label": "DK"
+          },
+          {
+            "value": 99,
+            "label": "NA "
+          }
+            
+        ]
+      },
+      "ces68": {
+        "class": "string",
+        "question_label": "IF VOTED: For which party did you vote?",
+        "raw_variable": "var180",
+        "choices": [
+          {
+            "value": 2,
+            "label": "LIBERAL"
+          },
+          {
+            "value": 3,
+            "label": "PROGRESSIVE CONSERVATIVE"
+          },
+          {
+            "value": 4,
+            "label": "N.D.P."
+          },
+          {
+            "value": 5,
+            "label": "CREDITISTES"
+          },
+          {
+            "value": 6,
+            "label": "SOCIAL CREDIT"
+          },
+          {
+            "value": 7,
+            "label": "INDEPENDENT"
+          },
+          {
+            "value": 8,
+            "label": "UNION NATIONALE"
+          },
+          {
+            "value": 9,
+            "label": "DON'T REMEMBER"
+          }
+        ]
+      },
+      "ces74": {
+        "class": "num",
+        "question_label": "(IF VOTED) FOR WHICH PARTY DID YOU VOTE?",
+        "raw_variable": "v162",
+        "choices": [
+            {
+              "value": 1,
+              "label": "LIBERAL"
+            },
+            {
+              "value": 2,
+              "label": "PROGRESSIVE CONSERVATIVE"
+            },
+            {
+              "value": 3,
+              "label": "N.D.P."
+            },
+            {
+              "value": 4,
+              "label": "SOCIAL CREDIT"
+            },
+            {
+              "value": 5,
+              "label": "OTHER"
+            },
+            {
+              "value": 7,
+              "label": "REFUSED"
+            },
+            {
+              "value": 8,
+              "label": "D.K."
+            }
+          ]
+      },
+      "ces79": {
+        "class": "string",
+        "question_label": "HOW VOTE IN 1979 ELEC",
+        "raw_variable": "v1234",
+        "choices": [
+          {
+            "value": 1,
+            "label": "LIBERAL"
+          },
+          {
+            "value": 2,
+            "label": "PROGRESSIVE CONSERVATIVE"
+          },
+          {
+            "value": 3,
+            "label": "N.D.P."
+          },
+          {
+            "value": 4,
+            "label": "SOCIAL CREDIT"
+          },
+          {
+            "value": 5,
+            "label": "OTHER"
+          },
+          {
+            "value": 7,
+            "label": "REFUSED"
+          },
+          {
+            "value": 8,
+            "label": "D.K."
+          }
+        ]
+      },
+      "ces84": {
+        "class": "string",
+        "question_label": "FOR WHICH PARTY DID R VOTE IN 84",
+        "raw_variable": "var125",
+        "choices": [
+            {
+              "value": 1,
+              "label": "Liberal"
+            },
+            {
+              "value": 2,
+              "label": "Progressive Conservative"
+            },
+            {
+              "value": 3,
+              "label": "NDP"
+            },
+            {
+              "value": 4,
+              "label": "Social Credit/Creditiste"
+            },
+            {
+              "value": 5,
+              "label": "Parti Nationaliste"
+            },
+            {
+              "value": 8,
+              "label": "Communist"
+            },
+            {
+              "value": 9,
+              "label": "Green Party"
+            },
+            {
+              "value": 10,
+              "label": "Libertarian"
+            },
+            {
+              "value": 11,
+              "label": "PCC-Commonwealth Canadian"
+            },
+            {
+              "value": 12,
+              "label": "Rhino"
+            },
+            {
+              "value": 13,
+              "label": "Spoiled Ballot"
+            },
+            {
+              "value": 14,
+              "label": "All Others"
+            },
+            {
+              "value": 15,
+              "label": "Confederation of Region West"
+            },
+            {
+              "value": 16,
+              "label": "Western Canada Concept"
+            },
+            {
+              "value": 20,
+              "label": "Independent/None"
+            },
+            {
+              "value": 35,
+              "label": "Would Not Vote"
+            },
+            {
+              "value": 40,
+              "label": "Don't Know"
+            },
+            {
+              "value": 50,
+              "label": "Refused"
+            },
+            {
+              "value": 80,
+              "label": "NA"
+            }
+          ]
+      },
+      "ces88": {
+        "class": "string",
+        "question_label": "Which party do you think you will vote for: the Conservative Party, the Liberal Party, the New Democratic Party, or another party?",
+        "raw_variable": "b2",
+        "choices": [
+            {
+              "value": 1,
+              "label": "Conservative"
+            },
+            {
+              "value": 2,
+              "label": "Liberal"
+            },
+            {
+              "value": 3,
+              "label": "N.D.P."
+            },
+            {
+              "value": 4,
+              "label": "Other (specify)[specify]"
+            },
+            {
+              "value": 8,
+              "label": "Don't Know"
+            },
+            {
+              "value": 9,
+              "label": "Refused"
+            }
+          ]
+      },
+      "ces93": {
+        "class": "string",
+        "question_label": "If you do vote, which party do you think you will vote for: the Conservative Party, the Liberal Party, the New Democratic Party, the [fill rc3] or another party?",
+        "raw_variable": "cpsa3",
+        "choices": [
+          {
+            "value": "Conservative Party"
+          },
+          {
+            "value": "Liberal Party"
+          },
+          {
+            "value": "New Democratic Party"
+          },
+          {
+            "value": "another party"
+          },
+          {
+            "value": "d.k.",
+            "label": "Don't Know"
+          }
+        ]
+      },
+      "ces97": {
+        "class": "string",
+        "question_label": "[r] [fill E006]hich party do you think you will vote for: the [n][r] Conservative Party, the Liberal Party, the New Democratic Party, [n][r] the [fill E001] or another party? [n]",
+        "raw_variable": "ch21",
+        "choices": [
+            {
+              "value": 1,
+              "label": "Liberal"
+            },
+            {
+              "value": 2,
+              "label": "Conservative"
+            },
+            {
+              "value": 3,
+              "label": "N.D.P"
+            },
+            {
+              "value": 4,
+              "label": "Reform Party"
+            },
+            {
+              "value": 5,
+              "label": "Bloc Québécois"
+            },
+            {
+              "value": 0,
+              "label": "Other (specify)"
+            }
+          ]
+      },
+      "ces2000": {
+        "class": "string",
+        "question_label": "Which party do you think you will vote for:",
+        "raw_variable": "a4",
+        "choices": [
+            {
+              "value": 1,
+              "label": "Liberal"
+            },
+            {
+              "value": 2,
+              "label": "Alliance"
+            },
+            {
+              "value": 3,
+              "label": "Conservative"
+            },
+            {
+              "value": 4,
+              "label": "NDP"
+            },
+            {
+              "value": 5,
+              "label": "Bloc Quebecois"
+            },
+            {
+              "value": 6,
+              "label": "Reform"
+            },
+            {
+              "value": 8,
+              "label": "Green Party"
+            },
+            {
+              "value": 0,
+              "label": "other"
+            },
+            {
+              "value": 96,
+              "label": "will not vote"
+            },
+            {
+              "value": 97,
+              "label": "none"
+            },
+            {
+              "value": 98,
+              "label": "don't know/undecided"
+            },
+            {
+              "value": 99,
+              "label": "refused"
+            }
+          ]
+      },
+      "ces2004": {
+        "class": "string",
+        "question_label": "[#clocked] [#asked if b3 was response 1 or 3][#a4 in 2000, modified][define <d><98>][define <r><99>][if b3@3 eq <6>][r] Which party did you vote for?[n][else][r] Which party do you think you will vote for?[n][endif][if PROV eq <24>][r] The Liberal Party, the Conservative Party, the NDP(the New[n][r] Democratic Party), the Bloc Quebecois or another party?[n][bold][yellow]",
+        "raw_variable": "ces04_cps_b4_3",
+        "choices": [
+          {
+            "value": "Conservative Party"
+          },
+          {
+            "value": "NDP(the New Democratic Party)"
+          },
+          {
+            "value": "Bloc Quebecois"
+          },
+          {
+            "value": "another party"
+          }
+        ]
+      },
+      "ces2006": {
+        "class": "string",
+        "question_label": "Which party do you think you will vote for?",
+        "raw_variable": "cps_b4_3",
+        "choices": [
+            {
+              "value": 1,
+              "label": "Liberal (Grits)"
+            },
+            {
+              "value": 2,
+              "label": "Conservatives (Tory, PCs, Conservative Party of Canada)"
+            },
+            {
+              "value": 3,
+              "label": "NDP (New Democratic Party, New Democrats, Ndpers)"
+            },
+            {
+              "value": 4,
+              "label": "Bloc Quebecois (BQ, PQ, Bloc, Parti Qu‚b‚cois)"
+            },
+            {
+              "value": 5,
+              "label": "Green Party (Greens)"
+            },
+            {
+              "value": "s",
+              "label": "other(specify)"
+            },
+            {
+              "value": 96,
+              "label": "will not vote"
+            },
+            {
+              "value": 97,
+              "label": "none"
+            },
+            {
+              "value": "d",
+              "label": "don't know/undecided"
+            },
+            {
+              "value": "r",
+              "label": "refused"
+            }
+          ]
+      },
+      "ces2008": {
+        "class": "string",
+        "question_label": "[if b2 eq <1>] [#voted advanced poll][r] Which party did you vote for?[else][r] Which party do you think you will vote for?[endif]",
+        "raw_variable": "cps_b4n",
+        "choices": [
+            {
+              "value": 1,
+              "label": "Liberal (Grits)"
+            },
+            {
+              "value": 2,
+              "label": "Conservatives (Tory, PCs, Conservative Party of Canada)"
+            },
+            {
+              "value": 3,
+              "label": "NDP (New Democratic Party, New Democrats, Ndpers)"
+            },
+            {
+              "value": 4,
+              "label": "Bloc Quebecois (BQ, PQ, Bloc, Parti Qu‚b‚cois)"
+            },
+            {
+              "value": 5,
+              "label": "Green Party (Greens)"
+            },
+            {
+              "value": "s",
+              "label": "other(specify)"
+            },
+            {
+              "value": 96,
+              "label": "will not vote"
+            },
+            {
+              "value": 97,
+              "label": "none"
+            },
+            {
+              "value": "d",
+              "label": "don't know/undecided"
+            },
+            {
+              "value": "r",
+              "label": "refused"
+            }
+          ]
+      },
+      "ces2011": {
+        "class": "string",
+        "question_label": "[if ces_10 ne <0>][r] Which party do you think you will vote for? The Liberal Party, the[n][r] Conservative Party, the NDP, [if PROV eq <24>] the Bloc Quebecois,[endif][n][r] the Green party, or another party?[n][else][r] Which party did you vote for? The Liberal Party, the[n][r] Conservative Party, the NDP, [if PROV eq <24>] the Bloc Quebecois,[endif][n][r] the Green party, or another party?[n][endif]",
+        "raw_variable": "CPS11_74",
+        "choices": [
+            {
+              "value": 1,
+              "label": "Liberal (Grits)"
+            },
+            {
+              "value": 2,
+              "label": "Conservatives (Tory, PCs, Conservative Party of Canada)"
+            },
+            {
+              "value": 3,
+              "label": "NDP (New Democratic Party, New Democrats, Ndpers)"
+            },
+            {
+              "value": 4,
+              "label": "Bloc Quebecois (BQ, PQ, Bloc, Parti Qu‚b‚cois)"
+            },
+            {
+              "value": 5,
+              "label": "Green Party (Greens)"
+            },
+            {
+              "value": "s",
+              "label": "other(specify)"
+            },
+            {
+              "value": 7,
+              "label": "will not vote"
+            },
+            {
+              "value": 8,
+              "label": "none of these"
+            },
+            {
+              "value": 9,
+              "label": "will spoil ballot"
+            },
+            {
+              "value": "d",
+              "label": "don't know/undecided"
+            },
+            {
+              "value": "r",
+              "label": "refused"
+            }
+          ]
+      },
+      "ces2015": {
+        "class": "string",
+        "question_label": "Which party do you think you will vote for?",
+        "raw_variable": "vote_for",
+        "choices": [
+            {
+              "value": 1,
+              "label": "The Conservative Party"
+            },
+            {
+              "value": 2,
+              "label": "The Liberal Party"
+            },
+            {
+              "value": 3,
+              "label": "The New Democratic Party"
+            },
+            {
+              "value": 4,
+              "label": "The Bloc Québécois"
+            },
+            {
+              "value": 5,
+              "label": "The Green Party"
+            },
+            {
+              "value": 6,
+              "label": "Other Party"
+            },
+            {
+              "value": 8,
+              "label": "None of these"
+            },
+            {
+              "value": 9,
+              "label": "Will Spoil Ballot"
+            },
+            {
+              "value": 10,
+              "label": "Don’t Know / Undecided"
+            },
+            {
+              "value": 11,
+              "label": "Refuse to Answer"
+            }
+          ]
+      },
+      "ces2019": {
+        "class": "string",
+        "question_label": "Which party did you vote for?",
+        "raw_variable": "pes19_votechoice2019",
+        "choices": [
+            {
+              "value": 1,
+              "label": "Liberal Party"
+            },
+            {
+              "value": 2,
+              "label": "Conservative Party"
+            },
+            {
+              "value": 3,
+              "label": "NDP"
+            },
+            {
+              "value": 4,
+              "label": "Bloc Québécois"
+            },
+            {
+              "value": 5,
+              "label": "Green Party"
+            },
+            {
+              "value": 6,
+              "label": "People's Party"
+            },
+            {
+              "value": 7,
+              "label": "Another party (specify)"
+            },
+            {
+              "value": 8,
+              "label": "I spoiled my vote"
+            },
+            {
+              "value": 9,
+              "label": "Don't know / Prefer not to answer"
+            }
+          ]
+      },
+      "ces2021": {
+        "class": "string",
+        "question_label": "Which party do you think you will vote for?",
+        "raw_variable": "cps21_votechoice",
+        "choices": [
+            {
+              "value": 1,
+              "label": "Liberal Party"
+            },
+            {
+              "value": 2,
+              "label": "Conservative Party"
+            },
+            {
+              "value": 3,
+              "label": "NDP"
+            },
+            {
+              "value": 4,
+              "label": "Bloc Québécois"
+            },
+            {
+              "value": 5,
+              "label": "Green Party"
+            },
+            {
+              "value": 6,
+              "label": "Another party (please specify)"
+            },
+            {
+              "value": 7,
+              "label": "Don't know/ Prefer not to answer"
+            }
+          ]
+      },
+      "datagotchi_pilot1_2021": {
+        "class": "string",
+        "question_label": "Pour quel parti voteriez-vous s'il y avait une élection fédérale canadienne aujourd'hui?",
+        "raw_variable": "I1",
+        "choices": [
+          {
+            "value": "vote_intent"
+          }
+        ]
+      },
+      "datagotchi_pilot2_2022": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA"
+          }
+        ]
+      },
+      "omnibus_1january": {
+        "class": "numeric",
+        "question_label": "QFED1)  Parlons maintenant du gouvernement fédéral à OttawaSi les élections fédérales avaient lieu aujourd’hui, pour lequel des partis suivants voteriez-vous ou seriez-vous tenté de voter?",
+        "raw_variable": "QFED1",
+        "choices": [
+            {
+              "value": 1,
+              "label": "Parti lib.ral du Canada (PLC) de Justin Trudeau"
+            },
+            {
+              "value": 2,
+              "label": "Parti conservateur du Canda (PCC) d'Erin O.Toole"
+            },
+            {
+              "value": 3,
+              "label": "Nouveau Parti d.mocratique du Canada (NPD) de Jagmeet Singh"
+            },
+            {
+              "value": 4,
+              "label": "Bloc qu.b.cois (BQ) d'Yves-Fran.ois Blanchet"
+            },
+            {
+              "value": 5,
+              "label": "Parti populaire du Canada (PPC) de Maxime Bernier"
+            },
+            {
+              "value": 6,
+              "label": "Parti vert du Canada (PVC) d'Amita Kuttner (Chef par int.rim"
+            },
+            {
+              "value": 7,
+              "label": "Un autre parti"
+            },
+            {
+              "value": 8,
+              "label": "Je ne sais pas"
+            },
+            {
+              "value": 9,
+              "label": "Je n.irais pas voter"
+            }
+          ]
+      },
+      "omnibus_2february": {
+        "class": "numeric",
+        "question_label": "QFED1)  Si les élections fédérales avaient lieu aujourd’hui, pour lequel des partis suivants voteriez-vous ou seriez-vous tenté de voter?",
+        "raw_variable": "QFED1",
+        "choices": [
+            {
+              "value": 1,
+              "label": "Parti lib.ral du Canada (PLC) de Justin Trudeau"
+            },
+            {
+              "value": 2,
+              "label": "Parti conservateur du Canda (PCC) d'Erin O.Toole"
+            },
+            {
+              "value": 3,
+              "label": "Nouveau Parti d.mocratique du Canada (NPD) de Jagmeet Singh"
+            },
+            {
+              "value": 4,
+              "label": "Bloc qu.b.cois (BQ) d'Yves-Fran.ois Blanchet"
+            },
+            {
+              "value": 5,
+              "label": "Parti populaire du Canada (PPC) de Maxime Bernier"
+            },
+            {
+              "value": 6,
+              "label": "Parti vert du Canada (PVC) d'Amita Kuttner (Chef par int.rim"
+            },
+            {
+              "value": 7,
+              "label": "Un autre parti"
+            },
+            {
+              "value": 8,
+              "label": "Je ne sais pas"
+            },
+            {
+              "value": 9,
+              "label": "Je n.irais pas voter"
+            }
+          ]
+      },
+      "omnibus_3march": {
+        "class": "numeric",
+        "question_label": "QFED1)  Si les élections fédérales avaient lieu aujourd’hui, pour lequel des partis suivants voteriez-vous ou seriez-vous tenté de voter?",
+        "raw_variable": "QFED1",
+        "choices": [
+            {
+              "value": 1,
+              "label": "Parti lib.ral du Canada (PLC) de Justin Trudeau"
+            },
+            {
+              "value": 2,
+              "label": "Parti conservateur du Canda (PCC) d'Erin O.Toole"
+            },
+            {
+              "value": 3,
+              "label": "Nouveau Parti d.mocratique du Canada (NPD) de Jagmeet Singh"
+            },
+            {
+              "value": 4,
+              "label": "Bloc qu.b.cois (BQ) d'Yves-Fran.ois Blanchet"
+            },
+            {
+              "value": 5,
+              "label": "Parti populaire du Canada (PPC) de Maxime Bernier"
+            },
+            {
+              "value": 6,
+              "label": "Parti vert du Canada (PVC) d'Amita Kuttner (Chef par int.rim"
+            },
+            {
+              "value": 7,
+              "label": "Un autre parti"
+            },
+            {
+              "value": 8,
+              "label": "Je ne sais pas"
+            },
+            {
+              "value": 9,
+              "label": "Je n.irais pas voter"
+            }
+          ]
+      },
+      "omnibus_4april": {
+        "class": "numeric",
+        "question_label": "QFED1)  Parlons maintenant du gouvernement fédéral à OttawaSi les élections fédérales avaient lieu aujourd’hui, pour lequel des partis suivants voteriez-vous ou seriez-vous tenté de voter?",
+        "raw_variable": "QFED1",
+        "choices": [
+            {
+              "value": 1,
+              "label": "Parti lib.ral du Canada (PLC) de Justin Trudeau"
+            },
+            {
+              "value": 2,
+              "label": "Parti conservateur du Canda (PCC) d'Erin O.Toole"
+            },
+            {
+              "value": 3,
+              "label": "Nouveau Parti d.mocratique du Canada (NPD) de Jagmeet Singh"
+            },
+            {
+              "value": 4,
+              "label": "Bloc qu.b.cois (BQ) d'Yves-Fran.ois Blanchet"
+            },
+            {
+              "value": 5,
+              "label": "Parti populaire du Canada (PPC) de Maxime Bernier"
+            },
+            {
+              "value": 6,
+              "label": "Parti vert du Canada (PVC) d'Amita Kuttner (Chef par int.rim"
+            },
+            {
+              "value": 7,
+              "label": "Un autre parti"
+            },
+            {
+              "value": 8,
+              "label": "Je ne sais pas"
+            },
+            {
+              "value": 9,
+              "label": "Je n.irais pas voter"
+            }
+          ]
+      },
+      "omnibus_5may": {
+        "class": "numeric",
+        "question_label": "QFED1)  Si les élections fédérales avaient lieu aujourd’hui, pour lequel des partis suivants voteriez-vous ou seriez-vous tenté de voter?",
+        "raw_variable": "QFED1",
+        "choices": [
+            {
+              "value": 1,
+              "label": "Parti lib.ral du Canada (PLC) de Justin Trudeau"
+            },
+            {
+              "value": 2,
+              "label": "Parti conservateur du Canda (PCC) d'Erin O.Toole"
+            },
+            {
+              "value": 3,
+              "label": "Nouveau Parti d.mocratique du Canada (NPD) de Jagmeet Singh"
+            },
+            {
+              "value": 4,
+              "label": "Bloc qu.b.cois (BQ) d'Yves-Fran.ois Blanchet"
+            },
+            {
+              "value": 5,
+              "label": "Parti populaire du Canada (PPC) de Maxime Bernier"
+            },
+            {
+              "value": 6,
+              "label": "Parti vert du Canada (PVC) d'Amita Kuttner (Chef par int.rim"
+            },
+            {
+              "value": 7,
+              "label": "Un autre parti"
+            },
+            {
+              "value": 8,
+              "label": "Je ne sais pas"
+            },
+            {
+              "value": 9,
+              "label": "Je n.irais pas voter"
+            }
+          ]
+      },
+      "omnibus_6june": {
+        "class": "numeric",
+        "question_label": "QFED1)  Si les élections fédérales avaient lieu aujourd’hui, pour lequel des partis suivants voteriez-vous ou seriez-vous tenté de voter?",
+        "raw_variable": "QFED1",
+        "choices": [
+            {
+              "value": 1,
+              "label": "Parti lib.ral du Canada (PLC) de Justin Trudeau"
+            },
+            {
+              "value": 2,
+              "label": "Parti conservateur du Canda (PCC) d'Erin O.Toole"
+            },
+            {
+              "value": 3,
+              "label": "Nouveau Parti d.mocratique du Canada (NPD) de Jagmeet Singh"
+            },
+            {
+              "value": 4,
+              "label": "Bloc qu.b.cois (BQ) d'Yves-Fran.ois Blanchet"
+            },
+            {
+              "value": 5,
+              "label": "Parti populaire du Canada (PPC) de Maxime Bernier"
+            },
+            {
+              "value": 6,
+              "label": "Parti vert du Canada (PVC) d'Amita Kuttner (Chef par int.rim"
+            },
+            {
+              "value": 7,
+              "label": "Un autre parti"
+            },
+            {
+              "value": 8,
+              "label": "Je ne sais pas"
+            },
+            {
+              "value": 9,
+              "label": "Je n.irais pas voter"
+            }
+          ]
+      },
+      "sondage_nationalisme_2022": {
+        "class": "string",
+        "question_label": "If a Canadian federal election was held today, which party would you vote for?",
+        "raw_variable": "vote_choiceQ",
+        "choices": [
+            {
+              "value": 1,
+              "label": "The Liberal Party"
+            },
+            {
+              "value": 2,
+              "label": "The Conservative Party"
+            },
+            {
+              "value": 3,
+              "label": "The New Democratic Party"
+            },
+            {
+              "value": 4,
+              "label": "The Bloc Quebecois"
+            },
+            {
+              "value": 5,
+              "label": "The Green Party"
+            },
+            {
+              "value": 6,
+              "label": "The People's Party of Canada"
+            },
+            {
+              "value": 7,
+              "label": "Other party"
+            },
+            {
+              "value": 8,
+              "label": "Would not vote"
+            },
+            {
+              "value": 9,
+              "label": "Would spoil ballot"
+            },
+            {
+              "value": 10,
+              "label": "Don't know/Undecided"
+            }
+          ]
+      },
+      "pco": {
+        "class": "string",
+        "question_label": "Q8.2 If a federal election was held today, which party would you vote for?",
+        "raw_variable": "Q8.4.Pco2014",
+        "choices": [
+            {
+              "value": 1,
+              "label": "Conservative Party of Canada"
+            },
+            {
+              "value": 2,
+              "label": "Liberal Party of Canada"
+            },
+            {
+              "value": 3,
+              "label": "New Democratic Party of Canada"
+            },
+            {
+              "value": 4,
+              "label": "Green Party of Canada"
+            },
+            {
+              "value": 6,
+              "label": "Bloc Québécois"
+            },
+            {
+              "value": 5,
+              "label": "Other (please specify)"
+            },
+            {
+              "value": 7,
+              "label": "Don't know"
+            },
+            {
+              "value": 8,
+              "label": "I would not vote"
+            }
+          ]
+      },
+      "pes_elxn_2022": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA"
+          }
+        ]
+      },
+      "quorum_mcq_pilote": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA"
+          }
+        ]
+      }
+    }
+  }

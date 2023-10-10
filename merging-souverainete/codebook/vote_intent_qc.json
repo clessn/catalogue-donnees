@@ -1,0 +1,1198 @@
+{
+    "description": "NA",
+    "source_id": {
+      "ces65": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA",
+            "label": "NA"
+          }
+        ]
+      },
+      "ces68": {
+        "class": "string",
+        "question_label": "If you voted, for which party did you happen to vote in the last provincial-election?",
+        "raw_variable": "var122",
+        "choices": [
+          {
+            "value": "vote_intent"
+          }
+        ]
+      },
+      "ces74": {
+        "class": "numeric",
+        "question_label": "(IF SAME PARTY) WHICH PARTY IS THAT?",
+        "raw_variable": "v228",
+        "choices": [
+          {
+            "value": "1",
+            "label": "LIBERAL"
+          },
+          {
+            "value": "2",
+            "label": "PROGRESSIVE CONSERVATIVE"
+          },
+          {
+            "value": "3",
+            "label": "SOCIAL CREDIT"
+          },
+          {
+            "value": "4",
+            "label": "OTHER"
+          },
+          {
+            "value": "5",
+            "label": "UNION NATIONALE"
+          },
+          {
+            "value": "6",
+            "label": "todo"
+          },
+          {
+            "value": "7",
+            "label": "PARTI QUEBECOIS"
+          },
+          {
+            "value": "8",
+            "label": "D.K."
+          },
+          {
+            "value": "9",
+            "label": "N.A."
+          }
+        ]
+      },
+      "ces79": {
+        "class": "numeric",
+        "question_label": "(IF SAME PARTY) WHICH PARTY IS THAT?",
+        "raw_variable": "v228",
+        "choices": [
+            {
+              "value": 1,
+              "label": "Liberal Party"
+            },
+            {
+              "value": 2,
+              "label": "Conservative Party"
+            },
+            {
+              "value": 3,
+              "label": "NDP"
+            },
+            {
+              "value": 4,
+              "label": "Bloc Québécois"
+            },
+            {
+              "value": 5,
+              "label": "Green Party"
+            },
+            {
+              "value": 6,
+              "label": "Another party (please specify)"
+            },
+            {
+              "value": 7,
+              "label": "Don't know/ Prefer not to answer"
+            }
+          ]
+      },
+      "ces84": {
+        "class": "string",
+        "question_label": "R'S VOTE IN PROV. ELECTION TODAY",
+        "raw_variable": "v265",
+        "choices": [
+            {
+              "value": 1,
+              "label": "Liberal"
+            },
+            {
+              "value": 2,
+              "label": "P.C."
+            },
+            {
+              "value": 3,
+              "label": "N.D.P."
+            },
+            {
+              "value": 4,
+              "label": "Social Credit"
+            },
+            {
+              "value": 6,
+              "label": "Parti Quebecois"
+            },
+            {
+              "value": 7,
+              "label": "Union Nationale"
+            },
+            {
+              "value": 13,
+              "label": "Spoiled Ballot"
+            },
+            {
+              "value": 14,
+              "label": "Other Parties"
+            },
+            {
+              "value": 20,
+              "label": "Independent/None"
+            },
+            {
+              "value": 35,
+              "label": "Would Not Vote"
+            },
+            {
+              "value": 40,
+              "label": "Don't Know"
+            },
+            {
+              "value": 50,
+              "label": "Refused"
+            }
+          ]
+      },
+      "ces88": {
+        "class": "string",
+        "question_label": "Which party did you vote for?",
+        "raw_variable": "b9",
+        "choices": [
+            {
+              "value": 1,
+              "label": "Conservative"
+            },
+            {
+              "value": 2,
+              "label": "Liberal"
+            },
+            {
+              "value": 3,
+              "label": "New Democratic"
+            },
+            {
+              "value": 4,
+              "label": "Social Credit"
+            },
+            {
+              "value": 5,
+              "label": "Parti Quebecois"
+            },
+            {
+              "value": 6,
+              "label": "Other (specify)"
+            },
+            {
+              "value": 8,
+              "label": "Don't Know"
+            },
+            {
+              "value": 9,
+              "label": "Refused"
+            }
+          ]
+      },
+      "ces93": {
+        "class": "string",
+        "question_label": "If a PROVINCIAL election were held today, which party would you vote for?",
+        "raw_variable": "cpsm13",
+        "choices": [
+            {
+              "value": 1,
+              "label": "Liberal"
+            },
+            {
+              "value": 2,
+              "label": "Conservative"
+            },
+            {
+              "value": 3,
+              "label": "N.D.P."
+            },
+            {
+              "value": 4,
+              "label": "Social Credit"
+            },
+            {
+              "value": 5,
+              "label": "Parti Québécois"
+            },
+            {
+              "value": 6,
+              "label": "Confederation of Regions, COR"
+            },
+            {
+              "value": 8,
+              "label": "Other (specify)"
+            },
+            {
+              "value": 9,
+              "label": "Will not Vote"
+            },
+            {
+              "value": 0,
+              "label": "Would spoil ballot"
+            },
+            {
+              "value": 98,
+              "label": "Don't know"
+            },
+            {
+              "value": 99,
+              "label": "Refused"
+            }
+          ]
+      },
+      "ces97": {
+        "class": "todo",
+        "question_label": "[r][r]If a [fill E001] election were held today in [fill pppp] [n] which party would you vote for? [n][r][r]The Liberal party, the [fill E002], [fill E003][fill E006] or some other party?",
+        "raw_variable": "k13",
+        "choices": [
+            {
+              "value": 1,
+              "label": "Liberal"
+            },
+            {
+              "value": 2,
+              "label": "Conservative"
+            },
+            {
+              "value": 3,
+              "label": "N.D.P"
+            },
+            {
+              "value": 4,
+              "label": "Social Credit"
+            },
+            {
+              "value": 5,
+              "label": "Parti Québécois"
+            },
+            {
+              "value": 6,
+              "label": "Confederation of Regions"
+            },
+            {
+              "value": 7,
+              "label": "Yukon Party"
+            },
+            {
+              "value": 8,
+              "label": "Reform"
+            },
+            {
+              "value": 9,
+              "label": "l'Action Démocratique"
+            },
+            {
+              "value": 0,
+              "label": "Other (specify)"
+            },
+            {
+              "value": 96,
+              "label": "will spoil ballot"
+            },
+            {
+              "value": 97,
+              "label": "Will not vote"
+            },
+            {
+              "value": 98,
+              "label": "Don't Know"
+            },
+            {
+              "value": 99,
+              "label": "Refused"
+            }
+          ]
+      },
+      "ces2000": {
+        "class": "string",
+        "question_label": "Finally, if a PROVINCIAL election were held today in [Respondents province of residence], which party would you vote for?",
+        "raw_variable": "n5",
+        "choices": [
+            {
+              "value": 1,
+              "label": "Liberal"
+            },
+            {
+              "value": 2,
+              "label": "Conservative"
+            },
+            {
+              "value": 3,
+              "label": "N.D.P."
+            },
+            {
+              "value": 4,
+              "label": "Alliance/Reform"
+            },
+            {
+              "value": 5,
+              "label": "Bloc Quebecois"
+            },
+            {
+              "value": 6,
+              "label": "Social Credit"
+            },
+            {
+              "value": 7,
+              "label": "Parti Quebecois"
+            },
+            {
+              "value": 8,
+              "label": "L'Acation Democratique"
+            },
+            {
+              "value": 9,
+              "label": "Saskatchewan Party"
+            },
+            {
+              "value": 10,
+              "label": "Green Party"
+            },
+            {
+              "value": 0,
+              "label": "other"
+            },
+            {
+              "value": 96,
+              "label": "spoiled ballot"
+            },
+            {
+              "value": 98,
+              "label": "don't know"
+            },
+            {
+              "value": 99,
+              "label": "refused"
+            }
+          ]
+      },
+      "ces2004": {
+        "class": "string",
+        "question_label": "[if PROV le <13>][r] If a PROVINCIAL election were held today in [fill PROVINCE], [n][r] which party would you vote for? Liberal, Conservative, N.D.P. [n][r] or another party?",
+        "raw_variable": "sd5",
+        "choices": [
+            {
+              "value": 1,
+              "label": "Liberal"
+            },
+            {
+              "value": 2,
+              "label": "Conservative (new party, old party, Progressive Conservative, PCs)"
+            },
+            {
+              "value": 3,
+              "label": "N.D.P."
+            },
+            {
+              "value": 7,
+              "label": "Parti Quebecois"
+            },
+            {
+              "value": 8,
+              "label": "L'Action Democratique"
+            },
+            {
+              "value": 9,
+              "label": "Saskatchewan Party"
+            },
+            {
+              "value": 0,
+              "label": "other, specify"
+            },
+            {
+              "value": 95,
+              "label": "would not vote"
+            },
+            {
+              "value": 96,
+              "label": "would spoil ballot"
+            },
+            {
+              "value": 97,
+              "label": "it depends"
+            },
+            {
+              "value": "d",
+              "label": "don't know"
+            },
+            {
+              "value": "r",
+              "label": "refused"
+            }
+          ]
+      },
+      "ces2006": {
+        "class": "todo",
+        "question_label": "If a PROVINCIAL election were held today in [fill PROVINCE],which party would you vote for? Liberal, Conservative, N.D.P. or another party?",
+        "raw_variable": "pes_sd5",
+        "choices": [
+            {
+              "value": 1,
+              "label": "Liberal"
+            },
+            {
+              "value": 2,
+              "label": "Conservative (new party, old party, Progressive Conservative, PCs)"
+            },
+            {
+              "value": 3,
+              "label": "N.D.P."
+            },
+            {
+              "value": 7,
+              "label": "Parti Quebecois"
+            },
+            {
+              "value": 8,
+              "label": "L'Action Democratique"
+            },
+            {
+              "value": 9,
+              "label": "Saskatchewan Party"
+            },
+            {
+              "value": 0,
+              "label": "other, specify"
+            },
+            {
+              "value": 95,
+              "label": "would not vote"
+            },
+            {
+              "value": 96,
+              "label": "would spoil ballot"
+            },
+            {
+              "value": 97,
+              "label": "it depends"
+            },
+            {
+              "value": "d",
+              "label": "don't know"
+            },
+            {
+              "value": "r",
+              "label": "refused"
+            }
+          ]
+      },
+      "ces2008": {
+        "class": "string",
+        "question_label": "If a PROVINCIAL election were held today in [fill PROVINCE], which [n][r] party would you vote for? Liberal, Conservative, N.D.P. or another[n][r] another party?",
+        "raw_variable": "prov_vote1",
+        "choices": [
+            {
+              "value": 1,
+              "label": "Liberal"
+            },
+            {
+              "value": 2,
+              "label": "Conservative (Tory, Progressive Conservative, PCs)"
+            },
+            {
+              "value": 3,
+              "label": "N.D.P."
+            },
+            {
+              "value": 7,
+              "label": "Parti Quebecois"
+            },
+            {
+              "value": 8,
+              "label": "L'Action Democratique"
+            },
+            {
+              "value": 9,
+              "label": "Saskatchewan Party"
+            },
+            {
+              "value": 0,
+              "label": "other, specify"
+            },
+            {
+              "value": 95,
+              "label": "would not vote"
+            },
+            {
+              "value": 96,
+              "label": "would spoil ballot"
+            },
+            {
+              "value": 97,
+              "label": "it depends"
+            },
+            {
+              "value": "d",
+              "label": "don't know"
+            },
+            {
+              "value": "r",
+              "label": "refused"
+            }
+          ]
+      },
+      "ces2011": {
+        "class": "numeric",
+        "question_label": "If a PROVINCIAL election were held today in [fill PROVINCE], which party[n][r] would you vote for? Liberal, Conservative, N.D.P., or another party?[n",
+        "raw_variable": "PES11_68",
+        "choices": [
+            {
+              "value": 1,
+              "label": "Liberal"
+            },
+            {
+              "value": 2,
+              "label": "Conservative (Tory, Progressive Conservative, PCs)"
+            },
+            {
+              "value": 3,
+              "label": "N.D.P."
+            },
+            {
+              "value": 4,
+              "label": "Liberal (PLQ)"
+            },
+            {
+              "value": 5,
+              "label": "Parti Québécois (PQ)"
+            },
+            {
+              "value": 6,
+              "label": "L'Action Democratique (ADQ)"
+            },
+            {
+              "value": 7,
+              "label": "Saskatchewan Party"
+            },
+            {
+              "value": 8,
+              "label": "Wildrose Alliance Party"
+            },
+            {
+              "value": "s",
+              "label": "other, specify"
+            },
+            {
+              "value": 9,
+              "label": "would not vote"
+            },
+            {
+              "value": 10,
+              "label": "would spoil ballot"
+            },
+            {
+              "value": 11,
+              "label": "it depends"
+            },
+            {
+              "value": "d",
+              "label": "don't know"
+            },
+            {
+              "value": "r",
+              "label": "refused"
+            }
+          ]
+      },
+      "ces2015": {
+        "class": "string",
+        "question_label": " If a PROVINCIAL election were held today in Québec, which party would you vote for?",
+        "raw_variable": "p_qcvot",
+        "choices": [
+            {
+              "value": 1,
+              "label": "Parti Libéral (PLQ)"
+            },
+            {
+              "value": 2,
+              "label": "Parti Québécois (PQ)"
+            },
+            {
+              "value": 3,
+              "label": "Coalition Avenir Québec (CAQ)"
+            },
+            {
+              "value": 4,
+              "label": "Québec Solidaire (QS)"
+            },
+            {
+              "value": 5,
+              "label": "Other"
+            },
+            {
+              "value": 6,
+              "label": "Would Not Vote"
+            },
+            {
+              "value": 7,
+              "label": "Would Spoil Ballot"
+            },
+            {
+              "value": 8,
+              "label": "It Depends"
+            },
+            {
+              "value": 9,
+              "label": "Don’t Know"
+            },
+            {
+              "value": 10,
+              "label": "Refuse to Answer"
+            }
+          ]
+      },
+      "ces2019": {
+        "class": "string",
+        "question_label": "If a provincial election were held today in ${pes19_province/ChoiceGroup/SelectedChoices}, which party would you vote for?",
+        "raw_variable": "pes19_provvote",
+        "choices": [
+            {
+              "value": 281,
+              "label": "Liberal"
+            },
+            {
+              "value": 282,
+              "label": "NDP"
+            },
+            {
+              "value": 283,
+              "label": "Green"
+            },
+            {
+              "value": 284,
+              "label": "Coalition Avenir Québec"
+            },
+            {
+              "value": 285,
+              "label": "Parti Québécois"
+            },
+            {
+              "value": 286,
+              "label": "Québec Solidaire"
+            },
+            {
+              "value": 288,
+              "label": "United Conservative"
+            },
+            {
+              "value": 289,
+              "label": "Alberta Party"
+            },
+            {
+              "value": 290,
+              "label": "Conservative"
+            },
+            {
+              "value": 291,
+              "label": "Saskatchewan Party"
+            },
+            {
+              "value": 382,
+              "label": "Unknown Label"
+            },
+            {
+              "value": 292,
+              "label": "Progressive Conservative"
+            },
+            {
+              "value": 298,
+              "label": "People's Alliance"
+            },
+            {
+              "value": 293,
+              "label": "Yukon Party"
+            },
+            {
+              "value": 295,
+              "label": "Another party (please specify)"
+            },
+            {
+              "value": 296,
+              "label": "None of these"
+            },
+            {
+              "value": 297,
+              "label": "Don't know/ Prefer not to answer"
+            }
+          ]
+      },
+      "ces2021": {
+        "class": "string",
+        "question_label": "If a provincial election were held today in ${pes21_province/ChoiceGroup/SelectedChoices}, which party would you vote for?",
+        "raw_variable": "pes21_provvote",
+        "choices": [
+            {
+              "value": 1,
+              "label": "Liberal"
+            },
+            {
+              "value": 2,
+              "label": "NDP"
+            },
+            {
+              "value": 3,
+              "label": "Green"
+            },
+            {
+              "value": 4,
+              "label": "Coalition Avenir Québec"
+            },
+            {
+              "value": 5,
+              "label": "Parti Québécois"
+            },
+            {
+              "value": 6,
+              "label": "Québec Solidaire"
+            },
+            {
+              "value": 7,
+              "label": "United Conservative"
+            },
+            {
+              "value": 8,
+              "label": "Alberta Party"
+            },
+            {
+              "value": 9,
+              "label": "Buffalo Party"
+            },
+            {
+              "value": 10,
+              "label": "Saskatchewan Party"
+            },
+            {
+              "value": 11,
+              "label": "Progressive Conservative"
+            },
+            {
+              "value": 12,
+              "label": "People's Alliance"
+            },
+            {
+              "value": 13,
+              "label": "Yukon Party"
+            },
+            {
+              "value": 14,
+              "label": "Another party (please specify)"
+            },
+            {
+              "value": 15,
+              "label": "None of these"
+            },
+            {
+              "value": 16,
+              "label": "Don't know/ Prefer not to answer"
+            }
+          ]
+      },
+      "datagotchi_pilot1_2021": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA"
+          }
+        ]
+      },
+      "datagotchi_pilot2_2022": {
+        "class": "numeric",
+        "question_label": "Pour quel parti voteriez-vous s'il y avait une élection provinciale québécoise aujourd'hui?",
+        "raw_variable": "QID41",
+        "choices": [
+            {
+              "value": 1,
+              "label": "La Coalition Avenir Québec (CAQ)"
+            },
+            {
+              "value": 2,
+              "label": "Le Parti libéral du Québec (PLQ)"
+            },
+            {
+              "value": 3,
+              "label": "Le Parti québécois (PQ)"
+            },
+            {
+              "value": 4,
+              "label": "Québec solidaire (QS)"
+            },
+            {
+              "value": 5,
+              "label": "Le Parti conservateur du Québec (PCQ)"
+            },
+            {
+              "value": 6,
+              "label": "Le Parti Vert du Québec"
+            },
+            {
+              "value": 7,
+              "label": "Autre parti"
+            },
+            {
+              "value": 8,
+              "label": "Je ne voterais pas"
+            },
+            {
+              "value": 9,
+              "label": "J’annulerais mon vote"
+            },
+            {
+              "value": 10,
+              "label": "Ne sais pas/Indécis"
+            }
+          ]
+      },
+      "omnibus_1january": {
+        "class": "numeric",
+        "question_label": "Q2)  S’il y avait une élection générale provinciale au Québec aujourd’hui, pour quel parti voteriez-vous ou seriez-vous tenté(e) de voter pour vous représenter à l'Assemblée nationale du Québec?",
+        "raw_variable": "Q2",
+        "choices": [
+          {
+            "value": 1,
+            "label": "La CAQ, la Coalition pour l.avenir du Qu.bec de Fran.ois Leg"
+          },
+          {
+            "value": 2,
+            "label": "Le PQ, le Parti qu.b.cois de Paul St-Pierre Plamondon"
+          },
+          {
+            "value": 3,
+            "label": "Le PLQ, le Parti lib.ral du Qu.bec de Dominique Anglade"
+          },
+          {
+            "value": 4,
+            "label": "QS, Qu.bec solidaire de Gabriel Nadeau-Dubois"
+          },
+          {
+            "value": 5,
+            "label": "Un autre parti"
+          },
+          {
+            "value": 6,
+            "label": "Je ne sais pas"
+          },
+          {
+            "value": 7,
+            "label": "Je n.irais pas voter"
+          },
+          {
+            "value": 8,
+            "label": "Le PCQ, le Parti Conservateur du Qu.bec d'.ric Duhaime"
+          }
+        ]
+      },
+      "omnibus_2february": {
+        "class": "numeric",
+        "question_label": "Q2)  S’il y avait une élection générale provinciale au Québec aujourd’hui, pour quel parti voteriez-vous ou seriez-vous tenté(e) de voter pour vous représenter à l'Assemblée nationale du Québec?",
+        "raw_variable": "Q2",
+        "choices": [
+            {
+              "value": 1,
+              "label": "La CAQ, la Coalition pour l.avenir du Qu.bec de Fran.ois Leg"
+            },
+            {
+              "value": 2,
+              "label": "Le PQ, le Parti qu.b.cois de Paul St-Pierre Plamondon"
+            },
+            {
+              "value": 3,
+              "label": "Le PLQ, le Parti lib.ral du Qu.bec de Dominique Anglade"
+            },
+            {
+              "value": 4,
+              "label": "QS, Qu.bec solidaire de Gabriel Nadeau-Dubois"
+            },
+            {
+              "value": 5,
+              "label": "Un autre parti"
+            },
+            {
+              "value": 6,
+              "label": "Je ne sais pas"
+            },
+            {
+              "value": 7,
+              "label": "Je n.irais pas voter"
+            },
+            {
+              "value": 8,
+              "label": "Le PCQ, le Parti Conservateur du Qu.bec d'.ric Duhaime"
+            }
+          ]
+      },
+      "omnibus_3march": {
+        "class": "numeric",
+        "question_label": "Q2)  S’il y avait une élection générale provinciale au Québec aujourd’hui, pour quel parti voteriez-vous ou seriez-vous tenté(e) de voter pour vous représenter à l'Assemblée nationale du Québec?",
+        "raw_variable": "Q2",
+        "choices": [
+            {
+              "value": 1,
+              "label": "La CAQ, la Coalition pour l.avenir du Qu.bec de Fran.ois Leg"
+            },
+            {
+              "value": 2,
+              "label": "Le PQ, le Parti qu.b.cois de Paul St-Pierre Plamondon"
+            },
+            {
+              "value": 3,
+              "label": "Le PLQ, le Parti lib.ral du Qu.bec de Dominique Anglade"
+            },
+            {
+              "value": 4,
+              "label": "QS, Qu.bec solidaire de Gabriel Nadeau-Dubois"
+            },
+            {
+              "value": 5,
+              "label": "Un autre parti"
+            },
+            {
+              "value": 6,
+              "label": "Je ne sais pas"
+            },
+            {
+              "value": 7,
+              "label": "Je n.irais pas voter"
+            },
+            {
+              "value": 8,
+              "label": "Le PCQ, le Parti Conservateur du Qu.bec d'.ric Duhaime"
+            }
+          ]
+      },
+      "omnibus_4april": {
+        "class": "numeric",
+        "question_label": "Q2)  S’il y avait une élection générale provinciale au Québec aujourd’hui, pour quel parti voteriez-vous ou seriez-vous tenté(e) de voter pour vous représenter à l'Assemblée nationale du Québec?",
+        "raw_variable": "Q2",
+        "choices": [
+            {
+              "value": 1,
+              "label": "La CAQ, la Coalition pour l.avenir du Qu.bec de Fran.ois Leg"
+            },
+            {
+              "value": 2,
+              "label": "Le PQ, le Parti qu.b.cois de Paul St-Pierre Plamondon"
+            },
+            {
+              "value": 3,
+              "label": "Le PLQ, le Parti lib.ral du Qu.bec de Dominique Anglade"
+            },
+            {
+              "value": 4,
+              "label": "QS, Qu.bec solidaire de Gabriel Nadeau-Dubois"
+            },
+            {
+              "value": 5,
+              "label": "Un autre parti"
+            },
+            {
+              "value": 6,
+              "label": "Je ne sais pas"
+            },
+            {
+              "value": 7,
+              "label": "Je n.irais pas voter"
+            },
+            {
+              "value": 8,
+              "label": "Le PCQ, le Parti Conservateur du Qu.bec d'.ric Duhaime"
+            }
+          ]
+      },
+      "omnibus_5may": {
+        "class": "numeric",
+        "question_label": "Q2)  S’il y avait une élection générale provinciale au Québec aujourd’hui, pour quel parti voteriez-vous ou seriez-vous tenté(e) de voter pour vous représenter à l'Assemblée nationale du Québec?",
+        "raw_variable": "Q2",
+        "choices": [
+            {
+              "value": 1,
+              "label": "La CAQ, la Coalition pour l.avenir du Qu.bec de Fran.ois Leg"
+            },
+            {
+              "value": 2,
+              "label": "Le PQ, le Parti qu.b.cois de Paul St-Pierre Plamondon"
+            },
+            {
+              "value": 3,
+              "label": "Le PLQ, le Parti lib.ral du Qu.bec de Dominique Anglade"
+            },
+            {
+              "value": 4,
+              "label": "QS, Qu.bec solidaire de Gabriel Nadeau-Dubois"
+            },
+            {
+              "value": 5,
+              "label": "Un autre parti"
+            },
+            {
+              "value": 6,
+              "label": "Je ne sais pas"
+            },
+            {
+              "value": 7,
+              "label": "Je n.irais pas voter"
+            },
+            {
+              "value": 8,
+              "label": "Le PCQ, le Parti Conservateur du Qu.bec d'.ric Duhaime"
+            }
+          ]
+      },
+      "omnibus_6june": {
+        "class": "numeric",
+        "question_label": "Q2)  S’il y avait une élection générale provinciale au Québec aujourd’hui, pour quel parti voteriez-vous ou seriez-vous tenté(e) de voter pour vous représenter à l'Assemblée nationale du Québec?",
+        "raw_variable": "Q2",
+        "choices": [
+            {
+              "value": 1,
+              "label": "La CAQ, la Coalition pour l.avenir du Qu.bec de Fran.ois Leg"
+            },
+            {
+              "value": 2,
+              "label": "Le PQ, le Parti qu.b.cois de Paul St-Pierre Plamondon"
+            },
+            {
+              "value": 3,
+              "label": "Le PLQ, le Parti lib.ral du Qu.bec de Dominique Anglade"
+            },
+            {
+              "value": 4,
+              "label": "QS, Qu.bec solidaire de Gabriel Nadeau-Dubois"
+            },
+            {
+              "value": 5,
+              "label": "Un autre parti"
+            },
+            {
+              "value": 6,
+              "label": "Je ne sais pas"
+            },
+            {
+              "value": 7,
+              "label": "Je n.irais pas voter"
+            },
+            {
+              "value": 8,
+              "label": "Le PCQ, le Parti Conservateur du Qu.bec d'.ric Duhaime"
+            }
+          ]
+      },
+      "sondage_nationalisme_2022": {
+        "class": "todo",
+        "question_label": "Who do you intend to vote for in the next Quebec provincial election, which will be held on October 3rd?",
+        "raw_variable": "vote_choice_qc",
+        "choices": [
+            {
+              "value": 1,
+              "label": "Coalition Avenir Québec (CAQ)"
+            },
+            {
+              "value": 2,
+              "label": "Quebec Liberal Party (PLQ)"
+            },
+            {
+              "value": 3,
+              "label": "Parti québécois (PQ)"
+            },
+            {
+              "value": 4,
+              "label": "Québec solidaire (QS)"
+            },
+            {
+              "value": 5,
+              "label": "Conservative Party of Québec (PCQ)"
+            },
+            {
+              "value": 7,
+              "label": "Other"
+            }
+          ]
+      },
+      "pco": {
+        "class": "string",
+        "question_label": "Q5.12 Which of the following parties did you vote for in the last ${q://QID91/ChoiceGroup/SelectedChoices} provincial election?",
+        "raw_variable": "Q5.12_TEXT.Pco2014",
+        "choices": [
+            {
+              "value": 1,
+              "label": "Coalition Avenir Québec"
+            },
+            {
+              "value": 2,
+              "label": "Parti libéral du Québec"
+            },
+            {
+              "value": 3,
+              "label": "Parti Québécois"
+            },
+            {
+              "value": 4,
+              "label": "Québec Solidaire"
+            },
+            {
+              "value": 5,
+              "label": "Parti conservateur du Québec"
+            },
+            {
+              "value": 6,
+              "label": "Autre parti (veuillez spécifier)"
+            },
+            {
+              "value": 7,
+              "label": "Préfère ne pas répondre"
+            }
+          ]
+      },
+      "pes_elxn_2022": {
+        "class": "numeric",
+        "question_label": "Pour quel parti avez-vous voté lors des élections provinciales québécoises de 2022?",
+        "raw_variable": "vote_2022",
+        "choices": [
+            {
+              "value": 1,
+              "label": "Coalition Avenir Québec"
+            },
+            {
+              "value": 2,
+              "label": "Parti libéral du Québec"
+            },
+            {
+              "value": 3,
+              "label": "Parti Québécois"
+            },
+            {
+              "value": 4,
+              "label": "Québec Solidaire"
+            },
+            {
+              "value": 5,
+              "label": "Parti conservateur du Québec"
+            },
+            {
+              "value": 6,
+              "label": "Autre parti (veuillez spécifier)"
+            },
+            {
+              "value": 7,
+              "label": "Préfère ne pas répondre"
+            }
+          ]
+      },
+      "quorum_mcq_pilote": {
+        "class": "NA",
+        "question_label": "NA",
+        "raw_variable": "NA",
+        "choices": [
+          {
+            "value": "NA"
+          }
+        ]
+      }
+    }
+  }
