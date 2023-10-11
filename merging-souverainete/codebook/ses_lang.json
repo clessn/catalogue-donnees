@@ -1,0 +1,745 @@
+{
+    "description": "Codebook des questions sur la langue",
+    "source_id": {
+      "ces65": {
+        "class": "categoric",
+        "question_label": " LANGUAGE SPOKEN AT HOME",
+        "raw_variable": "v314",
+        "choices": [
+          {
+            "value": "english",
+            "label": "english"
+          },
+          {
+            "value": "french",
+            "label": "french"
+          },
+          {
+            "value": "german, dutch, latvian, belgian, lithuanian,",
+            "label": "Germanic,Latvn,Lithn"
+          },
+          {
+            "value": "italian, spanish, greek, portuguese, maltese",
+            "label": "Romance,Greek"
+          },
+          {
+            "value": "other non-european, chinese, japanese, lebanese,",
+            "label": "other non-European"
+          },
+          {
+            "value": "scandanavian, finnish, swedish, norwegian, danish,",
+            "label": "Scandinavn,FinnoUgrc"
+          },
+          {
+            "value": "slavic, russian, ukranian, polish, armenian, czech,",
+            "label": "Slavic language"
+          }
+        ]
+      },
+      "ces68": {
+        "class": "categoric",
+        "question_label": "R's first language",
+        "raw_variable": "var357",
+        "choices": [
+          {
+            "value": "engl-fren equally",
+            "label": "engl-fren equally"
+          },
+          {
+            "value": "english",
+            "label": "english"
+          },
+          {
+            "value": "french",
+            "label": "french"
+          },
+          {
+            "value": "germ-dutch-oth ger'c",
+            "label": "germ-dutch-oth ger'c"
+          },
+          {
+            "value": "jewish",
+            "label": "jewish"
+          },
+          {
+            "value": "hung-finn-estonian",
+            "label": "hung-finn-estonian"
+          },
+          {
+            "value": "italian",
+            "label": "italian"
+          },
+          {
+            "value": "spanish",
+            "label": "spanish"
+          },
+          {
+            "value": "ukran pole-oth slavc",
+            "label": "ukran pole-oth slavc"
+          },
+          {
+            "value": "other comb",
+            "label": "other combinaison"
+          },
+          {
+            "value": "other sing mentions",
+            "label": "other sing mentions"
+          }
+        ]
+      },
+      "ces74": {
+        "class": "categoric",
+        "question_label": "R's first language",
+        "raw_variable": "v471",
+        "choices": [
+          {
+            "value": "english",
+            "label": "english"
+          },
+          {
+            "value": "french",
+            "label": "french"
+          },
+          {
+            "value": "english and french",
+            "label": "english and french"
+          },
+          {
+            "value": "english and one or more other",
+            "label": "english and one or more other"
+          },
+          {
+            "value": "french and one or more other",
+            "label": "french and one or more other"
+          },
+          {
+            "value": "all other combinations",
+            "label": "all other combinations"
+          },
+          {
+            "value": "other",
+            "label": "other"
+          }
+        ]
+      },
+      "ces79": {
+        "class": "categoric",
+        "question_label": "R's first language",
+        "raw_variable": "v1509",
+        "choices": [
+          {
+            "value": "1",
+            "label": "ENGLISH "
+          },
+          {
+            "value": "2",
+            "label": "FRENCH"
+          },
+          {
+            "value": "3",
+            "label": "OTHER"
+          },
+          {
+            "value": "4",
+            "label": "ENGLISH AND FRENCH"
+          },
+          {
+            "value": "5",
+            "label": "ENGLISH AND ONE OR MORE OTHER"
+          },
+          {
+            "value": "6",
+            "label": "FRENCH AND ONE OR MORE OTHER"
+          },
+          {
+            "value": "7",
+            "label": "ENGLISH AND FRENCH AND ONE OR MORE OTHER"
+          },
+          {
+            "value": "8",
+            "label": "ALL OTHER COMBINATIONS"
+          }
+        ]
+      },
+      "ces84": {
+        "class": "categoric",
+        "question_label": "R's first language",
+        "raw_variable": "var374",
+        "choices": [
+          {
+            "value": "english",
+            "label": "english"
+          },
+          {
+            "value": "german",
+            "label": "german"
+          },
+          {
+            "value": "italian",
+            "label": "italian"
+          },
+          {
+            "value": "netherlandic",
+            "label": "netherlandic"
+          },
+          {
+            "value": "french",
+            "label": "french"
+          },
+          {
+            "value": "japanese",
+            "label": "japanese"
+          },
+          {
+            "value": "english+french",
+            "label": "english+french"
+          },
+          {
+            "value": "polish",
+            "label": "polish"
+          },
+          {
+            "value": "semitic",
+            "label": "semitic"
+          },
+          {
+            "value": "ukrainian",
+            "label": "ukrainian"
+          },
+          {
+            "value": "croatian/serbian",
+            "label": "croatian/serbian"
+          },
+          {
+            "value": "vietnamese",
+            "label": "vietnamese"
+          },
+          {
+            "value": "indian/pakistani",
+            "label": "indian/pakistani"
+          },
+          {
+            "value": "spanish",
+            "label": "spanish"
+          },
+          {
+            "value": "chinese",
+            "label": "chinese"
+          },
+          {
+            "value": "portuguese",
+            "label": "portuguese"
+          },
+          {
+            "value": "philippine",
+            "label": "philippine"
+          },
+          {
+            "value": "greek",
+            "label": "greek"
+          },
+          {
+            "value": "russian",
+            "label": "russian"
+          },
+          {
+            "value": "czech/slovak",
+            "label": "czech/slovak"
+          },
+          {
+            "value": "latvian/lithuanian",
+            "label": "latvian/lithuanian"
+          },
+          {
+            "value": "hungarian/magyar",
+            "label": "hungarian/magyar"
+          },
+          {
+            "value": "scandinavian",
+            "label": "scandinavian"
+          },
+          {
+            "value": "czech+croation",
+            "label": "czech+croation"
+          },
+          {
+            "value": "yiddish",
+            "label": "yiddish"
+          },
+          {
+            "value": "yugoslavian",
+            "label": "yugoslavian"
+          },
+          {
+            "value": "finnish/estonian",
+            "label": "finnish/estonian"
+          },
+          {
+            "value": "bulgarian",
+            "label": "bulgarian"
+          },
+          {
+            "value": "finnish+swedish",
+            "label": "finnish+swedish"
+          },
+          {
+            "value": "polish+ukrainian",
+            "label": "polish+ukrainian"
+          },
+          {
+            "value": "romanian",
+            "label": "romanian"
+          },
+          {
+            "value": "engl+native indian",
+            "label": "engl+native indian"
+          },
+          {
+            "value": "native indian",
+            "label": "native indian"
+          }
+        ]
+      },
+      "ces88": {
+        "class": "categoric",
+        "question_label": "R's first language",
+        "raw_variable": "n16",
+        "choices": [
+          {
+            "value": "french",
+            "label": "french"
+          },
+          {
+            "value": "english",
+            "label": "english"
+          },
+          {
+            "value": "NA",
+            "label": "NA"
+          },
+          {
+            "value": "other",
+            "label": "other"
+          },
+          {
+            "value": "refused",
+            "label": "refused"
+          },
+          {
+            "value": "d.k.",
+            "label": "d.k."
+          }
+        ]
+      },
+      "ces93": {
+        "class": "categoric",
+        "question_label": "R's first language",
+        "raw_variable": "refn16",
+        "choices": [
+          {
+            "value": "NA",
+            "label": "NA"
+          },
+          {
+            "value": "english",
+            "label": "english"
+          },
+          {
+            "value": "french",
+            "label": "french"
+          },
+          {
+            "value": "other",
+            "label": "other"
+          },
+          {
+            "value": "d.k.",
+            "label": "d.k."
+          },
+          {
+            "value": "refused",
+            "label": "refused"
+          }
+        ]
+      },
+      "ces97": {
+        "class": "categoric",
+        "question_label": "R's first language",
+        "raw_variable": "cpsm15",
+        "choices": [
+          {
+            "value": "english",
+            "label": "english"
+          },
+          {
+            "value": "french",
+            "label": "french"
+          },
+          {
+            "value": "refused",
+            "label": "refused"
+          },
+          {
+            "value": "oth west europe",
+            "label": "oth west europe"
+          },
+          {
+            "value": "other",
+            "label": "other"
+          },
+          {
+            "value": "italian",
+            "label": "italian"
+          },
+          {
+            "value": "spanish/portuguese",
+            "label": "spanish/portuguese"
+          },
+          {
+            "value": "arabic",
+            "label": "arabic"
+          },
+          {
+            "value": "chinese",
+            "label": "chinese"
+          },
+          {
+            "value": "polish",
+            "label": "polish"
+          },
+          {
+            "value": "german",
+            "label": "german"
+          },
+          {
+            "value": "first nation",
+            "label": "first nation"
+          },
+          {
+            "value": "eng&fr",
+            "label": "eng&fr"
+          },
+          {
+            "value": "oth east europe",
+            "label": "oth east europe"
+          },
+          {
+            "value": "ukrainian",
+            "label": "ukrainian"
+          },
+          {
+            "value": "dutch",
+            "label": "dutch"
+          },
+          {
+            "value": "d.k.",
+            "label": "d.k."
+          }
+        ]
+      },
+      "ces2000": {
+        "class": "todo",
+        "question_label": "todo",
+        "raw_variable": "todo",
+        "choices": [
+          {
+            "value": "todo",
+            "label": "todo"
+          },
+          {
+            "value": "todo",
+            "label": "todo"
+          }
+        ]
+      },
+      "ces2004": {
+        "class": "todo",
+        "question_label": "todo",
+        "raw_variable": "todo",
+        "choices": [
+          {
+            "value": "todo",
+            "label": "todo"
+          },
+          {
+            "value": "todo",
+            "label": "todo"
+          }
+        ]
+      },
+      "ces2006": {
+        "class": "todo",
+        "question_label": "todo",
+        "raw_variable": "todo",
+        "choices": [
+          {
+            "value": "todo",
+            "label": "todo"
+          },
+          {
+            "value": "todo",
+            "label": "todo"
+          },
+          {
+            "value": "todo",
+            "label": "todo"
+          }
+        ]
+      },
+      "ces2008": {
+        "class": "todo",
+        "question_label": "todo",
+        "raw_variable": "todo",
+        "choices": [
+          {
+            "value": "todo",
+            "label": "todo"
+          },
+          {
+            "value": "todo",
+            "label": "todo"
+          }
+        ]
+      },
+      "ces2011": {
+        "class": "todo",
+        "question_label": "todo",
+        "raw_variable": "todo",
+        "choices": [
+          {
+            "value": "todo",
+            "label": "todo"
+          },
+          {
+            "value": "todo",
+            "label": "todo"
+          }
+        ]
+      },
+      "ces2015": {
+        "class": "todo",
+        "question_label": "todo",
+        "raw_variable": "todo",
+        "choices": [
+          {
+            "value": "todo",
+            "label": "todo"
+          },
+          {
+            "value": "todo",
+            "label": "todo"
+          }
+        ]
+      },
+      "ces2019": {
+        "class": "todo",
+        "question_label": "todo",
+        "raw_variable": "todo",
+        "choices": [
+          {
+            "value": "todo",
+            "label": "todo"
+          },
+          {
+            "value": "todo",
+            "label": "todo"
+          }
+        ]
+      },
+      "ces2021": {
+        "class": "todo",
+        "question_label": "todo",
+        "raw_variable": "todo",
+        "choices": [
+          {
+            "value": "todo",
+            "label": "todo"
+          },
+          {
+            "value": "todo",
+            "label": "todo"
+          }
+        ]
+      },
+      "datagotchi_pilot1_2021": {
+        "class": "todo",
+        "question_label": "todo",
+        "raw_variable": "todo",
+        "choices": [
+          {
+            "value": "todo",
+            "label": "todo"
+          },
+          {
+            "value": "todo",
+            "label": "todo"
+          }
+        ]
+      },
+      "datagotchi_pilot2_2022": {
+        "class": "todo",
+        "question_label": "todo",
+        "raw_variable": "todo",
+        "choices": [
+          {
+            "value": "todo",
+            "label": "todo"
+          },
+          {
+            "value": "todo",
+            "label": "todo"
+          }
+        ]
+      },
+      "omnibus_1january": {
+        "class": "todo",
+        "question_label": "todo",
+        "raw_variable": "todo",
+        "choices": [
+          {
+            "value": "todo",
+            "label": "todo"
+          },
+          {
+            "value": "todo",
+            "label": "todo"
+          }
+        ]
+      },
+      "omnibus_2february": {
+        "class": "todo",
+        "question_label": "todo",
+        "raw_variable": "todo",
+        "choices": [
+          {
+            "value": "todo",
+            "label": "todo"
+          },
+          {
+            "value": "todo",
+            "label": "todo"
+          }
+        ]
+      },
+      "omnibus_3march": {
+        "class": "todo",
+        "question_label": "todo",
+        "raw_variable": "todo",
+        "choices": [
+          {
+            "value": "todo",
+            "label": "todo"
+          },
+          {
+            "value": "todo",
+            "label": "todo"
+          }
+        ]
+      },
+      "omnibus_4april": {
+        "class": "todo",
+        "question_label": "todo",
+        "raw_variable": "todo",
+        "choices": [
+          {
+            "value": "todo",
+            "label": "todo"
+          },
+          {
+            "value": "todo",
+            "label": "todo"
+          }
+        ]
+      },
+      "omnibus_5may": {
+        "class": "todo",
+        "question_label": "todo",
+        "raw_variable": "todo",
+        "choices": [
+          {
+            "value": "todo",
+            "label": "todo"
+          },
+          {
+            "value": "todo",
+            "label": "todo"
+          }
+        ]
+      },
+      "omnibus_6june": {
+        "class": "todo",
+        "question_label": "todo",
+        "raw_variable": "todo",
+        "choices": [
+          {
+            "value": "todo",
+            "label": "todo"
+          },
+          {
+            "value": "todo",
+            "label": "todo"
+          }
+        ]
+      },
+      "sondage_nationalisme_2022": {
+        "class": "todo",
+        "question_label": "todo",
+        "raw_variable": "todo",
+        "choices": [
+          {
+            "value": "todo",
+            "label": "todo"
+          },
+          {
+            "value": "todo",
+            "label": "todo"
+          }
+        ]
+      },
+      "pco": {
+        "class": "todo",
+        "question_label": "todo",
+        "raw_variable": "todo",
+        "choices": [
+          {
+            "value": "todo",
+            "label": "todo"
+          },
+          {
+            "value": "todo",
+            "label": "todo"
+          }
+        ]
+      },
+      "pes_elxn_2022": {
+        "class": "todo",
+        "question_label": "todo",
+        "raw_variable": "todo",
+        "choices": [
+          {
+            "value": "todo",
+            "label": "todo"
+          },
+          {
+            "value": "todo",
+            "label": "todo"
+          }
+        ]
+      },
+      "quorum_mcq_pilote": {
+        "class": "todo",
+        "question_label": "todo",
+        "raw_variable": "todo",
+        "choices": [
+          {
+            "value": "todo",
+            "label": "todo"
+          },
+          {
+            "value": "todo",
+            "label": "todo"
+          }
+        ]
+      }
+    }
+  }
