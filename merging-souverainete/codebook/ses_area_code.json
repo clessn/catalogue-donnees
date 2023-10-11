@@ -73,7 +73,7 @@
       },
       "ces97": {
         "class": "num",
-        "question_label": "NA",
+        "question_label": "no_question_asked",
         "raw_variable": "areacode",
         "choices": [
           {
@@ -84,7 +84,7 @@
       },
       "ces2000": {
         "class": "num",
-        "question_label": "NA",
+        "question_label": "no_question_asked",
         "raw_variable": "areacode",
         "choices": [
           {
@@ -95,7 +95,7 @@
       },
       "ces2004": {
         "class": "num",
-        "question_label": "NA",
+        "question_label": "no_question_asked",
         "raw_variable": "ces04_areacode",
         "choices": [
           {
@@ -106,7 +106,7 @@
       },
       "ces2006": {
         "class": "num",
-        "question_label": "NA",
+        "question_label": "no_question_asked",
         "raw_variable": "areacode",
         "choices": [
           {
@@ -117,7 +117,7 @@
       },
       "ces2008": {
         "class": "num",
-        "question_label": "NA",
+        "question_label": "no_question_asked",
         "raw_variable": "cps_areacode",
         "choices": [
           {
@@ -132,7 +132,7 @@
       },
       "ces2011": {
         "class": "num",
-        "question_label": "NA",
+        "question_label": "no_question_asked",
         "raw_variable": "AREACODE",
         "choices": [
           {

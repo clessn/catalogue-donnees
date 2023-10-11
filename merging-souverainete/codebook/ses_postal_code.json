@@ -172,7 +172,7 @@
       },
       "ces2019": {
         "class": "string",
-        "question_label": "todo",
+        "question_label": "no_question_asked",
         "raw_variable": "cps19_fsa",
         "choices": [
           {
@@ -212,7 +212,7 @@
       },
       "omnibus_1january": {
         "class": "string",
-        "question_label": "NA",
+        "question_label": "no_question_asked",
         "raw_variable": "A5",
         "choices": [
           {
@@ -222,7 +222,7 @@
       },
       "omnibus_2february": {
         "class": "string",
-        "question_label": "NA",
+        "question_label": "no_question_asked",
         "raw_variable": "A5",
         "choices": [
           {
@@ -232,7 +232,7 @@
       },
       "omnibus_3march": {
         "class": "string",
-        "question_label": "NA",
+        "question_label": "no_question_asked",
         "raw_variable": "A5",
         "choices": [
           {
@@ -242,7 +242,7 @@
       },
       "omnibus_4april": {
         "class": "string",
-        "question_label": "NA",
+        "question_label": "no_question_asked",
         "raw_variable": "A5",
         "choices": [
           {
@@ -252,7 +252,7 @@
       },
       "omnibus_5may": {
         "class": "string",
-        "question_label": "NA",
+        "question_label": "no_question_asked",
         "raw_variable": "A5",
         "choices": [
           {
@@ -262,7 +262,7 @@
       },
       "omnibus_6june": {
         "class": "string",
-        "question_label": "NA",
+        "question_label": "no_question_asked",
         "raw_variable": "A5",
         "choices": [
           {
