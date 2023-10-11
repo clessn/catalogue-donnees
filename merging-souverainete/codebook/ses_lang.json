@@ -438,126 +438,990 @@
         ]
       },
       "ces2000": {
-        "class": "todo",
-        "question_label": "todo",
-        "raw_variable": "todo",
+        "class": "categoric",
+        "question_label": "R's first language",
+        "raw_variable": "cpsm15",
         "choices": [
           {
-            "value": "todo",
-            "label": "todo"
+            "value": "1",
+            "label": "English"
           },
           {
-            "value": "todo",
-            "label": "todo"
+            "value": "5",
+            "label": "French"
+          },
+          {
+            "value": "8",
+            "label": "Chinese"
+          },
+          {
+            "value": "9",
+            "label": "Croatian"
+          },
+          {
+            "value": "12",
+            "label": "Dutch"
+          },
+          {
+            "value": "15",
+            "label": "Ethiopian"
+          },
+          {
+            "value": "18",
+            "label": "German"
+          },
+          {
+            "value": "19",
+            "label": "Greek"
+          },
+          {
+            "value": "23",
+            "label": "Hungarian"
+          },
+          {
+            "value": "25",
+            "label": "Italian"
+          },
+          {
+            "value": "26",
+            "label": "Indian, Hindi, Gujarati"
+          },
+          {
+            "value": "29",
+            "label": "Japanese"
+          },
+          {
+            "value": "30",
+            "label": "Hebrew, Yiddish"
+          },
+          {
+            "value": "31",
+            "label": "Korean"
+          },
+          {
+            "value": "32",
+            "label": "Lebanese"
+          },
+          {
+            "value": "38",
+            "label": "Pakistani, Punjabi, Urdu"
+          },
+          {
+            "value": "39",
+            "label": "Filipino/Tagalog"
+          },
+          {
+            "value": "40",
+            "label": "Polish"
+          },
+          {
+            "value": "41",
+            "label": "Portuguese"
+          },
+          {
+            "value": "42",
+            "label": "Russian"
+          },
+          {
+            "value": "44",
+            "label": "Serbian"
+          },
+          {
+            "value": "48",
+            "label": "Spanish"
+          },
+          {
+            "value": "49",
+            "label": "Sri Lankan"
+          },
+          {
+            "value": "51",
+            "label": "Tamil"
+          },
+          {
+            "value": "53",
+            "label": "Ukrainian"
+          },
+          {
+            "value": "54",
+            "label": "Vietnamese"
+          },
+          {
+            "value": "58",
+            "label": "Other European"
+          },
+          {
+            "value": "59",
+            "label": "Other Asian"
+          },
+          {
+            "value": "62",
+            "label": "Other African"
+          },
+          {
+            "value": "65",
+            "label": "English & French"
+          },
+          {
+            "value": "66",
+            "label": "English & something"
+          },
+          {
+            "value": "95",
+            "label": "Inuit, Native"
+          },
+          {
+            "value": "98",
+            "label": "Don't know"
+          },
+          {
+            "value": "99",
+            "label": "Refused"
           }
         ]
       },
       "ces2004": {
-        "class": "todo",
-        "question_label": "todo",
-        "raw_variable": "todo",
+        "class": "categoric",
+        "question_label": "R's first language",
+        "raw_variable": "ces04_cps_s17",
         "choices": [
           {
-            "value": "todo",
-            "label": "todo"
+            "value": "english",
+            "label": "english"
           },
           {
-            "value": "todo",
-            "label": "todo"
+            "value": "inuit, native",
+            "label": "inuit, native"
+          },
+          {
+            "value": "czech",
+            "label": "czech"
+          },
+          {
+            "value": "french",
+            "label": "french"
+          },
+          {
+            "value": "english & french",
+            "label": "english & french"
+          },
+          {
+            "value": "other european language",
+            "label": "other european language"
+          },
+          {
+            "value": "croatian",
+            "label": "croatian"
+          },
+          {
+            "value": "korean",
+            "label": "korean"
+          },
+          {
+            "value": "refused",
+            "label": "refused"
+          },
+          {
+            "value": "italian",
+            "label": "italian"
+          },
+          {
+            "value": "arabic",
+            "label": "arabic"
+          },
+          {
+            "value": "tamil",
+            "label": "tamil"
+          },
+          {
+            "value": "don't know",
+            "label": "don't know"
+          },
+          {
+            "value": "other [specify]",
+            "label": "other [specify]"
+          },
+          {
+            "value": "pakistani, punjabi, urdu",
+            "label": "pakistani, punjabi, urdu"
+          },
+          {
+            "value": "ukrainian",
+            "label": "ukrainian"
+          },
+          {
+            "value": "greek",
+            "label": "greek"
+          },
+          {
+            "value": "polish",
+            "label": "polish"
+          },
+          {
+            "value": "chinese",
+            "label": "chinese"
+          },
+          {
+            "value": "vietnamese",
+            "label": "vietnamese"
+          },
+          {
+            "value": "spanish",
+            "label": "spanish"
+          },
+          {
+            "value": "german",
+            "label": "german"
+          },
+          {
+            "value": "other african language",
+            "label": "other african language"
+          },
+          {
+            "value": "indian, hindi, gujarati",
+            "label": "indian, hindi, gujarati"
+          },
+          {
+            "value": "japanese",
+            "label": "japanese"
+          },
+          {
+            "value": "portuguese",
+            "label": "portuguese"
+          },
+          {
+            "value": "jewish, hebrew, yiddish",
+            "label": "jewish, hebrew, yiddish"
+          },
+          {
+            "value": "hungarian",
+            "label": "hungarian"
+          },
+          {
+            "value": "filipino, tagalog",
+            "label": "filipino, tagalog"
+          },
+          {
+            "value": "english & something else",
+            "label": "english & something else"
+          },
+          {
+            "value": "dutch",
+            "label": "dutch"
+          },
+          {
+            "value": "serbian",
+            "label": "serbian"
+          },
+          {
+            "value": "lebanese",
+            "label": "lebanese"
+          },
+          {
+            "value": "danish",
+            "label": "danish"
+          },
+          {
+            "value": "slovak",
+            "label": "slovak"
+          },
+          {
+            "value": "russian",
+            "label": "russian"
+          },
+          {
+            "value": "other asian language",
+            "label": "other asian language"
           }
         ]
       },
       "ces2006": {
-        "class": "todo",
-        "question_label": "todo",
-        "raw_variable": "todo",
+        "class": "categoric",
+        "question_label": "R's first language",
+        "raw_variable": "cps_s17",
         "choices": [
           {
-            "value": "todo",
-            "label": "todo"
+            "value": "english",
+            "label": "English"
           },
           {
-            "value": "todo",
-            "label": "todo"
+            "value": "inuit, native",
+            "label": "Inuit, Native"
           },
           {
-            "value": "todo",
-            "label": "todo"
+            "value": "czech",
+            "label": "Czech"
+          },
+          {
+            "value": "german",
+            "label": "German"
+          },
+          {
+            "value": "french",
+            "label": "French"
+          },
+          {
+            "value": "english & french",
+            "label": "English & French"
+          },
+          {
+            "value": "other european language",
+            "label": "Other European Language"
+          },
+          {
+            "value": "croatian",
+            "label": "Croatian"
+          },
+          {
+            "value": "korean",
+            "label": "Korean"
+          },
+          {
+            "value": "other [specify]",
+            "label": "Other (specify)"
+          },
+          {
+            "value": "refused",
+            "label": "Refused"
+          },
+          {
+            "value": "chinese",
+            "label": "Chinese"
+          },
+          {
+            "value": "italian",
+            "label": "Italian"
+          },
+          {
+            "value": "arabic",
+            "label": "Arabic"
+          },
+          {
+            "value": "tamil",
+            "label": "Tamil"
+          },
+          {
+            "value": "don't know",
+            "label": "Don't know"
+          },
+          {
+            "value": "spanish",
+            "label": "Spanish"
+          },
+          {
+            "value": "portuguese",
+            "label": "Portuguese"
+          },
+          {
+            "value": "pakistani, punjabi, urdu",
+            "label": "Pakistani, Punjabi, Urdu"
+          },
+          {
+            "value": "ukrainian",
+            "label": "Ukrainian"
+          },
+          {
+            "value": "other asian language",
+            "label": "Other Asian Language"
+          },
+          {
+            "value": "russian",
+            "label": "Russian"
+          },
+          {
+            "value": "greek",
+            "label": "Greek"
+          },
+          {
+            "value": "english & something else",
+            "label": "English & Something Else"
+          },
+          {
+            "value": "japanese",
+            "label": "Japanese"
+          },
+          {
+            "value": "polish",
+            "label": "Polish"
+          },
+          {
+            "value": "vietnamese",
+            "label": "Vietnamese"
+          },
+          {
+            "value": "serbian",
+            "label": "Serbian"
+          },
+          {
+            "value": "other african language",
+            "label": "Other African Language"
+          },
+          {
+            "value": "indian, hindi, gujarati",
+            "label": "Indian, Hindi, Gujarati"
+          },
+          {
+            "value": "dutch",
+            "label": "Dutch"
+          },
+          {
+            "value": "jewish, hebrew, yiddish",
+            "label": "Jewish, Hebrew, Yiddish"
+          },
+          {
+            "value": "hungarian",
+            "label": "Hungarian"
+          },
+          {
+            "value": "filipino, tagalog",
+            "label": "Filipino, Tagalog"
+          },
+          {
+            "value": "lebanese",
+            "label": "Lebanese"
+          },
+          {
+            "value": "danish",
+            "label": "Danish"
+          },
+          {
+            "value": "slovak",
+            "label": "Slovak"
+          },
+          {
+            "value": "NA",
+            "label": "NA"
           }
         ]
       },
       "ces2008": {
-        "class": "todo",
-        "question_label": "todo",
-        "raw_variable": "todo",
+        "class": "categoric",
+        "question_label": "R's first language",
+        "raw_variable": "cps_s17",
         "choices": [
           {
-            "value": "todo",
-            "label": "todo"
+            "value": "1",
+            "label": "English"
           },
           {
-            "value": "todo",
-            "label": "todo"
+            "value": "5",
+            "label": "French"
+          },
+          {
+            "value": "8",
+            "label": "Chinese"
+          },
+          {
+            "value": "9",
+            "label": "Croatian"
+          },
+          {
+            "value": "10",
+            "label": "Czech"
+          },
+          {
+            "value": "11",
+            "label": "Danish"
+          },
+          {
+            "value": "12",
+            "label": "Dutch"
+          },
+          {
+            "value": "15",
+            "label": "Ethiopian"
+          },
+          {
+            "value": "17",
+            "label": "Finnish"
+          },
+          {
+            "value": "18",
+            "label": "German"
+          },
+          {
+            "value": "19",
+            "label": "Greek"
+          },
+          {
+            "value": "23",
+            "label": "Hungarian"
+          },
+          {
+            "value": "25",
+            "label": "Italian"
+          },
+          {
+            "value": "26",
+            "label": "Indian, Hindi, Gujarati"
+          },
+          {
+            "value": "29",
+            "label": "Japanese"
+          },
+          {
+            "value": "30",
+            "label": "Jewish, Hebrew, Yiddish"
+          },
+          {
+            "value": "31",
+            "label": "Korean"
+          },
+          {
+            "value": "32",
+            "label": "Lebanese"
+          },
+          {
+            "value": "38",
+            "label": "Pakistani, Punjabi, Urdu"
+          },
+          {
+            "value": "39",
+            "label": "Filipino/Tagalog"
+          },
+          {
+            "value": "40",
+            "label": "Polish"
+          },
+          {
+            "value": "41",
+            "label": "Portuguese"
+          },
+          {
+            "value": "42",
+            "label": "Russian"
+          },
+          {
+            "value": "44",
+            "label": "Serbian"
+          },
+          {
+            "value": "47",
+            "label": "Slovak"
+          },
+          {
+            "value": "48",
+            "label": "Spanish"
+          },
+          {
+            "value": "49",
+            "label": "Sri Lankan"
+          },
+          {
+            "value": "51",
+            "label": "Tamil"
+          },
+          {
+            "value": "53",
+            "label": "Ukrainian"
+          },
+          {
+            "value": "54",
+            "label": "Vietnamese"
+          },
+          {
+            "value": "s",
+            "label": "Other (specify)"
+          },
+          {
+            "value": "d",
+            "label": "Don't know"
+          },
+          {
+            "value": "r",
+            "label": "Refused"
           }
         ]
       },
       "ces2011": {
-        "class": "todo",
-        "question_label": "todo",
-        "raw_variable": "todo",
+        "class": "categoric",
+        "question_label": "R's first language",
+        "raw_variable": "CPS11_90",
         "choices": [
           {
-            "value": "todo",
-            "label": "todo"
+            "value": "English",
+            "label": "English"
           },
           {
-            "value": "todo",
-            "label": "todo"
+            "value": "Ukrainian",
+            "label": "Ukrainian"
+          },
+          {
+            "value": "French",
+            "label": "French"
+          },
+          {
+            "value": "Czech",
+            "label": "Czech"
+          },
+          {
+            "value": "English and French",
+            "label": "English and French"
+          },
+          {
+            "value": "German",
+            "label": "German"
+          },
+          {
+            "value": "Dutch",
+            "label": "Dutch"
+          },
+          {
+            "value": "refused",
+            "label": "Refused"
+          },
+          {
+            "value": "Lebanese",
+            "label": "Lebanese"
+          },
+          {
+            "value": "Other European",
+            "label": "Other European"
+          },
+          {
+            "value": "Arabic",
+            "label": "Arabic"
+          },
+          {
+            "value": "Other Middle Eastern",
+            "label": "Other Middle Eastern"
+          },
+          {
+            "value": "Italian",
+            "label": "Italian"
+          },
+          {
+            "value": "Spanish",
+            "label": "Spanish"
+          },
+          {
+            "value": "Greek",
+            "label": "Greek"
+          },
+          {
+            "value": "don't know",
+            "label": "Don't know"
+          },
+          {
+            "value": "Other, specify",
+            "label": "Other, specify"
+          },
+          {
+            "value": "Chinese",
+            "label": "Chinese"
+          },
+          {
+            "value": "Croatian",
+            "label": "Croatian"
+          },
+          {
+            "value": "Polish",
+            "label": "Polish"
+          },
+          {
+            "value": "Portuguese",
+            "label": "Portuguese"
+          },
+          {
+            "value": "Japanese",
+            "label": "Japanese"
+          },
+          {
+            "value": "Hungarian",
+            "label": "Hungarian"
+          },
+          {
+            "value": "Indian, Hindi, Gujarati",
+            "label": "Indian, Hindi, Gujarati"
+          },
+          {
+            "value": "Russian",
+            "label": "Russian"
+          },
+          {
+            "value": "Other Asian",
+            "label": "Other Asian"
+          },
+          {
+            "value": "First Native language",
+            "label": "First Native language"
+          },
+          {
+            "value": "Pakistani, Punjabi, Urdu",
+            "label": "Pakistani, Punjabi, Urdu"
+          },
+          {
+            "value": "Serbian",
+            "label": "Serbian"
+          },
+          {
+            "value": "Jewish, Hebrew, Yiddish",
+            "label": "Jewish, Hebrew, Yiddish"
+          },
+          {
+            "value": "Tamil",
+            "label": "Tamil"
+          },
+          {
+            "value": "Other African",
+            "label": "Other African"
+          },
+          {
+            "value": "other (specify)",
+            "label": "Other (specify)"
+          },
+          {
+            "value": "Filipino/Tagalog",
+            "label": "Filipino/Tagalog"
+          },
+          {
+            "value": "Korean",
+            "label": "Korean"
+          },
+          {
+            "value": "Finnish",
+            "label": "Finnish"
+          },
+          {
+            "value": "Slovak",
+            "label": "Slovak"
+          },
+          {
+            "value": "Danish",
+            "label": "Danish"
           }
         ]
       },
       "ces2015": {
-        "class": "todo",
-        "question_label": "todo",
-        "raw_variable": "todo",
+        "class": "categoric",
+        "question_label": "R's first language",
+        "raw_variable": "first_lang",
         "choices": [
           {
-            "value": "todo",
-            "label": "todo"
+            "value": "1",
+            "label": "English"
           },
           {
-            "value": "todo",
-            "label": "todo"
+            "value": "2",
+            "label": "French"
+          },
+          {
+            "value": "3",
+            "label": "Chinese"
+          },
+          {
+            "value": "4",
+            "label": "Croatian"
+          },
+          {
+            "value": "5",
+            "label": "Czech"
+          },
+          {
+            "value": "6",
+            "label": "Danish"
+          },
+          {
+            "value": "7",
+            "label": "Dutch"
+          },
+          {
+            "value": "8",
+            "label": "Ethiopian"
+          },
+          {
+            "value": "9",
+            "label": "Finnish"
+          },
+          {
+            "value": "10",
+            "label": "German"
+          },
+          {
+            "value": "11",
+            "label": "Greek"
+          },
+          {
+            "value": "12",
+            "label": "Hungarian"
+          },
+          {
+            "value": "13",
+            "label": "Italian"
+          },
+          {
+            "value": "14",
+            "label": "Indian, Hindi, Gujarati"
+          },
+          {
+            "value": "15",
+            "label": "Japanese"
+          },
+          {
+            "value": "16",
+            "label": "Jewish, Hebrew, Yiddish"
+          },
+          {
+            "value": "17",
+            "label": "Korean"
+          },
+          {
+            "value": "18",
+            "label": "Lebanese"
+          },
+          {
+            "value": "19",
+            "label": "Pakistani, Punjabi, Urdu"
+          },
+          {
+            "value": "20",
+            "label": "Filipino / Tagalog"
+          },
+          {
+            "value": "21",
+            "label": "Polish"
+          },
+          {
+            "value": "22",
+            "label": "Portuguese"
+          },
+          {
+            "value": "23",
+            "label": "Russian"
+          },
+          {
+            "value": "24",
+            "label": "Serbian"
+          },
+          {
+            "value": "25",
+            "label": "Slovak"
+          },
+          {
+            "value": "26",
+            "label": "Spanish"
+          },
+          {
+            "value": "27",
+            "label": "Sri Lankan"
+          },
+          {
+            "value": "28",
+            "label": "Tamil"
+          },
+          {
+            "value": "29",
+            "label": "Ukrainian"
+          },
+          {
+            "value": "30",
+            "label": "Vietnamese"
+          },
+          {
+            "value": "31",
+            "label": "Other"
+          },
+          {
+            "value": "32",
+            "label": "Don't Know"
+          },
+          {
+            "value": "33",
+            "label": "Refuse to Answer"
           }
         ]
       },
       "ces2019": {
-        "class": "todo",
-        "question_label": "todo",
-        "raw_variable": "todo",
+        "class": "categoric",
+        "question_label": "Survey langage",
+        "raw_variable": "cps19_Q_Language",
         "choices": [
           {
-            "value": "todo",
-            "label": "todo"
+            "value": "FR-CA",
+            "label": "FR-CA"
           },
           {
-            "value": "todo",
-            "label": "todo"
+            "value": "EN",
+            "label": "EN"
           }
         ]
       },
       "ces2021": {
-        "class": "todo",
-        "question_label": "todo",
-        "raw_variable": "todo",
+        "class": "categoric",
+        "question_label": "LANGUAGE SPOKEN AT HOME",
+        "raw_variable": "pes21_lang",
         "choices": [
           {
-            "value": "todo",
-            "label": "todo"
+            "value": "French",
+            "label": "French"
           },
           {
-            "value": "todo",
-            "label": "todo"
+            "value": "English",
+            "label": "English"
+          },
+          {
+            "value": "Persian, Farsi",
+            "label": "Persian, Farsi"
+          },
+          {
+            "value": "Russian",
+            "label": "Russian"
+          },
+          {
+            "value": "Chinese, Cantonese, Mandarin",
+            "label": "Chinese, Cantonese, Mandarin"
+          },
+          {
+            "value": "Korean",
+            "label": "Korean"
+          },
+          {
+            "value": "Other (please specify)",
+            "label": "Other (please specify)"
+          },
+          {
+            "value": "Indian, Hindi, Gujarati",
+            "label": "Indian, Hindi, Gujarati"
+          },
+          {
+            "value": "Filipino / Tagalog",
+            "label": "Filipino / Tagalog"
+          },
+          {
+            "value": "Arabic",
+            "label": "Arabic"
+          },
+          {
+            "value": "Spanish",
+            "label": "Spanish"
+          },
+          {
+            "value": "Pakistani, Punjabi, Urdu",
+            "label": "Pakistani, Punjabi, Urdu"
+          },
+          {
+            "value": "Tamil",
+            "label": "Tamil"
+          },
+          {
+            "value": "Vietnamese",
+            "label": "Vietnamese"
+          },
+          {
+            "value": "Italian",
+            "label": "Italian"
+          },
+          {
+            "value": "Don't know/ Prefer not to answer",
+            "label": "Don't know/ Prefer not to answer"
+          },
+          {
+            "value": "German",
+            "label": "German"
+          },
+          {
+            "value": "Aboriginal language (please specify)",
+            "label": "Aboriginal language (please specify)"
           }
         ]
       },
