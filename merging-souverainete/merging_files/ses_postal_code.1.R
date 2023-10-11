@@ -14,37 +14,46 @@ names(output) <- ids
 
 ## ces65 -------------------------------------------------------------------
 
-#### 1. Get raw gender variable vector
-raw_ces65 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/1965/ces65.csv",
-                            variable_name = "v337")
-table(raw_ces65, useNA = "always")
-
-#### 2. clean variable
-clean_ces65 <- NA
-clean_ces65[raw_ces65 == "female"] <- "female"
-clean_ces65[raw_ces65 == "male"] <- "male"
-table(clean_ces65)
-
-#### 3. name each element in clean (assign the respondent id to each person in the vector)
-##### source_id = ces65
-names(clean_ces65) <- sondr::generate_survey_ids(n_respondents = length(clean_ces65), ## number of respondents
-                                           source_id = "ces65") ## source_id
-
-## 4. add clean to the master output
-output_gender <- sondr::match_and_update(main = output_gender, ## vector to update
-                                  updates = clean_ces65) ## vector with updates
+# Nothing
 
 ## ces68 -------------------------------------------------------------------
 
+# Nothing
+
 ## ces74 -------------------------------------------------------------------
+
+# Nothing
 
 ## ces79 -------------------------------------------------------------------
 
+# Nothing
+
 ## ces84 -------------------------------------------------------------------
+
+# Nothing
 
 ## ces88 -------------------------------------------------------------------
 
+# Nothing
+
 ## ces93 -------------------------------------------------------------------
+
+raw_ces93 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/1993/ces93.csv",
+                            variable_name = "cpspost")
+table(raw_ces93, useNA = "always")
+
+#### 2. clean variable
+clean_ces93 <- raw_ces93
+table(clean_ces93)
+
+#### 3. name each element in clean (assign the respondent id to each person in the vector)
+##### source_id = ces65
+names(clean_ces93) <- sondr::generate_survey_ids(n_respondents = length(clean_ces93), ## number of respondents
+                                           source_id = "ces93") ## source_id
+
+## 4. add clean to the master output
+output_gender <- sondr::match_and_update(main = output_gender, ## vector to update
+                                  updates = clean_ces93) ## vector with updates
 
 ## ces97 -------------------------------------------------------------------
 

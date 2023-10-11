@@ -1,5 +1,5 @@
 {
-    "description": "Source principale d'information",
+    "description": "Source principale d'information médiatique des repondants",
     "source_id": {
         "omnibus_1january": {
           "class": "NA",

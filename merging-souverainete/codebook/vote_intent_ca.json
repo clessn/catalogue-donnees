@@ -1,5 +1,5 @@
 {
-    "description": "Vote intent at the canadian level",
+    "description": "Vote intent in the canadian elections",
     "source_id": {
       "ces65": {
         "class": "string",

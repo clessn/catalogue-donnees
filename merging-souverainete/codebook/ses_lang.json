@@ -1,5 +1,5 @@
 {
-    "description": "Codebook des questions sur la langue",
+    "description": "Langue des répondants",
     "source_id": {
       "ces65": {
         "class": "categoric",

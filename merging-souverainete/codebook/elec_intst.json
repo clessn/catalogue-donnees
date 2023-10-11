@@ -1,5 +1,5 @@
 {
-    "description": "",
+    "description": "Degree of interest in the elections",
     "source_id": {
         "ces68": {
             "class": "Ordinal",

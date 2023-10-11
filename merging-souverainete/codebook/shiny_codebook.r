@@ -15,7 +15,7 @@ ui <- fluidPage(
         bottom: 0;
         left: 0;
         z-index: -1;
-        background-image: url('https://upload.wikimedia.org/wikipedia/commons/b/b4/Logo_du_comit%C3%A9_du_OUI_du_r%C3%A9f%C3%A9rendum_souverainet%C3%A9_association.svg');
+        background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/5f/Flag_of_Quebec.svg');
         background-size: cover;
         opacity: 1;
       }
@@ -24,7 +24,7 @@ ui <- fluidPage(
       }
     "))
   ),
-  titlePanel("Codebook souveraineté - ON VA L'AVOIR NOTRE PAYS!"),
+  titlePanel("Codebook merging souveraineté"),
   sidebarLayout(
     sidebarPanel(
       selectInput("fileSelect", "Sélectionnez votre variable", "")
