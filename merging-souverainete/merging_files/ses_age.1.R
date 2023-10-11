@@ -5,9 +5,9 @@ library(tidyverse)
 source("merging-souverainete/config.R")
 
 ## empty vector where the clean values will go. same length as the n of ids.
-output <- rep(NA, length(ids))
+output_age <- rep(NA, length(ids))
 ### each element in output is a respondent with a unique respondent id
-names(output) <- ids
+names(output_age) <- ids
 
 
 # Merging and cleaning ----------------------------------------------------
@@ -16,8 +16,21 @@ names(output) <- ids
 #### 1. Get raw gender variable vector
 
 raw_ces65 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/1965/ces65.csv",
-                                  variable_name = "v337")
+                                  variable_name = "v335")
 table(raw_ces65, useNA = "always")
+
+#### 2. clean variable
+clean_ces65 <- raw_ces65
+
+#### 3. name each element in clean (assign the respondent id to each person in the vector)
+##### source_id = ces65
+names(clean_ces65) <- sondr::generate_survey_ids(n_respondents = length(clean_ces65), ## number of respondents
+                                                 source_id = "ces65") ## source_id
+
+## 4. add clean to the master output
+output_age <- sondr::match_and_update(main = output_age, ## vector to update
+                                         updates = clean_ces65) ## vector with updates
+
 
 ## ces68 -------------------------------------------------------------------
 
