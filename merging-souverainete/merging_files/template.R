@@ -1,9 +1,13 @@
 # Packages ----------------------------------------------------------------
 library(tidyverse)
 
-
 # Config ------------------------------------------------------------------
 source("merging-souverainete/config.R")
+
+## empty vector where the clean values will go. same length as the n of ids.
+output <- rep(NA, length(ids))
+### each element in output is a respondent with a unique respondent id
+names(output) <- ids
 
 
 # Merging and cleaning ----------------------------------------------------
