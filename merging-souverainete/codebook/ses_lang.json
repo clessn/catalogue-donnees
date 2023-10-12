@@ -1426,182 +1426,303 @@
         ]
       },
       "datagotchi_pilot1_2021": {
-        "class": "todo",
-        "question_label": "todo",
-        "raw_variable": "todo",
+        "class": "categoric",
+        "question_label": "Langue maternelle",
+        "raw_variable": "LANGM",
         "choices": [
           {
-            "value": "todo",
-            "label": "todo"
+            "value": "1",
+            "label": "Anglais"
           },
           {
-            "value": "todo",
-            "label": "todo"
+            "value": "2",
+            "label": "Français"
+          },
+          {
+            "value": "3",
+            "label": "autre"
           }
         ]
       },
       "datagotchi_pilot2_2022": {
-        "class": "todo",
-        "question_label": "todo",
-        "raw_variable": "todo",
+        "class": "categoric",
+        "question_label": "LANGUAGE SPOKEN AT HOME",
+        "raw_variable": "«language...131» if survey in english and «language...25» if survey is in french",
         "choices": [
           {
-            "value": "todo",
-            "label": "todo"
+            "value": "1",
+            "label": "english"
           },
           {
-            "value": "todo",
-            "label": "todo"
+            "value": "2",
+            "label": "french"
+          },
+          {
+            "value": "3",
+            "label": "autre"
           }
         ]
       },
       "omnibus_1january": {
-        "class": "todo",
-        "question_label": "todo",
-        "raw_variable": "todo",
+        "class": "categoric",
+        "question_label": "Langue maternelle",
+        "raw_variable": "LANGUE",
         "choices": [
           {
-            "value": "todo",
-            "label": "todo"
+            "value": "1",
+            "label": "Français"
           },
           {
-            "value": "todo",
-            "label": "todo"
+            "value": "2",
+            "label": "Anglais"
+          },
+          {
+            "value": "3",
+            "label": "autre"
           }
         ]
       },
       "omnibus_2february": {
-        "class": "todo",
-        "question_label": "todo",
-        "raw_variable": "todo",
+        "class": "categoric",
+        "question_label": "Langue maternelle",
+        "raw_variable": "LANGUE",
         "choices": [
           {
-            "value": "todo",
-            "label": "todo"
+            "value": "1",
+            "label": "Français"
           },
           {
-            "value": "todo",
-            "label": "todo"
+            "value": "2",
+            "label": "Anglais"
+          },
+          {
+            "value": "3",
+            "label": "autre"
           }
         ]
       },
       "omnibus_3march": {
-        "class": "todo",
-        "question_label": "todo",
-        "raw_variable": "todo",
+        "class": "categoric",
+        "question_label": "Langue maternelle",
+        "raw_variable": "LANGUE",
         "choices": [
           {
-            "value": "todo",
-            "label": "todo"
+            "value": "1",
+            "label": "Français"
           },
           {
-            "value": "todo",
-            "label": "todo"
+            "value": "2",
+            "label": "Anglais"
+          },
+          {
+            "value": "3",
+            "label": "autre"
           }
         ]
       },
       "omnibus_4april": {
-        "class": "todo",
-        "question_label": "todo",
-        "raw_variable": "todo",
+        "class": "categoric",
+        "question_label": "Langue maternelle",
+        "raw_variable": "LANGUE",
         "choices": [
           {
-            "value": "todo",
-            "label": "todo"
+            "value": "1",
+            "label": "Français"
           },
           {
-            "value": "todo",
-            "label": "todo"
+            "value": "2",
+            "label": "Anglais"
+          },
+          {
+            "value": "3",
+            "label": "autre"
           }
         ]
       },
       "omnibus_5may": {
-        "class": "todo",
-        "question_label": "todo",
-        "raw_variable": "todo",
+        "class": "categoric",
+        "question_label": "Langue maternelle",
+        "raw_variable": "LANGUE",
         "choices": [
           {
-            "value": "todo",
-            "label": "todo"
+            "value": "1",
+            "label": "Français"
           },
           {
-            "value": "todo",
-            "label": "todo"
+            "value": "2",
+            "label": "Anglais"
+          },
+          {
+            "value": "3",
+            "label": "autre"
           }
         ]
       },
       "omnibus_6june": {
-        "class": "todo",
-        "question_label": "todo",
-        "raw_variable": "todo",
+        "class": "categoric",
+        "question_label": "Langue maternelle",
+        "raw_variable": "LANGUE",
         "choices": [
           {
-            "value": "todo",
-            "label": "todo"
+            "value": "1",
+            "label": "Français"
           },
           {
-            "value": "todo",
-            "label": "todo"
+            "value": "2",
+            "label": "Anglais"
+          },
+          {
+            "value": "3",
+            "label": "autre"
           }
         ]
       },
       "sondage_nationalisme_2022": {
-        "class": "todo",
-        "question_label": "todo",
-        "raw_variable": "todo",
+        "class": "categoric",
+        "question_label": "R's first language",
+        "raw_variable": "language",
         "choices": [
           {
-            "value": "todo",
-            "label": "todo"
+            "value": "Anglais",
+            "label": "Anglais"
           },
           {
-            "value": "todo",
-            "label": "todo"
+            "value": "English",
+            "label": "English "
+          },
+          {
+            "value": "Français",
+            "label": "Français "
+          },
+          {
+            "value": "French",
+            "label": "French "
+          },
+          {
+            "value": "Autre",
+            "label": "Autre "
+          },
+          {
+            "value": "Other",
+            "label": "Other "
           }
         ]
       },
       "pco": {
-        "class": "todo",
-        "question_label": "todo",
-        "raw_variable": "todo",
+        "class": "categoric",
+        "question_label": "LANGUAGE SPOKEN AT HOME",
+        "raw_variable": "Q16.4.Pco2014",
         "choices": [
           {
-            "value": "todo",
-            "label": "todo"
+            "value": "French",
+            "label": "French"
           },
           {
-            "value": "todo",
-            "label": "todo"
+            "value": "English",
+            "label": "English"
+          },
+          {
+            "value": "Urdu",
+            "label": "Urdu"
+          },
+          {
+            "value": "Mandarin",
+            "label": "Mandarin"
+          },
+          {
+            "value": "Spanish",
+            "label": "Spanish"
+          },
+          {
+            "value": "Portuguese",
+            "label": "Portuguese"
+          },
+          {
+            "value": "Romanian",
+            "label": "Romanian"
+          },
+          {
+            "value": "Russian",
+            "label": "Russian"
+          },
+          {
+            "value": "Arabic",
+            "label": "Arabic"
+          },
+          {
+            "value": "German",
+            "label": "German"
+          },
+          {
+            "value": "Dutch",
+            "label": "Dutch"
+          },
+          {
+            "value": "Italian",
+            "label": "Italian"
+          },
+          {
+            "value": "Ukrainian",
+            "label": "Ukrainian"
+          },
+          {
+            "value": "Panjabi (Punjabi)",
+            "label": "Panjabi (Punjabi)"
+          },
+          {
+            "value": "Persian (Farsi)",
+            "label": "Persian (Farsi)"
+          },
+          {
+            "value": "Hindi",
+            "label": "Hindi"
+          },
+          {
+            "value": "Cantonese",
+            "label": "Cantonese"
+          },
+          {
+            "value": "Japanese",
+            "label": "Japanese"
           }
         ]
       },
       "pes_elxn_2022": {
-        "class": "todo",
-        "question_label": "todo",
-        "raw_variable": "todo",
+        "class": "categoric",
+        "question_label": "NA",
+        "raw_variable": "NA",
         "choices": [
-          {
-            "value": "todo",
-            "label": "todo"
-          },
-          {
-            "value": "todo",
-            "label": "todo"
-          }
+          "NA"
         ]
       },
       "quorum_mcq_pilote": {
-        "class": "todo",
-        "question_label": "todo",
-        "raw_variable": "todo",
+        "class": "categoric",
+        "question_label": "LANGUAGE SPOKEN AT HOME",
+        "raw_variable": "ses_lang if survey is in french and EN_ses_lang if survey is in french",
         "choices": [
           {
-            "value": "todo",
-            "label": "todo"
+            "value": "Anglais",
+            "label": "Anglais"
           },
           {
-            "value": "todo",
-            "label": "todo"
+            "value": "English",
+            "label": "English "
+          },
+          {
+            "value": "Français",
+            "label": "Français "
+          },
+          {
+            "value": "French",
+            "label": "French "
+          },
+          {
+            "value": "Autre",
+            "label": "Autre "
+          },
+          {
+            "value": "Other",
+            "label": "Other "
           }
         ]
       }
