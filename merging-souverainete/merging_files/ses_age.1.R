@@ -129,6 +129,26 @@ output_age <- sondr::match_and_update(main = output_age, ## vector to update
 
 ## ces93 -------------------------------------------------------------------
 
+raw_ces93 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/1993/ces93.csv",
+                                  variable_name = "cpsage")
+table(raw_ces93, useNA = "always")
+
+#### 2. clean variable
+clean_ces93 <- NA
+clean_ces93_yrbirth <- raw_ces93
+table(clean_ces93_yrbirth, useNA = "always")
+clean_ces93_yrbirth[raw_ces93==9997 | raw_ces93==9998 | raw_ces93==9999] <- NA
+table(clean_ces93_yrbirth, useNA = "always")
+clean_ces93 <- 1993-clean_ces93_yrbirth
+table(clean_ces93, useNA = "always")
+#### 3. name each element in clean (assign the respondent id to each person in the vector)
+##### source_id = ces68
+names(clean_ces93) <- sondr::generate_survey_ids(n_respondents = length(clean_ces93), ## number of respondents
+                                                 source_id = "ces93") ## source_id
+
+## 4. add clean to the master output
+output_age <- sondr::match_and_update(main = output_age, ## vector to update
+                                      updates = clean_ces93) ## vector with updates
 ## ces97 -------------------------------------------------------------------
 
 ## ces2000 -------------------------------------------------------------------
@@ -177,4 +197,5 @@ output_age <- sondr::match_and_update(main = output_age, ## vector to update
 ### FACTORISE, LEVELS, etc.
 
 ##### SAVE VECTOR WHERE??
+
 

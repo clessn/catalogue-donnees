@@ -103,7 +103,7 @@
           "ces2004": {
             "class": "numeric",
             "question_label": "Year of birth",
-            "raw_variable": "cps_s1",
+            "raw_variable": "yearofbirth",
             "choices": [
               {
                 "value": "1900-1986",
