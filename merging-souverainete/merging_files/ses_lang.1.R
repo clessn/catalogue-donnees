@@ -552,13 +552,79 @@ output_lang <- sondr::match_and_update(main = output_lang, ## vector to update
                                        updates = clean_datgot22) ## vector with updates
 
 
-## sondage_nationalisme_2022 -------------------------------------------------------------------
+## sondage_nationalisme_2022 ------------------------------------------------
 
-## quorum_mcq_pilote -------------------------------------------------------------------
+raw_sond_nat<- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/sondage_nationalisme_2022/sondage_nationalisme_2022.csv",
+                                    variable_name = "language")
+table(raw_sond_nat, useNA = "always")
 
-## pes_elxn_2022_text -------------------------------------------------------------------
+#### 2. clean variable
+clean_sond_nat <- NA
+clean_sond_nat[raw_sond_nat=="English" | raw_sond_nat=="Anglais"] <- "english"
+clean_sond_nat[raw_sond_nat=="French" | raw_sond_nat=="Français"] <- "french"
+clean_sond_nat[raw_sond_nat=="Other" | raw_sond_nat=="Autre"] <- "other"
+table(clean_sond_nat, useNA = "always")
+
+#### 3. name each element in clean (assign the respondent id to each person in the vector)
+##### source_id = sond_nat
+names(clean_sond_nat) <- sondr::generate_survey_ids(n_respondents = length(clean_sond_nat), ## number of respondents
+                                                    source_id = "sond_nat") ## source_id
+
+## 4. add clean to the master output
+output_lang <- sondr::match_and_update(main = output_lang, ## vector to update
+                                       updates = clean_sond_nat) ## vector with updates
+
+
+## quorum_mcq_pilote ---------------------------------------------------------
+
+raw_quorum1 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/quorum_mcq_pilote/quorum_mcq_pilote.csv",
+                                    variable_name = "ses_lang")
+raw_quorum2 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/quorum_mcq_pilote/quorum_mcq_pilote.csv",
+                                    variable_name = "EN_ses_lang")
+
+raw_quorum <- c(raw_quorum1, raw_quorum2)
+table(raw_quorum, useNA = "always")
+
+#### 2. clean variable
+clean_quorum <- NA
+clean_quorum[raw_quorum=="English" | raw_quorum=="Anglais"] <- "english"
+clean_quorum[raw_quorum=="French" | raw_quorum=="Français"] <- "french"
+clean_quorum[raw_quorum=="Other" | raw_quorum=="Autre"] <- "other"
+table(clean_quorum, useNA = "always")
+
+#### 3. name each element in clean (assign the respondent id to each person in the vector)
+##### source_id = quorum
+names(clean_quorum) <- sondr::generate_survey_ids(n_respondents = length(clean_quorum), ## number of respondents
+                                                    source_id = "quorum") ## source_id
+
+## 4. add clean to the master output
+output_lang <- sondr::match_and_update(main = output_lang, ## vector to update
+                                       updates = clean_quorum) ## vector with updates
+
+## pes_elxn_2022_text ----------------------------------------------------
+### NA pour PES
 
 ## pco -------------------------------------------------------------------
+
+raw_pco<- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/pco/pco.csv",
+                                    variable_name = "Q16.4.Pco2014")
+table(raw_pco, useNA = "always")
+
+#### 2. clean variable
+clean_pco <- NA
+clean_pco[raw_pco=="English"] <- "english"
+clean_pco[raw_pco=="French"] <- "french"
+clean_pco[raw_pco!="English" & raw_pco!="French" & raw_pco!="What language do you speak most often at home?"] <- "other"
+table(clean_pco, useNA = "always")
+
+#### 3. name each element in clean (assign the respondent id to each person in the vector)
+##### source_id = pco
+names(clean_pco) <- sondr::generate_survey_ids(n_respondents = length(clean_pco), ## number of respondents
+                                                    source_id = "pco") ## source_id
+
+## 4. add clean to the master output
+output_lang <- sondr::match_and_update(main = output_lang, ## vector to update
+                                       updates = clean_pco) ## vector with updates
 
 
 # Output ------------------------------------------------------------------
