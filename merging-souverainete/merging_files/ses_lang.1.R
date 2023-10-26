@@ -531,14 +531,9 @@ output_lang <- sondr::match_and_update(main = output_lang, ## vector to update
 
 ## datagotchi_pilot2_2022 -------------------------------------------------------------------
 
-raw_datgot22_en <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/datagotchi_pilot2_2022/datagotchi_pilot2_2022.csv",
-                                     variable_name = "language...131")
-table(raw_datgot22_en, useNA = "always")
-
-raw_datgot22_fr <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/datagotchi_pilot2_2022/datagotchi_pilot2_2022.csv",
-                                        variable_name = "language...25")
-table(raw_datgot22_fr, useNA = "always")
-
+raw_datgot22<- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/datagotchi_pilot2_2022/datagotchi_pilot2_2022.csv",
+                                     variable_name = "language")
+table(raw_datgot22, useNA = "always")
 
 #### 2. clean variable
 clean_datgot22 <- NA
