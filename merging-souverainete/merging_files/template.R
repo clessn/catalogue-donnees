@@ -3,7 +3,7 @@ library(tidyverse)
 
 # Config ------------------------------------------------------------------
 source("merging-souverainete/config.R")
-
+sample(ids, 20) ### 20 ids random
 ## empty vector where the clean values will go. same length as the n of ids.
 output <- rep(NA, length(ids))
 ### each element in output is a respondent with a unique respondent id
