@@ -84,9 +84,40 @@ output_gender <- sondr::match_and_update(main = output_gender, ## vector to upda
 
 ## datagotchi_pilot2_2022 -------------------------------------------------------------------
 
+### ICI IL FAUT MERGER FRANCAIS ET ANGLAIS
+
+#### 1. Get raw gender variable vector
+raw_fr <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/datagotchi_pilot2_2022/datagotchi_pilot2_2022.csv",
+                                  variable_name = "income_fr")
+table(raw_fr, useNA = "always")
+
+raw_en <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/datagotchi_pilot2_2022/datagotchi_pilot2_2022.csv",
+                               variable_name = "income_en")
+table(raw_en, useNA = "always")
+
+raw <- coalesce(raw_fr, raw_en)
+
+#### 2. clean variable
+
+
 ## sondage_nationalisme_2022 -------------------------------------------------------------------
 
 ## quorum_mcq_pilote -------------------------------------------------------------------
+
+### ICI IL FAUT MERGER FRANCAIS ET ANGLAIS
+
+#### 1. Get raw gender variable vector
+raw_fr <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/quorum_mcq_pilote/quorum_mcq_pilote.csv",
+                               variable_name = "income_fr")
+table(raw_fr, useNA = "always")
+
+raw_en <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/quorum_mcq_pilote/quorum_mcq_pilote.csv",
+                               variable_name = "income_en")
+table(raw_en, useNA = "always")
+
+raw <- coalesce(raw_fr, raw_en)
+
+#### 2. clean variable
 
 ## pes_elxn_2022_text -------------------------------------------------------------------
 
