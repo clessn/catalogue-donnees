@@ -63,7 +63,6 @@ output_num <- sondr::match_and_update(main = output_num, ## vector to update
 output_centile <- sondr::match_and_update(main = output_centile, ## vector to update
                                       updates = clean_centile) ## vector with updates
 
-
 ## ces68 -------------------------------------------------------------------
 
 #### 1. Get raw gender variable vector
@@ -564,17 +563,273 @@ hist(output_num)
 table(output_centile)
 hist(output_centile)
 
-## ces2011 -------------------------------------------------------------------
+## ces11 -------------------------------------------------------------------
+
+source_id <- "ces2011"
+
+#### 1. Get raw gender variable vector
+raw1 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/2011/ces2011.csv",
+                             variable_name = "CPS11_92")
+table(raw1, useNA = "always")
+
+## remove 998 999 who are dont know refused
+raw1[raw1 %in% c(998, 999)] <- NA
+raw1 <- raw1*1000
+table(raw1)
+
+raw2 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/2011/ces2011.csv",
+                             variable_name = "CPS11_93")
+table(raw2, useNA = "always")
+raw2[raw2 %in% c("refused", "don't know")] <- NA
+
+
+#### 2. clean variable
+raw2 <- parse_money_vector(values = raw2,
+                           sep = "and",
+                           floor = "less than $29,999            ",
+                           ceiling = "more than $110,000           ",
+                           ceiling_increment = 20000)
+table(raw2)
+
+clean_num <- coalesce(raw1, raw2)
+hist(clean_num)
+
+## to quantile
+clean_centile <- round(ecdf(clean_num)(clean_num)*100)
+hist(clean_centile)
+
+#### 3. name each element in clean (assign the respondent id to each person in the vector)
+##### source_id = ces65
+names(clean_num) <- sondr::generate_survey_ids(n_respondents = length(clean_num), ## number of respondents
+                                               source_id = source_id) ## source_id
+names(clean_centile) <- sondr::generate_survey_ids(n_respondents = length(clean_centile), ## number of respondents
+                                                   source_id = source_id) ## source_id
+
+## 4. add clean to the master output
+output_num <- sondr::match_and_update(main = output_num, ## vector to update
+                                      updates = clean_num) ## vector with updates
+output_centile <- sondr::match_and_update(main = output_centile, ## vector to update
+                                          updates = clean_centile) ## vector with updates
+
+table(output_num)
+hist(output_num)
+table(output_centile)
+hist(output_centile)
 
 ## ces2015 -------------------------------------------------------------------
 
+source_id <- "ces2015"
+
+#### 1. Get raw gender variable vector
+raw <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/2015/ces2015.csv",
+                            variable_name = "income_full")
+table(raw, useNA = "always")
+
+## fix labels
+labels <- c("Less than $30,000", "$30,000 to $60,000", "$60,000 to $90,000", "$90,000 to $110,000", "More than $110,000")
+names(labels) <- as.character(c(1, 2, 3, 4, 5))
+raw <- labels[raw]
+table(raw)
+
+#### 2. clean variable
+clean_num <- parse_money_vector(values = raw,
+                                sep = "to",
+                                floor = "Less than $30,000",
+                                ceiling = "More than $110,000",
+                                ceiling_increment = 20000)
+table(clean_num)
+
+## to quantile
+clean_centile <- round(ecdf(clean_num)(clean_num)*100)
+
+#### 3. name each element in clean (assign the respondent id to each person in the vector)
+##### source_id = ces65
+names(clean_num) <- sondr::generate_survey_ids(n_respondents = length(clean_num), ## number of respondents
+                                               source_id = source_id) ## source_id
+names(clean_centile) <- sondr::generate_survey_ids(n_respondents = length(clean_centile), ## number of respondents
+                                                   source_id = source_id) ## source_id
+
+## 4. add clean to the master output
+output_num <- sondr::match_and_update(main = output_num, ## vector to update
+                                      updates = clean_num) ## vector with updates
+output_centile <- sondr::match_and_update(main = output_centile, ## vector to update
+                                          updates = clean_centile) ## vector with updates
+
+table(output_num)
+hist(output_num)
+table(output_centile)
+hist(output_centile)
+
 ## ces2019 -------------------------------------------------------------------
+
+source_id <- "ces2019"
+
+#### 1. Get raw gender variable vector
+raw1 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/2019/ces2019.csv",
+                             variable_name = "cps19_income_number")
+table(raw1, useNA = "always")
+
+raw2 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/2019/ces2019.csv",
+                             variable_name = "cps19_income_cat")
+table(raw2, useNA = "always")
+raw1[raw2 == "No income"] <- 0
+raw2[raw2 %in% c("Don't know/ Prefer not to answer", "No income")] <- NA
+raw2[raw2 == "$1 to $30,000"] <- "less $30,000"
+
+#### 2. clean variable
+raw2 <- parse_money_vector(values = raw2,
+                           sep = "to",
+                           floor = "less $30,000",
+                           ceiling = "More than $200,000",
+                           ceiling_increment = 50000)
+table(raw2)
+
+clean_num <- coalesce(raw1, raw2)
+hist(clean_num)
+
+## to quantile
+clean_centile <- round(ecdf(clean_num)(clean_num)*100)
+hist(clean_centile)
+
+#### 3. name each element in clean (assign the respondent id to each person in the vector)
+##### source_id = ces65
+names(clean_num) <- sondr::generate_survey_ids(n_respondents = length(clean_num), ## number of respondents
+                                               source_id = source_id) ## source_id
+names(clean_centile) <- sondr::generate_survey_ids(n_respondents = length(clean_centile), ## number of respondents
+                                                   source_id = source_id) ## source_id
+
+## 4. add clean to the master output
+output_num <- sondr::match_and_update(main = output_num, ## vector to update
+                                      updates = clean_num) ## vector with updates
+output_centile <- sondr::match_and_update(main = output_centile, ## vector to update
+                                          updates = clean_centile) ## vector with updates
+
+table(output_num)
+hist(output_num)
+table(output_centile)
+hist(output_centile)
 
 ## ces2021 -------------------------------------------------------------------
 
+source_id <- "ces2021"
+
+#### 1. Get raw gender variable vector
+clean_num <- as.numeric(sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/2021/ces2021.csv",
+                             variable_name = "cps21_income_number"))
+table(clean_num, useNA = "always")
+
+## to quantile
+clean_centile <- round(ecdf(clean_num)(clean_num)*100)
+hist(clean_centile)
+
+#### 3. name each element in clean (assign the respondent id to each person in the vector)
+##### source_id = ces65
+names(clean_num) <- sondr::generate_survey_ids(n_respondents = length(clean_num), ## number of respondents
+                                               source_id = source_id) ## source_id
+names(clean_centile) <- sondr::generate_survey_ids(n_respondents = length(clean_centile), ## number of respondents
+                                                   source_id = source_id) ## source_id
+
+## 4. add clean to the master output
+output_num <- sondr::match_and_update(main = output_num, ## vector to update
+                                      updates = clean_num) ## vector with updates
+output_centile <- sondr::match_and_update(main = output_centile, ## vector to update
+                                          updates = clean_centile) ## vector with updates
+
+table(output_num)
+hist(output_num)
+table(output_centile)
+hist(output_centile)
+
 ## datagotchi_pilot1_2021 -------------------------------------------------------------------
 
+source_id <- "datagotchi_pilot1_2021"
+
+#### 1. Get raw gender variable vector
+raw <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/datagotchi_pilot1_2021/datagotchi_pilot1_2021.Sav",
+                            variable_name = "SES2")
+table(raw, useNA = "always")
+
+## fix labels
+labels <- c("Aucun revenu", "1$ to 30,000$", "30,001$ to 60,000$", "60,001$ to 90,000$", "90,001$ to 110,000$", "110,001$ to 150,000$", "150,001$ to 200,000$", "More than 200,000$")
+names(labels) <- as.character(c(1, 2, 3, 4, 5, 6, 7, 8))
+raw <- labels[raw]
+raw[raw == "Aucun revenu"] <- "0$ to 0$"
+table(raw)
+
+#### 2. clean variable
+clean_num <- parse_money_vector(values = raw,
+                                sep = "to",
+                                floor = "0$ to 0$",
+                                ceiling = "More than 200,000$",
+                                ceiling_increment = 50000)
+table(clean_num)
+
+## to quantile
+clean_centile <- round(ecdf(clean_num)(clean_num)*100)
+
+#### 3. name each element in clean (assign the respondent id to each person in the vector)
+##### source_id = ces65
+names(clean_num) <- sondr::generate_survey_ids(n_respondents = length(clean_num), ## number of respondents
+                                               source_id = source_id) ## source_id
+names(clean_centile) <- sondr::generate_survey_ids(n_respondents = length(clean_centile), ## number of respondents
+                                                   source_id = source_id) ## source_id
+
+## 4. add clean to the master output
+output_num <- sondr::match_and_update(main = output_num, ## vector to update
+                                      updates = clean_num) ## vector with updates
+output_centile <- sondr::match_and_update(main = output_centile, ## vector to update
+                                          updates = clean_centile) ## vector with updates
+
+table(output_num)
+hist(output_num)
+table(output_centile)
+hist(output_centile)
+
 ## january -------------------------------------------------------------------
+
+source_id <- "january"
+
+#### 1. Get raw gender variable vector
+raw <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/omnibus/january/january.Sav",
+                            variable_name = "S7")
+table(raw, useNA = "always")
+
+# RENDU ICI
+
+## fix labels
+labels <- c("Moins de 20,000$", "20,000$ to 39,999$", "40,000$ to 59,999$", "60,000$ to 79,999$", "80,000$ to 99,999$", "100,000$ to 119,999$", "120,000$ to 139,999$", "140,000$ et plus")
+names(labels) <- as.character(c(1, 2, 3, 4, 5, 6, 7, 8))
+raw <- labels[raw]
+table(raw)
+
+#### 2. clean variable
+clean_num <- parse_money_vector(values = raw,
+                                sep = "and",
+                                floor = "less than $20,000",
+                                ceiling = "more than $100,000",
+                                ceiling_increment = 10000)
+table(clean_num)
+
+## to quantile
+clean_centile <- round(ecdf(clean_num)(clean_num)*100)
+
+#### 3. name each element in clean (assign the respondent id to each person in the vector)
+##### source_id = ces65
+names(clean_num) <- sondr::generate_survey_ids(n_respondents = length(clean_num), ## number of respondents
+                                               source_id = source_id) ## source_id
+names(clean_centile) <- sondr::generate_survey_ids(n_respondents = length(clean_centile), ## number of respondents
+                                                   source_id = source_id) ## source_id
+
+## 4. add clean to the master output
+output_num <- sondr::match_and_update(main = output_num, ## vector to update
+                                      updates = clean_num) ## vector with updates
+output_centile <- sondr::match_and_update(main = output_centile, ## vector to update
+                                          updates = clean_centile) ## vector with updates
+
+table(output_num)
+hist(output_num)
+table(output_centile)
+hist(output_centile)
 
 ## february -------------------------------------------------------------------
 
