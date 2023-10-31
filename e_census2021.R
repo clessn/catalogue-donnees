@@ -14,7 +14,7 @@ for (i in 1:length(all_rtas)){
   rta <- all_rtas[i]
   message(paste0(i, " - ", rta, " starting"))
   
-  file_url <- paste0("https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/download-telecharger/current-actuelle.cfm?Lang=F&SearchText=", rta, "&DGUIDlist=2021A000011124&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0&FILETYPE=CSV")
+  file_url <- paste0("https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/download-telecharger/current-actuelle.cfm?Lang=F&SearchText=j3h&DGUIDlist=2021A0011", rta, "&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0&FILETYPE=CSV")
   
   start_time <- Sys.time()
   
