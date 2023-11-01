@@ -93,6 +93,7 @@ for (i in paths){
     prov_vector <- sondr::load_variable(file = i,
                                         variable_name = province_variables[[source_id]]$var)
     quebecers <- prov_vector %in% province_variables[[source_id]]$category
+    idsi <- idsi[quebecers]
   }
   ###### EXCEPTIONS FOR quorum_mcq_pilote where there are ses_province == "Québec"
   ######### and EN_ses_province == "Quebec"
@@ -105,9 +106,8 @@ for (i in paths){
     prov_vector_en[prov_vector_en == ""] <- NA
     prov_vector <- coalesce(prov_vector_fr, prov_vector_en)
     quebecers <- prov_vector %in% c("Québec", "Quebec")
+    idsi <- idsi[quebecers]
   }
-  
-  idsi <- idsi[quebecers]
   
   # Concaténer les nouveaux IDs avec ceux déjà générés dans les itérations précédentes
   if (i == paths[1]){
