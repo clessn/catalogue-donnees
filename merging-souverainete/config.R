@@ -9,6 +9,51 @@ source_list <- c("ces65", "ces68", "ces74", "ces79", "ces84", "ces88",
                  "datagotchi_pilot2_2022", "sondage_nationalisme_2022", "quorum_mcq_pilote",
                  "pes_elxn_2022_text", "pco")
 
+# Identifier les variables de chaque sondage qui identifient la province du répondant
+#### si le sondage est québécois seulement, NA
+#### aussi mettre la catégorie associée au Québec
+
+province_variables <- list(
+  "ces65" = list(var = "v5",
+                 category = "quebec"),
+  "ces68" = list(var = "var001",
+                 category = "quebec"),
+  "ces74" = list(var = "v6",
+                 category = "quebec"),
+  "ces79" = list(var = "v1005",
+                 category = 4),
+  "ces84" = list(var = "var463",
+                 category = "quebec"),
+  "ces88" = list(var = "province",
+                 category = "p.q."),
+  "ces93" = list(var = "cpsprov",
+                 category = "p.q."),
+  "ces97" = list(var = "province",
+                 category = "quebec"),
+  "ces2000" = list(var = "province",
+                 category = "quebec"),
+  "ces2004" = list(var = "province",
+                   category = "quebec"),
+  "ces2006" = list(var = "province",
+                   category = "quebec"),
+  "ces2008" = list(var = "province",
+                   category = "quebec"),
+  "ces2011" = list(var = "PROVINCE",
+                 category = "Quebec"),
+  "ces2015" = list(var = "province",
+                 category = 24),
+  "ces2019" = list(var = "cps19_province",
+                 category = 11),
+  "ces2021" = list(var = "cps21_province",
+                 category = "Quebec"),
+  "datagotchi_pilot1_2021" = list(var = "PROV",
+                                  category = 11),
+  "pco" = list(var = "Q1.2.Pco2014",
+               category = "Quebec"),
+  "sondage_nationalisme_2022" = list(var = "Q127",
+                                     category = c("Quebec", "au Québec"))
+)
+
 # Spécifier les extensions de fichier possibles
 exts <- c(".csv", ".xlsx", ".Sav")
 
@@ -42,6 +87,27 @@ for (i in paths){
   
   # Générer des IDs uniques pour chaque ligne du fichier de données
   idsi <- sondr::generate_survey_ids(nrow(d), source_id)
+  
+  ### FILTER FOR QC RESPONDENTS
+  if (source_id %in% names(province_variables)){
+    prov_vector <- sondr::load_variable(file = i,
+                                        variable_name = province_variables[[source_id]]$var)
+    quebecers <- prov_vector %in% province_variables[[source_id]]$category
+  }
+  ###### EXCEPTIONS FOR quorum_mcq_pilote where there are ses_province == "Québec"
+  ######### and EN_ses_province == "Quebec"
+  if (source_id == "quorum_mcq_pilote"){
+    prov_vector_fr <- sondr::load_variable(file = i,
+                                        variable_name = "ses_province")
+    prov_vector_en <- sondr::load_variable(file = i,
+                                           variable_name = "EN_ses_province")
+    prov_vector_fr[prov_vector_fr == ""] <- NA
+    prov_vector_en[prov_vector_en == ""] <- NA
+    prov_vector <- coalesce(prov_vector_fr, prov_vector_en)
+    quebecers <- prov_vector %in% c("Québec", "Quebec")
+  }
+  
+  idsi <- idsi[quebecers]
   
   # Concaténer les nouveaux IDs avec ceux déjà générés dans les itérations précédentes
   if (i == paths[1]){
