@@ -133,7 +133,7 @@
       "ces2021": {
         "class": "Ordered factor",
         "question_label": "How important are the following things to your identity? Being Canadian",
-        "raw_variable": "pes21_ethid",
+        "raw_variable": "pes21_ethid_1",
         "choices": [
           {
             "value": 1,
