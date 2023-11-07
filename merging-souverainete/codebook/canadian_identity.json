@@ -167,7 +167,7 @@
       "datagotchi_pilot2_2022": {
         "class": "Ordered factor",
         "question_label": "Je me sens davantage Canadien(ne) que Québécois(e).",
-        "raw_variable": "FR_canBeforeQc",
+        "raw_variable": "FR_canBeforeQc et EN_canBeforeQc",
         "choices": [
           {
               "value": 1,
@@ -263,7 +263,7 @@
       "pco": {
         "class": "Ordered factor",
         "question_label": "How would you describe your sense of belonging to each of the following? - Canada",
-        "raw_variable": "Q14.2",
+        "raw_variable": "Q14.2_6.Pco2014",
         "choices": [
           {
             "value": 1,
@@ -321,7 +321,7 @@
       "quorum_mcq_pilote": {
         "class": "Ordered factor",
         "question_label": "Je m'identifie canadien",
-        "raw_variable": "iss_can",
+        "raw_variable": "iss_can et EN_iss_can",
         "choices": [
           {
             "value": 1,
