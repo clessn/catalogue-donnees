@@ -285,16 +285,30 @@ output_idcanqc <- sondr::match_and_update(main = output_idcanqc, ## vector to up
 
 #### 1. Get raw gender variable vector
 raw_fr <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/datagotchi_pilot2_2022/datagotchi_pilot2_2022.csv",
-                               variable_name = "income_fr")
+                               variable_name = "FR_canBeforeQc")
 table(raw_fr, useNA = "always")
 
 raw_en <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/datagotchi_pilot2_2022/datagotchi_pilot2_2022.csv",
-                               variable_name = "income_en")
+                               variable_name = "EN_canBeforeQc")
 table(raw_en, useNA = "always")
 
-raw <- coalesce(raw_fr, raw_en)
-
+raw_datgot22 <- coalesce(raw_fr, raw_en)
+table(raw_datgot22, useNA = "always")
 #### 2. clean variable
+clean_datgot22 <- NA
+clean_datgot22[raw_datgot22 == "1"] <- 1
+clean_datgot22[raw_datgot22 != "1"] <- 0
+table(clean_datgot22, useNA = "always")
+
+#### 3. name each element in clean (assign the respondent id to each person in the vector)
+##### source_id = datgot22
+names(clean_datgot22) <- sondr::generate_survey_ids(n_respondents = length(clean_datgot22), ## number of respondents
+                                                  source_id = "datgot22") ## source_id
+
+## 4. add clean to the master output
+output_idcanqc <- sondr::match_and_update(main = output_idcanqc, ## vector to update
+                                          updates = clean_datgot22) ## vector with updates
+
 
 
 ## sondage_nationalisme_2022 -------------------------------------------------------------------
@@ -305,20 +319,55 @@ raw <- coalesce(raw_fr, raw_en)
 
 #### 1. Get raw gender variable vector
 raw_fr <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/quorum_mcq_pilote/quorum_mcq_pilote.csv",
-                               variable_name = "income_fr")
+                               variable_name = "iss_can")
 table(raw_fr, useNA = "always")
 
 raw_en <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/quorum_mcq_pilote/quorum_mcq_pilote.csv",
-                               variable_name = "income_en")
+                               variable_name = "EN_iss_can")
 table(raw_en, useNA = "always")
 
-raw <- coalesce(raw_fr, raw_en)
+raw_quorum <- c(raw_fr, raw_en)
+table(raw_quorum, useNA = "always")
 
 #### 2. clean variable
+clean_quorum <- NA
+clean_quorum[raw_quorum == "Fortement d'accord" | raw_quorum == "Strongly agree"] <- 1
+clean_quorum[raw_quorum != "Fortement d'accord" & raw_quorum != "Strongly agree" & raw_quorum != ""] <- 0
+table(clean_quorum, useNA = "always")
+
+#### 3. name each element in clean (assign the respondent id to each person in the vector)
+##### source_id = quorum
+names(clean_quorum) <- sondr::generate_survey_ids(n_respondents = length(clean_quorum), ## number of respondents
+                                                    source_id = "quorum") ## source_id
+
+## 4. add clean to the master output
+output_idcanqc <- sondr::match_and_update(main = output_idcanqc, ## vector to update
+                                          updates = clean_quorum) ## vector with updates
+
 
 ## pes_elxn_2022_text -------------------------------------------------------------------
 
 ## pco -------------------------------------------------------------------
+
+#### 1. Get raw gender variable vector
+raw_pco <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/pco/pco.csv",
+                                    variable_name = "Q14.2_6.Pco2014")
+table(raw_pco, useNA = "always")
+####### J'ai calculé les quartiles en divisant la distribution en 4 quartiles et 1 représente le dernier quartile.
+#### 2. clean variable
+clean_pco <- NA
+clean_pco[raw_pco == "Very strong"] <- 1
+clean_pco[raw_pco != "Very strong" & raw_pco != ""] <- 0
+table(clean_pco, useNA = "always")
+
+#### 3. name each element in clean (assign the respondent id to each person in the vector)
+##### source_id = pco
+names(clean_pco) <- sondr::generate_survey_ids(n_respondents = length(clean_pco), ## number of respondents
+                                                   source_id = "pco") ## source_id
+
+## 4. add clean to the master output
+output_idcanqc <- sondr::match_and_update(main = output_idcanqc, ## vector to update
+                                          updates = clean_pco) ## vector with updates
 
 
 # Output ------------------------------------------------------------------
