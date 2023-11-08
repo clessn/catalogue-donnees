@@ -311,7 +311,27 @@ output_idcanqc <- sondr::match_and_update(main = output_idcanqc, ## vector to up
 
 
 
-## sondage_nationalisme_2022 -------------------------------------------------------------------
+## sondage_nationalisme_2022 --------------------------------------------------
+
+#### 1. Get raw gender variable vector
+raw_sondnat22 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/sondage_nationalisme_2022/sondage_nationalisme_2022.csv",
+                                variable_name = "moreno")
+table(raw_sondnat22, useNA = "always")
+####### J'ai calculé les quartiles en divisant la distribution en 4 quartiles et 1 représente le dernier quartile.
+#### 2. clean variable
+clean_sondnat22 <- NA
+clean_sondnat22[raw_sondnat22 == "1"| raw_sondnat22 == "2"] <- 1
+clean_sondnat22[raw_sondnat22 != "1" & raw_sondnat22 != "2"] <- 0
+table(clean_sondnat22, useNA = "always")
+
+#### 3. name each element in clean (assign the respondent id to each person in the vector)
+##### source_id = sondnat22
+names(clean_sondnat22) <- sondr::generate_survey_ids(n_respondents = length(clean_sondnat22), ## number of respondents
+                                               source_id = "sondnat22") ## source_id
+
+## 4. add clean to the master output
+output_idcanqc <- sondr::match_and_update(main = output_idcanqc, ## vector to update
+                                          updates = clean_sondnat22) ## vector with updates
 
 ## quorum_mcq_pilote -------------------------------------------------------------------
 
@@ -345,7 +365,29 @@ output_idcanqc <- sondr::match_and_update(main = output_idcanqc, ## vector to up
                                           updates = clean_quorum) ## vector with updates
 
 
-## pes_elxn_2022_text -------------------------------------------------------------------
+## pes_elxn_2022_text --------------------------------------------------------
+
+#### 1. Get raw gender variable vector
+raw_pes22 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/pes_elxn_2022/pes_elxn_2022_text.csv",
+                                      variable_name = "iss_moreno")
+table(raw_pes22, useNA = "always")
+####### J'ai calculé les quartiles en divisant la distribution en 4 quartiles et 1 représente le dernier quartile.
+#### 2. clean variable
+clean_pes22 <- NA
+clean_pes22[raw_pes22 == "Uniquement comme Canadien(ne)"| raw_pes22 == "D’abord comme Canadien(ne), puis comme Québécois(e)"] <- 1
+clean_pes22[raw_pes22 != "Uniquement comme Canadien(ne)" & raw_pes22 != "D’abord comme Canadien(ne), puis comme Québécois(e)" &
+              raw_pes22 != "Autre" &  raw_pes22 != "Plutôt en accord" &  raw_pes22 != ""] <- 0
+table(clean_pes22, useNA = "always")
+
+#### 3. name each element in clean (assign the respondent id to each person in the vector)
+##### source_id = pes22
+names(clean_pes22) <- sondr::generate_survey_ids(n_respondents = length(clean_pes22), ## number of respondents
+                                                     source_id = "pes22") ## source_id
+
+## 4. add clean to the master output
+output_idcanqc <- sondr::match_and_update(main = output_idcanqc, ## vector to update
+                                          updates = clean_pes22) ## vector with updates
+
 
 ## pco -------------------------------------------------------------------
 
