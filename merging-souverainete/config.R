@@ -43,7 +43,7 @@ province_variables <- list(
   "ces2015" = list(var = "province",
                  category = 24),
   "ces2019" = list(var = "cps19_province",
-                 category = 11),
+                 category = "Quebec"),
   "ces2021" = list(var = "cps21_province",
                  category = "Quebec"),
   "datagotchi_pilot1_2021" = list(var = "PROV",

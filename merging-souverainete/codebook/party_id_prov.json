@@ -343,11 +343,46 @@
           },
           "datagotchi_pilot2_2022": {
             "class": "categoric",
-            "question_label": "NA",
-            "raw_variable": "NA",
+            "question_label": "En politique provinciale québécoise, vous considérez-vous habituellement comme étant...",
+            "raw_variable": "party_type et voterType",
             "choices": [
-             "NA"
-            ]
+    {
+      "value": "1",
+      "label": "Caquiste (CAQ)"
+    },
+    {
+      "value": "2",
+      "label": "Libéral (PLQ)"
+    },
+    {
+      "value": "3",
+      "label": "Péquiste (PQ)"
+    },
+    {
+      "value": "4",
+      "label": "Solidaire (QS)"
+    },
+    {
+      "value": "5",
+      "label": "Conservateur (PCQ)"
+    },
+    {
+      "value": "6",
+      "label": "Vert (PVQ)"
+    },
+    {
+      "value": "7",
+      "label": "Un autre parti"
+    },
+    {
+      "value": "8",
+      "label": "Aucun de ces partis"
+    },
+    {
+      "value": "9",
+      "label": "Je ne sais pas"
+    }
+  ]
           },
           "omnibus_janvier": {
             "class": "categoric",
