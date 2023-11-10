@@ -32,7 +32,7 @@ province_variables <- list(
                  category = "quebec"),
   "ces2000" = list(var = "province",
                  category = "quebec"),
-  "ces2004" = list(var = "province",
+  "ces2004" = list(var = "ces04_province",
                    category = "quebec"),
   "ces2006" = list(var = "province",
                    category = "quebec"),
