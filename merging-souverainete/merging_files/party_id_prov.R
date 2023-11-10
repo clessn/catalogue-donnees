@@ -287,33 +287,27 @@ table(sondr::extract_elements_with_prefix(output, "datagotchi_pilot2_2022"))
 
 ## sondage_nationalisme_2022 -------------------------------------------------------------------
 
-
+# none
 
 ## quorum_mcq_pilote -------------------------------------------------------------------
 
-### ICI IL FAUT MERGER FRANCAIS ET ANGLAIS
-
-#### 1. Get raw gender variable vector
-raw_fr <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/quorum_mcq_pilote/quorum_mcq_pilote.csv",
-                               variable_name = "income_fr")
-table(raw_fr, useNA = "always")
-
-raw_en <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/quorum_mcq_pilote/quorum_mcq_pilote.csv",
-                               variable_name = "income_en")
-table(raw_en, useNA = "always")
-
-raw <- coalesce(raw_fr, raw_en)
-
-#### 2. clean variable
+# none
 
 ## pes_elxn_2022_text -------------------------------------------------------------------
 
+# none
+
 ## pco -------------------------------------------------------------------
 
+# none
 
 # Output ------------------------------------------------------------------
 
 ### FACTORISE, LEVELS, etc.
 
+output <- factor(output)
+table(output)
+
 ##### SAVE VECTOR WHERE??
 
+saveRDS(output, "_SharedFolder_catalogue-donnees/merging-souverainete/clean/vectors/party_id_prov.rds")
