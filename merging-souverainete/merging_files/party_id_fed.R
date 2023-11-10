@@ -15,9 +15,8 @@ names(output) <- ids
 
 ## ces65 -------------------------------------------------------------------
 
-### EXAMPLE WITH GENDER
-#### 1. Get raw gender variable vector
-raw_ces65 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/1965/ces65.csv",
+#### 1. Get raw variable vector
+raw <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/1965/ces65.csv",
                                   variable_name = "v337")
 table(raw_ces65, useNA = "always")
 
