@@ -94,7 +94,7 @@
     "ces93": {
       "class": "factor",
       "question_label": "Enter respondent's gender please",
-      "raw_variable": "pesigen",
+      "raw_variable": "cpsrgen",
       "choices": [
         {
           "value": 1,
@@ -113,7 +113,7 @@
     "ces97": {
       "class": "factor",
       "question_label": "Enter respondent's gender please",
-      "raw_variable": "cpsigen",
+      "raw_variable": "cpsrgen",
       "choices": [
         {
           "value": 1,
@@ -128,7 +128,7 @@
     "ces2000": {
       "class": "factor",
       "question_label": "Respondent's gender.",
-      "raw_variable": "cpsigen",
+      "raw_variable": "cpsrgen",
       "choices": [
         {
           "value": 1,
