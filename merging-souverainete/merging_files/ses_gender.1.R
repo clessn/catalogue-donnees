@@ -376,49 +376,277 @@ output_gender <- sondr::match_and_update(main = output_gender, ## vector to upda
 
 output_gender["ces2021.211"]
 ## datagotchi_pilot1_2021 -------------------------------------------------------------------
-raw_ces2011 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/2011/ces2011.csv",
-                                    variable_name = "RGENDER")
-table(raw_ces2011, useNA = "always")
+raw_datagotchi_pilot1_2021 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/datagotchi_pilot1_2021/datagotchi_pilot1_2021.Sav",
+                                    variable_name = "SEXE")
+table(raw_datagotchi_pilot1_2021, useNA = "always")
 
 #### 2. clean variable
-clean_ces2011 <- NA
-clean_ces2011[raw_ces2011 == "Female"] <- "female"
-clean_ces2011[raw_ces2011 == "Male"] <- "male"
-table(clean_ces2011)
+clean_datagotchi_pilot1_2021 <- NA
+clean_datagotchi_pilot1_2021[raw_datagotchi_pilot1_2021 == 2] <- "female"
+clean_datagotchi_pilot1_2021[raw_datagotchi_pilot1_2021 == 1] <- "male"
+table(clean_datagotchi_pilot1_2021)
 
 #### 3. name each element in clean (assign the respondent id to each person in the vector)
 ##### source_id = ces65
-names(clean_ces2011) <- sondr::generate_survey_ids(n_respondents = length(clean_ces2011), ## number of respondents
-                                                   source_id = "ces2011") ## source_id
+names(clean_datagotchi_pilot1_2021) <- sondr::generate_survey_ids(n_respondents = length(clean_datagotchi_pilot1_2021), ## number of respondents
+                                                   source_id = "datagotchi_pilot1_2021") ## source_id
 
 ## 4. add clean to the master output
 output_gender <- sondr::match_and_update(main = output_gender, ## vector to update
-                                         updates = clean_ces2011) ## vector with updates
+                                         updates = clean_datagotchi_pilot1_2021) ## vector with updates
 
 
-output_gender["ces2011.211"]
+output_gender["datagotchi_pilot1_2021.211"]
 ## january -------------------------------------------------------------------
+raw_january <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/omnibus/january/january.Sav",
+                                                   variable_name = "SEXE")
+table(raw_january, useNA = "always")
 
+#### 2. clean variable
+clean_january <- NA
+clean_january[raw_january == 2] <- "female"
+clean_january[raw_january == 1] <- "male"
+table(clean_january)
+
+#### 3. name each element in clean (assign the respondent id to each person in the vector)
+##### source_id = ces65
+names(clean_january) <- sondr::generate_survey_ids(n_respondents = length(clean_january), ## number of respondents
+                                                                  source_id = "january") ## source_id
+
+## 4. add clean to the master output
+output_gender <- sondr::match_and_update(main = output_gender, ## vector to update
+                                         updates = clean_january) ## vector with updates
+
+
+output_gender["january.211"]
 ## february -------------------------------------------------------------------
+raw_february <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/omnibus/february/february.Sav",
+                                    variable_name = "SEXE")
+table(raw_february, useNA = "always")
 
+#### 2. clean variable
+clean_february <- NA
+clean_february[raw_february == 2] <- "female"
+clean_february[raw_february == 1] <- "male"
+table(clean_february)
+
+#### 3. name each element in clean (assign the respondent id to each person in the vector)
+##### source_id = ces65
+names(clean_february) <- sondr::generate_survey_ids(n_respondents = length(clean_february), ## number of respondents
+                                                   source_id = "february") ## source_id
+
+## 4. add clean to the master output
+output_gender <- sondr::match_and_update(main = output_gender, ## vector to update
+                                         updates = clean_february) ## vector with updates
+
+
+output_gender["february.211"]
 ## march -------------------------------------------------------------------
+raw_march <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/omnibus/march/march.Sav",
+                                    variable_name = "SEXE")
+table(raw_march, useNA = "always")
 
+#### 2. clean variable
+clean_march <- NA
+clean_march[raw_march == 2] <- "female"
+clean_march[raw_march == 1] <- "male"
+table(clean_march)
+
+#### 3. name each element in clean (assign the respondent id to each person in the vector)
+##### source_id = ces65
+names(clean_march) <- sondr::generate_survey_ids(n_respondents = length(clean_march), ## number of respondents
+                                                   source_id = "march") ## source_id
+
+## 4. add clean to the master output
+output_gender <- sondr::match_and_update(main = output_gender, ## vector to update
+                                         updates = clean_march) ## vector with updates
+
+
+output_gender["march.211"]
 ## april -------------------------------------------------------------------
+raw_april <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/omnibus/april/april.Sav",
+                                    variable_name = "SEXE")
+table(raw_april, useNA = "always")
 
+#### 2. clean variable
+clean_april <- NA
+clean_april[raw_april == 2] <- "female"
+clean_april[raw_april == 1] <- "male"
+table(clean_april)
+
+#### 3. name each element in clean (assign the respondent id to each person in the vector)
+##### source_id = ces65
+names(clean_april) <- sondr::generate_survey_ids(n_respondents = length(clean_april), ## number of respondents
+                                                   source_id = "april") ## source_id
+
+## 4. add clean to the master output
+output_gender <- sondr::match_and_update(main = output_gender, ## vector to update
+                                         updates = clean_april) ## vector with updates
+
+
+output_gender["april.211"]
 ## may -------------------------------------------------------------------
+raw_may <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/omnibus/may/may.Sav",
+                                    variable_name = "SEXE")
+table(raw_may, useNA = "always")
 
+#### 2. clean variable
+clean_may <- NA
+clean_may[raw_may == 2] <- "female"
+clean_may[raw_may == 1] <- "male"
+table(clean_may)
+
+#### 3. name each element in clean (assign the respondent id to each person in the vector)
+##### source_id = ces65
+names(clean_may) <- sondr::generate_survey_ids(n_respondents = length(clean_may), ## number of respondents
+                                                   source_id = "may") ## source_id
+
+## 4. add clean to the master output
+output_gender <- sondr::match_and_update(main = output_gender, ## vector to update
+                                         updates = clean_may) ## vector with updates
+
+
+output_gender["may.211"]
 ## june -------------------------------------------------------------------
+raw_june <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/omnibus/june/june.Sav",
+                                    variable_name = "SEXE")
+table(raw_june, useNA = "always")
 
+#### 2. clean variable
+clean_june <- NA
+clean_june[raw_june == 2] <- "female"
+clean_june[raw_june == 1] <- "male"
+table(clean_june)
+
+#### 3. name each element in clean (assign the respondent id to each person in the vector)
+##### source_id = ces65
+names(clean_june) <- sondr::generate_survey_ids(n_respondents = length(clean_june), ## number of respondents
+                                                   source_id = "june") ## source_id
+
+## 4. add clean to the master output
+output_gender <- sondr::match_and_update(main = output_gender, ## vector to update
+                                         updates = clean_june) ## vector with updates
+
+
+output_gender["june.211"]
 ## datagotchi_pilot2_2022 -------------------------------------------------------------------
+raw_datagotchi_pilot2_2022 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/datagotchi_pilot2_2022/datagotchi_pilot2_2022.csv",
+                               variable_name = "gender")
+table(raw_datagotchi_pilot2_2022, useNA = "always")
 
+#### 2. clean variable
+clean_datagotchi_pilot2_2022 <- NA
+clean_datagotchi_pilot2_2022[raw_datagotchi_pilot2_2022 == 2] <- "female"
+clean_datagotchi_pilot2_2022[raw_datagotchi_pilot2_2022 == 1] <- "male"
+table(clean_datagotchi_pilot2_2022)
+
+#### 3. name each element in clean (assign the respondent id to each person in the vector)
+##### source_id = ces65
+names(clean_datagotchi_pilot2_2022) <- sondr::generate_survey_ids(n_respondents = length(clean_datagotchi_pilot2_2022), ## number of respondents
+                                                source_id = "datagotchi_pilot2_2022") ## source_id
+
+## 4. add clean to the master output
+output_gender <- sondr::match_and_update(main = output_gender, ## vector to update
+                                         updates = clean_datagotchi_pilot2_2022) ## vector with updates
+
+
+output_gender["datagotchi_pilot2_2022.211"]
 ## sondage_nationalisme_2022 -------------------------------------------------------------------
+raw_sondage_nationalisme_2022 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/sondage_nationalisme_2022/sondage_nationalisme_2022.csv",
+                                 variable_name = "gender")
+table(raw_sondage_nationalisme_2022, useNA = "always")
 
+#### 2. clean variable
+clean_sondage_nationalisme_2022 <- NA
+clean_sondage_nationalisme_2022[raw_sondage_nationalisme_2022 == "Une femme" | raw_sondage_nationalisme_2022 == "Woman"] <- "female"
+clean_sondage_nationalisme_2022[raw_sondage_nationalisme_2022 == "Un homme" | raw_sondage_nationalisme_2022 == "Man"] <- "male"
+table(clean_sondage_nationalisme_2022)
+
+#### 3. name each element in clean (assign the respondent id to each person in the vector)
+##### source_id = ces65
+names(clean_sondage_nationalisme_2022) <- sondr::generate_survey_ids(n_respondents = length(clean_sondage_nationalisme_2022), ## number of respondents
+                                                source_id = "sondage_nationalisme_2022") ## source_id
+
+## 4. add clean to the master output
+output_gender <- sondr::match_and_update(main = output_gender, ## vector to update
+                                         updates = clean_sondage_nationalisme_2022) ## vector with updates
+
+
+output_gender["sondage_nationalisme_2022.211"]
 ## quorum_mcq_pilote -------------------------------------------------------------------
+raw_quorum_mcq_pilote_fr <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/quorum_mcq_pilote/quorum_mcq_pilote.csv",
+                               variable_name = "ses_gender")
+table(raw_quorum_mcq_pilote_fr, useNA = "always")
+
+raw_quorum_mcq_pilote_en <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/quorum_mcq_pilote/quorum_mcq_pilote.csv",
+                               variable_name = "EN_ses_gender")
+table(raw_quorum_mcq_pilote_en, useNA = "always")
+
+raw_quorum_mcq_pilote <- coalesce(raw_quorum_mcq_pilote_fr, raw_quorum_mcq_pilote_en)
+
+table(raw_quorum_mcq_pilote)
+#### 2. clean variable
+clean_quorum_mcq_pilote <- NA
+clean_quorum_mcq_pilote[raw_quorum_mcq_pilote == "Femme" | raw_quorum_mcq_pilote == "Woman"] <- "female"
+clean_sondage_nationalisme_2022[raw_quorum_mcq_pilote == "Homme" | raw_quorum_mcq_pilote == "Man"] <- "male"
+table(clean_quorum_mcq_pilote)
+
+#### 3. name each element in clean (assign the respondent id to each person in the vector)
+##### source_id = ces65
+names(clean_quorum_mcq_pilote) <- sondr::generate_survey_ids(n_respondents = length(clean_quorum_mcq_pilote), ## number of respondents
+                                                                     source_id = "quorum_mcq_pilote") ## source_id
+
+## 4. add clean to the master output
+output_gender <- sondr::match_and_update(main = output_gender, ## vector to update
+                                         updates = clean_sondage_nationalisme_2022) ## vector with updates
+
+
+output_gender["quorum_mcq_pilote.211"]
 
 ## pes_elxn_2022_text -------------------------------------------------------------------
+raw_pes_elxn_2022_text <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/pes_elxn_2022/pes_elxn_2022_text.csv",
+                                                      variable_name = "ses_gender")
+table(raw_pes_elxn_2022_text, useNA = "always")
 
+#### 2. clean variable
+clean_pes_elxn_2022_text <- NA
+clean_pes_elxn_2022_text[raw_pes_elxn_2022_text == "Féminin"] <- "female"
+clean_pes_elxn_2022_text[raw_pes_elxn_2022_text == "Masculin"] <- "male"
+table(clean_pes_elxn_2022_text)
+
+#### 3. name each element in clean (assign the respondent id to each person in the vector)
+##### source_id = ces65
+names(clean_pes_elxn_2022_text) <- sondr::generate_survey_ids(n_respondents = length(clean_pes_elxn_2022_text), ## number of respondents
+                                                                     source_id = "pes_elxn_2022_text") ## source_id
+
+## 4. add clean to the master output
+output_gender <- sondr::match_and_update(main = output_gender, ## vector to update
+                                         updates = clean_pes_elxn_2022_text) ## vector with updates
+
+
+output_gender["pes_elxn_2022_text.211"]
 ## pco -------------------------------------------------------------------
+raw_pco <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/pco/pco.csv",
+                                               variable_name = "Q20.1.Pco2014")
+table(raw_pco, useNA = "always")
 
+#### 2. clean variable
+clean_pes_elxn_2022_text <- NA
+clean_pes_elxn_2022_text[raw_pes_elxn_2022_text == "Féminin"] <- "female"
+clean_pes_elxn_2022_text[raw_pes_elxn_2022_text == "Masculin"] <- "male"
+table(clean_pes_elxn_2022_text)
+
+#### 3. name each element in clean (assign the respondent id to each person in the vector)
+##### source_id = ces65
+names(clean_pes_elxn_2022_text) <- sondr::generate_survey_ids(n_respondents = length(clean_pes_elxn_2022_text), ## number of respondents
+                                                              source_id = "pes_elxn_2022_text") ## source_id
+
+## 4. add clean to the master output
+output_gender <- sondr::match_and_update(main = output_gender, ## vector to update
+                                         updates = clean_pes_elxn_2022_text) ## vector with updates
+
+
+output_gender["pes_elxn_2022_text.211"]
 
 # Output ------------------------------------------------------------------
 
