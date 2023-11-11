@@ -533,49 +533,159 @@ table(sondr::extract_elements_with_prefix(output, source_id))
 
 ## datagotchi_pilot2_2022 -------------------------------------------------------------------
 
+source_id <- "datagotchi_pilot2_2022"
+
 ### ICI IL FAUT MERGER FRANCAIS ET ANGLAIS
 
 #### 1. Get raw gender variable vector
 raw_fr <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/datagotchi_pilot2_2022/datagotchi_pilot2_2022.csv",
-                                  variable_name = "income_fr")
+                                  variable_name = "born")
 table(raw_fr, useNA = "always")
 
-raw_en <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/datagotchi_pilot2_2022/datagotchi_pilot2_2022.csv",
-                               variable_name = "income_en")
+raw_en <- as.numeric(sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/datagotchi_pilot2_2022/datagotchi_pilot2_2022.csv",
+                               variable_name = "born.1"))
 table(raw_en, useNA = "always")
 
 raw <- coalesce(raw_fr, raw_en)
+table(raw)
 
 #### 2. clean variable
 
+#### 2. clean variable
+clean <- NA
+clean[raw %in% c(33, 44)] <- 1
+clean[!(raw %in% c(33, 44))] <- 0
+table(clean)
+
+#### 3. name each element in clean (assign the respondent id to each person in the vector)
+##### source_id = ces65
+names(clean) <- sondr::generate_survey_ids(n_respondents = length(clean), ## number of respondents
+                                           source_id = source_id) ## source_id
+
+## 4. add clean to the master output
+output <- sondr::match_and_update(main = output, ## vector to update
+                                  updates = clean) ## vector with updates
+
+table(sondr::extract_elements_with_prefix(output, source_id))
 
 ## sondage_nationalisme_2022 -------------------------------------------------------------------
 
+source_id <- "sondage_nationalisme_2022"
+
+#### 1. Get raw gender variable vector
+raw <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/sondage_nationalisme_2022/sondage_nationalisme_2022.csv",
+                            variable_name = "immigration")
+table(raw, useNA = "always")
+
+#### 2. clean variable
+clean <- NA
+clean[raw %in% c("Oui", "Yes")] <- 1
+clean[raw %in% c("Non", "No")] <- 0
+table(clean)
+
+#### 3. name each element in clean (assign the respondent id to each person in the vector)
+##### source_id = ces65
+names(clean) <- sondr::generate_survey_ids(n_respondents = length(clean), ## number of respondents
+                                           source_id = source_id) ## source_id
+
+## 4. add clean to the master output
+output <- sondr::match_and_update(main = output, ## vector to update
+                                  updates = clean) ## vector with updates
+
+table(sondr::extract_elements_with_prefix(output, source_id))
+
 ## quorum_mcq_pilote -------------------------------------------------------------------
+
+source_id <- "quorum_mcq_pilote"
 
 ### ICI IL FAUT MERGER FRANCAIS ET ANGLAIS
 
 #### 1. Get raw gender variable vector
 raw_fr <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/quorum_mcq_pilote/quorum_mcq_pilote.csv",
-                               variable_name = "income_fr")
+                               variable_name = "ses_birth_country")
 table(raw_fr, useNA = "always")
+raw_fr[raw_fr == ""] <- NA
 
 raw_en <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/quorum_mcq_pilote/quorum_mcq_pilote.csv",
-                               variable_name = "income_en")
+                               variable_name = "EN_ses_birth_country")
 table(raw_en, useNA = "always")
+raw_en[raw_en == ""] <- NA
 
 raw <- coalesce(raw_fr, raw_en)
+table(raw)
 
 #### 2. clean variable
+clean <- NA
+clean[raw == "Canada"] <- 1
+clean[raw != "Canada"] <- 0
+table(clean)
+
+#### 3. name each element in clean (assign the respondent id to each person in the vector)
+##### source_id = ces65
+names(clean) <- sondr::generate_survey_ids(n_respondents = length(clean), ## number of respondents
+                                           source_id = source_id) ## source_id
+
+## 4. add clean to the master output
+output <- sondr::match_and_update(main = output, ## vector to update
+                                  updates = clean) ## vector with updates
+
+table(sondr::extract_elements_with_prefix(output, source_id))
 
 ## pes_elxn_2022_text -------------------------------------------------------------------
 
+source_id <- "pes_elxn_2022_text"
+
+#### 1. Get raw gender variable vector
+raw <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/pes_elxn_2022/pes_elxn_2022_text.csv",
+                            variable_name = "ses_birth_country")
+table(raw, useNA = "always")
+
+#### 2. clean variable
+clean <- NA
+clean[raw == "Canada"] <- 1
+clean[raw != "Canada"] <- 0
+table(clean)
+
+#### 3. name each element in clean (assign the respondent id to each person in the vector)
+##### source_id = ces65
+names(clean) <- sondr::generate_survey_ids(n_respondents = length(clean), ## number of respondents
+                                           source_id = source_id) ## source_id
+
+## 4. add clean to the master output
+output <- sondr::match_and_update(main = output, ## vector to update
+                                  updates = clean) ## vector with updates
+
+table(sondr::extract_elements_with_prefix(output, source_id))
+
+
 ## pco -------------------------------------------------------------------
 
+source_id <- "pco"
+
+#### 1. Get raw gender variable vector
+raw <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/pco/pco.csv",
+                            variable_name = "Q13.4.Pco2014")
+table(raw, useNA = "always")
+
+#### 2. clean variable
+clean <- NA
+clean[raw == ""] <- 1
+clean[raw != ""] <- 0
+table(clean)
+
+#### 3. name each element in clean (assign the respondent id to each person in the vector)
+##### source_id = ces65
+names(clean) <- sondr::generate_survey_ids(n_respondents = length(clean), ## number of respondents
+                                           source_id = source_id) ## source_id
+
+## 4. add clean to the master output
+output <- sondr::match_and_update(main = output, ## vector to update
+                                  updates = clean) ## vector with updates
+
+table(sondr::extract_elements_with_prefix(output, source_id))
 
 # Output ------------------------------------------------------------------
 
-### FACTORISE, LEVELS, etc.
+table(output)
 
-##### SAVE VECTOR WHERE??
-
+saveRDS(output, "_SharedFolder_catalogue-donnees/merging-souverainete/clean/vectors/ses_origin_from_canada.1.rds")
