@@ -509,7 +509,7 @@
           "ces2004": {
             "class": "character",
             "question_label": "Are you very favourable, somewhat favourable, somewhat opposed, or very opposed to Quebec sovereignty, that is Quebec is NO LONGER A PART OF CANADA",
-            "raw_variable": "pes_c10",
+            "raw_variable": "ces04_pes_c10",
             "choices": [
               {
                 "value": "very favourable",
