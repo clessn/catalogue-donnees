@@ -145,23 +145,23 @@
             "raw_variable": "independence_1",
             "choices": [
               {
-                "value": "1",
+                "value": "Fortement en désaccord ou Strongly disagree",
                 "label": "Fortement en désaccord"
               },
               {
-                "value": "2",
+                "value": "Plutôt en désaccord ou Somewhat disagree",
                 "label": "Plutôt en désaccord"
               },
               {
-                "value": "3",
+                "value": "Neutre ou Neutral",
                 "label": "Neutre"
               },
               {
-                "value": "4",
+                "value": "Plutôt en accord ou Somewhat agree",
                 "label": "Plutôt en accord"
               },
               {
-                "value": "5",
+                "value": "Fortement en accord ou Strongly agree",
                 "label": "Fortement en accord"
               }
             ]
