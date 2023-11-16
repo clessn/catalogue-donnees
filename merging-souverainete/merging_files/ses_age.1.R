@@ -397,8 +397,11 @@ output_age <- sondr::match_and_update(main = output_age, ## vector to update
 ## datagotchi_pilot2_2022 -----------------------------------------------------
 
 #### 1. Get raw age variable vector
-raw_datgot_2 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/datagotchi_pilot2_2022/datagotchi_pilot2_2022.csv",
+raw_datgot_2.1 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/datagotchi_pilot2_2022/datagotchi_pilot2_2022.csv",
                                      variable_name = "age")
+raw_datgot_2.2 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/datagotchi_pilot2_2022/datagotchi_pilot2_2022.csv",
+                                       variable_name = "Age")
+raw_datgot_2 <- c(raw_datgot_2.1, raw_datgot_2.2)
 table(raw_datgot_2, useNA = "always")
 
 #### 2. clean variable

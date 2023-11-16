@@ -236,7 +236,7 @@
           "datagotchi_pilot2_2022": {
             "class": "Ordinal",
             "question_label": "DEGREE KNOWLEDGE IN POLITICS",
-            "raw_variable": "FR_scalePol",
+            "raw_variable": "FR_scalePol et EN_knowPol",
             "choices": [
               {
                 "value": "1",

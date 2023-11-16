@@ -139,7 +139,7 @@
     },
     "ces79": {
       "class": "ordered factor",
-      "raw_variable": "var334",
+      "raw_variable": "v443",
       "question_label": "WHAT WAS THE HIGHEST GRADE OR LEVEL OF SCHOOL YOU REACHED?",
       "choices": [
         {
@@ -215,7 +215,7 @@
     "ces84": {
       "class": "ordered factor",
       "question_label": "What is the highest grade or level of school you reached?",
-      "raw_variable": "VAR362",
+      "raw_variable": "var362",
       "choices": [
         {
           "value": 1,
@@ -851,7 +851,7 @@
         }
       ]
     },
-    "datagotchi_pilot2_2021" : {
+    "datagotchi_pilot2_2022" : {
       "class": "ordered factor",
       "question_label": "Quel est votre plus haut niveau de scolarité complété?",
       "raw_variable": "educ",

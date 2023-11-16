@@ -3166,7 +3166,7 @@
       "datagotchi_pilot2_2022": {
         "class": "factor",
         "question_label": "Dans quel pays êtes-vous né(e)?",
-        "raw_variable": "born (fr) et born.1 (en)",
+        "raw_variable": "born (fr) et born.1 (en). Les codes changent entre chaque langue.",
         "choices": [
           {
             "value": "44",

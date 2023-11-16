@@ -18,7 +18,7 @@
       "ces74": {
         "class": "Numeric",
         "question_label": "HOW DO YOU FEEL, IN GENERAL, ABOUT CANADA?",
-        "raw_variable": "VAR 0066",
+        "raw_variable": "v77",
         "choices": [
           {
             "value": 0,
@@ -33,7 +33,7 @@
       "ces79": {
         "class": "Numeric",
         "question_label": "HOW DO YOU FEEL, IN GENERAL, ABOUT CANADA?",
-        "raw_variable": "VAR 0066",
+        "raw_variable": "v66",
         "choices": [
           {
             "value": 0,
@@ -97,7 +97,7 @@
       "ces97": {
         "class": "Numeric",
         "question_label": "How do you feel about CANADA? On a scale from 0 to 100, where 0 means you really DISLIKE Canada and 100 means you really LIKE Canada.",
-        "raw_variable": "f11a",
+        "raw_variable": "pesf11a",
         "choices": [
           {
             "value": "0-100",
@@ -116,7 +116,7 @@
       "ces2000": {
         "class": "Numeric",
         "question_label": "How do you feel about CANADA? On a scale from 0 to 100, where 0 means you really DISLIKE Canada and 100 means you really LIKE Canada.",
-        "raw_variable": "c3",
+        "raw_variable": "pesc3",
         "choices": [
             {
                 "value": "0-100",
@@ -135,7 +135,7 @@
       "ces2004": {
         "class": "Numeric",
         "question_label": "Using the same scale, how do you feel about CANADA?",
-        "raw_variable": "c3a",
+        "raw_variable": "c3a??????",
         "choices": [
           {
             "value": "0-100",
@@ -154,7 +154,7 @@
       "ces2006": {
         "class": "Numeric",
         "question_label": "Using the same scale, how do you feel about CANADA?",
-        "raw_variable": "c7",
+        "raw_variable": "pes_c7",
         "choices": [
           {
             "value": "0-100",
@@ -192,7 +192,7 @@
       "ces2011": {
         "class": "Numeric",
         "question_label": "And now some questions about countries and groups. How do you feel about CANADA?",
-        "raw_variable": "pes_11",
+        "raw_variable": "PES11_11",
         "choices": [
             {
                 "value": "0-100",
