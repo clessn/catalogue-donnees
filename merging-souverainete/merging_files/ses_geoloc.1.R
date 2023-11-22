@@ -1,88 +1,12 @@
 # Packages ----------------------------------------------------------------
 library(tidyverse)
-library(openai)
-library(rvest)
-library(httr)
-library(XML)
-
-df_ridings <- read.csv("merging-souverainete/merging_files/data/quebec_fed_ridings.csv")
-
-montreal1965 <- df_ridings %>%
-    filter(geoloc == "montreal", year == 1952)
-suburbs1965 <- df_ridings %>%
-    filter(geoloc == "suburbs", year == 1952)
-quebec1965 <- df_ridings %>%
-    filter(geoloc == "quebec", year == 1952)
-region1965 <- df_ridings %>%
-    filter(geoloc == "region", year == 1952)
-
-montreal1975 <- df_ridings %>%
-    filter(geoloc == "montreal", year == 1966)
-suburbs1975 <- df_ridings %>%
-    filter(geoloc == "suburbs", year == 1966)
-quebec1975 <- df_ridings %>%
-    filter(geoloc == "quebec", year == 1966)
-region1975 <- df_ridings %>%
-    filter(geoloc == "region", year == 1966)
-
-montreal1986 <- df_ridings %>%
-    filter(geoloc == "montreal", year == 1976)
-1986_suburbs
-1986_quebec
-1986_region
-
-1995_montreal
-1995_suburbs
-1995_quebec
-1995_region
-
-2002_montreal
-suburbs1986 <- df_ridings %>%
-    filter(geoloc == "suburbs", year == 1976)
-quebec1986 <- df_ridings %>%
-    filter(geoloc == "quebec", year == 1976)
-region1986 <- df_ridings %>%
-    filter(geoloc == "region", year == 1976)
-
-montreal1995 <- df_ridings %>%
-    filter(geoloc == "montreal", year == 1987)
-suburbs1995 <- df_ridings %>%
-    filter(geoloc == "suburbs", year == 1987)
-quebec1995 <- df_ridings %>%
-    filter(geoloc == "quebec", year == 1987)
-region1995 <- df_ridings %>%
-    filter(geoloc == "region", year == 1987)
-
-montreal2002 <- df_ridings %>%
-    filter(geoloc == "montreal", year == 1996)
-suburbs2002 <- df_ridings %>%
-    filter(geoloc == "suburbs", year == 1996)
-quebec2002 <- df_ridings %>%
-    filter(geoloc == "quebec", year == 1996)
-region2002 <- df_ridings %>%
-    filter(geoloc == "region", year == 1996)
-
-montreal2012 <- df_ridings %>%
-    filter(geoloc == "montreal", year == 2002)
-suburbs2012 <- df_ridings %>%
-    filter(geoloc == "suburbs", year == 2002)
-quebec2012 <- df_ridings %>%
-    filter(geoloc == "quebec", year == 2002)
-region2012 <- df_ridings %>%
-    filter(geoloc == "region", year == 2002)
-
-montreal_now <- df_ridings %>%
-    filter(geoloc == "montreal", year == 2013)
-suburbs_now <- df_ridings %>%
-    filter(geoloc == "suburbs", year == 2013)
-quebec_now <- df_ridings %>%
-    filter(geoloc == "quebec", year == 2013)
-region_now <- df_ridings %>%
-    filter(geoloc == "region", year == 2013)
+library(stringdist)
 
 # Config ------------------------------------------------------------------
+
 ### source config file to generate all the respondent_ids
 source("merging-souverainete/config.R")
+
 sample(ids, 20) ### 20 ids random
 ## empty vector where the clean values will go. same length as the n of ids.
 output <- rep(NA, length(ids))
@@ -91,24 +15,68 @@ names(output) <- ids
 
 # Merging and cleaning ----------------------------------------------------
 
+df_ridings <- read.csv("merging-souverainete/merging_files/data/quebec_fed_ridings.csv")
+
 ## ces65 -------------------------------------------------------------------
 
-### EXAMPLE WITH GENDER
-#### 1. Get raw gender variable vector
+# Load variable
 raw_ces65 <- sondr::load_variable(
     file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/1965/ces65.csv", 
     variable_name = "v6")
 
 table(raw_ces65, useNA = "always")
+ces65_ridings <- unique(raw_ces65)
+df_ridings_1965 <- df_ridings %>%
+    filter(year == 1952)
 
+df_ridings_1965$circonscription_ces <- NA
 
+for (i in 1:nrow(df_ridings_1965)) {
+    min_dist <- 1
+    for (j in 1:length(ces65_ridings)) {
+        distance <- stringdist(df_ridings_1965$circonscription[i], 
+                               ces65_ridings[j], method = "jw")
+        if (distance < min_dist) {
+            min_dist <- distance
+            df_ridings_1965$circonscription_ces[i] <- ces65_ridings[j]
+        }
+    }
+}
 
-clean_ces65 <- NA
-clean_ces65[raw_ces65 %in% montreal1965$circonscription] <- "montreal"
-clean_ces65[raw_ces65 %in% suburbs1965$circonscription] <- "suburbs"
-clean_ces65[raw_ces65 %in% quebec1965$circonscription] <- "quebec"
-clean_ces65[raw_ces65 %in% region1965$circonscription] <- "region"
-table(clean_ces65)
+df_ridings_1965$distance <- NA
+
+for (i in seq_along(df_ridings_1965$circonscription_ces)) {
+   df_ridings_1965$distance[i] <- stringdist(df_ridings_1965$circonscription[i], 
+                               df_ridings_1965$circonscription_ces[i], method = "jw")
+}
+
+# Vérfier à partir de où les résultats ne sont plus satisfaisants
+df_ridings_1965 <- df_ridings_1965 %>%
+    filter(distance < 0.2678) 
+
+# Ajustements manuels
+df_ridings_1965 <- df_ridings_1965 %>%
+  filter(!(circonscription %in% c("Labelle", "Laurier", "Papineau", "Saint-Henri", "Quebec East")))
+  
+for (i in seq_along(df_ridings_1965$circonscription)) { 
+    if (df_ridings_1965$circonscription[i] == "Quebec South") {
+        df_ridings_1965$circonscription_ces[i] <- "quebec-sud"
+    }
+}
+
+# Assuming clean_ces65 is your new vector and it's already initialized with the correct length
+# and 'NA' or some default values
+
+# Find the matching indices of raw_ces65 in df_ridings_1965$circonscription_ces
+indices <- match(raw_ces65, df_ridings_1965$circonscription_ces)
+
+# 'indices' will be NA for values in raw_ces65 that don't match any value in df_ridings_1965$circonscription_ces
+# Replace the NA's with 0 or some other value that cannot be an index
+indices[is.na(indices)] <- 0
+
+# Use the indices to replace corresponding entries in clean_ces65 with geoloc from df_ridings_1965
+clean_ces65 <- ifelse(indices > 0, df_ridings_1965$geoloc[indices], NA)
+
 
 #### 3. name each element in clean (assign the respondent id to each person in the vector)
 ##### source_id = ces65
@@ -118,14 +86,128 @@ names(clean_ces65) <- sondr::generate_survey_ids(n_respondents = length(clean_ce
 ## 4. add clean to the master output
 output_gender <- sondr::match_and_update(main = output_gender, ## vector to update
                                          updates = clean_ces65) ## vector with updates
-### END EXAMPLE WITH GENDER
-
 
 ## ces68 -------------------------------------------------------------------
 
+# NA
+
 ## ces74 -------------------------------------------------------------------
 
+# NA
+
 ## ces79 -------------------------------------------------------------------
+
+# Load variable
+raw_ces79 <- sondr::load_variable(
+    file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/1979/ces79.csv", 
+    variable_name = "v5")
+
+table(raw_ces79, useNA = "always")
+
+poll_to_constituency <- c(
+  `030` = "ARGENTEUIL-DEUX-MONTAGNES",
+  `123` = "ARGENTEUIL-DEUX-MONTAGNES",
+  `162` = "ARGENTEUIL-DEUX-MONTAGNES",
+  `037` = "CHICOUTIMI",
+  `084` = "CHICOUTIMI",
+  `085` = "CHICOUTIMI",
+  `149` = "CHICOUTIMI",
+  `051` = "FRONTENAC",
+  `061` = "FRONTENAC",
+  `148` = "FRONTENAC",
+  `165` = "FRONTENAC",
+  `032` = "GASPE",
+  `124` = "GASPE",
+  `129` = "GASPE",
+  `043` = "HULL",
+  `180` = "HULL",
+  `281` = "HULL",
+  `058` = "LAPOINTE",
+  `091` = "LAPOINTE",
+  `101` = "LAPOINTE",
+  `033` = "LAPRAIRIE",
+  `222` = "LAPRAIRIE",
+  `236` = "LAPRAIRIE",
+  `288` = "LAPRAIRIE",
+  `074` = "LEVIS",
+  `131` = "LEVIS",
+  `167` = "LEVIS",
+  `182` = "LEVIS",
+  `024` = "LONGUEUIL",
+  `047` = "LONGUEUIL",
+  `062` = "LONGUEUIL",
+  `147` = "LONGUEUIL",
+  `087` = "LOTBINIERE",
+  `161` = "LOTBINIERE",
+  `221` = "LOTBINIERE",
+  `125` = "AHUNTSIC",
+  `177` = "AHUNTSIC",
+  `203` = "AHUNTSIC",
+  `219` = "AHUNTSIC",
+  `077` = "MONTREAL-BOURASSA",
+  `089` = "MONTREAL-BOURASSA",
+  `286` = "MONTREAL-BOURASSA",
+  `130` = "DOLLARD",
+  `193` = "DOLLARD",
+  `200` = "DOLLARD",
+  `274` = "DOLLARD",
+  `066` = "GAMELIN",
+  `137` = "GAMELIN",
+  `150` = "GAMELIN",
+  `003` = "LACHINE",
+  `046` = "LACHINE",
+  `064` = "LACHINE",
+  `097` = "LAFONTAINE",
+  `098` = "LAFONTAINE",
+  `119` = "LAFONTAINE",
+  `001` = "MAISONNEUVE-ROSEMONT",
+  `143` = "MAISONNEUVE-ROSEMONT",
+  `160` = "MAISONNEUVE-ROSEMONT",
+  `207` = "MAISONNEUVE-ROSEMONT",
+  `004` = "MOUNT ROYAL",
+  `014` = "MOUNT ROYAL",
+  `114` = "MOUNT ROYAL",
+  `178` = "MOUNT ROYAL",
+  `096` = "PORTNEUF",
+  `171` = "PORTNEUF",
+  `197` = "PORTNEUF",
+  `095` = "QUEBEC EAST",
+  `164` = "QUEBEC EAST",
+  `189` = "QUEBEC EAST",
+  `049` = "RICHMOND",
+  `144` = "RICHMOND",
+  `152` = "RICHMOND",
+  `007` = "ROBERVAL",
+  `050` = "ROBERVAL",
+  `111` = "ROBERVAL",
+  `073` = "SAINT-HYACINTHE",
+  `108` = "SAINT-HYACINTHE",
+  `117` = "SAINT-HYACINTHE",
+  `118` = "SAINT-HYACINTHE",
+  `094` = "SAINT-MAURICE",
+  `104` = "SAINT-MAURICE",
+  `202` = "SHERBROOKE",
+  `237` = "SHERBROOKE",
+  `110` = "TERREBONNE",
+  `218` = "TERREBONNE",
+  `267` = "TERREBONNE",
+  `335` = "TERREBONNE",
+  `035` = "TROIS-RIVIERES-METROPOLITAIN",
+  `048` = "TROIS-RIVIERES-METROPOLITAIN",
+  `138` = "TROIS-RIVIERES-METROPOLITAIN",
+  `190` = "TROIS-RIVIERES-METROPOLITAIN",
+  `065` = "VAUDREUIL",
+  `081` = "VAUDREUIL",
+  `090` = "VAUDREUIL",
+  `157` = "VAUDREUIL",
+  `185` = "VAUDREUIL"
+)
+
+# Assume df is your dataframe and `poll_number` is the column with the poll numbers
+df$constituency <- poll_to_constituency[as.character(df$poll_number)]
+
+# If there are poll numbers with no matching constituency, they will become NA. 
+# You might want to handle these cases as well.
 
 ## ces84 -------------------------------------------------------------------
 
