@@ -609,13 +609,20 @@ output_lang <- sondr::match_and_update(main = output_lang, ## vector to update
 table(sondr::extract_elements_with_prefix(output_lang, "sondage_nationalisme_2022"))
 ## quorum_mcq_pilote ---------------------------------------------------------
 
-raw_quorum1 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/quorum_mcq_pilote/quorum_mcq_pilote.csv",
-                                    variable_name = "ses_lang")
-raw_quorum2 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/quorum_mcq_pilote/quorum_mcq_pilote.csv",
-                                    variable_name = "EN_ses_lang")
+raw_quorum_mcq_pilote_fr <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/quorum_mcq_pilote/quorum_mcq_pilote.csv",
+                                                 variable_name = "ses_lang")
+table(raw_quorum_mcq_pilote_fr, useNA = "always")
+### change "" for NA
+raw_quorum_mcq_pilote_fr[raw_quorum_mcq_pilote_fr == ""] <- NA
 
-raw_quorum <- c(raw_quorum1, raw_quorum2)
-table(raw_quorum, useNA = "always")
+raw_quorum_mcq_pilote_en <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/quorum_mcq_pilote/quorum_mcq_pilote.csv",
+                                                 variable_name = "EN_ses_lang")
+table(raw_quorum_mcq_pilote_en, useNA = "always")
+### change "" for NA
+raw_quorum_mcq_pilote_en[raw_quorum_mcq_pilote_en == ""] <- NA
+
+raw_quorum_mcq_pilote <- coalesce(raw_quorum_mcq_pilote_fr, raw_quorum_mcq_pilote_en)
+table(raw_quorum_mcq_pilote)
 
 #### 2. clean variable
 clean_quorum <- NA
