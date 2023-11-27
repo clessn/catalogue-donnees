@@ -37,8 +37,7 @@ names(clean_ces65) <- sondr::generate_survey_ids(n_respondents = length(clean_ce
 output_religiosity <- sondr::match_and_update(main = output_religiosity, ## vector to update
                                          updates = clean_ces65) ## vector with updates
 
-output_religiosity["ces65.230"]
-
+table(sondr::extract_elements_with_prefix(output_religiosity, "ces65"))
 
 ## ces68 -------------------------------------------------------------------
 #### 1. Get raw gender variable vector
