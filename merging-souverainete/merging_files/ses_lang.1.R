@@ -665,5 +665,8 @@ table(sondr::extract_elements_with_prefix(output_lang, "pco"))
 
 ### FACTORISE, LEVELS, etc.
 
-##### SAVE VECTOR WHERE??
+table(output_lang)
+output_lang <- factor(output_lang)
 
+##### SAVE VECTOR
+saveRDS(output_lang, "_SharedFolder_catalogue-donnees/merging-souverainete/clean/vectors/ses_lang.1.rds")
