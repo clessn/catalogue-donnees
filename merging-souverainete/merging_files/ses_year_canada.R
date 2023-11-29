@@ -41,7 +41,6 @@ output <- sondr::match_and_update(main = output, ## vector to update
 
 table(sondr::extract_elements_with_prefix(output, "ces65"), useNA = "always")
 
-
 ## ces68 -------------------------------------------------------------------
 
 # none
