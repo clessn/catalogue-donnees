@@ -607,6 +607,7 @@ output_lang <- sondr::match_and_update(main = output_lang, ## vector to update
                                        updates = clean_sond_nat) ## vector with updates
 
 table(sondr::extract_elements_with_prefix(output_lang, "sondage_nationalisme_2022"))
+
 ## quorum_mcq_pilote ---------------------------------------------------------
 
 raw_quorum_mcq_pilote_fr <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/quorum_mcq_pilote/quorum_mcq_pilote.csv",
@@ -626,9 +627,9 @@ table(raw_quorum_mcq_pilote)
 
 #### 2. clean variable
 clean_quorum <- NA
-clean_quorum[raw_quorum=="English" | raw_quorum=="Anglais"] <- "english"
-clean_quorum[raw_quorum=="French" | raw_quorum=="Français"] <- "french"
-clean_quorum[raw_quorum=="Other" | raw_quorum=="Autre"] <- "other"
+clean_quorum[raw_quorum_mcq_pilote=="English" | raw_quorum_mcq_pilote=="Anglais"] <- "english"
+clean_quorum[raw_quorum_mcq_pilote=="French" |  raw_quorum_mcq_pilote=="Français"] <- "french"
+clean_quorum[raw_quorum_mcq_pilote=="Other" |   raw_quorum_mcq_pilote=="Autre"] <- "other"
 table(clean_quorum, useNA = "always")
 
 #### 3. name each element in clean (assign the respondent id to each person in the vector)
