@@ -46,17 +46,25 @@
         ]
       },
       "ces84": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "Categoric",
+        "question_label": "When you think of YOUR government, which government comes to mind first, the government of Canada or the government of",
+        "raw_variable": "var020",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "canada",
+            "label": "canada"
           },
           {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "both",
+            "label": "both"
+          },
+          {
+            "value": "province",
+            "label": "province"
+          },
+          {
+            "value": "neither",
+            "label": "neither"
           }
         ]
       },
@@ -76,21 +84,21 @@
         ]
       },
       "ces93": {
-        "class": "À faire",
-        "question_label": "À faire",
-        "raw_variable": "À faire",
+        "class": "Numeric",
+        "question_label": "HOW DO YOU FEEL, IN GENERAL, ABOUT CANADA?",
+        "raw_variable": "pesf1",
         "choices": [
           {
-            "value": "À faire",
-            "label": "À faire"
+            "value": "0-100",
+            "label": "Enter rating"
           },
           {
-            "value": "À faire",
-            "label": "À faire"
+            "value": 998,
+            "label": "Don't know"
           },
           {
-            "value": "À faire",
-            "label": "À faire"
+            "value": 999,
+            "label": "Refused"
           }
         ]
       },
