@@ -492,4 +492,4 @@ table(sondr::extract_elements_with_prefix(output, source_id), useNA = "always")
 
 # Output ------------------------------------------------------------------
 
-saveRDS(output, "_SharedFolder_catalogue-donnees/merging-souverainete/clean/ses_year_canada.rds")
+saveRDS(output, "_SharedFolder_catalogue-donnees/merging-souverainete/clean/vectors/ses_year_canada.rds")

@@ -1326,10 +1326,10 @@ table(sondr::extract_elements_with_prefix(output_centile, "pco"))
 # Output ------------------------------------------------------------------
 
 ### save num
-saveRDS(output_num, "_SharedFolder_catalogue-donnees/merging-souverainete/clean/vectors/ses_family_income_num.rds")
+#saveRDS(output_num, "_SharedFolder_catalogue-donnees/merging-souverainete/clean/vectors/ses_family_income_num.rds")
 
 ### save centile
-saveRDS(output_centile, "_SharedFolder_catalogue-donnees/merging-souverainete/clean/vectors/ses_family_income_centile.rds")
+#saveRDS(output_centile, "_SharedFolder_catalogue-donnees/merging-souverainete/clean/vectors/ses_family_income_centile.rds")
 
 ### Categorise in centiles
 output_centile_cat <- factor(cut(
