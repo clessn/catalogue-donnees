@@ -607,7 +607,7 @@ table(sondr::extract_elements_with_prefix(output_souv, "pes_elxn_2022"))
 
 ### FACTORISE, LEVELS, etc.
 
-output_souv <- factor(output_souv)
+#output_souv <- factor(output_souv)
 table(output_souv)
 
 ##### SAVE VECTOR WHERE??
