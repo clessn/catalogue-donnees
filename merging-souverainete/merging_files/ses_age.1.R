@@ -352,9 +352,9 @@ table(raw_ces2021, useNA = "always")
 clean_ces2021 <- NA
 clean_ces2021_yrbirth <- raw_ces2021
 table(clean_ces2021_yrbirth, useNA = "always")
-clean_ces2021_yrbirth[raw_ces2021==9997 | raw_ces2021==9998 | raw_ces2021==9999] <- NA
+clean_ces2021_yrbirth[raw_ces2021=="9997" | raw_ces2021=="9998" | raw_ces2021=="9999"] <- NA
 table(clean_ces2021_yrbirth, useNA = "always")
-clean_ces2021 <- 2021-clean_ces2021_yrbirth
+clean_ces2021 <- 2021-as.numeric(clean_ces2021_yrbirth)
 table(clean_ces2021, useNA = "always")
 #### 3. name each element in clean (assign the respondent id to each person in the vector)
 ##### source_id = ces68
