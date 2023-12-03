@@ -38,6 +38,8 @@ names(clean_ces65) <- sondr::generate_survey_ids(n_respondents = length(clean_ce
 output_lang <- sondr::match_and_update(main = output_lang, ## vector to update
                                       updates = clean_ces65) ## vector with updates
 
+table(sondr::extract_elements_with_prefix(output_lang, "ces65"))
+
 ## ces68 -------------------------------------------------------------------
 
 #### 1. Get raw age variable vector
@@ -65,6 +67,8 @@ names(clean_ces68) <- sondr::generate_survey_ids(n_respondents = length(clean_ce
 output_lang <- sondr::match_and_update(main = output_lang, ## vector to update
                                        updates = clean_ces68) ## vector with updates
 
+table(sondr::extract_elements_with_prefix(output_lang, "ces68"))
+
 ## ces74 -------------------------------------------------------------------
 
 raw_ces74 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/1974/ces74.csv",
@@ -89,6 +93,8 @@ names(clean_ces74) <- sondr::generate_survey_ids(n_respondents = length(clean_ce
 output_lang <- sondr::match_and_update(main = output_lang, ## vector to update
                                        updates = clean_ces74) ## vector with updates
 
+table(sondr::extract_elements_with_prefix(output_lang, "ces74"))
+
 ## ces79 -------------------------------------------------------------------
 raw_ces79 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/1979/ces79.csv",
                                   variable_name = "v1509")
@@ -109,6 +115,8 @@ names(clean_ces79) <- sondr::generate_survey_ids(n_respondents = length(clean_ce
 ## 4. add clean to the master output
 output_lang <- sondr::match_and_update(main = output_lang, ## vector to update
                                        updates = clean_ces79) ## vector with updates
+
+table(sondr::extract_elements_with_prefix(output_lang, "ces79"))
 
 ## ces84 -------------------------------------------------------------------
 
@@ -132,6 +140,8 @@ names(clean_ces84) <- sondr::generate_survey_ids(n_respondents = length(clean_ce
 output_lang <- sondr::match_and_update(main = output_lang, ## vector to update
                                        updates = clean_ces84) ## vector with updates
 
+table(sondr::extract_elements_with_prefix(output_lang, "ces84"))
+
 ## ces88 -------------------------------------------------------------------
 
 raw_ces88 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/1988/ces88.csv",
@@ -153,6 +163,8 @@ names(clean_ces88) <- sondr::generate_survey_ids(n_respondents = length(clean_ce
 ## 4. add clean to the master output
 output_lang <- sondr::match_and_update(main = output_lang, ## vector to update
                                        updates = clean_ces88) ## vector with updates
+
+table(sondr::extract_elements_with_prefix(output_lang, "ces88"))
 
 ## ces93 -------------------------------------------------------------------
 
@@ -176,7 +188,7 @@ names(clean_ces93) <- sondr::generate_survey_ids(n_respondents = length(clean_ce
 output_lang <- sondr::match_and_update(main = output_lang, ## vector to update
                                        updates = clean_ces93) ## vector with updates
 
-
+table(sondr::extract_elements_with_prefix(output_lang, "ces93"))
 ## ces97 -------------------------------------------------------------------
 
 raw_ces97 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/1997/ces97.csv",
@@ -199,7 +211,7 @@ names(clean_ces97) <- sondr::generate_survey_ids(n_respondents = length(clean_ce
 output_lang <- sondr::match_and_update(main = output_lang, ## vector to update
                                        updates = clean_ces97) ## vector with updates
 
-
+table(sondr::extract_elements_with_prefix(output_lang, "ces97"))
 ## ces2000 -------------------------------------------------------------------
 
 raw_ces2000 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/2000/ces2000.csv",
@@ -221,6 +233,8 @@ names(clean_ces2000) <- sondr::generate_survey_ids(n_respondents = length(clean_
 ## 4. add clean to the master output
 output_lang <- sondr::match_and_update(main = output_lang, ## vector to update
                                        updates = clean_ces2000) ## vector with updates
+
+table(sondr::extract_elements_with_prefix(output_lang, "ces2000"))
 ## ces2004 -------------------------------------------------------------------
 
 raw_ces2004 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/2004/ces2004.csv",
@@ -243,6 +257,8 @@ names(clean_ces2004) <- sondr::generate_survey_ids(n_respondents = length(clean_
 output_lang <- sondr::match_and_update(main = output_lang, ## vector to update
                                        updates = clean_ces2004) ## vector with updates
 
+table(sondr::extract_elements_with_prefix(output_lang, "ces2004"))
+
 ## ces2006 -------------------------------------------------------------------
 raw_ces2006 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/2006/ces2006.csv",
                                     variable_name = "cps_s17")
@@ -264,6 +280,8 @@ names(clean_ces2006) <- sondr::generate_survey_ids(n_respondents = length(clean_
 output_lang <- sondr::match_and_update(main = output_lang, ## vector to update
                                        updates = clean_ces2006) ## vector with updates
 
+table(sondr::extract_elements_with_prefix(output_lang, "ces2006"))
+
 ## ces2008 -------------------------------------------------------------------
 
 raw_ces2008 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/2008/ces2008.csv",
@@ -272,8 +290,9 @@ table(raw_ces2008, useNA = "always")
 
 #### 2. clean variable
 clean_ces2008 <- NA
-clean_ces2008[raw_ces2008=="1"] <- "english"
-clean_ces2008[raw_ces2008=="5"] <- "french"
+clean_ces2008[raw_ces2008== 1] <- "english"
+clean_ces2008[raw_ces2008== 5] <- "french"
+clean_ces2008[(5 < raw_ces2008 & raw_ces2008 < 55) | (1 < raw_ces2008 & raw_ces2008 < 5)] <- "other"
 table(clean_ces2008, useNA = "always")
 
 #### 3. name each element in clean (assign the respondent id to each person in the vector)
@@ -284,6 +303,8 @@ names(clean_ces2008) <- sondr::generate_survey_ids(n_respondents = length(clean_
 ## 4. add clean to the master output
 output_lang <- sondr::match_and_update(main = output_lang, ## vector to update
                                        updates = clean_ces2008) ## vector with updates
+
+table(sondr::extract_elements_with_prefix(output_lang, "ces2008"))
 
 ## ces2011 -------------------------------------------------------------------
 
@@ -306,6 +327,7 @@ names(clean_ces2011) <- sondr::generate_survey_ids(n_respondents = length(clean_
 ## 4. add clean to the master output
 output_lang <- sondr::match_and_update(main = output_lang, ## vector to update
                                        updates = clean_ces2011) ## vector with updates
+table(sondr::extract_elements_with_prefix(output_lang, "ces2011"))
 
 ## ces2015 -------------------------------------------------------------------
 
@@ -328,7 +350,7 @@ names(clean_ces2015) <- sondr::generate_survey_ids(n_respondents = length(clean_
 ## 4. add clean to the master output
 output_lang <- sondr::match_and_update(main = output_lang, ## vector to update
                                        updates = clean_ces2015) ## vector with updates
-
+table(sondr::extract_elements_with_prefix(output_lang, "ces2015"))
 
 ## ces2019 -------------------------------------------------------------------
 
@@ -350,6 +372,7 @@ names(clean_ces2019) <- sondr::generate_survey_ids(n_respondents = length(clean_
 ## 4. add clean to the master output
 output_lang <- sondr::match_and_update(main = output_lang, ## vector to update
                                        updates = clean_ces2019) ## vector with updates
+table(sondr::extract_elements_with_prefix(output_lang, "ces2019"))
 
 ## ces2021 -------------------------------------------------------------------
 
@@ -373,7 +396,7 @@ names(clean_ces2021) <- sondr::generate_survey_ids(n_respondents = length(clean_
 output_lang <- sondr::match_and_update(main = output_lang, ## vector to update
                                        updates = clean_ces2021) ## vector with updates
 
-
+table(sondr::extract_elements_with_prefix(output_lang, "ces2021"))
 ## datagotchi_pilot1_2021 ----------------------------------------------------
 
 raw_datgot21 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/datagotchi_pilot1_2021/datagotchi_pilot1_2021.Sav",
@@ -390,11 +413,13 @@ table(clean_datgot21, useNA = "always")
 #### 3. name each element in clean (assign the respondent id to each person in the vector)
 ##### source_id = datgot21
 names(clean_datgot21) <- sondr::generate_survey_ids(n_respondents = length(clean_datgot21), ## number of respondents
-                                                   source_id = "datgot21") ## source_id
+                                                   source_id = "datagotchi_pilot1_2021") ## source_id
 
 ## 4. add clean to the master output
 output_lang <- sondr::match_and_update(main = output_lang, ## vector to update
                                        updates = clean_datgot21) ## vector with updates
+
+table(sondr::extract_elements_with_prefix(output_lang, "datagotchi_pilot1_2021"))
 
 ## january -------------------------------------------------------------------
 
@@ -418,6 +443,8 @@ names(clean_january) <- sondr::generate_survey_ids(n_respondents = length(clean_
 output_lang <- sondr::match_and_update(main = output_lang, ## vector to update
                                        updates = clean_january) ## vector with updates
 
+table(sondr::extract_elements_with_prefix(output_lang, "january"))
+
 ## february -------------------------------------------------------------------
 
 raw_february <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/omnibus/february/february.Sav",
@@ -440,6 +467,7 @@ names(clean_february) <- sondr::generate_survey_ids(n_respondents = length(clean
 output_lang <- sondr::match_and_update(main = output_lang, ## vector to update
                                        updates = clean_february) ## vector with updates
 
+table(sondr::extract_elements_with_prefix(output_lang, "february"))
 ## march -------------------------------------------------------------------
 
 raw_march <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/omnibus/march/march.Sav",
@@ -462,6 +490,8 @@ names(clean_march) <- sondr::generate_survey_ids(n_respondents = length(clean_ma
 output_lang <- sondr::match_and_update(main = output_lang, ## vector to update
                                        updates = clean_march) ## vector with updates
 
+table(sondr::extract_elements_with_prefix(output_lang, "march"))
+
 ## april -------------------------------------------------------------------
 
 raw_april <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/omnibus/april/april.Sav",
@@ -483,7 +513,7 @@ names(clean_april) <- sondr::generate_survey_ids(n_respondents = length(clean_ap
 ## 4. add clean to the master output
 output_lang <- sondr::match_and_update(main = output_lang, ## vector to update
                                        updates = clean_april) ## vector with updates
-
+table(sondr::extract_elements_with_prefix(output_lang, "april"))
 ## may -------------------------------------------------------------------
 
 raw_may <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/omnibus/may/may.Sav",
@@ -506,7 +536,7 @@ names(clean_may) <- sondr::generate_survey_ids(n_respondents = length(clean_may)
 output_lang <- sondr::match_and_update(main = output_lang, ## vector to update
                                        updates = clean_may) ## vector with updates
 
-
+table(sondr::extract_elements_with_prefix(output_lang, "may"))
 ## june -------------------------------------------------------------------
 
 raw_june <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/omnibus/june/june.Sav",
@@ -529,6 +559,8 @@ names(clean_june) <- sondr::generate_survey_ids(n_respondents = length(clean_jun
 output_lang <- sondr::match_and_update(main = output_lang, ## vector to update
                                        updates = clean_june) ## vector with updates
 
+table(sondr::extract_elements_with_prefix(output_lang, "june"))
+
 ## datagotchi_pilot2_2022 -------------------------------------------------------------------
 
 raw_datgot22<- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/datagotchi_pilot2_2022/datagotchi_pilot2_2022.csv",
@@ -545,13 +577,13 @@ table(clean_datgot22, useNA = "always")
 #### 3. name each element in clean (assign the respondent id to each person in the vector)
 ##### source_id = datgot22
 names(clean_datgot22) <- sondr::generate_survey_ids(n_respondents = length(clean_datgot22), ## number of respondents
-                                                    source_id = "datgot22") ## source_id
+                                                    source_id = "datagotchi_pilot2_2022") ## source_id
 
 ## 4. add clean to the master output
 output_lang <- sondr::match_and_update(main = output_lang, ## vector to update
                                        updates = clean_datgot22) ## vector with updates
 
-
+table(sondr::extract_elements_with_prefix(output_lang, "datagotchi_pilot2_2022"))
 ## sondage_nationalisme_2022 ------------------------------------------------
 
 raw_sond_nat<- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/sondage_nationalisme_2022/sondage_nationalisme_2022.csv",
@@ -568,38 +600,48 @@ table(clean_sond_nat, useNA = "always")
 #### 3. name each element in clean (assign the respondent id to each person in the vector)
 ##### source_id = sond_nat
 names(clean_sond_nat) <- sondr::generate_survey_ids(n_respondents = length(clean_sond_nat), ## number of respondents
-                                                    source_id = "sond_nat") ## source_id
+                                                    source_id = "sondage_nationalisme_2022") ## source_id
 
 ## 4. add clean to the master output
 output_lang <- sondr::match_and_update(main = output_lang, ## vector to update
                                        updates = clean_sond_nat) ## vector with updates
 
+table(sondr::extract_elements_with_prefix(output_lang, "sondage_nationalisme_2022"))
 
 ## quorum_mcq_pilote ---------------------------------------------------------
 
-raw_quorum1 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/quorum_mcq_pilote/quorum_mcq_pilote.csv",
-                                    variable_name = "ses_lang")
-raw_quorum2 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/quorum_mcq_pilote/quorum_mcq_pilote.csv",
-                                    variable_name = "EN_ses_lang")
+raw_quorum_mcq_pilote_fr <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/quorum_mcq_pilote/quorum_mcq_pilote.csv",
+                                                 variable_name = "ses_lang")
+table(raw_quorum_mcq_pilote_fr, useNA = "always")
+### change "" for NA
+raw_quorum_mcq_pilote_fr[raw_quorum_mcq_pilote_fr == ""] <- NA
 
-raw_quorum <- c(raw_quorum1, raw_quorum2)
-table(raw_quorum, useNA = "always")
+raw_quorum_mcq_pilote_en <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/quorum_mcq_pilote/quorum_mcq_pilote.csv",
+                                                 variable_name = "EN_ses_lang")
+table(raw_quorum_mcq_pilote_en, useNA = "always")
+### change "" for NA
+raw_quorum_mcq_pilote_en[raw_quorum_mcq_pilote_en == ""] <- NA
+
+raw_quorum_mcq_pilote <- coalesce(raw_quorum_mcq_pilote_fr, raw_quorum_mcq_pilote_en)
+table(raw_quorum_mcq_pilote)
 
 #### 2. clean variable
 clean_quorum <- NA
-clean_quorum[raw_quorum=="English" | raw_quorum=="Anglais"] <- "english"
-clean_quorum[raw_quorum=="French" | raw_quorum=="Français"] <- "french"
-clean_quorum[raw_quorum=="Other" | raw_quorum=="Autre"] <- "other"
+clean_quorum[raw_quorum_mcq_pilote=="English" | raw_quorum_mcq_pilote=="Anglais"] <- "english"
+clean_quorum[raw_quorum_mcq_pilote=="French" |  raw_quorum_mcq_pilote=="Français"] <- "french"
+clean_quorum[raw_quorum_mcq_pilote=="Other" |   raw_quorum_mcq_pilote=="Autre"] <- "other"
 table(clean_quorum, useNA = "always")
 
 #### 3. name each element in clean (assign the respondent id to each person in the vector)
 ##### source_id = quorum
 names(clean_quorum) <- sondr::generate_survey_ids(n_respondents = length(clean_quorum), ## number of respondents
-                                                    source_id = "quorum") ## source_id
+                                                    source_id = "quorum_mcq_pilote") ## source_id
 
 ## 4. add clean to the master output
 output_lang <- sondr::match_and_update(main = output_lang, ## vector to update
                                        updates = clean_quorum) ## vector with updates
+
+table(sondr::extract_elements_with_prefix(output_lang, "quorum_mcq_pilote"))
 
 ## pes_elxn_2022_text ----------------------------------------------------
 ### NA pour PES
@@ -626,10 +668,13 @@ names(clean_pco) <- sondr::generate_survey_ids(n_respondents = length(clean_pco)
 output_lang <- sondr::match_and_update(main = output_lang, ## vector to update
                                        updates = clean_pco) ## vector with updates
 
-
+table(sondr::extract_elements_with_prefix(output_lang, "pco"))
 # Output ------------------------------------------------------------------
 
 ### FACTORISE, LEVELS, etc.
 
-##### SAVE VECTOR WHERE??
+table(output_lang)
+output_lang <- factor(output_lang)
 
+##### SAVE VECTOR
+saveRDS(output_lang, "_SharedFolder_catalogue-donnees/merging-souverainete/clean/vectors/ses_lang.1.rds")

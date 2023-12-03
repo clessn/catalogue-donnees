@@ -37,7 +37,7 @@ names(clean_ces68) <- sondr::generate_survey_ids(n_respondents = length(clean_ce
 ## 4. add clean to the master output
 output_educ <- sondr::match_and_update(main = output_educ, ## vector to update
                                          updates = clean_ces68) ## vector with updates
-
+table(sondr::extract_elements_with_prefix(output_educ, "ces68"))
 ## ces74 -------------------------------------------------------------------
 
 #### 1. Get raw variable vector
@@ -58,7 +58,7 @@ names(clean_ces74) <- sondr::generate_survey_ids(n_respondents = length(clean_ce
 ## 4. add clean to the master output
 output_educ <- sondr::match_and_update(main = output_educ, ## vector to update
                                        updates = clean_ces74) ## vector with updates
-
+table(sondr::extract_elements_with_prefix(output_educ, "ces74"))
 ## ces79 -------------------------------------------------------------------
 
 #### 1. Get raw variable vector
@@ -79,7 +79,7 @@ names(clean_ces79) <- sondr::generate_survey_ids(n_respondents = length(clean_ce
 ## 4. add clean to the master output
 output_educ <- sondr::match_and_update(main = output_educ, ## vector to update
                                        updates = clean_ces79) ## vector with updates
-
+table(sondr::extract_elements_with_prefix(output_educ, "ces79"))
 ## ces84 -------------------------------------------------------------------
 
 #### 1. Get raw variable vector
@@ -102,7 +102,7 @@ names(clean_ces84) <- sondr::generate_survey_ids(n_respondents = length(clean_ce
 ## 4. add clean to the master output
 output_educ <- sondr::match_and_update(main = output_educ, ## vector to update
                                        updates = clean_ces84) ## vector with updates
-
+table(sondr::extract_elements_with_prefix(output_educ, "ces84"))
 ## ces88 -------------------------------------------------------------------
 
 #### 1. Get raw variable vector
@@ -125,7 +125,7 @@ names(clean_ces88) <- sondr::generate_survey_ids(n_respondents = length(clean_ce
 ## 4. add clean to the master output
 output_educ <- sondr::match_and_update(main = output_educ, ## vector to update
                                        updates = clean_ces88) ## vector with updates
-
+table(sondr::extract_elements_with_prefix(output_educ, "ces88"))
 ## ces93 -------------------------------------------------------------------
 
 #### 1. Get raw variable vector
@@ -148,7 +148,7 @@ names(clean_ces93) <- sondr::generate_survey_ids(n_respondents = length(clean_ce
 ## 4. add clean to the master output
 output_educ <- sondr::match_and_update(main = output_educ, ## vector to update
                                        updates = clean_ces93) ## vector with updates
-
+table(sondr::extract_elements_with_prefix(output_educ, "ces93"))
 ## ces97 -------------------------------------------------------------------
 
 #### 1. Get raw variable vector
@@ -171,7 +171,7 @@ names(clean_ces97) <- sondr::generate_survey_ids(n_respondents = length(clean_ce
 ## 4. add clean to the master output
 output_educ <- sondr::match_and_update(main = output_educ, ## vector to update
                                        updates = clean_ces97) ## vector with updates
-
+table(sondr::extract_elements_with_prefix(output_educ, "ces97"))
 ## ces2000 -------------------------------------------------------------------
 
 #### 1. Get raw variable vector
@@ -194,7 +194,7 @@ names(clean_ces2000) <- sondr::generate_survey_ids(n_respondents = length(clean_
 ## 4. add clean to the master output
 output_educ <- sondr::match_and_update(main = output_educ, ## vector to update
                                        updates = clean_ces2000) ## vector with updates
-
+table(sondr::extract_elements_with_prefix(output_educ, "ces2000"))
 ## ces2004 -------------------------------------------------------------------
 
 #### 1. Get raw variable vector
@@ -217,7 +217,7 @@ names(clean_ces2004) <- sondr::generate_survey_ids(n_respondents = length(clean_
 ## 4. add clean to the master output
 output_educ <- sondr::match_and_update(main = output_educ, ## vector to update
                                        updates = clean_ces2004) ## vector with updates
-
+table(sondr::extract_elements_with_prefix(output_educ, "ces2004"))
 ## ces2006 -------------------------------------------------------------------
 
 #### 1. Get raw variable vector
@@ -240,7 +240,7 @@ names(clean_ces2006) <- sondr::generate_survey_ids(n_respondents = length(clean_
 ## 4. add clean to the master output
 output_educ <- sondr::match_and_update(main = output_educ, ## vector to update
                                        updates = clean_ces2006) ## vector with updates
-
+table(sondr::extract_elements_with_prefix(output_educ, "ces2006"))
 ## ces2008 -------------------------------------------------------------------
 
 # Pas trouvé
@@ -267,7 +267,7 @@ names(clean_ces2011) <- sondr::generate_survey_ids(n_respondents = length(clean_
 ## 4. add clean to the master output
 output_educ <- sondr::match_and_update(main = output_educ, ## vector to update
                                        updates = clean_ces2011) ## vector with updates
-
+table(sondr::extract_elements_with_prefix(output_educ, "ces2011"))
 ## ces2015 -------------------------------------------------------------------
 
 #### 1. Get raw variable vector
@@ -288,7 +288,7 @@ names(clean_ces2015) <- sondr::generate_survey_ids(n_respondents = length(clean_
 ## 4. add clean to the master output
 output_educ <- sondr::match_and_update(main = output_educ, ## vector to update
                                        updates = clean_ces2015) ## vector with updates
-
+table(sondr::extract_elements_with_prefix(output_educ, "ces2015"))
 ## ces2019 -------------------------------------------------------------------
 
 #### 1. Get raw variable vector
@@ -311,7 +311,7 @@ names(clean_ces2019) <- sondr::generate_survey_ids(n_respondents = length(clean_
 ## 4. add clean to the master output
 output_educ <- sondr::match_and_update(main = output_educ, ## vector to update
                                        updates = clean_ces2019) ## vector with updates
-
+table(sondr::extract_elements_with_prefix(output_educ, "ces2019"))
 ## ces2021 -------------------------------------------------------------------
 
 #### 1. Get raw variable vector
@@ -334,7 +334,7 @@ names(clean_ces2021) <- sondr::generate_survey_ids(n_respondents = length(clean_
 ## 4. add clean to the master output
 output_educ <- sondr::match_and_update(main = output_educ, ## vector to update
                                        updates = clean_ces2021) ## vector with updates
-
+table(sondr::extract_elements_with_prefix(output_educ, "ces2021"))
 ## datagotchi_pilot1_2021 -------------------------------------------------------------------
 
 #### 1. Get raw variable vector
@@ -356,7 +356,7 @@ names(clean_datagotchi_pilot1_2021) <- sondr::generate_survey_ids(n_respondents 
 ## 4. add clean to the master output
 output_educ <- sondr::match_and_update(main = output_educ, ## vector to update
                                        updates = clean_datagotchi_pilot1_2021) ## vector with updates
-
+table(sondr::extract_elements_with_prefix(output_educ, "datagotchi_pilot1_2021"))
 ## january -------------------------------------------------------------------
 
 #### 1. Get raw variable vector
@@ -372,12 +372,12 @@ table(clean_omnibus_1january)
 
 #### 3. name each element in clean (assign the respondent id to each person in the vector)
 names(clean_omnibus_1january) <- sondr::generate_survey_ids(n_respondents = length(clean_omnibus_1january), ## number of respondents
-                                                                  source_id = "omnibus_1january") ## source_id
+                                                                  source_id = "january") ## source_id
 
 ## 4. add clean to the master output
 output_educ <- sondr::match_and_update(main = output_educ, ## vector to update
                                        updates = clean_omnibus_1january) ## vector with updates
-
+table(sondr::extract_elements_with_prefix(output_educ, "january"))
 ## february -------------------------------------------------------------------
 
 #### 1. Get raw variable vector
@@ -393,16 +393,16 @@ table(clean_omnibus_2february)
 
 #### 3. name each element in clean (assign the respondent id to each person in the vector)
 names(clean_omnibus_2february) <- sondr::generate_survey_ids(n_respondents = length(clean_omnibus_2february), ## number of respondents
-                                                            source_id = "omnibus_2february") ## source_id
+                                                            source_id = "february") ## source_id
 
 ## 4. add clean to the master output
 output_educ <- sondr::match_and_update(main = output_educ, ## vector to update
                                        updates = clean_omnibus_2february) ## vector with updates
-
+table(sondr::extract_elements_with_prefix(output_educ, "february"))
 ## march -------------------------------------------------------------------
 
 #### 1. Get raw variable vector
-raw_omnibus_3march <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/omnibus/february/february.Sav",
+raw_omnibus_3march <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/omnibus/march/march.Sav",
                                               variable_name = "S2")
 table(raw_omnibus_3march, useNA = "always")
 
@@ -414,12 +414,12 @@ table(clean_omnibus_3march)
 
 #### 3. name each element in clean (assign the respondent id to each person in the vector)
 names(clean_omnibus_3march) <- sondr::generate_survey_ids(n_respondents = length(clean_omnibus_3march), ## number of respondents
-                                                             source_id = "omnibus_3march") ## source_id
+                                                             source_id = "march") ## source_id
 
 ## 4. add clean to the master output
 output_educ <- sondr::match_and_update(main = output_educ, ## vector to update
                                        updates = clean_omnibus_3march) ## vector with updates
-
+table(sondr::extract_elements_with_prefix(output_educ, "march"))
 ## april -------------------------------------------------------------------
 
 #### 1. Get raw variable vector
@@ -435,12 +435,12 @@ table(clean_omnibus_4april)
 
 #### 3. name each element in clean (assign the respondent id to each person in the vector)
 names(clean_omnibus_4april) <- sondr::generate_survey_ids(n_respondents = length(clean_omnibus_4april), ## number of respondents
-                                                          source_id = "omnibus_4april") ## source_id
+                                                          source_id = "april") ## source_id
 
 ## 4. add clean to the master output
 output_educ <- sondr::match_and_update(main = output_educ, ## vector to update
                                        updates = clean_omnibus_4april) ## vector with updates
-
+table(sondr::extract_elements_with_prefix(output_educ, "april"))
 ## may -------------------------------------------------------------------
 
 #### 1. Get raw variable vector
@@ -456,12 +456,12 @@ table(clean_omnibus_5may)
 
 #### 3. name each element in clean (assign the respondent id to each person in the vector)
 names(clean_omnibus_5may) <- sondr::generate_survey_ids(n_respondents = length(clean_omnibus_5may), ## number of respondents
-                                                          source_id = "omnibus_5may") ## source_id
+                                                          source_id = "may") ## source_id
 
 ## 4. add clean to the master output
 output_educ <- sondr::match_and_update(main = output_educ, ## vector to update
                                        updates = clean_omnibus_5may) ## vector with updates
-
+table(sondr::extract_elements_with_prefix(output_educ, "may"))
 ## june -------------------------------------------------------------------
 
 #### 1. Get raw variable vector
@@ -477,12 +477,12 @@ table(clean_omnibus_6june)
 
 #### 3. name each element in clean (assign the respondent id to each person in the vector)
 names(clean_omnibus_6june) <- sondr::generate_survey_ids(n_respondents = length(clean_omnibus_6june), ## number of respondents
-                                                        source_id = "omnibus_6june") ## source_id
+                                                        source_id = "june") ## source_id
 
 ## 4. add clean to the master output
 output_educ <- sondr::match_and_update(main = output_educ, ## vector to update
                                        updates = clean_omnibus_6june) ## vector with updates
-
+table(sondr::extract_elements_with_prefix(output_educ, "june"))
 ## datagotchi_pilot2_2022 -------------------------------------------------------------------
 
 ### ICI IL FAUT MERGER FRANCAIS ET ANGLAIS
@@ -512,7 +512,7 @@ names(clean_sondage_nationalisme_2022) <- sondr::generate_survey_ids(n_responden
 ## 4. add clean to the master output
 output_educ <- sondr::match_and_update(main = output_educ, ## vector to update
                                        updates = clean_sondage_nationalisme_2022) ## vector with updates
-
+table(sondr::extract_elements_with_prefix(output_educ, "sondage_nationalisme_2022"))
 ## quorum_mcq_pilote -------------------------------------------------------------------
 
 ### ICI IL FAUT MERGER FRANCAIS ET ANGLAIS
@@ -559,7 +559,7 @@ names(clean_quorum_mcq_pilote) <- sondr::generate_survey_ids(n_respondents = len
 ## 4. add clean to the master output
 output_educ <- sondr::match_and_update(main = output_educ, ## vector to update
                                        updates = clean_quorum_mcq_pilote) ## vector with updates
-
+table(sondr::extract_elements_with_prefix(output_educ, "quorum_mcq_pilote"))
 ## pes_elxn_2022_text -------------------------------------------------------------------
 
 #### 1. Get raw variable vector
@@ -575,12 +575,12 @@ table(clean_pes_elxn_2022)
 
 #### 3. name each element in clean (assign the respondent id to each person in the vector)
 names(clean_pes_elxn_2022) <- sondr::generate_survey_ids(n_respondents = length(clean_pes_elxn_2022), ## number of respondents
-                                                         source_id = "pes_elxn_2022") ## source_id
+                                                         source_id = "pes_elxn_2022_text") ## source_id
 
 ## 4. add clean to the master output
 output_educ <- sondr::match_and_update(main = output_educ, ## vector to update
                                        updates = clean_pes_elxn_2022) ## vector with updates
-
+table(sondr::extract_elements_with_prefix(output_educ, "pes_elxn_2022_text"))
 ## pco -------------------------------------------------------------------
 
 #### 1. Get raw variable vector
@@ -602,7 +602,7 @@ names(clean_pco) <- sondr::generate_survey_ids(n_respondents = length(clean_pco)
 ## 4. add clean to the master output
 output_educ <- sondr::match_and_update(main = output_educ, ## vector to update
                                        updates = clean_pco) ## vector with updates
-
+table(sondr::extract_elements_with_prefix(output_educ, "pco"))
 # Output ------------------------------------------------------------------
 
 ### FACTORISE, LEVELS, etc.

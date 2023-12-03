@@ -63,6 +63,8 @@ output_num <- sondr::match_and_update(main = output_num, ## vector to update
 output_centile <- sondr::match_and_update(main = output_centile, ## vector to update
                                       updates = clean_centile) ## vector with updates
 
+table(sondr::extract_elements_with_prefix(output_centile, "ces65"))
+
 ## ces68 -------------------------------------------------------------------
 
 #### 1. Get raw gender variable vector
@@ -103,6 +105,8 @@ output_centile <- sondr::match_and_update(main = output_centile, ## vector to up
 hist(output_num)
 hist(output_centile)
 
+table(sondr::extract_elements_with_prefix(output_centile, "ces68"))
+
 ## ces74 -------------------------------------------------------------------
 
 #### 1. Get raw gender variable vector
@@ -136,6 +140,8 @@ output_centile <- sondr::match_and_update(main = output_centile, ## vector to up
 
 table(output_num)
 table(output_centile)
+
+table(sondr::extract_elements_with_prefix(output_centile, "ces74"))
 
 ## ces79 -------------------------------------------------------------------
 
@@ -178,6 +184,7 @@ output_centile <- sondr::match_and_update(main = output_centile, ## vector to up
 table(output_num)
 table(output_centile)
 
+table(sondr::extract_elements_with_prefix(output_centile, "ces79"))
 ## ces84 -------------------------------------------------------------------
 
 #### 1. Get raw gender variable vector
@@ -224,6 +231,8 @@ table(output_num)
 hist(output_num)
 table(output_centile)
 
+table(sondr::extract_elements_with_prefix(output_centile, "ces84"))
+
 
 ## ces88 -------------------------------------------------------------------
 
@@ -260,7 +269,7 @@ table(output_num)
 hist(output_num)
 table(output_centile)
 
-
+table(sondr::extract_elements_with_prefix(output_centile, "ces88"))
 
 ## ces93 -------------------------------------------------------------------
 
@@ -312,6 +321,7 @@ output_centile <- sondr::match_and_update(main = output_centile, ## vector to up
 table(output_num)
 hist(output_num)
 table(output_centile)
+table(sondr::extract_elements_with_prefix(output_centile, "ces93"))
 
 ## ces97 -------------------------------------------------------------------
 
@@ -364,6 +374,7 @@ table(output_num)
 hist(output_num)
 table(output_centile)
 hist(output_centile)
+table(sondr::extract_elements_with_prefix(output_centile, "ces97"))
 
 ## ces2000 -------------------------------------------------------------------
 
@@ -417,6 +428,9 @@ hist(output_num)
 table(output_centile)
 hist(output_centile)
 
+table(sondr::extract_elements_with_prefix(output_centile, "ces2000"))
+
+
 ## ces2004 -------------------------------------------------------------------
 
 source_id <- "ces2004"
@@ -454,7 +468,7 @@ table(output_num)
 hist(output_num)
 table(output_centile)
 hist(output_centile)
-
+table(sondr::extract_elements_with_prefix(output_centile, "ces2004"))
 
 ## ces2006 -------------------------------------------------------------------
 
@@ -499,7 +513,7 @@ table(output_num)
 hist(output_num)
 table(output_centile)
 hist(output_centile)
-
+table(sondr::extract_elements_with_prefix(output_centile, "ces2006"))
 ## ces2008 -------------------------------------------------------------------
 
 source_id <- "ces2008"
@@ -562,7 +576,7 @@ table(output_num)
 hist(output_num)
 table(output_centile)
 hist(output_centile)
-
+table(sondr::extract_elements_with_prefix(output_centile, "ces2008"))
 ## ces11 -------------------------------------------------------------------
 
 source_id <- "ces2011"
@@ -615,7 +629,7 @@ table(output_num)
 hist(output_num)
 table(output_centile)
 hist(output_centile)
-
+table(sondr::extract_elements_with_prefix(output_centile, "ces2011"))
 ## ces2015 -------------------------------------------------------------------
 
 source_id <- "ces2015"
@@ -659,7 +673,7 @@ table(output_num)
 hist(output_num)
 table(output_centile)
 hist(output_centile)
-
+table(sondr::extract_elements_with_prefix(output_centile, "ces2015"))
 ## ces2019 -------------------------------------------------------------------
 
 source_id <- "ces2019"
@@ -708,6 +722,7 @@ table(output_num)
 hist(output_num)
 table(output_centile)
 hist(output_centile)
+table(sondr::extract_elements_with_prefix(output_centile, "ces2019"))
 
 ## ces2021 -------------------------------------------------------------------
 
@@ -739,6 +754,7 @@ table(output_num)
 hist(output_num)
 table(output_centile)
 hist(output_centile)
+table(sondr::extract_elements_with_prefix(output_centile, "ces2021"))
 
 ## datagotchi_pilot1_2021 -------------------------------------------------------------------
 
@@ -784,7 +800,7 @@ table(output_num)
 hist(output_num)
 table(output_centile)
 hist(output_centile)
-
+table(sondr::extract_elements_with_prefix(output_centile, "datagotchi_pilot1_2021"))
 ## january -------------------------------------------------------------------
 
 source_id <- "january"
@@ -829,6 +845,7 @@ hist(output_num)
 table(output_centile)
 hist(output_centile)
 
+table(sondr::extract_elements_with_prefix(output_centile, "january"))
 ## february -------------------------------------------------------------------
 
 source_id <- "february"
@@ -873,6 +890,7 @@ hist(output_num)
 table(output_centile)
 hist(output_centile)
 
+table(sondr::extract_elements_with_prefix(output_centile, "february"))
 ## march -------------------------------------------------------------------
 
 source_id <- "march"
@@ -917,7 +935,7 @@ hist(output_num)
 table(output_centile)
 hist(output_centile)
 
-
+table(sondr::extract_elements_with_prefix(output_centile, "march"))
 ## april -------------------------------------------------------------------
 
 source_id <- "april"
@@ -961,7 +979,7 @@ table(output_num)
 hist(output_num)
 table(output_centile)
 hist(output_centile)
-
+table(sondr::extract_elements_with_prefix(output_centile, "april"))
 ## may -------------------------------------------------------------------
 
 source_id <- "may"
@@ -1005,7 +1023,7 @@ table(output_num)
 hist(output_num)
 table(output_centile)
 hist(output_centile)
-
+table(sondr::extract_elements_with_prefix(output_centile, "may"))
 ## june -------------------------------------------------------------------
 
 source_id <- "june"
@@ -1049,7 +1067,7 @@ table(output_num)
 hist(output_num)
 table(output_centile)
 hist(output_centile)
-
+table(sondr::extract_elements_with_prefix(output_centile, "june"))
 ## datagotchi_pilot2_2022 -------------------------------------------------------------------
 
 source_id <- "datagotchi_pilot2_2022"
@@ -1105,7 +1123,7 @@ hist(output_num)
 table(output_centile)
 hist(output_centile)
 output_centile["datagotchi_pilot2_2022.189"]
-
+table(sondr::extract_elements_with_prefix(output_centile, "datagotchi_pilot2_2022"))
 ## sondage_nationalisme_2022 -------------------------------------------------------------------
 
 source_id <- "sondage_nationalisme_2022"
@@ -1152,6 +1170,7 @@ hist(output_num)
 table(output_centile)
 hist(output_centile)
 
+table(sondr::extract_elements_with_prefix(output_centile, "sondage_nationalisme_2022"))
 
 ## quorum_mcq_pilote -------------------------------------------------------------------
 
@@ -1218,7 +1237,7 @@ table(output_num)
 hist(output_num)
 table(output_centile)
 hist(output_centile)
-
+table(sondr::extract_elements_with_prefix(output_centile, "quorum_mcq_pilote"))
 ## pes_elxn_2022_text -------------------------------------------------------------------
 
 source_id <- "pes_elxn_2022_text"
@@ -1260,7 +1279,7 @@ table(output_num)
 hist(output_num)
 table(output_centile)
 hist(output_centile)
-
+table(sondr::extract_elements_with_prefix(output_centile, "pes_elxn_2022_text"))
 
 ## pco -------------------------------------------------------------------
 
@@ -1303,14 +1322,14 @@ table(output_num)
 hist(output_num)
 table(output_centile)
 hist(output_centile)
-
+table(sondr::extract_elements_with_prefix(output_centile, "pco"))
 # Output ------------------------------------------------------------------
 
 ### save num
-saveRDS(output_num, "_SharedFolder_catalogue-donnees/merging-souverainete/clean/vectors/ses_family_income_num.rds")
+#saveRDS(output_num, "_SharedFolder_catalogue-donnees/merging-souverainete/clean/vectors/ses_family_income_num.rds")
 
 ### save centile
-saveRDS(output_centile, "_SharedFolder_catalogue-donnees/merging-souverainete/clean/vectors/ses_family_income_centile.rds")
+#saveRDS(output_centile, "_SharedFolder_catalogue-donnees/merging-souverainete/clean/vectors/ses_family_income_centile.rds")
 
 ### Categorise in centiles
 output_centile_cat <- factor(cut(

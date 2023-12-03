@@ -36,8 +36,8 @@ names(clean_ces65) <- sondr::generate_survey_ids(n_respondents = length(clean_ce
 output_gender <- sondr::match_and_update(main = output_gender, ## vector to update
                                   updates = clean_ces65) ## vector with updates
 
+table(sondr::extract_elements_with_prefix(output_gender, "ces65"))
 
-output_gender["ces65.2118"]
 ## ces68 -------------------------------------------------------------------
 raw_ces68 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/1968/ces68.csv",
                                   variable_name = "var401")
@@ -58,14 +58,7 @@ names(clean_ces68) <- sondr::generate_survey_ids(n_respondents = length(clean_ce
 output_gender <- sondr::match_and_update(main = output_gender, ## vector to update
                                          updates = clean_ces68) ## vector with updates
 
-main <- output_gender
-updates <- clean_ces68
-
-main[names(main) %in% names(updates)] <- updates[names(main)[4500:4885] %in% 
-                                                   names(updates)]
-
-
-output_gender["ces68.1288"]
+table(sondr::extract_elements_with_prefix(output_gender, "ces68"))
 
 ### ces74 -------------------------------------------------------------------
 raw_ces74 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/1974/ces74.csv",
@@ -87,7 +80,7 @@ names(clean_ces74) <- sondr::generate_survey_ids(n_respondents = length(clean_ce
 output_gender <- sondr::match_and_update(main = output_gender, ## vector to update
                                          updates = clean_ces74) ## vector with updates
 
-output_gender["ces74.250"]
+table(sondr::extract_elements_with_prefix(output_gender, "ces74"))
 
 ## ces79 -------------------------------------------------------------------
 raw_ces79 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/1979/ces79.csv",
@@ -109,8 +102,8 @@ names(clean_ces79) <- sondr::generate_survey_ids(n_respondents = length(clean_ce
 output_gender <- sondr::match_and_update(main = output_gender, ## vector to update
                                          updates = clean_ces79) ## vector with updates
 
+table(sondr::extract_elements_with_prefix(output_gender, "ces79"))
 
-output_gender["ces79.218"]
 ## ces84 -------------------------------------------------------------------
 raw_ces84 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/1984/ces84.csv",
                                   variable_name = "var456")
@@ -131,8 +124,8 @@ names(clean_ces84) <- sondr::generate_survey_ids(n_respondents = length(clean_ce
 output_gender <- sondr::match_and_update(main = output_gender, ## vector to update
                                          updates = clean_ces84) ## vector with updates
 
+table(sondr::extract_elements_with_prefix(output_gender, "ces84"))
 
-output_gender["ces84.18"]
 ## ces88 -------------------------------------------------------------------
 raw_ces88 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/1988/ces88.csv",
                                   variable_name = "rsex")
@@ -153,8 +146,8 @@ names(clean_ces88) <- sondr::generate_survey_ids(n_respondents = length(clean_ce
 output_gender <- sondr::match_and_update(main = output_gender, ## vector to update
                                          updates = clean_ces88) ## vector with updates
 
+table(sondr::extract_elements_with_prefix(output_gender, "ces88"))
 
-output_gender["ces88.2118"]
 ## ces93 -------------------------------------------------------------------
 raw_ces93 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/1993/ces93.csv",
                                   variable_name = "cpsrgen")
@@ -175,8 +168,8 @@ names(clean_ces93) <- sondr::generate_survey_ids(n_respondents = length(clean_ce
 output_gender <- sondr::match_and_update(main = output_gender, ## vector to update
                                          updates = clean_ces93) ## vector with updates
 
+table(sondr::extract_elements_with_prefix(output_gender, "ces93"))
 
-output_gender["ces93.211"]
 ## ces97 -------------------------------------------------------------------
 raw_ces97 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/1997/ces97.csv",
                                   variable_name = "cpsrgen")
@@ -197,8 +190,8 @@ names(clean_ces97) <- sondr::generate_survey_ids(n_respondents = length(clean_ce
 output_gender <- sondr::match_and_update(main = output_gender, ## vector to update
                                          updates = clean_ces97) ## vector with updates
 
+table(sondr::extract_elements_with_prefix(output_gender, "ces97"))
 
-output_gender["ces97.2118"]
 ## ces2000 -------------------------------------------------------------------
 raw_ces2000 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/2000/ces2000.csv",
                                   variable_name = "cpsrgen")
@@ -219,8 +212,8 @@ names(clean_ces2000) <- sondr::generate_survey_ids(n_respondents = length(clean_
 output_gender <- sondr::match_and_update(main = output_gender, ## vector to update
                                          updates = clean_ces2000) ## vector with updates
 
+table(sondr::extract_elements_with_prefix(output_gender, "ces2000"))
 
-output_gender["ces2000.211"]
 ## ces2004 -------------------------------------------------------------------
 raw_ces2004 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/2004/ces2004.csv",
                                   variable_name = "gender")
@@ -241,8 +234,8 @@ names(clean_ces2004) <- sondr::generate_survey_ids(n_respondents = length(clean_
 output_gender <- sondr::match_and_update(main = output_gender, ## vector to update
                                          updates = clean_ces2004) ## vector with updates
 
+table(sondr::extract_elements_with_prefix(output_gender, "ces2004"))
 
-output_gender["ces2004.2118"]
 ## ces2006 -------------------------------------------------------------------
 raw_ces2006 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/2006/ces2006.csv",
                                   variable_name = "cps_rgen")
@@ -263,8 +256,8 @@ names(clean_ces2006) <- sondr::generate_survey_ids(n_respondents = length(clean_
 output_gender <- sondr::match_and_update(main = output_gender, ## vector to update
                                          updates = clean_ces2006) ## vector with updates
 
+table(sondr::extract_elements_with_prefix(output_gender, "ces2006"))
 
-output_gender["ces2006.2118"]
 ## ces2008 -------------------------------------------------------------------
 raw_ces2008 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/2008/ces2008.csv",
                                   variable_name = "cps_rgender")
@@ -285,8 +278,8 @@ names(clean_ces2008) <- sondr::generate_survey_ids(n_respondents = length(clean_
 output_gender <- sondr::match_and_update(main = output_gender, ## vector to update
                                          updates = clean_ces2008) ## vector with updates
 
+table(sondr::extract_elements_with_prefix(output_gender, "ces2008"))
 
-output_gender["ces2008.211"]
 ## ces2011 -------------------------------------------------------------------
 raw_ces2011 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/2011/ces2011.csv",
                                     variable_name = "RGENDER")
@@ -307,8 +300,8 @@ names(clean_ces2011) <- sondr::generate_survey_ids(n_respondents = length(clean_
 output_gender <- sondr::match_and_update(main = output_gender, ## vector to update
                                          updates = clean_ces2011) ## vector with updates
 
+table(sondr::extract_elements_with_prefix(output_gender, "ces2011"))
 
-output_gender["ces2011.211"]
 ## ces2015 -------------------------------------------------------------------
 raw_ces2015 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/2015/ces2015.csv",
                                     variable_name = "sex_r")
@@ -329,8 +322,8 @@ names(clean_ces2015) <- sondr::generate_survey_ids(n_respondents = length(clean_
 output_gender <- sondr::match_and_update(main = output_gender, ## vector to update
                                          updates = clean_ces2015) ## vector with updates
 
+table(sondr::extract_elements_with_prefix(output_gender, "ces2015"))
 
-output_gender["ces2015.211"]
 ## ces2019 -------------------------------------------------------------------
 raw_ces2019 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/2019/ces2019.csv",
                                     variable_name = "cps19_gender")
@@ -351,8 +344,8 @@ names(clean_ces2019) <- sondr::generate_survey_ids(n_respondents = length(clean_
 output_gender <- sondr::match_and_update(main = output_gender, ## vector to update
                                          updates = clean_ces2019) ## vector with updates
 
+table(sondr::extract_elements_with_prefix(output_gender, "ces2019"))
 
-output_gender["ces2019.211"]
 ## ces2021 -------------------------------------------------------------------
 raw_ces2021 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/2021/ces2021.csv",
                                     variable_name = "cps21_genderid")
@@ -373,8 +366,8 @@ names(clean_ces2021) <- sondr::generate_survey_ids(n_respondents = length(clean_
 output_gender <- sondr::match_and_update(main = output_gender, ## vector to update
                                          updates = clean_ces2021) ## vector with updates
 
+table(sondr::extract_elements_with_prefix(output_gender, "ces2021"))
 
-output_gender["ces2021.211"]
 ## datagotchi_pilot1_2021 -------------------------------------------------------------------
 raw_datagotchi_pilot1_2021 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/datagotchi_pilot1_2021/datagotchi_pilot1_2021.Sav",
                                     variable_name = "SEXE")
@@ -395,8 +388,8 @@ names(clean_datagotchi_pilot1_2021) <- sondr::generate_survey_ids(n_respondents 
 output_gender <- sondr::match_and_update(main = output_gender, ## vector to update
                                          updates = clean_datagotchi_pilot1_2021) ## vector with updates
 
+table(sondr::extract_elements_with_prefix(output_gender, "datagotchi_pilot1_2021"))
 
-output_gender["datagotchi_pilot1_2021.211"]
 ## january -------------------------------------------------------------------
 raw_january <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/omnibus/january/january.Sav",
                                                    variable_name = "SEXE")
@@ -417,8 +410,8 @@ names(clean_january) <- sondr::generate_survey_ids(n_respondents = length(clean_
 output_gender <- sondr::match_and_update(main = output_gender, ## vector to update
                                          updates = clean_january) ## vector with updates
 
+table(sondr::extract_elements_with_prefix(output_gender, "january"))
 
-output_gender["january.211"]
 ## february -------------------------------------------------------------------
 raw_february <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/omnibus/february/february.Sav",
                                     variable_name = "SEXE")
@@ -439,8 +432,8 @@ names(clean_february) <- sondr::generate_survey_ids(n_respondents = length(clean
 output_gender <- sondr::match_and_update(main = output_gender, ## vector to update
                                          updates = clean_february) ## vector with updates
 
+table(sondr::extract_elements_with_prefix(output_gender, "february"))
 
-output_gender["february.211"]
 ## march -------------------------------------------------------------------
 raw_march <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/omnibus/march/march.Sav",
                                     variable_name = "SEXE")
@@ -461,8 +454,8 @@ names(clean_march) <- sondr::generate_survey_ids(n_respondents = length(clean_ma
 output_gender <- sondr::match_and_update(main = output_gender, ## vector to update
                                          updates = clean_march) ## vector with updates
 
+table(sondr::extract_elements_with_prefix(output_gender, "march"))
 
-output_gender["march.211"]
 ## april -------------------------------------------------------------------
 raw_april <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/omnibus/april/april.Sav",
                                     variable_name = "SEXE")
@@ -483,8 +476,8 @@ names(clean_april) <- sondr::generate_survey_ids(n_respondents = length(clean_ap
 output_gender <- sondr::match_and_update(main = output_gender, ## vector to update
                                          updates = clean_april) ## vector with updates
 
+table(sondr::extract_elements_with_prefix(output_gender, "april"))
 
-output_gender["april.211"]
 ## may -------------------------------------------------------------------
 raw_may <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/omnibus/may/may.Sav",
                                     variable_name = "SEXE")
@@ -505,8 +498,8 @@ names(clean_may) <- sondr::generate_survey_ids(n_respondents = length(clean_may)
 output_gender <- sondr::match_and_update(main = output_gender, ## vector to update
                                          updates = clean_may) ## vector with updates
 
+table(sondr::extract_elements_with_prefix(output_gender, "may"))
 
-output_gender["may.211"]
 ## june -------------------------------------------------------------------
 raw_june <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/omnibus/june/june.Sav",
                                     variable_name = "SEXE")
@@ -527,12 +520,19 @@ names(clean_june) <- sondr::generate_survey_ids(n_respondents = length(clean_jun
 output_gender <- sondr::match_and_update(main = output_gender, ## vector to update
                                          updates = clean_june) ## vector with updates
 
+table(sondr::extract_elements_with_prefix(output_gender, "june"))
 
-output_gender["june.211"]
 ## datagotchi_pilot2_2022 -------------------------------------------------------------------
-raw_datagotchi_pilot2_2022 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/datagotchi_pilot2_2022/datagotchi_pilot2_2022.csv",
+raw_datagotchi_pilot2_2022_fr <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/datagotchi_pilot2_2022/datagotchi_pilot2_2022.csv",
                                variable_name = "gender")
-table(raw_datagotchi_pilot2_2022, useNA = "always")
+table(raw_datagotchi_pilot2_2022_fr, useNA = "always")
+
+raw_datagotchi_pilot2_2022_en <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/datagotchi_pilot2_2022/datagotchi_pilot2_2022.csv",
+                                                   variable_name = "gender.1")
+table(raw_datagotchi_pilot2_2022_en, useNA = "always")
+
+raw_datagotchi_pilot2_2022 <- coalesce(raw_datagotchi_pilot2_2022_fr, raw_datagotchi_pilot2_2022_en)
+table(raw_datagotchi_pilot2_2022)
 
 #### 2. clean variable
 clean_datagotchi_pilot2_2022 <- NA
@@ -549,8 +549,8 @@ names(clean_datagotchi_pilot2_2022) <- sondr::generate_survey_ids(n_respondents 
 output_gender <- sondr::match_and_update(main = output_gender, ## vector to update
                                          updates = clean_datagotchi_pilot2_2022) ## vector with updates
 
+table(sondr::extract_elements_with_prefix(output_gender, "datagotchi_pilot2_2022"))
 
-output_gender["datagotchi_pilot2_2022.211"]
 ## sondage_nationalisme_2022 -------------------------------------------------------------------
 raw_sondage_nationalisme_2022 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/sondage_nationalisme_2022/sondage_nationalisme_2022.csv",
                                  variable_name = "gender")
@@ -571,24 +571,28 @@ names(clean_sondage_nationalisme_2022) <- sondr::generate_survey_ids(n_responden
 output_gender <- sondr::match_and_update(main = output_gender, ## vector to update
                                          updates = clean_sondage_nationalisme_2022) ## vector with updates
 
+table(sondr::extract_elements_with_prefix(output_gender, "sondage_nationalisme_2022"))
 
-output_gender["sondage_nationalisme_2022.211"]
 ## quorum_mcq_pilote -------------------------------------------------------------------
 raw_quorum_mcq_pilote_fr <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/quorum_mcq_pilote/quorum_mcq_pilote.csv",
                                variable_name = "ses_gender")
 table(raw_quorum_mcq_pilote_fr, useNA = "always")
+### change "" for NA
+raw_quorum_mcq_pilote_fr[raw_quorum_mcq_pilote_fr == ""] <- NA
 
 raw_quorum_mcq_pilote_en <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/quorum_mcq_pilote/quorum_mcq_pilote.csv",
                                variable_name = "EN_ses_gender")
 table(raw_quorum_mcq_pilote_en, useNA = "always")
+### change "" for NA
+raw_quorum_mcq_pilote_en[raw_quorum_mcq_pilote_en == ""] <- NA
 
 raw_quorum_mcq_pilote <- coalesce(raw_quorum_mcq_pilote_fr, raw_quorum_mcq_pilote_en)
-
 table(raw_quorum_mcq_pilote)
+
 #### 2. clean variable
 clean_quorum_mcq_pilote <- NA
 clean_quorum_mcq_pilote[raw_quorum_mcq_pilote == "Femme" | raw_quorum_mcq_pilote == "Woman"] <- "female"
-clean_sondage_nationalisme_2022[raw_quorum_mcq_pilote == "Homme" | raw_quorum_mcq_pilote == "Man"] <- "male"
+clean_quorum_mcq_pilote[raw_quorum_mcq_pilote == "Homme" | raw_quorum_mcq_pilote == "Man"] <- "male"
 table(clean_quorum_mcq_pilote)
 
 #### 3. name each element in clean (assign the respondent id to each person in the vector)
@@ -598,10 +602,9 @@ names(clean_quorum_mcq_pilote) <- sondr::generate_survey_ids(n_respondents = len
 
 ## 4. add clean to the master output
 output_gender <- sondr::match_and_update(main = output_gender, ## vector to update
-                                         updates = clean_sondage_nationalisme_2022) ## vector with updates
+                                         updates = clean_quorum_mcq_pilote) ## vector with updates
 
-
-output_gender["quorum_mcq_pilote.211"]
+table(sondr::extract_elements_with_prefix(output_gender, "quorum_mcq_pilote"))
 
 ## pes_elxn_2022_text -------------------------------------------------------------------
 raw_pes_elxn_2022_text <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/pes_elxn_2022/pes_elxn_2022_text.csv",
@@ -623,34 +626,37 @@ names(clean_pes_elxn_2022_text) <- sondr::generate_survey_ids(n_respondents = le
 output_gender <- sondr::match_and_update(main = output_gender, ## vector to update
                                          updates = clean_pes_elxn_2022_text) ## vector with updates
 
+table(sondr::extract_elements_with_prefix(output_gender, "pes_elxn_2022_text"))
 
-output_gender["pes_elxn_2022_text.211"]
 ## pco -------------------------------------------------------------------
 raw_pco <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/pco/pco.csv",
                                                variable_name = "Q20.1.Pco2014")
 table(raw_pco, useNA = "always")
 
 #### 2. clean variable
-clean_pes_elxn_2022_text <- NA
-clean_pes_elxn_2022_text[raw_pes_elxn_2022_text == "Féminin"] <- "female"
-clean_pes_elxn_2022_text[raw_pes_elxn_2022_text == "Masculin"] <- "male"
-table(clean_pes_elxn_2022_text)
+clean_pco <- NA
+clean_pco[raw_pco == "Man"] <- "female"
+clean_pco[raw_pco == "Woman"] <- "male"
+table(clean_pco)
 
 #### 3. name each element in clean (assign the respondent id to each person in the vector)
 ##### source_id = ces65
-names(clean_pes_elxn_2022_text) <- sondr::generate_survey_ids(n_respondents = length(clean_pes_elxn_2022_text), ## number of respondents
-                                                              source_id = "pes_elxn_2022_text") ## source_id
+names(clean_pco) <- sondr::generate_survey_ids(n_respondents = length(clean_pco), ## number of respondents
+                                                              source_id = "pco") ## source_id
 
 ## 4. add clean to the master output
 output_gender <- sondr::match_and_update(main = output_gender, ## vector to update
-                                         updates = clean_pes_elxn_2022_text) ## vector with updates
+                                         updates = clean_pco) ## vector with updates
 
-
-output_gender["pes_elxn_2022_text.211"]
+table(sondr::extract_elements_with_prefix(output_gender, "pco"))
 
 # Output ------------------------------------------------------------------
 
 ### FACTORISE, LEVELS, etc.
 
-##### SAVE VECTOR WHERE??
+table(output_gender)
+output_gender <- factor(output_gender)
+
+##### SAVE VECTOR
+saveRDS(output_gender, "_SharedFolder_catalogue-donnees/merging-souverainete/clean/vectors/ses_gender.rds")
 

@@ -30,10 +30,26 @@
         ]
       },
       "ces84": {
-        "class": "NA",
-        "question_label": "NA",
-        "raw_variable": "NA",
+        "class": "Categoric",
+        "question_label": "When you think of YOUR government, which government comes to mind first, the government of Canada or the government of",
+        "raw_variable": "var020",
         "choices": [
+          {
+            "value": "canada",
+            "label": "canada"
+          },
+          {
+            "value": "both",
+            "label": "both"
+          },
+          {
+            "value": "province",
+            "label": "province"
+          },
+          {
+            "value": "neither",
+            "label": "neither"
+          }
         ]
       },
       "ces88": {
@@ -192,45 +208,93 @@
         ]
       },
       "omnibus_1january": {
-        "class": "NA",
-        "question_label": "NA",
-        "raw_variable": "NA",
+        "class": "Categoric",
+        "question_label": "Personnellement, comment vous décrivé vous?",
+        "raw_variable": "Q21",
         "choices": [
+          {
+            "value": 1,
+            "label": "Avant tout Qu.b.cois"  
+          },
+          {
+            "value": 2,
+            "label": "Avant tout Canadien"
+          }
         ]
       },
       "omnibus_2february": {
-        "class": "NA",
-        "question_label": "NA",
-        "raw_variable": "NA",
+        "class": "Categoric",
+        "question_label": "Personnellement, comment vous décrivé vous?",
+        "raw_variable": "Q21",
         "choices": [
+          {
+            "value": 1,
+            "label": "Avant tout Qu.b.cois"  
+          },
+          {
+            "value": 2,
+            "label": "Avant tout Canadien"
+          }
         ]
       },
       "omnibus_3march": {
-        "class": "NA",
-        "question_label": "NA",
-        "raw_variable": "NA",
+        "class": "Categoric",
+        "question_label": "Personnellement, comment vous décrivé vous?",
+        "raw_variable": "Q21",
         "choices": [
+          {
+            "value": 1,
+            "label": "Avant tout Qu.b.cois"  
+          },
+          {
+            "value": 2,
+            "label": "Avant tout Canadien"
+          }
         ]
       },
       "omnibus_4april": {
-        "class": "NA",
-        "question_label": "NA",
-        "raw_variable": "NA",
+        "class": "Categoric",
+        "question_label": "Personnellement, comment vous décrivé vous?",
+        "raw_variable": "Q21",
         "choices": [
+          {
+            "value": 1,
+            "label": "Avant tout Qu.b.cois"  
+          },
+          {
+            "value": 2,
+            "label": "Avant tout Canadien"
+          }
         ]
       },
       "omnibus_5may": {
-        "class": "NA",
-        "question_label": "NA",
-        "raw_variable": "NA",
+        "class": "Categoric",
+        "question_label": "Personnellement, comment vous décrivé vous?",
+        "raw_variable": "Q21",
         "choices": [
+          {
+            "value": 1,
+            "label": "Avant tout Qu.b.cois"  
+          },
+          {
+            "value": 2,
+            "label": "Avant tout Canadien"
+          }
         ]
       },
       "omnibus_6june": {
-        "class": "NA",
-        "question_label": "NA",
-        "raw_variable": "NA",
+        "class": "Categoric",
+        "question_label": "Personnellement, comment vous décrivé vous?",
+        "raw_variable": "Q21",
         "choices": [
+          {
+            "value": 1,
+            "label": "Avant tout Qu.b.cois"  
+          },
+          {
+            "value": 2,
+            "label": "Avant tout Canadien"
+          }
         ]
       },
       "sondage_nationalisme_2022": {
