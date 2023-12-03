@@ -91,12 +91,12 @@ na_count %>%
   facet_grid(rows = vars(year), scales = "free_y",
              switch = "y") +
   geom_point(aes(color = prop),
-             shape = 15, size = 10) +
+             shape = 15, size = 15) +
   clessnverse::theme_clean_light() +
   scale_color_gradient(low = "#32CD32", high = "black") +
   theme(strip.placement = "inside",
         axis.text.x = element_text(angle = 90, hjust = 1),
-        panel.spacing.y = unit(0.05, "lines"))
+        panel.spacing.y = unit(0.5, "lines"))
 
 ggsave("_SharedFolder_catalogue-donnees/merging-souverainete/graphs/missing_data.png",
        width = 9, height = 18)
