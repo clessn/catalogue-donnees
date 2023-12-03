@@ -9,13 +9,13 @@ source("merging-souverainete/config.R")
 
 sample(ids, 20) ### 20 ids random
 ## empty vector where the clean values will go. same length as the n of ids.
-output <- rep(NA, length(ids))
+output_geoloc <- rep(NA, length(ids))
 ### each element in output is a respondent with a unique respondent id
-names(output) <- ids
+names(output_geoloc) <- ids
 
 # Merging and cleaning ----------------------------------------------------
 
-df_ridings <- read.csv("merging-souverainete/merging_files/data/quebec_fed_ridings.csv")
+df_ridings <- read.csv("_SharedFolder_catalogue-donnees/merging-souverainete/aux_data/quebec_fed_ridings.csv")
 
 ## ces65 -------------------------------------------------------------------
 
@@ -58,34 +58,21 @@ df_ridings_1965 <- df_ridings_1965 %>%
 df_ridings_1965 <- df_ridings_1965 %>%
   filter(!(circonscription %in% c("Labelle", "Laurier", "Papineau", "Saint-Henri", "Quebec East")))
   
-for (i in seq_along(df_ridings_1965$circonscription)) { 
-    if (df_ridings_1965$circonscription[i] == "Quebec South") {
-        df_ridings_1965$circonscription_ces[i] <- "quebec-sud"
-    }
-}
+clean_ces65 <- c(NA)
 
-# Assuming clean_ces65 is your new vector and it's already initialized with the correct length
-# and 'NA' or some default values
+geolocs <- df_ridings_1965$geoloc
+names(geolocs) <- df_ridings_1965$circonscription_ces
+clean_ces65 <- geolocs[raw_ces65]
 
-# Find the matching indices of raw_ces65 in df_ridings_1965$circonscription_ces
-indices <- match(raw_ces65, df_ridings_1965$circonscription_ces)
-
-# 'indices' will be NA for values in raw_ces65 that don't match any value in df_ridings_1965$circonscription_ces
-# Replace the NA's with 0 or some other value that cannot be an index
-indices[is.na(indices)] <- 0
-
-# Use the indices to replace corresponding entries in clean_ces65 with geoloc from df_ridings_1965
-clean_ces65 <- ifelse(indices > 0, df_ridings_1965$geoloc[indices], NA)
-
-
-#### 3. name each element in clean (assign the respondent id to each person in the vector)
-##### source_id = ces65
 names(clean_ces65) <- sondr::generate_survey_ids(n_respondents = length(clean_ces65), ## number of respondents
                                                  source_id = "ces65") ## source_id
 
 ## 4. add clean to the master output
-output_gender <- sondr::match_and_update(main = output_gender, ## vector to update
+output_geoloc <- sondr::match_and_update(main = output_geoloc, ## vector to update
                                          updates = clean_ces65) ## vector with updates
+
+    
+table(sondr::extract_elements_with_prefix(output_geoloc, "ces65"))
 
 ## ces68 -------------------------------------------------------------------
 
@@ -93,7 +80,12 @@ output_gender <- sondr::match_and_update(main = output_gender, ## vector to upda
 
 ## ces74 -------------------------------------------------------------------
 
-# NA
+# Load variable
+raw_ces74 <- sondr::load_variable(
+    file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/1974/ces74.csv", 
+    variable_name = "v7")
+
+table(raw_ces79, useNA = "always")
 
 ## ces79 -------------------------------------------------------------------
 
@@ -104,55 +96,74 @@ raw_ces79 <- sondr::load_variable(
 
 table(raw_ces79, useNA = "always")
 
-constituency_numbers <- c(401L, 402L, 403L, 404L, 405L, 406L, 407L, 408L, 409L, 410L, 
-                          411L, 412L, 413L, 414L, 415L, 416L, 417L, 418L, 419L, 420L, 
-                          421L, 422L, 423L, 424L, 425L, 426L, 427L, 428L)
-
-# Vector of constituency names
-constituency_names <- c("ARGENTEUIL-DEUX-MONTAGNES", "CHICOUTIMI", "FRONTENAC", "GASPE", 
-                        "HULL", "LAPOINTE", "LAPRAIRIE", "LEVIS", "LONGUEUIL", "LOTBINIERE", 
-                        "AHUNTSIC", "MONTREAL-BOURASSA", "DOLLARD", "GAMELIN", "LACHINE", 
-                        "LAFONTAINE", "MAISONNEUVE-ROSEMONT", "MOUNT ROYAL", "PORTNEUF", 
-                        "QUEBEC EAST", "RICHMOND", "ROBERVAL", "SAINT-HYACINTHE", "SAINT-MAURICE", 
-                        "SHERBROOKE", "TERREBONNE", "TROIS-RIVIERES-METROPOLITAIN", "VAUDREUIL")
-
-# Create the dataframe
-df_constituency_1976 <- data.frame(
-  constituency_number = constituency_numbers,
-  constituency_name = constituency_names,
-  stringsAsFactors = FALSE
-)
-
-raw_ces79 <- 
 ## ces84 -------------------------------------------------------------------
+
+# Load variable
+raw_ces84 <- sondr::load_variable(
+    file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/1984/ces84.csv", 
+    variable_name = "var006")
+
+table(raw_ces79, useNA = "always")
 
 ## ces88 -------------------------------------------------------------------
 
-## ces93 -------------------------------------------------------------------
+raw_ces88 <- sondr::load_variable(
+    file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/1988/ces88.csv", 
+    variable_name = "intnum")
+
+table(raw_ces79, useNA = "always")
+
+## ces93 -------------------------------------------------------------------#
+
+# NA
 
 ## ces97 -------------------------------------------------------------------
 
+# NA
+
 ## ces2000 -------------------------------------------------------------------
+
+# NA
 
 ## ces2004 -------------------------------------------------------------------
 
+# NA
+
 ## ces2006 -------------------------------------------------------------------
+
+# NA
 
 ## ces2008 -------------------------------------------------------------------
 
+# NA
+
 ## ces2011 -------------------------------------------------------------------
+
+# NA
 
 ## ces2015 -------------------------------------------------------------------
 
+# NA
+
 ## ces2019 -------------------------------------------------------------------
+
+# NA
 
 ## ces2021 -------------------------------------------------------------------
 
+# NA
+
 ## datagotchi_pilot1_2021 -------------------------------------------------------------------
+
+# NA
 
 ## january -------------------------------------------------------------------
 
+# NA
+
 ## february -------------------------------------------------------------------
+
+# NA
 
 ## march -------------------------------------------------------------------
 
