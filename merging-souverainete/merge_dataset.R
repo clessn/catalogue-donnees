@@ -93,7 +93,8 @@ na_count %>%
   geom_point(aes(color = prop),
              shape = 15, size = 15) +
   clessnverse::theme_clean_light() +
-  scale_color_gradient(low = "#32CD32", high = "black") +
+  scale_color_gradient(low = "#32CD32", high = "black",
+                       name = "Proportion de données manquantes (%)") +
   theme(strip.placement = "inside",
         axis.text.x = element_text(angle = 90, hjust = 1),
         panel.spacing.y = unit(0.5, "lines"))

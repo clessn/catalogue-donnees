@@ -84,7 +84,7 @@ names(clean_ces65) <- sondr::generate_survey_ids(n_respondents = length(clean_ce
                                                  source_id = "ces65") ## source_id
 
 ## 4. add clean to the master output
-output_gender <- sondr::match_and_update(main = output_gender, ## vector to update
+output <- sondr::match_and_update(main = output, ## vector to update
                                          updates = clean_ces65) ## vector with updates
 
 ## ces68 -------------------------------------------------------------------
@@ -123,7 +123,7 @@ df_constituency_1976 <- data.frame(
   stringsAsFactors = FALSE
 )
 
-raw_ces79 <- 
+
 ## ces84 -------------------------------------------------------------------
 
 ## ces88 -------------------------------------------------------------------
@@ -213,5 +213,7 @@ raw <- coalesce(raw_fr, raw_en)
 # Output ------------------------------------------------------------------
 
 ### FACTORISE, LEVELS, etc.
+
+output <- factor(output)
 
 ##### SAVE VECTOR WHERE??
