@@ -260,6 +260,12 @@ table(sondr::extract_elements_with_prefix(output_geoloc, "ces88"))
 
 # NA
 
+#### 1. Get raw gender variable vector
+raw_ces93 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/1993/ces93.csv",
+                                  variable_name = "cpspost")
+table(raw_ces93, useNA = "always")
+
+
 ## ces97 -------------------------------------------------------------------
 
 # NA
