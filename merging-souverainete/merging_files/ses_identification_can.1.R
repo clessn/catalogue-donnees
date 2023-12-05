@@ -565,26 +565,26 @@ table(sondr::extract_elements_with_prefix(output_idcanqc, "pes_elxn_2022_text"))
 ## pco -------------------------------------------------------------------
 
 #### 1. Get raw gender variable vector
-raw_pco <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/pco/pco.csv",
-                                    variable_name = "Q14.2_6.Pco2014")
+raw_pco <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/pco/WholeData_Pco14_2015-01-30.csv",
+                                    variable_name = "identCanada.Pco2014")
 table(raw_pco, useNA = "always")
 
 #### 2. clean variable
 clean_pco <- NA
-clean_pco[raw_pco == "Very strong" | raw_pco == "Somewhat strong"] <- 1
-clean_pco[raw_pco != "Very strong" & raw_pco != "" & raw_pco != "Somewhat strong" & raw_pco != "Don't know"] <- 0
+clean_pco[raw_pco == 1 | raw_pco == 0.66] <- 1
+clean_pco[raw_pco == 0.33 | raw_pco == 0] <- 0
 table(clean_pco, useNA = "always")
 
 #### 3. name each element in clean (assign the respondent id to each person in the vector)
 ##### source_id = pco
 names(clean_pco) <- sondr::generate_survey_ids(n_respondents = length(clean_pco), ## number of respondents
-                                                   source_id = "pco") ## source_id
+                                                   source_id = "WholeData_Pco14_2015-01-30") ## source_id
 
 ## 4. add clean to the master output
 output_idcanqc <- sondr::match_and_update(main = output_idcanqc, ## vector to update
                                           updates = clean_pco) ## vector with updates
 
-table(sondr::extract_elements_with_prefix(output_idcanqc, "pco"))
+table(sondr::extract_elements_with_prefix(output_idcanqc, "WholeData_Pco14_2015-01-30"))
 # Output ------------------------------------------------------------------
 
 ### FACTORISE, LEVELS, etc.

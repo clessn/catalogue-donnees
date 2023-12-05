@@ -660,17 +660,16 @@ table(sondr::extract_elements_with_prefix(output, source_id))
 
 ## pco -------------------------------------------------------------------
 
-source_id <- "pco"
+source_id <- "WholeData_Pco14_2015-01-30"
 
 #### 1. Get raw gender variable vector
-raw <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/pco/pco.csv",
-                            variable_name = "Q13.4.Pco2014")
+raw <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/pco/WholeData_Pco14_2015-01-30.csv",
+                            variable_name = "countryBornCanada")
+
 table(raw, useNA = "always")
 
 #### 2. clean variable
-clean <- NA
-clean[raw == ""] <- 1
-clean[raw != ""] <- 0
+clean <- raw
 table(clean)
 
 #### 3. name each element in clean (assign the respondent id to each person in the vector)

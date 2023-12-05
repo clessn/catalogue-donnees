@@ -1283,21 +1283,21 @@ table(sondr::extract_elements_with_prefix(output_centile, "pes_elxn_2022_text"))
 
 ## pco -------------------------------------------------------------------
 
-source_id <- "pco"
+source_id <- "WholeData_Pco14_2015-01-30"
 
 #### 1. Get raw gender variable vector
-raw <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/pco/pco.csv",
-                            variable_name = "Q16.5.Pco2014")
+raw <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/pco/WholeData_Pco14_2015-01-30.csv",
+                            variable_name = "income")
 table(raw, useNA = "always")
 
 raw[raw == ""] <- NA
-raw[raw == "between $500,000 - $999,999"] <- "more than $500,000"
+raw[raw == "$500k-1 million"] <- "more than $500,000"
 table(raw, useNA = "always")
 
 #### 2. clean variable
 clean_num <- parse_money_vector(values = raw,
                                 sep = "-",
-                                floor = "less than $20,000",
+                                floor = "$0-20k",
                                 ceiling = "more than $500,000",
                                 ceiling_increment = 500000)
 table(clean_num)
@@ -1322,7 +1322,7 @@ table(output_num)
 hist(output_num)
 table(output_centile)
 hist(output_centile)
-table(sondr::extract_elements_with_prefix(output_centile, "pco"))
+table(sondr::extract_elements_with_prefix(output_centile, source_id))
 # Output ------------------------------------------------------------------
 
 ### save num

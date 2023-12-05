@@ -648,27 +648,27 @@ table(sondr::extract_elements_with_prefix(output_lang, "quorum_mcq_pilote"))
 
 ## pco -------------------------------------------------------------------
 
-raw_pco<- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/pco/pco.csv",
-                                    variable_name = "Q16.4.Pco2014")
+raw_pco<- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/pco/WholeData_Pco14_2015-01-30.csv",
+                                    variable_name = "langGroup")
 table(raw_pco, useNA = "always")
 
 #### 2. clean variable
 clean_pco <- NA
 clean_pco[raw_pco=="English"] <- "english"
 clean_pco[raw_pco=="French"] <- "french"
-clean_pco[raw_pco!="English" & raw_pco!="French" & raw_pco!="What language do you speak most often at home?"] <- "other"
+clean_pco[raw_pco!="English" & raw_pco!="French"] <- "other"
 table(clean_pco, useNA = "always")
 
 #### 3. name each element in clean (assign the respondent id to each person in the vector)
 ##### source_id = pco
 names(clean_pco) <- sondr::generate_survey_ids(n_respondents = length(clean_pco), ## number of respondents
-                                                    source_id = "pco") ## source_id
+                                                    source_id = "WholeData_Pco14_2015-01-30") ## source_id
 
 ## 4. add clean to the master output
 output_lang <- sondr::match_and_update(main = output_lang, ## vector to update
                                        updates = clean_pco) ## vector with updates
 
-table(sondr::extract_elements_with_prefix(output_lang, "pco"))
+table(sondr::extract_elements_with_prefix(output_lang, "WholeData_Pco14_2015-01-30"))
 # Output ------------------------------------------------------------------
 
 ### FACTORISE, LEVELS, etc.
@@ -678,3 +678,4 @@ output_lang <- factor(output_lang)
 
 ##### SAVE VECTOR
 saveRDS(output_lang, "_SharedFolder_catalogue-donnees/merging-souverainete/clean/vectors/ses_lang.1.rds")
+
