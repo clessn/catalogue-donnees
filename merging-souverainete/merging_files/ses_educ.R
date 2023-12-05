@@ -584,7 +584,7 @@ table(sondr::extract_elements_with_prefix(output_educ, "pes_elxn_2022_text"))
 ## pco -------------------------------------------------------------------
 
 #### 1. Get raw variable vector
-raw_pco <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/pco/WholeData_Pco14_2015-01-30.csv",
+raw_pco <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/pco/WholeData_Pco14_2015_01_30.csv",
                                           variable_name = "educ5Group")
 table(raw_pco, useNA = "always")
 
@@ -597,12 +597,12 @@ table(clean_pco)
 
 #### 3. name each element in clean (assign the respondent id to each person in the vector)
 names(clean_pco) <- sondr::generate_survey_ids(n_respondents = length(clean_pco), ## number of respondents
-                                                         source_id = "WholeData_Pco14_2015-01-30") ## source_id
+                                                         source_id = "WholeData_Pco14_2015_01_30") ## source_id
 
 ## 4. add clean to the master output
 output_educ <- sondr::match_and_update(main = output_educ, ## vector to update
                                        updates = clean_pco) ## vector with updates
-table(sondr::extract_elements_with_prefix(output_educ, "WholeData_Pco14_2015-01-30"))
+table(sondr::extract_elements_with_prefix(output_educ, "WholeData_Pco14_2015_01_30"))
 # Output ------------------------------------------------------------------
 
 ### FACTORISE, LEVELS, etc.

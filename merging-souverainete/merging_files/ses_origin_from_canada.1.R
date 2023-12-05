@@ -660,10 +660,10 @@ table(sondr::extract_elements_with_prefix(output, source_id))
 
 ## pco -------------------------------------------------------------------
 
-source_id <- "WholeData_Pco14_2015-01-30"
+source_id <- "WholeData_Pco14_2015_01_30"
 
 #### 1. Get raw gender variable vector
-raw <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/pco/WholeData_Pco14_2015-01-30.csv",
+raw <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/pco/WholeData_Pco14_2015_01_30.csv",
                             variable_name = "countryBornCanada")
 
 table(raw, useNA = "always")

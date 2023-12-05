@@ -7,7 +7,7 @@ source_list <- c("ces65", "ces68", "ces74", "ces79", "ces84", "ces88",
                  "ces2011", "ces2015", "ces2019", "ces2021", "datagotchi_pilot1_2021",
                  "january", "february", "march", "april", "may", "june",
                  "datagotchi_pilot2_2022", "sondage_nationalisme_2022", "quorum_mcq_pilote",
-                 "pes_elxn_2022_text", "WholeData_Pco14_2015-01-30")
+                 "pes_elxn_2022_text", "WholeData_Pco14_2015_01_30")
 
 # Identifier les variables de chaque sondage qui identifient la province du répondant
 #### si le sondage est québécois seulement, NA
@@ -48,7 +48,7 @@ province_variables <- list(
                  category = "Quebec"),
   "datagotchi_pilot1_2021" = list(var = "PROV",
                                   category = 11),
-  "WholeData_Pco14_2015-01-30" = list(var = "province",
+  "WholeData_Pco14_2015_01_30" = list(var = "province",
                category = "Quebec"),
   "sondage_nationalisme_2022" = list(var = "Q127",
                                      category = c("Quebec", "au Québec"))
