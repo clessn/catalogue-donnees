@@ -584,25 +584,25 @@ table(sondr::extract_elements_with_prefix(output_educ, "pes_elxn_2022_text"))
 ## pco -------------------------------------------------------------------
 
 #### 1. Get raw variable vector
-raw_pco <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/pco/pco.csv",
-                                          variable_name = "Q9.1.Pco2014")
+raw_pco <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/pco/WholeData_Pco14_2015-01-30.csv",
+                                          variable_name = "educ5Group")
 table(raw_pco, useNA = "always")
 
 #### 2. clean variable
 clean_pco <- NA
-clean_pco[raw_pco == "Some technical, community college, CEGEP, College classique" | raw_pco == "Completed technical, community college, CEGEP, college classique" 
-          | raw_pco == "Some university" | raw_pco == "Bachelor's degree" | raw_pco == "Master's degree" | raw_pco == "Professional degree or doctorate"] <- 1
-clean_pco[raw_pco == "No schooling" | raw_pco == "Completed elementary school" | raw_pco == "Some secondary / high school" | raw_pco == "Completed secondary / high school"] <- 0
+clean_pco[raw_pco == "educColl" | raw_pco == "educGrad" 
+          | raw_pco == "educBA"] <- 1
+clean_pco[raw_pco == "educBHS" | raw_pco == "educHS"] <- 0
 table(clean_pco)
 
 #### 3. name each element in clean (assign the respondent id to each person in the vector)
 names(clean_pco) <- sondr::generate_survey_ids(n_respondents = length(clean_pco), ## number of respondents
-                                                         source_id = "pco") ## source_id
+                                                         source_id = "WholeData_Pco14_2015-01-30") ## source_id
 
 ## 4. add clean to the master output
 output_educ <- sondr::match_and_update(main = output_educ, ## vector to update
                                        updates = clean_pco) ## vector with updates
-table(sondr::extract_elements_with_prefix(output_educ, "pco"))
+table(sondr::extract_elements_with_prefix(output_educ, "WholeData_Pco14_2015-01-30"))
 # Output ------------------------------------------------------------------
 
 ### FACTORISE, LEVELS, etc.

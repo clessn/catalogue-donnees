@@ -601,7 +601,26 @@ output_souv <- sondr::match_and_update(main = output_souv, ## vector to update
 table(sondr::extract_elements_with_prefix(output_souv, "pes_elxn_2022"))
 ## pco -------------------------------------------------------------------
 
-# Aucune question
+#### 1. Get raw variable vector
+raw_pco<- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/pco/WholeData_Pco14_2015-01-30.csv",
+                                          variable_name = "qcSovCountryV1.Pco2014")
+table(raw_pco, useNA = "always")
+
+
+#### 2. clean variable
+clean_pco <- NA
+clean_pco[raw_pco == 1] <- 1
+clean_pco[raw_pco == 0 | raw_pco == 0.5] <- 0
+table(clean_pco)
+
+#### 3. name each element in clean (assign the respondent id to each person in the vector)
+names(clean_pco) <- sondr::generate_survey_ids(n_respondents = length(clean_WholeData_Pco14_2015_01_30), ## number of respondents
+                                                         source_id = "WholeData_Pco14_2015-01-30") ## source_id
+
+## 4. add clean to the master output
+output_souv <- sondr::match_and_update(main = output_souv, ## vector to update
+                                       updates = clean_pco) ## vector with updates
+table(sondr::extract_elements_with_prefix(output_souv, "WholeData_Pco14_2015-01-30"))
 
 # Output ------------------------------------------------------------------
 
