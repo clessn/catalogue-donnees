@@ -9,13 +9,13 @@ source("merging-souverainete/config.R")
 
 sample(ids, 20) ### 20 ids random
 ## empty vector where the clean values will go. same length as the n of ids.
-output <- rep(NA, length(ids))
+output_geoloc <- rep(NA, length(ids))
 ### each element in output is a respondent with a unique respondent id
-names(output) <- ids
+names(output_geoloc) <- ids
 
 # Merging and cleaning ----------------------------------------------------
 
-df_ridings <- read.csv("merging-souverainete/merging_files/data/quebec_fed_ridings.csv")
+df_ridings <- read.csv("_SharedFolder_catalogue-donnees/merging-souverainete/aux_data/quebec_fed_ridings.csv")
 
 ## ces65 -------------------------------------------------------------------
 
@@ -58,34 +58,20 @@ df_ridings_1965 <- df_ridings_1965 %>%
 df_ridings_1965 <- df_ridings_1965 %>%
   filter(!(circonscription %in% c("Labelle", "Laurier", "Papineau", "Saint-Henri", "Quebec East")))
   
-for (i in seq_along(df_ridings_1965$circonscription)) { 
-    if (df_ridings_1965$circonscription[i] == "Quebec South") {
-        df_ridings_1965$circonscription_ces[i] <- "quebec-sud"
-    }
-}
+clean_ces65 <- c(NA)
 
-# Assuming clean_ces65 is your new vector and it's already initialized with the correct length
-# and 'NA' or some default values
+geolocs <- df_ridings_1965$geoloc
+names(geolocs) <- df_ridings_1965$circonscription_ces
+clean_ces65 <- geolocs[raw_ces65]
 
-# Find the matching indices of raw_ces65 in df_ridings_1965$circonscription_ces
-indices <- match(raw_ces65, df_ridings_1965$circonscription_ces)
-
-# 'indices' will be NA for values in raw_ces65 that don't match any value in df_ridings_1965$circonscription_ces
-# Replace the NA's with 0 or some other value that cannot be an index
-indices[is.na(indices)] <- 0
-
-# Use the indices to replace corresponding entries in clean_ces65 with geoloc from df_ridings_1965
-clean_ces65 <- ifelse(indices > 0, df_ridings_1965$geoloc[indices], NA)
-
-
-#### 3. name each element in clean (assign the respondent id to each person in the vector)
-##### source_id = ces65
 names(clean_ces65) <- sondr::generate_survey_ids(n_respondents = length(clean_ces65), ## number of respondents
                                                  source_id = "ces65") ## source_id
 
 ## 4. add clean to the master output
-output_gender <- sondr::match_and_update(main = output_gender, ## vector to update
+output_geoloc <- sondr::match_and_update(main = output_geoloc, ## vector to update
                                          updates = clean_ces65) ## vector with updates
+
+table(sondr::extract_elements_with_prefix(output_geoloc, "ces65"))
 
 ## ces68 -------------------------------------------------------------------
 
@@ -93,7 +79,48 @@ output_gender <- sondr::match_and_update(main = output_gender, ## vector to upda
 
 ## ces74 -------------------------------------------------------------------
 
-# NA
+# Load variable
+raw_ces74 <- sondr::load_variable(
+    file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/1974/ces74.csv", 
+    variable_name = "v7")
+
+table(raw_ces74, useNA = "always")
+
+df_ridings_1974 <- df_ridings %>%
+    filter(year == 1966)
+
+ridings_id_1974 <- as.vector(na.omit(unique(df_ridings_1974$id_ces74_79_80)))
+
+clean_ces74 <- c(NA)
+
+for (i in 1:length(ridings_id_1974)) {
+    for (j in 1:length(raw_ces74)) {
+        if (is.na(raw_ces74[j])) {
+            clean_ces74[j] <- NA
+            next
+        }
+        found_match <- FALSE
+        for (k in 1:nrow(df_ridings_1974)) {
+            if (!is.na(df_ridings_1974$id_ces74_79_80[k]) && df_ridings_1974$id_ces74_79_80[k] == raw_ces74[j]) {
+                clean_ces74[j] <- df_ridings_1974$geoloc[k]
+                found_match <- TRUE
+                break
+            }
+        }
+        if (!found_match) {
+            clean_ces74[j] <- NA
+        }
+    }
+}
+
+names(clean_ces74) <- sondr::generate_survey_ids(n_respondents = length(clean_ces74), ## number of respondents
+                                                 source_id = "ces74") ## source_id
+
+## 4. add clean to the master output
+output_geoloc <- sondr::match_and_update(main = output_geoloc, ## vector to update
+                                         updates = clean_ces74) ## vector with updates
+
+table(sondr::extract_elements_with_prefix(output_geoloc, "ces74"))
 
 ## ces79 -------------------------------------------------------------------
 
@@ -104,140 +131,188 @@ raw_ces79 <- sondr::load_variable(
 
 table(raw_ces79, useNA = "always")
 
-poll_to_constituency <- c(
-  `030` = "ARGENTEUIL-DEUX-MONTAGNES",
-  `123` = "ARGENTEUIL-DEUX-MONTAGNES",
-  `162` = "ARGENTEUIL-DEUX-MONTAGNES",
-  `037` = "CHICOUTIMI",
-  `084` = "CHICOUTIMI",
-  `085` = "CHICOUTIMI",
-  `149` = "CHICOUTIMI",
-  `051` = "FRONTENAC",
-  `061` = "FRONTENAC",
-  `148` = "FRONTENAC",
-  `165` = "FRONTENAC",
-  `032` = "GASPE",
-  `124` = "GASPE",
-  `129` = "GASPE",
-  `043` = "HULL",
-  `180` = "HULL",
-  `281` = "HULL",
-  `058` = "LAPOINTE",
-  `091` = "LAPOINTE",
-  `101` = "LAPOINTE",
-  `033` = "LAPRAIRIE",
-  `222` = "LAPRAIRIE",
-  `236` = "LAPRAIRIE",
-  `288` = "LAPRAIRIE",
-  `074` = "LEVIS",
-  `131` = "LEVIS",
-  `167` = "LEVIS",
-  `182` = "LEVIS",
-  `024` = "LONGUEUIL",
-  `047` = "LONGUEUIL",
-  `062` = "LONGUEUIL",
-  `147` = "LONGUEUIL",
-  `087` = "LOTBINIERE",
-  `161` = "LOTBINIERE",
-  `221` = "LOTBINIERE",
-  `125` = "AHUNTSIC",
-  `177` = "AHUNTSIC",
-  `203` = "AHUNTSIC",
-  `219` = "AHUNTSIC",
-  `077` = "MONTREAL-BOURASSA",
-  `089` = "MONTREAL-BOURASSA",
-  `286` = "MONTREAL-BOURASSA",
-  `130` = "DOLLARD",
-  `193` = "DOLLARD",
-  `200` = "DOLLARD",
-  `274` = "DOLLARD",
-  `066` = "GAMELIN",
-  `137` = "GAMELIN",
-  `150` = "GAMELIN",
-  `003` = "LACHINE",
-  `046` = "LACHINE",
-  `064` = "LACHINE",
-  `097` = "LAFONTAINE",
-  `098` = "LAFONTAINE",
-  `119` = "LAFONTAINE",
-  `001` = "MAISONNEUVE-ROSEMONT",
-  `143` = "MAISONNEUVE-ROSEMONT",
-  `160` = "MAISONNEUVE-ROSEMONT",
-  `207` = "MAISONNEUVE-ROSEMONT",
-  `004` = "MOUNT ROYAL",
-  `014` = "MOUNT ROYAL",
-  `114` = "MOUNT ROYAL",
-  `178` = "MOUNT ROYAL",
-  `096` = "PORTNEUF",
-  `171` = "PORTNEUF",
-  `197` = "PORTNEUF",
-  `095` = "QUEBEC EAST",
-  `164` = "QUEBEC EAST",
-  `189` = "QUEBEC EAST",
-  `049` = "RICHMOND",
-  `144` = "RICHMOND",
-  `152` = "RICHMOND",
-  `007` = "ROBERVAL",
-  `050` = "ROBERVAL",
-  `111` = "ROBERVAL",
-  `073` = "SAINT-HYACINTHE",
-  `108` = "SAINT-HYACINTHE",
-  `117` = "SAINT-HYACINTHE",
-  `118` = "SAINT-HYACINTHE",
-  `094` = "SAINT-MAURICE",
-  `104` = "SAINT-MAURICE",
-  `202` = "SHERBROOKE",
-  `237` = "SHERBROOKE",
-  `110` = "TERREBONNE",
-  `218` = "TERREBONNE",
-  `267` = "TERREBONNE",
-  `335` = "TERREBONNE",
-  `035` = "TROIS-RIVIERES-METROPOLITAIN",
-  `048` = "TROIS-RIVIERES-METROPOLITAIN",
-  `138` = "TROIS-RIVIERES-METROPOLITAIN",
-  `190` = "TROIS-RIVIERES-METROPOLITAIN",
-  `065` = "VAUDREUIL",
-  `081` = "VAUDREUIL",
-  `090` = "VAUDREUIL",
-  `157` = "VAUDREUIL",
-  `185` = "VAUDREUIL"
-)
+df_ridings_1979 <- df_ridings %>%
+    filter(year == 1966)
 
-# Assume df is your dataframe and `poll_number` is the column with the poll numbers
-df$constituency <- poll_to_constituency[as.character(df$poll_number)]
+ridings_id_1979 <- as.vector(na.omit(unique(df_ridings_1979$id_ces74_79_80)))
 
-# If there are poll numbers with no matching constituency, they will become NA. 
-# You might want to handle these cases as well.
+clean_ces79 <- c(NA)
+
+for (i in 1:length(ridings_id_1979)) {
+    for (j in 1:length(raw_ces79)) {
+        if (is.na(raw_ces79[j])) {
+            clean_ces79[j] <- NA
+            next
+        }
+        found_match <- FALSE
+        for (k in 1:nrow(df_ridings_1979)) {
+            if (!is.na(df_ridings_1979$id_ces74_79_80[k]) && df_ridings_1979$id_ces74_79_80[k] == raw_ces79[j]) {
+                clean_ces79[j] <- df_ridings_1979$geoloc[k]
+                found_match <- TRUE
+                break
+            }
+        }
+        if (!found_match) {
+            clean_ces79[j] <- NA
+        }
+    }
+}
+
+names(clean_ces79) <- sondr::generate_survey_ids(n_respondents = length(clean_ces79), ## number of respondents
+                                                 source_id = "ces79") ## source_id
+
+## 4. add clean to the master output
+output_geoloc <- sondr::match_and_update(main = output_geoloc, ## vector to update
+                                         updates = clean_ces79) ## vector with updates
+
+table(sondr::extract_elements_with_prefix(output_geoloc, "ces79"))
 
 ## ces84 -------------------------------------------------------------------
 
+# Load variable
+raw_ces84 <- sondr::load_variable(
+    file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/1984/ces84.csv", 
+    variable_name = "var006")
+
+table(raw_ces84, useNA = "always")
+
+df_ridings_1984 <- df_ridings %>%
+    filter(year == 1976)
+
+ridings_id_1984 <- as.vector(na.omit(unique(df_ridings_1984$id_ces_84)))
+
+clean_ces84 <- c(NA)
+
+for (i in 1:length(ridings_id_1984)) {
+    for (j in 1:length(raw_ces84)) {
+        if (is.na(raw_ces84[j])) {
+            clean_ces84[j] <- NA
+            next
+        }
+        found_match <- FALSE
+        for (k in 1:nrow(df_ridings_1984)) {
+            if (!is.na(df_ridings_1984$id_ces_84[k]) && df_ridings_1984$id_ces_84[k] == raw_ces84[j]) {
+                clean_ces84[j] <- df_ridings_1984$geoloc[k]
+                found_match <- TRUE
+                break
+            }
+        }
+        if (!found_match) {
+            clean_ces84[j] <- NA
+        }
+    }
+}
+
+names(clean_ces84) <- sondr::generate_survey_ids(n_respondents = length(clean_ces84), ## number of respondents
+                                                 source_id = "ces84") ## source_id
+
+## 4. add clean to the master output
+output_geoloc <- sondr::match_and_update(main = output_geoloc, ## vector to update
+                                         updates = clean_ces84) ## vector with updates
+
+table(sondr::extract_elements_with_prefix(output_geoloc, "ces84"))
+
 ## ces88 -------------------------------------------------------------------
 
-## ces93 -------------------------------------------------------------------
+raw_ces88 <- sondr::load_variable(
+    file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/1988/ces88.csv", 
+    variable_name = "intnum")
+
+table(raw_ces88, useNA = "always")
+
+df_ridings_1988 <- df_ridings %>%
+    filter(year == 1987)
+
+ridings_id_1988 <- as.vector(na.omit(unique(df_ridings_1988$id_ces_88)))
+
+clean_ces88 <- c(NA)
+
+for (i in 1:length(ridings_id_1988)) {
+    for (j in 1:length(raw_ces88)) {
+        if (is.na(raw_ces88[j])) {
+            clean_ces88[j] <- NA
+            next
+        }
+        found_match <- FALSE
+        for (k in 1:nrow(df_ridings_1988)) {
+            if (!is.na(df_ridings_1988$id_ces_88[k]) && df_ridings_1988$id_ces_88[k] == raw_ces88[j]) {
+                clean_ces88[j] <- df_ridings_1988$geoloc[k]
+                found_match <- TRUE
+                break
+            }
+        }
+        if (!found_match) {
+            clean_ces88[j] <- NA
+        }
+    }
+}
+
+names(clean_ces88) <- sondr::generate_survey_ids(n_respondents = length(clean_ces88), ## number of respondents
+                                                 source_id = "ces88") ## source_id
+
+## 4. add clean to the master output
+output_geoloc <- sondr::match_and_update(main = output_geoloc, ## vector to update
+                                         updates = clean_ces88) ## vector with updates
+
+table(sondr::extract_elements_with_prefix(output_geoloc, "ces88"))
+
+## ces93 -------------------------------------------------------------------#
+
+# NA
+
+#### 1. Get raw gender variable vector
+raw_ces93 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/1993/ces93.csv",
+                                  variable_name = "cpspost")
+table(raw_ces93, useNA = "always")
+
 
 ## ces97 -------------------------------------------------------------------
 
+# NA
+
 ## ces2000 -------------------------------------------------------------------
+
+# NA
 
 ## ces2004 -------------------------------------------------------------------
 
+# NA
+
 ## ces2006 -------------------------------------------------------------------
+
+# NA
 
 ## ces2008 -------------------------------------------------------------------
 
+# NA
+
 ## ces2011 -------------------------------------------------------------------
+
+# NA
 
 ## ces2015 -------------------------------------------------------------------
 
+# NA
+
 ## ces2019 -------------------------------------------------------------------
+
+# NA
 
 ## ces2021 -------------------------------------------------------------------
 
+# NA
+
 ## datagotchi_pilot1_2021 -------------------------------------------------------------------
+
+# NA
 
 ## january -------------------------------------------------------------------
 
+# NA
+
 ## february -------------------------------------------------------------------
+
+# NA
 
 ## march -------------------------------------------------------------------
 
@@ -249,48 +324,20 @@ df$constituency <- poll_to_constituency[as.character(df$poll_number)]
 
 ## datagotchi_pilot2_2022 -------------------------------------------------------------------
 
-### ICI IL FAUT MERGER FRANCAIS ET ANGLAIS
-
-#### 1. Get raw gender variable vector
-raw_fr <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/datagotchi_pilot2_2022/datagotchi_pilot2_2022.csv",
-                                  variable_name = "income_fr")
-table(raw_fr, useNA = "always")
-
-raw_en <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/datagotchi_pilot2_2022/datagotchi_pilot2_2022.csv",
-                               variable_name = "income_en")
-table(raw_en, useNA = "always")
-
-raw <- coalesce(raw_fr, raw_en)
-
-#### 2. clean variable
-
+# NA
 
 ## sondage_nationalisme_2022 -------------------------------------------------------------------
 
+# NA
+
 ## quorum_mcq_pilote -------------------------------------------------------------------
 
-### ICI IL FAUT MERGER FRANCAIS ET ANGLAIS
-
-#### 1. Get raw gender variable vector
-raw_fr <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/quorum_mcq_pilote/quorum_mcq_pilote.csv",
-                               variable_name = "income_fr")
-table(raw_fr, useNA = "always")
-
-raw_en <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/quorum_mcq_pilote/quorum_mcq_pilote.csv",
-                               variable_name = "income_en")
-table(raw_en, useNA = "always")
-
-raw <- coalesce(raw_fr, raw_en)
-
-#### 2. clean variable
+# NA
 
 ## pes_elxn_2022_text -------------------------------------------------------------------
 
+# NA
+
 ## pco -------------------------------------------------------------------
 
-
-# Output ------------------------------------------------------------------
-
-### FACTORISE, LEVELS, etc.
-
-##### SAVE VECTOR WHERE??
+# NA

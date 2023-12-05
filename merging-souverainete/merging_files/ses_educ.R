@@ -402,7 +402,7 @@ table(sondr::extract_elements_with_prefix(output_educ, "february"))
 ## march -------------------------------------------------------------------
 
 #### 1. Get raw variable vector
-raw_omnibus_3march <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/omnibus/february/february.Sav",
+raw_omnibus_3march <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/omnibus/march/march.Sav",
                                               variable_name = "S2")
 table(raw_omnibus_3march, useNA = "always")
 
