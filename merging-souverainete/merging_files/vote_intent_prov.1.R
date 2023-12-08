@@ -25,8 +25,8 @@ table(raw_ces68, useNA = "always")
 
 #### 2. clean variable
 clean_ces68 <- NA
-clean_ces68[raw_ces68 == "female"] <- "female"
-clean_ces68[raw_ces68 == "male"] <- "male"
+clean_ces68[raw_ces68 == "liberal"] <- "PLQ"
+clean_ces68[raw_ces68 != "liberal"] <- "other"
 table(clean_ces68)
 
 #### 3. name each element in clean (assign the respondent id to each person in the vector)
@@ -41,13 +41,14 @@ output_vote_intent_prov <- sondr::match_and_update(main = output_vote_intent_pro
 ## ces74 -------------------------------------------------------------------
 
 raw_ces74 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/1974/ces74.csv",
-                                  variable_name = "v228")
+                                  variable_name = "v274")
 table(raw_ces74, useNA = "always")
 
 #### 2. clean variable
 clean_ces74 <- NA
-clean_ces74[raw_ces74 == "female"] <- "female"
-clean_ces74[raw_ces74 == "male"] <- "male"
+clean_ces74[raw_ces74 == "liberal"] <- "PLQ"
+clean_ces74[raw_ces74 == "parti quebecois"] <- "PQ"
+clean_ces74[raw_ces74 != "liberal" & raw_ces74 != "parti quebecois"] <- "other"
 table(clean_ces74)
 
 #### 3. name each element in clean (assign the respondent id to each person in the vector)
@@ -62,13 +63,14 @@ output_vote_intent_prov <- sondr::match_and_update(main = output_vote_intent_pro
 ## ces79 -------------------------------------------------------------------
 
 raw_ces79 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/1979/ces79.csv",
-                                  variable_name = "v228")
+                                  variable_name = "v244")
 table(raw_ces79, useNA = "always")
 
 #### 2. clean variable
 clean_ces79 <- NA
-clean_ces79[raw_ces79 == "female"] <- "female"
-clean_ces79[raw_ces79 == "male"] <- "male"
+clean_ces79[raw_ces79 == 1] <- "PLQ"
+clean_ces79[raw_ces79 == 7] <- "PQ"
+clean_ces79[raw_ces79 != 1 & raw_ces79 != 7] <- "other"
 table(clean_ces79)
 
 ##### source_id = ces65
@@ -82,13 +84,14 @@ output_vote_intent_prov <- sondr::match_and_update(main = output_vote_intent_pro
 ## ces84 -------------------------------------------------------------------
 
 raw_ces84 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/1984/ces84.csv",
-                                  variable_name = "v265")
+                                  variable_name = "var265")
 table(raw_ces84, useNA = "always")
 
 #### 2. clean variable
 clean_ces84 <- NA
-clean_ces84[raw_ces84 == "female"] <- "female"
-clean_ces84[raw_ces84 == "male"] <- "male"
+clean_ces84[raw_ces84 == "liberal"] <- "PLQ"
+clean_ces84[raw_ces84 == "parti quebecois"] <- "PQ"
+clean_ces84[raw_ces84 != "liberal" & raw_ces84 != "parti quebecois"] <- "other"
 table(clean_ces84)
 
 ##### source_id = ces65
@@ -107,8 +110,9 @@ table(raw_ces88, useNA = "always")
 
 #### 2. clean variable
 clean_ces88 <- NA
-clean_ces88[raw_ces88 == "female"] <- "female"
-clean_ces88[raw_ces88 == "male"] <- "male"
+clean_ces88[raw_ces88 == "liberal"] <- "PLQ"
+clean_ces88[raw_ces88 == "parti quebecois"] <- "PQ"
+clean_ces88[raw_ces88 != "liberal" & raw_ces88 != "parti quebecois"] <- "other"
 table(clean_ces88)
 
 ##### source_id = ces65
@@ -127,8 +131,9 @@ table(raw_ces93, useNA = "always")
 
 #### 2. clean variable
 clean_ces93 <- NA
-clean_ces93[raw_ces93 == "female"] <- "female"
-clean_ces93[raw_ces93 == "male"] <- "male"
+clean_ces93[raw_ces93 == "liberal"] <- "PLQ"
+clean_ces93[raw_ces93 == "parti quebecois"] <- "PQ"
+clean_ces93[raw_ces93 != "liberal" & raw_ces93 != "parti quebecois"] <- "other"
 table(clean_ces93)
 
 ##### source_id = ces65
@@ -142,13 +147,15 @@ output_vote_intent_prov <- sondr::match_and_update(main = output_vote_intent_pro
 ## ces97 -------------------------------------------------------------------
 
 raw_ces97 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/1997/ces97.csv",
-                                  variable_name = "k13")
+                                  variable_name = "cpsk13")
 table(raw_ces97, useNA = "always")
 
 #### 2. clean variable
 clean_ces97 <- NA
-clean_ces97[raw_ces97 == "female"] <- "female"
-clean_ces97[raw_ces97 == "male"] <- "male"
+clean_ces97[raw_ces97 == "l'action democrat"] <- "ADQ"
+clean_ces97[raw_ces97 == "liberal"] <- "PLQ"
+clean_ces97[raw_ces97 == "parti quebecois"] <- "PQ"
+clean_ces97[raw_ces97 != "l'action democrat" & raw_ces97 != "liberal" & raw_ces97 != "parti quebecois"] <- "other"
 table(clean_ces97)
 
 ##### source_id = ces65
@@ -345,42 +352,189 @@ names(clean_datagotchi_pilot2_2022) <- sondr::generate_survey_ids(n_respondents 
 output_vote_intent_prov <- sondr::match_and_update(main = output_vote_intent_prov, ## vector to update
                                          updates = clean_datagotchi_pilot2_2022) ## vector with updates
 
-
 ## january -------------------------------------------------------------------
+
+raw_january <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/omnibus/january/january.Sav",
+                                  variable_name = "Q2")
+table(raw_january, useNA = "always")
+
+#### 2. clean variable
+clean_january <- NA
+clean_january[raw_january == "female"] <- "female"
+clean_january[raw_january == "male"] <- "male"
+table(clean_january)
+
+##### source_id = ces65
+names(clean_january) <- sondr::generate_survey_ids(n_respondents = length(clean_january), ## number of respondents
+                                                 source_id = "january") ## source_id
+
+## 4. add clean to the master output
+output_vote_intent_prov <- sondr::match_and_update(main = output_vote_intent_prov, ## vector to update
+                                         updates = clean_january) ## vector with updates
 
 ## february -------------------------------------------------------------------
 
+raw_february <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/omnibus/february/february.Sav",
+                                  variable_name = "Q2")
+table(raw_february, useNA = "always")
+
+#### 2. clean variable
+clean_february <- NA
+clean_february[raw_february == "female"] <- "female"
+clean_february[raw_february == "male"] <- "male"
+table(clean_february)
+
+##### source_id = ces65
+names(clean_february) <- sondr::generate_survey_ids(n_respondents = length(clean_february), ## number of respondents
+                                                 source_id = "february") ## source_id
+
+## 4. add clean to the master output
+output_vote_intent_prov <- sondr::match_and_update(main = output_vote_intent_prov, ## vector to update
+                                         updates = clean_february) ## vector with updates
+
 ## march -------------------------------------------------------------------
+
+raw_march <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/omnibus/march/march.Sav",
+                                  variable_name = "Q2")
+table(raw_march, useNA = "always")
+
+#### 2. clean variable
+clean_march <- NA
+clean_march[raw_march == "female"] <- "female"
+clean_march[raw_march == "male"] <- "male"
+table(clean_march)
+
+##### source_id = ces65
+names(clean_march) <- sondr::generate_survey_ids(n_respondents = length(clean_march), ## number of respondents
+                                                 source_id = "march") ## source_id
+
+## 4. add clean to the master output
+output_vote_intent_prov <- sondr::match_and_update(main = output_vote_intent_prov, ## vector to update
+                                         updates = clean_march) ## vector with updates
 
 ## april -------------------------------------------------------------------
 
+raw_april <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/omnibus/april/april.Sav",
+                                  variable_name = "Q2")
+table(raw_april, useNA = "always")
+
+#### 2. clean variable
+clean_april <- NA
+clean_april[raw_april == "female"] <- "female"
+clean_april[raw_april == "male"] <- "male"
+table(clean_april)
+
+##### source_id = ces65
+names(clean_april) <- sondr::generate_survey_ids(n_respondents = length(clean_april), ## number of respondents
+                                                 source_id = "april") ## source_id
+
+## 4. add clean to the master output
+output_vote_intent_prov <- sondr::match_and_update(main = output_vote_intent_prov, ## vector to update
+                                         updates = clean_april) ## vector with updates
+
 ## may -------------------------------------------------------------------
+
+raw_may <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/omnibus/may/may.Sav",
+                                  variable_name = "Q2")
+table(raw_may, useNA = "always")
+
+#### 2. clean variable
+clean_may <- NA
+clean_may[raw_may == "female"] <- "female"
+clean_may[raw_may == "male"] <- "male"
+table(clean_may)
+
+##### source_id = ces65
+names(clean_may) <- sondr::generate_survey_ids(n_respondents = length(clean_may), ## number of respondents
+                                                 source_id = "may") ## source_id
+
+## 4. add clean to the master output
+output_vote_intent_prov <- sondr::match_and_update(main = output_vote_intent_prov, ## vector to update
+                                         updates = clean_may) ## vector with updates
 
 ## june -------------------------------------------------------------------
 
+raw_june <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/omnibus/june/june.Sav",
+                                  variable_name = "Q2")
+table(raw_june, useNA = "always")
+
+#### 2. clean variable
+clean_june <- NA
+clean_june[raw_june == "female"] <- "female"
+clean_june[raw_june == "male"] <- "male"
+table(clean_june)
+
+##### source_id = ces65
+names(clean_june) <- sondr::generate_survey_ids(n_respondents = length(clean_june), ## number of respondents
+                                                 source_id = "june") ## source_id
+
+## 4. add clean to the master output
+output_vote_intent_prov <- sondr::match_and_update(main = output_vote_intent_prov, ## vector to update
+                                         updates = clean_june) ## vector with updates
+
 ## sondage_nationalisme_2022 -------------------------------------------------------------------
+
+raw_sondage_nationalisme_2022 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/sondage_nationalisme_2022/sondage_nationalisme_2022.csv",
+                                  variable_name = "vote_choice_qc")
+table(raw_sondage_nationalisme_2022, useNA = "always")
+
+#### 2. clean variable
+clean_sondage_nationalisme_2022 <- NA
+clean_sondage_nationalisme_2022[raw_sondage_nationalisme_2022 == "female"] <- "female"
+clean_sondage_nationalisme_2022[raw_sondage_nationalisme_2022 == "male"] <- "male"
+table(clean_sondage_nationalisme_2022)
+
+##### source_id = ces65
+names(clean_sondage_nationalisme_2022) <- sondr::generate_survey_ids(n_respondents = length(clean_sondage_nationalisme_2022), ## number of respondents
+                                                 source_id = "sondage_nationalisme_2022") ## source_id
+
+## 4. add clean to the master output
+output_vote_intent_prov <- sondr::match_and_update(main = output_vote_intent_prov, ## vector to update
+                                         updates = clean_sondage_nationalisme_2022) ## vector with updates
 
 ## quorum_mcq_pilote -------------------------------------------------------------------
 
-### ICI IL FAUT MERGER FRANCAIS ET ANGLAIS
-
-#### 1. Get raw gender variable vector
-raw_fr <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/quorum_mcq_pilote/quorum_mcq_pilote.csv",
-                               variable_name = "income_fr")
-table(raw_fr, useNA = "always")
-
-raw_en <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/quorum_mcq_pilote/quorum_mcq_pilote.csv",
-                               variable_name = "income_en")
-table(raw_en, useNA = "always")
-
-raw <- coalesce(raw_fr, raw_en)
-
-#### 2. clean variable
+# NA
 
 ## pes_elxn_2022_text -------------------------------------------------------------------
 
+raw_pes_elxn_2022 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/pes_elxn_2022/pes_elxn_2022_num.csv",
+                                  variable_name = "vote_2022")
+table(raw_pes_elxn_2022, useNA = "always")
+
+#### 2. clean variable
+clean_pes_elxn_2022 <- NA
+clean_pes_elxn_2022[raw_pes_elxn_2022 == "female"] <- "female"
+clean_pes_elxn_2022[raw_pes_elxn_2022 == "male"] <- "male"
+table(clean_pes_elxn_2022)
+
+##### source_id = ces65
+names(clean_pes_elxn_2022) <- sondr::generate_survey_ids(n_respondents = length(clean_pes_elxn_2022), ## number of respondents
+                                                 source_id = "pes_elxn_2022") ## source_id
+
+## 4. add clean to the master output
+output_vote_intent_prov <- sondr::match_and_update(main = output_vote_intent_prov, ## vector to update
+                                         updates = clean_pes_elxn_2022) ## vector with updates
+
 ## pco -------------------------------------------------------------------
 
+raw_pco <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/pco/pco.csv",
+                                  variable_name = "Q5.12_TEXT.Pco2014")
+table(raw_pco, useNA = "always")
+
+#### 2. clean variable
+clean_pco <- NA
+clean_pco[raw_pco == "female"] <- "female"
+clean_pco[raw_pco == "male"] <- "male"
+table(clean_pco)
+
+##### source_id = ces65
+names(clean_pco) <- sondr::generate_survey_ids(n_respondents = length(clean_pco), ## number of respondents
+                                                 source_id = "pco") ## source_id
+
+## 4. add clean to the master output
+output_vote_intent_prov <- sondr::match_and_update(main = output_vote_intent_prov, ## vector to update
+                                         updates = clean_pco) ## vector with updates
 
 # Output ------------------------------------------------------------------
 
