@@ -466,16 +466,18 @@ table(sondr::extract_elements_with_prefix(output, source_id), useNA = "always")
 
 ## pco -------------------------------------------------------------------
 
-source_id <- "pco"
+source_id <- "WholeData_Pco14_2015_01_30"
 
 #### 1. Get raw gender variable vector
-raw <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/pco/pco.csv",
-                            variable_name = "Q13.5.Pco2014")
+raw <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/pco/WholeData_Pco14_2015_01_30.csv",
+                            variable_name = "timeInCountryAll")
 table(raw, useNA = "always")
 
 #### 2. clean variable
 clean <- NA
-clean <- raw
+clean <- 2014 - raw
+valid_indices <- which(!is.na(clean) & 6 < clean & clean < 65)
+clean[valid_indices] <- 2014 - clean[valid_indices]
 table(clean)
 hist(clean)
 

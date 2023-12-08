@@ -629,26 +629,26 @@ output_gender <- sondr::match_and_update(main = output_gender, ## vector to upda
 table(sondr::extract_elements_with_prefix(output_gender, "pes_elxn_2022_text"))
 
 ## pco -------------------------------------------------------------------
-raw_pco <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/pco/pco.csv",
-                                               variable_name = "Q20.1.Pco2014")
+raw_pco <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/pco/WholeData_Pco14_2015_01_30.csv",
+                                               variable_name = "female")
 table(raw_pco, useNA = "always")
 
 #### 2. clean variable
 clean_pco <- NA
-clean_pco[raw_pco == "Man"] <- "female"
-clean_pco[raw_pco == "Woman"] <- "male"
+clean_pco[raw_pco == 1] <- "female"
+clean_pco[raw_pco == 0] <- "male"
 table(clean_pco)
 
 #### 3. name each element in clean (assign the respondent id to each person in the vector)
 ##### source_id = ces65
 names(clean_pco) <- sondr::generate_survey_ids(n_respondents = length(clean_pco), ## number of respondents
-                                                              source_id = "pco") ## source_id
+                                                              source_id = "WholeData_Pco14_2015_01_30") ## source_id
 
 ## 4. add clean to the master output
 output_gender <- sondr::match_and_update(main = output_gender, ## vector to update
                                          updates = clean_pco) ## vector with updates
 
-table(sondr::extract_elements_with_prefix(output_gender, "pco"))
+table(sondr::extract_elements_with_prefix(output_gender, "WholeData_Pco14_2015_01_30"))
 
 # Output ------------------------------------------------------------------
 

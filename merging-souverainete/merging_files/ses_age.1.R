@@ -657,27 +657,26 @@ table(sondr::extract_elements_with_prefix(output_age, "pes_elxn_2022_text"))
 ## pco -------------------------------------------------------------------
 
 #### 1. Get raw age variable vector
-raw_pco <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/pco/pco.csv",
-                                variable_name = "Q20.2.Pco2014")
+raw_pco <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/pco/WholeData_Pco14_2015_01_30.csv",
+                                variable_name = "age")
 table(raw_pco, useNA = "always")
 
 #### 2. clean variable
 
-clean_pco_yrbirth <- raw_pco
-clean_pco_yrbirth[!(clean_pco_yrbirth >= 1900 & clean_pco_yrbirth <= 2015)] <- NA
-table(clean_pco_yrbirth, useNA = "always")
-clean_pco <- 2014-as.numeric(clean_pco_yrbirth)
+clean_pco <- raw_pco
+clean_pco <- ifelse(raw_pco >= 0 & raw_pco <= 99, raw_pco, NA)
+
 table(clean_pco, useNA = "always")
 
 #### 3. name each element in clean (assign the respondent id to each person in the vector)
 ##### source_id = ces68
-names(clean_pco) <- sondr::generate_survey_ids(n_respondents = length(clean_pes), ## number of respondents
-                                               source_id = "pco") ## source_id
+names(clean_pco) <- sondr::generate_survey_ids(n_respondents = length(clean_pco), ## number of respondents
+                                               source_id = "WholeData_Pco14_2015_01_30") ## source_id
 
 ## 4. add clean to the master output
 output_age <- sondr::match_and_update(main = output_age, ## vector to update
                                       updates = clean_pco) ## vector with updates
-table(sondr::extract_elements_with_prefix(output_age, "pco"))
+table(sondr::extract_elements_with_prefix(output_age, "WholeData_Pco14_2015_01_30"))
 # Output ------------------------------------------------------------------
 
 ### FACTORISE, LEVELS, etc.
