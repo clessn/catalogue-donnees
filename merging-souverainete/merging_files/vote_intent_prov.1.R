@@ -168,23 +168,23 @@ output_vote_intent_prov <- sondr::match_and_update(main = output_vote_intent_pro
 
 ## ces2000 -------------------------------------------------------------------
 
-raw_ces00 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/2000/ces00.csv",
-                                  variable_name = "n5")
-table(raw_ces00, useNA = "always")
+raw_ces2000 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/2000/ces2000.csv",
+                                  variable_name = "pesn5")
+table(raw_ces2000, useNA = "always")
 
 #### 2. clean variable
-clean_ces00 <- NA
-clean_ces00[raw_ces00 == "female"] <- "female"
-clean_ces00[raw_ces00 == "male"] <- "male"
-table(clean_ces00)
+clean_ces2000 <- NA
+clean_ces2000[raw_ces2000 == "female"] <- "female"
+clean_ces2000[raw_ces2000 == "male"] <- "male"
+table(clean_ces2000)
 
 ##### source_id = ces65
-names(clean_ces00) <- sondr::generate_survey_ids(n_respondents = length(clean_ces00), ## number of respondents
-                                                 source_id = "ces00") ## source_id
+names(clean_ces2000) <- sondr::generate_survey_ids(n_respondents = length(clean_ces2000), ## number of respondents
+                                                 source_id = "ces2000") ## source_id
 
 ## 4. add clean to the master output
 output_vote_intent_prov <- sondr::match_and_update(main = output_vote_intent_prov, ## vector to update
-                                         updates = clean_ces00) ## vector with updates
+                                         updates = clean_ces2000) ## vector with updates
 
 ## ces2004 -------------------------------------------------------------------
 
