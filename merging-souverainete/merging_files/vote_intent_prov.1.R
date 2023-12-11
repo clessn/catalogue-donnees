@@ -174,8 +174,10 @@ table(raw_ces2000, useNA = "always")
 
 #### 2. clean variable
 clean_ces2000 <- NA
-clean_ces2000[raw_ces2000 == "female"] <- "female"
-clean_ces2000[raw_ces2000 == "male"] <- "male"
+clean_ces2000[raw_ces2000 == 1] <- "PLQ"
+clean_ces2000[raw_ces2000 == 7] <- "PQ"
+clean_ces2000[raw_ces2000 == 8] <- "ADQ"
+clean_ces2000[raw_ces2000 != 1 & raw_ces2000 != 7 & raw_ces2000 != 8] <- "other"
 table(clean_ces2000)
 
 ##### source_id = ces65
@@ -189,144 +191,168 @@ output_vote_intent_prov <- sondr::match_and_update(main = output_vote_intent_pro
 ## ces2004 -------------------------------------------------------------------
 
 
-raw_ces04 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/2004/ces04.csv",
-                                  variable_name = "sd5")
-table(raw_ces04, useNA = "always")
+raw_ces2004 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/2004/ces2004.csv",
+                                  variable_name = "ces04_pes_sd5")
+table(raw_ces2004, useNA = "always")
 
 #### 2. clean variable
-clean_ces04 <- NA
-clean_ces04[raw_ces04 == "female"] <- "female"
-clean_ces04[raw_ces04 == "male"] <- "male"
-table(clean_ces04)
+clean_ces2004 <- NA
+clean_ces2004[raw_ces2004 == "l'action democratique"] <- "ADQ"
+clean_ces2004[raw_ces2004 == "liberal"] <- "PLQ"
+clean_ces2004[raw_ces2004 == "parti quebecois"] <- "PQ"
+clean_ces2004[raw_ces2004 != "l'action democratique" & raw_ces2004 != "liberal" & raw_ces2004 != "parti quebecois"] <- "other"
+table(clean_ces2004)
 
 ##### source_id = ces65
-names(clean_ces04) <- sondr::generate_survey_ids(n_respondents = length(clean_ces04), ## number of respondents
-                                                 source_id = "ces04") ## source_id
+names(clean_ces2004) <- sondr::generate_survey_ids(n_respondents = length(clean_ces2004), ## number of respondents
+                                                 source_id = "ces2004") ## source_id
 
 ## 4. add clean to the master output
 output_vote_intent_prov <- sondr::match_and_update(main = output_vote_intent_prov, ## vector to update
-                                         updates = clean_ces00) ## vector with updates
+                                         updates = clean_ces2004) ## vector with updates
 
 
 ## ces2006 -------------------------------------------------------------------
 
-raw_ces06 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/2006/ces06.csv",
+raw_ces2006 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/2006/ces2006.csv",
                                   variable_name = "pes_sd5")
-table(raw_ces06, useNA = "always")
+table(raw_ces2006, useNA = "always")
 
 #### 2. clean variable
-clean_ces06 <- NA
-clean_ces06[raw_ces06 == "female"] <- "female"
-clean_ces06[raw_ces06 == "male"] <- "male"
-table(clean_ces06)
+clean_ces2006 <- NA
+clean_ces2006[raw_ces2006 == "l'action democratique"] <- "ADQ"
+clean_ces2006[raw_ces2006 == "parti quebecois"] <- "PQ"
+clean_ces2006[raw_ces2006 == "liberal"] <- "PLQ"
+clean_ces2006[raw_ces2006 != "l'action democratique" & raw_ces2006 != "parti quebecois" & raw_ces2006 != "liberal"] <- "other"
+table(clean_ces2006)
 
 ##### source_id = ces65
-names(clean_ces06) <- sondr::generate_survey_ids(n_respondents = length(clean_ces06), ## number of respondents
-                                                 source_id = "ces06") ## source_id
+names(clean_ces2006) <- sondr::generate_survey_ids(n_respondents = length(clean_ces2006), ## number of respondents
+                                                 source_id = "ces2006") ## source_id
 
 ## 4. add clean to the master output
 output_vote_intent_prov <- sondr::match_and_update(main = output_vote_intent_prov, ## vector to update
-                                         updates = clean_ces06) ## vector with updates
+                                         updates = clean_ces2006) ## vector with updates
 
 ## ces2008 -------------------------------------------------------------------
 
-raw_ces08 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/2008/ces08.csv",
-                                  variable_name = "prov_vote1")
-table(raw_ces08, useNA = "always")
+raw_ces2008 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/2008/ces2008.csv",
+                                  variable_name = "pes_prov_vote1")
+table(raw_ces2008, useNA = "always")
 
 #### 2. clean variable
-clean_ces08 <- NA
-clean_ces08[raw_ces08 == "female"] <- "female"
-clean_ces08[raw_ces08 == "male"] <- "male"
-table(clean_ces08)
+clean_ces2008 <- NA
+clean_ces2008[raw_ces2008 == "liberal (grits)"] <- "PLQ"
+clean_ces2008[raw_ces2008 == "parti quebecois"] <- "PQ"
+clean_ces2008[raw_ces2008 == "l'action democratique"] <- "ADQ"
+clean_ces2008[raw_ces2008 != "l'action democratique" & raw_ces2008 != "parti quebecois" & raw_ces2008 != "liberal (grits)"] <- "other"
+table(clean_ces2008)
 
 ##### source_id = ces65
-names(clean_ces08) <- sondr::generate_survey_ids(n_respondents = length(clean_ces08), ## number of respondents
-                                                 source_id = "ces08") ## source_id
+names(clean_ces2008) <- sondr::generate_survey_ids(n_respondents = length(clean_ces2008), ## number of respondents
+                                                 source_id = "ces2008") ## source_id
 
 ## 4. add clean to the master output
 output_vote_intent_prov <- sondr::match_and_update(main = output_vote_intent_prov, ## vector to update
-                                         updates = clean_ces08) ## vector with updates
+                                         updates = clean_ces2008) ## vector with updates
 
 ## ces2011 -------------------------------------------------------------------
 
-raw_ces11 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/2011/ces11.csv",
+raw_ces2011 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/2011/ces2011.csv",
                                   variable_name = "PES11_68")
-table(raw_ces11, useNA = "always")
+table(raw_ces2011, useNA = "always")
 
 #### 2. clean variable
-clean_ces11 <- NA
-clean_ces11[raw_ces11 == "female"] <- "female"
-clean_ces11[raw_ces11 == "male"] <- "male"
-table(clean_ces11)
+clean_ces2011 <- NA
+clean_ces2011[raw_ces2011 == 4] <- "PLQ"
+clean_ces2011[raw_ces2011 == 5] <- "PQ"
+clean_ces2011[raw_ces2011 == 6] <- "ADQ"
+clean_ces2011[raw_ces2011 != 4 & raw_ces2011 != 5 & raw_ces2011 != 6] <- "other"
+table(clean_ces2011)
 
 ##### source_id = ces65
-names(clean_ces11) <- sondr::generate_survey_ids(n_respondents = length(clean_ces11), ## number of respondents
-                                                 source_id = "ces11") ## source_id
+names(clean_ces2011) <- sondr::generate_survey_ids(n_respondents = length(clean_ces2011), ## number of respondents
+                                                 source_id = "ces2011") ## source_id
 
 ## 4. add clean to the master output
 output_vote_intent_prov <- sondr::match_and_update(main = output_vote_intent_prov, ## vector to update
-                                         updates = clean_ces11) ## vector with updates
+                                         updates = clean_ces2011) ## vector with updates
 
 ## ces2015 -------------------------------------------------------------------
 
-raw_ces15 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/2015/ces15.csv",
-                                  variable_name = "p_qcvot")
-table(raw_ces15, useNA = "always")
+raw_ces2015 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/2015/ces2015.csv",
+                                  variable_name = "p_provvt")
+table(raw_ces2015, useNA = "always")
 
 #### 2. clean variable
-clean_ces15 <- NA
-clean_ces15[raw_ces15 == "female"] <- "female"
-clean_ces15[raw_ces15 == "male"] <- "male"
-table(clean_ces15)
+clean_ces2015 <- NA
+clean_ces2015[raw_ces2015 == 1] <- "PLQ"
+clean_ces2015[raw_ces2015 == 2] <- "PQ"
+clean_ces2015[raw_ces2015 == 3] <- "CAQ"
+clean_ces2015[raw_ces2015 == 4] <- 'QS'
+clean_ces2015[raw_ces2015 != 1 & raw_ces2015 != 2 & raw_ces2015 != 3 & raw_ces2015 != 4] <- "other"
+table(clean_ces2015)
 
 ##### source_id = ces65
-names(clean_ces15) <- sondr::generate_survey_ids(n_respondents = length(clean_ces15), ## number of respondents
-                                                 source_id = "ces15") ## source_id
+names(clean_ces2015) <- sondr::generate_survey_ids(n_respondents = length(clean_ces2015), ## number of respondents
+                                                 source_id = "ces2015") ## source_id
 
 ## 4. add clean to the master output
 output_vote_intent_prov <- sondr::match_and_update(main = output_vote_intent_prov, ## vector to update
-                                         updates = clean_ces15) ## vector with updates
+                                         updates = clean_ces2015) ## vector with updates
 
 ## ces2019 -------------------------------------------------------------------
 
-raw_ces19 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/2019/ces19.csv",
+raw_ces2019 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/2019/ces2019.csv",
                                   variable_name = "pes19_provvote")
-table(raw_ces19, useNA = "always")
+table(raw_ces2019, useNA = "always")
 
 #### 2. clean variable
-clean_ces19 <- NA
-clean_ces19[raw_ces19 == "female"] <- "female"
-clean_ces19[raw_ces19 == "male"] <- "male"
-table(clean_ces19)
+clean_ces2019 <- NA
+clean_ces2019[raw_ces2019 == "Coalition Avenir Québec"] <- "CAQ"
+clean_ces2019[raw_ces2019 == "Liberal"] <- "PLQ"
+clean_ces2019[raw_ces2019 == "Parti Québécois"] <- "PQ"
+clean_ces2019[raw_ces2019 == "Québec Solidaire"] <- "QS"
+clean_ces2019[raw_ces2019 != "Coalition Avenir Québec" &
+              raw_ces2019 != "Liberal" &
+              raw_ces2019 != "Parti Québécois" &
+              raw_ces2019 != "Québec Solidaire"] <- "other"
+
+table(clean_ces2019)
 
 ##### source_id = ces65
-names(clean_ces19) <- sondr::generate_survey_ids(n_respondents = length(clean_ces19), ## number of respondents
-                                                 source_id = "ces19") ## source_id
+names(clean_ces2019) <- sondr::generate_survey_ids(n_respondents = length(clean_ces2019), ## number of respondents
+                                                 source_id = "ces2019") ## source_id
 
 ## 4. add clean to the master output
 output_vote_intent_prov <- sondr::match_and_update(main = output_vote_intent_prov, ## vector to update
-                                         updates = clean_ces19) ## vector with updates
+                                         updates = clean_ces2019) ## vector with updates
 
 ## ces2021 -------------------------------------------------------------------
 
-raw_ces21 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/2021/ces21.csv",
+raw_ces2021 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/2021/ces2021.csv",
                                   variable_name = "pes21_provvote")
-table(raw_ces21, useNA = "always")
+table(raw_ces2021, useNA = "always")
 
 #### 2. clean variable
-clean_ces21 <- NA
-clean_ces21[raw_ces21 == "female"] <- "female"
-clean_ces21[raw_ces21 == "male"] <- "male"
-table(clean_ces21)
+clean_ces2021 <- NA
+clean_ces2021[raw_ces2021 == "Coalition Avenir Qu\xe9bec"] <- "CAQ"
+clean_ces2021[raw_ces2021 == "Liberal"] <- "PLQ"
+clean_ces2021[raw_ces2021 == "Parti Qu\xe9b\xe9cois"] <- "PQ"
+clean_ces2021[raw_ces2021 == "Qu\xe9bec Solidaire"] <- "QS"
+clean_ces2021[raw_ces2021 != "Coalition Avenir Qu\xe9bec" &
+              raw_ces2021 != "Liberal" &
+              raw_ces2021 != "Parti Qu\xe9b\xe9cois" &
+              raw_ces2021 != "Qu\xe9bec Solidaire"] <- "other"
+table(clean_ces2021)
 
 ##### source_id = ces65
-names(clean_ces21) <- sondr::generate_survey_ids(n_respondents = length(clean_ces21), ## number of respondents
-                                                 source_id = "ces21") ## source_id
+names(clean_ces2021) <- sondr::generate_survey_ids(n_respondents = length(clean_ces2021), ## number of respondents
+                                                 source_id = "ces2021") ## source_id
 
 ## 4. add clean to the master output
 output_vote_intent_prov <- sondr::match_and_update(main = output_vote_intent_prov, ## vector to update
-                                         updates = clean_ces21) ## vector with updates
+                                         updates = clean_ces2021) ## vector with updates
 
 ## datagotchi_pilot1_2021 -------------------------------------------------------------------
 
