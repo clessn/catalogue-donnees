@@ -360,14 +360,26 @@ output_vote_intent_prov <- sondr::match_and_update(main = output_vote_intent_pro
 
 ## datagotchi_pilot2_2022 -------------------------------------------------------------------
 
-raw_datagotchi_pilot2_2022 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/datagotchi_pilot2_2022/datagotchi_pilot2_2022.csv",
-                                  variable_name = "QID41")
+raw_fr <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/datagotchi_pilot2_2022/datagotchi_pilot2_2022.csv",
+                                  variable_name = "Vote.choice")
+table(raw_fr, useNA = "always")
+
+raw_en <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/datagotchi_pilot2_2022/datagotchi_pilot2_2022.csv",
+                               variable_name = "voteChoice")
+table(raw_en, useNA = "always")
+
+raw_datagotchi_pilot2_2022 <- coalesce(raw_fr, raw_en)
+
 table(raw_datagotchi_pilot2_2022, useNA = "always")
 
 #### 2. clean variable
 clean_datagotchi_pilot2_2022 <- NA
-clean_datagotchi_pilot2_2022[raw_datagotchi_pilot2_2022 == "female"] <- "female"
-clean_datagotchi_pilot2_2022[raw_datagotchi_pilot2_2022 == "male"] <- "male"
+clean_datagotchi_pilot2_2022[raw_datagotchi_pilot2_2022 == 1] <- "CAQ"
+clean_datagotchi_pilot2_2022[raw_datagotchi_pilot2_2022 == 2] <- "PLQ"
+clean_datagotchi_pilot2_2022[raw_datagotchi_pilot2_2022 == 3] <- "PQ"
+clean_datagotchi_pilot2_2022[raw_datagotchi_pilot2_2022 == 4] <- "QS"
+clean_datagotchi_pilot2_2022[raw_datagotchi_pilot2_2022 == 5] <- "PCQ"
+clean_datagotchi_pilot2_2022[raw_datagotchi_pilot2_2022 != 1 & raw_datagotchi_pilot2_2022 != 2 & raw_datagotchi_pilot2_2022 != 3 & raw_datagotchi_pilot2_2022 != 4 & raw_datagotchi_pilot2_2022 != 5] <- "other"
 table(clean_datagotchi_pilot2_2022)
 
 ##### source_id = ces65
@@ -386,8 +398,12 @@ table(raw_january, useNA = "always")
 
 #### 2. clean variable
 clean_january <- NA
-clean_january[raw_january == "female"] <- "female"
-clean_january[raw_january == "male"] <- "male"
+clean_january[raw_january == 1] <- "CAQ"
+clean_january[raw_january == 2] <- "PQ"
+clean_january[raw_january == 3] <- "PLQ"
+clean_january[raw_january == 4] <- "QS"
+clean_january[raw_january == 8] <- "PCQ"
+clean_january[raw_january != 1 & raw_january != 2 & raw_january != 3 & raw_january != 4 & raw_january != 8] <- "other"
 table(clean_january)
 
 ##### source_id = ces65
@@ -406,8 +422,12 @@ table(raw_february, useNA = "always")
 
 #### 2. clean variable
 clean_february <- NA
-clean_february[raw_february == "female"] <- "female"
-clean_february[raw_february == "male"] <- "male"
+clean_february[raw_february == 1] <- "CAQ"
+clean_february[raw_february == 2] <- "PQ"
+clean_february[raw_february == 3] <- "PLQ"
+clean_february[raw_february == 4] <- "QS"
+clean_february[raw_february == 8] <- "PCQ"
+clean_february[raw_february != 1 & raw_february != 2 & raw_february != 3 & raw_february != 4 & raw_february != 8] <- "other"
 table(clean_february)
 
 ##### source_id = ces65
@@ -426,8 +446,12 @@ table(raw_march, useNA = "always")
 
 #### 2. clean variable
 clean_march <- NA
-clean_march[raw_march == "female"] <- "female"
-clean_march[raw_march == "male"] <- "male"
+clean_march[raw_march == 1] <- "CAQ"
+clean_march[raw_march == 2] <- "PQ"
+clean_march[raw_march == 3] <- "PLQ"
+clean_march[raw_march == 4] <- "QS"
+clean_march[raw_march == 8] <- "PCQ"
+clean_march[raw_march != 1 & raw_march != 2 & raw_march != 3 & raw_march != 4 & raw_march != 8] <- "other"
 table(clean_march)
 
 ##### source_id = ces65
@@ -446,8 +470,12 @@ table(raw_april, useNA = "always")
 
 #### 2. clean variable
 clean_april <- NA
-clean_april[raw_april == "female"] <- "female"
-clean_april[raw_april == "male"] <- "male"
+clean_april[raw_april == 1] <- "CAQ"
+clean_april[raw_april == 2] <- "PQ"
+clean_april[raw_april == 3] <- "PLQ"
+clean_april[raw_april == 4] <- "QS"
+clean_april[raw_april == 8] <- "PCQ"
+clean_april[raw_april != 1 & raw_april != 2 & raw_april != 3 & raw_april != 4 & raw_april != 8] <- "other"
 table(clean_april)
 
 ##### source_id = ces65
@@ -466,8 +494,12 @@ table(raw_may, useNA = "always")
 
 #### 2. clean variable
 clean_may <- NA
-clean_may[raw_may == "female"] <- "female"
-clean_may[raw_may == "male"] <- "male"
+clean_may[raw_may == 1] <- "CAQ"
+clean_may[raw_may == 2] <- "PQ"
+clean_may[raw_may == 3] <- "PLQ"
+clean_may[raw_may == 4] <- "QS"
+clean_may[raw_may == 8] <- "PCQ"
+clean_may[raw_may != 1 & raw_may != 2 & raw_may != 3 & raw_may != 4 & raw_may != 8] <- "other"
 table(clean_may)
 
 ##### source_id = ces65
@@ -486,8 +518,12 @@ table(raw_june, useNA = "always")
 
 #### 2. clean variable
 clean_june <- NA
-clean_june[raw_june == "female"] <- "female"
-clean_june[raw_june == "male"] <- "male"
+clean_june[raw_june == 1] <- "CAQ"
+clean_june[raw_june == 2] <- "PQ"
+clean_june[raw_june == 3] <- "PLQ"
+clean_june[raw_june == 4] <- "QS"
+clean_june[raw_june == 8] <- "PCQ"
+clean_june[raw_june != 1 & raw_june != 2 & raw_june != 3 & raw_june != 4 & raw_june != 8] <- "other"
 table(clean_june)
 
 ##### source_id = ces65
@@ -500,14 +536,27 @@ output_vote_intent_prov <- sondr::match_and_update(main = output_vote_intent_pro
 
 ## sondage_nationalisme_2022 -------------------------------------------------------------------
 
-raw_sondage_nationalisme_2022 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/sondage_nationalisme_2022/sondage_nationalisme_2022.csv",
-                                  variable_name = "vote_choice_qc")
-table(raw_sondage_nationalisme_2022, useNA = "always")
+raw_sondage_nationalisme_2022 <- read.csv("_SharedFolder_catalogue-donnees/merging-souverainete/raw/sondage_nationalisme_2022/sondage_nationalisme_2022.csv", header = TRUE, sep = ",", quote = "\"", dec = ".", fill = TRUE, comment.char = "", stringsAsFactors = FALSE, fileEncoding = "UTF-8", encoding = "UTF-8")  %>% 
+    mutate(id = 1:nrow(.)) %>% 
+    rename(v1 = vote_intention_1, v2 = vote_intention_2, v3 = vote_intention_3, v4 = vote_intention_4, v5 = vote_intention_5) %>%
+    select(id, v1, v2, v3, v4, v5) %>% 
+    pivot_longer(cols = c(v1, v2, v3, v4, v5), names_to = "party", values_to = "intention") %>% 
+    group_by(id) %>% 
+    filter(intention == max(intention))
+
 
 #### 2. clean variable
 clean_sondage_nationalisme_2022 <- NA
-clean_sondage_nationalisme_2022[raw_sondage_nationalisme_2022 == "female"] <- "female"
-clean_sondage_nationalisme_2022[raw_sondage_nationalisme_2022 == "male"] <- "male"
+clean_sondage_nationalisme_2022[raw_sondage_nationalisme_2022$party == "v1"] <- "CAQ"
+clean_sondage_nationalisme_2022[raw_sondage_nationalisme_2022$party == "v2"] <- "PLQ"
+clean_sondage_nationalisme_2022[raw_sondage_nationalisme_2022$party == "v3"] <- "PQ"
+clean_sondage_nationalisme_2022[raw_sondage_nationalisme_2022$party == "v4"] <- "QS"
+clean_sondage_nationalisme_2022[raw_sondage_nationalisme_2022$party == "v5"] <- "PCQ"
+clean_sondage_nationalisme_2022[raw_sondage_nationalisme_2022$party != "v1" & 
+                                raw_sondage_nationalisme_2022$party != "v2" & 
+                                raw_sondage_nationalisme_2022$party != "v3" & 
+                                raw_sondage_nationalisme_2022$party != "v4" & 
+                                raw_sondage_nationalisme_2022$party != "v5"] <- "other"
 table(clean_sondage_nationalisme_2022)
 
 ##### source_id = ces65
@@ -528,10 +577,36 @@ raw_pes_elxn_2022 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnee
                                   variable_name = "vote_2022")
 table(raw_pes_elxn_2022, useNA = "always")
 
+raw_pes_elxn_2022 <- read.csv("_SharedFolder_catalogue-donnees/merging-souverainete/raw/pes_elxn_2022/pes_elxn_2022_text.csv", 
+                              header = TRUE, sep = ",", quote = "\"", dec = ".", 
+                              fill = TRUE, comment.char = "", 
+                              stringsAsFactors = FALSE, fileEncoding = "UTF-8", encoding = "UTF-8") %>%
+    mutate(id = 1:nrow(.)) %>%
+    rename(CAQ = pot_growth_prov_1, 
+           PLQ = pot_growth_prov_2, 
+           PQ = pot_growth_prov_3, 
+           QS = pot_growth_prov_4, 
+           PCQ = pot_growth_prov_5) %>%
+    mutate_at(vars(CAQ, PLQ, PQ, QS, PCQ), as.numeric) %>%
+    select(id, CAQ, PLQ, PQ, QS, PCQ) %>% 
+    pivot_longer(cols = c(CAQ, PLQ, PQ, QS, PCQ), names_to = "party", values_to = "intention") %>% 
+    drop_na(intention) %>% 
+    group_by(id) %>% 
+    mutate(rank = rank(-intention, ties.method = 'random')) %>%
+    filter(rank == 1)
+
 #### 2. clean variable
 clean_pes_elxn_2022 <- NA
-clean_pes_elxn_2022[raw_pes_elxn_2022 == "female"] <- "female"
-clean_pes_elxn_2022[raw_pes_elxn_2022 == "male"] <- "male"
+clean_pes_elxn_2022[raw_pes_elxn_2022$party == "CAQ"] <- "CAQ"
+clean_pes_elxn_2022[raw_pes_elxn_2022$party == "PLQ"] <- "PLQ"
+clean_pes_elxn_2022[raw_pes_elxn_2022$party == "PQ"] <- "PQ"
+clean_pes_elxn_2022[raw_pes_elxn_2022$party == "QS"] <- "QS"
+clean_pes_elxn_2022[raw_pes_elxn_2022$party == "PCQ"] <- "PCQ"
+clean_pes_elxn_2022[raw_pes_elxn_2022$party != "CAQ" & 
+                    raw_pes_elxn_2022$party != "PLQ" & 
+                    raw_pes_elxn_2022$party != "PQ" & 
+                    raw_pes_elxn_2022$party != "QS" & 
+                    raw_pes_elxn_2022$party != "PCQ"] <- "other"
 table(clean_pes_elxn_2022)
 
 ##### source_id = ces65
@@ -545,13 +620,20 @@ output_vote_intent_prov <- sondr::match_and_update(main = output_vote_intent_pro
 ## pco -------------------------------------------------------------------
 
 raw_pco <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/pco/pco.csv",
-                                  variable_name = "Q5.12_TEXT.Pco2014")
+                                  variable_name = "Q8.15.Pco2014")
 table(raw_pco, useNA = "always")
 
 #### 2. clean variable
 clean_pco <- NA
-clean_pco[raw_pco == "female"] <- "female"
-clean_pco[raw_pco == "male"] <- "male"
+clean_pco[raw_pco == "Coalition Avenir Québec"] <- "CAQ"
+clean_pco[raw_pco == "Parti Québécois"] <- "PQ"
+clean_pco[raw_pco == "Quebec Liberal Party"] <- "PLQ"
+clean_pco[raw_pco == "Québec solidaire"] <- "QS"
+clean_pco[raw_pco != "Coalition Avenir Québec" &
+          raw_pco != "Parti Québécois" &
+          raw_pco != "Quebec Liberal Party" &
+          raw_pco != "Québec solidaire"] <- "other"
+
 table(clean_pco)
 
 ##### source_id = ces65
