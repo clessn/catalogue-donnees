@@ -1,7 +1,7 @@
 # Packages ----------------------------------------------------------------
 library(tidyverse)
 library(stringdist)
-
+library(haven)
 # Config ------------------------------------------------------------------
 
 ### source config file to generate all the respondent_ids
@@ -16,7 +16,7 @@ names(output_geoloc) <- ids
 # Merging and cleaning ----------------------------------------------------
 
 df_ridings <- read.csv("_SharedFolder_catalogue-donnees/merging-souverainete/aux_data/quebec_fed_ridings.csv")
-
+df_postal_codes <- read.csv("_SharedFolder_catalogue-donnees/merging-souverainete/aux_data/rta_geoloc.csv")
 ## ces65 -------------------------------------------------------------------
 
 # Load variable
@@ -265,6 +265,18 @@ raw_ces93 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/mergin
                                   variable_name = "cpspost")
 table(raw_ces93, useNA = "always")
 
+geolocs <- df_postal_codes$geoloc.1
+names(geolocs) <- tolower(df_postal_codes$rta)
+clean_ces93 <- geolocs[raw_ces93]
+
+table(clean_ces93)
+
+names(clean_ces93) <- sondr::generate_survey_ids(n_respondents = length(clean_ces93), ## number of respondents
+                                                 source_id = "ces93") ## source_id
+
+## 4. add clean to the master output
+output_geoloc <- sondr::match_and_update(main = output_geoloc, ## vector to update
+                                         updates = clean_ces93) ## vector with updates
 
 ## ces97 -------------------------------------------------------------------
 
@@ -276,15 +288,63 @@ table(raw_ces93, useNA = "always")
 
 ## ces2004 -------------------------------------------------------------------
 
-# NA
+raw_ces2004 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/2004/ces2004.csv",
+                                  variable_name = "ces08_cps_fsa")
+table(raw_ces2004, useNA = "always")
+
+geolocs <- df_postal_codes$geoloc.1
+names(geolocs) <- df_postal_codes$rta
+clean_ces2004 <- geolocs[raw_ces2004]
+
+table(clean_ces2004)
+
+names(clean_ces2004) <- sondr::generate_survey_ids(n_respondents = length(clean_ces2004), ## number of respondents
+                                                 source_id = "ces2004") ## source_id
+
+## 4. add clean to the master output
+output_geoloc <- sondr::match_and_update(main = output_geoloc, ## vector to update
+                                         updates = clean_ces2004) ## vector with updates
 
 ## ces2006 -------------------------------------------------------------------
 
-# NA
+raw_ces2006 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/2006/ces2006.csv",
+                                  variable_name = "cps_fsa")
+table(raw_ces2006, useNA = "always")
 
+geolocs <- df_postal_codes$geoloc.1
+names(geolocs) <- df_postal_codes$rta
+clean_ces2006 <- geolocs[raw_ces2006]
+
+table(clean_ces2006)
+
+names(clean_ces2006) <- sondr::generate_survey_ids(n_respondents = length(clean_ces2006), ## number of respondents
+                                                 source_id = "ces2006") ## source_id
+
+## 4. add clean to the master output
+output_geoloc <- sondr::match_and_update(main = output_geoloc, ## vector to update
+                                         updates = clean_ces2006) ## vector with updates
+
+table(sondr::extract_elements_with_prefix(output_geoloc, "ces2006"))
 ## ces2008 -------------------------------------------------------------------
 
-# NA
+raw_ces2008 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/2008/ces2008.csv",
+                                  variable_name = "cps_fsa")
+table(raw_ces2008, useNA = "always")
+
+geolocs <- df_postal_codes$geoloc.1
+names(geolocs) <- df_postal_codes$rta
+clean_ces2008 <- geolocs[raw_ces2008]
+
+table(clean_ces2008)
+
+names(clean_ces2008) <- sondr::generate_survey_ids(n_respondents = length(clean_ces2008), ## number of respondents
+                                                 source_id = "ces2008") ## source_id
+
+## 4. add clean to the master output
+output_geoloc <- sondr::match_and_update(main = output_geoloc, ## vector to update
+                                         updates = clean_ces2008) ## vector with updates
+
+table(sondr::extract_elements_with_prefix(output_geoloc, "ces2008"))
 
 ## ces2011 -------------------------------------------------------------------
 
@@ -292,7 +352,25 @@ table(raw_ces93, useNA = "always")
 
 ## ces2015 -------------------------------------------------------------------
 
-# NA
+raw_ces2015 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/2015/ces2015.csv",
+                                  variable_name = "post3")
+table(raw_ces2015, useNA = "always")
+
+geolocs <- df_postal_codes$geoloc.1
+names(geolocs) <- df_postal_codes$rta
+clean_ces2015 <- geolocs[raw_ces2015]
+
+table(clean_ces2015)
+
+names(clean_ces2015) <- sondr::generate_survey_ids(n_respondents = length(clean_ces2015), ## number of respondents
+                                                 source_id = "ces2015") ## source_id
+
+## 4. add clean to the master output
+output_geoloc <- sondr::match_and_update(main = output_geoloc, ## vector to update
+                                         updates = clean_ces2015) ## vector with updates
+
+table(sondr::extract_elements_with_prefix(output_geoloc, "ces2015"))
+
 
 ## ces2019 -------------------------------------------------------------------
 
@@ -308,36 +386,232 @@ table(raw_ces93, useNA = "always")
 
 ## january -------------------------------------------------------------------
 
-# NA
+raw_january <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/omnibus/january/january_postalcodes.xlsx",
+                                  variable_name = "A5")
+raw_january <- tolower(raw_january)
+table(raw_january, useNA = "always")
+
+geolocs <- df_postal_codes$geoloc.1
+names(geolocs) <- tolower(df_postal_codes$rta)
+clean_january <- geolocs[raw_january]
+
+table(clean_january)
+
+names(clean_january) <- sondr::generate_survey_ids(n_respondents = length(clean_january), ## number of respondents
+                                                 source_id = "january") ## source_id
+
+## 4. add clean to the master output
+output_geoloc <- sondr::match_and_update(main = output_geoloc, ## vector to update
+                                         updates = clean_january) ## vector with updates
+
+table(sondr::extract_elements_with_prefix(output_geoloc, "january"))
 
 ## february -------------------------------------------------------------------
 
-# NA
+raw_february <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/omnibus/february/february_postalcodes.xlsx",
+                                  variable_name = "A5")
+raw_february <- tolower(raw_february)
+table(raw_february, useNA = "always")
 
-## march -------------------------------------------------------------------
+geolocs <- df_postal_codes$geoloc.1
+names(geolocs) <- tolower(df_postal_codes$rta)
+clean_february <- geolocs[raw_february]
 
-## april -------------------------------------------------------------------
+table(clean_february)
+
+names(clean_february) <- sondr::generate_survey_ids(n_respondents = length(clean_february), ## number of respondents
+                                                 source_id = "february") ## source_id
+
+## 4. add clean to the master output
+output_geoloc <- sondr::match_and_update(main = output_geoloc, ## vector to update
+                                         updates = clean_february) ## vector with updates
+
+table(sondr::extract_elements_with_prefix(output_geoloc, "february"))
 
 ## may -------------------------------------------------------------------
 
+raw_march <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/omnibus/march/march_postalcodes.xlsx",
+                                  variable_name = "A5")
+raw_march <- tolower(raw_march)
+table(raw_march, useNA = "always")
+
+geolocs <- df_postal_codes$geoloc.1
+names(geolocs) <- tolower(df_postal_codes$rta)
+clean_march <- geolocs[raw_march]
+
+table(clean_march)
+
+names(clean_march) <- sondr::generate_survey_ids(n_respondents = length(clean_march), ## number of respondents
+                                                 source_id = "march") ## source_id
+
+## 4. add clean to the master output
+output_geoloc <- sondr::match_and_update(main = output_geoloc, ## vector to update
+                                         updates = clean_march) ## vector with updates
+
+table(sondr::extract_elements_with_prefix(output_geoloc, "march"))
+
+## april -------------------------------------------------------------------
+
+raw_april <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/omnibus/april/april_postalcodes.xlsx",
+                                  variable_name = "A5")
+raw_april <- tolower(raw_april)
+table(raw_april, useNA = "always")
+
+geolocs <- df_postal_codes$geoloc.1
+names(geolocs) <- tolower(df_postal_codes$rta)
+clean_april <- geolocs[raw_april]
+
+table(clean_april)
+
+names(clean_april) <- sondr::generate_survey_ids(n_respondents = length(clean_april), ## number of respondents
+                                                 source_id = "april") ## source_id
+
+## 4. add clean to the master output
+output_geoloc <- sondr::match_and_update(main = output_geoloc, ## vector to update
+                                         updates = clean_april) ## vector with updates
+
+table(sondr::extract_elements_with_prefix(output_geoloc, "april"))
+
+## may -------------------------------------------------------------------
+
+raw_may <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/omnibus/may/may_postalcodes.xlsx",
+                                  variable_name = "A5")
+raw_may <- tolower(raw_may)
+table(raw_may, useNA = "always")
+
+geolocs <- df_postal_codes$geoloc.1
+names(geolocs) <- tolower(df_postal_codes$rta)
+clean_may <- geolocs[raw_may]
+
+table(clean_may)
+
+names(clean_may) <- sondr::generate_survey_ids(n_respondents = length(clean_may), ## number of respondents
+                                                 source_id = "may") ## source_id
+
+## 4. add clean to the master output
+output_geoloc <- sondr::match_and_update(main = output_geoloc, ## vector to update
+                                         updates = clean_may) ## vector with updates
+
+table(sondr::extract_elements_with_prefix(output_geoloc, "may"))
+
 ## june -------------------------------------------------------------------
 
-## datagotchi_pilot2_2022 -------------------------------------------------------------------
+raw_june <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/omnibus/june/june_postalcodes.xlsx",
+                                  variable_name = "A5")
+raw_june <- tolower(raw_june)
+table(raw_june, useNA = "always")
 
-# NA
+geolocs <- df_postal_codes$geoloc.1
+names(geolocs) <- tolower(df_postal_codes$rta)
+clean_june <- geolocs[raw_june]
 
-## sondage_nationalisme_2022 -------------------------------------------------------------------
+table(clean_june)
 
-# NA
+names(clean_june) <- sondr::generate_survey_ids(n_respondents = length(clean_june), ## number of respondents
+                                                 source_id = "june") ## source_id
 
-## quorum_mcq_pilote -------------------------------------------------------------------
+## 4. add clean to the master output
+output_geoloc <- sondr::match_and_update(main = output_geoloc, ## vector to update
+                                         updates = clean_june) ## vector with updates
 
-# NA
+table(sondr::extract_elements_with_prefix(output_geoloc, "june"))
+
+## datagotchi_pilot2_2022 -------------------------------------------------
+
+raw_datagotchi_pilot2_2022 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/datagotchi_pilot2_2022/datagotchi_pilot2_2022.csv",
+                                  variable_name = "postal_code")
+raw_datagotchi_pilot2_2022 <- tolower(raw_datagotchi_pilot2_2022)
+table(raw_datagotchi_pilot2_2022, useNA = "always")
+
+geolocs <- df_postal_codes$geoloc.1
+names(geolocs) <- tolower(df_postal_codes$rta)
+clean_datagotchi_pilot2_2022 <- geolocs[raw_datagotchi_pilot2_2022]
+
+table(clean_datagotchi_pilot2_2022)
+
+names(clean_datagotchi_pilot2_2022) <- sondr::generate_survey_ids(n_respondents = length(clean_datagotchi_pilot2_2022), ## number of respondents
+                                                 source_id = "datagotchi_pilot2_2022") ## source_id
+
+## 4. add clean to the master output
+output_geoloc <- sondr::match_and_update(main = output_geoloc, ## vector to update
+                                         updates = clean_datagotchi_pilot2_2022) ## vector with updates
+
+table(sondr::extract_elements_with_prefix(output_geoloc, "datagotchi_pilot2_2022"))
+
+## sondage_nationalisme_2022 ----------------------------------------------
+
+raw_sondage_nationalisme_2022 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/sondage_nationalisme_2022/sondage_nationalisme_2022.csv",
+                                  variable_name = "postal_code")
+raw_sondage_nationalisme_2022 <- tolower(raw_sondage_nationalisme_2022)
+table(raw_sondage_nationalisme_2022, useNA = "always")
+
+geolocs <- df_postal_codes$geoloc.1
+names(geolocs) <- tolower(df_postal_codes$rta)
+clean_sondage_nationalisme_2022 <- geolocs[raw_sondage_nationalisme_2022]
+
+table(clean_sondage_nationalisme_2022)
+
+names(clean_sondage_nationalisme_2022) <- sondr::generate_survey_ids(n_respondents = length(clean_sondage_nationalisme_2022), ## number of respondents
+                                                 source_id = "sondage_nationalisme_2022") ## source_id
+
+## 4. add clean to the master output
+output_geoloc <- sondr::match_and_update(main = output_geoloc, ## vector to update
+                                         updates = clean_sondage_nationalisme_2022) ## vector with updates
+
+table(sondr::extract_elements_with_prefix(output_geoloc, "sondage_nationalisme_2022"))
+
+## quorum_mcq_pilote ------------------------------------------------------
+
+raw_quorum_mcq_pilote_en <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/quorum_mcq_pilote/quorum_mcq_pilote.csv",
+                               variable_name = "EN_ses_postal_code_1_TEXT")
+table(raw_quorum_mcq_pilote_en, useNA = "always")
+
+raw_quorum_mcq_pilote_fr <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/quorum_mcq_pilote/quorum_mcq_pilote.csv",
+                               variable_name = "ses_postal_code_1_TEXT")
+table(raw_quorum_mcq_pilote_fr, useNA = "always")
+
+raw_quorum_mcq_pilote <- coalesce(raw_quorum_mcq_pilote_fr, raw_quorum_mcq_pilote_en)
+raw_quorum_mcq_pilote <- tolower(raw_quorum_mcq_pilote)
+table(raw_quorum_mcq_pilote, useNA = "always")
+
+geolocs <- df_postal_codes$geoloc.1
+names(geolocs) <- tolower(df_postal_codes$rta)
+clean_quorum_mcq_pilote <- geolocs[raw_quorum_mcq_pilote]
+
+table(clean_quorum_mcq_pilote)
+
+names(clean_quorum_mcq_pilote) <- sondr::generate_survey_ids(n_respondents = length(clean_quorum_mcq_pilote), ## number of respondents
+                                                 source_id = "quorum_mcq_pilote") ## source_id
+
+## 4. add clean to the master output
+output_geoloc <- sondr::match_and_update(main = output_geoloc, ## vector to update
+                                         updates = clean_quorum_mcq_pilote) ## vector with updates
+
+table(sondr::extract_elements_with_prefix(output_geoloc, "quorum_mcq_pilote"))
 
 ## pes_elxn_2022_text -------------------------------------------------------------------
 
 # NA
 
-## pco -------------------------------------------------------------------
+## pco --------------------------------------------------------A5-----------
 
-# NA
+raw_pco <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/pco/WholeData_Pco14_2015_01_30.csv",
+                                  variable_name = "postalCode")
+raw_pco <- tolower(raw_pco)
+raw_pco <- substr(raw_pco, 1, 3)
+table(raw_pco, useNA = "always")
+
+geolocs <- df_postal_codes$geoloc.1
+names(geolocs) <- tolower(df_postal_codes$rta)
+clean_pco <- geolocs[raw_pco]
+
+table(clean_pco)
+
+names(clean_pco) <- sondr::generate_survey_ids(n_respondents = length(clean_pco), ## number of respondents
+                                                 source_id = "pco") ## source_id
+
+## 4. add clean to the master output
+output_geoloc <- sondr::match_and_update(main = output_geoloc, ## vector to update
+                                         updates = clean_pco) ## vector with updates
+
+table(sondr::extract_elements_with_prefix(output_geoloc, "pco"))
