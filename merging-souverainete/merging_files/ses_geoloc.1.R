@@ -26,42 +26,42 @@ raw_ces65 <- sondr::load_variable(
 
 table(raw_ces65, useNA = "always")
 ces65_ridings <- unique(raw_ces65)
-df_ridings_1965 <- df_ridings %>%
+df_ridings_2021 <- df_ridings %>%
     filter(year == 1952)
 
-df_ridings_1965$circonscription_ces <- NA
+df_ridings_2021$circonscription_ces <- NA
 
-for (i in 1:nrow(df_ridings_1965)) {
+for (i in 1:nrow(df_ridings_2021)) {
     min_dist <- 1
     for (j in 1:length(ces65_ridings)) {
-        distance <- stringdist(df_ridings_1965$circonscription[i], 
+        distance <- stringdist(df_ridings_2021$circonscription[i], 
                                ces65_ridings[j], method = "jw")
         if (distance < min_dist) {
             min_dist <- distance
-            df_ridings_1965$circonscription_ces[i] <- ces65_ridings[j]
+            df_ridings_2021$circonscription_ces[i] <- ces65_ridings[j]
         }
     }
 }
 
-df_ridings_1965$distance <- NA
+df_ridings_2021$distance <- NA
 
-for (i in seq_along(df_ridings_1965$circonscription_ces)) {
-   df_ridings_1965$distance[i] <- stringdist(df_ridings_1965$circonscription[i], 
-                               df_ridings_1965$circonscription_ces[i], method = "jw")
+for (i in seq_along(df_ridings_2021$circonscription_ces)) {
+   df_ridings_2021$distance[i] <- stringdist(df_ridings_2021$circonscription[i], 
+                               df_ridings_2021$circonscription_ces[i], method = "jw")
 }
 
 # Vérfier à partir de où les résultats ne sont plus satisfaisants
-df_ridings_1965 <- df_ridings_1965 %>%
+df_ridings_2021 <- df_ridings_2021 %>%
     filter(distance < 0.2678) 
 
 # Ajustements manuels
-df_ridings_1965 <- df_ridings_1965 %>%
+df_ridings_2021 <- df_ridings_2021 %>%
   filter(!(circonscription %in% c("Labelle", "Laurier", "Papineau", "Saint-Henri", "Quebec East")))
   
 clean_ces65 <- c(NA)
 
-geolocs <- df_ridings_1965$geoloc
-names(geolocs) <- df_ridings_1965$circonscription_ces
+geolocs <- df_ridings_2021$geoloc
+names(geolocs) <- df_ridings_2021$circonscription_ces
 clean_ces65 <- geolocs[raw_ces65]
 
 names(clean_ces65) <- sondr::generate_survey_ids(n_respondents = length(clean_ces65), ## number of respondents
@@ -374,11 +374,85 @@ table(sondr::extract_elements_with_prefix(output_geoloc, "ces2015"))
 
 ## ces2019 -------------------------------------------------------------------
 
-# NA
+df_raw_ces2019 <- sondr::read_any_csv("_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/2019/ces2019.csv") %>% 
+    filter(cps19_province == "Quebec")
+
+raw_ces2019 <- df_raw_ces2019$constituencyname
+table(raw_ces2019, useNA = "always")
+ces2019_ridings <- unique(raw_ces2019)
+df_ridings_2019 <- df_ridings %>%
+    filter(year == 2013)
+
+unique_raw_ces2019 <- unique(raw_ces2019)
+
+match_ids <- amatch(unique_raw_ces2019, df_ridings_2019$circonscription, maxDist = 15)
+
+geolocs <- df_ridings_2019$geoloc[match_ids]
+names(geolocs) <- unique_raw_ces2019
+
+geolocs <- geolocs[-which(names(geolocs) == "")]
+geolocs <- geolocs[-which(names(geolocs) == "York South—Weston")]
+geolocs <- geolocs[-which(names(geolocs) == "Windsor West")]
+geolocs <- geolocs[-which(names(geolocs) == "Toronto—St. Paul's")]
+geolocs <- geolocs[-which(names(geolocs) == "Thornhill")]
+geolocs <- geolocs[-which(names(geolocs) == "Skeena—Bulkley Valley")]
+geolocs <- geolocs[-which(names(geolocs) == "Richmond Hill")]
+geolocs <- geolocs[-which(names(geolocs) == "Regina—Lewvan")]
+geolocs <- geolocs[-which(names(geolocs) == "Ottawa Centre")]
+geolocs <- geolocs[-which(names(geolocs) == "London West")]
+geolocs <- geolocs[-which(names(geolocs) == "Kingston and the Islands")]
+geolocs <- geolocs[-which(names(geolocs) == "Etobicoke Centre")]
+geolocs <- geolocs[-which(names(geolocs) == "Courtenay—Alberni")]
+geolocs <- geolocs[-which(names(geolocs) == "Brampton North")]
+geolocs <- geolocs[-which(names(geolocs) == "Bay of Quinte")]
+geolocs <- geolocs[-which(names(geolocs) == "Ajax")]
+geolocs <- geolocs[-which(names(geolocs) == "Acadie—Bathurst")]
+
+clean_ces2019 <- geolocs[raw_ces2019]
+
+names(clean_ces2019) <- sondr::generate_survey_ids(n_respondents = length(clean_ces2019), ## number of respondents
+                                                 source_id = "ces2019") ## source_id
+
+## 4. add clean to the master output
+output_geoloc <- sondr::match_and_update(main = output_geoloc, ## vector to update
+                                         updates = clean_ces2019) ## vector with updates
+
+table(sondr::extract_elements_with_prefix(output_geoloc, "ces2019"))
 
 ## ces2021 -------------------------------------------------------------------
 
-# NA
+df_raw_ces2021 <- sondr::read_any_csv("_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/2021/ces2021.csv")  %>% 
+    filter(provcode == "Quebec")
+
+raw_ces2021 <- df_raw_ces2021$fedname
+Encoding(raw_ces2021) <- "latin1"
+table(raw_ces2021, useNA = "always")
+ces2021_ridings <- unique(raw_ces2021)
+df_ridings_2021 <- df_ridings %>%
+    filter(year == 2013)
+
+unique_raw_ces2021 <- unique(raw_ces2021)
+
+match_ids <- amatch(unique_raw_ces2021, df_ridings_2021$circonscription, maxDist = 15)
+
+
+geolocs <- df_ridings_2021$geoloc[match_ids]
+names(geolocs) <- unique_raw_ces2021
+geolocs[names(geolocs) == "Montmagny--L'Islet--Kamouraska--Rivière-du-Loup"] <- "region"
+geolocs[names(geolocs) == "Abitibi--Baie-James--Nunavik--Eeyou"] <- "region"
+geolocs[names(geolocs) == "Avignon--La Mitis--Matane--Matapédia"] <- "region"
+geolocs <- geolocs[-which(names(geolocs) == "")]
+clean_ces2021 <- geolocs[raw_ces2021]
+
+names(clean_ces2021) <- sondr::generate_survey_ids(n_respondents = length(clean_ces2021), ## number of respondents
+                                                 source_id = "ces2021") ## source_id
+
+## 4. add clean to the master output
+output_geoloc <- sondr::match_and_update(main = output_geoloc, ## vector to update
+                                         updates = clean_ces2021) ## vector with updates
+
+table(sondr::extract_elements_with_prefix(output_geoloc, "ces2021"))
+
 
 ## datagotchi_pilot1_2021 -------------------------------------------------------------------
 
