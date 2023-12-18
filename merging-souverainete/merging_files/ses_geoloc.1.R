@@ -131,6 +131,7 @@ raw_ces79 <- sondr::load_variable(
 
 table(raw_ces79, useNA = "always")
 
+
 df_ridings_1979 <- df_ridings %>%
     filter(year == 1966)
 
@@ -166,6 +167,7 @@ output_geoloc <- sondr::match_and_update(main = output_geoloc, ## vector to upda
                                          updates = clean_ces79) ## vector with updates
 
 table(sondr::extract_elements_with_prefix(output_geoloc, "ces79"))
+
 
 ## ces84 -------------------------------------------------------------------
 
@@ -688,4 +690,5 @@ names(clean_pco) <- sondr::generate_survey_ids(n_respondents = length(clean_pco)
 output_geoloc <- sondr::match_and_update(main = output_geoloc, ## vector to update
                                          updates = clean_pco) ## vector with updates
 
+##### SAVE VECTOR WHERE??
 table(sondr::extract_elements_with_prefix(output_geoloc, "pco"))
