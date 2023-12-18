@@ -2,6 +2,7 @@
 library(tidyverse)
 library(stringdist)
 library(haven)
+
 # Config ------------------------------------------------------------------
 
 ### source config file to generate all the respondent_ids
@@ -280,6 +281,8 @@ names(clean_ces93) <- sondr::generate_survey_ids(n_respondents = length(clean_ce
 output_geoloc <- sondr::match_and_update(main = output_geoloc, ## vector to update
                                          updates = clean_ces93) ## vector with updates
 
+table(sondr::extract_elements_with_prefix(output_geoloc, "ces93"))
+
 ## ces97 -------------------------------------------------------------------
 
 # NA
@@ -291,13 +294,12 @@ output_geoloc <- sondr::match_and_update(main = output_geoloc, ## vector to upda
 ## ces2004 -------------------------------------------------------------------
 
 raw_ces2004 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/2004/ces2004.csv",
-                                  variable_name = "ces08_cps_fsa")
+                                  variable_name = "ces04_cps_fsa")
 table(raw_ces2004, useNA = "always")
 
 geolocs <- df_postal_codes$geoloc.1
 names(geolocs) <- df_postal_codes$rta
 clean_ces2004 <- geolocs[raw_ces2004]
-
 table(clean_ces2004)
 
 names(clean_ces2004) <- sondr::generate_survey_ids(n_respondents = length(clean_ces2004), ## number of respondents
@@ -306,6 +308,8 @@ names(clean_ces2004) <- sondr::generate_survey_ids(n_respondents = length(clean_
 ## 4. add clean to the master output
 output_geoloc <- sondr::match_and_update(main = output_geoloc, ## vector to update
                                          updates = clean_ces2004) ## vector with updates
+
+table(sondr::extract_elements_with_prefix(output_geoloc, "ces2004"))
 
 ## ces2006 -------------------------------------------------------------------
 
@@ -669,13 +673,15 @@ table(sondr::extract_elements_with_prefix(output_geoloc, "quorum_mcq_pilote"))
 
 # NA
 
-## pco --------------------------------------------------------A5-----------
+## pco ------------------------------------------------------------------
 
 raw_pco <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/pco/WholeData_Pco14_2015_01_30.csv",
                                   variable_name = "postalCode")
 raw_pco <- tolower(raw_pco)
 raw_pco <- substr(raw_pco, 1, 3)
 table(raw_pco, useNA = "always")
+
+
 
 geolocs <- df_postal_codes$geoloc.1
 names(geolocs) <- tolower(df_postal_codes$rta)
@@ -684,11 +690,20 @@ clean_pco <- geolocs[raw_pco]
 table(clean_pco)
 
 names(clean_pco) <- sondr::generate_survey_ids(n_respondents = length(clean_pco), ## number of respondents
-                                                 source_id = "pco") ## source_id
+                                                 source_id = "WholeData_Pco14_2015_01_30") ## source_id
 
 ## 4. add clean to the master output
 output_geoloc <- sondr::match_and_update(main = output_geoloc, ## vector to update
                                          updates = clean_pco) ## vector with updates
 
-##### SAVE VECTOR WHERE??
-table(sondr::extract_elements_with_prefix(output_geoloc, "pco"))
+table(sondr::extract_elements_with_prefix(output_geoloc, "WholeData_Pco14_2015_01_30"))
+
+
+# Save everything ---------------------------------------------------------
+
+table(output_geoloc)
+
+## factorize
+output_geoloc <- factor(output_geoloc)
+
+saveRDS(output_geoloc, "_SharedFolder_catalogue-donnees/merging-souverainete/clean/vectors/ses_geoloc.1.rds")
