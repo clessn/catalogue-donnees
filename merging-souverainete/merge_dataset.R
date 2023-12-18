@@ -33,7 +33,7 @@ years <- c(ces65 = 1965,
            june = 2022,
            march = 2022,
            may = 2022,
-           pco = 2014,
+           WholeData_Pco14_2015_01_30 = 2014,
            pes_elxn_2022_text = 2023,
            quorum_mcq_pilote = 2023,
            sondage_nationalisme_2022 = 2022)
@@ -63,7 +63,7 @@ for (i in 1:length(files)){
 data <- data %>% 
   select(id, source_id, respondent_id, year, ses_age, ses_gender, ses_lang.1,
          ses_educ, ses_family_income_centile_cat, ses_origin_from_canada.1, ses_year_canada,
-         ses_religiosity, int_pol, iss_idcan, iss_souv, party_id_prov)
+         ses_religiosity, int_pol, iss_idcan, vote_intent_prov, ses_geoloc.1, party_id_prov, iss_souv)
 
 # Save it -----------------------------------------------------------------
 

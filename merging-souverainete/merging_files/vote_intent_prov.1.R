@@ -706,5 +706,5 @@ output_vote_intent_prov <- factor(output_vote_intent_prov)
 
 ##### SAVE
 
-saveRDS(output_vote_intent_prov, "_SharedFolder_catalogue-donnees/merging-souverainete/clean/vote_intent_prov.rds")
+saveRDS(output_vote_intent_prov, "_SharedFolder_catalogue-donnees/merging-souverainete/clean/vectors/vote_intent_prov.rds")
 
