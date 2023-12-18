@@ -38,6 +38,8 @@ names(clean_ces68) <- sondr::generate_survey_ids(n_respondents = length(clean_ce
 output_vote_intent_prov <- sondr::match_and_update(main = output_vote_intent_prov, ## vector to update
                                          updates = clean_ces68) ## vector with updates
 
+table(sondr::extract_elements_with_prefix(output_vote_intent_prov, "ces68"))
+
 ## ces74 -------------------------------------------------------------------
 
 raw_ces74 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/1974/ces74.csv",
@@ -60,6 +62,8 @@ names(clean_ces74) <- sondr::generate_survey_ids(n_respondents = length(clean_ce
 output_vote_intent_prov <- sondr::match_and_update(main = output_vote_intent_prov, ## vector to update
                                          updates = clean_ces74) ## vector with updates
 
+table(sondr::extract_elements_with_prefix(output_vote_intent_prov, "ces74"))
+
 ## ces79 -------------------------------------------------------------------
 
 raw_ces79 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/1979/ces79.csv",
@@ -80,6 +84,8 @@ names(clean_ces79) <- sondr::generate_survey_ids(n_respondents = length(clean_ce
 ## 4. add clean to the master output
 output_vote_intent_prov <- sondr::match_and_update(main = output_vote_intent_prov, ## vector to update
                                          updates = clean_ces79) ## vector with updates
+
+table(sondr::extract_elements_with_prefix(output_vote_intent_prov, "ces79"))
 
 ## ces84 -------------------------------------------------------------------
 
@@ -102,6 +108,8 @@ names(clean_ces84) <- sondr::generate_survey_ids(n_respondents = length(clean_ce
 output_vote_intent_prov <- sondr::match_and_update(main = output_vote_intent_prov, ## vector to update
                                          updates = clean_ces84) ## vector with updates
 
+table(sondr::extract_elements_with_prefix(output_vote_intent_prov, "ces84"))
+
 ## ces88 -------------------------------------------------------------------
 
 raw_ces88 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/1988/ces88.csv",
@@ -123,6 +131,8 @@ names(clean_ces88) <- sondr::generate_survey_ids(n_respondents = length(clean_ce
 output_vote_intent_prov <- sondr::match_and_update(main = output_vote_intent_prov, ## vector to update
                                          updates = clean_ces88) ## vector with updates
 
+table(sondr::extract_elements_with_prefix(output_vote_intent_prov, "ces88"))
+
 ## ces93 -------------------------------------------------------------------
 
 raw_ces93 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/1993/ces93.csv",
@@ -143,6 +153,8 @@ names(clean_ces93) <- sondr::generate_survey_ids(n_respondents = length(clean_ce
 ## 4. add clean to the master output
 output_vote_intent_prov <- sondr::match_and_update(main = output_vote_intent_prov, ## vector to update
                                          updates = clean_ces93) ## vector with updates
+
+table(sondr::extract_elements_with_prefix(output_vote_intent_prov, "ces93"))
 
 ## ces97 -------------------------------------------------------------------
 
@@ -166,6 +178,8 @@ names(clean_ces97) <- sondr::generate_survey_ids(n_respondents = length(clean_ce
 output_vote_intent_prov <- sondr::match_and_update(main = output_vote_intent_prov, ## vector to update
                                          updates = clean_ces97) ## vector with updates
 
+table(sondr::extract_elements_with_prefix(output_vote_intent_prov, "ces97"))
+
 ## ces2000 -------------------------------------------------------------------
 
 raw_ces2000 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/2000/ces2000.csv",
@@ -188,8 +202,9 @@ names(clean_ces2000) <- sondr::generate_survey_ids(n_respondents = length(clean_
 output_vote_intent_prov <- sondr::match_and_update(main = output_vote_intent_prov, ## vector to update
                                          updates = clean_ces2000) ## vector with updates
 
-## ces2004 -------------------------------------------------------------------
+table(sondr::extract_elements_with_prefix(output_vote_intent_prov, "ces2000"))
 
+## ces2004 -------------------------------------------------------------------
 
 raw_ces2004 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/2004/ces2004.csv",
                                   variable_name = "ces04_pes_sd5")
@@ -211,6 +226,7 @@ names(clean_ces2004) <- sondr::generate_survey_ids(n_respondents = length(clean_
 output_vote_intent_prov <- sondr::match_and_update(main = output_vote_intent_prov, ## vector to update
                                          updates = clean_ces2004) ## vector with updates
 
+table(sondr::extract_elements_with_prefix(output_vote_intent_prov, "ces2004"))
 
 ## ces2006 -------------------------------------------------------------------
 
@@ -234,6 +250,8 @@ names(clean_ces2006) <- sondr::generate_survey_ids(n_respondents = length(clean_
 output_vote_intent_prov <- sondr::match_and_update(main = output_vote_intent_prov, ## vector to update
                                          updates = clean_ces2006) ## vector with updates
 
+table(sondr::extract_elements_with_prefix(output_vote_intent_prov, "ces2006"))
+
 ## ces2008 -------------------------------------------------------------------
 
 raw_ces2008 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/2008/ces2008.csv",
@@ -255,6 +273,8 @@ names(clean_ces2008) <- sondr::generate_survey_ids(n_respondents = length(clean_
 ## 4. add clean to the master output
 output_vote_intent_prov <- sondr::match_and_update(main = output_vote_intent_prov, ## vector to update
                                          updates = clean_ces2008) ## vector with updates
+
+table(sondr::extract_elements_with_prefix(output_vote_intent_prov, "ces2008"))
 
 ## ces2011 -------------------------------------------------------------------
 
@@ -278,28 +298,39 @@ names(clean_ces2011) <- sondr::generate_survey_ids(n_respondents = length(clean_
 output_vote_intent_prov <- sondr::match_and_update(main = output_vote_intent_prov, ## vector to update
                                          updates = clean_ces2011) ## vector with updates
 
+table(sondr::extract_elements_with_prefix(output_vote_intent_prov, "ces2011"))
+
 ## ces2015 -------------------------------------------------------------------
 
-raw_ces2015 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/2015/ces2015.csv",
-                                  variable_name = "p_provvt")
-table(raw_ces2015, useNA = "always")
+## we unfortunately can't use this variable.
 
-#### 2. clean variable
-clean_ces2015 <- NA
-clean_ces2015[raw_ces2015 == 1] <- "PLQ"
-clean_ces2015[raw_ces2015 == 2] <- "PQ"
-clean_ces2015[raw_ces2015 == 3] <- "CAQ"
-clean_ces2015[raw_ces2015 == 4] <- 'QS'
-clean_ces2015[raw_ces2015 != 1 & raw_ces2015 != 2 & raw_ces2015 != 3 & raw_ces2015 != 4] <- "other"
-table(clean_ces2015)
-
-##### source_id = ces65
-names(clean_ces2015) <- sondr::generate_survey_ids(n_respondents = length(clean_ces2015), ## number of respondents
-                                                 source_id = "ces2015") ## source_id
-
-## 4. add clean to the master output
-output_vote_intent_prov <- sondr::match_and_update(main = output_vote_intent_prov, ## vector to update
-                                         updates = clean_ces2015) ## vector with updates
+#ces2015 <- sondr::read_survey("_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/2015/ces2015.csv")
+#
+#
+#table(ces2015$province, ces2015$p_provvt)
+#
+#raw_ces2015 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/2015/ces2015.csv",
+#                                  variable_name = "p_provvt")
+#table(raw_ces2015, useNA = "always")
+#
+##### 2. clean variable
+#clean_ces2015 <- NA
+#clean_ces2015[raw_ces2015 == 1] <- "PLQ"
+#clean_ces2015[raw_ces2015 == 2] <- "PQ"
+#clean_ces2015[raw_ces2015 == 3] <- "CAQ"
+#clean_ces2015[raw_ces2015 == 4] <- 'QS'
+#clean_ces2015[raw_ces2015 != 1 & raw_ces2015 != 2 & raw_ces2015 != 3 & raw_ces2015 != 4] <- "other"
+#table(clean_ces2015)
+#
+###### source_id = ces65
+#names(clean_ces2015) <- sondr::generate_survey_ids(n_respondents = length(clean_ces2015), ## number of respondents
+#                                                 source_id = "ces2015") ## source_id
+#
+### 4. add clean to the master output
+#output_vote_intent_prov <- sondr::match_and_update(main = output_vote_intent_prov, ## vector to update
+#                                         updates = clean_ces2015) ## vector with updates
+#
+#table(sondr::extract_elements_with_prefix(output_vote_intent_prov, "ces2015"))
 
 ## ces2019 -------------------------------------------------------------------
 
@@ -328,6 +359,8 @@ names(clean_ces2019) <- sondr::generate_survey_ids(n_respondents = length(clean_
 output_vote_intent_prov <- sondr::match_and_update(main = output_vote_intent_prov, ## vector to update
                                          updates = clean_ces2019) ## vector with updates
 
+table(sondr::extract_elements_with_prefix(output_vote_intent_prov, "ces2019"))
+
 ## ces2021 -------------------------------------------------------------------
 
 raw_ces2021 <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/2021/ces2021.csv",
@@ -353,6 +386,8 @@ names(clean_ces2021) <- sondr::generate_survey_ids(n_respondents = length(clean_
 ## 4. add clean to the master output
 output_vote_intent_prov <- sondr::match_and_update(main = output_vote_intent_prov, ## vector to update
                                          updates = clean_ces2021) ## vector with updates
+
+table(sondr::extract_elements_with_prefix(output_vote_intent_prov, "ces2021"))
 
 ## datagotchi_pilot1_2021 -------------------------------------------------------------------
 
@@ -390,6 +425,8 @@ names(clean_datagotchi_pilot2_2022) <- sondr::generate_survey_ids(n_respondents 
 output_vote_intent_prov <- sondr::match_and_update(main = output_vote_intent_prov, ## vector to update
                                          updates = clean_datagotchi_pilot2_2022) ## vector with updates
 
+table(sondr::extract_elements_with_prefix(output_vote_intent_prov, "datagotchi_pilot2_2022"))
+
 ## january -------------------------------------------------------------------
 
 raw_january <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/omnibus/january/january.Sav",
@@ -413,6 +450,8 @@ names(clean_january) <- sondr::generate_survey_ids(n_respondents = length(clean_
 ## 4. add clean to the master output
 output_vote_intent_prov <- sondr::match_and_update(main = output_vote_intent_prov, ## vector to update
                                          updates = clean_january) ## vector with updates
+
+table(sondr::extract_elements_with_prefix(output_vote_intent_prov, "january"))
 
 ## february -------------------------------------------------------------------
 
@@ -438,6 +477,8 @@ names(clean_february) <- sondr::generate_survey_ids(n_respondents = length(clean
 output_vote_intent_prov <- sondr::match_and_update(main = output_vote_intent_prov, ## vector to update
                                          updates = clean_february) ## vector with updates
 
+table(sondr::extract_elements_with_prefix(output_vote_intent_prov, "february"))
+
 ## march -------------------------------------------------------------------
 
 raw_march <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/omnibus/march/march.Sav",
@@ -461,6 +502,8 @@ names(clean_march) <- sondr::generate_survey_ids(n_respondents = length(clean_ma
 ## 4. add clean to the master output
 output_vote_intent_prov <- sondr::match_and_update(main = output_vote_intent_prov, ## vector to update
                                          updates = clean_march) ## vector with updates
+
+table(sondr::extract_elements_with_prefix(output_vote_intent_prov, "march"))
 
 ## april -------------------------------------------------------------------
 
@@ -486,6 +529,8 @@ names(clean_april) <- sondr::generate_survey_ids(n_respondents = length(clean_ap
 output_vote_intent_prov <- sondr::match_and_update(main = output_vote_intent_prov, ## vector to update
                                          updates = clean_april) ## vector with updates
 
+table(sondr::extract_elements_with_prefix(output_vote_intent_prov, "april"))
+
 ## may -------------------------------------------------------------------
 
 raw_may <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/omnibus/may/may.Sav",
@@ -510,6 +555,8 @@ names(clean_may) <- sondr::generate_survey_ids(n_respondents = length(clean_may)
 output_vote_intent_prov <- sondr::match_and_update(main = output_vote_intent_prov, ## vector to update
                                          updates = clean_may) ## vector with updates
 
+table(sondr::extract_elements_with_prefix(output_vote_intent_prov, "may"))
+
 ## june -------------------------------------------------------------------
 
 raw_june <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/omnibus/june/june.Sav",
@@ -533,6 +580,8 @@ names(clean_june) <- sondr::generate_survey_ids(n_respondents = length(clean_jun
 ## 4. add clean to the master output
 output_vote_intent_prov <- sondr::match_and_update(main = output_vote_intent_prov, ## vector to update
                                          updates = clean_june) ## vector with updates
+
+table(sondr::extract_elements_with_prefix(output_vote_intent_prov, "june"))
 
 ## sondage_nationalisme_2022 -------------------------------------------------------------------
 
@@ -566,6 +615,8 @@ names(clean_sondage_nationalisme_2022) <- sondr::generate_survey_ids(n_responden
 ## 4. add clean to the master output
 output_vote_intent_prov <- sondr::match_and_update(main = output_vote_intent_prov, ## vector to update
                                          updates = clean_sondage_nationalisme_2022) ## vector with updates
+
+table(sondr::extract_elements_with_prefix(output_vote_intent_prov, "sondage_nationalisme_2022"))
 
 ## quorum_mcq_pilote -------------------------------------------------------------------
 
@@ -611,42 +662,49 @@ table(clean_pes_elxn_2022)
 
 ##### source_id = ces65
 names(clean_pes_elxn_2022) <- sondr::generate_survey_ids(n_respondents = length(clean_pes_elxn_2022), ## number of respondents
-                                                 source_id = "pes_elxn_2022") ## source_id
+                                                         source_id = "pes_elxn_2022_text") ## source_id
 
 ## 4. add clean to the master output
 output_vote_intent_prov <- sondr::match_and_update(main = output_vote_intent_prov, ## vector to update
                                          updates = clean_pes_elxn_2022) ## vector with updates
 
+table(sondr::extract_elements_with_prefix(output_vote_intent_prov, "pes_elxn_2022_text"))
+
 ## pco -------------------------------------------------------------------
 
-raw_pco <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/pco/pco.csv",
-                                  variable_name = "Q8.15.Pco2014")
-table(raw_pco, useNA = "always")
+d <- sondr::read_survey("_SharedFolder_catalogue-donnees/merging-souverainete/raw/pco/WholeData_Pco14_2015_01_30.csv")
+
+table(d$voteIntentCaqQcProv.Pco2014)
+table(d$voteIntentQsQcProv.Pco2014)
+table(d$voteIntentPqQcProv.Pco2014)
+table(d$voteIntentPlqQcProv.Pco2014)
 
 #### 2. clean variable
 clean_pco <- NA
-clean_pco[raw_pco == "Coalition Avenir Québec"] <- "CAQ"
-clean_pco[raw_pco == "Parti Québécois"] <- "PQ"
-clean_pco[raw_pco == "Quebec Liberal Party"] <- "PLQ"
-clean_pco[raw_pco == "Québec solidaire"] <- "QS"
-clean_pco[raw_pco != "Coalition Avenir Québec" &
-          raw_pco != "Parti Québécois" &
-          raw_pco != "Quebec Liberal Party" &
-          raw_pco != "Québec solidaire"] <- "other"
-
+clean_pco[d$voteIntentCaqQcProv.Pco2014 == 1] <- "CAQ"
+clean_pco[d$voteIntentQsQcProv.Pco2014 == 1] <- "QS"
+clean_pco[d$voteIntentPqQcProv.Pco2014 == 1] <- "PQ"
+clean_pco[d$voteIntentPlqQcProv.Pco2014 == 1] <- "PLQ"
 table(clean_pco)
 
 ##### source_id = ces65
 names(clean_pco) <- sondr::generate_survey_ids(n_respondents = length(clean_pco), ## number of respondents
-                                                 source_id = "pco") ## source_id
+                                                 source_id = "WholeData_Pco14_2015_01_30") ## source_id
 
 ## 4. add clean to the master output
 output_vote_intent_prov <- sondr::match_and_update(main = output_vote_intent_prov, ## vector to update
                                          updates = clean_pco) ## vector with updates
 
+table(sondr::extract_elements_with_prefix(output_vote_intent_prov, "WholeData_Pco14_2015_01_30"))
+
 # Output ------------------------------------------------------------------
 
-### FACTORISE, LEVELS, etc.
+table(output_vote_intent_prov)
 
-##### SAVE VECTOR WHERE??
+### factorise
+output_vote_intent_prov <- factor(output_vote_intent_prov)
+
+##### SAVE
+
+saveRDS(output_vote_intent_prov, "_SharedFolder_catalogue-donnees/merging-souverainete/clean/vote_intent_prov.rds")
 
