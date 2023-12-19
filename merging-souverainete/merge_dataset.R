@@ -63,7 +63,7 @@ for (i in 1:length(files)){
 data <- data %>% 
   select(id, source_id, respondent_id, year, ses_age, ses_gender, ses_lang.1,
          ses_educ, ses_family_income_centile_cat, ses_origin_from_canada.1, ses_year_canada,
-         ses_religiosity, int_pol, iss_idcan, iss_souv, party_id_prov)
+         ses_religiosity, int_pol, iss_idcan, vote_intent_prov, ses_geoloc.1, party_id_prov, iss_souv)
 
 # Save it -----------------------------------------------------------------
 
@@ -100,10 +100,12 @@ na_count %>%
   geom_point(aes(color = prop),
              shape = 15, size = 15) +
   clessnverse::theme_clean_light() +
-  scale_color_gradient(low = "#32CD32", high = "black") +
+  scale_color_gradient(low = "#32CD32", high = "black",
+                       name = "Proportion de données manquantes (%)") +
   theme(strip.placement = "inside",
         axis.text.x = element_text(angle = 90, hjust = 1),
-        panel.spacing.y = unit(0.5, "lines"))
+        panel.spacing.y = unit(0.5, "lines"),
+        legend.title = element_text())
 
 ggsave("_SharedFolder_catalogue-donnees/merging-souverainete/graphs/missing_data.png",
        width = 9, height = 18)

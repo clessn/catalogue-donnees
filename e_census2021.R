@@ -2,19 +2,17 @@ library(tidyverse)
 
 # RTA list ----------------------------------------------------------------
 rtamacro <- read.csv("_SharedFolder_catalogue-donnees/scrape_census/rta_macro.csv") %>% 
-  ### filter for quebec only
-  filter(substr(rta, 1, 1) %in% c("G", "H", "J"))
+  ### filter for roc only
+  filter(!(substr(rta, 1, 1) %in% c("G", "H", "J")))
 all_rtas <- rtamacro$rta
 
-## all_rtas contains the 415 rta in Quebec
+## all_rtas contains the rtas in ROC
 
 # Download all csvs -------------------------------------------------------
 
 ## Loop --------------------------------------------------------------------
 
-
-### rendu à 270
-for (i in 270:length(all_rtas)){
+for (i in 1:length(all_rtas)){
   rta <- all_rtas[i]
   message(paste0(i, " - ", rta, " starting"))
   
