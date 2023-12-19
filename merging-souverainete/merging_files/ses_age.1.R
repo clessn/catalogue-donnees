@@ -676,7 +676,7 @@ names(clean_pco) <- sondr::generate_survey_ids(n_respondents = length(clean_pco)
 ## 4. add clean to the master output
 output_age <- sondr::match_and_update(main = output_age, ## vector to update
                                       updates = clean_pco) ## vector with updates
-table(sondr::extract_elements_with_prefix(output_age, "WholeData_Pco14_2015_01_30"))
+table(sondr::extract_elements_with_prefix(output_age, "WholeData_Pco14_2015_01_30"), useNA = "always")
 # Output ------------------------------------------------------------------
 
 ### FACTORISE, LEVELS, etc.

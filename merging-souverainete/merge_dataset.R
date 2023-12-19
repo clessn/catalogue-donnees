@@ -33,7 +33,7 @@ years <- c(ces65 = 1965,
            june = 2022,
            march = 2022,
            may = 2022,
-           pco = 2014,
+           WholeData_Pco14_2015_01_30 = 2014,
            pes_elxn_2022_text = 2023,
            quorum_mcq_pilote = 2023,
            sondage_nationalisme_2022 = 2022)
@@ -69,7 +69,9 @@ data <- data %>%
 
 saveRDS(data, "_SharedFolder_catalogue-donnees/merging-souverainete/clean/merged_v1.rds")
 
-
+#### modifier la variable year_canada pour améliorer sa visibilité
+data <- data %>%
+  mutate(ses_year_canada_mod = ifelse(is.na(ses_year_canada), year-ses_age, ses_year_canada))
 # Describe the data -------------------------------------------------------
 
 n_by_source_id <- data %>% 
@@ -83,6 +85,11 @@ na_count <- data %>%
   pivot_longer(., cols = names(.)[!(names(.) %in% c("year", "source_id"))],
                names_to = "variable", values_to = "na_count") %>% 
   left_join(., n_by_source_id, by = "source_id")
+
+
+
+
+
 
 #### Graph of missing data
 na_count %>% 
@@ -100,3 +107,4 @@ na_count %>%
 
 ggsave("_SharedFolder_catalogue-donnees/merging-souverainete/graphs/missing_data.png",
        width = 9, height = 18)
+
