@@ -338,7 +338,31 @@ table(sondr::extract_elements_with_prefix(output, source_id))
 
 ## ces2015 -------------------------------------------------------------------
 
-# to validate
+source_id <- "ces2015"
+
+#### 1. Get raw gender variable vector
+raw <- sondr::load_variable(file = "_SharedFolder_catalogue-donnees/merging-souverainete/raw/ces/2015/ces2015.csv",
+                            variable_name = "cntry_born")
+table(raw, useNA = "always")
+
+#### 2. clean variable
+clean <- NA
+clean[raw %in% c(1, 2)] <- 1
+clean[!(raw %in% c(1, 2))] <- 0
+clean[is.na(raw)] <- NA
+table(clean)
+
+#### 3. name each element in clean (assign the respondent id to each person in the vector)
+##### source_id = ces65
+names(clean) <- sondr::generate_survey_ids(n_respondents = length(clean), ## number of respondents
+                                           source_id = source_id) ## source_id
+
+## 4. add clean to the master output
+output <- sondr::match_and_update(main = output, ## vector to update
+                                  updates = clean) ## vector with updates
+
+table(sondr::extract_elements_with_prefix(output, source_id))
+
 
 ## ces2019 -------------------------------------------------------------------
 

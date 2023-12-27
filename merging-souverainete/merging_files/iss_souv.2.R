@@ -618,7 +618,7 @@ names(clean_pes_elxn_2022) <- sondr::generate_survey_ids(n_respondents = length(
 ## 4. add clean to the master output
 output_souv <- sondr::match_and_update(main = output_souv, ## vector to update
                                        updates = clean_pes_elxn_2022) ## vector with updates
-table(sondr::extract_elements_with_prefix(output_souv, "pes_elxn_2022"))
+table(sondr::extract_elements_with_prefix(output_souv, "pes_elxn_2022_text"))
 ## pco -------------------------------------------------------------------
 
 
@@ -631,6 +631,6 @@ table(output_souv)
 
 ##### SAVE VECTOR WHERE??
 
-saveRDS(output_souv, "_SharedFolder_catalogue-donnees/merging-souverainete/clean/vectors/iss_souv.rds")
+saveRDS(output_souv, "_SharedFolder_catalogue-donnees/merging-souverainete/clean/vectors/iss_souv2.rds")
 
 

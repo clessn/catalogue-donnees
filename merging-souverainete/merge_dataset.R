@@ -63,7 +63,7 @@ for (i in 1:length(files)){
 data <- data %>% 
   select(id, source_id, respondent_id, year, ses_age, ses_gender, ses_lang.1,
          ses_educ, ses_family_income_centile_cat, ses_origin_from_canada.1, ses_year_canada,
-         ses_religiosity, int_pol, iss_idcan, vote_intent_prov, ses_geoloc.1, party_id_prov, iss_souv)
+         ses_religiosity, int_pol, iss_idcan, vote_intent_prov, ses_geoloc.1, party_id_prov, iss_souv, iss_souv2)
 
 # Save it -----------------------------------------------------------------
 
