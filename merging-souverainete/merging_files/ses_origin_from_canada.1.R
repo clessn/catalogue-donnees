@@ -347,8 +347,8 @@ table(raw, useNA = "always")
 
 #### 2. clean variable
 clean <- NA
-clean[raw %in% c(1, 2)] <- 1
-clean[!(raw %in% c(1, 2))] <- 0
+clean[raw %in% c(0, 1)] <- 1
+clean[!(raw %in% c(0, 1))] <- 0
 clean[is.na(raw)] <- NA
 table(clean)
 
